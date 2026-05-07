@@ -1,0 +1,34 @@
+[
+  {
+    "Vulnerability": "CVE-2014-3577",
+    "Location": "httpclient:4.2.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API from HttpClient is not used in the application's core logic (src/main/java). It is only used in integration tests (src/test/java). According to the rules, API usage in test code is not confirmed for exploitation.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-5262",
+    "Location": "httpclient:4.2.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Same as CVE-2014-3577. The vulnerable library is used exclusively in tests and is absent from the production code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-13956",
+    "Location": "httpclient:4.2.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Same as CVE-2014-3577. HttpClient usage is limited to test-scope and not present in src/main/java.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15250",
+    "Location": "junit:4.12",
+    "Original_exploitability": 20,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable JUnit rule 'TemporaryFolder' is not used anywhere in the codebase (neither in main nor in test code). The original assessment of 20% is within the 20% tolerance of the 1% calculated score.",
+    "Assessment": "Correct"
+  }
+]

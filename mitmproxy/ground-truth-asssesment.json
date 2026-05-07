@@ -1,0 +1,210 @@
+[
+  {
+    "Vulnerability": "CVE-2021-39214",
+    "Location": "mitmproxy:",
+    "Original_exploitability": 85,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call confirmed (HTTP/1 parsing). Intermediary handling of HTTP/1 requests makes it highly exploitable if vulnerable (assumed per instructions).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.2",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call not confirmed in user code. Component used by dev tools (eslint/vite) only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-1647",
+    "Location": "bootstrap:3.4.1",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call not confirmed. The project uses custom Popover/Tooltip components (e.g. Popover.tsx) instead of the vulnerable bootstrap JS ones.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-6485",
+    "Location": "bootstrap:3.4.1",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call not confirmed. Custom UI components used instead of vulnerable bootstrap JS.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.10",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call not confirmed in user code. Internal usage only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call not confirmed in user code. Transitive dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call not confirmed in user code. Transitive dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call not confirmed in user code. Transitive dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call not confirmed in user code. Transitive dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call not confirmed in user code. Transitive dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call not confirmed in user code. Transitive dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31958",
+    "Location": "tornado:6.5.4",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed. mitmweb (app.py) handles multipart file uploads synchronously using tornado's parsing logic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27199",
+    "Location": "werkzeug:3.1.5",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call confirmed. mitmproxy/addons/maplocal.py explicitly calls safe_join with untrusted input segments, exploitable on Windows.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call not confirmed. Lodash is used for isEqual, but no calls to unset or omit were found in the application source.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call not confirmed. Library is a transitive dependency not used in the application source.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26007",
+    "Location": "cryptography:46.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 80,
+    "Exploitability_explanation": "API call confirmed. mitmproxy uses cryptography for ECC key and certificate loading in its core TLS handling logic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:2.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call not confirmed. Transitive dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-63cx-g855-hvv4",
+    "Location": "mitmproxy:",
+    "Original_exploitability": 0,
+    "Exploitability": 35,
+    "Exploitability_explanation": "API call confirmed (via h2 library). mitmproxy performs HTTP/2 to HTTP/1 translation which is the primary vector for this vulnerability.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-78cv-mqj4-43f7",
+    "Location": "tornado:6.5.4",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed. Related to tornado multipart handling used in mitmweb.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-23217",
+    "Location": "mitmproxy:",
+    "Original_exploitability": 96,
+    "Exploitability": 96,
+    "Exploitability_explanation": "API call confirmed. mitmweb's internal API can be accessed via its own proxy server, allowing SSRF-to-RCE.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:4.53.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call not confirmed in user code. Rollup is a dev tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-14505",
+    "Location": "mitmproxy:",
+    "Original_exploitability": 60,
+    "Exploitability": 60,
+    "Exploitability_explanation": "API call confirmed. mitmweb lacks strict Host header validation, enabling DNS Rebinding attacks.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call not confirmed. Library not used in application source.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call not confirmed. Transitive dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27205",
+    "Location": "flask:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call not confirmed. Flask is used in onboardingapp, but session handling is not used in a vulnerable way.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24766",
+    "Location": "mitmproxy:",
+    "Original_exploitability": 45,
+    "Exploitability": 45,
+    "Exploitability_explanation": "API call confirmed (HTTP/1 parsing). Improper Host header handling leading to smuggling.",
+    "Assessment": "Correct"
+  }
+]

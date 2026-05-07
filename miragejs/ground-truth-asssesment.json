@@ -1,0 +1,234 @@
+[
+  {
+    "Vulnerability": "CVE-2024-47068",
+    "Location": "rollup:4.18.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Rollup is a build tool (devDependency). Vulnerabilities in build tools are not reachable in the production runtime of the client-side library. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:4.18.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Rollup is used only during the build process. No active code path exists in the library itself. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:4.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "form-data is a transitive dependency of jsdom, which is used only in the test environment (devDependency). It is not present in the runtime dependencies or reachable by users of MirageJS. Probability 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/helpers:7.24.7",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Babel is a development tool. No named capturing groups were found in the codebase's regular expressions, which is a prerequisite for this ReDoS vulnerability in the generated code. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.24.7",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Babel runtime helper functions for named capturing groups are not triggered as the codebase does not use named capturing groups in regular expressions. Probability 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:4.0.7",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Micromatch is used by development tools like ESLint and Rollup. It is not used in the runtime library. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:6.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "cross-spawn is a development utility used by ESLint and other tools. It is not reachable in the production code. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "cross-spawn is not a runtime dependency. It is used by dev tools (ESLint, npm-run-all). No code path exists in the library for exploitation. Probability 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Minimatch is used by development tools. No runtime usage found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Minimatch is used by development tools. No runtime usage found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Minimatch is used by development tools. No runtime usage found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Minimatch is used by development tools. No runtime usage found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Minimatch is used by development tools. No runtime usage found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Minimatch is used by development tools. No runtime usage found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "AJV is used by ESLint (`devDependency`). Not reachable in the production library. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "glob:10.4.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Glob is used in the build process and testing. It is not a runtime dependency. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Flatted is used by development/testing tools. Not used in runtime. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "While lodash is a production dependency, the vulnerable functions `unset` and `omit` are not called anywhere in the codebase. Probability 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "tar is not used in the library's runtime code. It is likely a transitive dependency of a development tool. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "tar is not a runtime dependency. No evidence of usage in the codebase. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "js-yaml is used by development tools. Not reachable in runtime. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "js-yaml is used by development tools. Not reachable in runtime. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "tar is not a runtime dependency. No evidence of usage in the codebase. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "brace-expansion is a low-level utility used by dev tools. No runtime usage. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:2.0.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "brace-expansion is a low-level utility used by dev tools. No runtime usage. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "tar is not a runtime dependency and its functions are not called in the code. Probability 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "tar is not a runtime dependency. No evidence of usage in the codebase. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "tar is not a runtime dependency. No evidence of usage in the codebase. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:2.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Transitive dependency in the dev toolchain. Not reachable in production. Probability 0.01.",
+    "Assessment": "Correct"
+  }
+]

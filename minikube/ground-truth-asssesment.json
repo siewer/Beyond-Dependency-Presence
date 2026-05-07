@@ -1,0 +1,26 @@
+[
+  {
+    "Vulnerability": "CVE-2018-1002103",
+    "Location": "k8s.io/minikube:",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "Kwestia dotyczy podatności Dashboardu w Minikube na ataki DNS rebinding poprzez wystawienie go na NodePort 30000. Analiza kodu w `cmd/minikube/cmd/dashboard.go` wykazała, że Dashboard jest obecnie uruchamiany za pomocą bezpieczniejszego mechanizmu `kubectl proxy` (linie 101-102, 136-178), a plik serwisu `deploy/addons/dashboard/dashboard-svc.yaml` nie zawiera konfiguracji NodePort. Brak użycia podatnego API w aktywnej ścieżce kodu.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.64.1",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "Podatność dotyczy obejścia autoryzacji w gRPC-Go przy użyciu interceptorów opartych na ścieżkach. Wersja v1.64.1 nie została odnaleziona w głównym pliku `go.mod` projektu (używana jest v1.79.1). Dodatkowo, przeszukanie całego repozytorium nie wykazało inicjalizacji serwera gRPC ani użycia pakietu `authz` lub interceptorów sprawdzających `FullMethod` w kodzie aplikacji.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.79.1",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "Mimo że wersja v1.79.1 jest wymieniona w `go.mod`, brak jest dowodów na implementację serwera gRPC z interceptorami autoryzacji w kodzie źródłowym minikube (`pkg`, `cmd`). Biblioteka występuje prawdopodobnie jako zależność pośrednia dla klientów gRPC. Brak spełnienia kluczowych warunków eksploatacji (brak serwera z politykami autoryzacji).",
+    "Assessment": "Correct"
+  }
+]

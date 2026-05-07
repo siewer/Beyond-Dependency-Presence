@@ -1,0 +1,34 @@
+[
+  {
+    "Vulnerability": "CVE-2025-48734",
+    "Location": "commons-beanutils:1.9.4",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Thorough search of the codebase found no explicit calls to vulnerable methods `PropertyUtilsBean.getProperty()` or `getNestedProperty()`. The library is likely a transitive dependency and not used directly in active code paths.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-2976",
+    "Location": "guava:31.0.1-jre",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No explicit calls to `FileBackedOutputStream` were found in the codebase. The vulnerability requires usage of this specific component to trigger insecure temporary file creation.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8908",
+    "Location": "guava:31.0.1-jre",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No explicit calls to `com.google.common.io.Files.createTempDir()` were found. Mockito uses standard Java or internal utilities for temporary file management instead of the vulnerable Guava API.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24400",
+    "Location": "assertj-core:3.27.6",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "While `assertj-core` is a dependency used in tests, the specific vulnerable XML assertion APIs (`isXmlEqualTo`, `xmlPrettyFormat`) are not called anywhere in the repository. Standard assertions are used, which are not affected by this XXE flaw.",
+    "Assessment": "Incorrect"
+  }
+]

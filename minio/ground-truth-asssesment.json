@@ -1,0 +1,138 @@
+[
+  {
+    "Vulnerability": "CVE-2023-28434",
+    "Location": "github.com/minio/minio:",
+    "Original_exploitability": 96,
+    "Exploitability": 85,
+    "Exploitability_explanation:": "✅ API call confirmed. Handler `PostPolicyBucketHandler` found in `cmd/bucket-handlers.go`. Reachable via `cmd/api-router.go`. This is a core S3 feature enabled by default, allowing information disclosure of root credentials.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28433",
+    "Location": "github.com/minio/minio:",
+    "Original_exploitability": 97,
+    "Exploitability": 90,
+    "Exploitability_explanation:": "✅ API call confirmed. Function `hasBadPathComponent` found in `cmd/generic-handlers.go` and used in `setRequestValidityMiddleware`. This is a global middleware affecting all incoming requests, allowing path traversal.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-24747",
+    "Location": "github.com/minio/minio:",
+    "Original_exploitability": 90,
+    "Exploitability": 80,
+    "Exploitability_explanation:": "✅ API call confirmed. `UpdateServiceAccount` found in `cmd/admin-handlers-users.go`. The logic for self-updating service accounts is reachable, though it requires an existing account. Score adjusted to align with high reachability in admin paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-31489",
+    "Location": "github.com/minio/minio:",
+    "Original_exploitability": 70,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "✅ API call confirmed. Support for `STREAMING-UNSIGNED-PAYLOAD-TRAILER` confirmed in `cmd/signature-v4-utils.go`. The vulnerability impacts signature verification during chunked uploads in S3-V4 protocol.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-55949",
+    "Location": "github.com/minio/minio:",
+    "Original_exploitability": 90,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "✅ API call confirmed. `ImportIAM` API route found in `cmd/admin-router.go`. While an admin-only feature, the lack of validation on imported data poses a high risk if the endpoint is reachable or an admin is tricked.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27414",
+    "Location": "github.com/minio/minio:",
+    "Original_exploitability": 96,
+    "Exploitability": 80,
+    "Exploitability_explanation:": "✅ API call confirmed. `processLDAPAuthentication` logic in `cmd/sftp-server.go` handles SSH keys. The vulnerability trusts keys even if LDAP lacks the attribute. Requires SFTP and LDAP, which are common but non-default configs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-36107",
+    "Location": "github.com/minio/minio:",
+    "Original_exploitability": 93,
+    "Exploitability": 85,
+    "Exploitability_explanation:": "✅ API call confirmed. `GetObjectHandler` and `checkPreconditions` in `cmd/object-handlers.go` process conditional headers. The vulnerability allows bypassing access controls via crafted header combinations.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-62506",
+    "Location": "github.com/minio/minio:",
+    "Original_exploitability": 50,
+    "Exploitability": 45,
+    "Exploitability_explanation:": "✅ API call confirmed. `IsAllowedServiceAccount` and `DenyOnly` logic found in `cmd/iam.go`. Proper session policy evaluation is critical; flawed logic here leads to privilege escalation.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58181",
+    "Location": "golang.org/x/crypto:v0.37.0",
+    "Original_exploitability": 15,
+    "Exploitability": 20,
+    "Exploitability_explanation:": "✅ API call confirmed. `golang.org/x/crypto/ssh` is used in `cmd/sftp-server.go`. The GSSAPI vulnerability is reachable if SFTP is enabled and specific authentication methods are negotiated.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-10543",
+    "Location": "github.com/eclipse/paho.mqtt.golang:v1.5.0",
+    "Original_exploitability": 25,
+    "Exploitability": 30,
+    "Exploitability_explanation:": "✅ API call confirmed. MQTT target used in `internal/event/target/mqtt.go`. The DoS via large topics is reachable if MQTT notification target is configured.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47914",
+    "Location": "golang.org/x/crypto:v0.37.0",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "✅ API call confirmed. SSH agent usage is possible through the SFTP driver. However, exploitation requires a malicious local agent, making reachability low.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27571",
+    "Location": "github.com/nats-io/nats-server/v2:v2.11.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "⚠️ API usage confirmed in Library. `nats-server` is in `go.mod` and used in tests. However, no explicit call to the vulnerable WebSocket logic was found in active User Code paths. Score remains near baseline.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26958",
+    "Location": "filippo.io/edwards25519:v1.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "⚠️ API usage confirmed in Library. Dependency found in `go.mod`. Vulnerability in specialized crypto functions with no direct exploit vector confirmed in user-facing code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24051",
+    "Location": "go.opentelemetry.io/otel/sdk:v1.35.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "❌ API call not confirmed. `ioreg` calls are macOS-specific and not present in the primary Minio code paths or relevant for typical Linux deployments.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.72.0",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "⚠️ API usage confirmed in Library. gRPC is used for clustering. While the library is vulnerable, no specific bypass using the flawed `:path` validation was verified in the application layer.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-6g7g-w4f8-9c9x",
+    "Location": "github.com/buger/jsonparser:v1.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "⚠️ API usage confirmed in Library. `jsonparser` is used, but explicit calls to the vulnerable `Delete` function were not confirmed in active, user-input-reachable code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-j965-2qgj-vjmq",
+    "Location": "aws-sdk:2.1693.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "⚠️ API usage confirmed in Library. AWS SDK is used for tiering. Region validation flaw exists in the library but is not directly exploitable without specific tiering configurations.",
+    "Assessment": "Correct"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "Vulnerability": "CVE-2023-44487",
+    "Location": "golang.org/x/net:v0.0.0-20220421235706-1d1ef9303861",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable HTTP/2 stack is not imported or used in the mkcert codebase. No explicit calls to vulnerable APIs found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45288",
+    "Location": "golang.org/x/net:v0.0.0-20220421235706-1d1ef9303861",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable HTTP/2 stack is not imported or used in the mkcert codebase. No explicit calls to vulnerable APIs found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-48795",
+    "Location": "golang.org/x/crypto:v0.0.0-20220331220935-ae2d96664a29",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable SSH implementation is not imported or used in the mkcert codebase. No explicit calls to vulnerable APIs found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45337",
+    "Location": "golang.org/x/crypto:v0.0.0-20220331220935-ae2d96664a29",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable SSH implementation is not imported or used in the mkcert codebase. No explicit calls to vulnerable APIs found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22870",
+    "Location": "golang.org/x/net:v0.0.0-20220421235706-1d1ef9303861",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable proxy matching logic is not imported or used in the mkcert codebase. No explicit calls to vulnerable APIs found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-41723",
+    "Location": "golang.org/x/net:v0.0.0-20220421235706-1d1ef9303861",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable HPACK decoder is not imported or used in the mkcert codebase. No explicit calls to vulnerable APIs found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-41717",
+    "Location": "golang.org/x/net:v0.0.0-20220421235706-1d1ef9303861",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable HTTP/2 stack is not imported or used in the mkcert codebase. No explicit calls to vulnerable APIs found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22869",
+    "Location": "golang.org/x/crypto:v0.0.0-20220331220935-ae2d96664a29",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable SSH implementation is not imported or used in the mkcert codebase. No explicit calls to vulnerable APIs found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-39325",
+    "Location": "golang.org/x/net:v0.0.0-20220421235706-1d1ef9303861",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable HTTP/2 stack is not imported or used in the mkcert codebase. No explicit calls to vulnerable APIs found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-27664",
+    "Location": "golang.org/x/net:v0.0.0-20220421235706-1d1ef9303861",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable HTTP/2 stack is not imported or used in the mkcert codebase. No explicit calls to vulnerable APIs found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22872",
+    "Location": "golang.org/x/net:v0.0.0-20220421235706-1d1ef9303861",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable HTML parser is not imported or used in the mkcert codebase. No explicit calls to vulnerable APIs found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-3978",
+    "Location": "golang.org/x/net:v0.0.0-20220421235706-1d1ef9303861",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable HTML parser is not imported or used in the mkcert codebase. No explicit calls to vulnerable APIs found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58181",
+    "Location": "golang.org/x/crypto:v0.0.0-20220331220935-ae2d96664a29",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable SSH implementation is not imported or used in the mkcert codebase. No explicit calls to vulnerable APIs found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-32149",
+    "Location": "golang.org/x/text:v0.3.7",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable language parsing logic is not imported or used in the mkcert codebase. No explicit calls to vulnerable APIs found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47914",
+    "Location": "golang.org/x/crypto:v0.0.0-20220331220935-ae2d96664a29",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable SSH Agent implementation is not imported or used in the mkcert codebase. No explicit calls to vulnerable APIs found.",
+    "Assessment": "Correct"
+  }
+]

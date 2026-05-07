@@ -1,0 +1,234 @@
+[
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Vulnerable version present in node_modules (transitive in dev tools), but no explicit calls found in Mocha's active code paths. Probability capped at 0.10. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Vulnerable version present in node_modules (transitive in dev tools), but no explicit calls found in Mocha's active code paths. Probability capped at 0.10. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:10.2.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "Version 10.2.2 in SCA report, but codebase uses 10.2.4 which is safe against CVE-2026-27903/27904. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Vulnerable version present in node_modules (transitive in dev tools), but no explicit calls found in Mocha's active code paths. Probability capped at 0.10. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Vulnerable version present in node_modules (transitive in dev tools), but no explicit calls found in Mocha's active code paths. Probability capped at 0.10. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:10.2.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "Version 10.2.2 in SCA report, but codebase uses 10.2.4 which is safe against CVE-2026-27903/27904. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Vulnerable version present in node_modules (transitive in dev tools), but no explicit calls found in Mocha's active code paths. Probability capped at 0.10. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Vulnerable version present in node_modules (transitive in dev tools), but no explicit calls found in Mocha's active code paths. Probability capped at 0.10. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30226",
+    "Location": "devalue:5.6.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "Package not found in codebase or lock file. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.3.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "2%",
+    "Exploitability_explanation": "Vulnerable version of flatted present as transitive dependency, but no explicit calls found in user code. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.17.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "2%",
+    "Exploitability_explanation": "Vulnerable version of ajv present as transitive dependency, but no explicit calls found in user code. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "Lodash 4.17.23 is safe against listed CVEs. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:4.12.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "2%",
+    "Exploitability_explanation": "Vulnerable version of bn.js present as transitive dependency, but no explicit calls found in user code. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:5.2.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "2%",
+    "Exploitability_explanation": "Vulnerable version of bn.js present as transitive dependency, but no explicit calls found in user code. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:4.0.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "2%",
+    "Exploitability_explanation": "Vulnerable transitive version present, but no explicit calls found in Mocha's code path. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.6.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "2%",
+    "Exploitability_explanation": "Vulnerable version of elliptic present as transitive dependency, but no explicit calls found in user code. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33228",
+    "Location": "flatted:3.3.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "2%",
+    "Exploitability_explanation": "Vulnerable version of flatted present as transitive dependency, but no explicit calls found in user code. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33128",
+    "Location": "h3:1.15.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "Package not found in codebase or lock file. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "55%",
+    "Exploitability_explanation": "\u2705 API usage confirmed via shared parallel execution paths. Explicit eval() found in worker.js satisfies exploit constraints. Original score of 0% is incorrect.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:7.0.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "85%",
+    "Exploitability_explanation": "\u2705 API call confirmed in lib/nodejs/buffered-worker-pool.js (L168). Explicit eval() of serialized output found in lib/nodejs/worker.js (L86), satisfying the core constraint for GHSA-5c6j-r48x-rmvq. Original score of 0% is incorrect.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33151",
+    "Location": "socket.io-parser:4.2.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "2%",
+    "Exploitability_explanation": "Vulnerable version of socket.io-parser present as transitive dependency, but no explicit calls found in user code. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-wr4h-v87w-p3r7",
+    "Location": "h3:1.15.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "Package not found in codebase or lock file. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-33hq-fvwr-56pm",
+    "Location": "devalue:5.6.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "Package not found in codebase or lock file. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-8qm3-746x-r74r",
+    "Location": "devalue:5.6.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "Package not found in codebase or lock file. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-mwv9-gp5h-frr4",
+    "Location": "devalue:5.6.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "Package not found in codebase or lock file. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:4.53.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "Affected versions < 4.59.0. Codebase uses 4.59.0 which is safe. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:4.57.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "Affected versions < 4.59.0. Codebase uses 4.59.0 which is safe. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29074",
+    "Location": "svgo:4.0.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "Package not found in codebase or lock file. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "2%",
+    "Exploitability_explanation": "Vulnerable version of ajv present as transitive dependency, but no explicit calls found in user code. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  }
+]

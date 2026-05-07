@@ -1,0 +1,354 @@
+[
+  {
+    "Vulnerability": "CVE-2025-62522",
+    "Location": "vite:7.1.1",
+    "Original_exploitability": 50,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Version is vulnerable and running on Windows (confirmed). However, default config is localhost, limiting remote exploitability unless manually exposed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58751",
+    "Location": "vite:7.1.1",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Low severity Vite vulnerability. Reachable in dev environment but limited impact due to localhost binding.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58752",
+    "Location": "vite:7.1.1",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Similar to CVE-2025-58751, reachable in dev server but mitigated by default host configuration.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.14.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit calls to qs.parse() found in user code. Library is used internally by other dependencies.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.9.7",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit calls found. Internal usage only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.26.9",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "ReDoS in Babel polyfills. Requires .replace() with user-controlled replacement pattern on transpiled code with named capturing groups. Very unlikely in this project.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58754",
+    "Location": "axios:1.11.0",
+    "Original_exploitability": 0,
+    "Exploitability": 80,
+    "Exploitability_explanation": "Version 1.11.0 is vulnerable (< 1.12.0). Explicit calls with dynamic URLs found in several Vue components (Tasks, QuickFacts). High risk if URLs are influenced.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-58754",
+    "Location": "axios:1.8.4",
+    "Original_exploitability": 90,
+    "Exploitability": 80,
+    "Exploitability_explanation": "Version is vulnerable. Heavily used with dynamic URLs in frontend components. High reachability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29063",
+    "Location": "immutable:5.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit usage of Immutable.js (mergeDeep/merge) found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:8.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit calls to minimatch() found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:8.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64500",
+    "Location": "symfony/http-foundation:v7.3.2",
+    "Original_exploitability": 15,
+    "Exploitability": 25,
+    "Exploitability_explanation": "Core component of Laravel. High reachability as all requests pass through this. Auth bypass risk is real although specific vector depends on config.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "glob:10.4.5",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Command injection in CLI. No usage of glob CLI with -c/--cmd found in CI scripts or app code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.3.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit calls to flatted.parse() found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25639",
+    "Location": "axios:1.8.4",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "Axios config DoS. Reached if user-controlled objects are passed to axios config (common in dynamic requests).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-30838",
+    "Location": "league/commonmark:2.7.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "XSS bypass in DisallowedRawHtml extension. The app uses CommonMark but does NOT use the vulnerable extension in its AppServiceProvider macro.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Prototype pollution in _.unset/_.omit. No explicit calls found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash-es:4.17.21",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Internal usage only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.14.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.9.7",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "node-tar used as sub-dependency. No programmatic usage found in user code. Presence found in yarn.lock.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Sub-dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit usage of js-yaml parsing untrusted input found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30964",
+    "Location": "web-auth/webauthn-lib:5.2.2",
+    "Original_exploitability": 0,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Origin bypass. Monicahq heavily uses webauthn for auth. Config shows domain is null, potentially relying on dynamic origin check which is vulnerable in this version.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Sub-dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit use of expand() found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:2.0.1",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit use found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Sub-dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-45769",
+    "Location": "firebase/php-jwt:v6.11.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Disputed vulnerability. No explicit usage found in app code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Sub-dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": 2,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Sub-dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24739",
+    "Location": "symfony/process:v7.3.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "No explicit usage of Symfony Process component found in application controllers or services.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58752",
+    "Location": "vite:7.1.1",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vite dev server vulnerability. Reachable in dev.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:4.46.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Rollup is used for building. Vulnerable version, but requires control over build config/plugins which is limited to devs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24765",
+    "Location": "phpunit/phpunit:11.5.29",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Insecure deserialization in PHPT runner. CI config explicitly disables coverage, providing a strong mitigation.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:8.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit initialization of Ajv with $data: true found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25639",
+    "Location": "axios:1.11.0",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "Axios config DoS. Explicitly used in many components.",
+    "Assessment": "Incorrect"
+  }
+]
