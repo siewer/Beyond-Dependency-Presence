@@ -1,0 +1,34 @@
+[
+  {
+    "Vulnerability": "CVE-2026-24051",
+    "Location": "go.opentelemetry.io/otel/sdk:v1.31.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "The vulnerable function `resource.WithHostID` is not explicitly called in the `dive` codebase. A thorough search across all packages (dive, cmd, internal) confirmed no direct usage of the vulnerable OTel SDK component. Per rules, since no explicit call is found, status is not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-11065",
+    "Location": "github.com/go-viper/mapstructure/v2:v2.2.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Thorough search for `mapstructure.Decode` or `WeakDecode` calls yielded no results. While `mapstructure` tags are present in configuration structs, there is no explicit call to the vulnerable decoding functions in the provided codebase. Root cause related to sensitive data leakage in error messages is also mitigated by the fact that `dive` configuration does not typically store sensitive credentials. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15558",
+    "Location": "github.com/docker/cli:v28.1.1+incompatible",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "The vulnerability resides in the `cli-plugins/manager` package of Docker CLI. Analysis of the `dive` codebase confirmed that while it uses `docker/cli` for context and engine interaction, it does not import or use the vulnerable plugin management component. No explicit calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-fv92-fjc5-jj9h",
+    "Location": "github.com/go-viper/mapstructure/v2:v2.2.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Same component and root cause as CVE-2025-11065. No explicit calls to `Decode` or `WeakDecode` functions were found in the `dive` codebase. Use of `mapstructure` tags in structs does not constitute an explicit API call. Status: not_confirmed.",
+    "Assessment": "Correct"
+  }
+]

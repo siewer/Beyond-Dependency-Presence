@@ -1,0 +1,26 @@
+[
+  {
+    "Vulnerability": "CVE-2026-25129",
+    "Location": "psy/psysh:v0.12.18",
+    "Original_exploitability": 20,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vulnerable version (0.12.18) present in composer.lock. However, PsySH is a dev dependency of Codeception and no explicit calls to PsySH API were found in the codebase. According to methodology for Library-Internal usage, max probability is 0.10. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24765",
+    "Location": "phpunit/phpunit:10.5.60",
+    "Original_exploitability": 25,
+    "Exploitability": 25,
+    "Exploitability_explanation": "Vulnerable version (10.5.60) used for testing. Codebase contains 27 .phpt files (e.g., tests/syntax/phql/001.phpt), which satisfy the component constraint. However, code coverage is disabled by default in codeception.yml, and exploitation requires local filesystem write access. Probability 0.25 is consistent with partial constraint satisfaction (PHPT used, Coverage OFF). Status: uncertain.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24739",
+    "Location": "symfony/process:v6.4.26",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable version (6.4.26) present as a dependency of php-cs-fixer. No usage of Symfony Process component found in the application source code (phalcon namespace or ext). Probability 0.01 (1%) is correct for APIs not used in active code paths. Status: not_confirmed.",
+    "Assessment": "Correct"
+  }
+]

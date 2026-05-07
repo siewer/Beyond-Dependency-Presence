@@ -1,0 +1,82 @@
+[
+  {
+    "Vulnerability": "CVE-2022-33987",
+    "Location": "got:7.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No explicit call to 'got' API found in the codebase. According to the methodology, if no explicit call is found, status is not_confirmed and probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-33987",
+    "Location": "got:8.3.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No explicit call to 'got' API found in the codebase. Probability is set to 1% as per NOT_CONFIRMED status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3795",
+    "Location": "semver-regex:2.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No explicit call to 'semverRegex' found in the codebase. The original score of 50% is unjustified as no vulnerable API usage was confirmed. Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25881",
+    "Location": "http-cache-semantics:3.8.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No explicit call to 'storable' or 'satisfies' from 'http-cache-semantics' library found. Status remains not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:7.0.39",
+    "Original_exploitability": 20,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Used only via build tool wrappers (gulp-postcss, postcss-loader); no explicit call to the vulnerable 'postcss' parser function in user code. While 20% is within the 20% tolerance, the score is technically high for unconfirmed usage but accepted under tolerance rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-43307",
+    "Location": "semver-regex:2.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No explicit call to 'semverRegex' found. Original score is highly inflated.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:5.1.0",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "The codebase uses native 'node:child_process.spawn', not the 'cross-spawn' library. No explicit call to 'cross-spawn' found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31808",
+    "Location": "file-type:19.6.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No usage of 'file-type' API found in the codebase. Assigned 1% as per the minimum for unconfirmed usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33036",
+    "Location": "fast-xml-parser:4.5.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No usage of 'fast-xml-parser' (XMLParser.parse) found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33349",
+    "Location": "fast-xml-parser:4.5.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No usage of 'fast-xml-parser' found in the codebase.",
+    "Assessment": "Correct"
+  }
+]

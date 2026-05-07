@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "name": "cryptii",
+  "version": "4.0.11",
+  "description": "A web app for modular conversion, encoding, and encryption, all performed directly in your browser with no server interaction.",
+  "author": "Fränz Friederes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cryptii/cryptii.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cryptii/cryptii/issues"
+  },
+  "homepage": "https://cryptii.com/",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "test": "standard && mocha",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "normalize-scss": "^8.0.0",
+    "standard": "^17.1.2",
+    "vite": "^5.4.8",
+    "sass": "^1.79.4",
+    "mocha": "^10.7.3"
+  }
+}

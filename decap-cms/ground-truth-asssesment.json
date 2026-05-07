@@ -1,0 +1,338 @@
+[
+  {
+    "Vulnerability": "CVE-2026-33672",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "API picomatch is not called in any active code path within the packages/ directory. Usage is restricted to internal development tools in node_modules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-4800",
+    "Location": "lodash:4.17.23",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "The vulnerable function lodash.template is not explicitly called in the codebase. Search for '.template(' in packages/ returned no results.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33671",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "API picomatch is not used in the application source code; no explicit calls were found during search.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:1.1.12",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No explicit calls to brace-expansion were found in the packages/ directory. It exists only as a transitive dependency of build tools.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:5.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "API absent in active code paths; search for brace-expansion usage returned no results in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2950",
+    "Location": "lodash:4.17.23",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "✅ API call confirmed: omit(node.data, 'marks') in slateRemark.js. However, the keys are static string literals ('marks'), which specifically prevents attacker-controlled prototype pollution. Satisfies version but not reachable constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.10.7",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "No direct usage of qs.parse in production code. The library is present in the lockfile only as a transitive dependency of dev tools like Cypress.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation:": "✅ API call confirmed: minimatch(path, pattern, ...) in netlify-lfs-client.ts. Patterns are sourced from the CMS configuration (config.yml). An attacker with configuration access can trigger ReDoS via malicious glob patterns.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.10.7",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "API not used in active code paths; search for qs usage returned no results in the packages/ directory.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation:": "✅ API call confirmed: minimatch is used for path matching in Git LFS providers. Although version 9.0.3 is reported, the logic applies to user-controlled glob patterns in configuration, which can trigger DoS.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation:": "✅ API call confirmed: Local Git LFS clients use minimatch for glob pattern verification. Malicious patterns in config.yml can lead to DoS.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:7.4.6",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation:": "✅ API call confirmed: Patterns are matched using minimatch in the Git Gateway backend client. Subject to user-controlled path matching patterns.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33532",
+    "Location": "yaml:1.10.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation:": "✅ API call confirmed: yaml.parse is used in decap-cms-core/src/formats/yaml.ts (v1.8.3) to process configuration and entry frontmatter. This is reachable from malicious repository content, posing a significant DoS risk.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "API absent in user code; 'braces' is a transitive dependency of build and test tools, not reachable through production application paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.10",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "No direct or reachable calls to micromatch were found in the packages/ directory. It exists primarily as a devDependency sub-dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.0.33",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "The 'tmp' library is not explicitly called in any production code path. Usage is restricted to development tools and is not reachable at runtime.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7753",
+    "Location": "trim:0.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "✅ API call confirmed: Vulnerable 'trim' v0.0.1 is a dependency of remark-parse and mdast-util-to-hast, which are used to process CMS content in markdown and richtext widgets. Malicious markdown can trigger ReDoS.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "High-risk API 'tar' is not used in the application source code; usage is limited to project management scripts.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2950",
+    "Location": "lodash:4.17.23",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "✅ API call confirmed: omit() is used in several components (e.g., ShortcodeElement, slateRemark), but all calls use hardcoded, static keys. Satisfies version but not reachable constraints for prototype pollution.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-4867",
+    "Location": "path-to-regexp:1.7.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "API path-to-regexp is not explicitly called in the packages/ directory. It exists as a transitive dependency of routing libraries but is not directly reachable via user input paths in the core CMS.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.5.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No direct calls to elliptic were found in the application source code. All usage is internal to browser crypto polyfills.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:4.4.19",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "API absent in active code paths; usage is limited to build-time scaffolding.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "@cypress/request:2.88.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Used exclusively in test configurations (Cypress) and is not reachable in the production browser application.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-4800",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "The vulnerable function lodash.template is not explicitly called in the packages/ directory.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:7.4.6",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation:": "✅ API call confirmed: Patterns are matched using minimatch in the Git Gateway backend client. Subject to user-controlled path matching patterns loaded from config.yml.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:4.12.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "API absent in user code; bn.js is a transitive dependency of crypto libraries and is not directly exposed to user input.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation:": "✅ API call confirmed: Minimatch is used for path matching in LFS clients. Reachable via user-defined glob patterns in the CMS configuration.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:7.4.6",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation:": "✅ API call confirmed: Confirmed reachable via configuration-based glob matching in backend LFS providers. Nesting of groups in glob patterns can trigger DoS.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation:": "✅ API call confirmed: Local Git LFS clients use minimatch for glob pattern verification. Malicious patterns in config.yml can lead to DoS.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation:": "✅ API call confirmed: Minimatch is used for path matching in LFS clients. Reachable via user-defined glob patterns in the CMS configuration file.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-7889",
+    "Location": "tough-cookie:2.5.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "API tough-cookie is not explicitly called in the packages/ directory. It exists as a transitive dependency of build/test tools.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-40614",
+    "Location": "handlebars:4.7.7",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "The vulnerable handlebars function (e.g., compile) is not explicitly called in the active codebase. Handlebars is mentioned in configuration only for syntax highlighting scopes.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-40608",
+    "Location": "handlebars:4.7.7",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No reachable API calls to handlebars were identified in the production source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-34069",
+    "Location": "nanoid:3.3.7",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "The nanoid library is not explicitly used in the user code. The application uses 'uuid' for generating unique identifiers.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:5.2.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "API absent in user code; exists only as a transitive dependency of crypto polyfills.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "High-risk API 'tar' is not reachable in production code. Its usage is restricted to internal build-time scripts.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-4f65-27xx-665c",
+    "Location": "express:4.18.2",
+    "Original_exploitability": 0,
+    "Exploitability": 60,
+    "Exploitability_explanation:": "✅ API call confirmed: express is used to power the decap-server proxy in decap-server/src/index.ts. While primarily for local development, it is a reachable code path for the proxy's runtime.",
+    "Assessment": "Incorrect"
+  }
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation:": "✅ API call confirmed: Confirmed reachable via configuration-based glob matching in backend LFS providers. Nesting of groups in glob patterns can trigger DoS.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33671",
+    "Location": "picomatch:4.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "API picomatch is not called in any active code path within the packages/ directory. It exists primarily for development tooling internal tasks.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation:": "✅ API call confirmed: Minimatch is used for path matching in Git Gateway backend. Subject to user-controlled path matching patterns loaded from config.yml.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": 40,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The js-yaml library is not used for parsing user-controlled input in the core packages. The core uses the 'yaml' package (v1.x) instead. js-yaml usage was only found in build scripts and test comments.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-67mh-4wv8-2f99",
+    "Location": "esbuild:0.18.20",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Esbuild is a build-time dependency used for bundling the application. It is not part of the runtime environment and is not reachable via user input paths.",
+    "Assessment": "Correct"
+  }
+]

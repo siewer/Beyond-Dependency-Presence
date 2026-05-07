@@ -1,0 +1,18 @@
+[
+  {
+    "Vulnerability": "CVE-2024-6763",
+    "Location": "jetty-http:10.0.26",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable API (org.eclipse.jetty.http.HttpURI) is not used in the application codebase. A comprehensive search for 'HttpURI' and 'jetty' in the 'src/' directory returned no results. Furthermore, 'suppression.xml' notes declare that 'HttpURI' is not used and no decoded user data is passed to it. According to the scoring rules, 'API ABSENT' resulting in probability 0.00-0.02 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-11143",
+    "Location": "jetty-http:10.0.26",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable API (org.eclipse.jetty.http.HttpURI) is not used in the application codebase. A comprehensive search for 'HttpURI' and 'jetty' in the 'src/' directory returned no results. Furthermore, 'suppression.xml' notes declare that 'HttpURI' is not used and no decoded user data is passed to it. According to the scoring rules, 'API ABSENT' resulting in probability 0.00-0.02 (1%).",
+    "Assessment": "Correct"
+  }
+]

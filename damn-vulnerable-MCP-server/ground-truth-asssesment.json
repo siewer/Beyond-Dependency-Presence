@@ -1,0 +1,42 @@
+[
+  {
+    "Vulnerability": "CVE-2025-53365",
+    "Location": "mcp:0.5.0",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call to FastMCP and SseServerTransport confirmed in common/sse_server.py and challenge servers. Version 0.5.0 is vulnerable (< 1.10.0). The server is reachable over network (0.0.0.0). According to the decision matrix, version vulnerable + all constraints + no mitigations justifies a high probability (0.65-0.90). Original score of 15% is significantly underestimated.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47874",
+    "Location": "starlette:0.27.0",
+    "Original_exploitability": 35,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Thorough search of the codebase found no usage of Starlette's multipart/form-data parsing (Form, UploadFile, or request.form()). The application only handles JSON-RPC messages. API not used in active code paths, resulting in minimal probability (0.01).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-54121",
+    "Location": "starlette:0.27.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No usage of Starlette's UploadFile class found in the codebase. All file-related operations in challenges (e.g., Challenge 6) are performed using standard Python open() on strings passed via JSON, not via Starlette's multipart upload handler. API not used in active code paths.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-53366",
+    "Location": "mcp:0.5.0",
+    "Original_exploitability": 85,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call confirmed (FastMCP usage). Version 0.5.0 is vulnerable (< 1.9.4). An unauthenticated remote attacker can send malformed JSON-RPC requests causing an unhandled pydantic.ValidationError, leading to DoS. All constraints satisfied with no mitigations.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66416",
+    "Location": "mcp:0.5.0",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "FastMCP with SSE transport is used and bound to localhost/0.0.0.0 without TransportSecuritySettings. Version 0.5.0 lacks DNS rebinding protection by default. Satisfies constraints for cross-origin attacks from a malicious website to a local server.",
+    "Assessment": "Correct"
+  }
+]

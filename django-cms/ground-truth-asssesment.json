@@ -1,0 +1,202 @@
+[
+  {
+    "Vulnerability": "CVE-2020-11023",
+    "Location": "jquery:1.11.3",
+    "Original_exploitability": 97,
+    "Exploitability": 85,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "\u00e2\u015b\u2026 API call confirmed. jQuery v1.11.3 is vulnerable. Explicit calls to .html() were found in cms.messages.js:74 and cms.tooltip.js:106, passing content derived from plugin names or server messages. No mitigations (like DOMPurify) are implemented. Based on methodology: Version vulnerable (Confirmed), Usage confirmed, all constraints satisfied, no mitigations."
+  },
+  {
+    "Vulnerability": "CVE-2015-9251",
+    "Location": "jquery:1.11.3",
+    "Original_exploitability": 80,
+    "Exploitability": 75,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "\u00e2\u015b\u2026 API call confirmed. jQuery v1.11.3 is vulnerable. Explicit calls to $.ajax() were found in cms.base.js:222 and 271 for settings management. These calls do not enforce a safe dataType, making them susceptible to XSS if the response is compromised. methodology: Version vulnerable, Usage confirmed, 100% constraints satisfied."
+  },
+  {
+    "Vulnerability": "CVE-2019-11358",
+    "Location": "jquery:1.11.3",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Assessment": "Incorrect",
+    "Exploitability_explanation:": "\u00e2\u015b\u2026 API call confirmed. jQuery v1.11.3 is vulnerable to prototype pollution via $.extend(true, ...). An explicit deep-copy call was found in cms.messages.js:15. This contradicts the original score of 0%. methodology: Version vulnerable, usage confirmed, deep-copy constraint satisfied."
+  },
+  {
+    "Vulnerability": "CVE-2022-39353",
+    "Location": "xmldom:0.1.31",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Usage found ONLY in Library/Vendor Code (transitive dependency of string.prototype.trimstart). No explicit calls found in user code. methodology: Max Probability 0.10 for library-internal usage."
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.88.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Assessment": "Incorrect",
+    "Exploitability_explanation:": "Usage found ONLY in Library/Vendor Code (transitive dependency for build tools). No explicit calls found in active user code paths. methodology: Max Probability 0.10 (Internal Usage Only)."
+  },
+  {
+    "Vulnerability": "CVE-2021-32796",
+    "Location": "xmldom:0.1.31",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Assessment": "Incorrect",
+    "Exploitability_explanation:": "Usage found ONLY in Library/Vendor Code. No active reachability from user code to xmldom parsing logic was verified. methodology: Max Probability 0.10 (Internal Usage Only)."
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Internal usage only. No user code paths verified. methodology: Max Probability 0.10 (Internal Usage Only)."
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.5.3",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Internal usage only via request package. methodology: Max Probability 0.10 (Internal Usage Only)."
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.17.1",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Used internally by webpack plugins. No user-controlled validation schemas verified. methodology: Max Probability 0.10."
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Internal usage only. methodology: Max Probability 0.10."
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Used internally for build tasks, no user-controlled archive extraction verified in the repository. methodology: Max Probability 0.10."
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Internal usage only. methodology: Max Probability 0.10."
+  },
+  {
+    "Vulnerability": "CVE-2020-11022",
+    "Location": "jquery:1.11.3",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Assessment": "Incorrect",
+    "Exploitability_explanation:": "\u00e2\u015b\u2026 API call confirmed. Similar to CVE-2020-11023, usage of .html() in cms.messages.js:74 is susceptible to HTML injection. The original score of 0% is significantly inaccurate given explicit usage. methodology: Version vulnerable, Usage confirmed."
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:2.5.0",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Internal usage only. methodology: Max Probability 0.10."
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash.template:3.6.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Assessment": "Incorrect",
+    "Exploitability_explanation:": "Used internally by build tools (transitive). No explicit usage of _.template() found in user-facing code paths. methodology: Max Probability 0.10."
+  },
+  {
+    "Vulnerability": "CVE-2021-21366",
+    "Location": "xmldom:0.1.31",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Assessment": "Incorrect",
+    "Exploitability_explanation:": "Internal usage only. methodology: Max Probability 0.10."
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:2.3.3",
+    "Original_exploitability": 25,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Internal usage only. methodology: Max Probability 0.10."
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Internal usage only. methodology: Max Probability 0.10."
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Internal usage only. methodology: Max Probability 0.10."
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Internal usage only. methodology: Max Probability 0.10."
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 1,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Internal usage only. methodology: Max Probability 0.10."
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Internal usage only. methodology: Max Probability 0.10."
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:2.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Internal usage only. methodology: Max Probability 0.10."
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Internal usage only via terser-webpack-plugin. methodology: Max Probability 0.10."
+  },
+  {
+    "Vulnerability": "CVE-2026-33151",
+    "Location": "socket.io-parser:4.2.4",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Assessment": "Correct",
+    "Exploitability_explanation:": "Internal usage only via browser-sync. methodology: Max Probability 0.10."
+  }
+]

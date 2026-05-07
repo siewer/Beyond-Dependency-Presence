@@ -1,0 +1,90 @@
+[
+  {
+    "Vulnerability": "CVE-2024-39689",
+    "Location": "certifi:2021.5.30",
+    "Original_exploitability": 96,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. `certifi.where()` is explicitly called in `homeassistant/util/ssl.py`. The version 2021.5.30 is within the vulnerable range. All constraints are satisfied, yielding a high exploitability of 85%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-37891",
+    "Location": "urllib3:2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "✅ API call confirmed. `urllib3.PoolManager()` is explicitly called in `tests/components/http/test_security_filter.py`. However, the specific exploit constraints (manual Proxy-Authorization header with cross-origin redirects) are absent (0% satisfied), yielding a probability of 5% per the decision matrix.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-37920",
+    "Location": "certifi:2021.5.30",
+    "Original_exploitability": 65,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed. The `certifi.where()` method is actively used in `homeassistant/util/ssl.py`. The version is vulnerable and all constraints are fulfilled.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-67221",
+    "Location": "orjson:3.11.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "✅ API call confirmed. `orjson.dumps` is explicitly called in `homeassistant/helpers/json.py`. However, the version 3.11.5 is outside the vulnerable range (up to 3.11.4). Exploitable: False, status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-23491",
+    "Location": "certifi:2021.5.30",
+    "Original_exploitability": 80,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. The vulnerable `certifi.where()` is actively utilized in SSL verification code paths. The version is vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66471",
+    "Location": "urllib3:2.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "✅ API call confirmed. `urllib3.PoolManager()` explicit call found in tests. 0% constraints satisfied yields ~5%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21441",
+    "Location": "urllib3:2.0",
+    "Original_exploitability": 30,
+    "Exploitability": 5,
+    "Exploitability_explanation": "✅ API call confirmed. `urllib3.PoolManager()` explicit call found in tests. 0% constraints satisfied yields ~5%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-50181",
+    "Location": "urllib3:2.0",
+    "Original_exploitability": 25,
+    "Exploitability": 25,
+    "Exploitability_explanation": "✅ API call confirmed. `urllib3.PoolManager()` is explicitly called in `tests/components/http/test_security_filter.py`. The codebase instantiates PoolManager but lacks the `retries=False` constraint that triggers this vulnerability (50% constraints satisfied). Based on the probability matrix, 50% constraint satisfaction yields 25%-45% exploitability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-43804",
+    "Location": "urllib3:2.0",
+    "Original_exploitability": 8,
+    "Exploitability": 5,
+    "Exploitability_explanation": "✅ API call confirmed. `urllib3.PoolManager()` explicit call found in tests. Cookie header manipulation constraint not met. 0% constraints satisfied yields ~5%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45803",
+    "Location": "urllib3:2.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "✅ API call confirmed. `urllib3.PoolManager()` explicit call found in tests. Authorization manipulation constraint not met. 0% constraints satisfied yields ~5%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66418",
+    "Location": "urllib3:2.0",
+    "Original_exploitability": 55,
+    "Exploitability": 5,
+    "Exploitability_explanation": "✅ API call confirmed. `urllib3.PoolManager()` explicit call found in tests. 0% constraints satisfied yields ~5%.",
+    "Assessment": "Incorrect"
+  }
+]
