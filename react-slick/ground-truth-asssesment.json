@@ -1,0 +1,234 @@
+[
+  {
+    "Vulnerability": "CVE-2020-7660",
+    "Location": "serialize-javascript:1.9.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API `serialize()` is not explicitly called in the user code. It is a transitive dependency used internally by plugins (e.g. uglifyjs-webpack-plugin). Since it is internal usage only with no reachable user-controlled path, exploitability is capped at 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash.pick:4.4.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API `_.pick` is not explicitly called in the user code. As an internal dependency with no user-controlled code path found, exploitability is minimal (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29180",
+    "Location": "webpack-dev-middleware:3.7.3",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Internal dependency of `webpack-dev-server`. No direct usage in user code, but the dev server is active during development. Internal usage caps it at 10%, which is within tolerance of the original 15%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21536",
+    "Location": "http-proxy-middleware:0.19.1",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Internal dependency of `webpack-dev-server`. No proxy configuration found in `webpack.config.js`, making the vulnerable path difficult to reach. Evaluated at 10%, within 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-16769",
+    "Location": "serialize-javascript:1.9.1",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal dependency with no direct user code calls. Exploitability is minimal (1%), within tolerance of 5%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal dependency (via micromatch). No direct usage of `braces()` in user code. Exploitability is minimal (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24772",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal dependency for dev tools. No explicit calls to RSA verification APIs in user code. Exploitability is minimal (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24771",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal dependency for dev tools. No explicit calls to RSA verification APIs in user code. Exploitability is minimal (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:7.0.39",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "PostCSS is listed in `devDependencies` but no active usage was found in webpack or gulp configs for processing CSS. Minimal exploitability (1%) is within tolerance of 15%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66031",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal dependency. No ASN.1 parsing calls found in user code. Minimal exploitability (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "babel-traverse:6.26.0",
+    "Original_exploitability": 25,
+    "Exploitability": 20,
+    "Exploitability_explanation": "Internal to Babel, which is used for the build process (`npm run lib`). Since compilation of potential untrusted code is a possibility in dev-workflow, it's evaluated at 20% (Config ENABLED), within tolerance of 25%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0122",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal dependency. No `util.parseUrl` calls found in user code. Minimal exploitability (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30359",
+    "Location": "webpack-dev-server:3.11.3",
+    "Original_exploitability": 80,
+    "Exploitability": 80,
+    "Exploitability_explanation": "`webpack-dev-server` is a direct devDependency and is actively used in `gulpfile.js` with a configuration listening on `0.0.0.0`, exposing it to the network. This aligns with a 'confirmed' status for dev-server vulnerabilities when used in an active project. 80% is accurate.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24773",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal dependency. No direct calls found. Minimal exploitability (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.10",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Internal dependency (via webpack). No direct usage of micromatch in user code found. Under internal usage rules, it should be capped at 10%. 50% is outside the 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-12816",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal dependency. No direct calls found. Minimal exploitability (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23382",
+    "Location": "postcss:5.2.18",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "PostCSS 5.x is likely a transitive dependency. No direct usage found. Minimal exploitability (1%), within tolerance of 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23382",
+    "Location": "postcss:6.0.23",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "PostCSS 6.x is likely a transitive dependency. No direct usage found. Minimal exploitability (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30360",
+    "Location": "webpack-dev-server:3.11.3",
+    "Original_exploitability": 70,
+    "Exploitability": 75,
+    "Exploitability_explanation": "Direct usage of vulnerable `webpack-dev-server`. Listens on `0.0.0.0` which satisfies network exposure constraints for Cross-site WebSocket Hijacking. Evaluated at 75% based on calibration table, within tolerance of 70%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66030",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal dependency. No direct calls found. Minimal exploitability (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.6.1",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. No explicit usage of ECDSA signing in user code found. Evaluated as internal usage (10%), within tolerance of 15%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:1.9.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal usage only. Minimal exploitability (1%), within tolerance of 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:4.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal usage only. Minimal exploitability (1%), within tolerance of 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5rrq-pxf6-6jx5",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal usage only. Minimal exploitability (1%), within tolerance of 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-gf8q-jrpm-jvxq",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal usage only. Minimal exploitability (1%), within tolerance of 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29415",
+    "Location": "ip:1.1.9",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal dependency. No direct calls to `isPublic()` or similar found in user code. Minimal exploitability (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:2.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal dependency. No direct usage found. Minimal exploitability (1%), within tolerance of 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:5.2.18",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal usage only. Minimal exploitability (1%), within tolerance of 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:6.0.23",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal usage only. Minimal exploitability (1%), within tolerance of 0%.",
+    "Assessment": "Correct"
+  }
+]

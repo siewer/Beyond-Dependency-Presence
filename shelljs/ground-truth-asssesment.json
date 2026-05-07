@@ -1,0 +1,42 @@
+[
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:7.5.9",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Thorough search of the codebase (src/, test/, scripts/) found no explicit calls to vulnerable node-tar APIs (tar.x, tar.extract, etc.). The library is present only as a transitive devDependency. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ajv is a devDependency used by ESLint. No explicit calls to new Ajv() or ajv.validate() with $data enabled were found in segments of the codebase. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.3.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Flatted is a devDependency for testing tools. No calls to flatted.parse() or flatted.stringify() were found in the project's source code or active paths. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:7.5.9",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Path traversal via symlinks on Windows is not reachable as the tar library is not invoked in any active code path within the shelljs repository. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33228",
+    "Location": "flatted:3.3.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Prototype pollution via flatted.parse() is not exploitable as the library is not used in the application logic and no calls to the vulnerable API exist. Status: not_confirmed.",
+    "Assessment": "Correct"
+  }
+]

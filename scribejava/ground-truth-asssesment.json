@@ -1,0 +1,26 @@
+[
+  {
+    "Vulnerability": "CVE-2023-3635",
+    "Location": "okio-jvm:3.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Thorough search of the codebase found no explicit calls to the vulnerable API 'okio.GzipSource'. While OkHttp (which depends on Okio) is used, the mandatory evidence requirement for an explicit call in user code was not met. According to the systematic assessment rules, this results in a probability of 0.01 (1%) and a status of 'not_confirmed'.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-52999",
+    "Location": "jackson-core:2.14.0",
+    "Original_exploitability": 50,
+    "Exploitability": 80,
+    "Exploitability_explanation:": "Explicit calls to 'ObjectMapper.readTree()' were confirmed in 'OAuth2AccessTokenJsonExtractor.java' (lines 53, 83) and other token extractors. These methods parse JSON responses from external Identity Providers, which are untrusted. The version (2.14.0) is vulnerable to stack overflow due to lack of recursion limits. All constraints are satisfied with no mitigations found, leading to a high exploitability probability (80%).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-72hv-8253-57qq",
+    "Location": "jackson-core:2.14.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "This vulnerability specifically affects the non-blocking (asynchronous) parser 'NonBlockingUtf8JsonParser'. No explicit calls to this parser or related async factory methods were found in the ScribeJava codebase. Usage is limited to synchronous parsing via ObjectMapper. Thus, the status is 'not_confirmed' with a probability of 0.01 (1%).",
+    "Assessment": "Correct"
+  }
+]

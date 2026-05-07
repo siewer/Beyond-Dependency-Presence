@@ -1,0 +1,47 @@
+[
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-21503",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-13T06:08:09.272Z",
+    "Source": "SCA",
+    "Location": "black:22.12.0"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2026-22701",
+    "Status": "EXISTING",
+    "Exploitability": 5,
+    "Last Seen": "2026-03-13T06:08:09.273Z",
+    "Source": "SCA",
+    "Location": "filelock:3.16.1"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2026-22702",
+    "Status": "EXISTING",
+    "Exploitability": 50,
+    "Last Seen": "2026-03-13T06:08:09.274Z",
+    "Source": "SCA",
+    "Location": "virtualenv:20.34.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-32274",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-13T06:08:09.284Z",
+    "Source": "SCA",
+    "Location": "black:22.12.0"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-68146",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-13T06:08:09.274Z",
+    "Source": "SCA",
+    "Location": "filelock:3.16.1"
+  }
+]

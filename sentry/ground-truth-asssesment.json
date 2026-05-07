@@ -1,0 +1,378 @@
+[
+  {
+    "Vulnerability": "CVE-2015-9251",
+    "Location": "jquery:2.2.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirm: NO. Sentry has migrated away from jQuery. No active calls found in user code. Diff (14) is within 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11023",
+    "Location": "jquery:2.2.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirm: NO. React used for DOM. No active calls found. Diff (14) within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11358",
+    "Location": "jquery:2.2.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirm: NO. No calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: YES. qs.parse used in static/app/api.tsx. Default parameterLimit (1000) mitigates DoS.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11022",
+    "Location": "jquery:2.2.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirm: NO. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47273",
+    "Location": "setuptools:70.0.0",
+    "Original_exploitability": 8,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call confirm: NO. Build-time tool. No runtime calls to PackageIndex.download.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.13.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: YES. Used in frontend. Diff (5) within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2229",
+    "Location": "undici:7.20.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage (OpenTelemetry).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-67221",
+    "Location": "orjson:3.10.10",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "API call confirm: YES. orjson.dumps used in src/sentry/utils/json.py. DoS risk exists but payload limits apply. Diff (15) within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1526",
+    "Location": "undici:7.20.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1528",
+    "Location": "undici:7.20.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66400",
+    "Location": "mdast-util-to-hast:13.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "API call confirm: NO. Transitive dependency. No explicit calls in Sentry code. Diff (40) exceeds 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:10.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:10.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:10.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2581",
+    "Location": "undici:7.20.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "glob:10.4.5",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call confirm: NO. Affects CLI with -c/--cmd. Sentry uses it as library. Diff (13) within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1525",
+    "Location": "undici:7.20.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.17.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-46653",
+    "Location": "formidable:2.1.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirm: NO. No active usage found. Diff (14) within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32597",
+    "Location": "pyjwt:2.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "API call confirm: YES. jwt.decode used in integrations. Vulnerable version. Diff (15) within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirm: YES. Used in frontend. Diff (1) within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.13.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirm: YES. Used in frontend. Diff (1) within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: YES. Used in api-docs build scripts (not runtime). Diff (5) within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "API call confirm: YES. Used in api-docs build scripts. 50% is too high for tool-only usage. Diff (40) exceeds tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-1527",
+    "Location": "undici:7.20.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-8869",
+    "Location": "pip:23.3.1",
+    "Original_exploitability": 8,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call confirm: NO. Internal env tool. Diff (6) within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:2.0.1",
+    "Original_exploitability": 5,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22702",
+    "Location": "virtualenv:20.26.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call confirm: NO. Dev dependency. Diff (13) within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1703",
+    "Location": "pip:23.3.1",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API call confirm: NO. Dev dependency. Diff (13) within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68157",
+    "Location": "webpack:5.99.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirm: NO. Build tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68458",
+    "Location": "webpack:5.99.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirm: NO. Build tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33228",
+    "Location": "flatted:3.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33151",
+    "Location": "socket.io-parser:4.2.4",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirm: NO. Transitive usage.",
+    "Assessment": "Correct"
+  }
+]

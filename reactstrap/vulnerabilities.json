@@ -1,0 +1,1330 @@
+[
+  {
+    "Index": 0,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2022-29078",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "ejs:2.7.4"
+  },
+  {
+    "Index": 1,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-32804",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "tar:2.2.2"
+  },
+  {
+    "Index": 2,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-32804",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "tar:6.0.2"
+  },
+  {
+    "Index": 3,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-46175",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "json5:1.0.1"
+  },
+  {
+    "Index": 4,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-46175",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "json5:2.1.3"
+  },
+  {
+    "Index": 5,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-46175",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "json5:2.2.0"
+  },
+  {
+    "Index": 6,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-46175",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "json5:2.2.1"
+  },
+  {
+    "Index": 7,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2022-37601",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "loader-utils:1.4.0"
+  },
+  {
+    "Index": 8,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2022-37601",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "loader-utils:2.0.0"
+  },
+  {
+    "Index": 9,
+    "Severity": "HIGH",
+    "Name": "CVE-2024-29415",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "ip:1.1.5"
+  },
+  {
+    "Index": 10,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2021-42740",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "shell-quote:1.7.2"
+  },
+  {
+    "Index": 11,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2023-26136",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "tough-cookie:4.1.2"
+  },
+  {
+    "Index": 12,
+    "Severity": "HIGH",
+    "Name": "CVE-2020-7753",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "trim:0.0.1"
+  },
+  {
+    "Index": 13,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-37599",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "loader-utils:1.4.0"
+  },
+  {
+    "Index": 14,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-37599",
+    "Status": "EXISTING",
+    "Exploitability": 5.0,
+    "Location": "loader-utils:2.0.0"
+  },
+  {
+    "Index": 15,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-25858",
+    "Status": "EXISTING",
+    "Exploitability": 5.0,
+    "Location": "terser:5.9.0"
+  },
+  {
+    "Index": 16,
+    "Severity": "HIGH",
+    "Name": "CVE-2024-47068",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "rollup:2.58.3"
+  },
+  {
+    "Index": 17,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-27290",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "ssri:5.3.0"
+  },
+  {
+    "Index": 18,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-27290",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "ssri:6.0.1"
+  },
+  {
+    "Index": 19,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-27290",
+    "Status": "EXISTING",
+    "Exploitability": 50.0,
+    "Location": "ssri:8.0.0"
+  },
+  {
+    "Index": 20,
+    "Severity": "HIGH",
+    "Name": "CVE-2024-29180",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "webpack-dev-middleware:3.7.3"
+  },
+  {
+    "Index": 21,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-24999",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "qs:6.7.0"
+  },
+  {
+    "Index": 22,
+    "Severity": "HIGH",
+    "Name": "CVE-2024-45590",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "body-parser:1.19.0"
+  },
+  {
+    "Index": 23,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2021-3918",
+    "Status": "EXISTING",
+    "Exploitability": 50.0,
+    "Location": "json-schema:0.2.3"
+  },
+  {
+    "Index": 24,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-33623",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "trim-newlines:2.0.0"
+  },
+  {
+    "Index": 25,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-33623",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "trim-newlines:3.0.0"
+  },
+  {
+    "Index": 26,
+    "Severity": "LOW",
+    "Name": "CVE-2024-42461",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "elliptic:6.5.4"
+  },
+  {
+    "Index": 27,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-37603",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "loader-utils:1.4.0"
+  },
+  {
+    "Index": 28,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-37603",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "loader-utils:2.0.0"
+  },
+  {
+    "Index": 29,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2021-44906",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "minimist:1.2.5"
+  },
+  {
+    "Index": 30,
+    "Severity": "HIGH",
+    "Name": "CVE-2020-28469",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "glob-parent:5.1.1"
+  },
+  {
+    "Index": 31,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-0235",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "node-fetch:2.6.5"
+  },
+  {
+    "Index": 32,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-38900",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "decode-uri-component:0.2.0"
+  },
+  {
+    "Index": 33,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-25883",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "semver:7.0.0"
+  },
+  {
+    "Index": 34,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-25883",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "semver:7.3.5"
+  },
+  {
+    "Index": 35,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-25883",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "semver:7.3.7"
+  },
+  {
+    "Index": 36,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-25883",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "semver:7.3.8"
+  },
+  {
+    "Index": 37,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-3757",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "immer:8.0.1"
+  },
+  {
+    "Index": 38,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-23337",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "lodash.template:4.5.0"
+  },
+  {
+    "Index": 39,
+    "Severity": "HIGH",
+    "Name": "CVE-2023-46234",
+    "Status": "EXISTING",
+    "Exploitability": 50.0,
+    "Location": "browserify-sign:4.2.0"
+  },
+  {
+    "Index": 40,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-3517",
+    "Status": "EXISTING",
+    "Exploitability": 50.0,
+    "Location": "minimatch:3.0.4"
+  },
+  {
+    "Index": 41,
+    "Severity": "HIGH",
+    "Name": "CVE-2020-7774",
+    "Status": "EXISTING",
+    "Exploitability": 8.0,
+    "Location": "y18n:4.0.0"
+  },
+  {
+    "Index": 42,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-57556",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "store2:2.12.0"
+  },
+  {
+    "Index": 43,
+    "Severity": "LOW",
+    "Name": "CVE-2024-43800",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "serve-static:1.14.1"
+  },
+  {
+    "Index": 44,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-23647",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "prismjs:1.25.0"
+  },
+  {
+    "Index": 45,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-28863",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "tar:2.2.2"
+  },
+  {
+    "Index": 46,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-28863",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "tar:6.0.2"
+  },
+  {
+    "Index": 47,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-37713",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "tar:6.0.2"
+  },
+  {
+    "Index": 48,
+    "Severity": "LOW",
+    "Name": "CVE-2023-42282",
+    "Status": "EXISTING",
+    "Exploitability": 50.0,
+    "Location": "ip:1.1.5"
+  },
+  {
+    "Index": 49,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-27606",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "rollup:2.58.3"
+  },
+  {
+    "Index": 50,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2025-7783",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "form-data:2.3.3"
+  },
+  {
+    "Index": 51,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2025-7783",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "form-data:3.0.1"
+  },
+  {
+    "Index": 52,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2025-7783",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "form-data:4.0.0"
+  },
+  {
+    "Index": 53,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2020-15366",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "ajv:6.12.2"
+  },
+  {
+    "Index": 54,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-23425",
+    "Status": "EXISTING",
+    "Exploitability": 2.0,
+    "Location": "trim-off-newlines:1.0.1"
+  },
+  {
+    "Index": 55,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-23364",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "browserslist:4.14.2"
+  },
+  {
+    "Index": 56,
+    "Severity": "HIGH",
+    "Name": "CVE-2024-52798",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "path-to-regexp:0.1.7"
+  },
+  {
+    "Index": 57,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-3807",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "ansi-regex:3.0.0"
+  },
+  {
+    "Index": 58,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-3807",
+    "Status": "EXISTING",
+    "Exploitability": 10.0,
+    "Location": "ansi-regex:5.0.0"
+  },
+  {
+    "Index": 59,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-23368",
+    "Status": "EXISTING",
+    "Exploitability": 3.0,
+    "Location": "postcss:7.0.32"
+  },
+  {
+    "Index": 60,
+    "Severity": "HIGH",
+    "Name": "CVE-2024-4068",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "braces:2.3.2"
+  },
+  {
+    "Index": 61,
+    "Severity": "HIGH",
+    "Name": "CVE-2024-4068",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "braces:3.0.2"
+  },
+  {
+    "Index": 62,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2020-28500",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "lodash:4.17.20"
+  },
+  {
+    "Index": 63,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2025-6545",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "pbkdf2:3.1.1"
+  },
+  {
+    "Index": 64,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-32803",
+    "Status": "EXISTING",
+    "Exploitability": 2.0,
+    "Location": "tar:6.0.2"
+  },
+  {
+    "Index": 65,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-21535",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "markdown-to-jsx:6.11.4"
+  },
+  {
+    "Index": 66,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-21535",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "markdown-to-jsx:7.1.3"
+  },
+  {
+    "Index": 67,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-23424",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "ansi-html:0.0.7"
+  },
+  {
+    "Index": 68,
+    "Severity": "LOW",
+    "Name": "CVE-2024-48949",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "elliptic:6.5.4"
+  },
+  {
+    "Index": 69,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2023-44270",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "postcss:7.0.32"
+  },
+  {
+    "Index": 70,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2023-44270",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "postcss:7.0.39"
+  },
+  {
+    "Index": 71,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2023-44270",
+    "Status": "EXISTING",
+    "Exploitability": 5.0,
+    "Location": "postcss:8.3.11"
+  },
+  {
+    "Index": 72,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2025-9287",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "cipher-base:1.0.4"
+  },
+  {
+    "Index": 73,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2021-23436",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "immer:8.0.1"
+  },
+  {
+    "Index": 74,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2023-45133",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "@babel/traverse:7.15.4"
+  },
+  {
+    "Index": 75,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2023-45133",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "@babel/traverse:7.18.2"
+  },
+  {
+    "Index": 76,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2023-45133",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "@babel/traverse:7.20.1"
+  },
+  {
+    "Index": 77,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2023-45133",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "@babel/traverse:7.21.4"
+  },
+  {
+    "Index": 78,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-37701",
+    "Status": "EXISTING",
+    "Exploitability": 2.0,
+    "Location": "tar:6.0.2"
+  },
+  {
+    "Index": 79,
+    "Severity": "LOW",
+    "Name": "CVE-2024-42460",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "elliptic:6.5.4"
+  },
+  {
+    "Index": 80,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-37712",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "tar:6.0.2"
+  },
+  {
+    "Index": 81,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-4067",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "micromatch:4.0.2"
+  },
+  {
+    "Index": 82,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-4067",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "micromatch:4.0.5"
+  },
+  {
+    "Index": 83,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-27789",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "@babel/helpers:7.15.4"
+  },
+  {
+    "Index": 84,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-27789",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "@babel/helpers:7.18.2"
+  },
+  {
+    "Index": 85,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-27789",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "@babel/helpers:7.20.1"
+  },
+  {
+    "Index": 86,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-27789",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "@babel/runtime:7.15.4"
+  },
+  {
+    "Index": 87,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-27789",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "@babel/runtime:7.18.3"
+  },
+  {
+    "Index": 88,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-27789",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "@babel/runtime:7.18.6"
+  },
+  {
+    "Index": 89,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-27789",
+    "Status": "EXISTING",
+    "Exploitability": 18.0,
+    "Location": "@babel/runtime-corejs3:7.10.3"
+  },
+  {
+    "Index": 90,
+    "Severity": "LOW",
+    "Name": "CVE-2024-47764",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "cookie:0.4.0"
+  },
+  {
+    "Index": 91,
+    "Severity": "LOW",
+    "Name": "CVE-2024-43799",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "send:0.17.1"
+  },
+  {
+    "Index": 92,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-55565",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "nanoid:3.1.30"
+  },
+  {
+    "Index": 93,
+    "Severity": "LOW",
+    "Name": "CVE-2024-48948",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "elliptic:6.5.4"
+  },
+  {
+    "Index": 94,
+    "Severity": "HIGH",
+    "Name": "CVE-2024-21538",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "cross-spawn:5.1.0"
+  },
+  {
+    "Index": 95,
+    "Severity": "HIGH",
+    "Name": "CVE-2024-21538",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "cross-spawn:6.0.5"
+  },
+  {
+    "Index": 96,
+    "Severity": "HIGH",
+    "Name": "CVE-2024-21538",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "cross-spawn:7.0.3"
+  },
+  {
+    "Index": 97,
+    "Severity": "HIGH",
+    "Name": "CVE-2024-45296",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "path-to-regexp:0.1.7"
+  },
+  {
+    "Index": 98,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-29041",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "express:4.17.1"
+  },
+  {
+    "Index": 99,
+    "Severity": "LOW",
+    "Name": "CVE-2024-42459",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "elliptic:6.5.4"
+  },
+  {
+    "Index": 100,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2025-9288",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "sha.js:2.4.11"
+  },
+  {
+    "Index": 101,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-29074",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "svgo:2.7.0"
+  },
+  {
+    "Index": 102,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-53382",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "prismjs:1.25.0"
+  },
+  {
+    "Index": 103,
+    "Severity": "LOW",
+    "Name": "CVE-2024-43796",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "express:4.17.1"
+  },
+  {
+    "Index": 104,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-23382",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "postcss:7.0.32"
+  },
+  {
+    "Index": 105,
+    "Severity": "LOW",
+    "Name": "CVE-2017-16137",
+    "Status": "EXISTING",
+    "Exploitability": 50.0,
+    "Location": "debug:4.1.1"
+  },
+  {
+    "Index": 106,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-15284",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "qs:6.10.1"
+  },
+  {
+    "Index": 107,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-15284",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "qs:6.5.2"
+  },
+  {
+    "Index": 108,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-15284",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "qs:6.7.0"
+  },
+  {
+    "Index": 109,
+    "Severity": "CRITICAL",
+    "Name": "CVE-2025-6547",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "pbkdf2:3.1.1"
+  },
+  {
+    "Index": 110,
+    "Severity": "LOW",
+    "Name": "CVE-2025-54798",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "tmp:0.2.1"
+  },
+  {
+    "Index": 111,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-27903",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "minimatch:3.0.4"
+  },
+  {
+    "Index": 112,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-27903",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "minimatch:3.1.2"
+  },
+  {
+    "Index": 113,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-13465",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "lodash:4.17.20"
+  },
+  {
+    "Index": 114,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-13465",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "lodash:4.17.21"
+  },
+  {
+    "Index": 115,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2023-26115",
+    "Status": "EXISTING",
+    "Exploitability": 50.0,
+    "Location": "word-wrap:1.2.3"
+  },
+  {
+    "Index": 116,
+    "Severity": "LOW",
+    "Name": "CVE-2026-2391",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "qs:6.10.1"
+  },
+  {
+    "Index": 117,
+    "Severity": "LOW",
+    "Name": "CVE-2026-2391",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "qs:6.7.0"
+  },
+  {
+    "Index": 118,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-23566",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "nanoid:3.1.30"
+  },
+  {
+    "Index": 119,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-24842",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "tar:2.2.2"
+  },
+  {
+    "Index": 120,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-24842",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "tar:6.0.2"
+  },
+  {
+    "Index": 121,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-26996",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "minimatch:3.0.4"
+  },
+  {
+    "Index": 122,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-26996",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "minimatch:3.1.2"
+  },
+  {
+    "Index": 123,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-27904",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "minimatch:3.0.4"
+  },
+  {
+    "Index": 124,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-27904",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "minimatch:3.1.2"
+  },
+  {
+    "Index": 125,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-33228",
+    "Status": "NEW",
+    "Exploitability": 0.0,
+    "Location": "flatted:3.2.2"
+  },
+  {
+    "Index": 126,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-64718",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "js-yaml:3.14.0"
+  },
+  {
+    "Index": 127,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-64718",
+    "Status": "EXISTING",
+    "Exploitability": 1.0,
+    "Location": "js-yaml:4.1.0"
+  },
+  {
+    "Index": 128,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-32141",
+    "Status": "NEW",
+    "Exploitability": 0.0,
+    "Location": "flatted:3.2.2"
+  },
+  {
+    "Index": 129,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2026-2739",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "bn.js:4.12.0"
+  },
+  {
+    "Index": 130,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2026-2739",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "bn.js:5.1.2"
+  },
+  {
+    "Index": 131,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-69873",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "ajv:6.12.2"
+  },
+  {
+    "Index": 132,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-69873",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "ajv:6.12.6"
+  },
+  {
+    "Index": 133,
+    "Severity": "LOW",
+    "Name": "CVE-2025-5889",
+    "Status": "EXISTING",
+    "Exploitability": 15.0,
+    "Location": "brace-expansion:1.1.11"
+  },
+  {
+    "Index": 134,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-23950",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "tar:2.2.2"
+  },
+  {
+    "Index": 135,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-23950",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "tar:6.0.2"
+  },
+  {
+    "Index": 136,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-23745",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "tar:2.2.2"
+  },
+  {
+    "Index": 137,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-23745",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "tar:6.0.2"
+  },
+  {
+    "Index": 138,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-31802",
+    "Status": "NEW",
+    "Exploitability": 0.0,
+    "Location": "tar:2.2.2"
+  },
+  {
+    "Index": 139,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-31802",
+    "Status": "NEW",
+    "Exploitability": 0.0,
+    "Location": "tar:6.0.2"
+  },
+  {
+    "Index": 140,
+    "Severity": "LOW",
+    "Name": "CVE-2025-14505",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "elliptic:6.5.4"
+  },
+  {
+    "Index": 141,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-29786",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "tar:2.2.2"
+  },
+  {
+    "Index": 142,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-29786",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "tar:6.0.2"
+  },
+  {
+    "Index": 143,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-26960",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "tar:2.2.2"
+  },
+  {
+    "Index": 144,
+    "Severity": "HIGH",
+    "Name": "CVE-2026-26960",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "tar:6.0.2"
+  },
+  {
+    "Index": 145,
+    "Severity": "LOW",
+    "Name": "CVE-2026-3449",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "@tootallnate/once:2.0.0"
+  },
+  {
+    "Index": 146,
+    "Severity": "LOW",
+    "Name": "CVE-2025-7339",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "on-headers:1.0.2"
+  },
+  {
+    "Index": 147,
+    "Severity": "CRITICAL",
+    "Name": "GHSA-vjh7-7g9h-fjfh",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "elliptic:6.5.4"
+  },
+  {
+    "Index": 148,
+    "Severity": "HIGH",
+    "Name": "GHSA-5c6j-r48x-rmvq",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "serialize-javascript:3.1.0"
+  },
+  {
+    "Index": 149,
+    "Severity": "HIGH",
+    "Name": "GHSA-5c6j-r48x-rmvq",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "serialize-javascript:4.0.0"
+  },
+  {
+    "Index": 150,
+    "Severity": "HIGH",
+    "Name": "GHSA-5c6j-r48x-rmvq",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "serialize-javascript:5.0.1"
+  },
+  {
+    "Index": 151,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2023-26136",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "tough-cookie:2.5.0"
+  },
+  {
+    "Index": 152,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-25858",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "terser:4.8.0"
+  },
+  {
+    "Index": 153,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-24999",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "qs:6.5.2"
+  },
+  {
+    "Index": 154,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-33883",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "ejs:2.7.4"
+  },
+  {
+    "Index": 155,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-23337",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "lodash:4.17.20"
+  },
+  {
+    "Index": 156,
+    "Severity": "HIGH",
+    "Name": "CVE-2021-37713",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "tar:2.2.2"
+  },
+  {
+    "Index": 157,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-4067",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "micromatch:3.1.10"
+  },
+  {
+    "Index": 158,
+    "Severity": "LOW",
+    "Name": "CVE-2026-24001",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "diff:3.5.0"
+  },
+  {
+    "Index": 159,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-24999",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "qs:6.10.1"
+  },
+  {
+    "Index": 160,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-0235",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "node-fetch:1.7.3"
+  },
+  {
+    "Index": 161,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-25883",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "semver:5.7.1"
+  },
+  {
+    "Index": 162,
+    "Severity": "HIGH",
+    "Name": "CVE-2022-25883",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "semver:6.3.0"
+  },
+  {
+    "Index": 163,
+    "Severity": "HIGH",
+    "Name": "CVE-2024-37890",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "ws:8.11.0"
+  },
+  {
+    "Index": 164,
+    "Severity": "MEDIUM",
+    "Name": "CVE-2023-28155",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "request:2.88.2"
+  },
+  {
+    "Index": 165,
+    "Severity": "LOW",
+    "Name": "CVE-2025-57352",
+    "Status": "EXISTING",
+    "Exploitability": 0.0,
+    "Location": "min-document:2.19.0"
+  }
+]

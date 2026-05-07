@@ -1,0 +1,706 @@
+[
+  {
+    "Vulnerability": "CVE-2026-33671",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Picomatch ReDoS vulnerability. No explicit calls to picomatch() or require('picomatch') found in the codebase. Library is likely a transitive dependency of build tools.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:2.0.1",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Brace-expansion ReDoS vulnerability. No explicit calls to expand() found in the codebase. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29415",
+    "Location": "ip:1.1.9",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "IP library SSRF vulnerability in isPublic(). No explicit calls found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Lodash Prototype Pollution via _.unset/_.omit. No usage of these functions found in the source code. Lodash is a transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2950",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Lodash Prototype Pollution bypass via array-wrapped paths. No usage of _.unset or _.omit found in the source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33672",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Picomatch method injection via POSIX brackets. No explicit calls to picomatch found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34043",
+    "Location": "serialize-javascript:4.0.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Serialize-javascript DoS vulnerability. No explicit calls to serialize() found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:2.0.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Brace-expansion zero-step infinite loop. No explicit calls to expand() found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6545",
+    "Location": "pbkdf2:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "PBKDF2 broken cryptography vulnerability. No explicit calls to pbkdf2 found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "node-forge:0.10.0",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Node-forge RSA signature forgery. No explicit usage of node-forge or RSA verification found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Minimatch ReDoS vulnerability. No explicit calls to minimatch found in the codebase. Project uses minimatch transitively through devDependencies.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33228",
+    "Location": "flatted:2.0.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Flatted Prototype Pollution via parse(). No explicit calls to flatted.parse() found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-4867",
+    "Location": "path-to-regexp:0.1.12",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Path-to-regexp ReDoS vulnerability. No calls found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29063",
+    "Location": "immutable:4.3.7",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Immutable.js Prototype Pollution. usage found but not with untrusted input. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33895",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Node-forge Ed25519 signature malleability. No Ed25519 usage found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.6.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Elliptic ECDSA invalid signatures vulnerability. No usage of elliptic found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33891",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Node-forge BigInteger.modInverse infinite loop. No usage found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:2.3.3",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Form-data predictable boundary. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Minimatch ReDoS. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.14.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Qs DoS vulnerability via comma:true bypass of arrayLimit. The project does not explicitly call qs.parse() with comma:true or any other configuration in the source code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.88.2",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Request library SSRF vulnerability. No usage of the request library found in the source code. Request is a deprecated dependency likely pulled by build tools.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-4800",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Lodash RCE in _.template(). No usage of _.template() found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7339",
+    "Location": "on-headers:1.0.2",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "On-headers header tampering. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7660",
+    "Location": "serialize-javascript:2.1.2",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Serialize-javascript RCE. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:10.0.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Minimatch ReDoS via globstars. No usage of minimatch found in the source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Qs DoS via bracket notation. No usage found and original exploitability is already 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.14.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Qs DoS via bracket notation. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.5.3",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Qs DoS via bracket notation. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.13.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Qs DoS via bracket notation. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.5.3",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Qs DoS via bracket notation. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13168",
+    "Location": "qs:6.14.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Qs vulnerability. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13168",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Qs vulnerability. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13168",
+    "Location": "qs:6.5.3",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Qs vulnerability. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7247",
+    "Location": "follow-redirects:1.15.5",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Follow-redirects vulnerability. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7247",
+    "Location": "follow-redirects:1.14.9",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Follow-redirects vulnerability. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-6218",
+    "Location": "axios:0.19.2",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Axios vulnerability. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34045",
+    "Location": "semver:7.6.3",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Semver vulnerability. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:0.5.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Json5 Prototype Pollution. No usage of json5 found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:5.5.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Ajv vulnerability. Original score is 0% and no usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/helpers:7.26.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Babel helpers vulnerability. Original score is 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Brace-expansion vulnerability. Original score is 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34043",
+    "Location": "serialize-javascript:2.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Serialize-javascript vulnerability. Original score is 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Brace-expansion vulnerability. Original score is 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:10.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Minimatch vulnerability. Original score is 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Qs vulnerability. Original score is 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Minimatch vulnerability. Original score is 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:10.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Minimatch vulnerability. Original score is 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:2.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Serialize-javascript vulnerability. Original score is 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-gf8q-jrpm-jvxq",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Node-forge vulnerability. Original score is 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:2.5.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Tough-cookie vulnerability. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47068",
+    "Location": "rollup:1.32.1",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Rollup vulnerability. No usage in shipping code. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:5.5.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Ajv ReDoS. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.2",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Braces ReDoS. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.10",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Micromatch ReDoS. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-9288",
+    "Location": "sha.js:2.4.11",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Sha.js weak hash. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "glob:11.0.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Glob vulnerability. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Js-yaml ReDoS. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:7.0.39",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "PostCSS CSS injection. PostCSS is a devDependency used for building. No usage found in source code. Original 50% score is unjustified by lack of API usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-12816",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Node-forge ASN.1 interpretation conflict. No usage of node-forge ASN.1 APIs found in the codebase. Original 50% score is unjustified by lack of API usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66031",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Node-forge vulnerability. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66030",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Node-forge vulnerability. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37601",
+    "Location": "loader-utils:0.2.17",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Loader-utils ReDoS. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29180",
+    "Location": "webpack-dev-middleware:3.7.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Webpack-dev-middleware vulnerability. Affects dev environment only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21536",
+    "Location": "http-proxy-middleware:0.19.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Http-proxy-middleware DoS. No usage in source code. Used by build tools.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-24772",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Node-forge vulnerability. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24771",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Node-forge vulnerability. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0122",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Node-forge vulnerability. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24773",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Node-forge vulnerability. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7608",
+    "Location": "yargs-parser:11.1.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Yargs-parser Prototype Pollution. No usage of yargs found in code or scripts.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-28499",
+    "Location": "merge:1.2.1",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Merge library Prototype Pollution. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37620",
+    "Location": "html-minifier:3.5.21",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Html-minifier vulnerability. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7789",
+    "Location": "node-notifier:5.4.5",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Node-notifier vulnerability. Affects dev environments.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37611",
+    "Location": "gh-pages:2.2.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Gh-pages vulnerability. DevDependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:1.32.1",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Rollup vulnerability. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33896",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Node-forge cert bypass. No PKI usage found in codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Ajv vulnerability. No usage found. Original 50% score is unjustified by lack of API usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:2.0.2",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Flatted vulnerability. No usage found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.26.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Babel runtime vulnerability. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33894",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Node-forge vulnerability. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6547",
+    "Location": "pbkdf2:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Pbkdf2 vulnerability. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:5.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Bn.js vulnerability. Original core is 0% and no usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:4.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Serialize-javascript vulnerability. Original score is 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5rrq-pxf6-6jx5",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Node-forge vulnerability. Original score is 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30360",
+    "Location": "webpack-dev-server:3.11.3",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Webpack-dev-server vulnerability. No usage found. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:4.12.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Bn.js vulnerability. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30359",
+    "Location": "webpack-dev-server:3.11.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Webpack-dev-server RCE via unauthenticated middleware. This affects development environments only and no explicit vulnerable configuration is used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:1.1.2",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "@tootallnate/once hanging promise vulnerability. Score of 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.0.33",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Tmp symlink attack. No usage of the tmp library found in the source code or scripts.",
+    "Assessment": "Incorrect"
+  }
+]

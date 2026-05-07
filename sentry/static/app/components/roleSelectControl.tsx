@@ -1,0 +1,53 @@
+import styled from '@emotion/styled';
+import type {DistributedOmit} from 'type-fest';
+
+import type {ControlProps} from '@sentry/scraps/select';
+import {Select} from '@sentry/scraps/select';
+
+import type {BaseRole} from 'sentry/types/organization';
+import {useOrganization} from 'sentry/utils/useOrganization';
+
+type OptionType = {
+  details: React.ReactNode;
+  disabled: boolean;
+  label: string;
+  value: string;
+};
+
+type Props = DistributedOmit<ControlProps<OptionType>, 'value'> & {
+  disableUnallowed: boolean;
+  roles: BaseRole[];
+  value?: string | null;
+};
+
+export function RoleSelectControl({roles, disableUnallowed, ...props}: Props) {
+  const organization = useOrganization();
+  const isMemberInvite =
+    organization.allowMemberInvite && organization.access?.includes('member:invite');
+
+  return (
+    <Select
+      options={roles
+        ?.filter(r => !r.isRetired)
+        .map(
+          (r: BaseRole) =>
+            ({
+              value: r.id,
+              label: r.name,
+              disabled:
+                disableUnallowed &&
+                !r.isAllowed &&
+                !(isMemberInvite && r.id === 'member'),
+              details: <Details>{r.desc}</Details>,
+            }) as OptionType
+        )}
+      showDividers
+      {...props}
+    />
+  );
+}
+
+const Details = styled('span')`
+  display: inline-block;
+  width: 20rem;
+`;

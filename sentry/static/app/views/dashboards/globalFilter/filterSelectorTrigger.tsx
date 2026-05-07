@@ -1,0 +1,97 @@
+import styled from '@emotion/styled';
+
+import {Badge} from '@sentry/scraps/badge';
+import type {SelectOption} from '@sentry/scraps/compactSelect';
+import {Flex} from '@sentry/scraps/layout';
+
+import {LoadingIndicator} from 'sentry/components/loadingIndicator';
+import {OP_LABELS} from 'sentry/components/searchQueryBuilder/tokens/filter/utils';
+import {TermOperator} from 'sentry/components/searchSyntax/parser';
+import {t} from 'sentry/locale';
+import {prettifyTagKey} from 'sentry/utils/fields';
+import type {UseQueryResult} from 'sentry/utils/queryClient';
+import type {GlobalFilter} from 'sentry/views/dashboards/types';
+
+type FilterSelectorTriggerProps = {
+  activeFilterValues: string[];
+  globalFilter: GlobalFilter;
+  operator: TermOperator;
+  options: Array<SelectOption<string>>;
+  queryResult: UseQueryResult<string[], Error>;
+};
+
+export function FilterSelectorTrigger({
+  globalFilter,
+  activeFilterValues,
+  operator,
+  options,
+  queryResult,
+}: FilterSelectorTriggerProps) {
+  const {isFetching} = queryResult;
+  const {tag} = globalFilter;
+
+  const shouldShowBadge = !isFetching && activeFilterValues.length > 1;
+  // "All" means no filter is applied (empty selection). We intentionally avoid
+  // comparing against options.length because when tag values fail to load,
+  // options only contains the already-selected values — making a length
+  // comparison a tautology that incorrectly shows "All".
+  const isAllSelected = activeFilterValues.length === 0;
+
+  const tagKey = prettifyTagKey(tag.key);
+  const filterValue = activeFilterValues[0] ?? '';
+  const isDefaultOperator = operator === TermOperator.DEFAULT;
+  const opLabel = isDefaultOperator ? ':' : OP_LABELS[operator];
+  const label =
+    options.find(option => option.value === filterValue)?.label || filterValue;
+
+  return (
+    <ButtonLabelWrapper gap="xs">
+      <Flex align="center" gap={isDefaultOperator ? '0' : 'xs'}>
+        <FilterValueTruncated>{tagKey}</FilterValueTruncated>
+        <SubText>{opLabel}</SubText>
+      </Flex>
+      {!isFetching && (
+        <span style={{fontWeight: 'normal'}}>
+          {isAllSelected ? (
+            t('All')
+          ) : (
+            <FilterValueTruncated>{label}</FilterValueTruncated>
+          )}
+        </span>
+      )}
+      {isFetching && <StyledLoadingIndicator size={14} />}
+      {shouldShowBadge && (
+        <StyledBadge variant="muted">{`+${activeFilterValues.length - 1}`}</StyledBadge>
+      )}
+    </ButtonLabelWrapper>
+  );
+}
+
+const StyledLoadingIndicator = styled(LoadingIndicator)`
+  && {
+    margin: 0;
+    margin-left: ${p => p.theme.space.xs};
+  }
+`;
+
+const StyledBadge = styled(Badge)`
+  flex-shrink: 0;
+`;
+
+const ButtonLabelWrapper = styled(Flex)`
+  align-items: center;
+`;
+
+export const FilterValueTruncated = styled('div')`
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+  width: min-content;
+`;
+
+const SubText = styled('span')`
+  color: ${p => p.theme.colors.gray500};
+  font-weight: ${p => p.theme.font.weight.sans.regular};
+`;

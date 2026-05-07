@@ -1,0 +1,42 @@
+[
+  {
+    "Vulnerability": "CVE-2024-21503",
+    "Location": "black:22.12.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "The vulnerable API `lines_with_leading_tabs_expanded` from the `black` library is not explicitly called anywhere in the codebase. Black is only invoked as a CLI tool via subprocess for formatting, and no explicit Python API usage was found. Status: not_confirmed, Probability: 0.01, Exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22701",
+    "Location": "filelock:3.16.1",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No explicit call to `filelock` or `UnixFileLock`/`WindowsFileLock` APIs was found in the Python source code. The library only appears in the lock file as a testing or transitive dependency. Status: not_confirmed, Probability: 0.01, Exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22702",
+    "Location": "virtualenv:20.34.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No explicit call to `virtualenv` APIs was found in the Python source code. The library is listed as a testing dependency but is not integrated into the application's runtime code path. Status: not_confirmed, Probability: 0.01, Exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-32274",
+    "Location": "black:22.12.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "The vulnerability requires using the `--python-cell-magics` CLI option with malicious input. The codebase uses `black` via subprocess but never with this specific switch. Additionally, no direct API calls to the vulnerable feature were found. Status: not_confirmed, Probability: 0.01, Exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68146",
+    "Location": "filelock:3.16.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No explicit call to any `filelock` APIs was found in the Python source code. The library is present in the environment but not utilized by the repository's logic. Status: not_confirmed, Probability: 0.01, Exploitable: false.",
+    "Assessment": "Correct"
+  }
+]

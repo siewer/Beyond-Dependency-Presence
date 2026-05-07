@@ -1,0 +1,50 @@
+[
+  {
+    "Vulnerability": "CVE-2024-6763",
+    "Location": "jetty-http:11.0.26",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: NO. Thorough search of the codebase shows no explicit call to `HttpURI` in active code paths. `HttpURI` is only mentioned in `MetricsHttpChannelListenerTest.java` as a mock, which does not constitute vulnerable usage. Probability set to 0.01 (API not used).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-11143",
+    "Location": "jetty-http:11.0.26",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: NO. No usage of `HttpURI.parse()` or related URI parsing functionality from Jetty found in the codebase. Version is vulnerable but API is absent. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24400",
+    "Location": "assertj-core:3.27.4",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: NO. No usage of `isXmlEqualTo` or `xmlPrettyFormat` from AssertJ found in the codebase, including test files. Assessment of 50% is incorrect as the vulnerable API is not called. Probability 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-72hv-8253-57qq",
+    "Location": "jackson-core:2.21.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: NO. No usage of Jackson non-blocking (asynchronous) JSON parser found. The project uses Jackson for synchronous processing only. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-57699",
+    "Location": "json-smart:2.5.0",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: NO. No usage of `net.minidev.json.parser.JSONParser` found in the codebase. Assessment of 25% is incorrect as the library is likely a transitive dependency not directly invoked. Probability 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-67735",
+    "Location": "netty-codec-http:4.1.127.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: NO. No usage of `io.netty.handler.codec.http.HttpRequestEncoder` found in the codebase. Probability 0.01.",
+    "Assessment": "Correct"
+  }
+]
