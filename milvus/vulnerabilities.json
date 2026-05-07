@@ -1,0 +1,254 @@
+[
+  {
+    "Severity": "CRITICAL",
+    "Name": "CVE-2020-14343",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.567Z",
+    "Source": "SCA",
+    "Location": "PyYAML:5.1"
+  },
+  {
+    "Severity": "CRITICAL",
+    "Name": "CVE-2020-1747",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.568Z",
+    "Source": "SCA",
+    "Location": "PyYAML:5.1"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-42474",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-20T09:45:35.568Z",
+    "Source": "SCA",
+    "Location": "streamlit:1.28.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-31812",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.583Z",
+    "Source": "SCA",
+    "Location": "quinn-proto:0.11.13"
+  },
+  {
+    "Severity": "CRITICAL",
+    "Name": "CVE-2025-64513",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-20T09:45:35.585Z",
+    "Source": "SCA",
+    "Location": "github.com/milvus-io/milvus:"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2025-29786",
+    "Status": "EXISTING",
+    "Exploitability": 25,
+    "Last Seen": "2026-03-20T09:45:35.586Z",
+    "Source": "SCA",
+    "Location": "github.com/expr-lang/expr:v1.15.7"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2025-68156",
+    "Status": "EXISTING",
+    "Exploitability": 80,
+    "Last Seen": "2026-03-20T09:45:35.586Z",
+    "Source": "SCA",
+    "Location": "github.com/expr-lang/expr:v1.15.7"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-64702",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.602Z",
+    "Source": "SCA",
+    "Location": "github.com/quic-go/quic-go:v0.54.0"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2026-25727",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.604Z",
+    "Source": "SCA",
+    "Location": "time:0.3.44"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2025-59530",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.618Z",
+    "Source": "SCA",
+    "Location": "github.com/quic-go/quic-go:v0.54.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2025-66418",
+    "Status": "EXISTING",
+    "Exploitability": 1,
+    "Last Seen": "2026-03-20T09:45:35.620Z",
+    "Source": "SCA",
+    "Location": "urllib3:2.5.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2025-66471",
+    "Status": "EXISTING",
+    "Exploitability": 50,
+    "Last Seen": "2026-03-20T09:45:35.621Z",
+    "Source": "SCA",
+    "Location": "urllib3:2.5.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-21441",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-20T09:45:35.621Z",
+    "Source": "SCA",
+    "Location": "urllib3:2.5.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-0994",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-20T09:45:35.622Z",
+    "Source": "SCA",
+    "Location": "protobuf:5.29.5"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2026-25541",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.622Z",
+    "Source": "SCA",
+    "Location": "bytes:1.10.1"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-24051",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.622Z",
+    "Source": "SCA",
+    "Location": "go.opentelemetry.io/otel/sdk:v1.34.0"
+  },
+  {
+    "Severity": "CRITICAL",
+    "Name": "CVE-2026-33186",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.637Z",
+    "Source": "SCA",
+    "Location": "google.golang.org/grpc:v1.71.0"
+  },
+  {
+    "Severity": "CRITICAL",
+    "Name": "CVE-2026-33186",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.655Z",
+    "Source": "SCA",
+    "Location": "google.golang.org/grpc:v1.71.1"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-33155",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.673Z",
+    "Source": "SCA",
+    "Location": "deepdiff:8.6.1"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-32829",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.690Z",
+    "Source": "SCA",
+    "Location": "lz4_flex:0.11.5"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-32874",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.707Z",
+    "Source": "SCA",
+    "Location": "ujson:5.5.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-32875",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.724Z",
+    "Source": "SCA",
+    "Location": "ujson:5.5.0"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "GHSA-rhfx-m35p-ff5j",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.725Z",
+    "Source": "SCA",
+    "Location": "lru:0.11.1"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "GHSA-rhfx-m35p-ff5j",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.726Z",
+    "Source": "SCA",
+    "Location": "lru:0.12.5"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "GHSA-8qw9-gf7w-42x5",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.727Z",
+    "Source": "SCA",
+    "Location": "streamlit:1.28.0"
+  },
+  {
+    "Severity": "CRITICAL",
+    "Name": "CVE-2019-20477",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.569Z",
+    "Source": "SCA",
+    "Location": "PyYAML:5.1"
+  },
+  {
+    "Severity": "CRITICAL",
+    "Name": "CVE-2026-26190",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.569Z",
+    "Source": "SCA",
+    "Location": "github.com/milvus-io/milvus:"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "GHSA-rvr2-r3pv-5m4p",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-20T09:45:35.692Z",
+    "Source": "SCA",
+    "Location": "oneshot:0.1.11"
+  }
+]

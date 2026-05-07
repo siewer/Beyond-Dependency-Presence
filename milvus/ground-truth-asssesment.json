@@ -1,0 +1,226 @@
+[
+  {
+    "Vulnerability": "CVE-2020-14343",
+    "Location": "PyYAML:5.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable function yaml.load(f, Loader=yaml.FullLoader) is called in tests. No usage found in production code. Max probability for dead/unreachable code is 0.02.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-1747",
+    "Location": "PyYAML:5.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable function yaml.load(f, Loader=yaml.FullLoader) is called only in tests. No usage found in production code. Max probability for dead/unreachable code is 0.02.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42474",
+    "Location": "streamlit:1.28.0",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Streamlit is used in cmd/tools/binlogv2, an internal developer tool. Not part of the production code path. Max probability for internal/tool usage is 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31812",
+    "Location": "quinn-proto:0.11.13",
+    "Original_exploitability": 0,
+    "Exploitability": 35,
+    "Exploitability_explanation": "quinn-proto is a transitive dependency of Tantivy in the core engine. Reachable from data processing paths. Significant difference from original 0%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-64513",
+    "Location": "github.com/milvus-io/milvus:",
+    "Original_exploitability": 15,
+    "Exploitability": 85,
+    "Exploitability_explanation": "This CVE is assigned to Milvus itself. By definition, it is present and reachable in core services. Exploitability is high.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-29786",
+    "Location": "github.com/expr-lang/expr:v1.15.7",
+    "Original_exploitability": 25,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Vulnerable API expr.Compile is used in /expr endpoint. Reachable but requires root authentication. Prob 0.35.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68156",
+    "Location": "github.com/expr-lang/expr:v1.15.7",
+    "Original_exploitability": 80,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Same as CVE-2025-29786. Root authentication check significantly reduces practical exploitability.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-64702",
+    "Location": "github.com/quic-go/quic-go:v0.54.0",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "quic-go is used for core network communication. Vulnerabilities are directly reachable by remote attackers.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-25727",
+    "Location": "time:0.3.44",
+    "Original_exploitability": 0,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Transitive dependency in core engine. Reachable through data paths.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-59530",
+    "Location": "github.com/quic-go/quic-go:v0.54.0",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "Network-level vulnerability in quic-go, reachable in core communication layer.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66418",
+    "Location": "urllib3:2.5.0",
+    "Original_exploitability": 1,
+    "Exploitability": 5,
+    "Exploitability_explanation": "urllib3 is only found in test requirements. No usage in core production code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66471",
+    "Location": "urllib3:2.5.0",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Only used in tests. Original 50% is highly overvalued for non-reachable code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-21441",
+    "Location": "urllib3:2.5.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Only used in tests. Not reachable in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-0994",
+    "Location": "protobuf:5.29.5",
+    "Original_exploitability": 15,
+    "Exploitability": 80,
+    "Exploitability_explanation": "Protobuf is central to Milvus inter-node communication. Highly reachable and exploitable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-25541",
+    "Location": "bytes:1.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Reachable in core engine via transitive Rust dependencies.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24051",
+    "Location": "go.opentelemetry.io/otel/sdk:v1.34.0",
+    "Original_exploitability": 0,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Telemetry SDK is reachable in active paths, though impact might be lower than core data paths.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.71.0",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "gRPC is the primary communication mechanism for Milvus. Vulnerabilities are directly reachable and critical.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.71.1",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Same as v1.71.0. Core gRPC handling is reachable and highly exploitable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33155",
+    "Location": "deepdiff:8.6.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Used only in Python client tests. No production usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32829",
+    "Location": "lz4_flex:0.11.5",
+    "Original_exploitability": 0,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Reachable in core engine via index data compression paths.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-32874",
+    "Location": "ujson:5.5.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "ujson only found in test scripts for formatting system info.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32875",
+    "Location": "ujson:5.5.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Only used in tests, not reachable in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-rhfx-m35p-ff5j",
+    "Location": "lru:0.11.1",
+    "Original_exploitability": 0,
+    "Exploitability": 50,
+    "Exploitability_explanation": "LRU cache is widely used in core services for meta/data caching. Highly reachable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-rhfx-m35p-ff5j",
+    "Location": "lru:0.12.5",
+    "Original_exploitability": 0,
+    "Exploitability": 50,
+    "Exploitability_explanation": "Same as 0.11.1. Essential caching component in reachable production paths.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-8qw9-gf7w-42x5",
+    "Location": "streamlit:1.28.0",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Used in developer tools, not part of the active core processing logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-20477",
+    "Location": "PyYAML:5.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Only reachable in tests via yaml.load(). Not confirmed in production paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26190",
+    "Location": "github.com/milvus-io/milvus:",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Self-CVE in Milvus core. Directly reachable and highly exploitable in the service.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-rvr2-r3pv-5m4p",
+    "Location": "oneshot:0.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Transitive Rust dependency used in core signaling. Reachability confirmed.",
+    "Assessment": "Incorrect"
+  }
+]

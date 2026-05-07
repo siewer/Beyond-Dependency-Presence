@@ -1,0 +1,56 @@
+﻿[
+  {
+    "Severity": "CRITICAL",
+    "Name": "CVE-2024-45337",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T17:41:57.058Z",
+    "Source": "SCA",
+    "Location": "golang.org/x/crypto:v0.24.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2025-22869",
+    "Status": "EXISTING",
+    "Exploitability": 10,
+    "Last Seen": "2026-03-19T17:41:57.060Z",
+    "Source": "SCA",
+    "Location": "golang.org/x/crypto:v0.24.0"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-58181",
+    "Status": "EXISTING",
+    "Exploitability": 40,
+    "Last Seen": "2026-03-19T17:41:57.061Z",
+    "Source": "SCA",
+    "Location": "golang.org/x/crypto:v0.24.0"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-47914",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T17:41:57.061Z",
+    "Source": "SCA",
+    "Location": "golang.org/x/crypto:v0.24.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2025-15558",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-19T17:41:57.076Z",
+    "Source": "SCA",
+    "Location": "github.com/docker/cli:v27.1.1+incompatible"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-24051",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-19T17:41:57.080Z",
+    "Source": "SCA",
+    "Location": "go.opentelemetry.io/otel/sdk:v1.28.0"
+  }
+]

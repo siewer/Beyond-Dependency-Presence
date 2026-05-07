@@ -1,0 +1,18 @@
+[
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:7.5.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Thorough search of the codebase (including UI and backend) revealed no explicit calls to vulnerable node-tar APIs (tar.x, tar.extract, tar.Parse, tar.Unpack). The library is likely a transitive dependency of build tools or not used in active code paths. Per the Evidence Mandate, exploitability is set to 1% (not confirmed).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-v8w9-8mx6-g223",
+    "Location": "hono:4.12.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Thorough search revealed no calls to hono's parseBody API, specifically with the {dot: true} constraint required for this Prototype Pollution vulnerability. Hono is only present as a peer dependency of @hono/node-server and is not imported in the user code. Per the Evidence Mandate, exploitability is set to 1% (not confirmed).",
+    "Assessment": "Correct"
+  }
+]

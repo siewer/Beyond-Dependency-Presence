@@ -1,0 +1,298 @@
+[
+  {
+    "Vulnerability": "CVE-2020-11023",
+    "Location": "jquery:3.2.1",
+    "Original_exploitability": "70%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "The top-level jQuery resolved in package-lock.json is 3.7.1 (patched). The SCA-listed version 3.2.1 is a transitive dependency not reachable from Mautic's own JS code. The app JS files do call .html()/.append() (confirmed in app/bundles/**/*.js), but these operate on the patched 3.7.1 instance. The vulnerable 3.2.1 instance is only internal to another dependency and not invocable from user-supplied data. Version 3.7.x is not in the affected range (1.0.3–3.4.x). No exploitable code path confirmed for 3.2.1.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-11022",
+    "Location": "jquery:3.2.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Same analysis as CVE-2020-11023. The top-level jQuery in package-lock.json is 3.7.1 (patched, fixed in 3.5.0). The 3.2.1 version from the XLSX is only a transitive sub-dependency not directly invocable. Mautic's own code calls jQuery methods on the deployed 3.7.1 bundle. Not exploitable via 3.2.1 path. Original 0% assessment is consistent with non-exploitability, though the true reason is version being patched at top level.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11358",
+    "Location": "jquery:3.2.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Prototype pollution via jQuery.extend(true, {}, ...) with attacker-controlled input. Fixed in jQuery 3.4.0. The top-level jQuery in lock is 3.7.1 (fully patched). The 3.2.1 version is only a transitive sub-dependency not reachable from Mautic user-code paths. Even if reached, exploitation requires passing attacker-controlled JSON with __proto__ into $.extend deep-merge, which is additionally constrained. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-28292",
+    "Location": "simple-git:3.30.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "simple-git 3.30.0 is confirmed in package-lock.json as a direct dependency (dev=false). CVE-2026-28292 is an OS command injection via case-sensitive bypass of blockUnsafeOperationsPlugin (affects 3.15.0–3.32.2). However, a thorough search of the Mautic codebase found no PHP or JS source files (outside node_modules) calling simple-git APIs (clone, pull, fetch, etc.) with user-controlled arguments. simple-git appears to be used only in the build toolchain (webpack), not at runtime in a web-accessible path. Exploitation requires the application to pass untrusted user input to simple-git operations. Without confirmed user-reachable call sites, exploitability is very low.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/helpers:7.24.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "2%",
+    "Exploitability_explanation": "CVE-2025-27789 is a ReDoS in Babel's polyfill for named capturing group .replace(). Fixed in @babel/helpers 7.26.10. The package-lock.json shows @babel/helpers resolved to 7.28.6 — a fully patched version (≥7.26.10). The XLSX-listed version 7.24.4 is a stale sub-dependency that is not the resolved version in the lockfile. Furthermore, exploitation requires: (1) compilation with a vulnerable Babel version, (2) named-capturing group regexes, and (3) untrusted input to the .replace() call. All three conditions fail given the patched build dependency. Original 15% significantly overstates exploitability.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-6485",
+    "Location": "bootstrap:3.4.1",
+    "Original_exploitability": "70%",
+    "Exploitability": "55%",
+    "Exploitability_explanation": "Bootstrap 3.4.1 is confirmed in package-lock.json and in Mautic's direct dependencies. CVE-2024-6485 is an XSS in the Bootstrap button plugin via data-loading-text/data-complete-text attributes populated with untrusted input. Mautic uses Bootstrap 3.4.1 extensively in its admin UI. Mautic is a multi-user marketing platform where admins create forms, emails, and landing pages — some form inputs could influence button states. The vulnerability requires user-supplied data to reach a Bootstrap button's data-text attributes and the button's state to be triggered. Bootstrap is used in the authenticated admin interface, reducing but not eliminating risk (attackers may be authenticated users or XSS may chain). Version is definitively vulnerable (affects ≤3.4.1), and Bootstrap JS is loaded. Exploitability is moderate-high but requires specific page structure.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:4.0.5",
+    "Original_exploitability": "50%",
+    "Exploitability": "3%",
+    "Exploitability_explanation": "CVE-2024-4067 is a ReDoS in micromatch.braces() fixed in micromatch 4.0.8. The package-lock.json shows the resolved micromatch version is 4.0.8 — the patched version. The XLSX-listed 4.0.5 is not the resolved/deployed version. Even if it were, the attack requires user-controlled input passed to micromatch.braces(), which is a build-tool utility function not exposed to HTTP requests at runtime. Version is not vulnerable. Original 50% significantly overstates exploitability.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:10.1.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "minimatch 10.1.1 is confirmed in package-lock.json. CVE-2026-26996 details are not publicly available (appears to be a future CVE), but minimatch is a glob-pattern matching build tool used internally by webpack/build pipelines. It is not accessible via web requests. No user-code calls to minimatch found in Mautic source. Build-tool-only usage means runtime exploitation path is absent. Original 0% assessment is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Same analysis as above entry. minimatch 3.0.8 is a transitive sub-dependency used internally in build tools, not reachable from web requests. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Same analysis as above entries. minimatch 9.0.5 is a transitive sub-dependency used internally in build tools. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29074",
+    "Location": "svgo:4.0.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "svgo 4.0.0 is confirmed in package-lock.json (dev=false). CVE-2026-29074 is a DoS via XML entity expansion (Billion Laughs) in SVGO's SVG parser, fixed in 4.0.1. Exploitation requires passing a maliciously crafted SVG file to the SVGO library. Mautic does have asset/media upload features, but svgo is used in webpack build pipeline for SVG optimization, not typically in the runtime web-request path for uploaded user SVGs. No confirmed runtime call to svgo.optimize() with user-uploaded SVG files found in Mautic PHP code. Build-context usage only. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "minimatch 3.0.8 transitive sub-dependency, build-tool only usage. CVE-2026-27903 is not publicly detailed but follows minimatch pattern (build-tool utility). No runtime web-accessible code paths. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Same analysis as above. minimatch 9.0.5 is a build-tool transitive dependency. No runtime exploitable path. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:10.1.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "minimatch 10.1.1 confirmed in lock. CVE-2026-27904 is not publicly detailed but follows minimatch pattern. Build-tool only usage, no runtime web-accessible call paths identified. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Same analysis. minimatch 3.0.8 transitive sub-dependency, build-tool context only. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Same analysis. minimatch 9.0.5 transitive sub-dependency, build-tool context only. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27601",
+    "Location": "underscore:1.13.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "underscore 1.13.1 was not found in the top-level node_modules in package-lock.json (only node_modules/underscore was not listed, indicating it may be a transitive dep of another package or in the GrapesJS plugin bundle). CVE-2026-27601 is not publicly detailed. Underscore is primarily a utility library used in templates/client-side logic. No confirmed user-reachable attack path through underscore in Mautic specifically identified. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27601",
+    "Location": "underscore:1.13.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Same analysis as underscore:1.13.1. CVE-2026-27601 not publicly detailed. Underscore is a utility library with no confirmed runtime web-reachable attack path in Mautic. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "ajv 6.12.6 appears as a transitive sub-dependency (the top-level ajv is 8.17.1). CVE-2025-69873 is not publicly documented (appears future/speculative). ajv is a JSON schema validator used internally in build tools (webpack, babel). No user-controllable input reaches ajv's validation calls in Mautic's runtime web path. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.17.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "ajv 8.17.1 confirmed in package-lock.json (dev=false). CVE-2025-69873 is not publicly documented. ajv is a JSON schema validator used primarily in webpack/build tools. No confirmed runtime web-accessible call site where user input reaches ajv validation in Mautic. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "glob:10.3.12",
+    "Original_exploitability": "50%",
+    "Exploitability": "2%",
+    "Exploitability_explanation": "CVE-2025-64756 is an OS command injection in glob CLI using the -c/--cmd option, affecting versions 10.2.0–10.5.0 and 11.0.x–11.1.0. The package-lock.json shows the resolved glob version is 13.0.0 — which is outside the affected range. The SCA-listed 10.3.12 version is not the deployed top-level version. Furthermore, even if it were 10.x, the vulnerability is CLI-specific (requires invoking glob binary with --cmd flag), not exploitable via runtime web API calls. Original 50% significantly overstates exploitability.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.3.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "flatted 3.3.1 confirmed in package-lock.json (dev=false — deployed at runtime). CVE-2026-32141 is a DoS via uncontrolled recursion in flatted.parse() when processing deeply nested circular JSON, fixed in 3.4.0. Flatted is used by webpack/build tools internally for circular JSON serialization/deserialization, typically not with user-supplied HTTP request data at runtime. No confirmed web-reachable code path where user-submitted JSON is parsed through flatted.parse() in Mautic's web handlers. Build-context usage only. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-28343",
+    "Location": "@ckeditor/ckeditor5-html-support:47.4.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "75%",
+    "Exploitability_explanation": "CVE-2026-28343 is an XSS in CKEditor 5's General HTML Support (GHS) when configured with an 'unsafe' allowAll configuration, fixed in 47.6.0. Critical finding: Mautic's plugins/GrapesJsBuilderBundle/Assets/library/js/builder.service.js (line 795-801) explicitly configures htmlSupport.allow = [{name: /.*/, attributes: true, classes: true, styles: true}] — the broadest possible unsafe configuration allowing ALL HTML tags and ALL attributes. This is the exact vulnerable configuration. The CKEditor 5 version is 47.4.0 (confirmed in package.json). The editor is used for email and landing page content creation in the authenticated admin interface. Authenticated users (including those with lower privileges) can inject XSS payloads via the CKEditor, which get stored and served to other users. All constraints satisfied: vulnerable version, unsafe GHS config, user interaction with editor.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-28343",
+    "Location": "ckeditor5:47.4.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "75%",
+    "Exploitability_explanation": "Same analysis as @ckeditor/ckeditor5-html-support:47.4.0 above. The ckeditor5 meta-package 47.4.0 includes the vulnerable GHS plugin, and Mautic's builder.service.js explicitly enables the broadest 'unsafe' htmlSupport configuration (allow all tags and attributes). Version 47.4.0 is confirmed in package-lock.json. All constraints for CVE-2026-28343 exploitation are satisfied. Original 0% severely underestimates exploitability.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:7.5.7",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "tar 7.5.7 confirmed in package-lock.json (dev=false). CVE-2026-29786 is a path traversal via drive-relative hardlink targets (C:../...) in node-tar, fixed in 7.5.10. Exploitation requires the application to extract a maliciously crafted tar archive from an untrusted source. In Mautic, tar is used in npm build workflows (npm install, package extraction). No confirmed runtime web-accessible path where user-submitted tar archives are extracted server-side using the node-tar library. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32313",
+    "Location": "robrichards/xmlseclibs:3.1.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "20%",
+    "Exploitability_explanation": "robrichards/xmlseclibs 3.1.4 is confirmed in Mautic's PHP composer dependencies. CVE-2026-32313 is a cryptographic flaw where AES-GCM authentication tag length is not validated, allowing brute-force of GHASH key and forgery of ciphertexts, fixed in 3.1.5. Mautic uses xmlseclibs for SAML authentication (confirmed in UserBundle/Security/SAML). The vulnerability specifically affects XML encryption operations using AES-GCM algorithms. The critical constraint is whether Mautic's SAML integration actually uses AES-GCM for XML encryption. Search of Mautic's SAML code shows use of XMLSecurityKey (for RSA signing/verification), but no confirmed explicit use of XMLSecEnc or AES-GCM encryption algorithms was found. SAML in Mautic appears to use RSA key for assertion signing rather than AES-GCM encryption. Without confirmed AES-GCM encryption usage, exploitability is low but non-trivial given the library is version-vulnerable and SAML is network-accessible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:7.5.7",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "tar 7.5.7 confirmed in package-lock.json. CVE-2026-26960 is a path traversal via chained symlinks in tar extraction, fixed in 7.5.8. Exploitation requires victim to extract an attacker-supplied malicious tar archive. No runtime web handler in Mautic found that extracts user-submitted tar archives via node-tar. Build-tool context usage only. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-67898",
+    "Location": "mjml:4.15.3",
+    "Original_exploitability": "60%",
+    "Exploitability": "40%",
+    "Exploitability_explanation": "CVE-2025-67898 is a directory traversal in MJML's mj-include feature (incomplete fix for CVE-2020-12827), affecting versions through 4.18.0. The vulnerability allows reading arbitrary files (especially CSS via type='css') from the server. Mautic 7.x uses MJML for email template rendering (confirmed in builder.service.js — initEmailMjml() is called). The GrapesJS MJML plugin processes MJML content, including potential mj-include directives. mjml:4.15.3 is within the affected range. However, the critical constraint is whether end-user submitted MJML templates (with mj-include directives) are processed server-side. In Mautic, MJML appears to be processed client-side in the browser builder, not server-side. If processing is client-side only, server-side file read is not possible. The 60% original score appears to slightly overstate if client-side rendering is used, but is plausible if any server-side MJML processing occurs in email sending/preview.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": "0%",
+    "Exploitability": "2%",
+    "Exploitability_explanation": "brace-expansion 1.1.11 is listed in XLSX, but the package-lock.json resolves brace-expansion to 1.1.12 (the patched version, marked dev=true). The locked version is already patched (fixed in 1.1.12). CVE-2025-5889 is a ReDoS in brace-expansion's expand() function with high attack complexity and CVSS 3.1 (Low). Even at version 1.1.11, brace-expansion is a build-tool utility, and the vulnerability requires specially crafted input to the expand() function which is not exposed to web requests. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:7.5.7",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "tar 7.5.7 confirmed in package-lock.json. CVE-2026-31802 is a path traversal via drive-relative symlink targets in node-tar, fixed in 7.5.11. Exploitation requires processing of maliciously crafted tar archives from untrusted sources. No runtime web handler in Mautic identified that processes user-submitted tar archives via node-tar. Build-tool only usage. Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:7.0.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "diff 7.0.0 is confirmed in package-lock.json (dev=false), but further investigation shows it is a dependency of mocha (test framework), not a production runtime dependency. CVE-2026-24001 details are not publicly documented; the 'diff' library is used for text diff computation, primarily in dev/test tooling. No runtime web-accessible code path in Mautic where user input is processed through diff was found. LOW severity rating further limits exploitability. My assessed exploitability of 10% vs original 15% falls within the 20 percentage point tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-56648",
+    "Location": "@parcel/reporter-dev-server:2.12.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "CVE-2025-56648 is an Origin Validation Error (CORS) in Parcel's development server, which sets Access-Control-Allow-Origin: * and fails to properly validate Origin/Host headers. This is strictly a development-time vulnerability — exploitation requires a developer to visit a malicious website while their local Parcel dev server is running. @parcel/reporter-dev-server is a dev dependency used only during development (npm run dev/build — webpack). In production Mautic deployments, this dev server is never running. The attack targets developer machines, not production servers or end users. Original 50% (MEDIUM severity applied to runtime exploitability) overstates the threat since it only affects developer environments, not end-user production deployments.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "serialize-javascript 6.0.2 confirmed in package-lock.json (dev=false as transitive dep). GHSA-5c6j-r48x-rmvq is a code injection vulnerability where serialize() improperly handles RegExp.flags/Date.toISOString() properties, allowing injected JS to execute if the serialized output is later eval()'d. The vulnerability is primarily a supply-chain/build-time risk when serialize-javascript is used in webpack plugins (e.g., copy-webpack-plugin). In Mautic, this is used in the webpack build process. serialize-javascript is not called at runtime in HTTP request handling — the serialized output is compiled into static JS bundles. If an attacker can inject malicious packages into the build environment, this could run at compile time, but this is an extremely constrained supply-chain scenario. Fixed in 6.0.3 (or 7.0.3). Original 0% is consistent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.14.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "qs 6.14.1 confirmed in package-lock.json (dev=true — development dependency). CVE-2026-2391 is a DoS via arrayLimit bypass when comma:true option is configured, fixed in 6.14.2. The qs library is a query string parser. Being a dev dependency (dev=true), it is not included in production deployments. Additionally, the vulnerability requires explicit configuration of the comma:true option, which is non-default. Even in dev context, no confirmed user-reachable attack path where qs is called with comma:true. Original 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37620",
+    "Location": "html-minifier:4.0.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "html-minifier 4.0.0 is not present in the top-level package-lock.json (absent from resolved packages), indicating it is a deeply nested transitive sub-dependency of build tooling. CVE-2022-37620 is a ReDoS in html-minifier's regex patterns triggered when malformed HTML is passed to minify(). No runtime web handler in Mautic where user-submitted HTML is passed to html-minifier.minify() was found — it is exclusively a build-time optimization tool. My assessed exploitability of 10% vs original 15% falls within the 20 percentage point tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-1647",
+    "Location": "bootstrap:3.4.1",
+    "Original_exploitability": "8%",
+    "Exploitability": "20%",
+    "Exploitability_explanation": "Bootstrap 3.4.1 is confirmed in package-lock.json and Mautic's direct dependencies. CVE-2025-1647 is an XSS in Bootstrap's Tooltip and Popover components via unsanitized 'title' attribute. Code search confirms Bootstrap data-toggle=tooltip is used extensively across Mautic Twig templates. Some tooltip titles are dynamic variables (e.g., label_tooltip in _tag.html.twig) that could carry user-controlled data. Bootstrap 3.4.x is EOL (no official patch). Attack Complexity is High per NVD (specific user interaction needed to trigger tooltip). My assessed exploitability of 20% vs original 8% represents a 12 percentage point difference, within the 20 percentage point tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:10.1.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "minimatch 10.1.1 confirmed in package-lock.json. CVE-2026-27903 is not publicly documented but follows minimatch pattern (build tool). minimatch is used internally in webpack/build tools and is not accessible via web requests. No user-reachable code path found. Original 0% is consistent.",
+    "Assessment": "Correct"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "Vulnerability": "CVE-2024-45337",
+    "Location": "golang.org/x/crypto:v0.24.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Thorough search of the codebase (excluding vendor) revealed no explicit calls to `ServerConfig.PublicKeyCallback` or any other vulnerable APIs from `golang.org/x/crypto/ssh`. The application uses the system `ssh` binary via `exec.Command` instead of the library for SSH tunneling. As per rule: IF NO explicit call is found, probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22869",
+    "Location": "golang.org/x/crypto:v0.24.0",
+    "Original_exploitability": 10,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit calls to `golang.org/x/crypto/ssh` APIs (e.g., `Dial`, `NewClient`) found in active code paths. The library is an indirect dependency not utilized by the user code. As per rule: IF NO explicit call is found, probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58181",
+    "Location": "golang.org/x/crypto:v0.24.0",
+    "Original_exploitability": 40,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability requires an SSH server configured for GSSAPI authentication. Lazydocker is a client-side TUI and does not implement an SSH server or call GSSAPI-related functions from `golang.org/x/crypto/ssh`. As per rule: IF NO explicit call is found, probability is 0.01 (1%). Difference (39%) exceeds the 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-47914",
+    "Location": "golang.org/x/crypto:v0.24.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit calls to `ForwardToAgent` or `ServeAgent` from `golang.org/x/crypto/ssh/agent` found in the codebase. As per rule: IF NO explicit call is found, probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15558",
+    "Location": "github.com/docker/cli:v27.1.1+incompatible",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability resides in `github.com/docker/cli/cli-plugins/manager`. While Lazydocker uses some configuration components from `docker/cli`, it does not import or use the plugin manager. As per rule: IF NO explicit call is found, probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24051",
+    "Location": "go.opentelemetry.io/otel/sdk:v1.28.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability in `otel/sdk` resource detection. Lazydocker does not use OpenTelemetry SDK for resource detection or call any tracing/metric APIs from this package in its source code. As per rule: IF NO explicit call is found, probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  }
+]

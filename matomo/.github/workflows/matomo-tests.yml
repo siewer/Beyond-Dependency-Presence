@@ -1,0 +1,158 @@
+# Action for running tests
+# This file has been automatically created.
+# To recreate it you can run this command
+# ./console generate:test-action --php-versions="7.2,8.2"
+
+name: Matomo Tests
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+  push:
+    branches:
+      - '**.x-dev'
+      - 'next_release'
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      is_preview:
+        type: boolean
+        required: false
+        default: false
+      ref:
+        type: string
+        required: false
+        default: ''
+    secrets:
+      ARTIFACTS_PASS:
+        required: false
+      TESTOMATIO_INTEGRATION:
+        required: false
+  schedule:
+    # Run every 2 hours from Saturday 00:00 (Germany) until Sunday 16:00 (Germany)
+    # Germany assumed CET (UTC+1):
+    # - Start: Sat 00:00 DE  -> Fri 23:00 UTC
+    # - End:   Sun 16:00 DE -> Sun 15:00 UTC
+    #
+    # Friday 23:00 UTC (Sat 00:00 DE)
+    - cron: "0 23 * * 5"
+    # All odd hours on Saturday UTC: 01,03,...,23
+    - cron: "0 1-23/2 * * 6"
+    # Sunday UTC hours: 01,03,05,07,09,11,13,15 (up to 16:00 DE)
+    - cron: "0 1-15/2 * * 0"
+permissions:
+  actions: read
+  checks: none
+  contents: read
+  deployments: none
+  issues: read
+  packages: none
+  pull-requests: read
+  repository-projects: none
+  security-events: none
+  statuses: none
+
+concurrency:
+  group: php-${{ inputs.ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  PHP:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: ${{ inputs.is_preview == true }}
+      matrix:
+        type: [ 'UnitTests', 'SystemTestsPlugins', 'SystemTestsCore', 'IntegrationTestsCore', 'IntegrationTestsPlugins' ]
+        environment:
+          - php: '7.2'
+            adapter: 'PDO_MYSQL'
+            mysql-engine: 'Mysql'
+            mysql-version: '5.7'
+          - php: '8.2'
+            adapter: 'PDO_MYSQL'
+            mysql-engine: 'Mariadb'
+            mysql-version: '11.4'
+          - php: '8.5'
+            adapter: 'MYSQLI'
+            mysql-engine: 'Mysql'
+            mysql-version: '8.0'
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          lfs: false
+          persist-credentials: false
+          submodules: true
+          path: matomo
+          ref: ${{ inputs.ref || github.ref }}
+      - name: running tests
+        uses: matomo-org/github-action-tests@main
+        with:
+          test-type: ${{ matrix.type }}
+          mysql-driver: ${{ matrix.environment.adapter }}
+          mysql-engine: ${{ matrix.environment.mysql-engine }}
+          mysql-version: ${{ matrix.environment.mysql-version }}
+          php-version: ${{ matrix.environment.php }}
+          redis-service: true
+          artifacts-pass: ${{ secrets.ARTIFACTS_PASS }}
+          upload-artifacts: ${{ matrix.environment.php == '7.2' }}
+          testomatio: ${{ secrets.TESTOMATIO_INTEGRATION }}
+          testomatio-force-report: ${{ contains('schedule,push', github.event_name) && github.run_attempt < 2 }}
+  Javascript:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          lfs: false
+          persist-credentials: false
+          submodules: true
+          path: matomo
+          ref: ${{ inputs.ref || github.ref }}
+      - name: running tests
+        uses: matomo-org/github-action-tests@main
+        with:
+          test-type: 'JS'
+          php-version: '7.2'
+          node-version: '12'
+  Client:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          lfs: false
+          persist-credentials: false
+          submodules: true
+          path: matomo
+          ref: ${{ inputs.ref || github.ref }}
+      - name: running tests
+        uses: matomo-org/github-action-tests@main
+        with:
+          test-type: 'Client'
+          node-version: '16'
+          mysql-service: false
+  UI:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: ${{ inputs.is_preview == true }}
+      matrix:
+        parts: [ 0,1,2,3 ]
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          lfs: true
+          persist-credentials: false
+          submodules: true
+          path: matomo
+          ref: ${{ inputs.ref || github.ref }}
+      - name: running tests
+        uses: matomo-org/github-action-tests@main
+        with:
+          ui-test-options: '--num-test-groups=4 --test-group=${{ matrix.parts }}'
+          test-type: 'UI'
+          php-version: '7.2'
+          node-version: '16'
+          redis-service: true
+          artifacts-pass: ${{ secrets.ARTIFACTS_PASS }}
+          upload-artifacts: true
+          testomatio: ${{ secrets.TESTOMATIO }}

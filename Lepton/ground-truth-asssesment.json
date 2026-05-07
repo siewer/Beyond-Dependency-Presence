@@ -1,0 +1,1186 @@
+[
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:0.5.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency json5 found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-29078",
+    "Location": "ejs:3.1.6",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency ejs found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-32804",
+    "Location": "tar:2.2.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:1.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency json5 found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:2.1.3",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency json5 found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:2.2.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency json5 found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-5217",
+    "Location": "electron:13.1.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u2705 confirmed usage as core framework. CVE-2023-5217 involves many components of the framework.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-24785",
+    "Location": "moment:2.26.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "API call NOT confirmed. Thorough search for 'moment.locale()' returned no results. Vulnerable function is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-3918",
+    "Location": "json-schema:0.2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency json-schema found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33623",
+    "Location": "trim-newlines:1.0.0",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency trim-newlines found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42461",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 50,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency elliptic found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-37603",
+    "Location": "loader-utils:1.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37603",
+    "Location": "loader-utils:2.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-39353",
+    "Location": "xmldom:0.5.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency xmldom found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7733",
+    "Location": "ua-parser-js:0.7.21",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency ua-parser-js found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:1.2.5",
+    "Original_exploitability": 7,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency minimist found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23406",
+    "Location": "degenerator:2.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency degenerator found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23406",
+    "Location": "pac-resolver:4.2.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency pac-resolver found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-21803",
+    "Location": "nconf:0.11.2",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency nconf found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-33883",
+    "Location": "ejs:3.1.6",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency ejs found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15138",
+    "Location": "prismjs:1.20.0",
+    "Original_exploitability": 25,
+    "Exploitability": 45.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in app/utilities/jupyterNotebook/index.js. Dynamic component loading and highlighting of notebook content satisfy constraints. [index.js:2, 7]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47875",
+    "Location": "dompurify:2.2.9",
+    "Original_exploitability": 50,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency dompurify found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-21670",
+    "Location": "markdown-it:12.0.6",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency markdown-it found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0235",
+    "Location": "node-fetch:1.7.3",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency node-fetch found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38900",
+    "Location": "decode-uri-component:0.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency decode-uri-component found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency semver found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.7.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency semver found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:6.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency semver found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency semver found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.3.5",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency semver found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-37890",
+    "Location": "ws:7.4.6",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency ws found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-33987",
+    "Location": "got:9.6.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency got found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:4.17.15",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency lodash found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25758",
+    "Location": "scss-tokenizer:0.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23341",
+    "Location": "prismjs:1.20.0",
+    "Original_exploitability": 15,
+    "Exploitability": 45.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in app/utilities/jupyterNotebook/index.js. Dynamic component loading and highlighting of notebook content satisfy constraints. [index.js:2, 7]",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-3807",
+    "Location": "ansi-regex:3.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency ansi-regex found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.5.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency qs found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:3.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency cross-spawn found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-21680",
+    "Location": "marked:2.0.7",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency marked found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-21681",
+    "Location": "marked:2.0.7",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency marked found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-46234",
+    "Location": "browserify-sign:4.2.1",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency browserify-sign found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency minimatch found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:2.2.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-46993",
+    "Location": "electron:13.1.2",
+    "Original_exploitability": 20,
+    "Exploitability": 25.0,
+    "Exploitability_explanation": "\u2705 confirmed usage as core framework. CVE-2024-46993 involves many components of the framework.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33502",
+    "Location": "normalize-url:4.5.0",
+    "Original_exploitability": 50,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency normalize-url found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7774",
+    "Location": "y18n:4.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency y18n found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-39698",
+    "Location": "electron-updater:4.3.1",
+    "Original_exploitability": 75,
+    "Exploitability": 85.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in main.js (autoUpdater.checkForUpdates()). High probability due to active update mechanism. [main.js:132, 200]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.88.2",
+    "Original_exploitability": 30,
+    "Exploitability": 35.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in package.json. Library is used for GitHub Gist API communication. Redirect following constraints are likely satisfied.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-23647",
+    "Location": "prismjs:1.20.0",
+    "Original_exploitability": 50,
+    "Exploitability": 45.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in app/utilities/jupyterNotebook/index.js. Dynamic component loading and highlighting of notebook content satisfy constraints. [index.js:2, 7]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:4.1.1",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency debug found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23362",
+    "Location": "hosted-git-info:2.8.8",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency hosted-git-info found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6547",
+    "Location": "pbkdf2:3.1.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency pbkdf2 found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-32796",
+    "Location": "xmldom:0.5.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency xmldom found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23566",
+    "Location": "nanoid:3.1.23",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency nanoid found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-32723",
+    "Location": "prismjs:1.20.0",
+    "Original_exploitability": 70,
+    "Exploitability": 50.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in app/utilities/jupyterNotebook/index.js. Dynamic component loading and highlighting of notebook content satisfy constraints. [index.js:2, 7]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-21718",
+    "Location": "electron:13.1.2",
+    "Original_exploitability": 50,
+    "Exploitability": 25.0,
+    "Exploitability_explanation": "\u2705 confirmed usage as core framework. CVE-2022-21718 involves many components of the framework.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-28863",
+    "Location": "tar:2.2.2",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-29257",
+    "Location": "electron:13.1.2",
+    "Original_exploitability": 15,
+    "Exploitability": 25.0,
+    "Exploitability_explanation": "\u2705 confirmed usage as core framework. CVE-2022-29257 involves many components of the framework.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-26791",
+    "Location": "dompurify:2.2.9",
+    "Original_exploitability": 5,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency dompurify found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-24025",
+    "Location": "node-sass:4.14.1",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-37713",
+    "Location": "tar:2.2.2",
+    "Original_exploitability": 50,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-42282",
+    "Location": "ip:1.1.5",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency ip found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.2.1",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency tmp found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency minimatch found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.15",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency lodash found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency lodash found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-39956",
+    "Location": "electron:13.1.2",
+    "Original_exploitability": 50,
+    "Exploitability": 25.0,
+    "Exploitability_explanation": "\u2705 confirmed usage as core framework. CVE-2023-39956 involves many components of the framework.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-26115",
+    "Location": "word-wrap:1.2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency word-wrap found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-39184",
+    "Location": "electron:13.1.2",
+    "Original_exploitability": 8,
+    "Exploitability": 25.0,
+    "Exploitability_explanation": "\u2705 confirmed usage as core framework. CVE-2021-39184 involves many components of the framework.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7788",
+    "Location": "ini:1.3.5",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency ini found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-29247",
+    "Location": "electron:13.1.2",
+    "Original_exploitability": 15,
+    "Exploitability": 25.0,
+    "Exploitability_explanation": "\u2705 confirmed usage as core framework. CVE-2022-29247 involves many components of the framework.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-27292",
+    "Location": "ua-parser-js:0.7.21",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency ua-parser-js found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:2.3.3",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency form-data found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:3.0.1",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency form-data found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:6.12.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23343",
+    "Location": "path-parse:1.0.6",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency path-parse found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7760",
+    "Location": "codemirror:5.54.0",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency codemirror found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3807",
+    "Location": "ansi-regex:4.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency ansi-regex found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3807",
+    "Location": "ansi-regex:5.0.0",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency ansi-regex found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3801",
+    "Location": "prismjs:1.20.0",
+    "Original_exploitability": 15,
+    "Exploitability": 45.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in app/utilities/jupyterNotebook/index.js. Dynamic component loading and highlighting of notebook content satisfy constraints. [index.js:2, 7]",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-27303",
+    "Location": "app-builder-lib:22.11.7",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency app-builder-lib found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency braces found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:3.0.2",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency braces found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25881",
+    "Location": "http-cache-semantics:4.1.0",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency http-cache-semantics found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29415",
+    "Location": "ip:1.1.5",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency ip found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37601",
+    "Location": "loader-utils:1.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37601",
+    "Location": "loader-utils:2.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:2.5.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency tough-cookie found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:4.0.0",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency tough-cookie found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37599",
+    "Location": "loader-utils:1.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7746",
+    "Location": "chart.js:1.1.1",
+    "Original_exploitability": 35,
+    "Exploitability": 35.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in app/containers/dashboard/index.js. Radar chart uses user-provided gist tags as labels, fulfilling possible prototype pollution vector. [index.js:61]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37599",
+    "Location": "loader-utils:2.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25858",
+    "Location": "terser:4.7.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25858",
+    "Location": "terser:4.8.0",
+    "Original_exploitability": 8,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-28500",
+    "Location": "lodash:4.17.15",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency lodash found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-31129",
+    "Location": "moment:2.26.0",
+    "Original_exploitability": 25,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "API call NOT confirmed. Thorough search for 'moment.locale()' returned no results. Vulnerable function is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6545",
+    "Location": "pbkdf2:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency pbkdf2 found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash:4.17.15",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency lodash found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22912",
+    "Location": "plist:3.0.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency plist found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7793",
+    "Location": "ua-parser-js:0.7.21",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency ua-parser-js found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-48910",
+    "Location": "dompurify:2.2.9",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency dompurify found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:6.5.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency qs found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-55565",
+    "Location": "nanoid:3.1.23",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency nanoid found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45801",
+    "Location": "dompurify:2.2.9",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency dompurify found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-48949",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency elliptic found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:8.3.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-9287",
+    "Location": "cipher-base:1.0.4",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency cipher-base found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "@babel/traverse:7.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency @babel/traverse found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "babel-traverse:6.26.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency babel-traverse found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42460",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency elliptic found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-48948",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 50,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency elliptic found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-29198",
+    "Location": "electron:13.1.2",
+    "Original_exploitability": 5,
+    "Exploitability": 25.0,
+    "Exploitability_explanation": "\u2705 confirmed usage as core framework. CVE-2023-29198 involves many components of the framework.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.10",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency micromatch found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.10.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency @babel/runtime found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.14.5",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency @babel/runtime found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime-corejs2:7.14.5",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency @babel/runtime-corejs2 found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime-corejs3:7.10.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency @babel/runtime-corejs3 found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44402",
+    "Location": "electron:13.1.2",
+    "Original_exploitability": 15,
+    "Exploitability": 25.0,
+    "Exploitability_explanation": "\u2705 confirmed usage as core framework. CVE-2023-44402 involves many components of the framework.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:6.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency cross-spawn found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency cross-spawn found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42459",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency elliptic found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-36077",
+    "Location": "electron:13.1.2",
+    "Original_exploitability": 40,
+    "Exploitability": 25.0,
+    "Exploitability_explanation": "\u2705 confirmed usage as core framework. CVE-2022-36077 involves many components of the framework.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-9288",
+    "Location": "sha.js:2.4.11",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency sha.js found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-53382",
+    "Location": "prismjs:1.20.0",
+    "Original_exploitability": 15,
+    "Exploitability": 45.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in app/utilities/jupyterNotebook/index.js. Dynamic component loading and highlighting of notebook content satisfy constraints. [index.js:2, 7]",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:3.2.6",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency debug found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:2.2.2",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency minimatch found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency minimatch found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33228",
+    "Location": "flatted:3.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency flatted found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency js-yaml found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency js-yaml found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency flatted found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:4.12.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency bn.js found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:5.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency bn.js found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.6.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency brace-expansion found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:2.2.2",
+    "Original_exploitability": 50,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:2.2.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:2.2.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 15,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency elliptic found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:2.2.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or Build Tools (node_modules/devDependencies). No direct User Code paths found. [Max Probability: 0.10 rule applied]",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:1.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency @tootallnate/once found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55305",
+    "Location": "electron:13.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 25.0,
+    "Exploitability_explanation": "\u2705 confirmed usage as core framework. CVE-2025-55305 involves many components of the framework.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-vjh7-7g9h-fjfh",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency elliptic found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5ff8-jcf9-fw62",
+    "Location": "markdown-it-katex:2.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency markdown-it-katex found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:4.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Transitive dependency serialize-javascript found in lockfile but no explicit direct calls found in user code. Max assessment capped at 0.15.",
+    "Assessment": "Correct"
+  }
+]

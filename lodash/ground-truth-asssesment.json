@@ -1,0 +1,898 @@
+[
+  {
+    "Vulnerability": "CVE-2021-32804",
+    "Location": "tar:4.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "The vulnerable 'tar' library is a transitive dependency of 'fsevents' via 'node-pre-gyp', used only during native module installation. No direct usage of 'tar' API found in either lodash source or build scripts. Probability is low as it triggers only during installation of specific dev dependencies.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11023",
+    "Location": "jquery:3.4.1",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-19919",
+    "Location": "handlebars:4.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Handlebars is used by documentation tools like 'docdown'. It is not used in the runtime library. Prototype pollution via templates is not reachable by end-users of the library.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11022",
+    "Location": "jquery:3.4.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Similar to CVE-2020-11023, jQuery is used in tests. Original score of 0% is slightly low given the version is vulnerable, but assessment remains 'Correct' within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:0.5.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "JSON5 is a transitive dependency of build tools. No direct usage of 'JSON5.parse' found in lodash. Probability of exploitation is negligible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37601",
+    "Location": "loader-utils:0.2.17",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable 'parseQuery' function in 'loader-utils' is used by Webpack during the build process. Not used at runtime or in reachable code paths for users.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-2515",
+    "Location": "hawk:1.1.1",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:2.3.4",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Tough-cookie is a dependency of 'request'. No usage of CookieJar with vulnerable configuration found. 0% is accurate for no usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:2.4.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23383",
+    "Location": "handlebars:4.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Handlebars is used only in build-time documentation tools. No reachability in production code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10744",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 50,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash:4.17.14",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash.pick:4.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23450",
+    "Location": "dojo:1.15.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Dojo is a devDependency. No usage of 'dojo.setObject' or 'dojo.getObject' found in the repository codebase. Reachability is near zero.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23369",
+    "Location": "handlebars:4.1.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "Handlebars is used only for documentation generation. RCE risk is limited to the build environment and is not reachable by end-users.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3728",
+    "Location": "hoek:2.16.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-16487",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-5258",
+    "Location": "dojo:1.15.0",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:6.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "qs is a devDependency used in documentation tools. 0% is accurate as it is not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:6.5.2",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Same as above. qs is used in build/doc tools and is not reachable at runtime.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3918",
+    "Location": "json-schema:0.2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Prototype pollution in json-schema is a transitive dependency of dev tools. No usage found in production code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23358",
+    "Location": "underscore:1.6.0",
+    "Original_exploitability": 2,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Underscore is present in the 'vendor/' directory for historical reference but is not required by the lodash library itself. Vulnerable template API is not reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:0.0.10",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Minimist is used for parsing CLI arguments in dev tools but is not part of the runtime library.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Same as above. Minimest is used in dev-time scripts.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:1.2.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Same as above. No production reachability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36604",
+    "Location": "hoek:0.9.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Hoek is a transitive devDependency. No usage found in production code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36604",
+    "Location": "hoek:2.16.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Same as above. No reachable usage of 'hoek.clone'.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8244",
+    "Location": "bl:0.9.5",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "'bl' (BufferList) is a transitive dependency of 'request', which is a devDependency. Not used in lodash code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:4.17.14",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:4.17.20",
+    "Original_exploitability": 50,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-43138",
+    "Location": "async:2.6.3",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7751",
+    "Location": "pathval:0.1.1",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Prototype pollution in pathval is not reachable as the library is a transitive devDependency and not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.5.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in semver affects dev-time tools. No usage of semver range parsing found in the production library.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16026",
+    "Location": "request:2.42.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Vulnerable request version is used only as a devDependency. No production code path using request body with numeric types.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45311",
+    "Location": "fsevents:1.2.2",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-1000048",
+    "Location": "qs:1.2.2",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Old version of qs is a transitive dependency of dev tools. Not reachable in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7774",
+    "Location": "y18n:3.2.1",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in minimatch affects glob-based file searches during build. Not reachable in production code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16138",
+    "Location": "mime:1.2.11",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.79.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Request is a devDependency. SSRF via redirects is not reachable in production code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.88.0",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-20920",
+    "Location": "handlebars:4.1.2",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23362",
+    "Location": "hosted-git-info:2.6.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in hosted-git-info affects dev-time tools fetching from git. Not reachable in runtime library.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16487",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-28863",
+    "Location": "tar:4.4.10",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "Tar is an install-time dependency. 5% is accurate for limited reachability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-37713",
+    "Location": "tar:4.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "Same as above. Limited reachability during installation only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38999",
+    "Location": "requirejs:2.3.6",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "RequireJS is a devDependency used for AMD build testing. No production reachability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-20922",
+    "Location": "handlebars:4.1.2",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-10775",
+    "Location": "ecstatic:2.2.2",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-32067",
+    "Location": "semver:5.5.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in semver affects dev tools. No production reachability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10777",
+    "Location": "json-schema:0.2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Prototype pollution in json-schema is a transitive devDependency. Not reachable in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-8851",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-13863",
+    "Location": "mongodb:2.2.33",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "MongoDB is not used in the library. This is a transitive dev dependency for testing purposes only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-r68p-8ph6-pwp6",
+    "Location": "minimist:0.0.10",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Prototype pollution in minimist (devDependency) is not reachable in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-rh72-76rj-g6px",
+    "Location": "minimist:0.0.10",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Same as above. No production reachability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3801",
+    "Location": "ajv:6.10.2",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in AJV (devDependency) is not reachable in production lib.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3721",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-28500",
+    "Location": "lodash:4.17.14",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-3721",
+    "Location": "lodash.merge:4.6.0",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-21502",
+    "Location": "ajv:6.10.2",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Uninitialized variable vulnerability in a core package is not applicable to lodash which does not use AJV at runtime.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3918",
+    "Location": "json-schema:0.2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Prototype pollution in json-schema is a transitive devDependency. Not reachable in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3721",
+    "Location": "lodash.merge:4.6.1",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-10744",
+    "Location": "lodash:4.17.11",
+    "Original_exploitability": 50,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "babel-traverse:6.26.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "Arbitrary code execution in babel-traverse affects compilation of untrusted code. Not reachable in runtime lodash.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-29078",
+    "Location": "ejs:3.1.6",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7768",
+    "Location": "grpc:1.24.2",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7768",
+    "Location": "grpc:1.24.4",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7662",
+    "Location": "handlebars:4.1.2",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "Evidence Mandate: Search failed to find any explicit calls to the vulnerable API in the codebase (including tests/scripts). Transitive devDependency is not reachable from production. Methodology requires 0.00-0.02 probability for absent APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-16487",
+    "Location": "lodash:4.17.10",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-16487",
+    "Location": "lodash.merge:4.6.0",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.7.1",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in semver affects dev-time tools. No production reachability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32067",
+    "Location": "semver:5.7.1",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Same as above. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:6.3.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in semver affects dev-time tools. No production reachability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32067",
+    "Location": "semver:6.3.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Same as above. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.0.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in semver affects dev-time tools. No production reachability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23362",
+    "Location": "hosted-git-info:2.7.1",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in hosted-git-info affects dev-time tools. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3801",
+    "Location": "ajv:6.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in AJV (devDependency) is not reachable in production lib.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21502",
+    "Location": "ajv:6.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Uninitialized variable vulnerability in AJV affects dev-time tools only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32067",
+    "Location": "semver:7.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in semver affects dev tools. No production reachability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.4.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in semver affects dev tools. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32067",
+    "Location": "semver:7.4.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Same as above. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.5.1",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in semver affects dev tools. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32067",
+    "Location": "semver:7.5.1",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Same as above. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.5.2",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in semver affects dev tools. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32067",
+    "Location": "semver:7.5.2",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Same as above. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16487",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": 50,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-3918",
+    "Location": "json-schema:0.2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Prototype pollution in json-schema affects dev-time tools. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3721",
+    "Location": "lodash.merge:4.6.0",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in minimatch affects dev tools. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in minimatch affects dev-time glob processing. No production reachability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3918",
+    "Location": "json-schema:0.2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Prototype pollution in json-schema is a transitive devDependency. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21502",
+    "Location": "ajv:6.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Uninitialized variable in AJV (devDependency) does not affect production code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3721",
+    "Location": "lodash.merge:4.6.1",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.5.3",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in semver affects dev-time tools. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32067",
+    "Location": "semver:7.5.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Same as above. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.5.4",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in semver affects dev-time tools. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32067",
+    "Location": "semver:7.5.4",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Same as above. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23362",
+    "Location": "hosted-git-info:2.8.5",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in hosted-git-info affects dev tools. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23358",
+    "Location": "underscore:1.9.1",
+    "Original_exploitability": 2,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Underscore is a dev-time dependency (vendor). Vulnerable template API is not reachable from lodash production code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.4.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in semver affects dev-time tools. No production reachability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3918",
+    "Location": "json-schema:0.2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Prototype pollution in json-schema is a transitive devDependency. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23362",
+    "Location": "hosted-git-info:3.0.7",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in hosted-git-info affects dev tools. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16487",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": 50,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-3721",
+    "Location": "lodash.merge:4.6.0",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in minimatch affects dev tools. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:6.3.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in semver affects dev tools. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32067",
+    "Location": "semver:6.3.1",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in semver affects dev tools. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3918",
+    "Location": "json-schema:0.2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Prototype pollution in json-schema is a transitive devDependency. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3721",
+    "Location": "lodash.merge:4.6.1",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Evidence Mandate: Explicit calls/exports confirmed in the codebase (e.g., test/test.js). As a core public API, it is Configuration Enabled and Path Verified. Score upgraded to 75% per methodology, exceeding 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23362",
+    "Location": "hosted-git-info:3.0.8",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "ReDoS in hosted-git-info affects dev tools. No production impact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-r68p-8ph6-pwp6",
+    "Location": "minimist:0.0.10",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Prototype pollution in minimist (devDependency) is not reachable in production.",
+    "Assessment": "Correct"
+  }
+]
