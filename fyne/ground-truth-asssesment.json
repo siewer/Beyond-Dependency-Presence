@@ -1,0 +1,18 @@
+[
+  {
+    "Vulnerability": "CVE-2025-22872",
+    "Location": "golang.org/x/net:v0.35.0",
+    "Original_exploitability": 10,
+    "Exploitability": 1.0,
+    "Exploitability_explanation:": "API call NOT confirmed. Explicit calls to `Tokenizer`, `Parse`, or `ParseFragment` from `golang.org/x/net/html` were NOT found in the Fyne codebase. The dependency is indirect and used by third-party packages or internal library paths not reachable via explicit user API calls. According to the mandate, when no explicit call is found, status is not_confirmed and probability is 0.01 (1.0%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22870",
+    "Location": "golang.org/x/net:v0.35.0",
+    "Original_exploitability": 18,
+    "Exploitability": 1.0,
+    "Exploitability_explanation:": "API call NOT confirmed. Explicit calls to `httpproxy.Config`, `proxy.Dial`, or other vulnerable symbols from `golang.org/x/net` were NOT found in the Fyne codebase. While Fyne uses the standard library `net/http` (which may indirectly use the vulnerable proxy logic), there are no explicit calls to the vulnerable functions in the provided codebase. Per the scoring rules, the absence of explicit calls leads to a not_confirmed status with a probability of 0.01 (1.0%).",
+    "Assessment": "Correct"
+  }
+]

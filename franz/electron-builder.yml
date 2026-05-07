@@ -1,0 +1,64 @@
+directories:
+  app: ./build
+  output: ./out
+
+appId: com.meetfranz.franz
+
+compression: maximum
+
+mac:
+  category: public.app-category.productivity
+  icon: ./build-helpers/images/icon.icns
+  target:
+    target: default
+    arch:
+    - x64
+    - arm64
+  darkModeSupport: true
+  hardenedRuntime: true
+  gatekeeperAssess: false
+  entitlements: build-helpers/default.entitlements.mac.plist
+  entitlementsInherit: build-helpers/default.entitlements.mac.plist
+  extendInfo:
+    NSCameraUsageDescription: "This app requires camera access for video chats"
+    NSMicrophoneUsageDescription: "This app requires microphone access for voice chats"
+
+dmg:
+  background: ./build-helpers/images/dmgInstaller.tiff
+  icon: ./build-helpers/images/icon.icns
+  iconSize: 128
+  contents: [{x: 380, y: 240, type: link, path: /Applications}, {x: 122, y: 240, type: file}]
+  sign: false
+  writeUpdateInfo: false
+
+win:
+  icon: ./build-helpers/images/icon.ico
+  target:
+    target: nsis
+    arch:
+    - x64
+    - ia32
+
+linux:
+  icon: ./build-helpers/images/icons
+  category: Network;InstantMessaging;
+  executableName: franz
+  synopsis: "Messaging app for WhatsApp, Slack, Telegram, Gmail, Hangouts and many many more."
+  description: "Franz is your messaging app / former Emperor of Austria and combines chat & messaging services into one application. Franz currently supports Slack, WhatsApp, Gmail, Facebook Messenger, Telegram, Google Hangouts, GroupMe, Skype and many more. You can download Franz for free for Mac & Windows."
+  target:
+    - target: AppImage
+    - target: deb
+    - target: tar.gz
+
+nsis:
+  perMachine: false
+  oneClick: true
+
+protocols:
+  name: Franz
+  schemes: [franz]
+
+asarUnpack:
+  - ./assets/images/taskbar
+
+beforeBuild: ./build-helpers/ensure-mac-dependency.js

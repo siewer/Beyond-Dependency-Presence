@@ -1,0 +1,299 @@
+[
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2015-9251",
+    "Status": "EXISTING",
+    "Exploitability": 10,
+    "Last Seen": "2026-03-17T14:24:17.513Z",
+    "Source": "SCA",
+    "Location": "jquery:Color"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2011-4969",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-17T14:24:17.516Z",
+    "Source": "SCA",
+    "Location": "jquery:Color"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2012-6708",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-17T14:24:17.517Z",
+    "Source": "SCA",
+    "Location": "jquery:Color"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2021-3846",
+    "Status": "EXISTING",
+    "Exploitability": 50,
+    "Last Seen": "2026-03-17T14:24:17.518Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2019-13645",
+    "Status": "EXISTING",
+    "Exploitability": 90,
+    "Last Seen": "2026-03-17T14:24:17.519Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2019-13646",
+    "Status": "EXISTING",
+    "Exploitability": 75,
+    "Last Seen": "2026-03-17T14:24:17.520Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-6783",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-17T14:24:17.521Z",
+    "Source": "SCA",
+    "Location": "vue-template-compiler:2.7.16"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-3900",
+    "Status": "EXISTING",
+    "Exploitability": 80,
+    "Last Seen": "2026-03-17T14:24:17.522Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2019-13644",
+    "Status": "EXISTING",
+    "Exploitability": 2,
+    "Last Seen": "2026-03-17T14:24:17.523Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2019-13647",
+    "Status": "EXISTING",
+    "Exploitability": 65,
+    "Last Seen": "2026-03-17T14:24:17.523Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2023-44270",
+    "Status": "EXISTING",
+    "Exploitability": 8,
+    "Last Seen": "2026-03-17T14:24:17.524Z",
+    "Source": "SCA",
+    "Location": "postcss:7.0.39"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2023-0298",
+    "Status": "EXISTING",
+    "Exploitability": 50,
+    "Last Seen": "2026-03-17T14:24:17.524Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-3851",
+    "Status": "EXISTING",
+    "Exploitability": 20,
+    "Last Seen": "2026-03-17T14:24:17.524Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-3663",
+    "Status": "EXISTING",
+    "Exploitability": 20,
+    "Last Seen": "2026-03-17T14:24:17.525Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-30359",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-17T14:24:17.526Z",
+    "Source": "SCA",
+    "Location": "webpack-dev-server:4.15.2"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-4005",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-17T14:24:17.527Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-4015",
+    "Status": "EXISTING",
+    "Exploitability": 20,
+    "Last Seen": "2026-03-17T14:24:17.528Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-22075",
+    "Status": "EXISTING",
+    "Exploitability": 50,
+    "Last Seen": "2026-03-17T14:24:17.528Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-3819",
+    "Status": "EXISTING",
+    "Exploitability": 50,
+    "Last Seen": "2026-03-17T14:24:17.528Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-3728",
+    "Status": "EXISTING",
+    "Exploitability": 70,
+    "Last Seen": "2026-03-17T14:24:17.529Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-3730",
+    "Status": "EXISTING",
+    "Exploitability": 80,
+    "Last Seen": "2026-03-17T14:24:17.530Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-3921",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-17T14:24:17.531Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-3729",
+    "Status": "EXISTING",
+    "Exploitability": 50,
+    "Last Seen": "2026-03-17T14:24:17.532Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2023-1788",
+    "Status": "EXISTING",
+    "Exploitability": 50,
+    "Last Seen": "2026-03-17T14:24:17.532Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-30360",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-17T14:24:17.533Z",
+    "Source": "SCA",
+    "Location": "webpack-dev-server:4.15.2"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2023-1789",
+    "Status": "EXISTING",
+    "Exploitability": 1,
+    "Last Seen": "2026-03-17T14:24:17.534Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "CVE-2019-14671",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-17T14:24:17.535Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-37893",
+    "Status": "EXISTING",
+    "Exploitability": 50,
+    "Last Seen": "2026-03-17T14:24:17.536Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "CVE-2024-9506",
+    "Status": "EXISTING",
+    "Exploitability": 1,
+    "Last Seen": "2026-03-17T14:24:17.536Z",
+    "Source": "SCA",
+    "Location": "vue:2.7.16"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "GHSA-29w6-c52g-m8jc",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-17T14:24:17.538Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "GHSA-5q8v-j673-m5v4",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-17T14:24:17.552Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "CVE-2021-3901",
+    "Status": "EXISTING",
+    "Exploitability": 50,
+    "Last Seen": "2026-03-17T14:24:17.533Z",
+    "Source": "SCA",
+    "Location": "grumpydictator/firefly-iii:"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "CVE-2025-14505",
+    "Status": "EXISTING",
+    "Exploitability": 5,
+    "Last Seen": "2026-03-17T14:24:17.537Z",
+    "Source": "SCA",
+    "Location": "elliptic:6.6.1"
+  }
+]

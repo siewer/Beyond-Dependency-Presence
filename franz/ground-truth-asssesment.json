@@ -1,0 +1,2114 @@
+[
+  {
+    "Vulnerability": "CVE-2021-32804",
+    "Location": "tar:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-32804",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 50,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-29041",
+    "Location": "express:4.18.2",
+    "Original_exploitability": 50,
+    "Exploitability": 30,
+    "Exploitability_explanation": "express is a transitive dependency (e.g. of webpack-dev-server). No usage of res.redirect or res.location in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29415",
+    "Location": "ip:1.1.5",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "ip is not a direct dependency and isPublic is not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29415",
+    "Location": "ip:1.1.8",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "ip is not a direct dependency and isPublic is not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:1.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "debug is used via require('debug'), but version in package-lock.json is 4.3.4 (fixed). Use in user code is internal/safe.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 20,
+    "Exploitability_explanation": "Direct usage in index.js for CLI argument parsing confirmed. Requires control over launch arguments.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-37713",
+    "Location": "tar:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "semver is used, but version 5.3.0 is not present in lockfile (using 5.4.1).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.4.1",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "semver.valid() is used on recipe version strings. Potential for ReDoS but input is usually limited/internal.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:0.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:2.0.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.88.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "request library not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.88.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "request library not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43800",
+    "Location": "serve-static:1.5.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "serve-static not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20162",
+    "Location": "ms:0.6.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ms version not vulnerable in direct usage; transitive versions not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20162",
+    "Location": "ms:0.7.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ms version not vulnerable in direct usage; transitive versions not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28863",
+    "Location": "tar:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-42282",
+    "Location": "ip:1.1.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ip not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:1.8.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "braces not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "braces not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:2.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "form-data npm package usage not confirmed. browser FormData used in ServerApi.js.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:2.3.3",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "form-data npm package usage not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3807",
+    "Location": "ansi-regex:4.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ansi-regex not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-32803",
+    "Location": "tar:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-32803",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 50,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-25289",
+    "Location": "@octokit/request-error:1.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "@octokit/request-error not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7608",
+    "Location": "yargs-parser:10.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "yargs-parser not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "micromatch not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:4.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "micromatch not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47764",
+    "Location": "cookie:0.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "cookie not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47764",
+    "Location": "cookie:0.5.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "cookie not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43799",
+    "Location": "send:0.18.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "send not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:5.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "cross-spawn not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:1.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "debug uses safe string manipulation in newer version; usage is internal.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-23541",
+    "Location": "jsonwebtoken:8.5.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "jsonwebtoken is a dependency but jwt.verify is NOT used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-37701",
+    "Location": "tar:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:4.4.19",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:4.4.19",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-28xh-wpgr-7fm8",
+    "Location": "open:0.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "open() is used directly in codebase, though often with hardcoded URLs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-xf5p-87ch-gxw2",
+    "Location": "marked:0.6.1",
+    "Original_exploitability": 0,
+    "Exploitability": 50,
+    "Exploitability_explanation": "marked() is used in AccountDashboard.js to render potentially dynamic content.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-jmqm-f2gx-4fjv",
+    "Location": "npm-registry-fetch:3.9.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "npm-registry-fetch not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29415",
+    "Location": "ip:2.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ip not used directly in user code; version mismatch in dependencies.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7693",
+    "Location": "sockjs:0.3.19",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "sockjs not used directly in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:2.4.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "tough-cookie not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:2.5.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "tough-cookie not used directly; transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10744",
+    "Location": "lodash:1.0.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "lodash 1.0.2 is an extremely old transitive dependency; modern lodash is used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25858",
+    "Location": "terser:3.17.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "terser is a dev dependency; not used in production code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7660",
+    "Location": "serialize-javascript:1.9.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "serialize-javascript is not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash.set:4.3.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Direct usage confirmed for shallow utilities (debounce, pick, etc.). Deep/vulnerable functions (merge, defaultsDeep) not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-27290",
+    "Location": "ssri:6.0.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ssri not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7793",
+    "Location": "ua-parser-js:0.7.19",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ua-parser-js not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29180",
+    "Location": "webpack-dev-middleware:3.4.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "webpack-dev-middleware is a dev dependency; not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3728",
+    "Location": "hoek:2.16.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "hoek not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7754",
+    "Location": "npm-user-validate:1.0.0",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "npm-user-validate not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45590",
+    "Location": "body-parser:1.20.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "body-parser not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-41940",
+    "Location": "engine.io:1.8.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "engine.io not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:2.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "debug version 4.3.4 (fixed) is used; older versions not called directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:2.3.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "debug version 4.3.4 (fixed) is used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:6.5.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "qs v6.11.0 (fixed) is used; older versions not used directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-2421",
+    "Location": "socket.io-parser:2.3.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "socket.io-parser not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3918",
+    "Location": "json-schema:0.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "json-schema not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33623",
+    "Location": "trim-newlines:1.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "trim-newlines not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33623",
+    "Location": "trim-newlines:2.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "trim-newlines not used in user code; latest version is 3.0.1.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-42461",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "elliptic not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7733",
+    "Location": "ua-parser-js:0.7.19",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ua-parser-js not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:1.2.5",
+    "Original_exploitability": 80,
+    "Exploitability": 20,
+    "Exploitability_explanation": "Direct usage in index.js for CLI argument parsing confirmed. Requires control over launch arguments.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-36604",
+    "Location": "hoek:2.16.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "hoek not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-8315",
+    "Location": "ms:0.6.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ms not used directly in user code; version in use is 2.1.1 (fixed).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-21191",
+    "Location": "global-modules-path:2.3.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "global-modules-path not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36048",
+    "Location": "engine.io:1.8.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "engine.io not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-20834",
+    "Location": "tar:4.0.2",
+    "Original_exploitability": 50,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:1.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Direct usage confirmed for shallow utilities (debounce, pick, etc.). Deep/vulnerable functions (merge, defaultsDeep) not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash.template:3.6.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Direct usage confirmed for shallow utilities (debounce, pick, etc.). Deep/vulnerable functions (merge, defaultsDeep) not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash.template:4.5.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Direct usage confirmed for shallow utilities (debounce, pick, etc.). Deep/vulnerable functions (merge, defaultsDeep) not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0235",
+    "Location": "node-fetch:1.7.3",
+    "Original_exploitability": 45,
+    "Exploitability": 1,
+    "Exploitability_explanation": "node-fetch 1.7.3 not used in user code; latest version is 2.6.12.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-27088",
+    "Location": "es5-ext:0.10.62",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "es5-ext not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38900",
+    "Location": "decode-uri-component:0.2.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "decode-uri-component not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.7.1",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "semver is used directly, but original exploitability of 50% is too high for the limited vector in user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-37890",
+    "Location": "ws:5.2.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ws v6.2.1 is used; v5.2.3 not present or used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-37890",
+    "Location": "ws:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "ws is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-33987",
+    "Location": "got:6.7.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "got not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36049",
+    "Location": "socket.io-parser:2.3.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "socket.io-parser not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-2900",
+    "Location": "parse-url:6.0.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "parse-url not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28849",
+    "Location": "follow-redirects:1.15.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "follow-redirects not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37620",
+    "Location": "html-minifier:3.5.21",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "html-minifier not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-21680",
+    "Location": "marked:0.6.1",
+    "Original_exploitability": 15,
+    "Exploitability": 50,
+    "Exploitability_explanation": "marked is used directly in user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-21681",
+    "Location": "marked:0.6.1",
+    "Original_exploitability": 15,
+    "Exploitability": 50,
+    "Exploitability_explanation": "marked is used directly in user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-16491",
+    "Location": "node.extend:1.0.10",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "node.extend not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-46234",
+    "Location": "browserify-sign:4.2.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "browserify-sign not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7774",
+    "Location": "y18n:4.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "y18n not used in user code; version 4.0.3 (fixed) in lockfile.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not used in user code; v3.1.2 in lockfile.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-10540",
+    "Location": "minimatch:0.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-10540",
+    "Location": "minimatch:2.0.10",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16138",
+    "Location": "mime:1.2.11",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "mime not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-8859",
+    "Location": "send:0.8.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "send not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43800",
+    "Location": "serve-static:1.15.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "serve-static not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23362",
+    "Location": "hosted-git-info:2.8.8",
+    "Original_exploitability": 2,
+    "Exploitability": 1,
+    "Exploitability_explanation": "hosted-git-info not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21536",
+    "Location": "http-proxy-middleware:0.18.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "http-proxy-middleware not used in production code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16487",
+    "Location": "lodash:1.0.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Direct usage confirmed for shallow utilities (debounce, pick, etc.). Deep/vulnerable functions (merge, defaultsDeep) not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28863",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-28863",
+    "Location": "tar:4.4.19",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-28863",
+    "Location": "tar:6.1.15",
+    "Original_exploitability": 97,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-37713",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-16119",
+    "Location": "fresh:0.2.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "fresh not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-10539",
+    "Location": "negotiator:0.4.7",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "negotiator not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-32640",
+    "Location": "ws:6.2.1",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "ws is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-8856",
+    "Location": "serve-index:1.1.6",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "serve-index not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16113",
+    "Location": "parsejson:0.0.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "parsejson not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-42282",
+    "Location": "ip:1.1.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ip not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-42282",
+    "Location": "ip:2.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ip not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7788",
+    "Location": "ini:1.3.5",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ini not used in user code; version 1.3.8 in lockfile.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-27292",
+    "Location": "ua-parser-js:0.7.19",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ua-parser-js not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20162",
+    "Location": "ms:0.7.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ms not used directly in user code; latest version is 2.1.1.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3224",
+    "Location": "parse-url:6.0.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "parse-url not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-16769",
+    "Location": "serialize-javascript:1.9.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "serialize-javascript not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:5.5.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ajv not used in user code; version 6.12.6 in lockfile.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23343",
+    "Location": "path-parse:1.0.6",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "path-parse not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-29060",
+    "Location": "color-string:1.5.3",
+    "Original_exploitability": 50,
+    "Exploitability": 30,
+    "Exploitability_explanation": "color-string v1.9.1 (fixed) in lockfile; no usage of old version found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:3.0.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "braces v3.0.2 not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:4.0.1",
+    "Original_exploitability": 1,
+    "Exploitability": 5,
+    "Exploitability_explanation": "form-data v4.0.1 is in lockfile; likely used transitively by fetching libraries.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3807",
+    "Location": "ansi-regex:3.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ansi-regex not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25881",
+    "Location": "http-cache-semantics:3.8.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "http-cache-semantics not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3721",
+    "Location": "lodash:1.0.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Direct usage confirmed for shallow utilities (debounce, pick, etc.). Deep/vulnerable functions (merge, defaultsDeep) not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7598",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": 70,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimist version 1.2.8 is used; old v0.0.8 not called in user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-52798",
+    "Location": "path-to-regexp:0.1.7",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "path-to-regexp not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32695",
+    "Location": "socket.io-parser:2.3.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "socket.io-parser not used in user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-25288",
+    "Location": "@octokit/plugin-paginate-rest:1.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "@octokit/plugin-paginate-rest not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24772",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "node-forge is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6545",
+    "Location": "pbkdf2:3.1.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "pbkdf2 is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23424",
+    "Location": "ansi-html:0.0.7",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ansi-html not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25289",
+    "Location": "@octokit/request-error:2.1.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "@octokit/request-error not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24771",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 5,
+    "Exploitability_explanation": "node-forge is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7789",
+    "Location": "node-notifier:5.4.5",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "node-notifier is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-48949",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "elliptic not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.11.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "qs v6.11.0 not used directly in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.11.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "qs v6.11.2 not used directly in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.5.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "qs v6.5.2 not used directly in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.5.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "qs v6.5.3 not used directly in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0624",
+    "Location": "parse-path:4.0.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "parse-path not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-9287",
+    "Location": "cipher-base:1.0.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "cipher-base not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66031",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "node-forge is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-1164",
+    "Location": "serve-static:1.5.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "serve-static not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-37701",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-28481",
+    "Location": "socket.io:1.7.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "socket.io not used directly in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0122",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "node-forge is a direct dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "@babel/traverse:7.22.8",
+    "Original_exploitability": 50,
+    "Exploitability": 30,
+    "Exploitability_explanation": "Build-time vulnerability affecting development environment, not production runtime.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42460",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "elliptic not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38355",
+    "Location": "socket.io:1.7.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "socket.io not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25290",
+    "Location": "@octokit/request:5.6.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "@octokit/request not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30359",
+    "Location": "webpack-dev-server:3.1.14",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "webpack-dev-server is a dev dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/helpers:7.22.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "@babel/helpers 7.22.6 not present in lockfile.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.22.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "@babel/runtime 7.22.6 not present in lockfile.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.4.5",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "@babel/runtime is used, but the specific ReDoS condition is unlikely to be triggered by user input.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-37712",
+    "Location": "tar:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-37712",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 96,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7608",
+    "Location": "yargs-parser:11.1.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "yargs-parser v20.2.9 (fixed) in lockfile.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24773",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 50,
+    "Exploitability": 30,
+    "Exploitability_explanation": "node-forge is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:2.3.11",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "micromatch not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43799",
+    "Location": "send:0.8.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "send not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-23539",
+    "Location": "jsonwebtoken:8.5.1",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Direct usage in UserStore.js confirmed, but only jwt.decode() is used, not verify(). Lower risk.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31988",
+    "Location": "yauzl:2.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "yauzl not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26159",
+    "Location": "follow-redirects:1.15.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "follow-redirects not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-12758",
+    "Location": "validator:11.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "validator is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-55565",
+    "Location": "nanoid:2.1.11",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "nanoid is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-48948",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "elliptic not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:6.0.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "cross-spawn not used directly; version in lockfile is 7.0.3.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "cross-spawn not used directly in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "path-to-regexp:0.1.7",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "path-to-regexp not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-12816",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "node-forge is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42459",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "elliptic not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:0.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:10.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:2.0.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:0.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:10.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:2.0.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43796",
+    "Location": "express:4.18.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "express is used in uidev, but not confirmed in production src.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:0.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:10.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:2.0.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-9288",
+    "Location": "sha.js:2.4.11",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "sha.js not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-36751",
+    "Location": "parseuri:0.0.5",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "parseuri not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:2.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 20,
+    "Exploitability_explanation": "Direct usage confirmed in almost all files for logging. ReDoS risk exists, but exploitability is low.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:2.3.3",
+    "Original_exploitability": 50,
+    "Exploitability": 20,
+    "Exploitability_explanation": "Direct usage confirmed in almost all files for logging. ReDoS risk exists, but exploitability is low.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-30360",
+    "Location": "webpack-dev-server:3.1.14",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "webpack-dev-server is a dev dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:5.5.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ajv v5.x not used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "ajv is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "glob:10.3.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "glob v10.x not present as direct dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "glob:10.4.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "glob v10.x not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.2.7",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "flatted is in lockfile but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-56200",
+    "Location": "validator:11.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 30,
+    "Exploitability_explanation": "validator is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6547",
+    "Location": "pbkdf2:3.1.2",
+    "Original_exploitability": 50,
+    "Exploitability": 30,
+    "Exploitability_explanation": "pbkdf2 is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66030",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "node-forge is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.0.33",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "tmp v0.0.33 not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "tmp is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3765",
+    "Location": "validator:11.0.0",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "validator is a direct dependency but usage of vulnerable parts not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 10,
+    "Exploitability": 1,
+    "Exploitability_explanation": "lodash is used, but omit and unset are not called in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26115",
+    "Location": "word-wrap:1.2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "word-wrap not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:4.0.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:6.1.15",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.11.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "qs v6.11.0 not used directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.11.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "qs v6.11.2 not used directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:4.4.19",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:6.1.15",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:4.12.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "bn.js not used directly in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:5.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "bn.js not used directly in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.1",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "js-yaml is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "js-yaml is a direct dependency but no usage found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-23540",
+    "Location": "jsonwebtoken:8.5.1",
+    "Original_exploitability": 2,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Direct usage in UserStore.js confirmed, but only jwt.decode() is used, not verify(). Lower risk.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:4.4.19",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:6.1.15",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "brace-expansion not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:2.0.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "brace-expansion not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-65945",
+    "Location": "jws:3.2.2",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "jws not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:6.1.15",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:4.4.19",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:6.1.15",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:3.5.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "diff not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:4.4.19",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:6.1.15",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in ServerApi.js (tar.x). Used for recipe extraction. HIGH RISK.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "elliptic not used in user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:2.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "@tootallnate/once not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55305",
+    "Location": "electron:33.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Direct dependency on Electron, but exploitability depends on specific API calls not confirmed as high-risk.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7339",
+    "Location": "on-headers:1.0.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "on-headers not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-vjh7-7g9h-fjfh",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "elliptic not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:1.9.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "serialize-javascript not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:4.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "serialize-javascript not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-ch52-vgq2-943f",
+    "Location": "marked:0.6.1",
+    "Original_exploitability": 0,
+    "Exploitability": 50,
+    "Exploitability_explanation": "Direct usage in AnnouncementScreen.js confirmed. ReDoS possible if remote content is malicious.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-5rrq-pxf6-6jx5",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "node-forge is a direct dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-gf8q-jrpm-jvxq",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "node-forge is a direct dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-xgh6-85xh-479p",
+    "Location": "npm-user-validate:1.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "npm-user-validate not used in user code.",
+    "Assessment": "Correct"
+  }
+]

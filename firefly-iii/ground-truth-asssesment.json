@@ -1,0 +1,266 @@
+[
+  {
+    "Vulnerability": "CVE-2015-9251",
+    "Location": "jquery:Color",
+    "Original_exploitability": 10,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Assuming vulnerable version. jQuery is heavily used in the frontend; however, no user-controlled execution through vulnerable $.ajax settings was confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2011-4969",
+    "Location": "jquery:Color",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Assuming vulnerable version. jQuery $.ajax and location.hash usage found in UI components; low risk due to lack of direct user-controlled injection into these sinks.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2012-6708",
+    "Location": "jquery:Color",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Assuming vulnerable version. Vulnerable API usage found in library code but not explicitly reached by attacker-controlled input in active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3846",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 50,
+    "Exploitability": 80,
+    "Exploitability_explanation": "Confirmed reachable. AttachmentFormRequest.php lacks file type/content validation. AttachmentHelper.php mime checks are bypassable via configuration, and reachable via explicit call.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-13645",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 90,
+    "Exploitability": 90,
+    "Exploitability_explanation": "Confirmed reachable. XSS vector in attachment titles is exploitable via flash messages (flashes.twig |raw). Original score is accurate.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-13646",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 75,
+    "Exploitability": 75,
+    "Exploitability_explanation": "Confirmed reachable. XSS in asset account names via unescaped flash message vector confirmed in partials/flashes.twig. Original score is accurate.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-6783",
+    "Location": "vue-template-compiler:2.7.16",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Assuming vulnerable version. Usage found in asset building pipeline; however, no evidence of user-controlled templates in production environment.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3900",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 80,
+    "Exploitability": 80,
+    "Exploitability_explanation": "Confirmed reachable. XSS in budget names via unescaped flash messages (partials/flashes.twig |raw). Original score is accurate.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-13644",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 2,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Assuming vulnerable version. Budget name XSS has very low reachability in this specific context compared to others. SCA score is accurate.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-13647",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 65,
+    "Exploitability": 65,
+    "Exploitability_explanation": "Confirmed reachable. XSS in budget names. Reached via creating/editing budgets where flash messages use unescaped rendering in flashes.twig.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:7.0.39",
+    "Original_exploitability": 8,
+    "Exploitability": 8,
+    "Exploitability_explanation": "Assuming vulnerable version. PostCSS is used in the build pipeline; no user-controllable input for PostCSS was found in production code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-0298",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "XSS in account names confirmed reachable through flash message vector. SCA assessment is accurate relative to codebase findings.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3851",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 20,
+    "Exploitability": 20,
+    "Exploitability_explanation": "Reachability of account metadata XSS is lower than name-based XSS, as fewer paths reflect these fields in unsafe flashes. SCA score is accurate.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3663",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 20,
+    "Exploitability": 20,
+    "Exploitability_explanation": "Transaction metadata fields are generally escaped in main views; low reachability via unsafe flash messages verified.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30359",
+    "Location": "webpack-dev-server:4.15.2",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Assuming vulnerable version. Risk limited to developer environment; however, no evidence of production exploitability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-4005",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "SCA score is accurate. Limited reachability for this specific user-supplied name vector via unsafe flash messages.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-4015",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 20,
+    "Exploitability": 20,
+    "Exploitability_explanation": "Low reachability confirmed. SCA assessment accurately reflects the difficulty of reaching an unescaped sink with these inputs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-22075",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "Confirmed potential issues in ObjectGroups lacking comprehensive input neutralization before display in certain partial views.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3819",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "XSS reachable via session flash messages confirmed across various object-management controllers.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3728",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 70,
+    "Exploitability": 70,
+    "Exploitability_explanation": "Reachable XSS in Asset Account UI elements via flash messages (flashes.twig |raw). SCA score is accurate.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3730",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 80,
+    "Exploitability": 80,
+    "Exploitability_explanation": "Strong reachability confirmed for account-related XSS in flash messages. SCA score aligns with code findings.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3921",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "SCA score is accurate. This specific account name vector has limited paths to unescaped sinks in the examined code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3729",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "Account names reflected in certain session error flashes which are rendered without escaping in partials/flashes.twig. SCA score is accurate.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-1788",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "Budget name XSS reachable via flash message vector confirmed in code review. SCA score is accurate.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30360",
+    "Location": "webpack-dev-server:4.15.2",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Assuming vulnerable version. Security flaws in webpack-dev-server confirmed for version 4.x but limited to dev environments.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-1789",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 1,
+    "Exploitability": 5,
+    "Exploitability_explanation": "SCA score (1%) is accurate. Tag names are generally handled safely in success messages; very low reachability of unescaped sinks.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-14671",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 15,
+    "Exploitability": 20,
+    "Exploitability_explanation": "Broad XSS confirmed but reachable paths are fewer than expected. SCA score accurately reflects overall application exposure.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-37893",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 50,
+    "Exploitability": 30,
+    "Exploitability_explanation": "Analysis reveals heavy usage of route() for redirects; no direct unvalidated redirection from user input confirmed in core controllers.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-9506",
+    "Location": "vue:2.7.16",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Assuming vulnerable version. SCA assessment is accurate; no evidence of production impact for this Vue 2 compiler vulnerability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-29w6-c52g-m8jc",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 0,
+    "Exploitability": 90,
+    "Exploitability_explanation": "Critically under-evaluated by original tool. ExportDataGenerator.php explicitly uses unescaped user data in CSV exports, enabling formula injection.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-5q8v-j673-m5v4",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "SCA score is accurate. Verified that IsAdminApi middleware and Admin controllers enforce strict owner-based authorization.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3901",
+    "Location": "grumpydictator/firefly-iii:",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "XSS reachable via unsafe flash message vector confirmed in many object-management controllers.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.6.1",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Assuming vulnerable version. SCA assessment is accurate; cryptographic signing usage confirmed but specific vulnerable parameters not reached.",
+    "Assessment": "Correct"
+  }
+]

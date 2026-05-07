@@ -1,0 +1,122 @@
+[
+  {
+    "Vulnerability": "CVE-2024-56201",
+    "Location": "jinja2:3.1.4",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability involves a sandbox escape in Jinja2 compiler. Thorough search of the Flask-Login codebase confirms no direct import or usage of jinja2. Any indirect usage via Flask does not expose the vulnerable compiler functions to user control.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-56326",
+    "Location": "jinja2:3.1.4",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Jinja2 sandbox bypass via str.format. API usage not found in Flask-Login. The library does not render user-provided templates or use Jinja2 filters in a way that would trigger this behavior.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-27516",
+    "Location": "jinja2:3.1.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Jinja2 sandbox breakout via |attr filter. API usage not found in active code paths. Score remains 1% as original assessment already correctly identified low exploitability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-53899",
+    "Location": "virtualenv:20.24.6",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Command injection in virtualenv activation scripts. virtualenv is a development/tox dependency and is not called by the Flask-Login library core code. Assessment is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47081",
+    "Location": "requests:2.32.0",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": ".netrc credential leakage in requests.utils.get_netrc_auth. Flask-Login does not import or use the requests library. Documentation (Sphinx) uses requests, but it's not part of the exploitable code surface.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66418",
+    "Location": "urllib3:2.2.2",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "DoS via unbounded decompression in urllib3. Flask-Login does not use urllib3 for network requests. No vulnerable API calls found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-21441",
+    "Location": "urllib3:2.2.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Decompression bomb in urllib3 streaming API with redirects. API usage not found in Flask-Login codebase. Assessment within 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-50182",
+    "Location": "urllib3:2.2.2",
+    "Original_exploitability": 2,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Redirect bypass in Pyodide runtimes. Flask-Login does not use urllib3 or target Pyodide environments in a way that would invoke the vulnerable send_jspi_request function. Assessment correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22701",
+    "Location": "filelock:3.13.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "TOCTOU race condition in filelock. This library is a tox/virtualenv dependency used for dev environment management and is not called by the application source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24049",
+    "Location": "wheel:0.41.3",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Path traversal in wheel unpack command. Flask-Login does not utilize the wheel library at runtime or for unpacking operations that would trigger chmod calls on arbitrary files.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-3651",
+    "Location": "idna:3.4",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "DoS via quadratic complexity in idna.encode. No direct usage of the idna library found in the Flask-Login core source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-50181",
+    "Location": "urllib3:2.2.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Redirect bypass due to improper PoolManager initialization. urllib3 is not used by the library. Assessment correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66471",
+    "Location": "urllib3:2.2.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Resource exhaustion in urllib3 streaming API. API usage not found. Original assessment correctly identified low risk.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22702",
+    "Location": "virtualenv:20.24.6",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "TOCTOU race condition in virtualenv directory creation. Development tool not reachable from production code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68146",
+    "Location": "filelock:3.13.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "TOCTOU race condition in filelock truncation. No usage of filelock in src/ directory. Development dependency risk only.",
+    "Assessment": "Incorrect"
+  }
+]

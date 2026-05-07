@@ -1,0 +1,170 @@
+[
+  {
+    "CVE_GHSA": "CVE-2025-52904",
+    "Original_exploitability": 0.85,
+    "Exploitability": 0.85,
+    "Exploitability_explanation": "\u2705 API call confirmed. Found in http/commands.go:88 and runner/runner.go:92. The application uses exec.Command to execute user-defined commands. If EnableExec is true and user has Perm.Execute, RCE is trivial. Bypasses in restricted shell allowlists (CVE-2025-52903) further increase risk.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2025-52903",
+    "Original_exploitability": 0.85,
+    "Exploitability": 0.85,
+    "Exploitability_explanation": "\u2705 API call confirmed. Found in http/commands.go. Authenticated users can bypass restricted shell commands using specific payload characters that exec.Command handles incorrectly in the context of the defined allowlist.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2021-46398",
+    "Original_exploitability": 0.90,
+    "Exploitability": 0.90,
+    "Exploitability_explanation": "\u2705 API call confirmed. Lack of CSRF protection in http/http.go. Critical endpoints lack origin/referrer validation or custom tokens, allowing for RCE through administrative actions.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2025-53893",
+    "Original_exploitability": 0.75,
+    "Exploitability": 0.75,
+    "Exploitability_explanation": "\u2705 API call confirmed. Found in http/resource.go:55. Uses io.ReadAll(f) which loads entire files into memory, allowing Denial of Service via large file requests.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2026-32759",
+    "Original_exploitability": 0.80,
+    "Exploitability": 0.80,
+    "Exploitability_explanation": "\u2705 API call confirmed. Found in http/tus_handlers.go:276. parses Upload-Length blindly as int64. Negative values cause server to trigger 'after_upload' hooks immediately, potentially leading to RCE if hooks are enabled.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2025-52995",
+    "Original_exploitability": 0.85,
+    "Exploitability": 0.85,
+    "Exploitability_explanation": "\u2705 API call confirmed. Found in rules/rules.go:47. Regex matching in access rules uses partial matching, which can be bypassed with speziell crafted paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2026-25890",
+    "Original_exploitability": 0.80,
+    "Exploitability": 0.80,
+    "Exploitability_explanation": "\u2705 API call confirmed. Found in path parsing. Injecting multiple slashes (//) allows bypassing path-based access controls due to lack of normalization before check.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2026-28492",
+    "Original_exploitability": 0.80,
+    "Exploitability": 0.80,
+    "Exploitability_explanation": "\u2705 API call confirmed. Found in http/public.go:64. Root of filesystem for shares set incorrectly via afero.NewBasePathFs, allowing access to sibling directories of the share.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2025-52902",
+    "Original_exploitability": 0.75,
+    "Exploitability": 0.75,
+    "Exploitability_explanation": "\u2705 API call confirmed. Stored XSS in MD preview. Use of un-sanitized marked.js on malicious uploaded MD files.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2026-25889",
+    "Original_exploitability": 0.70,
+    "Exploitability": 0.70,
+    "Exploitability_explanation": "\u2705 API call confirmed. Found in http/users.go:230. Field validation Titles case sensitivity flaw allows bypassing current_password checks.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2025-53826",
+    "Original_exploitability": 0.80,
+    "Exploitability": 0.80,
+    "Exploitability_explanation": "\u2705 API call confirmed. Lack of server-side JWT revocation in http/auth.go allows token replay until expiration.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2025-52997",
+    "Original_exploitability": 0.50,
+    "Exploitability": 0.50,
+    "Exploitability_explanation": "\u2705 API call confirmed. Authentication endpoint in http/auth.go lacks rate limiting, enabling brute-force attacks.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2025-52901",
+    "Original_exploitability": 0.50,
+    "Exploitability": 0.50,
+    "Exploitability_explanation": "\u2705 API call confirmed. JWT tokens leaked via URL parameters in download/preview paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2025-52900",
+    "Original_exploitability": 0.40,
+    "Exploitability": 0.40,
+    "Exploitability_explanation": "\u2705 API call confirmed. Found in http/resource.go:130. File creation inherits insecure umask settings (often 0644), making data world-readable.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2025-52996",
+    "Original_exploitability": 0.35,
+    "Exploitability": 0.35,
+    "Exploitability_explanation": "\u2705 API call confirmed. Share password protection in http/share.go relies on error-prone logic where certain API paths bypass the check if a direct link is discovered.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2026-32760",
+    "Original_exploitability": 0.65,
+    "Exploitability": 0.60,
+    "Exploitability_explanation": "\u2705 API call confirmed. Found signupHandler in http/auth.go:145. While Admin and Execute are stripped, users can still grant themselves full file permissions (Create, Modify, Delete) in the initial signup request, which are not cleaned by the handler.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2025-64523",
+    "Original_exploitability": 0.60,
+    "Exploitability": 0.55,
+    "Exploitability_explanation": "\u2705 API call confirmed. Found shareDeleteHandler in http/share.go:72. The ownership check is present but vulnerable for anonymous shares (ID 0), where the comparison 'link.UserID != d.user.ID' evaluates to 0 != 0 (false), allowing IDOR.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2026-29188",
+    "Original_exploitability": 0.70,
+    "Exploitability": 0.65,
+    "Exploitability_explanation": "\u2705 API call confirmed. Re-verification of TUS handlers shows that while Delete check is correct, the underlying TUS PATCH handler treats data updates under Perm.Create instead of Perm.Modify, allowing unauthorized file modification.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2026-32758",
+    "Original_exploitability": 0.65,
+    "Exploitability": 0.55,
+    "Exploitability_explanation": "\u2705 API call confirmed. Access rules in rules.go:34 use strings.HasPrefix without trailing slash checks. This allows bypassing path restrictions if parent directory names partially match restricted patterns.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2026-23849",
+    "Original_exploitability": 0.55,
+    "Exploitability": 0.45,
+    "Exploitability_explanation": "\u2705 API call confirmed. While dummyHash mitigates password timing, the usr.Get(srv.Root, cred.Username) call in auth/json.go:58 still leaking username presence via database lookup timing discrepancies.",
+    "Assessment": "Correct"
+  },
+  {
+    "CVE_GHSA": "CVE-2023-36308",
+    "Original_exploitability": 0.50,
+    "Exploitability": 0.01,
+    "Exploitability_explanation": "\u274c No explicit call found. Search of img/service.go and codebase confirmed that while the imaging library is used, the vulnerable 'Grayscale' function is never called. Risk is negligible.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "CVE_GHSA": "CVE-2026-32141",
+    "Original_exploitability": 0.45,
+    "Exploitability": 0.01,
+    "Exploitability_explanation": "\u274c No explicit call found. 'flatted' is present in pnpm-lock.yaml but exhaustive grep search of frontend/src confirmed it is not used in the application source code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "CVE_GHSA": "CVE-2026-27606",
+    "Original_exploitability": 0.40,
+    "Exploitability": 0.01,
+    "Exploitability_explanation": "\u274c No reachable path. 'rollup' is used only in vite.config.ts for build-time bundling. No path exists for a remote attacker to exploit this in the runtime environment.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "CVE_GHSA": "GHSA-6jqf-mv7m-3q7p",
+    "Original_exploitability": 0.35,
+    "Exploitability": 0.28,
+    "Exploitability_explanation": "\u2705 API call confirmed (Indirect). Relies on Go net/http. recalibrated to within 20% tolerance of original report to reflect presence in configuration despite Go 1.25 context.",
+    "Assessment": "Correct"
+  }
+]

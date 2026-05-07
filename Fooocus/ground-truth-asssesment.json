@@ -1,0 +1,474 @@
+[
+  {
+    "Vulnerability": "CVE-2024-1561",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerability affects Gradio 3.47 - 4.12. Fooocus uses version 3.41.2, which is outside the affected range for this specific CVE.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-1728",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerability affects Gradio 4.18.0 - 4.19.2. Fooocus uses 3.41.2 and does not use the vulnerable UploadButton component.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-51449",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 90,
+    "Exploitability_explanation": "✅ API call confirmed. Fooocus uses `gr.Blocks` and exposes various components through the Gradio web interface. Version 3.41.2 is vulnerable to file traversal via the `/file` route, which is active.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-1183",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "✅ API call confirmed. SSRF vulnerability in Gradio `/file` route. Fooocus uses Gradio extensively, and the vulnerable route is active.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-11393",
+    "Location": "transformers:4.42.4",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "RCE in specific model parsers (MaskFormer, Trax). No explicit usage of these model types found in Fooocus codebase, though `transformers` is used for CLIP.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4325",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Gradio 3.41.2 is highly vulnerable to various web-based attacks (LFI, SSRF, XSS) due to its age. Fooocus uses many components (Image, Textbox, etc.) that are affected by these flaws.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-11394",
+    "Location": "transformers:4.42.4",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "RCE in specific model parsers (MaskFormer, Trax). No explicit usage of these model types found in Fooocus codebase, though `transformers` is used for CLIP.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-11392",
+    "Location": "transformers:4.42.4",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version affected, but specific vulnerable components (e.g. MaskFormer) are not confirmed to be reachable in Fooocus.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47869",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Timing attack in analytics dashboard. Gradio analytics are explicitly disabled in Fooocus (`analytics_enabled=False` in webui.py). Original score of 0 is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-28414",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 95,
+    "Exploitability_explanation": "✅ CRITICAL MATCH. Absolute path traversal on Windows + Python 3.13.1+. Current environment (Windows, Python 3.13.12, Gradio < 6.7.0) is a direct match for exploitability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47871",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Gradio 3.41.2 is highly vulnerable to various web-based attacks (LFI, SSRF, XSS) due to its age. Fooocus uses many components (Image, Textbox, etc.) that are affected by these flaws.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-1727",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "XSS in `gr.Code` component. This component is not used in the Fooocus codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-48052",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "LFI in `gr.Model3D` component. This component is not used in the Fooocus codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47168",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "XSS in `gr.Chatbot` component. This component is not used in the Fooocus codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-1729",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Gradio 3.41.2 is highly vulnerable to various web-based attacks (LFI, SSRF, XSS) due to its age. Fooocus uses many components (Image, Textbox, etc.) that are affected by these flaws.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-2953",
+    "Location": "torch:2.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Denial of Service in `torch.mkldnn_max_pool2d`. No explicit usage of this API found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-31583",
+    "Location": "torch:2.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "RCE in `torch.jit`. No explicit calls to `torch.jit.load` or `torch.jit.script` found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-1194",
+    "Location": "transformers:4.42.4",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version affected, but specific vulnerable components (e.g. MaskFormer) are not confirmed to be reachable in Fooocus.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25301",
+    "Location": "rembg:2.0.57",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or used as a library without exposing the vulnerable API server/endpoints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-28416",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "SSRF via `gr.load()`. No usage of `gr.load()` found in the Fooocus codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25302",
+    "Location": "rembg:2.0.57",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code or used as a library without exposing the vulnerable API server/endpoints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-31580",
+    "Location": "torch:2.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "RCE in `torch.jit`. No explicit calls to `torch.jit.load` or `torch.jit.script` found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3263",
+    "Location": "transformers:4.42.4",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version affected, but specific vulnerable components (e.g. MaskFormer) are not confirmed to be reachable in Fooocus.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3264",
+    "Location": "transformers:4.42.4",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version affected, but specific vulnerable components (e.g. MaskFormer) are not confirmed to be reachable in Fooocus.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5197",
+    "Location": "transformers:4.42.4",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version affected, but specific vulnerable components (e.g. MaskFormer) are not confirmed to be reachable in Fooocus.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6051",
+    "Location": "transformers:4.42.4",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version affected, but specific vulnerable components (e.g. MaskFormer) are not confirmed to be reachable in Fooocus.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-2099",
+    "Location": "transformers:4.42.4",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version affected, but specific vulnerable components (e.g. MaskFormer) are not confirmed to be reachable in Fooocus.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6638",
+    "Location": "transformers:4.42.4",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version affected, but specific vulnerable components (e.g. MaskFormer) are not confirmed to be reachable in Fooocus.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6921",
+    "Location": "transformers:4.42.4",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version affected, but specific vulnerable components (e.g. MaskFormer) are not confirmed to be reachable in Fooocus.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3933",
+    "Location": "transformers:4.42.4",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version affected, but specific vulnerable components (e.g. MaskFormer) are not confirmed to be reachable in Fooocus.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-28415",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Open Redirect in OAuth flow components. Fooocus does not use Gradio's internal OAuth or `gr.LoginButton` components.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25990",
+    "Location": "pillow:10.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Pillow is used for image processing, but there is no explicit usage of PSD file decoding in the codebase. Impact is limited to indirect usage via Gradio upload.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3777",
+    "Location": "transformers:4.42.4",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version affected, but specific vulnerable components (e.g. MaskFormer) are not confirmed to be reachable in Fooocus.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-34511",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "XSS in `gr.BarPlot` component. This component is not used in the Fooocus codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-26jh-r8g2-6fpr",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed. Old Gradio version with known unpatched vulnerabilities in active use.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-32434",
+    "Location": "torch:2.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Explicit calls to `torch.load` found in `ldm_patched/modules/utils.py`, `modules/upscaler.py`, and `modules/inpaint_worker.py`. Version 2.1.0 is vulnerable, and the `weights_only=True` mitigation is bypassed by this CVE.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-8019",
+    "Location": "pytorch_lightning:2.3.3",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API not used in active code paths or version not vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4941",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Local File Inclusion in JSON component `postprocess`. Affects Gradio 4.25. Version 3.41.2 is not affected by this specific logic bypass. Original score of 0 is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48889",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerability affects Gradio 5.25.2 - 5.30.0. Version 3.41.2 does not have this specific flagging file copy flaw. Original score of 0 is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47867",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Gradio 3.41.2 is highly vulnerable to various web-based attacks (LFI, SSRF, XSS) due to its age. Fooocus uses many components (Image, Textbox, etc.) that are affected by these flaws.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-8966",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Gradio 3.41.2 is highly vulnerable to various web-based attacks (LFI, SSRF, XSS) due to its age. Fooocus uses many components (Image, Textbox, etc.) that are affected by these flaws.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47870",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Gradio 3.41.2 is highly vulnerable to various web-based attacks (LFI, SSRF, XSS) due to its age. Fooocus uses many components (Image, Textbox, etc.) that are affected by these flaws.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47167",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Gradio 3.41.2 is highly vulnerable to various web-based attacks (LFI, SSRF, XSS) due to its age. Fooocus uses many components (Image, Textbox, etc.) that are affected by these flaws.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47166",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Gradio 3.41.2 is highly vulnerable to various web-based attacks (LFI, SSRF, XSS) due to its age. Fooocus uses many components (Image, Textbox, etc.) that are affected by these flaws.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47872",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "SSRF in `gr.File` component. This component is not used in the Fooocus codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47164",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Gradio 3.41.2 is highly vulnerable to various web-based attacks (LFI, SSRF, XSS) due to its age. Fooocus uses many components (Image, Textbox, etc.) that are affected by these flaws.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47084",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "XSS in `gr.AnnotatedImage` component. This component is not used in the Fooocus codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47868",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "SSRF in `gr.Video` component. This component is not used in the Fooocus codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-0964",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Gradio 3.41.2 is highly vulnerable to various web-based attacks (LFI, SSRF, XSS) due to its age. Fooocus uses many components (Image, Textbox, etc.) that are affected by these flaws.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-2206",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "SSRF in `/proxy` route. This route was introduced in Gradio 3.47.0. Version 3.41.2 does not have this route. Original score of 0 is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-23042",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Gradio 3.41.2 is highly vulnerable to various web-based attacks (LFI, SSRF, XSS) due to its age. Fooocus uses many components (Image, Textbox, etc.) that are affected by these flaws.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-12720",
+    "Location": "transformers:4.42.4",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version affected, but specific vulnerable components (e.g. MaskFormer) are not confirmed to be reachable in Fooocus.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-34510",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "SSRF in `gr.ScatterPlot` component. This component is not used in the Fooocus codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-12217",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "XSS in `gr.Code` component. This component is not used in the Fooocus codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3730",
+    "Location": "torch:2.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version unknown or major constraints missing for this CVE.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47165",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Gradio 3.41.2 is highly vulnerable to various web-based attacks (LFI, SSRF, XSS) due to its age. Fooocus uses many components (Image, Textbox, etc.) that are affected by these flaws.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-4940",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Gradio 3.41.2 is highly vulnerable to various web-based attacks (LFI, SSRF, XSS) due to its age. Fooocus uses many components (Image, Textbox, etc.) that are affected by these flaws.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-6572",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "The Gradio version (3.41.2) is technically vulnerable, but Fooocus uses `gr.Blocks` and does not implement or enable the flagging component (no `FlaggingButton` or `gr.Interface` with default flagging found). Impact is limited to theoretical library presence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-8021",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "XSS in `gr.Chatbot` component. This component is not used in the Fooocus codebase.",
+    "Assessment": "Correct"
+  }
+]

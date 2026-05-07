@@ -1,0 +1,34 @@
+[
+  {
+    "Vulnerability": "CVE-2024-47081",
+    "Location": "bridge_mcp_ghidra.py:36,49,51",
+    "Original_exploitability": 90,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version is vulnerable (2.32.3), and API calls to requests.get/post are present. However, the vector requires a crafted URL to leak .netrc credentials. In this code, the URL is built from a configuration parameter (ghidra_server_url) and hardcoded endpoints, not remote untrusted input. Per scoring rules, configuration-only triggers have a max probability of 35%. A low score of 15% is assigned.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-53366",
+    "Location": "bridge_mcp_ghidra.py:330,334",
+    "Original_exploitability": 97,
+    "Exploitability": 80,
+    "Exploitability_explanation": "Vulnerable version (1.5.0) of mcp is used and mcp.run() is called to start the server. This exposes the vulnerable _receive_loop to malformed JSON-RPC requests that can cause a server crash (DoS). All constraints for exploitability are satisfied in an active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66416",
+    "Location": "bridge_mcp_ghidra.py:330",
+    "Original_exploitability": 96,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Vulnerable version (1.5.0) is used. The server can be run with SSE transport on localhost (127.0.0.1) without authentication or TransportSecuritySettings, fulfilling all requirements for a DNS Rebinding attack. Explicit support for transport='sse' is found in code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-53365",
+    "Location": "bridge_mcp_ghidra.py:330,334",
+    "Original_exploitability": 96,
+    "Exploitability": 80,
+    "Exploitability_explanation": "Vulnerable version (1.5.0) is used and mcp.run() effectively starts the server listener. The lack of handling for ClosedResourceError during abrupt client disconnects allows for a remote DoS. The vulnerability is reachable in the active server loop.",
+    "Assessment": "Correct"
+  }
+]

@@ -1,0 +1,47 @@
+@import './config.scss';
+
+.theme__dark {
+  .services {
+    background: $dark-theme-gray-darkest;
+  
+    .services__webview-wrapper { background: $dark-theme-gray-darkest; }
+  }
+
+  .services__no-service,
+  .services__info-layer {
+    background: $dark-theme-gray-darkest;
+  
+    h1 { color: $dark-theme-gray-lightest; }
+  }
+}
+
+
+.services {
+  background: #FFF;
+  flex: 1;
+  height: 100%;
+  // order: 5;
+  overflow: hidden;
+  position: relative;
+
+  .services__webview-wrapper { background: $theme-gray-lighter; }
+
+}
+
+.services__no-service,
+.services__info-layer {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  h1 {
+    color: $theme-gray-dark;
+    margin: 25px 0 40px;
+  }
+
+  a.button,
+  button { margin: 40px 0 20px; }
+}

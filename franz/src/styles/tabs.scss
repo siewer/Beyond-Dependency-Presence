@@ -1,0 +1,90 @@
+@import './config.scss';
+
+.theme__dark .tab-item {
+  &.is-active {
+    background: $dark-theme-gray;
+    background: linear-gradient(90deg, $dark-theme-gray 0%, $dark-theme-gray 93%, darken($dark-theme-gray, 10%) 100%);
+
+    .tab-item__icon { margin-left: -4px; }
+  }
+
+  &.is-disabled .tab-item__icon { filter: grayscale(100%) opacity(.2); }
+  .tab-item__icon { width: 34px; }
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+
+  .placeholder {
+    height: 40px;
+    width: 100%;
+  }
+}
+
+.tab-item {
+  align-items: center;
+  display: flex;
+  height: 65px;
+  justify-content: center;
+  min-height: 50px;
+  position: relative;
+  transition: background $theme-transition-time;
+  width: $theme-sidebar-width;
+
+  &.is-active {
+    background: lighten($theme-brand-primary, 35%);
+    background: linear-gradient(90deg, lighten($theme-brand-primary, 35%) 0%, lighten($theme-brand-primary, 35%) 93%, darken($theme-brand-primary, 1%) 100%);
+    border-left: 4px solid $theme-brand-primary;
+
+    .tab-item__icon { margin-left: -4px; }
+  }
+
+  &.is-disabled .tab-item__icon { filter: grayscale(100%) opacity(0.2); }
+  &.has-custom-icon .tab-item__icon { border-radius: $theme-border-radius; }
+  &:active .tab-item__icon { opacity: .7; }
+
+  .tab-item__icon {
+    height: auto;
+    width: 30px;
+  }
+
+  .tab-item__message-count {
+    align-items: center;
+    background: $theme-brand-danger;
+    border-radius: 20px;
+    bottom: 8px;
+    color: #FFF;
+    display: flex;
+    font-size: 11px;
+    justify-content: center;
+    min-height: 17px;
+    min-width: 17px;
+    padding: 0px 5px;
+    position: absolute;
+    right: 8px;
+
+    &.is-indirect { padding-top: 0; }
+  }
+
+  .tab-item__info-badge {
+    align-items: center;
+    background: $theme-gray-light;
+    bottom: 8px;
+    border-radius: 20px;
+    color: $theme-gray-lighter;
+    display: flex;
+    font-size: 11px;
+    height: 17px;
+    justify-content: center;
+    padding: 0px 5px;
+    position: absolute;
+    right: 8px;
+    width: 17px;
+
+    &.is-indirect { padding-top: 0; }
+  }
+
+  &.is-reordering { z-index: 99999; }
+}
