@@ -1,0 +1,130 @@
+[
+  {
+    "Vulnerability": "CVE-2024-34069",
+    "Location": "Werkzeug:1.0.1",
+    "Original_exploitability": 50,
+    "Exploitability": 65,
+    "Exploitability_explanation": "Version is vulnerable (1.0.1). High probability because the debugger is explicitly enabled in `config.py` (`DEBUG = True` in `DevConfig`), confirming the vulnerable code path is active in dev mode. All constraints for the debugger PIN bypass are satisfied.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-34064",
+    "Location": "Jinja2:2.11.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit or implicit calls to the vulnerable `xmlattr` filter were found in any templates or Python code in the entire repository. This satisfies the 'API ABSENT' scoring rule with a probability of 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-27522",
+    "Location": "uWSGI:2.0.18",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "The app is designed to run on uWSGI, and the version (2.0.18) is vulnerable. The vulnerability is internal to uWSGI and depends on the specific uwsgi protocol deployment. Probability of 0.15 is appropriate for such cases.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-46136",
+    "Location": "Werkzeug:1.0.1",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Extensive search for `request.form`, `request.files`, `request.values`, and `request.parameter_storage_class` returned zero results. The application strictly handles input through `flask.request.get_json()`, which does not trigger the vulnerable Werkzeug multipart parser. Probability 0.01 (API Absent).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-25577",
+    "Location": "Werkzeug:1.0.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Exhaustive codebase search confirms 0 instances of multipart form-data parsing APIs. The application is JSON-centric and does not invoke the multipart field limit logic. Original score of 50 is incorrect by 49%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-56326",
+    "Location": "Jinja2:2.11.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The app uses standard Jinja templates, but no user-controlled template content or sandbox environments were found. 0.01 probability as the escape vectors are absent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-30861",
+    "Location": "Flask:1.1.2",
+    "Original_exploitability": 80,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Flask 1.1.2 is vulnerable. However, recursive Grep for `session`, `set_cookie`, and `Vary` in user code returned no matches. Without cookies or session management, the risk is limited to library-internal potential without an active vector. Probability 0.15 (Config only, no path).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-27516",
+    "Location": "Jinja2:2.11.3",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Verified absence of Jinja2 Sandbox usage and specific `|attr` filter in all templates. No vectors for sandbox bypass exist in the current implementation. Probability 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-22195",
+    "Location": "Jinja2:2.11.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API `xmlattr` is not used in the codebase. 0.01 probability for absent usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-23934",
+    "Location": "Werkzeug:1.0.1",
+    "Original_exploitability": 35,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version is vulnerable. Probability 0.15 for unknown configuration/usage vector. Within 20% tolerance of 0.35.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27199",
+    "Location": "Werkzeug:1.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Zero exploitability as no Windows device names or `safe_join` API usage were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66221",
+    "Location": "Werkzeug:1.0.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API `safe_join` is not used. 1% within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21860",
+    "Location": "Werkzeug:1.0.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No vulnerability found because relevant APIs are not present in active code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27205",
+    "Location": "Flask:1.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Zero exploitability as no session or cookie handling code exists.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-49767",
+    "Location": "Werkzeug:1.0.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Exhaustive audit confirms zero usage of multipart parsing APIs (`form`, `files`). The Werkzeug multipart memory exhaustion vulnerability cannot be triggered via the active JSON-based code paths. Original 50% is incorrect by 49%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-49766",
+    "Location": "Werkzeug:1.0.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API `safe_join` is not used. 1% within tolerance.",
+    "Assessment": "Correct"
+  }
+]

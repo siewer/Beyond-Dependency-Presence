@@ -1,0 +1,1130 @@
+[
+  {
+    "Vulnerability": "CVE-2026-22691",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pypdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-30533",
+    "Location": "xlsx:0.18.5",
+    "Original_exploitability": "1%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for xlsx confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-14009",
+    "Location": "nltk:3.9.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to nltk found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-23342",
+    "Location": "ecdsa:0.19.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to ecdsa found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-62727",
+    "Location": "starlette:0.45.3",
+    "Original_exploitability": "96%",
+    "Exploitability": "90%",
+    "Exploitability_explanation": "API usage for starlette confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-61920",
+    "Location": "authlib:1.4.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "44%",
+    "Exploitability_explanation": "API usage for authlib confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-43859",
+    "Location": "h11:0.14.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to h11 found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-61765",
+    "Location": "python-socketio:5.13.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to python-socketio found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-12797",
+    "Location": "cryptography:44.0.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for cryptography confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6985",
+    "Location": "langchain-text-splitters:0.3.8",
+    "Original_exploitability": "15%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for langchain-text-splitters confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66034",
+    "Location": "fonttools:4.55.3",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to fonttools found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47273",
+    "Location": "setuptools:75.8.0",
+    "Original_exploitability": "8%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to setuptools found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64712",
+    "Location": "unstructured:0.16.17",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to unstructured found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27516",
+    "Location": "jinja2:3.1.5",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to jinja2 found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to qs found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-57753",
+    "Location": "vite-plugin-static-copy:2.2.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for vite-plugin-static-copy confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-22363",
+    "Location": "xlsx:0.18.5",
+    "Original_exploitability": "5%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for xlsx confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-3730",
+    "Location": "torch:2.5.1",
+    "Original_exploitability": "5%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for torch confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47764",
+    "Location": "cookie:0.6.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to cookie found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-62707",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pypdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55197",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pypdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69534",
+    "Location": "markdown:3.7",
+    "Original_exploitability": "0%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for markdown confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-62708",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "70%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pypdf found in the user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-67221",
+    "Location": "orjson:3.10.14",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to orjson found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-65106",
+    "Location": "langchain-core:0.3.68",
+    "Original_exploitability": "50%",
+    "Exploitability": "44%",
+    "Exploitability_explanation": "API usage for langchain-core confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54121",
+    "Location": "starlette:0.45.3",
+    "Original_exploitability": "50%",
+    "Exploitability": "44%",
+    "Exploitability_explanation": "API usage for starlette confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29063",
+    "Location": "immutable:5.0.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to immutable found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69223",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "15%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for aiohttp confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66019",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "2%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pypdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to minimatch found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to minimatch found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to minimatch found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to minimatch found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to minimatch found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to minimatch found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to minimatch found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to minimatch found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-2953",
+    "Location": "torch:2.5.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for torch confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6176",
+    "Location": "brotli:1.1.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to brotli found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27125",
+    "Location": "svelte:5.42.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for svelte confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-1194",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for transformers confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-68664",
+    "Location": "langchain-core:0.3.68",
+    "Original_exploitability": "85%",
+    "Exploitability": "79%",
+    "Exploitability_explanation": "API usage for langchain-core confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69227",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "15%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for aiohttp confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-69228",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "20%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for aiohttp confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27601",
+    "Location": "underscore:1.13.7",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to underscore found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66648",
+    "Location": "vega-functions:6.1.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to vega-functions found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-28351",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pypdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68480",
+    "Location": "marshmallow:3.25.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to marshmallow found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69229",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "50%",
+    "Exploitability": "44%",
+    "Exploitability_explanation": "API usage for aiohttp confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "glob:10.4.5",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to glob found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-59420",
+    "Location": "authlib:1.4.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for authlib confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27888",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pypdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-28804",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pypdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47278",
+    "Location": "flask:3.1.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to flask found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30226",
+    "Location": "devalue:5.1.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to devalue found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66418",
+    "Location": "urllib3:2.3.0",
+    "Original_exploitability": "40%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to urllib3 found in the user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.2.3",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to tmp found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66471",
+    "Location": "urllib3:2.3.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to urllib3 found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24486",
+    "Location": "python-multipart:0.0.20",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to python-multipart found in the user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-68142",
+    "Location": "pymdown-extensions:10.14.2",
+    "Original_exploitability": "40%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pymdown-extensions found in the user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-21441",
+    "Location": "urllib3:2.3.0",
+    "Original_exploitability": "20%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to urllib3 found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-0994",
+    "Location": "protobuf:4.25.5",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to protobuf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3263",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "44%",
+    "Exploitability_explanation": "API usage for transformers confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3264",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for transformers confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6984",
+    "Location": "langchain-community:0.3.26",
+    "Original_exploitability": "35%",
+    "Exploitability": "29%",
+    "Exploitability_explanation": "API usage for langchain-community confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48379",
+    "Location": "pillow:11.2.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pillow found in the user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-5197",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for transformers confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6051",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for transformers confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-69226",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "15%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for aiohttp confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-2099",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for transformers confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6638",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for transformers confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6921",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for transformers confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-3933",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for transformers confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27901",
+    "Location": "svelte:5.42.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for svelte confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-15599",
+    "Location": "dompurify:3.2.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for dompurify confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-0540",
+    "Location": "dompurify:3.2.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for dompurify confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-67647",
+    "Location": "@sveltejs/kit:2.22.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for @sveltejs/kit confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66221",
+    "Location": "werkzeug:3.1.3",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to werkzeug found in the user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to lodash found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash-es:4.17.21",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to lodash-es found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27119",
+    "Location": "svelte:5.42.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for svelte confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27122",
+    "Location": "svelte:5.42.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for svelte confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to tar found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25990",
+    "Location": "pillow:11.2.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pillow found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24133",
+    "Location": "jspdf:4.0.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to jspdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22775",
+    "Location": "devalue:5.1.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to devalue found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to tar found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to qs found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-50181",
+    "Location": "urllib3:2.3.0",
+    "Original_exploitability": "5%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to urllib3 found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69225",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "96%",
+    "Exploitability": "90%",
+    "Exploitability_explanation": "API usage for aiohttp confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69224",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "15%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for aiohttp confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-21860",
+    "Location": "werkzeug:3.1.3",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to werkzeug found in the user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-53643",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "30%",
+    "Exploitability": "24%",
+    "Exploitability_explanation": "API usage for aiohttp confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68158",
+    "Location": "authlib:1.4.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for authlib confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-50182",
+    "Location": "urllib3:2.3.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to urllib3 found in the user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-22036",
+    "Location": "undici:6.21.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for undici confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-22036",
+    "Location": "undici:7.11.0",
+    "Original_exploitability": "55%",
+    "Exploitability": "49%",
+    "Exploitability_explanation": "API usage for undici confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to js-yaml found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27628",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pypdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24737",
+    "Location": "jspdf:4.0.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to jspdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2327",
+    "Location": "markdown-it:14.1.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to markdown-it found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22701",
+    "Location": "filelock:3.16.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to filelock found in the user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to tar found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27205",
+    "Location": "flask:3.1.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to flask found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24043",
+    "Location": "jspdf:4.0.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to jspdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31826",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pypdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27024",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pypdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27025",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pypdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27026",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pypdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24040",
+    "Location": "jspdf:4.0.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to jspdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to tar found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3777",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for transformers confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to tar found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26007",
+    "Location": "cryptography:44.0.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for cryptography confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-22690",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pypdf found in the user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24688",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "96%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to pypdf found in the user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26013",
+    "Location": "langchain-core:0.3.68",
+    "Original_exploitability": "0%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for langchain-core confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to tar found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-4565",
+    "Location": "protobuf:4.25.5",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to protobuf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69230",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "2%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for aiohttp confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-1260",
+    "Location": "sentencepiece:0.2.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to sentencepiece found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68146",
+    "Location": "filelock:3.16.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to filelock found in the user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-32274",
+    "Location": "black:25.1.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for black confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-67mh-4wv8-2f99",
+    "Location": "esbuild:0.21.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to esbuild found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-mwv9-gp5h-frr4",
+    "Location": "devalue:5.1.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to devalue found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-32434",
+    "Location": "torch:2.5.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "44%",
+    "Exploitability_explanation": "API usage for torch confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21226",
+    "Location": "azure-core:1.35.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to azure-core found in the user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:4.22.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to rollup found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-62706",
+    "Location": "authlib:1.4.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for authlib confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-57820",
+    "Location": "devalue:5.1.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to devalue found in the user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-65110",
+    "Location": "vega-selections:6.1.0",
+    "Original_exploitability": "25%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to vega-selections found in the user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-57804",
+    "Location": "h2:4.1.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "44%",
+    "Exploitability_explanation": "API usage for h2 confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25535",
+    "Location": "jspdf:4.0.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to jspdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to ajv found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27199",
+    "Location": "werkzeug:3.1.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to werkzeug found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to minimatch found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25755",
+    "Location": "jspdf:4.0.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to jspdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25940",
+    "Location": "jspdf:4.0.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to jspdf found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27121",
+    "Location": "svelte:5.42.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API usage for svelte confirmed in the codebase. Version is assumed vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-33hq-fvwr-56pm",
+    "Location": "devalue:5.1.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to devalue found in the user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-8qm3-746x-r74r",
+    "Location": "devalue:5.1.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call or import to devalue found in the user code.",
+    "Assessment": "Correct"
+  }
+]

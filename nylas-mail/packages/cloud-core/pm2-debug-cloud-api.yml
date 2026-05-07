@@ -1,0 +1,27 @@
+apps:
+  - script   : packages/cloud-api/app.es6
+    interpreter : node_modules/.bin/babel-node
+    interpreter_args: "--inspect"
+    watch    : ["packages"]
+    name     : api
+    env      :
+      PORT: 5100
+      DB_ENCRYPTION_ALGORITHM : "aes-256-ctr"
+      DB_ENCRYPTION_PASSWORD : "XXXXXXXX"
+      GMAIL_CLIENT_ID : "XXXXXXXXXXXXX"
+      GMAIL_CLIENT_SECRET : "XXXXXXXXXXXXX"
+      GMAIL_REDIRECT_URL : "http://localhost:5100/auth/gmail/oauthcallback"
+      NODE_ENV: 'development'
+      HONEY_DATASET: 'n1-cloud-staging'
+      HONEY_WRITE_KEY: 'XXXXXXXXXXXXX'
+  - script   : packages/cloud-workers/app.es6
+    interpreter : node_modules/.bin/babel-node
+    interpreter_args: "--inspect"
+    watch    : ["packages"]
+    name     : workers
+    env      :
+      DB_ENCRYPTION_ALGORITHM : "aes-256-ctr"
+      DB_ENCRYPTION_PASSWORD : "XXXXXXXX"
+      NODE_ENV: 'development'
+  - script   : redis-server
+    name     : redis

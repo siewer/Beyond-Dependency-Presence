@@ -1,0 +1,13 @@
+test/
+tmp/
+coverage/
+issues/
+.github/
+website/
+*.md
+Dockerfile
+.eslintrc.json
+.jshintrc
+.releaserc
+.travis.yml
+commitlint.config.js

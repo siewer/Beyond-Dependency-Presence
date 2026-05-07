@@ -1,0 +1,989 @@
+[
+  {
+    "Vulnerability": "",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "xlsx:0.18.5",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "nltk:3.9.1",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "ecdsa:0.19.0",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "starlette:0.45.3",
+    "Original_exploitability": "96",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "authlib:1.4.1",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "h11:0.14.0",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "python-socketio:5.13.0",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "cryptography:44.0.0",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "langchain-text-splitters:0.3.8",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "fonttools:4.55.3",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "setuptools:75.8.0",
+    "Original_exploitability": "8",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "unstructured:0.16.17",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "jinja2:3.1.5",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "vite-plugin-static-copy:2.2.0",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "xlsx:0.18.5",
+    "Original_exploitability": "5",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "torch:2.5.1",
+    "Original_exploitability": "5",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "cookie:0.6.0",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "markdown:3.7",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "70",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "orjson:3.10.14",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "langchain-core:0.3.68",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "starlette:0.45.3",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "immutable:5.0.3",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "2",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "torch:2.5.1",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "brotli:1.1.0",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "svelte:5.42.2",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "langchain-core:0.3.68",
+    "Original_exploitability": "85",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "20",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "underscore:1.13.7",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "vega-functions:6.1.0",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "marshmallow:3.25.1",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "glob:10.4.5",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "authlib:1.4.1",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "flask:3.1.0",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "devalue:5.1.1",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "urllib3:2.3.0",
+    "Original_exploitability": "40",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "tmp:0.2.3",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "urllib3:2.3.0",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "python-multipart:0.0.20",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pymdown-extensions:10.14.2",
+    "Original_exploitability": "40",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "urllib3:2.3.0",
+    "Original_exploitability": "20",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "protobuf:4.25.5",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "langchain-community:0.3.26",
+    "Original_exploitability": "35",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pillow:11.2.1",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "svelte:5.42.2",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "dompurify:3.2.6",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "dompurify:3.2.6",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "@sveltejs/kit:2.22.4",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "werkzeug:3.1.3",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "lodash-es:4.17.21",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "svelte:5.42.2",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "svelte:5.42.2",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pillow:11.2.1",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "jspdf:4.0.0",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "devalue:5.1.1",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "urllib3:2.3.0",
+    "Original_exploitability": "5",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "96",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "werkzeug:3.1.3",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "30",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "authlib:1.4.1",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "urllib3:2.3.0",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "undici:6.21.2",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "undici:7.11.0",
+    "Original_exploitability": "55",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "jspdf:4.0.0",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "markdown-it:14.1.0",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "filelock:3.16.1",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "flask:3.1.0",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "jspdf:4.0.0",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "jspdf:4.0.0",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "transformers:4.48.0",
+    "Original_exploitability": "15",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "cryptography:44.0.0",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "pypdf:4.3.1",
+    "Original_exploitability": "96",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "langchain-core:0.3.68",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "protobuf:4.25.5",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "aiohttp:3.11.11",
+    "Original_exploitability": "2",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "sentencepiece:0.2.0",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "filelock:3.16.1",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "black:25.1.0",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "esbuild:0.21.5",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "devalue:5.1.1",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "torch:2.5.1",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "azure-core:1.35.0",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "rollup:4.22.4",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "authlib:1.4.1",
+    "Original_exploitability": "1",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "devalue:5.1.1",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "vega-selections:6.1.0",
+    "Original_exploitability": "25",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "h2:4.1.0",
+    "Original_exploitability": "50",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "jspdf:4.0.0",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "werkzeug:3.1.3",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "jspdf:4.0.0",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "jspdf:4.0.0",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "svelte:5.42.2",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "devalue:5.1.1",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  },
+  {
+    "Vulnerability": "",
+    "Location": "devalue:5.1.1",
+    "Original_exploitability": "0",
+    "Description": "",
+    "CVE": ""
+  }
+]

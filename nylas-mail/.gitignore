@@ -1,0 +1,62 @@
+##### Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+##### Arcanist / Phab
+**/.arcconfig
+**/.arclint
+**/arclib
+
+##### Node modules
+node_modules
+!packages/client-app/spec/fixtures/packages/package-with-incompatible-native-module/node_modules
+**/npm-debug.log*
+**/lerna-debug.log*
+
+##### Certs for building
+**/build/resources/certs
+
+##### Misc swap files
+**/*.swp
+**/*.swo
+**/*~
+**/*#
+**/.DS_Store
+**/Thumbs.db
+**/#emacs
+
+# Built cloud files
+n1_cloud_dist
+
+# Built Nylas Mail client
+packages/client-app/dist
+
+# Tests
+spec-saved-state.json
+
+# Symlinked Jasmine config files
+**/jasmine/config.json
+!packages/isomorphic-core/spec/jasmine/config.json
+
+# Symlinked isomorphic-core Specs
+packages/client-app/spec/isomorphic-core
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# Sqlite amalgamation for scripts
+scripts/sqlite
+
+# Scripts for calculating statistics
+scripts/toolbox
+scripts/venv
+
+# Python
+*.pyc
+
+# OAuth client secret for talking to Google Sheets
+client_secret.json
+/packages/client-app/internal_packages/client-sync

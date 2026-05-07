@@ -1,0 +1,57 @@
+@import "../../../static/variables/ui-variables";
+
+@accent-primary:            #f07746;
+@accent-primary-dark:       darken(#f07746, 1%);
+
+@border-color-secondary:   lighten(@background-secondary, 10%);
+
+@toolbar-background-color: #41403b;
+@light:  rgb(246, 246, 246);
+
+.sheet-toolbar .btn-toolbar img.content-mask {
+  background-color: @light;
+}
+
+.sheet-toolbar-container {
+  background-image: -webkit-linear-gradient(top,@toolbar-background-color, darken(@toolbar-background-color,5%));
+  box-shadow: none;
+  .btn {
+    background: lighten(@toolbar-background-color,4%);
+  }
+  .btn.btn-toolbar {
+    color: @light;
+  }
+  .toolbar-activity .activity-toolbar-icon {
+    background: @light;
+  }
+}
+
+.sheet-toolbar .item-back img.content-mask{
+  background-color: @light;
+}
+
+.sheet-toolbar .item-back .item-back-title{
+  color: @light;
+}
+
+.sheet-toolbar .selection-bar {
+  .absolute {
+    border-color: lighten(@toolbar-background-color, 5%);
+    background-color: darken(@toolbar-background-color, 8%);
+
+    .inner {
+      .centered {
+        color: @light;
+      }
+    }
+  }
+}
+
+.btn-icon img.content-mask {
+  background-color:@light;
+  color: @light;
+}
+
+.btn-icon img.content-mask:hover {
+  background-color:@accent-primary;
+}

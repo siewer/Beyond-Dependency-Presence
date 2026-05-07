@@ -1,0 +1,298 @@
+[
+  {
+    "Vulnerability": "CVE-2024-11393",
+    "Location": "transformers:4.46.3",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "The vulnerable function or specific model is not used in the repository code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-11394",
+    "Location": "transformers:4.46.3",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "The vulnerable function or specific model is not used in the repository code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-11392",
+    "Location": "transformers:4.46.3",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "The vulnerable function or specific model is not used in the repository code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-6345",
+    "Location": "setuptools:66.1.1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "The package is not imported or used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48887",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "vLLM is imported and used, but the specific vulnerable API is not directly called.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69872",
+    "Location": "diskcache:5.6.3",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "The package is not imported or used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-62372",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "vLLM is imported and used, but the specific vulnerable API is not directly called.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25048",
+    "Location": "xgrammar:0.1.29",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "The package is not imported or used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-62426",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "vLLM is imported and used, but the specific vulnerable API is not directly called.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-1194",
+    "Location": "transformers:4.46.3",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "AutoTokenizer is used, allowing for potential ReDoS via specific model configurations.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6242",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "vLLM is imported and used, but the specific vulnerable API is not directly called.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3263",
+    "Location": "transformers:4.46.3",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "AutoTokenizer is used, allowing for potential ReDoS via specific model configurations.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3264",
+    "Location": "transformers:4.46.3",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "AutoTokenizer is used, allowing for potential ReDoS via specific model configurations.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5197",
+    "Location": "transformers:4.46.3",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "The vulnerable function or specific model is not used in the repository code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25183",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "vLLM is imported and used, but the specific vulnerable API is not directly called.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6051",
+    "Location": "transformers:4.46.3",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "The vulnerable function or specific model is not used in the repository code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-2099",
+    "Location": "transformers:4.46.3",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "The vulnerable function or specific model is not used in the repository code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6638",
+    "Location": "transformers:4.46.3",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "The vulnerable function or specific model is not used in the repository code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6921",
+    "Location": "transformers:4.46.3",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "The vulnerable function or specific model is not used in the repository code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3933",
+    "Location": "transformers:4.46.3",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "The vulnerable function or specific model is not used in the repository code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-46570",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "vLLM is imported and used, but the specific vulnerable API is not directly called.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24779",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "vLLM is imported and used, but the specific vulnerable API is not directly called.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22773",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "vLLM is imported and used, but the specific vulnerable API is not directly called.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3777",
+    "Location": "transformers:4.46.3",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "The vulnerable function or specific model is not used in the repository code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-9052",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "vLLM is imported and used, but the specific vulnerable API is not directly called.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-ggpf-24jw-3fcw",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "85.0%",
+    "Exploitability_explanation": "Confirmed usage of vllm.LLM() with trust_remote_code=True. Malicious models can trigger RCE.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-61620",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "vLLM is imported and used, but the specific vulnerable API is not directly called.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-j828-28rj-hfhp",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "vLLM is imported and used, but the specific vulnerable API is not directly called.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-24357",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "85.0%",
+    "Exploitability_explanation": "Confirmed usage of vllm.LLM() with trust_remote_code=True. Malicious models can trigger RCE.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-30202",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "vLLM is imported and used, but the specific vulnerable API is not directly called.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-59425",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "vLLM is imported and used, but the specific vulnerable API is not directly called.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48956",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "vLLM is imported and used, but the specific vulnerable API is not directly called.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-29770",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "15.0%",
+    "Exploitability_explanation": "vLLM is imported and used, but the specific vulnerable API is not directly called.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66448",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "85.0%",
+    "Exploitability_explanation": "Confirmed usage of vllm.LLM() with trust_remote_code=True. Malicious models can trigger RCE.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-12720",
+    "Location": "transformers:4.46.3",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "The vulnerable function or specific model is not used in the repository code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30165",
+    "Location": "vllm:0.6.4.post1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "85.0%",
+    "Exploitability_explanation": "Confirmed usage of vllm.LLM() with trust_remote_code=True. Malicious models can trigger RCE.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-47273",
+    "Location": "setuptools:66.1.1",
+    "Original_exploitability": "0.0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "The package is not imported or used in the codebase.",
+    "Assessment": "Correct"
+  }
+]

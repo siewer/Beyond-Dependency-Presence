@@ -1,0 +1,66 @@
+[
+  {
+    "Vulnerability": "CVE-2020-25658",
+    "Location": "rsa:3.4.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Thorough search of the codebase found no explicit calls to `rsa.decrypt`. According to the evidence mandate, if the vulnerable API is not explicitly called, the exploitability status is 'not_confirmed' and probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-18074",
+    "Location": "requests:2.13.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Thorough search of the codebase found no explicit calls to `requests.get` or other request functions that would trigger redirects. According to the evidence mandate, if the vulnerable API is not explicitly called, the exploitability status is 'not_confirmed' and probability is 0.01 (1%).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47081",
+    "Location": "requests:2.13.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Thorough search of the codebase found no explicit calls to `requests` API. According to the evidence mandate, if the vulnerable API is not explicitly called, the exploitability status is 'not_confirmed' and probability is 0.01 (1%).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-13757",
+    "Location": "rsa:3.4.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Thorough search of the codebase found no explicit calls to `rsa.sign`. According to the evidence mandate, if the vulnerable API is not explicitly called, the exploitability status is 'not_confirmed' and probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-35195",
+    "Location": "requests:2.13.0",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Thorough search of the codebase found no explicit calls to `requests` with proxy configuration. According to the evidence mandate, if the vulnerable API is not explicitly called, the exploitability status is 'not_confirmed' and probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11078",
+    "Location": "httplib2:0.10.3",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Thorough search of the codebase found no explicit calls to `httplib2.Http.request`. According to the evidence mandate, if the vulnerable API is not explicitly called, the exploitability status is 'not_confirmed' and probability is 0.01 (1%).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-21240",
+    "Location": "httplib2:0.10.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Thorough search of the codebase found no explicit calls to `httplib2`. The original score was already 1%, which is aligned with the outcome of the evidence mandate.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32681",
+    "Location": "requests:2.13.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Thorough search of the codebase found no explicit calls to `requests` that would lead to cross-origin redirects with proxy-authorization. According to the evidence mandate, if the vulnerable API is not explicitly called, the exploitability status is 'not_confirmed' and probability is 0.01 (1%).",
+    "Assessment": "Incorrect"
+  }
+]

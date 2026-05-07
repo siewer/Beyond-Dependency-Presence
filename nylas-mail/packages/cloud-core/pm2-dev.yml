@@ -1,0 +1,37 @@
+apps:
+  - script   : packages/cloud-api/app.es6
+    interpreter : node_modules/.bin/babel-node
+    watch    : ["packages"]
+    name     : api
+    env      :
+      PORT: 5100
+      DB_NAME : "nylasmailclouddb"
+      DB_ENCRYPTION_ALGORITHM : "aes-256-ctr"
+      DB_ENCRYPTION_PASSWORD : "XXXXXX"
+      GMAIL_CLIENT_ID : "XXXXXXXXXXXXX"
+      GMAIL_CLIENT_SECRET : "XXXXXXXXXXXXX"
+      GMAIL_REDIRECT_URL : "http://localhost:5100/auth/gmail/oauthcallback"
+      NODE_ENV: 'development'
+      HONEY_DATASET: 'n1-cloud-staging'
+      HONEY_WRITE_KEY: 'XXXXXXXXXXXXX'
+      BILLING_URL: 'https://billing-staging.nylas.com'
+    # billing.nylas.com is backed by a Python app from cloud-core.git; for ease
+    # of development we default to using the staging version. use this env if
+    # you're also making changes to the billing service & are running it locally.
+    env_billing_local:
+      BILLING_URL: 'http://billing.lvh.me:5555'
+  - script   : packages/cloud-workers/app.es6
+    interpreter : node_modules/.bin/babel-node
+    watch    : ["packages"]
+    name     : workers
+    env      :
+      DB_NAME : "nylasmailclouddb"
+      DB_ENCRYPTION_ALGORITHM : "aes-256-ctr"
+      DB_ENCRYPTION_PASSWORD : "XXXXXXX"
+      GMAIL_CLIENT_ID : "XXXXXXXXXXXXX"
+      GMAIL_CLIENT_SECRET : "XXXXXXXXXXXXX"
+      GMAIL_REDIRECT_URL : "http://localhost:5100/auth/gmail/oauthcallback"
+      NODE_ENV: 'development'
+      BILLING_URL: 'https://billing-staging.nylas.com'
+  - script   : packages/cloud-core/scripts/run-redis.sh
+    name     : redis

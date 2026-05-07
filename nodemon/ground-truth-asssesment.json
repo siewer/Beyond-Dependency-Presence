@@ -1,0 +1,362 @@
+[
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": "15%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Usage found ONLY in Library/Vendor/Dev Code (mocha dependencies). Not used in active nodemon code paths. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:6.3.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.3.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:0.3.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Usage found ONLY in Library/Vendor/Dev Code (mocha dependencies). Not used in active nodemon code paths. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16042",
+    "Location": "growl:1.9.2",
+    "Original_exploitability": "50%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Usage found ONLY in Library/Vendor/Dev Code (mocha dependencies). Not used in active nodemon code paths. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2016-10540",
+    "Location": "minimatch:0.3.0",
+    "Original_exploitability": "70%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Usage found ONLY in Library/Vendor/Dev Code (mocha dependencies). Not used in active nodemon code paths. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-20162",
+    "Location": "ms:0.7.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Usage found ONLY in Library/Vendor/Dev Code (mocha dependencies). Not used in active nodemon code paths. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7598",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": "50%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Usage found ONLY in Library/Vendor/Dev Code (mocha dependencies). Not used in active nodemon code paths. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "@babel/traverse:7.22.8",
+    "Original_exploitability": "1%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Internal component usage only (dev dependencies or build tools). No direct user code calls found in core library. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2229",
+    "Location": "undici:6.23.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2229",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/helpers:7.22.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Internal component usage only (dev dependencies or build tools). No direct user code calls found in core library. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.22.6",
+    "Original_exploitability": "20%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Internal component usage only (dev dependencies or build tools). No direct user code calls found in core library. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1526",
+    "Location": "undici:6.23.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1526",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1528",
+    "Location": "undici:6.23.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1528",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:0.3.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Usage found ONLY in Library/Vendor/Dev Code (mocha dependencies). Not used in active nodemon code paths. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:10.2.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:10.2.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:0.3.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Usage found ONLY in Library/Vendor/Dev Code (mocha dependencies). Not used in active nodemon code paths. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:10.2.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:10.2.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2581",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.2.7",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Internal component usage only (dev dependencies or build tools). No direct user code calls found in core library. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:2.2.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Usage found ONLY in Library/Vendor/Dev Code (mocha dependencies). Not used in active nodemon code paths. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.12.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Internal component usage only (dev dependencies or build tools). No direct user code calls found in core library. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1525",
+    "Location": "undici:6.23.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1525",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": "1%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Internal component usage only (dev dependencies or build tools). No direct user code calls found in core library. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:7.5.9",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Internal component usage only (dev dependencies or build tools). No direct user code calls found in core library. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Internal component usage only (dev dependencies or build tools). No direct user code calls found in core library. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1527",
+    "Location": "undici:6.23.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1527",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:7.5.9",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Internal component usage only (dev dependencies or build tools). No direct user code calls found in core library. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:1.4.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Internal component usage only (dev dependencies or build tools). No direct user code calls found in core library. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-h6ch-v84p-w6p9",
+    "Location": "diff:1.4.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Internal component usage only (dev dependencies or build tools). No direct user code calls found in core library. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33228",
+    "Location": "flatted:3.2.7",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Internal component usage only (dev dependencies or build tools). No direct user code calls found in core library. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:2.2.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Usage found ONLY in Library/Vendor/Dev Code (mocha dependencies). Not used in active nodemon code paths. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:0.3.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Usage found ONLY in Library/Vendor/Dev Code (mocha dependencies). Not used in active nodemon code paths. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation:": "Internal component usage only (dev dependencies or build tools). No direct user code calls found in core library. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.7.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation:": "No active vulnerable API calls or constraints found in the codebase.",
+    "Assessment": "Correct"
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "Vulnerability": "CVE-2021-41182",
+    "Location": "jquery-ui:1.12.1",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "The vulnerable API (datepicker) is not called anywhere in the active JavaScript codebase. Extensive search for 'datepicker' yielded no results. Probability reduced to 0.02 according to scoring rules (API not used).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-1285",
+    "Location": "log4net:2.0.3",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The library log4net is only present in a test resource file (a.csproj) and is not part of the active Java codebase or its dependencies. Probability capped at 0.01 (API absent).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-1045",
+    "Location": "Microsoft.Owin:3.0.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The library Microsoft.Owin is only mentioned in a test resource file (a.csproj) and is not used in the application. Probability is 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-41184",
+    "Location": "jquery-ui:1.12.1",
+    "Original_exploitability": 75,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Thorough search found only standard jQuery .position() calls and internal cropping logic (cropPosition) in utils-0.0.47.js. No calls to the vulnerable jquery-ui .position() utility with object input were found. Probability reduced to 0.02.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-0248",
+    "Location": "System.Net.Http:",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "System.Net.Http is a .NET library and is only referenced in a test resource (.csproj). It is not part of the Java application. Probability is 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47072",
+    "Location": "xstream:1.4.20",
+    "Original_exploitability": 20,
+    "Exploitability": 5,
+    "Exploitability_explanation": "XStream is a dependency in suggester/pom.xml, but no explicit calls to XStream APIs (e.g., fromXML) were found in the Java source code. It may be used internally by another dependency or is dead code in this version. Probability set to 0.05.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-0247",
+    "Location": "System.Net.Http:",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Library absent from active code path. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-31160",
+    "Location": "jquery-ui:1.12.1",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "The vulnerable component (checkboxradio) is not used in the application. Probability 0.02.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-8292",
+    "Location": "System.Net.Http:",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Library absent from active code path (.NET library in a Java project). Probability 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-0249",
+    "Location": "System.Net.Http:",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Library absent. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-0256",
+    "Location": "System.Net.Http:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Library absent. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-41183",
+    "Location": "jquery-ui:1.12.1",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "API call confirmed in utils-0.0.47.js (input.autocomplete). The usage is for search fields and follows standard patterns. Assuming vulnerable version, 15% probability is reasonable given the context of search inputs. Assessment remains within 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-29117",
+    "Location": "Microsoft.Owin:3.0.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Library absent. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-72hv-8253-57qq",
+    "Location": "jackson-core:2.17.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Jackson ObjectMapper usage confirmed in opengrok.auth.plugin.configuration.Configuration.java (plugins). This handles local YAML configuration. While the risk is low, the API is present and reachable. Probability set to 0.05.",
+    "Assessment": "Correct"
+  }
+]

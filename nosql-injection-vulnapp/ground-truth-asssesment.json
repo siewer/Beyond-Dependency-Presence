@@ -1,0 +1,674 @@
+[
+  {
+    "Vulnerability": "CVE-2024-38816",
+    "Location": "spring-webmvc:5.3.19",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22978",
+    "Location": "spring-security-core:5.6.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-20860",
+    "Location": "spring-webmvc:5.3.19",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-24813",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44487",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22978",
+    "Location": "spring-security-web:5.6.3",
+    "Original_exploitability": "5%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-1471",
+    "Location": "snakeyaml:1.29",
+    "Original_exploitability": "25%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Vulnerable library is a transitive dependency with no explicit usage in the application code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-50379",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-1000027",
+    "Location": "spring-web:5.3.19",
+    "Original_exploitability": "5%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38819",
+    "Location": "spring-webmvc:5.3.19",
+    "Original_exploitability": "10%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-22243",
+    "Location": "spring-web:5.3.19",
+    "Original_exploitability": "20%",
+    "Exploitability": "20%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-22259",
+    "Location": "spring-web:5.3.19",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-34034",
+    "Location": "spring-security-config:5.6.3",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "API call confirmed (antMatchers) in WebSecurityConfig. Usage of wildcards (/**/search) increases potential for path matching bypass.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-24549",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-46589",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "40%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-24998",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-61795",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22732",
+    "Location": "spring-security-web:5.6.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48924",
+    "Location": "commons-lang3:3.12.0",
+    "Original_exploitability": "25%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found in the application code. Constraints for exploitation are not met.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-38750",
+    "Location": "snakeyaml:1.29",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Vulnerable library is a transitive dependency with no explicit usage in the application code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-5072",
+    "Location": "json:20220320",
+    "Original_exploitability": "70%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "Explicit call to JSONObject found in InsecureContactsService, but parsing of untrusted nested JSON is not performed. Reached via serialization only.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-48989",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-22257",
+    "Location": "spring-security-core:5.6.3",
+    "Original_exploitability": "8%",
+    "Exploitability": "8%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-45688",
+    "Location": "json:20220320",
+    "Original_exploitability": "40%",
+    "Exploitability": "20%",
+    "Exploitability_explanation": "Explicit call to JSONObject found in InsecureContactsService, but parsing of untrusted nested JSON is not performed. Reached via serialization only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-6378",
+    "Location": "logback-classic:1.2.11",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found in the application code. Constraints for exploitation are not met.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-25710",
+    "Location": "commons-compress:1.21",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found in the application code. Constraints for exploitation are not met.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-12801",
+    "Location": "logback-core:1.2.11",
+    "Original_exploitability": "20%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found in the application code. Constraints for exploitation are not met.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-1370",
+    "Location": "json-smart:2.4.8",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found in the application code. Constraints for exploitation are not met.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25857",
+    "Location": "snakeyaml:1.29",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Vulnerable library is a transitive dependency with no explicit usage in the application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38808",
+    "Location": "spring-expression:5.3.19",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24733",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-45648",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-34750",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "45%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-38821",
+    "Location": "spring-security-web:5.6.3",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-22262",
+    "Location": "spring-web:5.3.19",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-56337",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-31692",
+    "Location": "spring-security-core:5.6.3",
+    "Original_exploitability": "40%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-41080",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38820",
+    "Location": "spring-context:5.3.19",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38820",
+    "Location": "spring-web:5.3.19",
+    "Original_exploitability": "35%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-41242",
+    "Location": "spring-webmvc:5.3.19",
+    "Original_exploitability": "45%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-45143",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-23672",
+    "Location": "tomcat-embed-websocket:9.0.62",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-20863",
+    "Location": "spring-expression:5.3.19",
+    "Original_exploitability": "25%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-20883",
+    "Location": "spring-boot-autoconfigure:2.6.7",
+    "Original_exploitability": "35%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-6378",
+    "Location": "logback-core:1.2.11",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found in the application code. Constraints for exploitation are not met.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-42795",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38749",
+    "Location": "snakeyaml:1.29",
+    "Original_exploitability": "20%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Vulnerable library is a transitive dependency with no explicit usage in the application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22235",
+    "Location": "spring-boot:2.6.7",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-53506",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-42003",
+    "Location": "jackson-databind:2.13.2.1",
+    "Original_exploitability": "5%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Vulnerable library is a transitive dependency with no explicit usage in the application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-26308",
+    "Location": "commons-compress:1.21",
+    "Original_exploitability": "5%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found in the application code. Constraints for exploitation are not met.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48988",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "35%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-42004",
+    "Location": "jackson-databind:2.13.2.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Vulnerable library is a transitive dependency with no explicit usage in the application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-20861",
+    "Location": "spring-expression:5.3.19",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22976",
+    "Location": "spring-security-core:5.6.3",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-38828",
+    "Location": "spring-webmvc:5.3.19",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-22737",
+    "Location": "spring-webmvc:5.3.19",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38827",
+    "Location": "spring-security-core:5.6.3",
+    "Original_exploitability": "25%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-22970",
+    "Location": "spring-beans:5.3.19",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-52520",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-55752",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-38751",
+    "Location": "snakeyaml:1.29",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Vulnerable library is a transitive dependency with no explicit usage in the application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-42252",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38752",
+    "Location": "snakeyaml:1.29",
+    "Original_exploitability": "5%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Vulnerable library is a transitive dependency with no explicit usage in the application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-49125",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38809",
+    "Location": "spring-web:5.3.19",
+    "Original_exploitability": "60%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-52999",
+    "Location": "jackson-core:2.13.2",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Vulnerable library is a transitive dependency with no explicit usage in the application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-51074",
+    "Location": "json-path:2.6.0",
+    "Original_exploitability": "25%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found in the application code. Constraints for exploitation are not met.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-12798",
+    "Location": "logback-core:1.2.11",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found in the application code. Constraints for exploitation are not met.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-41249",
+    "Location": "spring-core:5.3.19",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55754",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-41854",
+    "Location": "snakeyaml:1.29",
+    "Original_exploitability": "25%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Vulnerable library is a transitive dependency with no explicit usage in the application code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-49124",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-11226",
+    "Location": "logback-core:1.2.11",
+    "Original_exploitability": "25%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found in the application code. Constraints for exploitation are not met.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-46701",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66614",
+    "Location": "tomcat-embed-core:9.0.62",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found. The high original exploitability score is not justified by the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-22233",
+    "Location": "spring-context:5.3.19",
+    "Original_exploitability": "8%",
+    "Exploitability": "8%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22228",
+    "Location": "spring-security-crypto:5.6.3",
+    "Original_exploitability": "10%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-31573",
+    "Location": "xmlunit-core:2.8.4",
+    "Original_exploitability": "5%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found in the application code. Constraints for exploitation are not met.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24400",
+    "Location": "assertj-core:3.21.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found in the application code. Constraints for exploitation are not met.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22735",
+    "Location": "spring-webmvc:5.3.19",
+    "Original_exploitability": "0%",
+    "Exploitability": "0%",
+    "Exploitability_explanation": "No explicit API call found, but application relies on default Spring/Tomcat configuration which might be affected. Score remains within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1225",
+    "Location": "logback-core:1.2.11",
+    "Original_exploitability": "25%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to the vulnerable API found in the application code. Constraints for exploitation are not met.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-72hv-8253-57qq",
+    "Location": "jackson-core:2.13.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Vulnerable library is a transitive dependency with no explicit usage in the application code.",
+    "Assessment": "Correct"
+  }
+]

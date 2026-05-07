@@ -1,0 +1,26 @@
+[
+  {
+    "Vulnerability": "CVE-2026-27601",
+    "Location": "underscore:1.12.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (Underscore.js) is not called in any active code path. Thorough search for `_.flatten` and `_.isEqual` returned no results in the codebase or dependencies.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33036",
+    "Location": "fast-xml-parser:5.4.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (fast-xml-parser) is not called in any active code path. Thorough search for `replaceEntitiesValue` and usage of `fast-xml-parser` returned no results in the codebase or dependencies.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33349",
+    "Location": "fast-xml-parser:5.4.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (fast-xml-parser) is not called in any active code path. Thorough search for `DocTypeReader` and usage of `fast-xml-parser` returned no results in the codebase or dependencies.",
+    "Assessment": "Correct"
+  }
+]
