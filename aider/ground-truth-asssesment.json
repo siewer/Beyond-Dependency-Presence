@@ -1,0 +1,162 @@
+[
+  {
+    "Vulnerability": "CVE-2026-34525",
+    "Location": "aiohttp:3.13.3",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version 3.13.3 is vulnerable to multiple Host header parsing issues. However, aider does not use aiohttp as a server or client directly; it is a transient dependency of litellm. No active code path using aiohttp server functionality was found in aider. Probability capped at 0.10 for library-internal usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33231",
+    "Location": "nltk:3.9.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "CVE-2026-33231 refers to a DoS in the NLTK WordNet Browser server. Aider does not import or use NLTK (it is not found in aider's python files or direct project dependencies). Even if present as a deep transient dependency, the WordNet server is not started. Probability is minimal.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-rf74-v2fm-23pw",
+    "Location": "nltk:3.9.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "GHSA-rf74-v2fm-23pw involves unbounded recursion in NLTK's JSONTaggedDecoder. Aider does not use NLTK or its JSON decoding utilities. The vulnerability is unreachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69872",
+    "Location": "diskcache:5.6.3",
+    "Original_exploitability": 93,
+    "Exploitability": 90,
+    "Exploitability_explanation": "\u00e2\u015b\u2026 API call confirmed. aider/repomap.py (line 14, 220) uses diskcache.Cache for the tags cache. diskcache version 5.6.3 and prior are vulnerable to insecure deserialization via pickle when reading from the cache directory. Since aider operates on potentially untrusted repositories and stores cache in predictable local folders (.aider.tags.cache.v4), an attacker could provide a malicious cache folder to achieve RCE. High probability confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30922",
+    "Location": "pyasn1:0.6.2",
+    "Original_exploitability": 1,
+    "Exploitability": 5,
+    "Exploitability_explanation": "CVE-2026-30922 is a DoS via recursion in pyasn1. Aider does not use pyasn1 in its core logic; it is a transient dependency. No processing of untrusted ASN.1 data was found. Probability capped for library-internal usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34515",
+    "Location": "aiohttp:3.13.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Windows-specific UNC path traversal in aiohttp static handler. Aider does not serve static files via aiohttp. The vulnerable component is not used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22815",
+    "Location": "aiohttp:3.13.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "DoS via unbounded headers in aiohttp. Aider does not implement an aiohttp-based server to receive untrusted traffic. Transient dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34516",
+    "Location": "aiohttp:3.13.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "DoS via multipart headers in aiohttp. Aider does not process multipart data using aiohttp. Unreachable path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33230",
+    "Location": "nltk:3.9.3",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "XSS in NLTK WordNet Browser. NLTK is not used by aider, and the WordNet Browser server is never started. Minimal probability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34514",
+    "Location": "aiohttp:3.13.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "CRLF injection in aiohttp multipart content_type. Aider does not use aiohttp multipart functionality. Transient dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34519",
+    "Location": "aiohttp:3.13.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "HTTP Response Splitting in aiohttp. Aider is a client-side tool and does not serve content via aiohttp or use it to generate responses. Unreachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34520",
+    "Location": "aiohttp:3.13.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Security bypass in aiohttp C parser via null bytes. Aider does not use aiohttp to parse untrusted responses directly in a security-sensitive context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34513",
+    "Location": "aiohttp:3.13.3",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "DNS Cache DoS in aiohttp. While litellm might use aiohttp, aider itself does not expose an endpoint that would allow an attacker to trigger large-scale DNS resolutions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34517",
+    "Location": "aiohttp:3.13.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Multipart Form DoS in aiohttp. Aider does not serve a multipart-capable server endpoint. Unreachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34518",
+    "Location": "aiohttp:3.13.3",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Cookie leak on cross-origin redirects in aiohttp. Aider/litellm might follow redirects, but sensitive cross-origin redirection is unlikely in standard LLM provider communication.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34073",
+    "Location": "cryptography:46.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Certificate name constraint bypass. Requires an uncommon X.509 topology. While aider uses TLS for LLM requests, the specific constraints required for this bypass are not present in typical Web PKI interaction.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-4539",
+    "Location": "pygments:2.19.2",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "ReDoS in Pygments AdlLexer. Aider uses Pygments to guess lexers for project files. While technically reachable if a .adl file is scanned, the impact is a local CPU spike during repo mapping. Probability capped for library-internal usage on local files.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25645",
+    "Location": "requests:2.32.5",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Insecure temporary file in requests utility extract_zipped_paths. Aider does not call this specific utility function in its codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-35030",
+    "Location": "litellm:1.82.3",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Auth bypass in litellm JWT auth. This requires enable_jwt_auth: true, which is not set in aider. Aider uses litellm as a local library with direct API keys.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-35029",
+    "Location": "litellm:1.82.3",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Privilege escalation on /config/update in litellm proxy. Aider does not use litellm in proxy mode; the administrative endpoint is not exposed.",
+    "Assessment": "Correct"
+  }
+]

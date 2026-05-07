@@ -1,0 +1,42 @@
+import React, { forwardRef } from "react";
+import { Select as AntdSelect } from "antd";
+
+const Select = forwardRef<
+  HTMLDivElement,
+  {
+    styles: React.CSSProperties;
+    attrs: {
+      class: string;
+      "aria-labelledby": string;
+    };
+    custom: {
+      options?: any;
+      placeholder?: string;
+      defaultValue?: any;
+      disabled: boolean;
+      dropdownStyle?: React.CSSProperties;
+    };
+    onChange: (checked: boolean) => void;
+    id?: string;
+    className?: string;
+  }
+>((props, ref) => {
+  const { custom } = props;
+  // moved ref to div, as the Antd select doesn't provide ref for select
+  return (
+    <div ref={ref} style={props.styles} id={props.id}>
+      <AntdSelect
+        aria-labelledby={props.attrs["aria-labelledby"]}
+        {...custom}
+        style={props.styles}
+        dropdownStyle={props.styles}
+        className={`${props.className} ${props.attrs?.class}`}
+        onChange={props.onChange}
+        options={props.custom.options}
+        placeholder={props.custom.placeholder}
+      />
+    </div>
+  );
+});
+
+export default Select;

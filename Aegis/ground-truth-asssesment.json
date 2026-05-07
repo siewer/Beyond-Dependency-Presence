@@ -1,0 +1,170 @@
+[
+  {
+    "Vulnerability": "CVE-2021-37714",
+    "Location": "jsoup:1.12.2",
+    "Original_exploitability": 5,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API (Jsoup.parse/Jsoup.connect) is NOT called in any active code path. The library is present as a transitive dependency (listed in aboutlibraries.json) but not used by the application source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-24970",
+    "Location": "netty-handler:4.1.110.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase or transitive dependency list (aboutlibraries.json). No API calls confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-24970",
+    "Location": "netty-handler:4.1.93.Final",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase or transitive dependency list (aboutlibraries.json). No API calls confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-36033",
+    "Location": "jsoup:1.12.2",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API (Safelist.preserveRelativeLinks) is NOT called. The library is present as a transitive dependency but not used by the application source code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-34462",
+    "Location": "netty-handler:4.1.93.Final",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase. No API calls confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47535",
+    "Location": "netty-common:4.1.110.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase. No API calls confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47535",
+    "Location": "netty-common:4.1.93.Final",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase. No API calls confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-29025",
+    "Location": "netty-codec-http:4.1.93.Final",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase. No API calls confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25193",
+    "Location": "netty-common:4.1.110.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase. No API calls confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25193",
+    "Location": "netty-common:4.1.93.Final",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase. No API calls confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-7254",
+    "Location": "protobuf-java:3.24.4",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in GoogleAuthInfo.java:198 (parseFrom). The application parses untrusted Protobuf migration data from URIs, satisfying the reachability constraint for the DoS via recursion depth. 100% constraints satisfied.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-7254",
+    "Location": "protobuf-kotlin:3.24.4",
+    "Original_exploitability": 70,
+    "Exploitability": 75,
+    "Exploitability_explanation": "API call confirmed in GoogleAuthInfo.java:198 (parseFrom). The application parses untrusted Protobuf migration data from URIs, satisfying the reachability constraint for the DoS via recursion depth. 100% constraints satisfied.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58057",
+    "Location": "netty-codec:4.1.110.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase. No API calls confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58057",
+    "Location": "netty-codec:4.1.93.Final",
+    "Original_exploitability": 20,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase. No API calls confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55163",
+    "Location": "netty-codec-http2:4.1.110.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase. No API calls confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55163",
+    "Location": "netty-codec-http2:4.1.93.Final",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase. No API calls confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-67735",
+    "Location": "netty-codec-http:4.1.110.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase. No API calls confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-67735",
+    "Location": "netty-codec-http:4.1.93.Final",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase. No API calls confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58056",
+    "Location": "netty-codec-http:4.1.110.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase. No API calls confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58056",
+    "Location": "netty-codec-http:4.1.93.Final",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase. No API calls confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-xpw8-rcwv-8f8p",
+    "Location": "netty-codec-http2:4.1.93.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Netty library not found in the codebase. No API calls confirmed.",
+    "Assessment": "Correct"
+  }
+]

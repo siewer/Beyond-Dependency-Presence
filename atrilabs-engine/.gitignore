@@ -1,0 +1,15 @@
+node_modules/
+build/
+lib/
+bin/
+yarn-error.log
+lerna-debug.log
+lib-cjs/
+.idea/*
+.vscode/
+.DS_Store
+coverage/
+.history
+dist/
+example-atri-app/
+tsconfig.tsbuildinfo

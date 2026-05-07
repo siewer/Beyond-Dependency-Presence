@@ -1,0 +1,402 @@
+[
+  {
+    "Vulnerability": "CVE-2025-69228",
+    "Location": "aiohttp:3.13.0",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "aiohttp is used as a client for internal WebSocket relaying. Vulnerable server-side methods (e.g. Request.post, header smelting) are not reachable or used in a controllable context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69224",
+    "Location": "aiohttp:3.13.0",
+    "Original_exploitability": 55,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "Confirmed version 3.13.0 is vulnerable. API call confirmed in `awx/main/wsrelay.py` (ClientSession, ws_connect), but usage is as a client, not a server. Smuggling typically target servers. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-23491",
+    "Location": "certifi:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Functional constraints not met; API usage is internal/secure.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-25658",
+    "Location": "rsa:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable function/utility not found in codebase after thorough repository-wide search.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-13757",
+    "Location": "rsa:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable function/utility not found in codebase after thorough repository-wide search.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-24816",
+    "Location": "ipython:7.31.1",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "IPython 7.31.1 is vulnerable. Indirect usage found in `awxkit/awxkit/scripts/basic_session.py` (start_ipython). However, the vulnerability requires Windows OS and a missing `ctypes` module, which is not a standard AWX/AWXKit environment. Impact on production is negligible. Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-3702",
+    "Location": "ansible-runner:",
+    "Original_exploitability": 75,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "Confirmed API usage in `awx/main/tasks/jobs.py` (ansible_runner.interface.run). Version is assumed vulnerable. Most jobs are mitigated by Execution Environment isolation (containers), but SystemJobs run locally on the host, maintaining a residual risk for local race conditions in /tmp. Status: confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2016-1494",
+    "Location": "rsa:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable function/utility not found in codebase after thorough repository-wide search.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3701",
+    "Location": "ansible-runner:",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "Confirmed API usage in `awx/main/tasks/jobs.py`. However, AWX executes jobs in isolated Execution Environments (containers), which completely mitigates the multi-user race condition in `/tmp` (CVE-2021-3701/3702).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-4041",
+    "Location": "ansible-runner:",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "Confirmed API usage in `awx/main/tasks/jobs.py`. However, AWX executes jobs in isolated Execution Environments (containers), which completely mitigates the multi-user race condition in `/tmp` (CVE-2021-3701/3702).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1285",
+    "Location": "django:5.2.8",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Truncator.chars() is used, but without html=True constraint (per awx/main/models/events.py), preventing the quadratic complexity DoS.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1207",
+    "Location": "django:5.2.8",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Vulnerable Django API (e.g. FilteredRelation) is not used in the codebase (0% functional constraint satisfaction).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14550",
+    "Location": "django:5.2.8",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Vulnerable Django API (e.g. FilteredRelation) is not used in the codebase (0% functional constraint satisfaction).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13473",
+    "Location": "django:5.2.8",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Vulnerable Django API (e.g. FilteredRelation) is not used in the codebase (0% functional constraint satisfaction).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25674",
+    "Location": "django:5.2.8",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Vulnerable Django API (e.g. FilteredRelation) is not used in the codebase (0% functional constraint satisfaction).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25673",
+    "Location": "django:5.2.8",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Vulnerable Django API (e.g. FilteredRelation) is not used in the codebase (0% functional constraint satisfaction).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30922",
+    "Location": "pyasn1:0.6.2",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Functional constraints not met; API usage is internal/secure.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34519",
+    "Location": "aiohttp:3.13.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "aiohttp is used as a client for internal WebSocket relaying. Vulnerable server-side methods (e.g. Request.post, header smelting) are not reachable or used in a controllable context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34073",
+    "Location": "cryptography:46.0.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Version 46.0.3 is vulnerable to DNS name constraint bypass. Usage of `cryptography` found in `awx/main/utils/licensing.py` (x509.load_pem_x509_certificate) and `encryption.py` (fernet), but no usage of high-level verification APIs with DNS name constraints identified. Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34520",
+    "Location": "aiohttp:3.13.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "aiohttp is used as a client for internal WebSocket relaying. Vulnerable server-side methods (e.g. Request.post, header smelting) are not reachable or used in a controllable context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22701",
+    "Location": "filelock:3.19.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Functional constraints not met; API usage is internal/secure.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23949",
+    "Location": "jaraco-context:6.0.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Version 6.0.1 is vulnerable to Path Traversal (Zip Slip) in `tarball()`. Thorough search of the codebase found no calls to the vulnerable `tarball()` function. Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6176",
+    "Location": "brotli:1.1.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Functional constraints not met; API usage is internal/secure.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27448",
+    "Location": "pyopenssl:25.3.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Functional constraints not met; API usage is internal/secure.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69277",
+    "Location": "pynacl:1.6.0",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Functional constraints not met; API usage is internal/secure.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34516",
+    "Location": "aiohttp:3.13.0",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "Confirmed version 3.13.0 is vulnerable to DoS via excessive multipart headers. Usage confirmed in `awx/main/wsrelay.py` (client mode). A malicious internal server could DoS the relay client, but it's not a direct remote vector. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33154",
+    "Location": "dynaconf:3.2.12",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Version 3.2.12 is vulnerable to SSTI via `@Jinja` resolver. Thorough repository search found no usage of the `@Jinja` prefix in any configuration files or code paths. Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34518",
+    "Location": "aiohttp:3.13.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "aiohttp is used as a client for internal WebSocket relaying. Vulnerable server-side methods (e.g. Request.post, header smelting) are not reachable or used in a controllable context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22815",
+    "Location": "aiohttp:3.13.0",
+    "Original_exploitability": 55,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "Confirmed version 3.13.0 is vulnerable to DoS via header/trailer handling. Usage confirmed in `awx/main/wsrelay.py` (client mode). A malicious internal server could DoS the relay client, but it's not a direct remote vector. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-68146",
+    "Location": "filelock:3.19.1",
+    "Original_exploitability": 25,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "Version 3.19.1 is vulnerable to symlink race conditions. Confirmed usage in `awx/main/tasks/receptor.py` with a predictable lock file path `/etc/receptor/receptor.conf.lock`. However, exploitation requires local attacker write access to `/etc/receptor/`, which is highly restricted in standard deployments. Status: uncertain.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27459",
+    "Location": "pyopenssl:25.3.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Version 25.3.0 is vulnerable to buffer overflow in `set_cookie_generate_callback`. No calls to this specific callback setting function were found in the codebase. Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-25645",
+    "Location": "requests:2.32.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable function/utility not found in codebase after thorough repository-wide search.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32274",
+    "Location": "black:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Functional constraints not met; API usage is internal/secure.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34517",
+    "Location": "aiohttp:3.13.0",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "Confirmed version 3.13.0 is vulnerable to DoS via large multipart fields. Usage confirmed in `awx/main/wsrelay.py` (client mode). A malicious internal server could DoS the relay client. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34525",
+    "Location": "aiohttp:3.13.0",
+    "Original_exploitability": 70,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "Confirmed version 3.13.0 is vulnerable to Host header bypass via multiple headers. Usage in `wsrelay.py` is as a client, limiting the impact of server-side bypasses. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34515",
+    "Location": "aiohttp:3.13.0",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Confirmed version 3.13.0 is vulnerable to NTLMv2 info leak on Windows (UNC paths). AWX production environments are Linux-based, making this vector non-viable in standard deployments. Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-0994",
+    "Location": "protobuf:6.32.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Functional constraints not met; API usage is internal/secure.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34514",
+    "Location": "aiohttp:3.13.0",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "Confirmed version 3.13.0 is vulnerable to potential resource management issues/DoS. Usage in `wsrelay.py` is as a client, limiting impact. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-21503",
+    "Location": "black:",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Functional constraints not met; API usage is internal/secure.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32597",
+    "Location": "pyjwt:2.10.1",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "Version 2.10.1 is vulnerable to `crit` header validation bypass. Direct usage not found in user code; functionality is delegated to `ansible_base`. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34513",
+    "Location": "aiohttp:3.13.0",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "Confirmed version 3.13.0 is vulnerable to potential resource management issues/DoS. Usage in `wsrelay.py` is as a client, limiting impact. Status: not_confirmed (Internal Usage Only).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-21226",
+    "Location": "azure-core:1.35.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Functional constraints not met; API usage is internal/secure.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69223",
+    "Location": "aiohttp:3.13.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "aiohttp is used as a client for internal WebSocket relaying. Vulnerable server-side methods (e.g. Request.post, header smelting) are not reachable or used in a controllable context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64460",
+    "Location": "django:5.2.8",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Vulnerable Django API (e.g. FilteredRelation) is not used in the codebase (0% functional constraint satisfaction).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69230",
+    "Location": "aiohttp:3.13.0",
+    "Original_exploitability": 20,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "aiohttp is used as a client for internal WebSocket relaying. Vulnerable server-side methods (e.g. Request.post, header smelting) are not reachable or used in a controllable context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13372",
+    "Location": "django:5.2.8",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Version 5.2.8 is vulnerable to SQL injection in `FilteredRelation`. No usage of the `FilteredRelation` feature was found in the codebase (0% functional constraint satisfaction). Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-1287",
+    "Location": "django:5.2.8",
+    "Original_exploitability": 65,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Version 5.2.8 is vulnerable to SQL injection via control characters in `FilteredRelation`. No usage of the `FilteredRelation` feature was found in the codebase (0% functional constraint satisfaction). Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-1312",
+    "Location": "django:5.2.8",
+    "Original_exploitability": 35,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Version 5.2.8 is vulnerable to SQL injection in `order_by()` with `FilteredRelation`. No usage of the `FilteredRelation` feature was found in the codebase (0% functional constraint satisfaction). Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26007",
+    "Location": "cryptography:46.0.3",
+    "Original_exploitability": 45,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "Version 46.0.3 is vulnerable to key/signature bypass via SECT curves. Thorough repository search found no usage of SECT curves or vulnerable EC primitives in the encryption logic. Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-27jp-wm6q-gp25",
+    "Location": "sqlparse:0.5.3",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation:": "Original score correct; no vulnerable usage found.",
+    "Assessment": "Correct"
+  }
+]

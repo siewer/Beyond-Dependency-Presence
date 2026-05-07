@@ -1,0 +1,306 @@
+[
+  {
+    "Vulnerability": "CVE-2022-0235",
+    "Location": "node-fetch:1.7.3",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vulnerable API confirmed in package-lock.json but usage is restricted to internal library/vendor code (likely devTools or build process), not active production user code path. Hard capped at 0.10 per methodology.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:4.40.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Identified as a dev-dependency used in the build process. No active production code path confirmed. Probability set at 0.05.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-36814",
+    "Location": "github.com/AdguardTeam/AdGuardHome:",
+    "Original_exploitability": 93,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Confirmed explicit call to vulnerable path-handling logic in filter addition. Authenticated path traversal vector confirmed in code. Probability 0.85 per calibration table for vulnerable version with usage confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency in client code. Usage confirmed in package-lock.json but not directly in active user code paths. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.13.0",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. No active production code path using the vulnerable RegExp backtracking vector found. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32136",
+    "Location": "github.com/AdguardTeam/AdGuardHome:",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Confirmed usage of h2c.NewHandler in web.go. Vulnerable version is highly exploitable via protocol upgrade auth bypass. Probability set to 0.85.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-62522",
+    "Location": "vite:6.3.6",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vite is a dev dependency used during development/build. Not present in production deployment runtime. Probability 0.05.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.2",
+    "Original_exploitability": 1,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. Vulnerable glob expansion not used on untrusted input in production code paths. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66031",
+    "Location": "node-forge:1.3.1",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. Internal usage only without clear vector for user-supplied data to trigger recursion. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45857",
+    "Location": "axios:0.21.4",
+    "Original_exploitability": 50,
+    "Exploitability": 65,
+    "Exploitability_explanation": "Direct production dependency in client/package.json. Axios used in Api.ts for all frontend requests. Vector for sensitive header disclosure confirmed. Probability 0.65.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.10",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency in client build tools. No active production code path confirmed. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27152",
+    "Location": "axios:0.21.4",
+    "Original_exploitability": 75,
+    "Exploitability": 65,
+    "Exploitability_explanation": "Confirmed usage in Api.ts. SSRF vector via absolute URLs in axios requests is reachable if user-controlled. Probability 0.65.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-32175",
+    "Location": "github.com/AdguardTeam/AdGuardHome:",
+    "Original_exploitability": 97,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Confirmed CSRF vulnerability in filtering rules API. Handlers exist without robust CSRF protection in the assumed vulnerable version. Probability 0.85.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-12816",
+    "Location": "node-forge:1.3.1",
+    "Original_exploitability": 1,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. Complex interpretation conflict not reachable via any user-controlled input path in production code. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. No evidence of malicious glob patterns reaching this API in production paths. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. No active production code path confirmed. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. No active production code path confirmed. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. Internal usage only. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. Internal usage only. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. Internal usage only. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. Internal usage only. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. Internal usage only. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. Internal usage only. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Dev dependency used by testing framework (vitest). Not used in production runtime. Probability 0.05.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-36586",
+    "Location": "github.com/AdguardTeam/AdGuardHome:",
+    "Original_exploitability": 96,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Confirmed privilege escalation vector via insecure binary replacement. Logic in service.go supports this vector in vulnerable versions. Probability 0.85.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-57352",
+    "Location": "min-document:2.19.0",
+    "Original_exploitability": 1,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. No active production code path confirmed using the vulnerable API. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. Usage restricted to internal/dev pathways. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25639",
+    "Location": "axios:0.21.4",
+    "Original_exploitability": 0,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Prototype pollution via mergeConfig. Usage in Api.ts confirmed. While specific untrusted data path is uncertain, the direct dependency increase risk. Probability 0.45.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66030",
+    "Location": "node-forge:1.3.1",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. Internal usage only. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 15,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Prototype pollution via _.unset or _.omit. Direct production dependency. Reachability via user data in the UI is highly possible. Probability 0.45.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. No active production user path found. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.0",
+    "Original_exploitability": 0,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Prototype pollution vulnerability. Direct production dependency used for config parsing in the UI. Probability 0.45.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": 75,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Identified as direct dependency. Usage confirmed in client source. Probability 0.45 (uncertain usage of affected functions).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-68157",
+    "Location": "webpack:5.102.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Dev dependency used during build. No production runtime impact. Probability 0.05.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68458",
+    "Location": "webpack:5.102.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Dev dependency used during build. No production runtime impact. Probability 0.05.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.79.2",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Library is present in go.mod, but no gRPC server with path-based auth interceptors was found in active code. Probability 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-36jr-mh4h-2g58",
+    "Location": "d3-color:1.4.1",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Transitive dependency. No active production code path using the vulnerable color parsing logic identified. Probability 0.10.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive dependency used in the build pipeline (webpack-merge). Not used in production runtime. Probability 0.05.",
+    "Assessment": "Correct"
+  }
+]

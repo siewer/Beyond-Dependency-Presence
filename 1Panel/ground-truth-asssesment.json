@@ -1,0 +1,66 @@
+[
+  {
+    "Vulnerability": "CVE-2025-54424",
+    "Location": "github.com/1Panel-dev/1Panel/core:",
+    "Original_exploitability": 70,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version SAFE. The codebase in `agent/server/server.go` uses `tls.RequireAndVerifyClientCert` and explicitly configures a `CertPool` with `RootCrt`, which prevents the certificate validation bypass described. Status: not_confirmed (Fixed version).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66507",
+    "Location": "github.com/1Panel-dev/1Panel/core:",
+    "Original_exploitability": 85,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version SAFE. The `Login` struct in `core/app/dto/auth.go` does not contain the `ignoreCaptcha` field. While the frontend uses a variable with this name to manage UI visibility, it is derived from the backend's `needCaptcha` response and is NOT sent to the server. The backend relies solely on server-side `IPTracker` logic. Status: not_confirmed (Fixed version).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66508",
+    "Location": "github.com/1Panel-dev/1Panel/agent:",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "✅ API call confirmed. The Agent uses `gin.Default()` in `agent/init/router/router.go` without subsequent `SetTrustedProxies` calls, leaving it at the vulnerable default of `0.0.0.0/0`. This allows IP spoofing via `X-Forwarded-For`. Status: confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.0.33",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API ABSENT. The `tmp` package is not found as a direct or indirect dependency in the frontend or core components. No vulnerable calls to `tmp.file()` or `tmp.dir()` were found. Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API ABSENT. While `lodash-es` is imported in `frontend/src/views/host/file-management/index.vue` for `debounce`, no calls to the vulnerable functions `_.unset` or `_.omit` are present. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15558",
+    "Location": "github.com/docker/compose/v2:v2.40.3",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable. The `agent/go.mod` file explicitly requires `github.com/docker/compose/v2 v2.40.3`. On Windows, this version is vulnerable to Local Privilege Escalation via insecure plugin search paths. Status: uncertain (Vulnerable version present).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24137",
+    "Location": "github.com/sigstore/sigstore:v1.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API ABSENT. `sigstore/sigstore` is a dependency, but no usage of the vulnerable legacy TUF client (`pkg/tuf`) was found in active code paths. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.77.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version unknown / usage uncertain. Vulnerable gRPC version `1.77.0` is present, but no path-based authorization interceptors (`grpc/authz`) or custom interceptors relying on `FullMethod` were found. Status: not_confirmed.",
+    "Assessment": "Correct"
+  }
+]

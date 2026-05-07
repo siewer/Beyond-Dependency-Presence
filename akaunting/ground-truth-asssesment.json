@@ -1,0 +1,218 @@
+[
+  {
+    "Vulnerability": "CVE-2021-3163",
+    "Location": "quill:1.3.7",
+    "Original_exploitability": 50,
+    "Exploitability": 40,
+    "Exploitability_explanation": "CVE-2021-3163 is a disputed XSS vulnerability in Quill 1.3.7. Quill is actively called via vue2-editor in AkauntingHtmlEditor.vue (import { VueEditor } from 'vue2-editor'; new Swiper... confirmed at resources/assets/js/components/AkauntingHtmlEditor.vue:8). The editor is embedded in email templates and form components. Version is 1.3.7 (vulnerable). Exploitation requires: (1) attacker-controlled HTML rendered via Quill editor (confirmed - editor used for email body templates), (2) output rendered via innerHTML without sanitization. AkauntingHtmlEditor.vue applies some filtering (strips <p> tags, style attributes) but does not apply full XSS sanitization. The attack requires a user able to access editor features. Constraints partially satisfied: API call confirmed, vulnerable version confirmed, output rendered in DOM, partial sanitization present but doesn't prevent all XSS vectors. Probability reduced from high due to the partial sanitization and the disputed nature of the CVE.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:6.10.0",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "CVE-2020-15366 is a prototype pollution vulnerability in ajv.validate() when processing untrusted JSON schemas. ajv:6.10.0 appears in package-lock.json as a transitive dependency of the 'tailwind' npm package (not of any user-facing code). No user-code calls to new Ajv(), ajv.validate(), or ajv.compile() were found in the resources/ directory. The vulnerability requires the application to call ajv.validate() with an attacker-controlled, untrusted JSON schema. Since ajv is only used internally by the tailwind build tool and no explicit API call exists in user code, the vulnerable code path is not reachable at runtime. Per the scoring methodology: 'Usage found ONLY in Library/Vendor Code' applies - max probability 0.10. Original exploitability of 50% is significantly overestimated.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-6783",
+    "Location": "vue-template-compiler:2.7.16",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "CVE-2024-6783 is an XSS via prototype pollution in vue-template-compiler 2.7.16. The package is a devDependency used exclusively at build time by vue-loader to compile .vue templates. At runtime (production), pre-compiled render functions are served - the vue-template-compiler is NOT loaded in the browser or called at runtime. Exploitation requires: (1) in-browser template compilation using the full Vue build, and (2) a prior prototype pollution vector. The application uses the runtime-only Vue build (compiled assets served as static files). The compiler is never invoked in production. This is a dev/build-time only dependency. 15% original score is approximately correct (reflecting that the library exists in the dependency tree as devDependency but is not active at runtime). Score within 20% tolerance at 10%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30359",
+    "Location": "webpack-dev-server:4.15.2",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "CVE-2025-30359 is a source code disclosure vulnerability in webpack-dev-server affecting developers who run the dev server and visit a malicious website. webpack-dev-server:4.15.2 is a devDependency used only for local development (npm run dev/watch). It is never deployed to production. The attack vector requires: (1) a developer running the local dev server, (2) simultaneously visiting a malicious website, (3) attacker knowing the dev server port and bundle path. This is a development-environment-only risk, not a production vulnerability. The original 15% reflects the dev-only nature correctly. Score within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "CVE-2025-27789 is a ReDoS in Babel's _wrapRegExp helper when transpiling named capturing group regexes. @babel/runtime:7.1.2 is a nested transitive dependency of the 'hase' package (a sub-dependency of another library). It is not a direct dependency of Akaunting. Version 7.1.2 may not include the named capturing groups polyfill in the same form as later versions. No user code calls this library directly. The fix requires re-compilation with the patched Babel. Since this is a deeply nested dev dependency not directly called by user code at runtime, exploitability is near 0. Original 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "CVE-2025-27789 is a ReDoS in Babel's _wrapRegExp helper. @babel/runtime:7.2.0 appears as a transitive dependency of both 'commands-events' and 'flaschenpost' packages (deeply nested dev deps). No user code explicitly calls functions from this package's generated polyfill with untrusted user input. The vulnerable code path would require: (1) a transpiled regex with named capturing groups, (2) .replace() called with user input as second arg. No such pattern identified in user code. Original 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.3.4",
+    "Original_exploitability": 12,
+    "Exploitability": 5,
+    "Exploitability_explanation": "CVE-2025-27789 is a ReDoS in Babel's _wrapRegExp helper. @babel/runtime:7.3.4 is a transitive dependency of both 'limes' and 'tailwind' packages. The 'tailwind' package is a non-dev direct dependency used for CSS utilities. However, the vulnerability affects the transpiled JavaScript output when named capturing group regexes are used, and requires the .replace() method to be called with untrusted user input as the replacement string. No user-facing code in resources/ was found to directly use @babel/runtime 7.3.4's polyfill functions with untrusted input. The original 12% somewhat overestimates the risk; 5% better reflects the nested dependency situation without confirmed user-code path. Assessment: Incorrect due to original being outside 20% tolerance (12% vs 5% = 7pp difference but close to the boundary).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27212",
+    "Location": "swiper:9.4.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "CVE-2026-27212 is listed as CRITICAL severity for swiper:9.4.1. At the time of this analysis, this CVE ID (2026-*) appears to be a future/unreleased CVE with no publicly available details. Swiper is actively used in the application (confirmed calls: new Swiper('.swiper-container', {...}) in install.js:76, mixins/global.js:177, 237, auth/common.js:26, etc.). However, without the specific vulnerability details and exploitation conditions, we cannot fully assess exploitability. Given that swiper is a production dependency actively instantiated and no vulnerability details are available, original 0% may be slightly underestimated, but remains close to correct given lack of public exploit details.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:5.1.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "CVE-2024-21538 is a ReDoS vulnerability in cross-spawn versions <6.0.6 or >=7.0.0,<7.0.5. cross-spawn:5.1.0 appears in package-lock.json as a transitive dependency of 'yorkie' (a devDependency git hook installer). There is no user-facing code that calls cross-spawn directly. The vulnerability requires passing attacker-controlled input to cross-spawn's argument parsing. Since this is exclusively a nested dev dependency and not callable from production application code, exploitability is very low. Original 15% overestimates; correct score is ~5%. This is outside the 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "CVE-2026-26996 targets minimatch:3.0.8 (listed as HIGH severity). This is a future CVE ID with no publicly available details yet. minimatch:3.0.8 appears in package-lock.json as a transitive dependency of 'globule' (a devDependency). It is not directly called by user code. Without vulnerability details, and given it's a dev-only nested dependency, exploitability is near 0. Original 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "CVE-2026-27903 targets minimatch:3.0.8 (HIGH severity). This is a future CVE ID with no publicly available details. minimatch:3.0.8 is a transitive dependency of 'globule' (devDependency). Not directly called by user code. Exploitability near 0. Original 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "CVE-2026-27904 targets minimatch:3.0.8 (HIGH severity). This is a future CVE ID with no publicly available details. minimatch:3.0.8 is a transitive dependency of 'globule' (devDependency). Not directly called by user code. Exploitability near 0. Original 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30360",
+    "Location": "webpack-dev-server:4.15.2",
+    "Original_exploitability": 1,
+    "Exploitability": 5,
+    "Exploitability_explanation": "CVE-2025-30360 is a Cross-Site WebSocket Hijacking (CSWH) vulnerability in webpack-dev-server <5.2.1 via improper Origin header validation. webpack-dev-server:4.15.2 is a devDependency. Exploitation requires: (1) a developer running the local dev server, (2) the developer visiting a malicious website using a non-Chromium browser while the dev server is running, (3) attacker knowing the dev server port. This is a development-environment-only vulnerability. The 1% original score is very close to accurate (dev-only tool, requires special conditions). Within tolerance at 5%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "CVE-2025-69873 is a ReDoS vulnerability in ajv when the $data option is enabled and user-supplied regex patterns are validated. ajv:6.10.0 is a transitive dependency of the 'tailwind' npm package. No user code in resources/ creates an Ajv instance with $data:true or passes user-controlled patterns to ajv. The vulnerability requires the $data option specifically enabled and user-supplied regex as schema $data reference. Neither condition is present in user code. Original 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "CVE-2026-24842 (HIGH) targets tar:6.2.1 (future CVE, no public details). tar:6.2.1 is a devDependency (dev=True in package-lock.json) used exclusively by build tools (node-gyp, webpack). No user-facing code calls tar.extract() or similar methods. Exploitation would require attacker-controlled archive extraction in the build pipeline, not a production runtime attack. Original 15% overestimates for a dev-only build tool dependency. Correct score is ~5%, which is outside the 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "CVE-2026-29786 (HIGH) targets tar:6.2.1 (future CVE, no public details). tar:6.2.1 is a devDependency used by build tools only. No user code calls tar APIs. Original 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "CVE-2026-26960 (HIGH) targets tar:6.2.1 (future CVE, no public details). tar:6.2.1 is a devDependency used by build tools only. No user code calls tar APIs. Original 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-9506",
+    "Location": "vue:2.7.16",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "CVE-2024-9506 is a ReDoS in Vue 2's parseHTML function triggered by malformed templates missing closing tags. vue:2.7.16 is a confirmed non-dev production dependency actively used throughout the application. Exploitation requires attacker-controlled input to reach Vue's template parsing (parseHTML). In the Akaunting application, Vue is used in compiled mode (templates pre-compiled at build time), so the runtime Vue compiler is generally not active. However, if any code path allows dynamic component instantiation with user-supplied template strings, the vulnerability could be triggered. The risk is partially mitigated by the pre-compiled nature of templates. 15% is a reasonable estimate for a real dependency with constrained attack path. Assessment: Correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 5,
+    "Exploitability": 2,
+    "Exploitability_explanation": "CVE-2026-23950 (HIGH) targets tar:6.2.1 (future CVE, no public details). tar:6.2.1 is a devDependency used by build tools only. No user code calls tar APIs. Original 5% is close to 2%, within the 20% tolerance range.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "CVE-2026-31802 (HIGH) targets tar:6.2.1 (future CVE, no public details). tar:6.2.1 is a devDependency used by build tools only. No user code calls tar APIs. Original 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 3,
+    "Exploitability": 2,
+    "Exploitability_explanation": "CVE-2026-23745 (HIGH) targets tar:6.2.1 (future CVE, no public details). tar:6.2.1 is a devDependency used by build tools only. No user code calls tar APIs. Original 3% is approximately correct at 2%, within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.6.1",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "CVE-2025-14505 is an ECDSA nonce truncation flaw in elliptic <=6.6.1 that can lead to private key exposure. elliptic:6.6.1 is a transitive dependency of 'ecdsa-sig-formatter' (which is used by 'jsonwebtoken', a production dependency). Exploitation requires: (1) Akaunting code to perform ECDSA signature generation using elliptic, (2) the ephemeral nonce k having leading zeros, (3) an attacker having both the faulty signature and a correct signature for the same message/key. In Akaunting, JWT is used for API authentication but the signing is handled by jsonwebtoken using algorithm-specific code. elliptic is used internally by jsonwebtoken for EC-based JWT algorithms (ES256, ES384, ES512). If the application uses EC-based JWTs, the ECDSA signing path is active. However, no explicit call to elliptic.sign() was found in user code. This is internal library usage. Per scoring rules: max 0.10 for library-internal-only usage. Original 50% significantly overestimates the risk for a library where the user code does not directly call elliptic APIs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:1.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "CVE-2026-3449 (LOW) targets @tootallnate/once:1.1.2 (future CVE, no public details). @tootallnate/once:1.1.2 is a transitive dependency of node-gyp (devDependency used for native module compilation). It is not called by any user-facing code. Original 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:2.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "CVE-2026-3449 (LOW) targets @tootallnate/once:2.0.0 (future CVE, no public details). @tootallnate/once:2.0.0 is a transitive devDependency. Not called by any user-facing code. Original 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7339",
+    "Location": "on-headers:1.0.2",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "CVE-2025-7339 is an 'Improper Handling of Unexpected Data Type' vulnerability in on-headers <1.1.0, triggered when an array is passed to response.writeHead() in an on-headers-intercepted context. on-headers:1.0.2 is present in package-lock.json as a non-dev dependency (used by compression middleware). Exploitation requires attacker-controlled input to result in an array being passed to writeHead(). This is a low-severity, local-attack-vector vulnerability with high privilege requirements. The application uses compression middleware which uses on-headers internally, but there is no code path where user input directly controls the arguments passed to writeHead() via on-headers. Original 5% is correct; assessment is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "GHSA-5c6j-r48x-rmvq is an RCE vulnerability in serialize-javascript 7.0.2 and earlier via malicious RegExp/Date objects with poisoned getters. serialize-javascript:6.0.2 is a devDependency (dev=True) used internally by webpack plugins (terser-webpack-plugin, copy-webpack-plugin) at build time. Exploitation requires: (1) attacker-controlled input passed to serialize(), (2) the output subsequently eval()'d. This is a build-time/supply-chain risk, not a production runtime concern. No user code calls serialize-javascript directly. Original 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-36804",
+    "Location": "akaunting/akaunting:",
+    "Original_exploitability": 15,
+    "Exploitability": 30,
+    "Exploitability_explanation": "CVE-2021-36804 is a password reset link spoofing vulnerability in Akaunting <=2.1.12. Exploitation requires: (1) password reset functionality active (confirmed - Reset.php controller uses ResetsPasswords trait, route 'reset' confirmed), (2) TrustProxies middleware configured to trust all proxies (confirmed - TrustProxies.php has $proxies = null meaning trusts all), (3) attacker can intercept or be positioned as a proxy to manipulate X-Forwarded-Host header. The Reset notification builds the reset URL using route('reset', ...) which respects the X-Forwarded-Host header when proxies are trusted. With $proxies=null in TrustProxies, all incoming X-Forwarded-Host headers are trusted. An attacker positioned as a proxy (or in certain network configurations) could redirect password reset links to an attacker-controlled domain. Headers trusted: X-FORWARDED_FOR, X-FORWARDED_HOST, X-FORWARDED_PORT, X-FORWARDED_PROTO, HEADER_X_FORWARDED_AWS_ELB. This significantly increases the attack surface. Constraints satisfied: API call confirmed, vulnerable config confirmed, reset email uses route() which is spoofable. Original 15% underestimates by >20% threshold.",
+    "Assessment": "Incorrect"
+  }
+]

@@ -1,0 +1,1114 @@
+[
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:1.0.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (json5) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47068",
+    "Location": "rollup:2.79.1",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\atri-app-core\\package.json: matched watch",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:6.3.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (semver) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-28863",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (tar) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:3.0.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (braces) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-42282",
+    "Location": "ip:2.0.0",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (ip) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25881",
+    "Location": "http-cache-semantics:4.1.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (http-cache-semantics) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "@babel/traverse:7.21.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (@babel/traverse) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:4.0.5",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (micromatch) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.2.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (tmp) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (js-yaml) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-12816",
+    "Location": "node-forge:1.3.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (node-forge) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66031",
+    "Location": "node-forge:1.3.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (node-forge) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66030",
+    "Location": "node-forge:1.3.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (node-forge) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37599",
+    "Location": "loader-utils:3.2.0",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (loader-utils) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-28849",
+    "Location": "follow-redirects:1.15.2",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (follow-redirects) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-45857",
+    "Location": "axios:1.3.4",
+    "Original_exploitability": 25,
+    "Exploitability": 25,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\commands\\src\\scripts\\dev\\live-api-server\\liveApiServer.ts: matched axios\\s*\\.\\s*(get|post|put|delete|request)",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29881",
+    "Location": "tinymce:6.4.1",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\action-layer\\src\\hooks\\usePageRoutes.tsx: matched Editor",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30359",
+    "Location": "webpack-dev-server:4.11.1",
+    "Original_exploitability": 90,
+    "Exploitability": 90,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\commands\\src\\scripts\\build-atri-app\\utils.ts: matched webpack\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30360",
+    "Location": "webpack-dev-server:4.11.1",
+    "Original_exploitability": 70,
+    "Exploitability": 70,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\commands\\src\\scripts\\build-atri-app\\utils.ts: matched webpack\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-32996",
+    "Location": "http-proxy-middleware:2.0.4",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (http-proxy-middleware) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-32997",
+    "Location": "http-proxy-middleware:2.0.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (http-proxy-middleware) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37603",
+    "Location": "loader-utils:3.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (loader-utils) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-26159",
+    "Location": "follow-redirects:1.15.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (follow-redirects) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27152",
+    "Location": "axios:1.3.4",
+    "Original_exploitability": 70,
+    "Exploitability": 70,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\commands\\src\\scripts\\dev\\live-api-server\\liveApiServer.ts: matched axios\\s*\\.\\s*(get|post|put|delete|request)",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45590",
+    "Location": "body-parser:1.20.1",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (body-parser) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29180",
+    "Location": "webpack-dev-middleware:5.3.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\commands\\src\\scripts\\build-atri-app\\utils.ts: matched webpack\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43800",
+    "Location": "serve-static:1.15.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\commands\\src\\scripts\\dev\\dev-atri-app.ts: matched express\\s*\\.\\s*static",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21536",
+    "Location": "http-proxy-middleware:2.0.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (http-proxy-middleware) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29041",
+    "Location": "express:4.18.2",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\atri-app-core\\src\\components\\Link.tsx: matched Router\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43799",
+    "Location": "send:0.18.0",
+    "Original_exploitability": 8,
+    "Exploitability": 8,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\atri-app-core\\src\\api\\canvasApi.ts: matched send\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43796",
+    "Location": "express:4.18.2",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\atri-app-core\\src\\components\\Link.tsx: matched Router\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43788",
+    "Location": "webpack:5.73.0",
+    "Original_exploitability": 25,
+    "Exploitability": 25,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\commands\\src\\scripts\\build-atri-app\\utils.ts: matched webpack\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58754",
+    "Location": "axios:1.3.4",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\commands\\src\\scripts\\dev\\live-api-server\\liveApiServer.ts: matched axios\\s*\\.\\s*(get|post|put|delete|request)",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26115",
+    "Location": "word-wrap:1.2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (word-wrap) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-2900",
+    "Location": "parse-url:7.0.2",
+    "Original_exploitability": 2,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (parse-url) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3224",
+    "Location": "parse-url:7.0.2",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (parse-url) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-32695",
+    "Location": "socket.io-parser:4.2.2",
+    "Original_exploitability": 65,
+    "Exploitability": 65,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\atri-app-core\\src\\api\\liveApi.ts: matched socket\\s*\\.\\s*on\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28154",
+    "Location": "webpack:5.73.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\commands\\src\\scripts\\build-atri-app\\utils.ts: matched webpack\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-39338",
+    "Location": "axios:1.3.4",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\commands\\src\\scripts\\dev\\live-api-server\\liveApiServer.ts: matched axios\\s*\\.\\s*(get|post|put|delete|request)",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45819",
+    "Location": "tinymce:6.4.1",
+    "Original_exploitability": 8,
+    "Exploitability": 8,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\action-layer\\src\\hooks\\usePageRoutes.tsx: matched Editor",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-48219",
+    "Location": "tinymce:6.4.1",
+    "Original_exploitability": 55,
+    "Exploitability": 55,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\action-layer\\src\\hooks\\usePageRoutes.tsx: matched Editor",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45818",
+    "Location": "tinymce:6.4.1",
+    "Original_exploitability": 25,
+    "Exploitability": 25,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\action-layer\\src\\hooks\\usePageRoutes.tsx: matched Editor",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-25166",
+    "Location": "@sideway/formula:3.0.0",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (@sideway/formula) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-29203",
+    "Location": "tinymce:6.4.1",
+    "Original_exploitability": 80,
+    "Exploitability": 80,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\action-layer\\src\\hooks\\usePageRoutes.tsx: matched Editor",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-24828",
+    "Location": "pkg:5.8.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (pkg) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-31125",
+    "Location": "engine.io:6.4.1",
+    "Original_exploitability": 80,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (engine.io) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:2.79.1",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\atri-app-core\\package.json: matched watch",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38357",
+    "Location": "tinymce:6.4.1",
+    "Original_exploitability": 55,
+    "Exploitability": 55,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\action-layer\\src\\hooks\\usePageRoutes.tsx: matched Editor",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68470",
+    "Location": "react-router:6.6.2",
+    "Original_exploitability": 97,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (react-router) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\commands\\src\\scripts\\dev\\public\\react-dom.development.js: matched \\.\\s*set\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-11831",
+    "Location": "serialize-javascript:6.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (serialize-javascript) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33672",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (picomatch) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33532",
+    "Location": "yaml:1.10.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (yaml) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33151",
+    "Location": "socket.io-parser:4.2.2",
+    "Original_exploitability": 93,
+    "Exploitability": 93,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\atri-app-core\\src\\api\\liveApi.ts: matched socket\\s*\\.\\s*on\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38356",
+    "Location": "tinymce:6.4.1",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\action-layer\\src\\hooks\\usePageRoutes.tsx: matched Editor",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33228",
+    "Location": "flatted:3.2.5",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (flatted) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33941",
+    "Location": "handlebars:4.7.7",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (handlebars) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-33883",
+    "Location": "ejs:3.1.8",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (ejs) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68157",
+    "Location": "webpack:5.73.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\commands\\src\\scripts\\build-atri-app\\utils.ts: matched webpack\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:5.1.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (minimatch) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68458",
+    "Location": "webpack:5.73.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\commands\\src\\scripts\\build-atri-app\\utils.ts: matched webpack\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (cross-spawn) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.11.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (qs) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31808",
+    "Location": "file-type:17.1.6",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (file-type) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33937",
+    "Location": "handlebars:4.7.7",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (handlebars) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7339",
+    "Location": "on-headers:1.0.2",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (on-headers) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33896",
+    "Location": "node-forge:1.3.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (node-forge) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.12.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\component-icon-manifest-schema\\src\\index.ts: matched \\.\\s*validate\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33671",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (picomatch) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:2.0.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (brace-expansion) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52798",
+    "Location": "path-to-regexp:0.1.7",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (path-to-regexp) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34043",
+    "Location": "serialize-javascript:6.0.0",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (serialize-javascript) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29074",
+    "Location": "svgo:2.8.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (svgo) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (tar) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-4867",
+    "Location": "path-to-regexp:0.1.7",
+    "Original_exploitability": 8,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (path-to-regexp) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:2.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (@tootallnate/once) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 2,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (tar) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "path-to-regexp:0.1.7",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (path-to-regexp) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22029",
+    "Location": "@remix-run/router:1.2.1",
+    "Original_exploitability": 96,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (@remix-run/router) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-12905",
+    "Location": "tar-fs:2.1.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (tar-fs) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33938",
+    "Location": "handlebars:4.7.7",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (handlebars) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48387",
+    "Location": "tar-fs:2.1.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (tar-fs) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.11.0",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (qs) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (tar) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:2.0.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (brace-expansion) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (tar) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25288",
+    "Location": "@octokit/plugin-paginate-rest:3.1.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (@octokit/plugin-paginate-rest) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:5.1.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (minimatch) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-55565",
+    "Location": "nanoid:3.3.4",
+    "Original_exploitability": 8,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (nanoid) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33895",
+    "Location": "node-forge:1.3.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (node-forge) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33891",
+    "Location": "node-forge:1.3.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (node-forge) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:4.0.0",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (form-data) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-59343",
+    "Location": "tar-fs:2.1.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (tar-fs) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-25290",
+    "Location": "@octokit/request:6.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (@octokit/request) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (tar) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25639",
+    "Location": "axios:1.3.4",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\commands\\src\\scripts\\dev\\live-api-server\\liveApiServer.ts: matched axios\\s*\\.\\s*(get|post|put|delete|request)",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.2.5",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (flatted) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime-corejs3:7.17.9",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (@babel/runtime-corejs3) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25289",
+    "Location": "@octokit/request-error:3.0.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (@octokit/request-error) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33916",
+    "Location": "handlebars:4.7.7",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (handlebars) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:5.1.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (minimatch) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33939",
+    "Location": "handlebars:4.7.7",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (handlebars) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33894",
+    "Location": "node-forge:1.3.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (node-forge) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38355",
+    "Location": "socket.io:4.6.1",
+    "Original_exploitability": 90,
+    "Exploitability": 90,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\atri-app-core\\src\\api\\liveApi.ts: matched socket\\s*\\.\\s*on\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:4.0.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (diff) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47764",
+    "Location": "cookie:0.5.0",
+    "Original_exploitability": 20,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (cookie) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-37890",
+    "Location": "ws:8.11.0",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (ws) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33940",
+    "Location": "handlebars:4.7.7",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (handlebars) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.7.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (semver) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.3.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (semver) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.3.7",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (semver) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.3.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (semver) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21536",
+    "Location": "http-proxy-middleware:1.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (http-proxy-middleware) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:8.4.21",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (postcss) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-32996",
+    "Location": "http-proxy-middleware:1.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (http-proxy-middleware) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/helpers:7.21.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (@babel/helpers) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.21.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (@babel/runtime) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47764",
+    "Location": "cookie:0.4.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (cookie) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:5.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (cross-spawn) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-32997",
+    "Location": "http-proxy-middleware:1.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (http-proxy-middleware) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.0.33",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (tmp) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (minimatch) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (minimatch) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (minimatch) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (minimatch) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (minimatch) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (minimatch) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (js-yaml) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\component-icon-manifest-schema\\src\\index.ts: matched \\.\\s*validate\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.11.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\component-icon-manifest-schema\\src\\index.ts: matched \\.\\s*validate\\s*\\(",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (tar) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:4.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (serialize-javascript) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (serialize-javascript) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (brace-expansion) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34043",
+    "Location": "serialize-javascript:4.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (serialize-javascript) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29415",
+    "Location": "ip:2.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (ip) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (brace-expansion) is not called in any active code path. Thorough search for explicit calls returned no results. EVIDENCE MANDATE Outcome: status: not_confirmed, probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29180",
+    "Location": "webpack-dev-middleware:6.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "API call confirmed. Found explicit signature in: c:\\Users\\majab\\OneDrive\\Desktop\\repo\\atrilabs-engine\\packages\\commands\\src\\scripts\\build-atri-app\\utils.ts: matched webpack\\s*\\(",
+    "Assessment": "Correct"
+  }
+]

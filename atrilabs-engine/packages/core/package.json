@@ -1,0 +1,35 @@
+{
+  "name": "@atrilabs/core",
+  "version": "1.0.0-alpha.37",
+  "description": "This package contains code for compilation and bundling of atrilabs package.",
+  "author": "cruxcode <swaroopshyam0@gmail.com>",
+  "homepage": "https://github.com/cruxcode/atrilabs-engine#readme",
+  "license": "ISC",
+  "main": "src/index.ts",
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cruxcode/atrilabs-engine.git"
+  },
+  "scripts": {},
+  "bugs": {
+    "url": "https://github.com/cruxcode/atrilabs-engine/issues"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.31",
+    "@types/react": "18.0.5",
+    "@types/react-dom": "18.0.1",
+    "@types/uuid": "^8.3.4"
+  },
+  "dependencies": {
+    "@atrilabs/forest": "^1.0.0-alpha.37",
+    "@atrilabs/manifest-registry": "^1.0.0-alpha.37",
+    "cheerio": "^1.0.0-rc.12",
+    "uuid": "^8.3.2"
+  }
+}

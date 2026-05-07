@@ -1,0 +1,42 @@
+[
+  {
+    "Vulnerability": "CVE-2023-22726",
+    "Location": "github.com/nektos/act:",
+    "Original_exploitability": 20,
+    "Exploitability": 20,
+    "Exploitability_explanation": "API call confirmed in `pkg/artifacts/server.go`. The endpoints `/upload/:runId` and `/artifact/*path` handle user-provided paths. Although `safeResolve` (using `filepath.Clean`) is implemented as a mitigation in the current version (0.2.86), the functionality exists and is reachable if the artifact server is enabled via `--artifact-server-path`. The exploitability reflects the potential risk if misconfigured, consistent with the original assessment.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25288",
+    "Location": "@octokit/plugin-paginate-rest:2.21.3",
+    "Original_exploitability": 1,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vulnerable library version found ONLY within `pkg/runner/testdata/actions`. The vulnerable API `paginate.iterator()` is not called by any production code. Based on scoring rules for internal library/test usage, the probability is capped at 0.10. The original 1% is within the 20% tolerance range.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25289",
+    "Location": "@octokit/request-error:2.1.0",
+    "Original_exploitability": 1,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vulnerable library version found ONLY within `pkg/runner/testdata/actions`. The `RequestError` constructor is not used in any active production code path. Probability capped at 0.10 for internal/test usage. Assessment remains Correct within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25290",
+    "Location": "@octokit/request:5.6.3",
+    "Original_exploitability": 1,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vulnerable library version found ONLY within `pkg/runner/testdata/actions`. The internal `fetchWrapper` or other request APIs are not reachable from production code. Probability capped at 0.10. Assessment remains Correct within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15558",
+    "Location": "github.com/docker/cli:v28.4.0+incompatible",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit calls to the vulnerable `github.com/docker/cli/cli-plugins/manager` package were found in the entire codebase. The Evidence Mandate dictates a probability of 0.01 when no calls are found after a thorough search. Assessment remains Correct.",
+    "Assessment": "Correct"
+  }
+]

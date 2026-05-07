@@ -1,0 +1,27 @@
+{
+  "name": "@atrilabs/pwa-canvas-layer",
+  "version": "1.0.0-alpha.37",
+  "description": "> TODO: description",
+  "author": "cruxcode <swaroopshyam0@gmail.com>",
+  "homepage": "https://github.com/cruxcode/atrilabs-engine#readme",
+  "license": "ISC",
+  "main": "src/index.tsx",
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cruxcode/atrilabs-engine.git"
+  },
+  "scripts": {},
+  "bugs": {
+    "url": "https://github.com/cruxcode/atrilabs-engine/issues"
+  },
+  "dependencies": {
+    "@atrilabs/core": "^1.0.0-alpha.37",
+    "@atrilabs/pwa-builder-manager": "^1.0.0-alpha.37"
+  }
+}

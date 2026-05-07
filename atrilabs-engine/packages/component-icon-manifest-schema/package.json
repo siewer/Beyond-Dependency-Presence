@@ -1,0 +1,34 @@
+{
+  "name": "@atrilabs/component-icon-manifest-schema",
+  "version": "1.0.0-alpha.37",
+  "description": "> TODO: description",
+  "author": "cruxcode <swaroopshyam0@gmail.com>",
+  "homepage": "https://github.com/cruxcode/atrilabs-engine#readme",
+  "license": "ISC",
+  "main": "src/index.ts",
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cruxcode/atrilabs-engine.git"
+  },
+  "scripts": {},
+  "bugs": {
+    "url": "https://github.com/cruxcode/atrilabs-engine/issues"
+  },
+  "dependencies": {
+    "@atrilabs/core": "^1.0.0-alpha.37",
+    "@types/joi": "^17.2.3",
+    "joi": "^17.6.0",
+    "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.5",
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
+  }
+}

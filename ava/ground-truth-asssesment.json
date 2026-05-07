@@ -1,0 +1,42 @@
+[
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.3.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API `flatted.parse()` is not explicitly called anywhere in the `ava` source code. `flatted` is a transitive dependency used by `flat-cache`, which is part of the development toolchain (ESLint), not the runtime test runner. No active code path reaches the vulnerable function.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:7.5.9",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API `tar.x()` is not called in the `ava` codebase. The `tar` library is a transitive dependency used by build-time tools like `node-gyp` and `pacote`. It is not involved in any runtime operations of the test runner, making the path traversal vulnerability unreachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:7.5.9",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Similar to CVE-2026-29786, the library is only used as a transitive dependency for dev/build tools. No explicit calls to `tar.x()` were found in the source code, and no user-controlled input reaches the library during normal test runner operations.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33228",
+    "Location": "flatted:3.3.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The prototype pollution vulnerability in `flatted.parse()` is not exploitable because the function is not called by `ava`. The library is used indirectly via `flat-cache` in a development context, meaning it does not process untrusted data during test execution.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-xffm-g5w8-qvg7",
+    "Location": "@eslint/plugin-kit:0.2.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The ReDoS vulnerability in `ConfigCommentParser#parseJSONLikeConfig` is located within the ESLint plugin ecosystem. `ava` does not call this API directly; it is only used by ESLint during linting, which is a development activity. The test runner itself is not affected.",
+    "Assessment": "Correct"
+  }
+]
