@@ -1,0 +1,6 @@
+﻿Repository;Number of vulnerabilities in our tool;Number of exploitable (Exploitability >= 80%)  vulnerabilities in our tool ;Number of vulnerabilities in Grype;Number of exploitable (Risk >= 80%)  vulnerabilities in Grype ;Number of vulnerabilities detected both by our tool and Grype;The scanner which assessed the vulnerability correctly 
+https://github.com/reactstrap/reactstrap;166;0;195;1;0;Our tool
+https://github.com/hackjutsu/Lepton;138;1;184;2;0;Our tool
+https://github.com/provectus/kafka-ui;92;1;89;1;0;None
+https://github.com/InstaPy/InstaPy;141;0;149;1;0;Our tool
+https://github.com/minio/minio;17;6;44;1;1;Our tool
