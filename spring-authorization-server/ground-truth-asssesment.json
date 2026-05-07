@@ -1,0 +1,938 @@
+[
+  {
+    "Vulnerability": "CVE-2025-30208",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite is used as a dev dependency in the docs component. No evidence of Vite dev server being exposed to untrusted networks in production code. Vulnerable API usage found only in internal library build process. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-31125",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 5,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite is used as a dev dependency in the docs component. No evidence of Vite dev server being exposed to untrusted networks in production code. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24400",
+    "Location": "assertj-core:3.27.4",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to vulnerable APIs (xmlPrettyFormat, isXmlEqualTo) found in the codebase after thorough search. AssertJ is used only as a test dependency. Probability set to 1% per API usage not confirmed rule.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24734",
+    "Location": "tomcat-embed-core:11.0.10",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability requires OCSP responder configuration for certificate revocation checking. No such configuration (ocspResponderUrl) found in the codebase. Probability remains at 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7339",
+    "Location": "on-headers:1.0.2",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Package on-headers is a transitive dependency in the docs component. No explicit usage of the vulnerable API found in the codebase. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8908",
+    "Location": "guava:29.0-jre",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API Files.createTempDir() is not called in the codebase. Probability set to 1% (minimal safe value for SCA identified library with no usage).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Package brace-expansion is a transitive dependency in the docs component. No explicit usage of the vulnerable 'expand' function found in the codebase. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22735",
+    "Location": "spring-webflux:7.0.0-M8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects Server-Sent Events (SSE). No usage of ServerSentEvent or SSE streaming found in the codebase. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1225",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability requires write access to logback configuration files by an attacker. No such vulnerability path or configuration manipulation found in the codebase. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Package serialize-javascript is a transitive dependency in the docs component. No explicit usage of the 'serialize' function found in the codebase. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-67mh-4wv8-2f99",
+    "Location": "esbuild:0.21.5",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "esbuild is a dependency of Antora (docs component). No evidence of esbuild dev server being exposed in production. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-67mh-4wv8-2f99",
+    "Location": "esbuild:0.23.0",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "esbuild is a dependency of Antora (docs component). No evidence of esbuild dev server being exposed in production. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-34447",
+    "Location": "bcprov-jdk18on:1.77",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects hostname verification in BCJSSE. Bouncy Castle is used in the codebase only for certificate generation (BouncyCastleProvider). No usage of BCJSSE or HttpsURLConnection with Bouncy Castle found. Probability set to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-55754",
+    "Location": "tomcat-embed-core:11.0.10",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability involves ANSI escape sequences in logs. No evidence of unsanitized user input being logged directly to a console-ready output. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-8916",
+    "Location": "bcpkix-jdk18on:1.77",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects PKIXCertPathReviewer. No usage of this class found in the codebase. Bouncy Castle is used for cert generation, not path validation in this context. Probability set to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Library minimatch is used as a transitive dependency in the docs component. No explicit usage in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-42550",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability requires JNDI lookup in logback configuration. No such configuration found. Probability remains 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-31486",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 8,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-46565",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-62522",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-6378",
+    "Location": "logback-classic:1.2.3",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vulnerability affects logback receiver component. No receivers are configured in the codebase. Probability set to 10% per library-internal usage rules (vulnerable code exists but not triggered).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-6378",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vulnerability affects logback receiver component. No receivers are configured in the codebase. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58751",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:4.22.4",
+    "Original_exploitability": 2,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Rollup is used as a tool in the documentation component. No vulnerable API usage found in the active codebase. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30359",
+    "Location": "webpack-dev-server:5.0.4",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Webpack-dev-server is a dev tool and is not exposed in production. No evidence of exposure in code paths. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-52798",
+    "Location": "path-to-regexp:0.1.10",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "no usage of path-to-regexp library found in user code. It is a transitive dependency in the docs component. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48734",
+    "Location": "commons-beanutils:1.9.4",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to vulnerable APIs (PropertyUtils.getProperty, BeanUtils.getProperty) found in the codebase. Probability set to 1% per API usage not confirmed rule.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-55752",
+    "Location": "tomcat-embed-core:11.0.10",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability requires RewriteValve or rewrite.config to be used. No such configuration or usage found in the codebase. Probability set to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66031",
+    "Location": "node-forge:1.3.1",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "node-forge is a transitive dependency in the docs component. No explicit usage in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29857",
+    "Location": "bcprov-jdk18on:1.77",
+    "Original_exploitability": 40,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects parsing of specially crafted EC cert parameters. The codebase uses Bouncy Castle primarily for RSA certificate generation, not for parsing untrusted certificate chains. Probability set to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-32395",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-32996",
+    "Location": "http-proxy-middleware:2.0.7",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "http-proxy-middleware is a transitive dependency in the docs component. No usage found in user code. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-32996",
+    "Location": "http-proxy-middleware:3.0.3",
+    "Original_exploitability": 1,
+    "Exploitability": 10,
+    "Exploitability_explanation": "http-proxy-middleware is a transitive dependency in the docs component. No usage found in user code. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33672",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "picomatch is a transitive dependency in the docs component. No usage found in user code. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33672",
+    "Location": "picomatch:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "picomatch is a transitive dependency in the docs component. No usage found in user code. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33151",
+    "Location": "socket.io-parser:4.2.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No usage of socket.io-parser found in the codebase. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30360",
+    "Location": "webpack-dev-server:5.0.4",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Webpack-dev-server is a dev tool and is not exposed in production. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/helpers:7.26.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "@babel/helpers is a build-time dependency. Vulnerable code is in generated polyfills which are not part of the production server code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.25.0",
+    "Original_exploitability": 8,
+    "Exploitability": 1,
+    "Exploitability_explanation": "@babel/runtime is a build-time dependency. Vulnerable code is in generated polyfills which are not part of the production server code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66035",
+    "Location": "@angular/common:18.2.11",
+    "Original_exploitability": 40,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No usage of Angular HttpClient found in the codebase. Probability set to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-r9mx-cpmf-v994",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects minimatch glob processing. Library is a transitive dependency in the docs component. No usage found in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-r9mx-cpmf-v994",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects minimatch glob processing. Library is a transitive dependency in the docs component. No usage found in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-r9mx-cpmf-v994",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects minimatch glob processing. Library is a transitive dependency in the docs component. No usage found in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66034",
+    "Location": "@angular/compiler:18.2.11",
+    "Original_exploitability": 20,
+    "Exploitability": 1,
+    "Exploitability_explanation": "SCA identification appears questionable (CVE-2025-66034 is often associated with fontTools). Regardless, @angular/compiler is not used in the production codebase. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66034",
+    "Location": "@angular/compiler:18.2.11",
+    "Original_exploitability": 30,
+    "Exploitability": 1,
+    "Exploitability_explanation": "SCA identification appears questionable. @angular/compiler is not used in the production codebase. Probability set to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66034",
+    "Location": "@angular/compiler:18.2.11",
+    "Original_exploitability": 40,
+    "Exploitability": 1,
+    "Exploitability_explanation": "SCA identification appears questionable. @angular/compiler is not used in the production codebase. Probability set to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-5171",
+    "Location": "zlib:1.2.13",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "CVE-2024-5171 affects libaom, not zlib. No usage of libaom found. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30362",
+    "Location": "webpack:5.95.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "CVE-2025-30362 affects WeGIA, not webpack. No usage of WeGIA found. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30362",
+    "Location": "webpack:5.96.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "CVE-2025-30362 affects WeGIA, not webpack. No usage of WeGIA found. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30362",
+    "Location": "webpack:5.97.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "CVE-2025-30362 affects WeGIA, not webpack. No usage of WeGIA found. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30362",
+    "Location": "webpack:5.97.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "CVE-2025-30362 affects WeGIA, not webpack. No usage of WeGIA found. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-6378",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vulnerability affects logback receiver component. No receivers are configured in the codebase. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30360",
+    "Location": "webpack-dev-server:5.0.4",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Webpack-dev-server is a dev tool and is not exposed in production. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-45196",
+    "Location": "jose:5.9.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "JavaScript 'jose' library is a transitive dependency in docs. No usage found in production Java code (which uses nimbus-jose-jwt). Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-45196",
+    "Location": "jose:5.9.6",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "JavaScript 'jose' library is a transitive dependency in docs. No usage found in production Java code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52798",
+    "Location": "path-to-regexp:0.1.10",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "no usage of path-to-regexp library found in user code. It is a transitive dependency in the docs component. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66412",
+    "Location": "@angular/compiler:18.2.11",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Angular is used in the documentation examples, but the library itself is not part of the production server codebase. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66035",
+    "Location": "@angular/common:18.2.11",
+    "Original_exploitability": 40,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No usage of Angular HttpClient found in the codebase. Probability set to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-32395",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-46565",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-46565",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58751",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66412",
+    "Location": "@angular/compiler:18.2.11",
+    "Original_exploitability": 10,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Angular is used in the documentation examples, but the library itself is not part of the production server codebase. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48734",
+    "Location": "commons-beanutils:1.9.4",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to vulnerable APIs (PropertyUtils.getProperty, BeanUtils.getProperty) found in the codebase. Probability set to 1% per API usage not confirmed rule.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-52798",
+    "Location": "path-to-regexp:0.1.10",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "no usage of path-to-regexp library found in user code. It is a transitive dependency in the docs component. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66035",
+    "Location": "@angular/common:18.2.11",
+    "Original_exploitability": 40,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No usage of Angular HttpClient found in the codebase. Probability set to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66034",
+    "Location": "@angular/compiler:18.2.11",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "SCA identification appears questionable. @angular/compiler is not used in the production codebase. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66034",
+    "Location": "@angular/compiler:18.2.11",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "SCA identification appears questionable. @angular/compiler is not used in the production codebase. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55754",
+    "Location": "tomcat-embed-core:11.0.10",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability involves ANSI escape sequences in logs. No evidence of unsanitized user input being logged directly to a console-ready output. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-67mh-4wv8-2f99",
+    "Location": "esbuild:0.21.5",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "esbuild is a dependency of Antora (docs component). No evidence of esbuild dev server being exposed in production. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-67mh-4wv8-2f99",
+    "Location": "esbuild:0.23.0",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "esbuild is a dependency of Antora (docs component). No evidence of esbuild dev server being exposed in production. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30359",
+    "Location": "webpack-dev-server:5.0.4",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Webpack-dev-server is a dev tool and is not exposed in production. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-55752",
+    "Location": "tomcat-embed-core:11.0.10",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability requires RewriteValve or rewrite.config to be used. No such configuration or usage found in the codebase. Probability set to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66031",
+    "Location": "node-forge:1.3.1",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "node-forge is a transitive dependency in the docs component. No explicit usage in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Library minimatch is used as a transitive dependency in the docs component. No explicit usage in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Library minimatch is used as a transitive dependency in the docs component. No explicit usage in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-42550",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability requires JNDI lookup in logback configuration. No such configuration found. Probability remains at 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-31486",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 8,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30208",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-31125",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 5,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-r9mx-cpmf-v994",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects minimatch glob processing. Library is a transitive dependency in the docs component. No usage found in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-r9mx-cpmf-v994",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects minimatch glob processing. Library is a transitive dependency in the docs component. No usage found in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-r9mx-cpmf-v994",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects minimatch glob processing. Library is a transitive dependency in the docs component. No usage found in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-r9mx-cpmf-v994",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects minimatch glob processing. Library is a transitive dependency in the docs component. No usage found in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-r9mx-cpmf-v994",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects minimatch glob processing. Library is a transitive dependency in the docs component. No usage found in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-r9mx-cpmf-v994",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects minimatch glob processing. Library is a transitive dependency in the docs component. No usage found in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66034",
+    "Location": "@angular/compiler:18.2.11",
+    "Original_exploitability": 40,
+    "Exploitability": 1,
+    "Exploitability_explanation": "SCA identification appears questionable. @angular/compiler is not used in the production codebase. Probability set to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-32395",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-67mh-4wv8-2f99",
+    "Location": "esbuild:0.21.5",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "esbuild is a dependency of Antora (docs component). No evidence of esbuild dev server being exposed in production. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-67mh-4wv8-2f99",
+    "Location": "esbuild:0.23.0",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "esbuild is a dependency of Antora (docs component). No evidence of esbuild dev server being exposed in production. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-r9mx-cpmf-v994",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects minimatch glob processing. Library is a transitive dependency in the docs component. No usage found in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-r9mx-cpmf-v994",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects minimatch glob processing. Library is a transitive dependency in the docs component. No usage found in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-r9mx-cpmf-v994",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects minimatch glob processing. Library is a transitive dependency in the docs component. No usage found in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-r9mx-cpmf-v994",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects minimatch glob processing. Library is a transitive dependency in the docs component. No usage found in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-r9mx-cpmf-v994",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects minimatch glob processing. Library is a transitive dependency in the docs component. No usage found in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-r9mx-cpmf-v994",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability affects minimatch glob processing. Library is a transitive dependency in the docs component. No usage found in user code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58751",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52798",
+    "Location": "path-to-regexp:0.1.10",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "no usage of path-to-regexp library found in user code. It is a transitive dependency in the docs component. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66035",
+    "Location": "@angular/common:18.2.11",
+    "Original_exploitability": 40,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No usage of Angular HttpClient found in the codebase. Probability set to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-32395",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-46565",
+    "Location": "vite:5.4.6",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.25.0",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "@babel/runtime is a build-time dependency. Vulnerable code is in generated polyfills which are not part of the production server code. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55754",
+    "Location": "tomcat-embed-core:11.0.10",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability involves ANSI escape sequences in logs. No evidence of unsanitized user input being logged directly to a console-ready output. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30360",
+    "Location": "webpack-dev-server:5.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Webpack-dev-server is a dev tool and is not exposed in production. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30360",
+    "Location": "webpack-dev-server:5.2.0",
+    "Original_exploitability": 1,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Webpack-dev-server is a dev tool and is not exposed in production. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-31486",
+    "Location": "vite:5.4.18",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-31486",
+    "Location": "vite:5.4.18",
+    "Original_exploitability": 1,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-32395",
+    "Location": "vite:5.4.18",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-32395",
+    "Location": "vite:5.4.18",
+    "Original_exploitability": 1,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-46565",
+    "Location": "vite:5.4.18",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-46565",
+    "Location": "vite:5.4.18",
+    "Original_exploitability": 1,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58751",
+    "Location": "vite:5.4.18",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58751",
+    "Location": "vite:5.4.18",
+    "Original_exploitability": 1,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. vite is a dev dependency in docs. No production exposure. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33672",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "picomatch is a transitive dependency in the docs component. No usage found in user code. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33672",
+    "Location": "picomatch:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "picomatch is a transitive dependency in the docs component. No usage found in user code. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33151",
+    "Location": "socket.io-parser:4.2.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No usage of socket.io-parser found in the codebase. Probability set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30360",
+    "Location": "webpack-dev-server:5.2.0",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Webpack-dev-server is a dev tool and is not exposed in production. Probability set to 10% per library-internal usage rules.",
+    "Assessment": "Correct"
+  }
+]

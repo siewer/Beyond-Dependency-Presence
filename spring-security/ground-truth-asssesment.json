@@ -1,0 +1,282 @@
+[
+  {
+    "Vulnerability": "CVE-2023-6378",
+    "Location": "logback-classic:1.2.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable SocketAppender is not used in the codebase. Logback is only present in test resources without vulnerable configurations.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-2976",
+    "Location": "guava:29.0-jre",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API createTempDir() is not used. Guava is not a project dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-4000",
+    "Location": "jython:2.5.3",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Jython is used for integration testing in itest module, not part of the production library artifact.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-42550",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable SocketAppender is not used. Logback is used only for testing.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-0341",
+    "Location": "okhttp:3.14.9",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "OkHttp usage found only in build toolchain (buildSrc) and tests (MockWebServer).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-6763",
+    "Location": "jetty-http:11.0.26",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Jetty is not used in the codebase; only listed as a managed dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-6378",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable SocketAppender is not used. Logback is used only for testing.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-3635",
+    "Location": "okio:1.17.2",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Okio usage found only via OkHttp in build scripts and tests.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-45868",
+    "Location": "h2:2.1.214",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "H2 is used in tests, but the H2 Console (vulnerable component) is not enabled or exposed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-33201",
+    "Location": "bcprov-jdk15on:1.70",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "BouncyCastle is used for certificate and key conversion in production code (crypto, saml2 modules).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29857",
+    "Location": "bcprov-jdk15on:1.70",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "BouncyCastle is used for certificate and key conversion in production code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25193",
+    "Location": "netty-common:4.1.117.Final",
+    "Original_exploitability": 35,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Netty is not a direct production dependency; used only transitively in tests.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-48734",
+    "Location": "commons-beanutils:1.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Commons BeanUtils is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48734",
+    "Location": "commons-beanutils:1.9.4",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Commons BeanUtils is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:4.0.7",
+    "Original_exploitability": 25,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Micromatch is a transitive devDependency in the javascript module, not used in library code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-30171",
+    "Location": "bcprov-jdk15on:1.70",
+    "Original_exploitability": 45,
+    "Exploitability": 45,
+    "Exploitability_explanation": "RSA decryption APIs are part of the production crypto module (RsaSecretEncryptor) and can use BouncyCastle if registered.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Cross-spawn is a transitive devDependency in the javascript module.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-12798",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Logback SocketAppender is not used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "path-to-regexp:6.2.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Path-to-regexp is a transitive devDependency in the javascript module.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-2976",
+    "Location": "guava:31.0.1-jre",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Guava is not a project dependency and createTempDir() is not called.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-11226",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Logback SocketAppender is not used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-11143",
+    "Location": "jetty-http:11.0.26",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Jetty is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Ajv is a transitive devDependency in the javascript module.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15250",
+    "Location": "junit:4.12",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "JUnit 4 is used for testing, but vulnerable TemporaryFolder rule is not used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8908",
+    "Location": "guava:29.0-jre",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Guava is not a project dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8908",
+    "Location": "guava:31.0.1-jre",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Guava is not a project dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-8916",
+    "Location": "bcpkix-jdk15on:1.70",
+    "Original_exploitability": 70,
+    "Exploitability": 70,
+    "Exploitability_explanation": "BouncyCastle RSA and certificate APIs are part of the production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48924",
+    "Location": "commons-lang3:3.11",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Commons Lang3 is not used in production code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48924",
+    "Location": "commons-lang3:3.8.1",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Commons Lang3 is not used in production code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-12801",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Logback SocketAppender is not used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Brace-expansion is a transitive devDependency in the javascript module.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:2.0.1",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Brace-expansion is a transitive devDependency in the javascript module.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:5.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Diff is a transitive devDependency in the javascript module.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-1225",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Logback SocketAppender is not used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Serialize-javascript is a transitive devDependency in the javascript module.",
+    "Assessment": "Correct"
+  }
+]

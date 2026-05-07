@@ -1,0 +1,66 @@
+[
+  {
+    "Vulnerability": "CVE-2020-11023",
+    "Location": "jquery:1.11.0",
+    "Original_exploitability": 85,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Version 1.11.0 is vulnerable. API calls confirmed: $.append() and $.html() are used in app.js (lines 57, 68, 260, 266) to render SQL content and image tags. The HTML injection constraint is 100% satisfied as these methods process HTML strings without sanitization.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11022",
+    "Location": "jquery:1.11.0",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Version 1.11.0 is vulnerable. Although the original score was 0%, the same vulnerable APIs ($.append and $.html) used in app.js for rendering dynamic content are active, making this vulnerability highly exploitable if malicious HTML (specifically <option> tags) is provided.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2015-9251",
+    "Location": "jquery:1.11.0",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API not used. A comprehensive search confirmed that $.ajax() and its shorthand methods ($.get, $.post) are not used in the application's user code or templates.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-11358",
+    "Location": "jquery:1.11.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API not used. The $.extend() method used for prototype pollution is not called in the codebase. The small difference (2%) is within the 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-8331",
+    "Location": "bootstrap:4.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API not used. The application does not initialize or use Bootstrap tooltips or popovers (no code found to enable them, and no data-toggle='tooltip/popover' attributes).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-14040",
+    "Location": "bootstrap:4.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Config ENABLED but no code path. The Collapse plugin is enabled via data-toggle='collapse' in base.html:35, but the specific vulnerable attribute (data-parent) is not used. According to the scoring rules, this results in a probability of 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-14041",
+    "Location": "bootstrap:4.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API not used. No usage of the Bootstrap Affix plugin or spy-affix attributes was found in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-14042",
+    "Location": "bootstrap:4.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API not used. No Tooltips or Popovers are initialized or used, which are required for this vulnerability's data-container vector.",
+    "Assessment": "Incorrect"
+  }
+]

@@ -1,0 +1,14 @@
+import io.spring.gradle.convention.SpringModulePlugin
+
+apply plugin: 'io.spring.convention.bom'
+apply plugin: 'compile-warnings-error'
+
+dependencies {
+	constraints {
+		project.rootProject.allprojects { p ->
+			p.plugins.withType(SpringModulePlugin) {
+				api p
+			}
+		}
+	}
+}

@@ -1,0 +1,738 @@
+[
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:1.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-32804",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:0.5.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:2.1.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37601",
+    "Location": "loader-utils:1.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:2.4.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37601",
+    "Location": "loader-utils:1.2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:2.5.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37599",
+    "Location": "loader-utils:1.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37599",
+    "Location": "loader-utils:1.2.3",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23383",
+    "Location": "handlebars:4.5.3",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25858",
+    "Location": "terser:4.6.1",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-28498",
+    "Location": "elliptic:6.5.3",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-27290",
+    "Location": "ssri:6.0.1",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23369",
+    "Location": "handlebars:4.5.3",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:6.5.2",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3918",
+    "Location": "json-schema:0.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42461",
+    "Location": "elliptic:6.5.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37603",
+    "Location": "loader-utils:1.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37603",
+    "Location": "loader-utils:1.2.3",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:1.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:1.2.5",
+    "Original_exploitability": 10,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-28469",
+    "Location": "glob-parent:5.1.1",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:4.17.19",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0235",
+    "Location": "node-fetch:2.1.2",
+    "Original_exploitability": 8,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38900",
+    "Location": "decode-uri-component:0.2.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.5.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.7.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.7.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:6.3.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-37890",
+    "Location": "ws:5.2.2",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-46234",
+    "Location": "browserify-sign:4.0.4",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7774",
+    "Location": "y18n:4.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3777",
+    "Location": "tmpl:1.0.4",
+    "Original_exploitability": 5,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.88.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23362",
+    "Location": "hosted-git-info:2.7.1",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-28863",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-37713",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-32640",
+    "Location": "ws:5.2.2",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7788",
+    "Location": "ini:1.3.5",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:6.10.2",
+    "Original_exploitability": 8,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23343",
+    "Location": "path-parse:1.0.6",
+    "Original_exploitability": 8,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23364",
+    "Location": "browserslist:4.4.2",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:3.0.2",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:2.3.3",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-3807",
+    "Location": "ansi-regex:3.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3807",
+    "Location": "ansi-regex:4.1.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7598",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7598",
+    "Location": "minimist:1.2.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-28500",
+    "Location": "lodash:4.17.19",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6545",
+    "Location": "pbkdf2:3.0.17",
+    "Original_exploitability": 10,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-32803",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7789",
+    "Location": "node-notifier:5.4.3",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-48949",
+    "Location": "elliptic:6.5.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-9287",
+    "Location": "cipher-base:1.0.4",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.5.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-37701",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "@babel/traverse:7.2.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "@babel/traverse:7.5.5",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42460",
+    "Location": "elliptic:6.5.3",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/helpers:7.3.1",
+    "Original_exploitability": 35,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-37712",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.10",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-48948",
+    "Location": "elliptic:6.5.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:6.0.5",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "path-to-regexp:2.2.1",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42459",
+    "Location": "elliptic:6.5.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-9288",
+    "Location": "sha.js:2.4.11",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:3.2.6",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:4.1.1",
+    "Original_exploitability": 2,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15168",
+    "Location": "node-fetch:2.1.2",
+    "Original_exploitability": 8,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.10.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6547",
+    "Location": "pbkdf2:3.0.17",
+    "Original_exploitability": 5,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.19",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:4.11.8",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.8",
+    "Original_exploitability": 8,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 20,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:4.4.13",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.5.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-vjh7-7g9h-fjfh",
+    "Location": "elliptic:6.5.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:3.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "The vulnerable library is a transitive devDependency used exclusively by build/test tools (Webpack, Jest, Babel). It is not part of the runtime application code path. Furthermore, many of these vulnerabilities (e.g., in 'tar' or 'cross-spawn') require a Node.js environment and are physically impossible to exploit in the browser-based Swagger UI bundled in the JAR.",
+    "Assessment": "Correct"
+  }
+]

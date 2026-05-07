@@ -1,0 +1,81 @@
+plugins {
+	id "io.spring.convention.docs"
+	id "io.spring.antora.generate-antora-yml" version "0.0.1"
+	id "org.antora" version "1.0.0"
+	id "java"
+}
+
+group = project.rootProject.group
+version = project.rootProject.version
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_17
+}
+
+compileJava {
+	options.compilerArgs << '-parameters'
+}
+
+antora {
+	options = [clean: true, fetch: !project.gradle.startParameter.offline, stacktrace: true]
+	environment = [
+		'BUILD_REFNAME': 'HEAD',
+		'BUILD_VERSION': project.version,
+	]
+}
+
+tasks.named("generateAntoraYml") {
+	asciidocAttributes = project.provider( { generateAttributes() } )
+}
+
+
+def generateAttributes() {
+	return [
+			"spring-authorization-server-version": project.version
+	]
+}
+
+docsZip {
+	from (api) {
+		into "api"
+	}
+	from(asciidoctor) {
+		into "reference/html"
+	}
+}
+
+repositories {
+	mavenCentral()
+	maven { url "https://repo.spring.io/milestone" }
+	maven { url "https://repo.spring.io/snapshot" }
+}
+
+dependencies {
+	implementation(platform("org.springframework.boot:spring-boot-dependencies:4.0.0-M2")) {
+		exclude group: "org.springframework.security", module: "spring-security-oauth2-authorization-server"
+	}
+	implementation platform("org.springframework.security:spring-security-bom:7.0.0-M2")
+	implementation "org.springframework.boot:spring-boot-starter-web"
+	implementation "org.springframework.boot:spring-boot-starter-thymeleaf"
+	implementation "org.springframework.boot:spring-boot-starter-security"
+	implementation "org.springframework.boot:spring-boot-starter-oauth2-client"
+	implementation "org.springframework.boot:spring-boot-starter-oauth2-resource-server"
+	implementation "org.springframework.boot:spring-boot-starter-oauth2-authorization-server"
+	implementation "org.springframework.boot:spring-boot-starter-data-jpa"
+	implementation ("org.springframework.boot:spring-boot-starter-data-redis") {
+		exclude group: "io.lettuce", module: "lettuce-core"
+	}
+	implementation "redis.clients:jedis"
+	implementation "org.springframework:spring-webflux"
+	implementation project(":spring-security-oauth2-authorization-server")
+	runtimeOnly "com.h2database:h2"
+	testRuntimeOnly "org.junit.platform:junit-platform-launcher"
+	testImplementation "org.springframework.boot:spring-boot-starter-test"
+	testImplementation "org.springframework.boot:spring-boot-starter-webclient"
+	testImplementation "org.springframework.security:spring-security-test"
+	testImplementation "com.github.codemonstur:embedded-redis:1.4.3"
+}
+
+tasks.named("test") {
+	useJUnitPlatform()
+}

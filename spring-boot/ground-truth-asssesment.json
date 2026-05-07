@@ -1,0 +1,530 @@
+[
+  {
+    "Vulnerability": "CVE-2021-26291",
+    "Location": "maven-compat:3.6.3",
+    "Original_exploitability": "25",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-26291",
+    "Location": "maven-core:3.6.3",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-20677",
+    "Location": "bootstrap:3.0.3",
+    "Original_exploitability": "15",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-20676",
+    "Location": "bootstrap:3.0.3",
+    "Original_exploitability": "1",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-10735",
+    "Location": "bootstrap:3.0.3",
+    "Original_exploitability": "15",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-10237",
+    "Location": "guava:19.0",
+    "Original_exploitability": "15",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-14042",
+    "Location": "bootstrap:3.0.3",
+    "Original_exploitability": "15",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11979",
+    "Location": "ant:1.10.7",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-4759",
+    "Location": "org.eclipse.jgit:6.4.0.202211300538-r",
+    "Original_exploitability": "50",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-29599",
+    "Location": "maven-shared-utils:3.2.1",
+    "Original_exploitability": "50",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-15522",
+    "Location": "bcprov-jdk15on:1.64",
+    "Original_exploitability": "35",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-13956",
+    "Location": "httpclient:4.5.6",
+    "Original_exploitability": "8",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-29425",
+    "Location": "commons-io:2.5",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-33201",
+    "Location": "bcprov-jdk15on:1.64",
+    "Original_exploitability": "8",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-46751",
+    "Location": "ivy:2.5.0",
+    "Original_exploitability": "12",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47554",
+    "Location": "commons-io:2.5",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47554",
+    "Location": "commons-io:2.7",
+    "Original_exploitability": "25",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-55163",
+    "Location": "grpc-netty-shaded:1.73.0",
+    "Original_exploitability": "65",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27830",
+    "Location": "c3p0:0.11.1",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44483",
+    "Location": "xmlsec:2.1.4",
+    "Original_exploitability": "15",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27727",
+    "Location": "mchange-commons-java:0.3.2",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-36374",
+    "Location": "ant:1.10.7",
+    "Original_exploitability": "15",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64518",
+    "Location": "cyclonedx-core-java:11.0.0",
+    "Original_exploitability": "50",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-12183",
+    "Location": "lz4-java:1.8.0",
+    "Original_exploitability": "50",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-46337",
+    "Location": "derby:10.16.1.1",
+    "Original_exploitability": "15",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-11226",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": "70",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-2976",
+    "Location": "guava:25.1-android",
+    "Original_exploitability": "50",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-8908",
+    "Location": "guava:29.0-jre",
+    "Original_exploitability": "10",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21452",
+    "Location": "msgpack-core:0.9.8",
+    "Original_exploitability": "40",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-48924",
+    "Location": "commons-lang3:3.8.1",
+    "Original_exploitability": "25",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-12801",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": "15",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24400",
+    "Location": "assertj-core:3.27.4",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-29582",
+    "Location": "kotlin-stdlib:FAILED",
+    "Original_exploitability": "50",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-72hv-8253-57qq",
+    "Location": "jackson-core:2.15.3",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-42550",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": "15",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-8331",
+    "Location": "bootstrap:3.0.3",
+    "Original_exploitability": "15",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-14040",
+    "Location": "bootstrap:3.0.3",
+    "Original_exploitability": "15",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11979",
+    "Location": "ant:1.7.1",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37866",
+    "Location": "ivy:2.5.0",
+    "Original_exploitability": "20",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-6378",
+    "Location": "logback-classic:1.2.3",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-6378",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": "50",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-37865",
+    "Location": "ivy:2.5.0",
+    "Original_exploitability": "40",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-4065",
+    "Location": "testng:6.14.3",
+    "Original_exploitability": "15",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-40690",
+    "Location": "xmlsec:2.1.4",
+    "Original_exploitability": "5",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29857",
+    "Location": "bcprov-jdk15on:1.64",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-33202",
+    "Location": "bcprov-jdk15on:1.64",
+    "Original_exploitability": "5",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48734",
+    "Location": "commons-beanutils:1.10.1",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48734",
+    "Location": "commons-beanutils:1.9.4",
+    "Original_exploitability": "50",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-30171",
+    "Location": "bcprov-jdk15on:1.64",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66566",
+    "Location": "lz4-java:1.8.0",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-4949",
+    "Location": "org.eclipse.jgit:6.4.0.202211300538-r",
+    "Original_exploitability": "5",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-12798",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": "35",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-41249",
+    "Location": "spring-core:6.2.9",
+    "Original_exploitability": "15",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-36373",
+    "Location": "ant:1.10.7",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-36373",
+    "Location": "ant:1.7.1",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-2976",
+    "Location": "guava:19.0",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-2976",
+    "Location": "guava:29.0-jre",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8908",
+    "Location": "guava:19.0",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8908",
+    "Location": "guava:25.1-android",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-8916",
+    "Location": "bcpkix-jdk15on:1.64",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-1945",
+    "Location": "ant:1.10.7",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-1945",
+    "Location": "ant:1.7.1",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24400",
+    "Location": "assertj-core:3.11.1",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1225",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": "40",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-24329",
+    "Location": "kotlin-stdlib:FAILED",
+    "Original_exploitability": "25",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-7xw4-g7mm-r4hh",
+    "Location": "aws-advanced-jdbc-wrapper:2.6.0",
+    "Original_exploitability": "0",
+    "Exploitability": "1",
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  }
+]

@@ -1,0 +1,22 @@
+plugins {
+	id 'security-nullability'
+	id 'io.spring.convention.spring-module'
+	id 'javadoc-warnings-error'
+	id 'compile-warnings-error'
+}
+
+description = 'Spring Security Kerberos Web'
+
+dependencies {
+	management platform(project(":spring-security-dependencies"))
+	implementation project(':spring-security-kerberos-core')
+	api(project(':spring-security-web'))
+	api(libs.jakarta.servlet.jakarta.servlet.api)
+	testImplementation 'org.springframework:spring-test'
+	testImplementation project(':spring-security-config')
+	testImplementation 'org.junit.jupiter:junit-jupiter'
+	testImplementation 'org.mockito:mockito-junit-jupiter'
+	testImplementation libs.org.assertj.assertj.core
+
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}

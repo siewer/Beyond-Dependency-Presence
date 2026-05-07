@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - 0.12
+  - 4
+  - 6
+
+cache:
+  directories:
+    - node_modules
+
+before_install:
+  - npm install --upgrade npm -g
+
+script:
+  - npm run cover-test
+
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/7937aa9d2e9d767d0421
+    on_success: always
+    on_failure: always

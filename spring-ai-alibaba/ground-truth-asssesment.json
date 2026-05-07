@@ -1,0 +1,1482 @@
+[
+  {
+    "Vulnerability": "CVE-2025-31125",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 25,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite is a dev dependency used for build tasks. The vulnerability affects the dev server, which is not exposed to the network in this project's configuration. Max 0.10 for internal/dev tools.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30208",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. No evidence of network exposure or public-facing dev server. Max 0.10 for internal/dev tools.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-11965",
+    "Location": "vertx-web:4.5.14",
+    "Original_exploitability": 5,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vert.x-Web is not directly used in the codebase. No calls to StaticHandler found. Unused/Dead code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "node-tar is a sub-dependency in the frontend. No explicit calls to extract/parse found in user code. Unused API.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-31207",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. No custom server.fs.deny configuration found. Max 0.10 for internal/dev tools.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-3803",
+    "Location": "nth-check:1.0.2",
+    "Original_exploitability": 35,
+    "Exploitability": 10,
+    "Exploitability_explanation": "nth-check is a transitive dependency (via svgo-browser). No direct calls found in code. Internal library usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-48924",
+    "Location": "commons-lang3:3.17.0",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "The vulnerable API ClassUtils.getClass is not used in the codebase. Version found is 3.11, not 3.17.0 as indicated in location.",
+    "Assessment": "Coorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-28863",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit calls to vulnerable tar parsing APIs found. Transitive dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-26308",
+    "Location": "commons-compress:1.24.0",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "commons-compress not directly used for Pack200 processing. No explicit calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24734",
+    "Location": "tomcat-embed-core:10.1.48",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Tomcat is used, but no OCSP configuration is present in the repository, making the vulnerability unreachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24734",
+    "Location": "tomcat-embed-core:10.1.49",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerability is unreachable as OCSP is not configured in this project. Version is vulnerable but the vector is inactive.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24733",
+    "Location": "tomcat-embed-core:10.1.49",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Requires specific security constraints (Allow HEAD, Deny GET on same URI) which are not present in the application configuration.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "qs is used transitively. No explicit calls to qs.parse found in the codebase. Unused API.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:10.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a sub-dependency of dev tools (ESLint/Umi). No application code calls minimatch directly. Probability 0.00-0.02.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a sub-dependency of dev tools. No application code calls minimatch directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a sub-dependency of dev tools. No application code calls minimatch directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a sub-dependency of dev tools. No application code calls minimatch directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:8.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a sub-dependency of dev tools. No application code calls minimatch directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:10.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a sub-dependency of dev tools. No application code calls minimatch directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a sub-dependency of dev tools. No application code calls minimatch directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a sub-dependency of dev tools. No application code calls minimatch directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:8.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a sub-dependency of dev tools. No application code calls minimatch directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a sub-dependency of dev tools. No application code calls minimatch directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:10.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a sub-dependency of dev tools. No application code calls minimatch directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a sub-dependency of dev tools. No application code calls minimatch directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a sub-dependency of dev tools. No application code calls minimatch directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25639",
+    "Location": "axios:0.27.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Axios used in the frontend. No evidence of unsafe configuration merging with untrusted input containing __proto__.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22737",
+    "Location": "spring-webflux:6.2.12",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Requires Java scripting engines for template views which are not used in this project.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "glob:10.4.5",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vulnerability affects the CLI version of glob when used with untrusted filenames containing shell metacharacters. The application only uses the library transitively, not the CLI. Probability cap 0.10.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66614",
+    "Location": "tomcat-embed-core:10.1.49",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Requires specific SNI/Host mismatch configuration and client cert auth at the connector level. Not present in this project.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.0.33",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Vulnerability requires local access to perform a symlink attack. Not exploitable in typical remote environments. Max 0.05 for local-only vectors.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Local-only symlink attack. No evidence of user influence over the dir parameter in existing scripts. Probability caps at 0.05.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-8916",
+    "Location": "bcpkix-jdk15on:1.70",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Bouncy Castle PKIX review utility is not used in the application code. Unreachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a sub-dependency of dev tools. No application code calls minimatch directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:8.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a sub-dependency of dev tools. No application code calls minimatch directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "ajv ReDoS requires the $data option and untrusted regex patterns, which are not used in this project.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22737",
+    "Location": "spring-webmvc:6.2.12",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Requires Java scripting engines for template views which are not used in this project.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22737",
+    "Location": "spring-webmvc:6.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Requires Java scripting engines for template views which are not used in this project.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Prototype pollution via _.unset or _.omit. No evidence found of these methods being used with attacker-controlled property paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48924",
+    "Location": "commons-lang3:3.14.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API ClassUtils.getClass is not used in the application codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "node-tar is a sub-dependency in the frontend. No explicit calls to extract/parse found in user code. Probability 0.00-0.02.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "js-yaml is a dev dependency used for build tasks. No application code parses user-provided YAML at runtime.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:4.12.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "bn.js is a sub-dependency. No application code calls BN.maskn(0) or handles user input in a way that triggers this state.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "brace-expansion is a sub-dependency of dev tools. No application code calls it directly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22735",
+    "Location": "spring-webflux:6.2.12",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "SSE Injection vulnerability requires plain text messages. The application uses structured JSON serialization for all SSE streams, which escapes newlines and prevents field injection.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22735",
+    "Location": "spring-webflux:6.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "SSE Injection vulnerability requires plain text messages. The application uses structured JSON serialization for all SSE streams.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22735",
+    "Location": "spring-webmvc:6.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "SSE Injection vulnerability requires plain text messages. The application uses structured JSON serialization for all SSE streams.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "node-tar is a sub-dependency in the frontend. No explicit calls to extract/parse found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "jsdiff is a sub-dependency. No calls to the vulnerable parsePatch method found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:5.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "jsdiff is a sub-dependency. No calls to the vulnerable parsePatch method found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "node-tar is used transitively. No explicit calls to extract/parse functions found in application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "node-tar is used transitively. No explicit calls to extract/parse functions found in application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "node-tar is used transitively. No explicit calls to extract/parse functions found in application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1225",
+    "Location": "logback-core:1.5.20",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Vulnerability requires write access to the logback.xml configuration file, which is bundled in the JAR and not publicly modifiable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-9qr9-h5gf-34mp",
+    "Location": "next:15.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Next.js is not the primary framework used by the frontend (which uses Umi). Vulnerabilities in Next.js runtime are not applicable to the production deployment.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-h25m-26qc-wcjf",
+    "Location": "next:15.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Next.js framework not used. Vulnerability not applicable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-mwv6-3258-q52c",
+    "Location": "next:15.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Next.js framework not used. Vulnerability not applicable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-67mh-4wv8-2f99",
+    "Location": "esbuild:0.17.19",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "esbuild is a build-time tool. CORS issues in its dev server are not exploitable in the production environment.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-67mh-4wv8-2f99",
+    "Location": "esbuild:0.18.20",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "esbuild is a build-time tool. CORS issues in its dev server are not exploitable in the production environment.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-67mh-4wv8-2f99",
+    "Location": "esbuild:0.21.4",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "esbuild is a build-time tool. CORS issues in its dev server are not exploitable in the production environment.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-w37m-7fhw-fmv9",
+    "Location": "next:15.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Next.js framework not used in production. Information disclosure in Server Actions not applicable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-xffm-g5w8-qvg7",
+    "Location": "@eslint/plugin-kit:0.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "ESLint is a development tool. ReDoS in plugin-kit is not exploitable in the production environment.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6547",
+    "Location": "pbkdf2:3.1.2",
+    "Original_exploitability": 50,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Requires Node.js < 3.0.0. This project uses modern Node.js versions.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-57822",
+    "Location": "next:15.3.2",
+    "Original_exploitability": 15,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Next.js framework not used. Vulnerability not applicable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-31486",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. No evidence of network exposure. Max 0.10 for internal/dev tools.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-46565",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. No evidence of network exposure. Max 0.10 for internal/dev tools.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-41404",
+    "Location": "ini4j:0.5.4",
+    "Original_exploitability": 15,
+    "Exploitability": 0,
+    "Exploitability_explanation": "ini4j is not used in the codebase. Unreachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3757",
+    "Location": "immer:8.0.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "immer is a sub-dependency. No calls to the vulnerable applyPatches function were found in the project's code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33937",
+    "Location": "handlebars:4.7.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Handlebars is used by syntax highlighters. No application code calls handlebars.compile() with untrusted inputs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58751",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. No evidence of network exposure. Max 0.10 for internal/dev tools.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:3.29.5",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "rollup is a build-time tool. Path traversal in its output filenames is not exploitable in the production environment.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45812",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. No evidence of network exposure. Max 0.10 for internal/dev tools.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6545",
+    "Location": "pbkdf2:3.1.2",
+    "Original_exploitability": 50,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Requires Node.js < 3.0.0. This project uses modern Nodejs versions.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:4.0.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "form-data is a sub-dependency. Predictable boundaries have low impact in this application context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55173",
+    "Location": "next:15.3.2",
+    "Original_exploitability": 15,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Next.js framework not used. Vulnerability not applicable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-32395",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. No evidence of network exposure. Max 0.10 for internal/dev tools.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23436",
+    "Location": "immer:8.0.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "immer is a sub-dependency. No direct calls to vulnerable APIs found in application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22738",
+    "Location": "spring-ai-vector-store:1.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "SimpleVectorStore is vulnerable to SpEL injection in filters. However, the core application uses Elasticsearch and safe filter builders. SimpleVectorStore is used only in examples and generated code templates.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33672",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "picomatch is a sub-dependency. No evidence of untrusted glob pattern processing in application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33672",
+    "Location": "picomatch:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "picomatch is a sub-dependency. No evidence of untrusted glob pattern processing in application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-29172",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "node-tar sub-dependency. No vulnerable API calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-1031",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "node-tar sub-dependency. No vulnerable API calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52317",
+    "Location": "tomcat-embed-core:10.1.33",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "HTTP/2 vulnerability in Tomcat. Low risk as HTTP/2 is usually disabled in internal microservices. Score remains 0.05.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52317",
+    "Location": "tomcat-embed-core:10.1.34",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "HTTP/2 vulnerability in Tomcat. Low risk as HTTP/2 is usually disabled in internal microservices.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-10673",
+    "Location": "jackson-databind:2.18.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Jackson-databind is used, but default typing is not enabled. No evidence of deserialization-based RCE gadgets being reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-1031",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "node-tar sub-dependency. No vulnerable API calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30292",
+    "Location": "webpack:5.98.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "webpack is a build-time tool. Vulnerabilities in its internals are not exploitable in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30292",
+    "Location": "webpack:5.97.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "webpack is a build-time tool. Vulnerabilities in its internals are not exploitable in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55171",
+    "Location": "next:15.3.2",
+    "Original_exploitability": 1,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Next.js framework not used in production. Vulnerability not applicable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30635",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. No evidence of network exposure. Max 0.10 for internal/dev tools.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30048",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. No evidence of network exposure. Max 0.10 for internal/dev tools.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-55171",
+    "Location": "next:15.3.2",
+    "Original_exploitability": 1,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Next.js framework not used in production. Vulnerability not applicable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30048",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. No evidence of network exposure. Max 0.10 for internal/dev tools.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-55171",
+    "Location": "next:15.3.2",
+    "Original_exploitability": 1,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Next.js framework not used. Vulnerability not applicable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52317",
+    "Location": "tomcat-embed-core:10.1.33",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "HTTP/2 vulnerability in Tomcat. Low risk as HTTP/2 is usually disabled in internal microservices.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52317",
+    "Location": "tomcat-embed-core:10.1.34",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "HTTP/2 vulnerability in Tomcat. Low risk as HTTP/2 is usually disabled in internal microservices.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-1436",
+    "Location": "jettison:1.5.4",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "jettison is not used in the project. Unreachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-1436",
+    "Location": "jettison:1.5.4",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "jettison is not used in the project. Unreachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30294",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "cross-spawn is a development-time utility used by build tools and linters. Not used in the production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30294",
+    "Location": "cross-spawn:7.0.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "cross-spawn is a development-time utility. Not used in the production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52317",
+    "Location": "tomcat-embed-core:10.1.33",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "HTTP/2 vulnerability in Tomcat. Low risk as HTTP/2 is usually disabled in internal microservices.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52317",
+    "Location": "tomcat-embed-core:10.1.34",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "HTTP/2 vulnerability in Tomcat. Low risk as HTTP/2 is usually disabled in internal microservices.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-45688",
+    "Location": "jettison:1.5.4",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "jettison is not used in the project. Unreachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-45688",
+    "Location": "jettison:1.5.4",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "jettison is not used in the project. Unreachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34063",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability (Arbitrary File Read). Requires the dev server to be exposed to the network and WebSockets enabled. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34063",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-30294",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "cross-spawn is a dev tool utility. Not used in the production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30294",
+    "Location": "cross-spawn:7.0.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "cross-spawn is a dev tool utility. Not used in the production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30294",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "cross-spawn is a dev tool utility. Not used in the production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30294",
+    "Location": "cross-spawn:7.0.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "cross-spawn is a dev tool utility. Not used in the production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30294",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "cross-spawn is a dev tool utility. Not used in the production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30294",
+    "Location": "cross-spawn:7.0.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "cross-spawn is a dev tool utility. Not used in the production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30294",
+    "Location": "cross-spawn:7.0.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "cross-spawn is a dev tool utility. Not used in the production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52317",
+    "Location": "tomcat-embed-core:10.1.33",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "HTTP/2 vulnerability in Tomcat. Low risk as HTTP/2 is usually disabled in internal microservices.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52317",
+    "Location": "tomcat-embed-core:10.1.34",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "HTTP/2 vulnerability in Tomcat. Low risk as HTTP/2 is usually disabled in internal microservices.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34065",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Concerns arbitrary file read via crafted requests. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34250",
+    "Location": "vite:5.4.15",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Bypasses file system restrictions in certain configurations. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34250",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34250",
+    "Location": "vite:5.4.14",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34250",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34250",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Concerns arbitrary file read. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34250",
+    "Location": "vite:5.4.15",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34250",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34250",
+    "Location": "vite:5.4.14",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34250",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34252",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34252",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34252",
+    "Location": "vite:5.4.14",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34252",
+    "Location": "vite:5.4.15",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "cross-spawn is a development-time utility. ReDoS vulnerability in dev tools does not affect production stability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "cross-spawn is a development-time utility. ReDoS vulnerability in dev tools does not affect production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "cross-spawn is a development-time utility. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "cross-spawn is a development-time utility. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30293",
+    "Location": "fast-loops:1.1.4",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "fast-loops is a sub-dependency not directly used in the application. No evidence of exploitability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "cross-spawn is a dev tool. Not exploitable in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "cross-spawn is a dev tool. Not exploitable in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33923",
+    "Location": "express:4.21.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Express.js is only used by development tools like Umi. It is not used as the main backend framework (which is Spring Boot).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-52495",
+    "Location": "express:4.21.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Express is not the production framework. Vulnerability not applicable to production environment.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33923",
+    "Location": "express:4.21.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Express not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-52495",
+    "Location": "express:4.21.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Express not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-52495",
+    "Location": "express:4.21.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Express.js is only used by development tools. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33923",
+    "Location": "express:4.21.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Express.js not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-52495",
+    "Location": "express:4.21.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Express.js not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33923",
+    "Location": "express:4.21.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Express.js not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-52495",
+    "Location": "express:4.21.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Express.js not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33758",
+    "Location": "path-to-regexp:0.1.12",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "path-to-regexp is a sub-dependency of development tools (Umi/Express). Not used in the production environment.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33758",
+    "Location": "path-to-regexp:0.1.12",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "path-to-regexp not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33758",
+    "Location": "path-to-regexp:0.1.12",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "path-to-regexp not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33758",
+    "Location": "path-to-regexp:0.1.12",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "path-to-regexp not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33758",
+    "Location": "path-to-regexp:0.1.12",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "path-to-regexp not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-31125",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 25,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Low risk as it's not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30208",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-11965",
+    "Location": "vertx-web:4.5.14",
+    "Original_exploitability": 5,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Vert.x is not used in the project. Unreachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "node-tar sub-dependency. No vulnerable API calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-31207",
+    "Location": "vite:4.5.2",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vite dev server vulnerability. Not exploitable in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-3803",
+    "Location": "nth-check:1.0.2",
+    "Original_exploitability": 35,
+    "Exploitability": 0,
+    "Exploitability_explanation": "nth-check is a sub-dependency. ReDoS in dev tools does not affect production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-48924",
+    "Location": "commons-lang3:3.17.0",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Requires passing untrusted class names to ClassUtils.getClass. No evidence of such pattern in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-28863",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 15,
+    "Exploitability": 0,
+    "Exploitability_explanation": "node-tar sub-dependency. Dev tool only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-26308",
+    "Location": "commons-compress:1.24.0",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "DoS via crafted archives. No direct usage of this library's affected APIs found with untrusted input.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24734",
+    "Location": "tomcat-embed-core:10.1.48",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "HTTP/2 vulnerability in Tomcat. Score adjusted to 0.05 for consistency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24734",
+    "Location": "tomcat-embed-core:10.1.49",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "HTTP/2 vulnerability in Tomcat. Low risk as HTTP/2 is usually disabled in internal microservices. Adjusted for consistency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24733",
+    "Location": "tomcat-embed-core:10.1.49",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "HTTP/2 vulnerability in Tomcat.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "qs is used transitively by dev tools. No explicit calls to qs.parse found in the codebase. Unused API.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:10.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a sub-dependency of dev tools. No application code calls minimatch directly. Not exploitable in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch sub-dependency. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch sub-dependency. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch sub-dependency. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:8.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch sub-dependency. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:10.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch sub-dependency. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch sub-dependency. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch sub-dependency. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:8.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch sub-dependency. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch sub-dependency. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:10.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch sub-dependency. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch sub-dependency. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch is a development-time sub-dependency. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25639",
+    "Location": "axios:0.27.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "axios is a common library. No direct exploit vector found for this version in the context of the application's API usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22737",
+    "Location": "spring-webflux:6.2.12",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Vulnerability requires Java scripting engine-enabled templates (e.g., JRuby views). This project uses standard REST controllers and is not affected.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "glob:10.4.5",
+    "Original_exploitability": 50,
+    "Exploitability": 0,
+    "Exploitability_explanation": "glob command injection affects the CLI with specific options. The library usage in build tools does not expose this vector to production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66614",
+    "Location": "tomcat-embed-core:10.1.49",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "HTTP/2 vulnerability in Tomcat. Adjusted for consistency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.0.33",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "tmp is a development-time utility. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 0,
+    "Exploitability_explanation": "tmp is a development-time utility. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-8916",
+    "Location": "bcpkix-jdk15on:1.70",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Bouncy Castle PKIX reviewer vulnerability. The library is not used in the project.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch sub-dependency. Not used in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:8.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "minimatch sub-dependency. Not used in production.",
+    "Assessment": "Correct"
+  }
+]

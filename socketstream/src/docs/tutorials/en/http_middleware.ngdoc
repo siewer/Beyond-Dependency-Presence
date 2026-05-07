@@ -1,0 +1,11 @@
+@ngdoc overview
+@name HTTP Middleware
+
+@description
+# HTTP Middleware
+
+SocketStream no longer provides a stack of Connect HTTP middleware which is used internally to serve single-page clients, asset files and static files (e.g. images) in `client/static`.
+
+Session handling is done in add-ons like `socketstream-cookie-session`.
+
+For additional middleware follow the examples for Connect or ExpressJS.

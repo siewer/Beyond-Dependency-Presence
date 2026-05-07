@@ -1,0 +1,26 @@
+plugins {
+	id 'security-nullability'
+	id 'javadoc-warnings-error'
+	id 'java-test-fixtures'
+}
+
+apply plugin: 'io.spring.convention.spring-module'
+
+dependencies {
+	management platform(project(":spring-security-dependencies"))
+	optional 'org.springframework:spring-core'
+	optional 'org.bouncycastle:bcpkix-jdk18on'
+	optional libs.com.password4j.password4j
+
+	testFixturesImplementation "org.assertj:assertj-core"
+
+	testImplementation "org.assertj:assertj-core"
+	testImplementation "org.junit.jupiter:junit-jupiter-api"
+	testImplementation "org.junit.jupiter:junit-jupiter-params"
+	testImplementation "org.junit.jupiter:junit-jupiter-engine"
+	testImplementation "org.mockito:mockito-core"
+	testImplementation "org.mockito:mockito-junit-jupiter"
+	testImplementation "org.springframework:spring-test"
+
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}

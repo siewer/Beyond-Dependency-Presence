@@ -1,0 +1,954 @@
+[
+  {
+    "Vulnerability": "CVE-2017-17485",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 30,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-22965",
+    "Location": "spring-beans:5.0.4.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Java version is 1.8, while Spring4Shell requires JDK 9+.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22965",
+    "Location": "spring-webmvc:5.0.4.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Java version is 1.8, while Spring4Shell requires JDK 9+.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22978",
+    "Location": "spring-security-core:5.0.0.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Application only uses CsrfFilter, not the full Spring Security stack or vulnerable matchers.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22978",
+    "Location": "spring-security-web:5.0.0.RELEASE",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Application only uses CsrfFilter, not the full Spring Security stack or vulnerable matchers.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-5398",
+    "Location": "spring-webmvc:5.0.4.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38819",
+    "Location": "spring-webmvc:5.0.4.RELEASE",
+    "Original_exploitability": 2,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Confirmed active resource handler configuration in WebMvcConfig.java.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-9548",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11113",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-1271",
+    "Location": "spring-core:5.0.4.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36179",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-22259",
+    "Location": "spring-web:5.0.4.RELEASE",
+    "Original_exploitability": 40,
+    "Exploitability": 15,
+    "Exploitability_explanation": "UriComponentsBuilder used in RedirectController, but with hardcoded/controlled paths.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-15756",
+    "Location": "spring-core:5.0.4.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-7489",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-14718",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-1000027",
+    "Location": "spring-web:5.0.4.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-12384",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 35,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-10673",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-22243",
+    "Location": "spring-web:5.0.4.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "UriComponentsBuilder used in RedirectController, but with hardcoded/controlled paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-24998",
+    "Location": "commons-fileupload:1.3.3",
+    "Original_exploitability": 50,
+    "Exploitability": 85,
+    "Exploitability_explanation": "FileUploadController uses MultipartFile and CommonsMultipartResolver is configured.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-9547",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-10672",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-35728",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22968",
+    "Location": "spring-context:5.0.4.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 25,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38821",
+    "Location": "spring-security-web:5.0.0.RELEASE",
+    "Original_exploitability": 10,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Application only uses CsrfFilter, not the full Spring Security stack or vulnerable matchers.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-11307",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-12086",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 18,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-12814",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-14439",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-14379",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-38827",
+    "Location": "spring-security-core:5.0.0.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Application only uses CsrfFilter, not the full Spring Security stack or vulnerable matchers.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-10693",
+    "Location": "hibernate-validator:6.0.7.Final",
+    "Original_exploitability": 50,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Validation is active in controllers via @Valid, satisfying main constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22970",
+    "Location": "spring-beans:5.0.4.RELEASE",
+    "Original_exploitability": 55,
+    "Exploitability": 55,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47554",
+    "Location": "commons-io:2.5",
+    "Original_exploitability": 35,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable functions (e.g. FileNameUtils.normalize) are not used in user code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-38809",
+    "Location": "spring-web:5.0.4.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38808",
+    "Location": "spring-expression:5.0.4.RELEASE",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36186",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10219",
+    "Location": "hibernate-validator:6.0.7.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Validation is active in controllers via @Valid, satisfying main constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-29425",
+    "Location": "commons-io:2.5",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable functions (e.g. FileNameUtils.normalize) are not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-15095",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-14061",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 18,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-35491",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36181",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-20330",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-16943",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11620",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-24616",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11619",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-35036",
+    "Location": "hibernate-validator:6.0.7.Final",
+    "Original_exploitability": 50,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Validation is active in controllers via @Valid, satisfying main constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-10969",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 2,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-22112",
+    "Location": "spring-security-web:5.0.0.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Application only uses CsrfFilter, not the full Spring Security stack or vulnerable matchers.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-1199",
+    "Location": "spring-security-core:5.0.0.RELEASE",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Application only uses CsrfFilter, not the full Spring Security stack or vulnerable matchers.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-38820",
+    "Location": "spring-context:5.0.4.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-14540",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 60,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-22262",
+    "Location": "spring-web:5.0.4.RELEASE",
+    "Original_exploitability": 35,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-14721",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-10650",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8840",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-14195",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 35,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-36188",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-14060",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 35,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-19360",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 18,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-14062",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11112",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36184",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-11040",
+    "Location": "spring-core:5.0.4.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-19362",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-12023",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-10968",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-14719",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-14720",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-36189",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-35490",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22950",
+    "Location": "spring-expression:5.0.4.RELEASE",
+    "Original_exploitability": 8,
+    "Exploitability": 8,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-19361",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38820",
+    "Location": "spring-web:5.0.4.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-12022",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-9546",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36180",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36182",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-36185",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11111",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36187",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-1272",
+    "Location": "spring-core:5.0.4.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36183",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-24750",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-5968",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 35,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-11039",
+    "Location": "spring-web:5.0.4.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-17267",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-17531",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33813",
+    "Location": "jdom2:2.0.6",
+    "Original_exploitability": 20,
+    "Exploitability": 20,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-1932",
+    "Location": "hibernate-validator:6.0.7.Final",
+    "Original_exploitability": 25,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Validation is active in controllers via @Valid, satisfying main constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-14893",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-1257",
+    "Location": "spring-core:5.0.4.RELEASE",
+    "Original_exploitability": 8,
+    "Exploitability": 8,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-14892",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-16335",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-20863",
+    "Location": "spring-expression:5.0.4.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-20190",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-16942",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36518",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-48976",
+    "Location": "commons-fileupload:1.3.3",
+    "Original_exploitability": 50,
+    "Exploitability": 85,
+    "Exploitability_explanation": "FileUploadController uses MultipartFile and CommonsMultipartResolver is configured.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-27568",
+    "Location": "json-smart:2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-20861",
+    "Location": "spring-expression:5.0.4.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 25,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-3795",
+    "Location": "spring-security-core:5.0.0.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Application only uses CsrfFilter, not the full Spring Security stack or vulnerable matchers.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-5408",
+    "Location": "spring-security-core:5.0.0.RELEASE",
+    "Original_exploitability": 10,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Application only uses CsrfFilter, not the full Spring Security stack or vulnerable matchers.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-42003",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 45,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-42004",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-22257",
+    "Location": "spring-security-core:5.0.0.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Application only uses CsrfFilter, not the full Spring Security stack or vulnerable matchers.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-52999",
+    "Location": "jackson-core:2.9.3",
+    "Original_exploitability": 35,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-51074",
+    "Location": "json-path:2.4.0",
+    "Original_exploitability": 25,
+    "Exploitability": 25,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-28170",
+    "Location": "javax.el:3.0.1-b08",
+    "Original_exploitability": 25,
+    "Exploitability": 25,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15250",
+    "Location": "junit:4.12",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22233",
+    "Location": "spring-context:5.0.4.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 25,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22732",
+    "Location": "spring-security-web:5.0.0.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Application only uses CsrfFilter, not the full Spring Security stack or vulnerable matchers.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-25649",
+    "Location": "jackson-databind:2.9.3",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable API enableDefaultTyping() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-49128",
+    "Location": "jackson-core:2.9.3",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-1370",
+    "Location": "json-smart:2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-31573",
+    "Location": "xmlunit-core:2.5.1",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-72hv-8253-57qq",
+    "Location": "jackson-core:2.9.3",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Original assessment retained pending specific evidence.",
+    "Assessment": "Correct"
+  }
+]
