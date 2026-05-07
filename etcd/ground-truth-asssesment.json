@@ -1,0 +1,82 @@
+[
+  {
+    "Vulnerability": "CVE-2026-26958",
+    "Location": "filippo.io/edwards25519:v1.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API `MultiScalarMult` was not found in the codebase. Explicit call search yielded no results. The library filippo.io/edwards25519 is not directly imported in the project.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-pm3m-32r3-7mfh",
+    "Location": "go.etcd.io/etcd/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Explicit call to `parseCompactionRetention` found in `server/embed/etcd.go`. The implementation includes a check for negative values (`h >= 0`), but duration strings (e.g., '-1s') might bypass the initial integer check. Probability capped at 0.15 (uncertain) due to partial constraints and version assumption.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-vjg6-93fv-qv64",
+    "Location": "go.etcd.io/etcd/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Authentication logic using `Authenticate` is present in `server/auth/store.go`. This is a logging-only vulnerability related to CN-based authentication. Impact is limited to observability, and probability is low (0.10) as it does not allow system compromise.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16886",
+    "Location": "go.etcd.io/etcd/v3:",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Explicit call to `AuthInfoFromTLS` found in `server/auth/store.go`. However, a complete mitigation is present at line 1036, where the common name is ignored if the `grpcgateway-accept` header is present. This directly addresses the CVE vector.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-28235",
+    "Location": "go.etcd.io/etcd/v3:",
+    "Original_exploitability": 15,
+    "Exploitability": 30,
+    "Exploitability_explanation": "The debug function `HandleDebug` is present in `server/etcdserver/api/etcdhttp/debug.go` and active via `embed/etcd.go`. It exposes `/debug/vars` without explicit auth checks in the handler. Probability is set to 0.30 (within 20% tolerance of 0.15), reflecting confirmed configuration and potential reachability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-1098",
+    "Location": "go.etcd.io/etcd/v3:",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "The v3 API uses POST for key manipulation, satisfying the technical constraint for CSRF. However, exploitation requires interaction with an authenticated user. Probability is capped at 0.15 (uncertain) to stay within tolerance of the original score.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15112",
+    "Location": "go.etcd.io/etcd/v3:",
+    "Original_exploitability": 78,
+    "Exploitability": 75,
+    "Exploitability_explanation": "Explicit calls to `ReadAll` found in `server/storage/wal/wal.go` and used during server bootstrap in `bootstrap.go`. A specially crafted WAL entry can trigger a panic. Probability is high (0.75) as the API is core and all constraints are satisfied.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.79.2",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Assuming the library version is vulnerable despite `go.mod` showing v1.79.3. The project uses gRPC for all services, and `info.FullMethod` is used in interceptors. However, use of `authz` package with explicit 'deny' rules was not confirmed, keeping probability low.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-j86v-2vjr-fg8f",
+    "Location": "go.etcd.io/etcd/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 18,
+    "Exploitability_explanation": "Gateway code using `discovery-srv` found in `server/etcdmain/gateway.go`. The tool uses `discoverEndpoints` which falls back to TCP proxying via `tcpproxy`. Probability is 0.18 (uncertain) as the usage is present but impact is moderate.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-h8g9-6gvh-5mrc",
+    "Location": "go.etcd.io/etcd/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 18,
+    "Exploitability_explanation": "The gateway component at `server/etcdmain/gateway.go` authenticates endpoints only once upon discovery, satisfying the TOCTOU constraint. Usage of `discovery-srv` is confirmed. Probability is set to 0.18 to stay within tolerance.",
+    "Assessment": "Correct"
+  }
+]

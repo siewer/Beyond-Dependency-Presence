@@ -1,0 +1,238 @@
+name: One Click Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      channel:
+        required: true
+        type: choice
+        description: Select a channel.
+        options:
+          - beta
+          - ga
+      custom_core_executed:
+        type: boolean
+        description: 'Was the Custom Core process executed and completed successful?'
+        required: true
+      dry_run:
+        type: boolean
+        description: 'Run in dry-run mode (no actual release will be created)'
+        required: false
+        default: true
+
+env:
+  CHANNEL: ${{inputs.channel}}
+  CHANGELOG_FILE: "temp-changelog.txt"
+
+permissions:
+  contents: write
+  id-token: "write"
+
+jobs:
+  release:
+    runs-on: ubuntu-22.04
+    outputs:
+      PACKAGE_VERSION: ${{ steps.output-data.outputs.PACKAGE_VERSION }}
+      PACKAGE_TAG: ${{ steps.output-data.outputs.PACKAGE_TAG }}
+      CLEAN_PACKAGE_VERSION: ${{ steps.output-data.outputs.CLEAN_PACKAGE_VERSION }}
+      VERSION_SUFFIX: ${{ steps.output-data.outputs.VERSION_SUFFIX }}
+      NPM_TAG: ${{ steps.output-data.outputs.NPM_TAG }}
+    steps:
+      - name: Check if Custom Core was executed
+        if: github.event.inputs.custom_core_executed == 'false'
+        run: |
+          echo "Custom Core was not executed. Please run Custom Core before running this workflow."
+          exit 1
+      - name: checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{inputs.branch}}
+      - name: Config git user
+        run: |
+          git config --global user.name "${{ secrets.MAINTAIN_USERNAME }}"
+          git config --global user.email "${{ secrets.MAINTAIN_EMAIL }}"
+      - name: Get Configuration
+        id: configuration
+        uses: rgarcia-phi/json-to-variables@9835d537368468c4e4de5254dc3efeadda183793
+        with:
+          filename: "./.github/workflows/config.json"
+          prefix: config
+      - name: Test permissions
+        uses: ./.github/workflows/permissions
+        with:
+          ENVIRONMENT: ${{ env.config_deployment_environment }}
+          DEPLOYMENT_PERMITTED: ${{ env.config_deployment_permitted }}
+          DEPLOYMENT_REPOSITORY_OWNER: ${{ env.config_deployment_repository_owner }}
+      - name: Install Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: 'npm'
+          registry-url: 'https://registry.npmjs.org/'
+      - name: Env Vars Configure
+        id: env_vars_configure
+        uses: ./.github/workflows/env-vars-configure
+        with:
+          CHANNEL: ${{ env.CHANNEL }}
+          REF: ${{ github.ref }}
+          POSTFIX: ''
+      - name: Bump Channel Version
+        id: bump_channel_version
+        uses: ./.github/workflows/bump-channel-version
+        with:
+          CLEAN_PACKAGE_VERSION: ${{ env.CLEAN_PACKAGE_VERSION }}
+          CHANNEL: ${{ env.CHANNEL }}
+          POSTFIX: ''
+          OVERRIDE_PACKAGE_VERSION: true
+      - name: Update Readme.txt
+        uses: ./.github/workflows/update-readme-txt
+        with:
+          README_TXT_PATH: $GITHUB_WORKSPACE/readme.txt
+          CHANNEL: ${{ env.CHANNEL }}
+          PACKAGE_VERSION: ${{ env.PACKAGE_VERSION }}
+      - name: Install Dependencies
+        uses: ./.github/workflows/install-dependencies
+      - name: Build plugin
+        uses: ./.github/workflows/build-plugin
+        with:
+          PACKAGE_VERSION: ${{ env.PACKAGE_VERSION }}
+          BUILD_SCRIPT_PATH: "./.github/scripts/build-zip.sh"
+        env:
+          MIXPANEL_TOKEN: ${{ secrets.MIXPANEL_TOKEN }}
+      - name: Get Release Name
+        uses : ./.github/workflows/get-release-name
+        with:
+          BUILD_ZIP_FILE_PATH: ${{ github.event.repository.name }}-${{ env.PACKAGE_VERSION }}.zip
+          PLUGIN_NAME: ${{ github.event.repository.name }}
+      - name: Generate changelog
+        uses: ./.github/workflows/generate-changelog
+        with:
+          TOKEN:  ${{ secrets.MAINTAIN_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+          HEAD_BRANCH_NAME: ${{ github.ref }}
+          BASE_TAG_NAME: ${{ env.PREVIOUS_TAG_SHA }}
+          GENERATE_EMPTY_CHANGELOG: true
+      - name: Check that the version contains an updated change log
+        if: github.event.inputs.channel == 'ga'
+        uses: ./.github/workflows/get-changelog-from-changelog-txt
+        with:
+          VERSION: ${{ env.CLEAN_PACKAGE_VERSION }}
+      - name: Create GitHub release
+        if: github.event.inputs.dry_run == 'false'
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ env.PACKAGE_VERSION }}
+          target_commitish: ${{ env.CLEAN_REF }}
+          files: |
+            elementor-*.zip
+            ${{ env.CHANGELOG_FILE }}
+          body_path: ${{ env.CHANGELOG_FILE }}
+      - name: Validate Build Files
+        if: github.repository_owner == 'elementor'
+        env:
+          PLUGIN_VERSION: ${{ env.RELEASE_NAME }}
+          CHANNEL: ${{ env.CHANNEL }}
+          PACKAGE_VERSION : ${{ env.PACKAGE_VERSION }}
+        run: |
+            bash "${GITHUB_WORKSPACE}/.github/scripts/validate-build-files.sh"
+      - name: Publish to WordPress.org SVN
+        if: github.repository_owner == 'elementor' && github.event.inputs.dry_run == 'false'
+        env:
+          PLUGIN_VERSION: ${{ env.RELEASE_NAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          CHANNEL: ${{ env.CHANNEL }}
+          PACKAGE_VERSION : ${{ env.PACKAGE_VERSION }}
+        run: |
+          bash "${GITHUB_WORKSPACE}/.github/scripts/publish-to-wordpress-org.sh"
+      - name: Release Dev From Beta
+        if: env.CHANNEL == 'beta' && github.event.inputs.dry_run == 'false'
+        uses: ./.github/workflows/release-dev-from-beta
+        with:
+          BUILD_ZIP_FILE_PATH: ${{ github.event.repository.name }}-${{ env.RELEASE_FILENAME }}.zip
+          PLUGIN_NAME: ${{ github.event.repository.name }}
+          REPOSITORY_OWNER: ${{ github.repository_owner }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+          PACKAGE_VERSION : ${{ env.PACKAGE_VERSION }}
+
+      - name: Post To Slack Created Release
+        if: github.event.inputs.dry_run == 'false'
+        uses : ./.github/workflows/post-to-slack
+        with:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
+          SLACK_TAG_CHANNELS: ${{ secrets.SLACK_CHANNEL_RELEASE }}
+          PAYLOAD: |
+                    {
+                      "blocks": [
+                        {
+                          "type": "section",
+                          "text": {
+                            "type": "mrkdwn",
+                            "text": "Hi All :smile:\n\nWe just released *Elementor*\n`${{ env.RELEASE_NAME }}`"
+                          }
+                        },
+                        {
+                          "type": "divider"
+                        },
+                        {
+                          "type": "section",
+                          "text": {
+                            "type": "mrkdwn",
+                            "text": "GitHub Release *${{ env.RELEASE_NAME }}* \nCreated by ${{ github.actor }}"
+                          },
+                          "accessory": {
+                            "type": "button",
+                            "text": {
+                              "type": "plain_text",
+                              "text": "Open :point_left:",
+                              "emoji": true
+                            },
+                            "value": "open-release",
+                            "url": "https://github.com/${{ github.repository }}/releases/tag/${{ env.RELEASE_NAME }}",
+                            "action_id": "button-action"
+                          }
+                        }
+                      ]
+                    }
+
+      - name: Determine Package Tag
+        id: package-tag
+        run: |
+          if [ "${{ env.CHANNEL }}" == "ga" ]; then
+            echo "tag=latest" >> $GITHUB_OUTPUT
+          else
+            LATEST_BETA_NUM=$(git tag -l "v${{ env.PACKAGE_VERSION }}-*" | sed 's/.*-//' | sort -nr | head -n1 || echo "0")
+            NEXT_BETA_NUM=$((LATEST_BETA_NUM + 1))
+            echo "tag=${NEXT_BETA_NUM}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Output Package Data for Next Job
+        id: output-data
+        run: |
+          echo "PACKAGE_VERSION=${{ env.PACKAGE_VERSION }}" >> $GITHUB_OUTPUT
+          echo "PACKAGE_TAG=${{ steps.package-tag.outputs.tag }}" >> $GITHUB_OUTPUT
+          echo "CLEAN_PACKAGE_VERSION=${{ env.CLEAN_PACKAGE_VERSION }}" >> $GITHUB_OUTPUT
+
+          if [ "${{ env.CHANNEL }}" == "ga" ]; then
+            echo "VERSION_SUFFIX=" >> $GITHUB_OUTPUT
+            echo "NPM_TAG=latest" >> $GITHUB_OUTPUT
+          else
+            VERSION_SUFFIX="${{ env.PACKAGE_VERSION }}"
+            VERSION_SUFFIX="${VERSION_SUFFIX#${{ env.CLEAN_PACKAGE_VERSION }}-}"
+            echo "VERSION_SUFFIX=${VERSION_SUFFIX}" >> $GITHUB_OUTPUT
+            echo "NPM_TAG=${{ env.CHANNEL }}" >> $GITHUB_OUTPUT
+          fi
+
+  publish-packages:
+    needs: release
+    if: github.event.inputs.dry_run == 'false'
+    uses: ./.github/workflows/publish-packages.yml
+    with:
+      version: ${{ needs.release.outputs.CLEAN_PACKAGE_VERSION }}
+      version_suffix: ${{ needs.release.outputs.VERSION_SUFFIX }}
+      tag: ${{ needs.release.outputs.NPM_TAG }}
+    secrets:
+      NPMJS_CLOUD_DEVOPS_TOKEN: ${{ secrets.NPMJS_CLOUD_DEVOPS_TOKEN }}
+      MAINTAIN_TOKEN: ${{ secrets.MAINTAIN_TOKEN }}

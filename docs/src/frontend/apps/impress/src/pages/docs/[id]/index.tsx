@@ -1,0 +1,262 @@
+import { TreeProvider } from '@gouvfr-lasuite/ui-kit';
+import { useQueryClient } from '@tanstack/react-query';
+import dynamic from 'next/dynamic';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
+import { Box, Icon, Loading, TextErrors } from '@/components';
+import { DEFAULT_QUERY_RETRY } from '@/core';
+import {
+  Doc,
+  DocPage403,
+  KEY_DOC,
+  useCollaboration,
+  useDoc,
+  useDocStore,
+  useProviderStore,
+  useTrans,
+} from '@/docs/doc-management/';
+import { KEY_AUTH, setAuthUrl, useAuth } from '@/features/auth';
+import { FloatingBar } from '@/features/docs/doc-header/components/FloatingBar';
+import { getDocChildren, subPageToTree } from '@/features/docs/doc-tree/';
+import { DocEditorSkeleton, useSkeletonStore } from '@/features/skeletons';
+import { MainLayout } from '@/layouts';
+import { MAIN_LAYOUT_ID } from '@/layouts/conf';
+import { useBroadcastStore } from '@/stores/useBroadcastStore';
+import { NextPageWithLayout } from '@/types/next';
+
+const DocEditor = dynamic(
+  () => import('@/docs/doc-editor').then((mod) => ({ default: mod.DocEditor })),
+  {
+    ssr: false,
+    loading: () => <DocEditorSkeleton />,
+  },
+);
+
+export function DocLayout() {
+  const {
+    query: { id },
+  } = useRouter();
+
+  if (typeof id !== 'string') {
+    return null;
+  }
+
+  return (
+    <>
+      <Head>
+        <meta name="robots" content="noindex" />
+      </Head>
+
+      <TreeProvider
+        initialNodeId={id}
+        onLoadChildren={async (docId: string, page: number) => {
+          const doc = await getDocChildren({ docId, page });
+          return {
+            children: subPageToTree(doc.results),
+            pagination: {
+              currentPage: page,
+              hasMore: !!doc.next,
+              totalCount: doc.count,
+            },
+          };
+        }}
+      >
+        <MainLayout enableResizablePanel={true}>
+          <FloatingBar />
+          <DocPage id={id} />
+        </MainLayout>
+      </TreeProvider>
+    </>
+  );
+}
+
+interface DocProps {
+  id: string;
+}
+
+const DocPage = ({ id }: DocProps) => {
+  const { hasLostConnection, resetLostConnection } = useProviderStore();
+  const { isSkeletonVisible, setIsSkeletonVisible } = useSkeletonStore();
+  const {
+    data: docQuery,
+    isError,
+    isFetching,
+    error,
+  } = useDoc(
+    { id },
+    {
+      staleTime: 0,
+      queryKey: [KEY_DOC, { id }],
+      retryDelay: 1000,
+      retry: (failureCount, error) => {
+        if (error.status == 403 || error.status == 401 || error.status == 404) {
+          return false;
+        } else {
+          return failureCount < DEFAULT_QUERY_RETRY;
+        }
+      },
+    },
+  );
+
+  const [doc, setDoc] = useState<Doc>();
+  const { setCurrentDoc } = useDocStore();
+  const { addTask } = useBroadcastStore();
+  const queryClient = useQueryClient();
+  const { replace } = useRouter();
+  useCollaboration(doc?.id, doc?.content);
+  const { t } = useTranslation();
+  const { authenticated } = useAuth();
+  const { untitledDocument } = useTrans();
+
+  /**
+   * Show skeleton when loading a document
+   */
+  useEffect(() => {
+    if (!doc && !isError && !isSkeletonVisible) {
+      setIsSkeletonVisible(true);
+    }
+
+    if (isError) {
+      setIsSkeletonVisible(false);
+    }
+  }, [doc, isError, isSkeletonVisible, setIsSkeletonVisible]);
+
+  /**
+   * Scroll to top when navigating to a new document
+   * We use a timeout to ensure the scroll happens after the layout has updated.
+   */
+  useEffect(() => {
+    let timeoutId: NodeJS.Timeout | undefined;
+    const mainElement = document.getElementById(MAIN_LAYOUT_ID);
+    if (mainElement) {
+      timeoutId = setTimeout(() => {
+        mainElement.scrollTop = 0;
+      }, 150);
+    }
+
+    return () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, [id]);
+
+  // Invalidate when provider store reports a lost connection
+  useEffect(() => {
+    if (hasLostConnection && doc?.id) {
+      void queryClient.invalidateQueries({
+        queryKey: [KEY_DOC, { id: doc.id }],
+      });
+      resetLostConnection();
+    }
+  }, [hasLostConnection, doc?.id, queryClient, resetLostConnection]);
+
+  useEffect(() => {
+    if (!docQuery || isFetching) {
+      return;
+    }
+
+    setDoc(docQuery);
+    setCurrentDoc(docQuery);
+  }, [docQuery, setCurrentDoc, isFetching]);
+
+  /**
+   * Reset state when unmounting the component to avoid
+   * showing stale data when navigating to another document
+   */
+  useEffect(() => {
+    return () => {
+      setCurrentDoc(undefined);
+      setIsSkeletonVisible(false);
+    };
+  }, [setCurrentDoc, setIsSkeletonVisible]);
+
+  /**
+   * We add a broadcast task to reset the query cache
+   * when the document visibility changes.
+   */
+  useEffect(() => {
+    if (!doc?.id) {
+      return;
+    }
+
+    addTask(`${KEY_DOC}-${doc.id}`, () => {
+      void queryClient.invalidateQueries({
+        queryKey: [KEY_DOC, { id: doc.id }],
+      });
+    });
+  }, [addTask, doc?.id, queryClient]);
+
+  useEffect(() => {
+    if (!isError || !error?.status || ![404, 401].includes(error.status)) {
+      return;
+    }
+
+    let replacePath = `/${error.status}`;
+
+    if (error.status === 401) {
+      if (authenticated) {
+        queryClient.setQueryData([KEY_AUTH], null);
+      }
+      setAuthUrl();
+    }
+
+    void replace(replacePath);
+  }, [isError, error?.status, replace, authenticated, queryClient]);
+
+  if (isError && error?.status) {
+    if ([404, 401].includes(error.status)) {
+      return <Loading />;
+    }
+
+    if (error.status === 403) {
+      return <DocPage403 id={id} />;
+    }
+
+    return (
+      <Box $margin="large">
+        <TextErrors
+          causes={error.cause}
+          icon={
+            error.status === 502 ? (
+              <Icon iconName="wifi_off" $theme="danger" $withThemeInherited />
+            ) : undefined
+          }
+        />
+      </Box>
+    );
+  }
+
+  if (!doc) {
+    return <Loading />;
+  }
+
+  return (
+    <>
+      <Head>
+        <title>
+          {doc.title || untitledDocument} - {t('Docs')}
+        </title>
+        <meta
+          property="og:title"
+          content={`${doc.title || untitledDocument} - ${t('Docs')}`}
+          key="title"
+        />
+      </Head>
+      <DocEditor doc={doc} />
+    </>
+  );
+};
+
+const Page: NextPageWithLayout = () => {
+  return null;
+};
+
+Page.getLayout = function getLayout() {
+  return <DocLayout />;
+};
+
+export default Page;

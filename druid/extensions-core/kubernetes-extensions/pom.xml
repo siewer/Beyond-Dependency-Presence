@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.apache.druid.extensions</groupId>
+  <artifactId>druid-kubernetes-extensions</artifactId>
+  <name>druid-kubernetes-extensions</name>
+  <description>druid-kubernetes-extensions</description>
+
+  <parent>
+    <groupId>org.apache.druid</groupId>
+    <artifactId>druid</artifactId>
+    <version>37.0.0-SNAPSHOT</version>
+    <relativePath>../../pom.xml</relativePath>
+  </parent>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.druid</groupId>
+      <artifactId>druid-server</artifactId>
+      <version>${project.parent.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.druid</groupId>
+      <artifactId>druid-processing</artifactId>
+      <version>${project.parent.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>io.kubernetes</groupId>
+      <artifactId>client-java</artifactId>
+      <exclusions>
+        <!-- client-java-proto brings in protobuf-java 4.x which Druid does not yet support project-wide.
+             The Kubernetes API supports multiple wire formats (JSON, YAML, Protobuf, etc.) but this extension
+             is not currently using the proto client so exclusion is safe -->
+        <exclusion>
+          <groupId>io.kubernetes</groupId>
+          <artifactId>client-java-proto</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.google.protobuf</groupId>
+          <artifactId>protobuf-java</artifactId>
+        </exclusion>
+        <!-- Azure AD auth library and its transitive OIDC/JWT stack — only needed for AKS token-based
+             authentication which this extension does not use -->
+        <exclusion>
+          <groupId>com.microsoft.azure</groupId>
+          <artifactId>adal4j</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.kubernetes</groupId>
+      <artifactId>client-java-extended</artifactId>
+      <exclusions>
+        <!-- client-java-proto brings in protobuf-java 4.x which Druid does not yet support project-wide.
+             The Kubernetes API supports multiple wire formats (JSON, YAML, Protobuf, etc.) but this extension
+             is not currently using the proto client so exclusion is safe -->
+        <exclusion>
+          <groupId>io.kubernetes</groupId>
+          <artifactId>client-java-proto</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.kubernetes</groupId>
+      <artifactId>client-java-api</artifactId>
+      <exclusions>
+        <!-- jakarta.ws.rs-api 4.0 conflicts with the javax.ws.rs 1.x used elsewhere in Druid -->
+        <exclusion>
+          <groupId>jakarta.ws.rs</groupId>
+          <artifactId>jakarta.ws.rs-api</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>okhttp-jvm</artifactId>
+    </dependency>
+
+    <!-- Tests -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.easymock</groupId>
+      <artifactId>easymock</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- others -->
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.inject</groupId>
+      <artifactId>guice</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <pluginManagement>
+        <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-dependency-plugin</artifactId>
+              <configuration>
+              <!-- analyze incorrectly flags this dependency as missing when omitted, and unused when declared -->
+                <ignoredDependencies>io.kubernetes:client-java-api-fluent:jar:${kubernetes.client.version}</ignoredDependencies>
+              </configuration>
+          </plugin>
+        </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <configuration>
+          <excludes>
+            <!-- Initialization code -->
+            <exclude>org/apache/druid/k8s/discovery/K8sDiscoveryModule*</exclude>
+            <exclude>org/apache/druid/k8s/discovery/K8sDruidLeaderSelectorProvider*</exclude>
+
+            <!-- K8S Api Glue, not unit testable -->
+            <exclude>org/apache/druid/k8s/discovery/DefaultK8sApiClient*</exclude>
+            <exclude>org/apache/druid/k8s/discovery/DefaultK8sLeaderElectorFactory*</exclude>
+
+          </excludes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

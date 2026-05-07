@@ -1,0 +1,122 @@
+[
+  {
+    "Vulnerability": "CVE-2025-69534",
+    "Location": "Markdown:3.6",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "✅ API call confirmed. Wywołanie `markdown.markdown` znajduje się w `app/web/help_routes.py`. Podatność dotyczy DoS przy przetwarzaniu malformowanych sekwencji HTML. Ponieważ Markdown przetwarza lokalne pliki dokumentacji, wektor ataku jest ograniczony do użytkowników lokalnych/administratorów. Prawdopodobieństwo: 5% (Local-only vector).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "glob:10.4.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "❌ API call not confirmed. Podatność dotyczy CLI biblioteki glob (opcja -c). W kodzie aplikacji nie znaleziono wywołań CLI ani niebezpiecznego użycia API glob w tym kontekście. Prawdopodobieństwo: 1% (API not used).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-28802",
+    "Location": "Authlib:1.6.5",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "❌ API call not confirmed. Nie znaleziono bezpośredniego wywołania `NoneAlgorithm.verify()`. Aplikacja używa Authlib do standardowej integracji OAuth, która nie korzysta domyślnie z algorytmu 'none' w sposób podatny. Prawdopodobieństwo: 2% (API not used).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68158",
+    "Location": "Authlib:1.6.5",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "✅ API usage confirmed. Aplikacja korzysta z integracji OAuth w Authlib. Podatność dotyczy braku powiązania sesji w magazynie stanu. Choć aplikacja wiąże stan z sesją Flask w `routes.py`, wersja biblioteki może posiadać podatny kod wewnętrzny. Prawdopodobieństwo: 15% (Uncertain / Library usage).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27205",
+    "Location": "Flask:3.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "✅ API call confirmed. Operacje na sesji (np. `'key' in session`) w `setup_routes.py` i `help_routes.py`. Podatność dotyczy braku nagłówka `Vary: Cookie` przy odczycie. Ryzyko zatrucia cache jest niskie bez zewnętrznego proxy. Prawdopodobieństwo: 5% (Internal usage).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "❌ API call not confirmed. Biblioteka minimatch prawdopodobnie występuje jako zależność przechodnia narzędzi budowania (np. tailwindcss). Brak bezpośredniego użycia w kodzie produkcyjnym aplikacji. Prawdopodobieństwo: 2% (API not used).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "❌ API call not confirmed. Podobnie jak w przypadku CVE-2026-26996, brak śladów bezpośredniego wykorzystania biblioteki w kodzie źródłowym. Prawdopodobieństwo: 2% (API not used).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "❌ API call not confirmed. Brak wywołań API minimatch w kodzie aktywnym. Prawdopodobieństwo: 2% (API not used).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27199",
+    "Location": "Werkzeug:3.1.3",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "✅ API usage confirmed (via Flask). Podatność dotyczy `safe_join` na Windows. Aplikacja stosuje manualną walidację ścieżek w `help_routes.py`, co stanowi silne mitygowanie. Prawdopodobieństwo: 5% (Major constraints missing / Mitigations).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66471",
+    "Location": "urllib3:2.5.0",
+    "Original_exploitability": 25,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "✅ API usage confirmed (via requests). Podatność DoS przy wysoce skompresowanych danych. Aplikacja łączy się z zaufanymi API (Cloudflare, Docker), co minimalizuje ryzyko kontrolowanego przez atakującego wejścia. Prawdopodobieństwo: 10% (Library usage).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66221",
+    "Location": "Werkzeug:3.1.3",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "✅ API usage confirmed. Dotyczy platformy Windows i obsługi nazw urządzeń zarezerwowanych. Aplikacja posiada własne mechanizmy sprawdzania ścieżek. Prawdopodobieństwo: 5% (Strong guards).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21860",
+    "Location": "Werkzeug:3.1.3",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "✅ API usage confirmed. Podatność Path Traversal na Windows. Ze względu na manualne sprawdzenia prefixów w trasach serwujących dokumentację, ryzyko jest mitygowane. Prawdopodobieństwo: 5% (Mitigations).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66418",
+    "Location": "urllib3:2.5.0",
+    "Original_exploitability": 35,
+    "Exploitability": 20,
+    "Exploitability_explanation:": "✅ API usage confirmed. Dotyczy nieograniczonej dekompresji HTTP. Aplikacja intensywnie korzysta z requests do zarządzania infrastrukturą. Ryzyko istnieje, lecz jest ograniczone do interakcji z API Cloudflare/Docker. Prawdopodobieństwo: 20%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21441",
+    "Location": "urllib3:2.5.0",
+    "Original_exploitability": 8,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "✅ API usage confirmed. Decompression bomb przy redirectach. Aplikacja rzadko podąża za redirectami w krytycznych ścieżkach danych. Prawdopodobieństwo: 10%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26007",
+    "Location": "cryptography:44.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "❌ API call not confirmed. Aplikacja wykorzystuje jedynie moduł `Fernet` (szyfrowanie symetryczne), podczas gdy CVE dotyczy operacji na krzywych eliptycznych (ECC). Prawdopodobieństwo: 2% (API not used).",
+    "Assessment": "Correct"
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "Vulnerability": "CVE-2024-47068",
+    "Location": "rollup:",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Confirmed usage in compatibility tests (see Makefile). Since it is used only for benchmarks and not in production code, exploitability is low (within 20% tolerance of 0%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47068",
+    "Location": "rollup:4.0.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Confirmed in require/rollup for development benchmarking. Low risk confirmed (maintenance/test only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43788",
+    "Location": "webpack:5.88.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Used only in require/webpack5 for compatibility testing. Not part of the esbuild package itself.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-12905",
+    "Location": "tar-fs:3.0.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Dependency not found in codebase after thorough search. Baseline 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-11831",
+    "Location": "serialize-javascript:6.0.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Transitive dependency in test environment. No direct call found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Transitive usage in benchmarking scripts. Negligible production risk.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Confirmed usage in compatibility tests only. Assessment within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:4.0.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Confirmed usage in compatibility tests only. Assessment within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27699",
+    "Location": "basic-ftp:5.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Dependency not found. Assessment matches baseline.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29074",
+    "Location": "svgo:2.8.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Dependency not found. Assessment matches baseline.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29074",
+    "Location": "svgo:3.0.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Dependency not found. Assessment matches baseline.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Transitive dependency in webpack tests. Low risk confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-59343",
+    "Location": "tar-fs:3.0.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Dependency not found. Assessment matches baseline.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "API call confirmed in scripts/test262.js:438. However, as it is a maintenance/test script used locally, the risk is minimized.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Version 4.1.0 not used. Baseline is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-56648",
+    "Location": "@parcel/reporter-dev-server:2.10.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Found in require/parcel2, used for compatibility demos/benchmarks. Not in production code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68157",
+    "Location": "webpack:5.88.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Used in compatibility benchmarking environment. Baseline 0% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68458",
+    "Location": "webpack:5.88.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Used in compatibility benchmarking environment. Baseline 0% is within tolerance.",
+    "Assessment": "Correct"
+  }
+]

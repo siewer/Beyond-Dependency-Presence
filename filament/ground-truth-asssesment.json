@@ -1,0 +1,90 @@
+[
+  {
+    "Vulnerability": "CVE-2017-9303",
+    "Location": "laravel/laravel:",
+    "Original_exploitability": 45,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Vulnerable API usage confirmed. Filament uses `URL::signedRoute` for generating password reset URLs in `HasAuth` trait, which is susceptible to host injection if the application host is not strictly validated. This allows an attacker to specify a malicious host in the reset link sent to users. Probability set to 0.45 based on reachable code path and low attack complexity over network.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-67507",
+    "Location": "filament/filament:4.x-dev",
+    "Original_exploitability": 65,
+    "Exploitability": 65,
+    "Exploitability_explanation": "Vulnerability confirmed in user-facing MFA logic. Filament's `AppAuthentication` class handles MFA recovery codes. The vulnerability allows recovery code reuse in versions prior to 4.3.1. Usage of `verifyRecoveryCode` is confirmed. Probability set to 0.65 as all constraints are satisfied and the code path is directly reachable by unauthenticated users during MFA bypass attempts.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2327",
+    "Location": "markdown-it:14.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not confirmed in active code paths. `markdown-it` is present in `package-lock.json` but no explicit calls or instantiations were found in the source code. Probability set to 0.01 as per guidelines for unused APIs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.6.1",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Incorrect assessment. `elliptic` is a transitive dependency (via `pusher-js`) and is not directly used by Filament for ECDSA signature generation. Cryptographic vulnerabilities in library-internal code without direct user-code calls are capped at 0.10. Original 50% exceeds the 20% tolerance relative to the 10% recalculated probability.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-8grv-jq2g-cfhw",
+    "Location": "amphp/http-server:v3.4.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not confirmed. `amphp/http-server` was not found in the codebase. Probability set to 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24765",
+    "Location": "phpunit/phpunit:10.5.59",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Usage only in development/testing context. `phpunit` is not used in production code paths. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25129",
+    "Location": "psy/psysh:v0.12.15",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Usage only in development/testing context. `psysh` is a REPL and not used in production code paths. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24739",
+    "Location": "symfony/process:v7.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API usage found in utility scripts but not in active production code paths. Probability 0.02.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30360",
+    "Location": "webpack-dev-server:4.15.2",
+    "Original_exploitability": 40,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Incorrect assessment. `webpack-dev-server` is a development dependency used only during active asset compilation in local environments. It is not part of the production bundle or server. Library usage in non-production tools is capped at 0.10. Difference between 40% and 10% exceeds 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-30359",
+    "Location": "webpack-dev-server:4.15.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Low risk. Similar to CVE-2025-30360, this is a development-only tool vulnerability with limited reachability. Recalculated probability 0.01 is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-67507",
+    "Location": "filament/filament:",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Correct assessment. This entry lacks specific version information in the location string. According to the methodology for 'Version UNKNOWN (no dependency info)', the exploitability score is subject to an absolute hard cap of 0.15 (15%). The original score of 0% is within the 20% tolerance of this cap. This differs from the entry with an explicit '4.x-dev' version, which is assessed without the cap.",
+    "Assessment": "Correct"
+  }
+]

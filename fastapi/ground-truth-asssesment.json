@@ -1,0 +1,20 @@
+[
+  {
+    "CVE": "CVE-2021-32677",
+    "Evidence": "✅ API call confirmed. In fastapi/routing.py:422, the request.json() method is called to parse the body when the content-type is (permissively) matched as JSON.",
+    "Location": "fastapi/routing.py:422",
+    "Original_exploitability": "15%",
+    "Calculated_exploitability": "15%",
+    "Exploitability_explanation": "The vulnerability exists in the core routing logic of FastAPI (`fastapi/routing.py`). It allows for CSRF-like attacks by parsing JSON bodies even when the Content-Type is text/plain, bypassing CORS preflights. Since FastAPI is a library, the exploitability depends on the application implementation, but the presence of Cookie-based authentication models (`APIKeyCookie`) and JSON body handling in the codebase confirms the reachable path.",
+    "Exploitability_comparison": "Correct"
+  },
+  {
+    "CVE": "CVE-2025-69872",
+    "Evidence": "❌ API call NOT confirmed. The dependency 'diskcache' is only found in 'uv.lock' as an optional transitive dependency of 'py-key-value-aio'. No imports or calls to diskcache were found in the active FastAPI codebase.",
+    "Location": "uv.lock",
+    "Original_exploitability": "0%",
+    "Calculated_exploitability": "1%",
+    "Exploitability_explanation": "Diskcache is not used in the active code paths of the FastAPI library. It is a transitive dependency not reachable from the core functionality. Calculated probability is 0.01 (1%), which is within the 20% margin of the original 0% score.",
+    "Exploitability_comparison": "Correct"
+  }
+]

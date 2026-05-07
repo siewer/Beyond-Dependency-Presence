@@ -1,0 +1,746 @@
+[
+  {
+    "Vulnerability": "CVE-2015-9251",
+    "Location": "jquery:2.2.4",
+    "Original_exploitability": "25%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "Vulnerable API ($.ajax, $.post) is used in ui.js and dashboard.js. However, explicit calls include 'dataType: json', which mitigates the automatic execution of cross-domain scripts. Probability reduced to 15%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11023",
+    "Location": "jquery:2.2.4",
+    "Original_exploitability": "50%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "Vulnerable APIs (.html, .append) are used to render AJAX responses in ui.js. If an attacker can control the response from the basket URL, XSS is possible via $.htmlPrefilter. 50% probability is justified.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3760",
+    "Location": "sprockets:2.12.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No evidence of 'sprockets' usage or dependency found in the codebase. As per rules, probability is reduced to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.5.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Usage is restricted to internal node_modules (build tools/transitive dependencies). No direct call in user code found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.5.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal usage only. No direct call in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.7.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal usage only. No direct call in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.3.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal usage only. No direct call in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal usage only. No direct call in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28863",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": "15%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal usage only. No direct call in user code. Difference is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.2",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal usage only. No direct call in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-42282",
+    "Location": "ip:2.0.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Library used internally by dependencies. No direct call in user code found. Probability remains low.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.10",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal dependency used by build tools. No user-code usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Used as a devDependency (eslint). No impact on the application's runtime or user-facing code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-30123",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found in this Python/Django repository. Probability reduced to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-27530",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-10077",
+    "Location": "i18n:0.6.11",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby i18n gem not found in the codebase. Concept of i18n is present but library is not.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-16782",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found. 50% original assessment is incorrect.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-30122",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8184",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25184",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-22796",
+    "Location": "activesupport:3.2.22",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'activesupport' not found in the codebase. 50% original assessment is incorrect.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-8161",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-8857",
+    "Location": "uglifier:2.4.0",
+    "Original_exploitability": "7%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'uglifier' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27610",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27111",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-26146",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-25126",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-61770",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-61772",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-46727",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16471",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-26141",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-59830",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-61919",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-32441",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-61771",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-61780",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-14001",
+    "Location": "kramdown:1.7.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'kramdown' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-44570",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-10663",
+    "Location": "json:1.8.3",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby gem 'json' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-1002201",
+    "Location": "haml:4.0.6",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby gem 'haml' not found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-1000201",
+    "Location": "ffi:1.9.9",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby gem 'ffi' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25500",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22860",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33176",
+    "Location": "activesupport:3.2.22",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'activesupport' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33169",
+    "Location": "activesupport:3.2.22",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'activesupport' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33170",
+    "Location": "activesupport:3.2.22",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'activesupport' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal dependency of developer tools (eslint). No direct call in user code found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28120",
+    "Location": "activesupport:3.2.22",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'activesupport' not found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34831",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.2.5",
+    "Original_exploitability": "20%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency of developer tools (eslint). No direct call in user code found. Difference is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33671",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal dependency used by build tools. No user-code usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:2.0.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency of minimatch/gulp. No direct call in user code. 50% probability is excessive for a build-tool dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-29415",
+    "Location": "ip:2.0.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal library used by dependencies. No direct call in user code found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": "15%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency used by node-gyp. No direct usage in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": "15%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency used by build tools. No direct call in user code found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": "15%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency used by node-sass. No direct call in user code found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2950",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": "15%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency used by build tools. No direct call in user code found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33672",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal dependency used by build tools. No user-code usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:2.0.1",
+    "Original_exploitability": "5%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal dependency used by build tools. No user-code usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": "15%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency used by node-gyp. No direct usage in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34763",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "2%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34786",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found. 50% original assessment is incorrect.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34829",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": "15%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency used by node-gyp. No direct usage in user code found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": "5%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency of build tools. No direct call in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33228",
+    "Location": "flatted:3.2.5",
+    "Original_exploitability": "5%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency of developer tools. No direct call in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29063",
+    "Location": "immutable:5.0.3",
+    "Original_exploitability": "20%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Used internally by build tools (sass). No direct call in user code found. Difference is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34830",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34785",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "3%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal dependency of developer tools. No direct call in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:2.0.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency of build tools (node-gyp). No user-code reachability found. 50% probability is excessive.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": "35%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Used internally by eslint and gulp. No direct call in application logic found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": "50%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency used by build tools. No user-code usage found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": "50%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency used by build tools. No user-code usage found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26961",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34826",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "10%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-4800",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": "50%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency of build tools. No user-code reachability found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": "15%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency used by build tools.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34230",
+    "Location": "rack:1.6.4",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Ruby library 'rack' not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal dependency with 0% reported probability. Validated as not used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal dependency. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal dependency. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal dependency. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal dependency. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal dependency. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal dependency. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:1.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal dependency. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11022",
+    "Location": "jquery:2.2.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "Similar to CVE-2020-11023, usage of .html() and .append() found in ui.js. 15% probability due to potential reachability via basket AJAX responses.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:7.0.36",
+    "Original_exploitability": "15%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency used by gulp-sourcemaps. No direct call in user code found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11358",
+    "Location": "jquery:2.2.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Vulnerability in $.extend(true, ...). No risky recursive usage with untrusted input found in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-27088",
+    "Location": "es5-ext:0.10.42",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Internal dependency. No usage found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-27088",
+    "Location": "es5-ext:0.10.53",
+    "Original_exploitability": "15%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Internal dependency of gulp tools. No user-code usage found.",
+    "Assessment": "Correct"
+  }
+]

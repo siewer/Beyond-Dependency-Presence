@@ -1,0 +1,466 @@
+[
+  {
+    "Vulnerability": "CVE-2021-41182",
+    "Location": "jquery-ui:1.11.4",
+    "Original_exploitability": 1.0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Status: not_confirmed (Internal Usage Only). Usage found ONLY in Library/Vendor Code. Max Probability: 0.10. Evidence: altField in jquery-ui.min.js: stepMonths:1,stepBigMonths:12,altField:\"\",altFormat:\"\",constrainInput:!0,showBut",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-41184",
+    "Location": "jquery-ui:1.11.4",
+    "Original_exploitability": 50.0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "\u2705 API call confirmed. Evidence: .position( in control-behavior.js: : 'right';  \t\t$tagsList.show().position( { \t\t\tmy: `${ direction } top`, \t\t\tat: `... Version is assumed vulnerable. 100% constraints satisfied.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-31160",
+    "Location": "jquery-ui:1.11.4",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['.checkboxradio('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-41183",
+    "Location": "jquery-ui:1.11.4",
+    "Original_exploitability": 50.0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "\u2705 API call confirmed. Evidence: Text in checktextdomain.js: const checkTextDomain = { \tstandard: { \t\toptions:{ \t\t\ttext_do... Version is assumed vulnerable. 100% constraints satisfied.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-7103",
+    "Location": "jquery-ui:1.11.4",
+    "Original_exploitability": 15.0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Status: not_confirmed (Internal Usage Only). Usage found ONLY in Library/Vendor Code. Max Probability: 0.10. Evidence: closeText in jquery-ui.min.js: egional=[],this.regional[\"\"]={closeText:\"Done\",prevText:\"Prev\",nextText:\"Next\",c",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29091",
+    "Location": "locutus:2.0.32",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['locutus'] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27148",
+    "Location": "storybook:8.6.14",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['storybook'] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['qs.parse(', 'qs.stringify('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.25.7",
+    "Original_exploitability": 25.0,
+    "Exploitability": 50,
+    "Exploitability_explanation": "\u2705 Babel usage confirmed, but requires specific regex with named capturing groups in .replace() to be exploitable. Moderate probability. @babel/runtime in e-gallery.js: **/ ({  /***/ \"./node_modules/@babel/runtime/helpers/assertThisInitialized.js\": ",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-32304",
+    "Location": "locutus:2.0.32",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['locutus'] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27699",
+    "Location": "basic-ftp:5.0.5",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['downloadToDir('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2229",
+    "Location": "undici:5.29.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['WebSocket', 'undici.request('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29063",
+    "Location": "immutable:5.1.4",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['mergeDeep(', 'mergeDeepWith(', 'Map.toJS(', 'Map.toObject('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22028",
+    "Location": "preact:10.27.2",
+    "Original_exploitability": 5.0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "\u2705 API call confirmed. Evidence: h( in Gruntfile.js: ksToRun = []; \t\ttasksToRun.push( isDevMode ? 'webpack:development' : 'webpack:pr... Version is assumed vulnerable. 100% constraints satisfied.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['minimatch('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['minimatch('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.3",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['minimatch('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['minimatch('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29074",
+    "Location": "svgo:4.0.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['svgo('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['minimatch('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['minimatch('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.3",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['minimatch('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['minimatch('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['minimatch('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['minimatch('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.3",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['minimatch('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['minimatch('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1526",
+    "Location": "undici:5.29.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['WebSocket', 'undici.request('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['ajv'] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.17.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['ajv'] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.3.3",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['flatted.parse('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25639",
+    "Location": "axios:1.13.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['axios(', 'axios.get(', 'axios.post('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1525",
+    "Location": "undici:5.29.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['undici.request(', 'undici.Client('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-59288",
+    "Location": "playwright:1.54.2",
+    "Original_exploitability": 70.0,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Configuration Only: Finding config or tooling like storybook/webpack implies potential, not exploitability. Max Probability 0.35. \u2705 API call confirmed in playwright in run-on-linux.js:  function run( tag ) { \tconst playwrightVersion = packageJson.devDependencies[ '",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-15599",
+    "Location": "dompurify:2.5.8",
+    "Original_exploitability": 0.0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "\u2705 API call confirmed. Evidence: DOMPurify.sanitize( in helpers.js: ( value, options ) { \t\treturn DOMPurify.sanitize( value, options ); \t},  \tsaniti... Version is assumed vulnerable. 100% constraints satisfied.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-0540",
+    "Location": "dompurify:2.5.8",
+    "Original_exploitability": 0.0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "\u2705 API call confirmed. Evidence: DOMPurify.sanitize( in helpers.js: ( value, options ) { \t\treturn DOMPurify.sanitize( value, options ); \t},  \tsaniti... Version is assumed vulnerable. 100% constraints satisfied.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-0540",
+    "Location": "dompurify:3.2.7",
+    "Original_exploitability": 0.0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "\u2705 API call confirmed. Evidence: DOMPurify.sanitize( in helpers.js: ( value, options ) { \t\treturn DOMPurify.sanitize( value, options ); \t},  \tsaniti... Version is assumed vulnerable. 100% constraints satisfied.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-0540",
+    "Location": "dompurify:3.3.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "\u2705 API call confirmed. Evidence: DOMPurify.sanitize( in helpers.js: ( value, options ) { \t\treturn DOMPurify.sanitize( value, options ); \t},  \tsaniti... Version is assumed vulnerable. 100% constraints satisfied.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 50.0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "\u2705 API call confirmed. Evidence: _.omit( in backbone.marionette.js: ionClass;       var options = _.omit(regionConfig, 'selector', 'regionClass');  ... Version is assumed vulnerable. 100% constraints satisfied.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash-es:4.17.21",
+    "Original_exploitability": 0.0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "\u2705 API call confirmed. Evidence: _.omit( in backbone.marionette.js: ionClass;       var options = _.omit(regionConfig, 'selector', 'regionClass');  ... Version is assumed vulnerable. 100% constraints satisfied.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['qs.parse(', 'qs.stringify('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68429",
+    "Location": "storybook:8.6.14",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['storybook'] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30827",
+    "Location": "express-rate-limit:8.2.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['rateLimit('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22029",
+    "Location": "@remix-run/router:1.23.0",
+    "Original_exploitability": 70.0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "\u2705 API call confirmed. Evidence: <Link in button.js: y={ router.appHistory }> \t\t\t\t\t<Link to={ this.props.url } { ...attributes } > \t\t... Version is assumed vulnerable. 100% constraints satisfied.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.1",
+    "Original_exploitability": 50.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['js-yaml'] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-1527",
+    "Location": "undici:5.29.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['client.request('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22036",
+    "Location": "undici:5.29.0",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['undici'] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:4.0.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['parsePatch(', 'applyPatch('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:5.2.0",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['parsePatch(', 'applyPatch('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:2.0.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "\u2705 API call confirmed. Evidence: once( in heartbeat.js: mentorNonce ); \t}  \tonRefreshNonce( event, response ) { \t\tconst nonces = respons... Version is assumed vulnerable. 100% constraints satisfied.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-68157",
+    "Location": "webpack:5.102.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['experiments.buildHttp'] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68458",
+    "Location": "webpack:5.102.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['experiments.buildHttp'] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-36jr-mh4h-2g58",
+    "Location": "d3-color:1.4.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['d3-color', 'd3.color('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['serialize('] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-v8w9-8mx6-g223",
+    "Location": "hono:4.12.5",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['parseBody({ dot: true })'] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-26791",
+    "Location": "dompurify:2.5.8",
+    "Original_exploitability": 0.0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "\u2705 API call confirmed. Evidence: DOMPurify.sanitize( in helpers.js: ( value, options ) { \t\treturn DOMPurify.sanitize( value, options ); \t},  \tsaniti... Version is assumed vulnerable. 100% constraints satisfied.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-68470",
+    "Location": "react-router:6.30.1",
+    "Original_exploitability": 70.0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "\u2705 API call confirmed. Evidence: <Link in button.js: y={ router.appHistory }> \t\t\t\t\t<Link to={ this.props.url } { ...attributes } > \t\t... Version is assumed vulnerable. 100% constraints satisfied.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25521",
+    "Location": "locutus:2.0.32",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No explicit call found to vulnerable APIs ['locutus'] in any active code path. Vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  }
+]

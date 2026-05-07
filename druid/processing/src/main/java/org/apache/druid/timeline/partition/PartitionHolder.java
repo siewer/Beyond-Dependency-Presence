@@ -1,0 +1,208 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+package org.apache.druid.timeline.partition;
+
+import com.google.common.collect.Iterables;
+import org.apache.druid.timeline.Overshadowable;
+
+import javax.annotation.Nullable;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Objects;
+
+/**
+ * An object that clumps together multiple other objects which each represent a shard of some space.
+ */
+public class PartitionHolder<T extends Overshadowable<T>> implements Iterable<PartitionChunk<T>>
+{
+  /**
+   * Contents of this holder. Begins life as a {@link SimplePartitionHolderContents}, then changes to
+   * {@link OvershadowableManager} if any overshadowables with minor versions are encountered.
+   */
+  private PartitionHolderContents<T> contents = new SimplePartitionHolderContents<>();
+
+  private short maxMinorVersion;
+
+  public static <T extends Overshadowable<T>> PartitionHolder<T> copyWithOnlyVisibleChunks(
+      PartitionHolder<T> partitionHolder
+  )
+  {
+    return new PartitionHolder<>(
+        partitionHolder.contents.copyVisible(),
+        partitionHolder.maxMinorVersion
+    );
+  }
+
+  public static <T extends Overshadowable<T>> PartitionHolder<T> deepCopy(PartitionHolder<T> partitionHolder)
+  {
+    return new PartitionHolder<>(
+        partitionHolder.contents.deepCopy(),
+        partitionHolder.maxMinorVersion
+    );
+  }
+
+  public PartitionHolder(PartitionChunk<T> initialChunk)
+  {
+    add(initialChunk);
+  }
+
+  public PartitionHolder(List<PartitionChunk<T>> initialChunks)
+  {
+    for (PartitionChunk<T> chunk : initialChunks) {
+      add(chunk);
+    }
+  }
+
+  /**
+   * Constructor for situations where the caller already has a {@link PartitionHolderContents}. Generally used for
+   * copying. Also used for tests.
+   */
+  public PartitionHolder(PartitionHolderContents<T> contents, short maxMinorVersion)
+  {
+    this.contents = contents;
+    this.maxMinorVersion = maxMinorVersion;
+  }
+
+  public boolean add(PartitionChunk<T> chunk)
+  {
+    if (chunk.getObject().getMinorVersion() != 0 && contents instanceof SimplePartitionHolderContents) {
+      // Swap simple map for an OvershadowableManager when minor versions are encountered.
+      contents = OvershadowableManager.fromSimple((SimplePartitionHolderContents<T>) contents);
+    }
+    boolean added = contents.addChunk(chunk);
+    if (added && chunk.getObject().getMinorVersion() > maxMinorVersion) {
+      maxMinorVersion = chunk.getObject().getMinorVersion();
+    }
+    return added;
+  }
+
+  /**
+   * Returns the maximum minor version across all the added segments.
+   * We do not handle updates of this variable when segments are removed for the sake of simplicity.
+   */
+  public short getMaxMinorVersion()
+  {
+    return maxMinorVersion;
+  }
+
+  @Nullable
+  public PartitionChunk<T> remove(PartitionChunk<T> chunk)
+  {
+    return contents.removeChunk(chunk);
+  }
+
+  public boolean isEmpty()
+  {
+    return contents.isEmpty();
+  }
+
+  public boolean isComplete()
+  {
+    if (contents.isEmpty()) {
+      return false;
+    }
+
+    Iterator<PartitionChunk<T>> iter = iterator();
+
+    PartitionChunk<T> curr = iter.next();
+
+    if (!curr.isStart()) {
+      return false;
+    }
+
+    if (curr.isEnd()) {
+      return contents.areVisibleChunksConsistent();
+    }
+
+    while (iter.hasNext()) {
+      PartitionChunk<T> next = iter.next();
+      if (!curr.abuts(next)) {
+        return false;
+      }
+
+      if (next.isEnd()) {
+        return contents.areVisibleChunksConsistent();
+      }
+      curr = next;
+    }
+
+    return false;
+  }
+
+  public PartitionChunk<T> getChunk(final int partitionNum)
+  {
+    return contents.getChunk(partitionNum);
+  }
+
+  @Override
+  public Iterator<PartitionChunk<T>> iterator()
+  {
+    return contents.visibleChunksIterator();
+  }
+
+  public List<PartitionChunk<T>> getOvershadowed()
+  {
+    return contents.getOvershadowedChunks();
+  }
+
+  public Iterable<T> payloads()
+  {
+    return Iterables.transform(this, PartitionChunk::getObject);
+  }
+
+  @Override
+  public boolean equals(Object o)
+  {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+    PartitionHolder<?> that = (PartitionHolder<?>) o;
+    return Objects.equals(contents, that.contents);
+  }
+
+  @Override
+  public int hashCode()
+  {
+    return Objects.hash(contents);
+  }
+
+  @Override
+  public String toString()
+  {
+    return "PartitionHolder{" +
+           "contents=" + contents +
+           '}';
+  }
+
+  public boolean hasData()
+  {
+    // it has data as long as one of the payloads has data, otherwise it does not
+    for (T payload : payloads()) {
+      if (payload.hasData()) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+}

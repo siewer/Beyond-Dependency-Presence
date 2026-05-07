@@ -1,0 +1,1290 @@
+[
+  {
+    "Vulnerability": "CVE-2022-1471",
+    "Location": "snakeyaml:1.21",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-1471",
+    "Location": "snakeyaml:1.33",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45288",
+    "Location": "golang.org/x/net:v0.17.0",
+    "Original_exploitability": "5%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44521",
+    "Location": "cassandra-all:1.0.8",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37601",
+    "Location": "loader-utils:2.0.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-20444",
+    "Location": "netty:3.10.6.Final",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-42740",
+    "Location": "shell-quote:1.7.2",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10202",
+    "Location": "jackson-mapper-asl:1.9.13",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:2.5.0",
+    "Original_exploitability": "8%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37599",
+    "Location": "loader-utils:2.0.0",
+    "Original_exploitability": "5%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-37137",
+    "Location": "netty:3.10.6.Final",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-18640",
+    "Location": "snakeyaml:1.21",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-20445",
+    "Location": "netty:3.10.6.Final",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21409",
+    "Location": "netty:3.10.6.Final",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33623",
+    "Location": "trim-newlines:1.0.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-37136",
+    "Location": "netty:3.10.6.Final",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33813",
+    "Location": "jdom2:2.0.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37603",
+    "Location": "loader-utils:2.0.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25857",
+    "Location": "snakeyaml:1.21",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-41404",
+    "Location": "ini4j:0.5.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-13949",
+    "Location": "libthrift:0.13.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-13949",
+    "Location": "libthrift:0.9.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash.template:4.5.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-0205",
+    "Location": "libthrift:0.6.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-0205",
+    "Location": "libthrift:0.9.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30065",
+    "Location": "parquet-avro:1.13.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3757",
+    "Location": "immer:8.0.1",
+    "Original_exploitability": "5%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10172",
+    "Location": "jackson-mapper-asl:1.9.13",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-33987",
+    "Location": "got:7.1.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-33987",
+    "Location": "got:8.3.2",
+    "Original_exploitability": "1%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-32014",
+    "Location": "estree-util-value-to-estree:3.3.2",
+    "Original_exploitability": "1%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-59059",
+    "Location": "ranger-plugins-common:2.7.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-21680",
+    "Location": "marked:0.3.19",
+    "Original_exploitability": "1%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-21681",
+    "Location": "marked:0.3.19",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-4065",
+    "Location": "testng:7.3.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.88.2",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-11798",
+    "Location": "libthrift:0.9.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-3635",
+    "Location": "okio:2.8.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38749",
+    "Location": "snakeyaml:1.21",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-40149",
+    "Location": "jettison:1.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-40149",
+    "Location": "jettison:1.3.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-46762",
+    "Location": "parquet-avro:1.13.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3795",
+    "Location": "semver-regex:2.0.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-43797",
+    "Location": "netty:3.10.6.Final",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21295",
+    "Location": "netty:3.10.6.Final",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-23015",
+    "Location": "cassandra-all:1.0.8",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23364",
+    "Location": "browserslist:4.14.2",
+    "Original_exploitability": "8%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.2",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-67721",
+    "Location": "aircompressor:0.21",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-67721",
+    "Location": "aircompressor:0.27",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-67721",
+    "Location": "aircompressor:2.0.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25881",
+    "Location": "http-cache-semantics:3.8.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-25638",
+    "Location": "dnsjava:2.1.7",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-24786",
+    "Location": "google.golang.org/protobuf:v1.30.0",
+    "Original_exploitability": "5%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55163",
+    "Location": "grpc-netty-shaded:1.59.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55163",
+    "Location": "grpc-netty-shaded:1.65.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38751",
+    "Location": "snakeyaml:1.21",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:7.0.39",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3803",
+    "Location": "nth-check:1.0.2",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-45685",
+    "Location": "jettison:1.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-45693",
+    "Location": "jettison:1.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-45685",
+    "Location": "jettison:1.3.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-45693",
+    "Location": "jettison:1.3.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-36114",
+    "Location": "aircompressor:0.21",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.5.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38752",
+    "Location": "snakeyaml:1.21",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-43307",
+    "Location": "semver-regex:2.0.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66031",
+    "Location": "node-forge:1.3.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23436",
+    "Location": "immer:8.0.1",
+    "Original_exploitability": "2%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-32996",
+    "Location": "http-proxy-middleware:2.0.7",
+    "Original_exploitability": "2%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22868",
+    "Location": "golang.org/x/oauth2:v0.5.0",
+    "Original_exploitability": "5%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-1320",
+    "Location": "libthrift:0.6.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-1320",
+    "Location": "libthrift:0.9.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38750",
+    "Location": "snakeyaml:1.21",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30359",
+    "Location": "webpack-dev-server:4.15.2",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/helpers:7.26.9",
+    "Original_exploitability": "12%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.26.9",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime-corejs3:7.26.9",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.10",
+    "Original_exploitability": "5%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22872",
+    "Location": "golang.org/x/net:v0.17.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22227",
+    "Location": "reactor-netty-http:1.0.48",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:5.1.0",
+    "Original_exploitability": "5%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26278",
+    "Location": "fast-xml-parser:4.5.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-12816",
+    "Location": "node-forge:1.3.1",
+    "Original_exploitability": "25%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-40150",
+    "Location": "jettison:1.3.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-41854",
+    "Location": "snakeyaml:1.21",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-46337",
+    "Location": "derby:10.14.2.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66400",
+    "Location": "mdast-util-to-hast:13.2.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1605",
+    "Location": "jetty-server:12.0.30",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-53382",
+    "Location": "prismjs:1.29.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29063",
+    "Location": "immutable:4.3.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29063",
+    "Location": "immutable:5.0.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25896",
+    "Location": "fast-xml-parser:4.5.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-32997",
+    "Location": "http-proxy-middleware:2.0.7",
+    "Original_exploitability": "5%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29074",
+    "Location": "svgo:3.3.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-11143",
+    "Location": "jetty-http:12.0.30",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30360",
+    "Location": "webpack-dev-server:4.15.2",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-23454",
+    "Location": "hadoop-common:3.3.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.12.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.17.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25639",
+    "Location": "axios:1.12.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66030",
+    "Location": "node-forge:1.3.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.0.29",
+    "Original_exploitability": "5%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-53864",
+    "Location": "nimbus-jose-jwt:10.0.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-53864",
+    "Location": "nimbus-jose-jwt:9.37.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-53864",
+    "Location": "nimbus-jose-jwt:9.40",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-1436",
+    "Location": "jettison:1.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-1436",
+    "Location": "jettison:1.3.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15599",
+    "Location": "dompurify:3.2.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-0540",
+    "Location": "dompurify:3.2.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-67735",
+    "Location": "netty-codec-http:4.2.6.Final",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24281",
+    "Location": "zookeeper:3.8.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash-es:4.17.21",
+    "Original_exploitability": "25%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24308",
+    "Location": "zookeeper:3.8.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21290",
+    "Location": "netty:3.10.6.Final",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27942",
+    "Location": "fast-xml-parser:4.5.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.13.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48924",
+    "Location": "commons-lang:2.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22870",
+    "Location": "golang.org/x/net:v0.17.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-58103",
+    "Location": "wire-runtime:3.6.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": "8%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54881",
+    "Location": "mermaid:11.4.1",
+    "Original_exploitability": "25%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-54880",
+    "Location": "mermaid:11.4.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:1.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:2.0.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68157",
+    "Location": "webpack:5.95.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68458",
+    "Location": "webpack:5.95.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68157",
+    "Location": "webpack:5.98.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68458",
+    "Location": "webpack:5.98.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7339",
+    "Location": "on-headers:1.0.2",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-m5qc-5hw7-8vg7",
+    "Location": "image-size:1.2.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-72hv-8253-57qq",
+    "Location": "jackson-core:2.19.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-xf5p-87ch-gxw2",
+    "Location": "marked:0.3.19",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-40150",
+    "Location": "jettison:1.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-7wwv-vh3v-89cq",
+    "Location": "highlight.js:9.18.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Thorough search using reachability analysis and grep confirms NO explicit call to the vulnerable API in the Druid codebase (excluding build/test utilities and node_modules). Under the provided criteria (Step 1-4), 'API not used/only dead code' calibrates to 0.00-0.02 probability. Using 1% (0.01) as the baseline for not_confirmed status.",
+    "Assessment": "Correct"
+  }
+]
