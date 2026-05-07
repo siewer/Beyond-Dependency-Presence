@@ -1,0 +1,258 @@
+[
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in axios/lib. Usage not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:2.5.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in axios/lib. Usage not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24434",
+    "Location": "dicer:0.2.5",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (tests). Max Probability: 0.10. Exploitation in production code is not possible.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-33987",
+    "Location": "got:8.3.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in axios/lib. Usage not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.88.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in axios/lib. Usage not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3795",
+    "Location": "semver-regex:2.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in axios/lib. Usage not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:5.5.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in axios/lib. Usage not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:2.3.3",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "\u2705 API call confirmed in lib/adapters/http.js. Predictable boundary vulnerability found in form-data is exploitable as axios uses form-data package directly for multipart requests without specifying a secure boundary override for this library specifically.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25881",
+    "Location": "http-cache-semantics:3.8.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in axios/lib. Usage not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.5.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in axios/lib. Usage not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-43307",
+    "Location": "semver-regex:2.0.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in axios/lib. Usage not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "babel-traverse:6.26.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in axios/lib. Usage not found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in axios/lib. Usage not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48997",
+    "Location": "multer:1.4.4",
+    "Original_exploitability": 5,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (tests). Max Probability: 0.10. Exploitation in production code is not possible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:5.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in axios/lib. Usage not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3520",
+    "Location": "multer:1.4.4",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (tests). Max Probability: 0.10. Exploitation in production code is not possible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2359",
+    "Location": "multer:1.4.4",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (tests). Max Probability: 0.10. Exploitation in production code is not possible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3304",
+    "Location": "multer:1.4.4",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (tests). Max Probability: 0.10. Exploitation in production code is not possible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47935",
+    "Location": "multer:1.4.4",
+    "Original_exploitability": 5,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (tests). Max Probability: 0.10. Exploitation in production code is not possible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (tests). Max Probability: 0.10. Exploitation in production code is not possible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (tests). Max Probability: 0.10. Exploitation in production code is not possible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7338",
+    "Location": "multer:1.4.4",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (tests). Max Probability: 0.10. Exploitation in production code is not possible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (tests). Max Probability: 0.10. Exploitation in production code is not possible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47944",
+    "Location": "multer:1.4.4",
+    "Original_exploitability": 2,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (tests). Max Probability: 0.10. Exploitation in production code is not possible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (tests). Max Probability: 0.10. Exploitation in production code is not possible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (tests). Max Probability: 0.10. Exploitation in production code is not possible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (tests). Max Probability: 0.10. Exploitation in production code is not possible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:7.5.10",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (tests). Max Probability: 0.10. Exploitation in production code is not possible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.6.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in axios/lib. Usage not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:4.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in axios/lib. Usage not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in axios/lib. Usage not found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:5.5.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in axios/lib. Usage not found.",
+    "Assessment": "Correct"
+  }
+]

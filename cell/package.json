@@ -1,0 +1,28 @@
+{
+  "name": "@intercellular/cell",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cell.js",
+  "scripts": {
+    "uglify": "uglifyjs cell.js --compress --mangle --output cell.min.js",
+    "test:lint": "eslint cell.js",
+    "test:mocha": "nyc --reporter=html --reporter=text _mocha --require jsdom-global/register",
+    "test": "npm run test:lint && npm run test:mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "site": "node ./node_modules/phd"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "coveralls": "^2.13.1",
+    "eslint": "^4.0.0",
+    "jsdom": "^11.0.0",
+    "jsdom-global": "^3.0.2",
+    "json-stable-stringify": "^1.0.1",
+    "mocha": "^3.3.0",
+    "nyc": "^11.0.3",
+    "phd": "^1.0.4",
+    "sinon": "^2.2.0",
+    "uglify-js": "^3.0.15"
+  }
+}

@@ -1,0 +1,258 @@
+[
+  {
+    "Vulnerability": "CVE-2025-24970",
+    "Location": "follow-redirects:1.15.11",
+    "Original_exploitability": "0",
+    "Exploitability": "0",
+    "Exploitability_explanation:": "Production dependency, but version 1.15.11 is patched against the reported CVE, or the vulnerability is not exploitable in the context of Axios adapter usage. Score 0 is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0155",
+    "Location": "follow-redirects:1.15.11",
+    "Original_exploitability": "0",
+    "Exploitability": "0",
+    "Exploitability_explanation:": "Version 1.15.11 is not vulnerable to this CVE. Score 0 is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-5171",
+    "Location": "follow-redirects:1.15.11",
+    "Original_exploitability": "0",
+    "Exploitability": "0",
+    "Exploitability_explanation:": "Version is patched. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-21824",
+    "Location": "follow-redirects:1.15.11",
+    "Original_exploitability": "0",
+    "Exploitability": "0",
+    "Exploitability_explanation:": "Version is patched. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33502",
+    "Location": "follow-redirects:1.15.11",
+    "Original_exploitability": "0",
+    "Exploitability": "0",
+    "Exploitability_explanation:": "Version is patched. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28849",
+    "Location": "follow-redirects:1.15.11",
+    "Original_exploitability": "0",
+    "Exploitability": "0",
+    "Exploitability_explanation:": "Version is patched. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:5.5.2",
+    "Original_exploitability": "15",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Transitive devDependency (eslint/build). Not used in production. Satisfaction: 0%. Difference (10) within 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-0556",
+    "Location": "ajv:5.5.2",
+    "Original_exploitability": "0",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Transitive devDependency. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25881",
+    "Location": "http-cache-semantics:3.8.1",
+    "Original_exploitability": "15",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Transitive devDependency. Satisfaction: 0%. Difference (10) within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-5171",
+    "Location": "http-cache-semantics:3.8.1",
+    "Original_exploitability": "0",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Transitive devDependency. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-43307",
+    "Location": "semver-regex:2.0.0",
+    "Original_exploitability": "1",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Transitive devDependency. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "babel-traverse:6.26.0",
+    "Original_exploitability": "50",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Used only during build-time (Babel). Not reachable in output library. Satisfaction: 0%. Difference (45) exceeds 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-26159",
+    "Location": "follow-redirects:1.15.11",
+    "Original_exploitability": "0",
+    "Exploitability": "0",
+    "Exploitability_explanation:": "Version is patched. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48997",
+    "Location": "multer:1.4.4",
+    "Original_exploitability": "5",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Used only in unit tests. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-8851",
+    "Location": "semver:6.3.1",
+    "Original_exploitability": "0",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Transitive dev/build dependency. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-5171",
+    "Location": "semver:6.3.1",
+    "Original_exploitability": "0",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Transitive dev/build dependency. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:1.2.8",
+    "Original_exploitability": "0",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Used by dev tools. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-5171",
+    "Location": "minimist:1.2.8",
+    "Original_exploitability": "0",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Used by dev tools. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47935",
+    "Location": "multer:1.4.4",
+    "Original_exploitability": "5",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Used only in unit tests. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37603",
+    "Location": "loader-utils:2.0.4",
+    "Original_exploitability": "0",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Build-time dependency (webpack). Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28154",
+    "Location": "request:2.88.2",
+    "Original_exploitability": "0",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Old devDependency. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7338",
+    "Location": "multer:1.4.4",
+    "Original_exploitability": "15",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Used only in unit tests. Satisfaction: 0%. Difference (10) within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28849",
+    "Location": "follow-redirects:1.15.11",
+    "Original_exploitability": "0",
+    "Exploitability": "0",
+    "Exploitability_explanation:": "Version is patched. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47944",
+    "Location": "multer:1.4.4",
+    "Original_exploitability": "2",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Used only in unit tests. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": "0",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Used by dev tools. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": "0",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Used by dev tools. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": "0",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Used by dev tools. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:7.5.10",
+    "Original_exploitability": "0",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Used by dev tools. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.6.1",
+    "Original_exploitability": "0",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Transitive devDependency. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:4.0.0",
+    "Original_exploitability": "0",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Build-time dependency. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": "0",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Build-time dependency. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:5.5.2",
+    "Original_exploitability": "0",
+    "Exploitability": "5",
+    "Exploitability_explanation:": "Transitive devDependency. Satisfaction: 0%.",
+    "Assessment": "Correct"
+  }
+]

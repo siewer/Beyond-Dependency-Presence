@@ -1,0 +1,2058 @@
+[
+  {
+    "Vulnerability": "CVE-2020-9402",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3281",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-35042",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:0.5.1",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-13254",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37601",
+    "Location": "loader-utils:0.2.17",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3757",
+    "Location": "immer:8.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:4.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.5.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.6.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-42740",
+    "Location": "shell-quote:1.7.2",
+    "Original_exploitability": 50,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Transitive dependency in pnpm-lock.yaml. No explicit calls found in pkg/ui source.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:6.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-37890",
+    "Location": "ws:7.5.9",
+    "Original_exploitability": 0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "API used for WebSockets but vulnerability is triggered by specific header overflows handled by the library itself; no vulnerable configuration found in User Code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:4.17.11",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Library used, but specific vulnerable functions (toNumber, trimEnd) are not found to be called with untrusted input in User Code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43800",
+    "Location": "serve-static:1.12.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21536",
+    "Location": "http-proxy-middleware:0.19.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:3.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Transitive dependency. No explicit call to vulnerable braces logic found in User Code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7598",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-28500",
+    "Location": "lodash:4.17.20",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Library used, but specific vulnerable functions (toNumber, trimEnd) are not found to be called with untrusted input in User Code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:5.2.18",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23436",
+    "Location": "immer:9.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "@babel/traverse:7.22.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30204",
+    "Location": "github.com/golang-jwt/jwt:v3.2.2+incompatible",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/helpers:7.22.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.12.13",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.9.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:3.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7608",
+    "Location": "yargs-parser:11.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.10",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33672",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29041",
+    "Location": "express:4.15.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47764",
+    "Location": "cookie:0.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43799",
+    "Location": "send:0.15.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:6.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29063",
+    "Location": "immutable:4.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "path-to-regexp:0.1.7",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "path-to-regexp:2.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0686",
+    "Location": "url-parse:1.5.1",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-58181",
+    "Location": "golang.org/x/crypto:v0.36.0",
+    "Original_exploitability": 0,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Dependency present in go.mod. No specific SSH agent server usage found in pkg, but library is part of core Go dependencies.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-53382",
+    "Location": "prismjs:1.27.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-36621",
+    "Location": "github.com/moby/moby:v25.0.14+incompatible",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43796",
+    "Location": "express:4.15.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:2.6.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:1.1.8",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.11.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.11.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.14.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33891",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33671",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-4867",
+    "Location": "path-to-regexp:0.1.12",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33895",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33894",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.11.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.11.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.14.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.11",
+    "Original_exploitability": 0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Library used, but specific vulnerable functions (toNumber, trimEnd) are not found to be called with untrusted input in User Code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33809",
+    "Location": "golang.org/x/image:v0.33.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32286",
+    "Location": "github.com/jackc/pgproto3/v2:v2.3.3",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33896",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.13.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27601",
+    "Location": "underscore:1.13.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:4.12.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:5.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47914",
+    "Location": "golang.org/x/crypto:v0.36.0",
+    "Original_exploitability": 0,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Dependency present in go.mod. No specific SSH agent server usage found in pkg, but library is part of core Go dependencies.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:3.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-vjh7-7g9h-fjfh",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-h6ch-v84p-w6p9",
+    "Location": "diff:3.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34040",
+    "Location": "github.com/docker/docker:v25.0.14+incompatible",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-87m9-rv8p-rgmg",
+    "Location": "github.com/mostynb/go-grpc-compression:v1.1.12",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:3.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-67mh-4wv8-2f99",
+    "Location": "esbuild:0.14.43",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-7ww5-4wqc-m92c",
+    "Location": "github.com/containerd/containerd:v1.6.18",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33997",
+    "Location": "github.com/docker/docker:v25.0.14+incompatible",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-2w8w-qhg4-f78j",
+    "Location": "github.com/jaegertracing/jaeger:v1.18.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-xf5p-87ch-gxw2",
+    "Location": "marked:0.3.19",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-v78c-4p63-2j6c",
+    "Location": "moment-timezone:0.5.14",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-673j-qm5f-xpv8",
+    "Location": "postgresql:42.1.4",
+    "Original_exploitability": 0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "JDBC driver found in pkg/acceptance/testdata/java/pom.xml. No evidence of untrusted control over loggerFile/loggerLevel connection properties.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-fw4p-36j9-rrj3",
+    "Location": "sequelize:4.37.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-qq97-vm5h-rrhg",
+    "Location": "github.com/docker/distribution:v2.7.1+incompatible",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-56x4-j7p9-fcf9",
+    "Location": "moment-timezone:0.5.14",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5rrq-pxf6-6jx5",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-gf8q-jrpm-jvxq",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.7.1",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Transitive dependency. No explicit call to vulnerable braces logic found in User Code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-42282",
+    "Location": "ip:1.1.8",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-9287",
+    "Location": "cipher-base:1.0.4",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:4.0.5",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23364",
+    "Location": "browserslist:4.14.2",
+    "Original_exploitability": 50,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "API used for WebSockets but vulnerability is triggered by specific header overflows handled by the library itself; no vulnerable configuration found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:7.0.39",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66030",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15250",
+    "Location": "junit:4.8.1",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-37599",
+    "Location": "loader-utils:2.0.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28849",
+    "Location": "follow-redirects:1.15.2",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7753",
+    "Location": "trim:0.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0.0,
+    "Exploitability_explanation": "API definitively not used or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-53382",
+    "Location": "prismjs:1.29.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-21680",
+    "Location": "marked:0.3.19",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash:4.17.11",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Library used, but specific vulnerable functions (toNumber, trimEnd) are not found to be called with untrusted input in User Code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42461",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29180",
+    "Location": "webpack-dev-middleware:3.7.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43800",
+    "Location": "serve-static:1.15.0",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-21536",
+    "Location": "http-proxy-middleware:1.0.5",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23424",
+    "Location": "ansi-html:0.0.7",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-24771",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42460",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29041",
+    "Location": "express:4.18.2",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42459",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43796",
+    "Location": "express:4.18.2",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-64459",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 25,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-64458",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 25,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-21535",
+    "Location": "markdown-to-jsx:6.11.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23358",
+    "Location": "underscore:1.8.3",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:1.2.0",
+    "Original_exploitability": 8,
+    "Exploitability": 8,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:2.6.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0691",
+    "Location": "url-parse:1.5.1",
+    "Original_exploitability": 2,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0639",
+    "Location": "url-parse:1.5.1",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0512",
+    "Location": "url-parse:1.5.1",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7608",
+    "Location": "yargs-parser:13.1.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26115",
+    "Location": "word-wrap:1.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20162",
+    "Location": "ms:0.7.2",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-56200",
+    "Location": "validator:9.4.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3765",
+    "Location": "validator:9.4.1",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-57556",
+    "Location": "store2:2.14.2",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-28658",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 35,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-22578",
+    "Location": "sequelize:4.37.1",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-33203",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 10,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-40635",
+    "Location": "github.com/containerd/containerd:v1.6.18",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-19844",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 25,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-24583",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 30,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-24584",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24785",
+    "Location": "moment:2.21.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10748",
+    "Location": "sequelize:4.37.1",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10752",
+    "Location": "sequelize:4.37.1",
+    "Original_exploitability": 2,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-22579",
+    "Location": "sequelize:4.37.1",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26132",
+    "Location": "dottie:2.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-4238",
+    "Location": "github.com/Masterminds/goutils:v1.1.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44420",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-2253",
+    "Location": "github.com/docker/distribution:v2.7.1+incompatible",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-22580",
+    "Location": "sequelize:4.37.1",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-63811",
+    "Location": "github.com/dvsekhvalnov/jose2go:v1.6.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33571",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-64329",
+    "Location": "github.com/containerd/containerd:v1.6.18",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-25621",
+    "Location": "github.com/containerd/containerd:v1.6.18",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-31197",
+    "Location": "postgresql:42.1.4",
+    "Original_exploitability": 25,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "JDBC driver found in pkg/acceptance/testdata/java/pom.xml. No evidence of untrusted control over loggerFile/loggerLevel connection properties.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34043",
+    "Location": "serialize-javascript:3.1.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33997",
+    "Location": "github.com/moby/moby:v25.0.14+incompatible",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:2.0.2",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33891",
+    "Location": "node-forge:1.3.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:6.1.15",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27601",
+    "Location": "underscore:1.8.3",
+    "Original_exploitability": 8,
+    "Exploitability": 8,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29063",
+    "Location": "immutable:5.1.4",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47764",
+    "Location": "cookie:0.5.0",
+    "Original_exploitability": 25,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.8",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6545",
+    "Location": "pbkdf2:3.1.2",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:6.1.15",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:1.1.2",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:6.1.15",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:6.1.15",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33895",
+    "Location": "node-forge:1.3.3",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6547",
+    "Location": "pbkdf2:3.1.2",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33894",
+    "Location": "node-forge:1.3.3",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "@babel/traverse:7.22.8",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-9288",
+    "Location": "sha.js:2.4.11",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": 3,
+    "Exploitability": 3,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58181",
+    "Location": "golang.org/x/crypto:v0.44.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Dependency present in go.mod. No specific SSH agent server usage found in pkg, but library is part of core Go dependencies.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30359",
+    "Location": "webpack-dev-server:3.10.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30360",
+    "Location": "webpack-dev-server:3.10.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24772",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0122",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-48948",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7693",
+    "Location": "sockjs:0.3.19",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3664",
+    "Location": "url-parse:1.5.1",
+    "Original_exploitability": 25,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:3.2.6",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16119",
+    "Location": "fresh:0.5.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-25813",
+    "Location": "sequelize:4.37.1",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7471",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-31129",
+    "Location": "moment:2.21.0",
+    "Original_exploitability": 2,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-13596",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-1597",
+    "Location": "postgresql:42.1.4",
+    "Original_exploitability": 80,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "JDBC driver found in pkg/acceptance/testdata/java/pom.xml. No evidence of untrusted control over loggerFile/loggerLevel connection properties.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-36620",
+    "Location": "github.com/moby/moby:v25.0.14+incompatible",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34040",
+    "Location": "github.com/moby/moby:v25.0.14+incompatible",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33228",
+    "Location": "flatted:3.2.7",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68458",
+    "Location": "webpack:5.103.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33896",
+    "Location": "node-forge:1.3.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.12.0",
+    "Original_exploitability": 30,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-52798",
+    "Location": "path-to-regexp:0.1.7",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29415",
+    "Location": "ip:1.1.8",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-4867",
+    "Location": "path-to-regexp:0.1.7",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.2.7",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-32655",
+    "Location": "npgsql:6.0.4",
+    "Original_exploitability": 2,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.57.2",
+    "Original_exploitability": 96,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.20",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Library used, but specific vulnerable functions (toNumber, trimEnd) are not found to be called with untrusted input in User Code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33672",
+    "Location": "picomatch:4.0.3",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68157",
+    "Location": "webpack:5.103.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33671",
+    "Location": "picomatch:4.0.3",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.4.0",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:6.1.15",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:6.1.15",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:3.5.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-57352",
+    "Location": "min-document:2.19.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28863",
+    "Location": "tar:6.1.15",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-12816",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 2,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37601",
+    "Location": "loader-utils:2.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37603",
+    "Location": "loader-utils:2.0.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3757",
+    "Location": "immer:9.0.3",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-26159",
+    "Location": "follow-redirects:1.15.2",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24773",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45231",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48432",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-12758",
+    "Location": "validator:9.4.1",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-31542",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 25,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-21724",
+    "Location": "postgresql:42.1.4",
+    "Original_exploitability": 1,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "JDBC driver found in pkg/acceptance/testdata/java/pom.xml. No evidence of untrusted control over loggerFile/loggerLevel connection properties.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-13692",
+    "Location": "postgresql:42.1.4",
+    "Original_exploitability": 25,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "JDBC driver found in pkg/acceptance/testdata/java/pom.xml. No evidence of untrusted control over loggerFile/loggerLevel connection properties.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-21489",
+    "Location": "uplot:1.6.19",
+    "Original_exploitability": 35,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "path-to-regexp:1.8.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33532",
+    "Location": "yaml:1.10.2",
+    "Original_exploitability": 65,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-45339",
+    "Location": "github.com/golang/glog:v1.1.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:5.2.2",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:6.4.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-48949",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-57833",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.0.33",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-36359",
+    "Location": "Django:3.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-10744",
+    "Location": "lodash:4.17.11",
+    "Original_exploitability": 1,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Library used, but specific vulnerable functions (toNumber, trimEnd) are not found to be called with untrusted input in User Code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7598",
+    "Location": "minimist:1.2.0",
+    "Original_exploitability": 25,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Vulnerability identified in dependency, but no explicit exploitable API usage found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-10790",
+    "Location": "taffydb:2.6.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-37890",
+    "Location": "ws:6.2.2",
+    "Original_exploitability": 50,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "API used for WebSockets but vulnerability is triggered by specific header overflows handled by the library itself; no vulnerable configuration found in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:4.17.20",
+    "Original_exploitability": 50,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Library used, but specific vulnerable functions (toNumber, trimEnd) are not found to be called with untrusted input in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-16138",
+    "Location": "mime:1.3.4",
+    "Original_exploitability": 10,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47914",
+    "Location": "golang.org/x/crypto:v0.44.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "Dependency present in go.mod. No specific SSH agent server usage found in pkg, but library is part of core Go dependencies.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-28500",
+    "Location": "lodash:4.17.11",
+    "Original_exploitability": 50,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "Library used, but specific vulnerable functions (toNumber, trimEnd) are not found to be called with untrusted input in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23382",
+    "Location": "postcss:5.2.18",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7339",
+    "Location": "on-headers:1.0.2",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66031",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-26520",
+    "Location": "postgresql:42.1.4",
+    "Original_exploitability": 50,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "JDBC driver found in pkg/acceptance/testdata/java/pom.xml. No evidence of untrusted control over loggerFile/loggerLevel connection properties.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-45590",
+    "Location": "body-parser:1.20.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23436",
+    "Location": "immer:8.0.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-21681",
+    "Location": "marked:0.3.19",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43799",
+    "Location": "send:0.18.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version vulnerable, but no explicit exploitable path found beyond default package usage.",
+    "Assessment": "Correct"
+  }
+]

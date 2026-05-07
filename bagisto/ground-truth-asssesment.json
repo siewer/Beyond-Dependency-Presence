@@ -1,0 +1,147 @@
+[
+  {
+    "Vulnerability": "CVE-2026-21450",
+    "Location": "bagisto/bagisto:packages/Webkul/Admin/src/Http/Controllers/Reporting/Controller.php",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "✅ API call confirmed. The dynamic method call '$this->{$requestedType}()' exists in Controller.php:24, but it is strictly guarded by 'validateRequestedType()' whitelist validation, preventing arbitrary injection. 0% score is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-16403",
+    "Location": "bagisto/bagisto:packages/Webkul/Shop/src/Http/Controllers/Customer/Account/AddressController.php",
+    "Original_exploitability": 60,
+    "Exploitability": 5,
+    "Exploitability_explanation": "✅ API call confirmed. Controllers perform database lookups for customer data, but every instance (e.g., AddressController:92-95, 181-184) now enforces 'customer_id' constraints from session auth. The original 60% vulnerability is no longer reachable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-36237",
+    "Location": "bagisto/bagisto:routes/web.php",
+    "Original_exploitability": 93,
+    "Exploitability": 1,
+    "Exploitability_explanation": "✅ API call confirmed. State-changing routes exist, but they are all protected by the 'VerifyCsrfToken' middleware. No routes omit CSRF protection in the 2.4.1 version. Original 93% is outdated.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-21448",
+    "Location": "bagisto/bagisto:packages/Webkul/Admin/src/Resources/views/sales/address.blade.php",
+    "Original_exploitability": 97,
+    "Exploitability": 1,
+    "Exploitability_explanation": "✅ API call confirmed. User-controlled address fields are rendered in multiple templates, but they are consistently protected by 'v-pre' (e.g., address.blade.php:24) in the UI and standard Blade escaping in PDFs (pdf.blade.php:376).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-62417",
+    "Location": "bagisto/bagisto:packages/Webkul/DataGrid/src/Exports/DataGridExport.php",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "✅ API call confirmed. CSV exports are generated via 'DataGridExport.php', but a mandatory 'sanitize()' method (lines 51-85) now prefixes all dangerous characters with a single quote. 15% original is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21446",
+    "Location": "bagisto/bagisto:bootstrap/app.php",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "✅ API call confirmed. Installer API routes exist in 'web.php', but the 'CanInstall' middleware is applied globally (bootstrap/app.php:37), preventing any access after the system creation. 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-14933",
+    "Location": "bagisto/bagisto:packages/Webkul/Admin/src/Http/Controllers/CMS/PageController.php",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "✅ API call confirmed. CMS pages handle HTML content, but it is now passed through 'clean_content()' which uses HTMLPurifier and strips Blade tags. The 50% score does not reflect the current mitigation.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-36236",
+    "Location": "bagisto/bagisto:packages/Webkul/Core/src/Traits/Sanitizer.php",
+    "Original_exploitability": 80,
+    "Exploitability": 2,
+    "Exploitability_explanation": "✅ API call confirmed. SVG uploads are processed, but they now invoke the 'svg-sanitize' library via the 'Sanitizer' trait (line 33). This mitigation renders the original 80% score incorrect.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-36238",
+    "Location": "bagisto/bagisto:packages/Webkul/Shop/src/Http/Controllers/Customer/Account/OrderController.php",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "✅ API call confirmed. Invoice access exists via 'printInvoice()', but it explicitly validates order ownership (OrderController:92-96). 0% original score is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-62416",
+    "Location": "bagisto/bagisto:",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. No vulnerable data flows matching this CVE were identified in the 2.4.1 version. Original score 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-27499",
+    "Location": "bagisto/bagisto:",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. No instances of the vulnerable function patterns are reachable in the current codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21449",
+    "Location": "bagisto/bagisto:",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Theme customization logic has been hardened and no direct SSTI vectors remain. Original score 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-62414",
+    "Location": "bagisto/bagisto:packages/Webkul/Shop/src/Resources/views/partials/breadcrumbs.blade.php",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "✅ API call confirmed. Breadcrumbs are rendered, but protection is ensured by Blade escaping and the 'v-pre' directive (line 3). Original 0% score is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-62415",
+    "Location": "bagisto/bagisto:",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Product attribute labeling logic is secure in version 2.4.1. Original 0% score is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-62418",
+    "Location": "bagisto/bagisto:",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Customer group naming does not present an XSS vector in the current implementation.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21451",
+    "Location": "bagisto/bagisto:",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Tax category handling is properly escaped in the administrative panel.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21447",
+    "Location": "bagisto/bagisto:",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "✅ API call confirmed. Admin file uploads exist, but they are enforced via extension and MIME-type validators. 0% score is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-60880",
+    "Location": "bagisto/bagisto:",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Targeted SQL injection vector was not found in the current ORM-based implementation. 0% is correct.",
+    "Assessment": "Correct"
+  }
+]
+

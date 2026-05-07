@@ -1,0 +1,58 @@
+[
+  {
+    "Vulnerability": "CVE-2024-52046",
+    "Location": "mina-core:2.2.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Apache MINA's insecure deserialization occurs when ObjectSerializationCodecFactory or ObjectSerializationDecoder is used. No usage of these classes or MINA IoBuffer.getObject() was found in the codebase. MINA is not even listed in pom.xml, suggesting it might be an unused transitive dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-1605",
+    "Location": "jetty-server:12.1.5",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerability requires GzipHandler to process compressed requests and return uncompressed responses. No usage of GzipHandler was found in the application configuration (web.xml or Jetty configs).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Minimatch is a dev dependency used by build tools like Grunt. It is not bundled in the production webapp assets (checked _res/node/js) and no usage was found in active frontend code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Minimatch is a dev dependency used by build tools like Grunt. It is not bundled in the production webapp assets and no usage was found in active frontend code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Minimatch is a dev dependency used by build tools like Grunt. It is not bundled in the production webapp assets and no usage was found in active frontend code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Lodash is a dev dependency used by build tools. It is not bundled in the production webapp assets and no usage of _.unset or _.omit was found in the frontend source code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-68161",
+    "Location": "log4j-core:2.25.2",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerability affects SocketAppender. The application's log4j2.xml only configures the Console appender. SocketAppender is not used.",
+    "Assessment": "Correct"
+  }
+]

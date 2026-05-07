@@ -1,0 +1,242 @@
+[
+  {
+    "Vulnerability": "CVE-2024-3772",
+    "Location": "pydantic:2.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API EmailStr/validate_email is not used in the codebase. Pydantic is used only for Schemas and Settings.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69223",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 15,
+    "Exploitability": 40,
+    "Exploitability_explanation": "ComfyUI uses aiohttp.ClientSession for various tasks (e.g., in comfy_api_nodes). auto_decompress is enabled by default, making it vulnerable to Zip Bombs if connecting to untrusted servers.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-69227",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 70,
+    "Exploitability": 70,
+    "Exploitability_explanation": "ComfyUI server uses request.post() in server.py (e.g., for image uploads). This is vulnerable to an infinite loop if the server is run with Python optimizations enabled.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69226",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 15,
+    "Exploitability": 40,
+    "Exploitability_explanation": "ComfyUI server uses request.post() which is susceptible to DoS via malicious multipart/form-data payloads.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-3933",
+    "Location": "transformers:4.50.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API DonutProcessor.token2json() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69228",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 15,
+    "Exploitability": 60,
+    "Exploitability_explanation": "ComfyUI server uses request.post() for file uploads. Without strict body size limits at the application layer, it is vulnerable to memory exhaustion.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-53643",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 80,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vulnerability requires the pure Python HTTP parser. ComfyUI typically runs in environments where C extensions are available, making exploitation unlikely (Internal Usage Only rule).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-69224",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vulnerability requires the pure Python HTTP parser. High probability is only assigned if pure Python mode is confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6051",
+    "Location": "transformers:4.50.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API EnglishNormalizer.normalize_numbers() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6638",
+    "Location": "transformers:4.50.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API MarianTokenizer.remove_language_code() is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32640",
+    "Location": "simpleeval:1.0.0",
+    "Original_exploitability": 1,
+    "Exploitability": 60,
+    "Exploitability_explanation": "ComfyMathExpression node uses simpleeval to evaluate user-provided expressions. Pre-1.0.5 versions have a sandbox escape and the expression input is untrusted.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-3262",
+    "Location": "transformers:4.50.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability is in transformers-cli chat command, which is not used by ComfyUI.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34525",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 0,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Core aiohttp vulnerability affecting Host header validation. Reachable via the main ComfyUI server.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34515",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 0,
+    "Exploitability": 40,
+    "Exploitability_explanation": "ComfyUI uses web.static() extensively on Windows. Misconfigured or malicious custom node paths could lead to NTLMv2 hash leaks via UNC paths.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-69229",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 50,
+    "Exploitability": 65,
+    "Exploitability_explanation": "Core aiohttp vulnerability in chunked message processing, leading to CPU exhaustion. Reachable via server.py.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22815",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 0,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Core aiohttp vulnerability in header/trailer processing, leading to memory exhaustion.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34516",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 0,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Aiohttp client (used in comfy_api_nodes) is vulnerable to DoS from malicious multipart responses.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-5197",
+    "Location": "transformers:4.50.3",
+    "Original_exploitability": 10,
+    "Exploitability": 10,
+    "Exploitability_explanation": "ReDoS in weight name conversion. Only potentially triggered during model loading of specific formats.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3263",
+    "Location": "transformers:4.50.3",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "ReDoS in configuration file parsing. Low probability as it requires loading models from untrusted local/remote sources.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3264",
+    "Location": "transformers:4.50.3",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "ReDoS in dynamic module import parsing. ComfyUI core generally avoids dynamic module loading but usage is possible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6921",
+    "Location": "transformers:4.50.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "AdamWeightDecay optimizer is not used in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69225",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 80,
+    "Exploitability": 15,
+    "Exploitability_explanation": "ComfyUI uses web.Response with a hardcoded reason phrase in user_manager.py. No untrusted input reaches the reason parameter found in core.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34514",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 0,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Core aiohttp vulnerability in HTTP parsing. Reachable via the main ComfyUI server.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34519",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "CRLF injection in the reason parameter of web.Response. ComfyUI core uses hardcoded reason phrases.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34520",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 0,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Core hardening in aiohttp against various HTTP parsing attacks.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34513",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 0,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Core hardening in aiohttp against various HTTP parsing attacks.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34517",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 0,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Core hardening in aiohttp against various HTTP parsing attacks.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-34518",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 0,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Core hardening in aiohttp against various HTTP parsing attacks.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-3777",
+    "Location": "transformers:4.50.3",
+    "Original_exploitability": 30,
+    "Exploitability": 1,
+    "Exploitability_explanation": "transformers.image_utils is not used in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-69230",
+    "Location": "aiohttp:3.11.8",
+    "Original_exploitability": 15,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Core aiohttp hardening/DoS vulnerability. Reachable via the main server.",
+    "Assessment": "Incorrect"
+  }
+]

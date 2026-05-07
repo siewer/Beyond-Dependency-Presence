@@ -1,0 +1,122 @@
+[
+  {
+    "Vulnerability": "CVE-2024-40464",
+    "Location": "c:\\Users\\majab\\OneDrive\\Desktop\\repo\\beego\\core\\logs\\smtp.go",
+    "Original_exploitability": 80,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed: s.sendMail() on smtp.go:162. Constraints satisfied 100%: InsecureSkipVerify is true by default (smtp.go:44 and 98).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-31836",
+    "Location": "c:\\Users\\majab\\OneDrive\\Desktop\\repo\\beego\\server\\web\\tree.go",
+    "Original_exploitability": 96,
+    "Exploitability": 95,
+    "Exploitability_explanation": "✅ API call confirmed: l.match() in leafInfo.match. Constraints satisfied 100%: path.Join on untrusted wildcard values causes direct path traversal.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-40465",
+    "Location": "c:\\Users\\majab\\OneDrive\\Desktop\\repo\\beego\\client\\cache\\file.go",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "✅ API call confirmed: fc.getCacheFileName() on file.go:154. Constraints satisfied 75%: Weak MD5 hashing (assumed) allows for cache predictability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-30080",
+    "Location": "c:\\Users\\majab\\OneDrive\\Desktop\\repo\\beego\\server\\web\\tree.go",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "✅ API call confirmed: match extension handling in tree.go:347. Constraints 100%: Potential bypass of access control via .xml suffixes. Original 15% is significantly underscored for a confirmed core bypass.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-30223",
+    "Location": "c:\\Users\\majab\\OneDrive\\Desktop\\repo\\beego\\server\\web\\templatefunc.go",
+    "Original_exploitability": 8,
+    "Exploitability": 70,
+    "Exploitability_explanation": "✅ API call confirmed: renderFormField() in templatefunc.go:309. Constraints 100%: Function returns template.HTML (unsafe). Original 8% is incorrect for an explicit XSS vector.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-31259",
+    "Location": "c:\\Users\\majab\\OneDrive\\Desktop\\repo\\beego\\server\\web\\tree.go",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "✅ API call confirmed: Suffix matching logic in tree.go:343. Constraints 100%: High-impact bypass of auth filters. Original 15% is incorrect.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-39391",
+    "Location": "c:\\Users\\majab\\OneDrive\\Desktop\\repo\\beego\\server\\web\\adminui.go",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "✅ API call confirmed: qpsTpl rendering in adminui.go. Constraints 75%: Admin dashboard displays unsanitized URI paths. Impact is confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-27116",
+    "Location": "c:\\Users\\majab\\OneDrive\\Desktop\\repo\\beego\\core\\admin\\profile.go",
+    "Original_exploitability": 90,
+    "Exploitability": 90,
+    "Exploitability_explanation": "✅ API call confirmed: utils.OpenFileSecure() on profile.go:68. Constraints 100%:profiling files created insecurely allow local symlink attacks.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-27117",
+    "Location": "c:\\Users\\majab\\OneDrive\\Desktop\\repo\\beego\\core\\admin\\profile.go",
+    "Original_exploitability": 15,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed: OpenFileSecure in GetCPUProfile. Constraints 100%: Identical to CVE-2021-27116 (90%). Original 15% is inconsistent and incorrect.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-55885",
+    "Location": "c:\\Users\\majab\\OneDrive\\Desktop\\repo\\beego\\client\\cache\\file.go",
+    "Original_exploitability": 45,
+    "Exploitability": 45,
+    "Exploitability_explanation": "✅ API call confirmed: FileCache hashing in Init. Constraints 75%: Similar to 2024-40465, MD5 hashing of cache keys is weak.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58181",
+    "Location": "golang.org/x/crypto:v0.38.0",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call not found: x/crypto/ssh is not used in the codebase. Probability must be 0-2% per calibration rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26958",
+    "Location": "filippo.io/edwards25519:v1.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call not found: edwards25519 is an indirect dependency and not used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47914",
+    "Location": "golang.org/x/crypto:v0.38.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call not found: ssh/agent is not used. Probability must be 0-2%. Original 15% is incorrect.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24051",
+    "Location": "go.opentelemetry.io/otel/sdk:v1.34.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "✅ API found in test file only (filter_test.go:39). Dead/Test usage + OS-specific (macOS) constraints = 1% probability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.72.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "✅ API confirmed: Client usage in etcd/config.go:164. Server-side authorization bypass is not applicable to client context.",
+    "Assessment": "Correct"
+  }
+]

@@ -1,0 +1,706 @@
+[
+  {
+    "Vulnerability": "CVE-2024-23334",
+    "Location": "aiohttp:3.9.1",
+    "Original_exploitability": 50.0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in active user code. aiohttp is a transitive dependency used internally by libraries. No direct path from user input to vulnerable function found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-39689",
+    "Location": "certifi:2023.11.17",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed. Vulnerable usage not found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-6345",
+    "Location": "setuptools:69.0.3",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. setuptools is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-39662",
+    "Location": "llama-index:0.5.4",
+    "Original_exploitability": 1.0,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in llama_datastore.py. However, the exploitability depends on specific index types and configurations not fully exposed to untrusted user input in this plugin's default setup.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28088",
+    "Location": "langchain-core:0.1.3",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed. LangChain components like langchain-core are in the dependency tree but no explicit usage of the vulnerable functions (like XML/Prompt templates) was found in core logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-29483",
+    "Location": "dnspython:2.4.2",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. dnspython is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-24762",
+    "Location": "python-multipart:0.0.6",
+    "Original_exploitability": 1.0,
+    "Exploitability": 80.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. `python-multipart` is used by FastAPI for parsing multi-part form data in the `/upsert-file` endpoint. This version is vulnerable to path traversal and DoS via large field names/values.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6984",
+    "Location": "langchain-community:0.0.6",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed. LangChain components like langchain-community are in the dependency tree but no explicit usage of the vulnerable functions (like XML/Prompt templates) was found in core logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4181",
+    "Location": "llama-index:0.5.4",
+    "Original_exploitability": 15.0,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in llama_datastore.py. However, the exploitability depends on specific index types and configurations not fully exposed to untrusted user input in this plugin's default setup.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-3571",
+    "Location": "langchain:0.0.352",
+    "Original_exploitability": 5.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed. LangChain components like langchain are in the dependency tree but no explicit usage of the vulnerable functions (like XML/Prompt templates) was found in core logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21226",
+    "Location": "azure-core:1.29.6",
+    "Original_exploitability": 70.0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in active user code. azure-core is a transitive dependency used internally by libraries. No direct path from user input to vulnerable function found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-8309",
+    "Location": "langchain:0.0.352",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed. LangChain components like langchain are in the dependency tree but no explicit usage of the vulnerable functions (like XML/Prompt templates) was found in core logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-50782",
+    "Location": "cryptography:41.0.7",
+    "Original_exploitability": 50.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. cryptography is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-29159",
+    "Location": "starlette:0.25.0",
+    "Original_exploitability": 90.0,
+    "Exploitability": 75.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. The application uses FastAPI's `UploadFile` (inheriting from Starlette's `UploadFile`) in the `/upsert-file` endpoint. This is a primary vector for DoS (large file rollover) and path traversal in older versions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-50447",
+    "Location": "pillow:10.1.0",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. pillow is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-27306",
+    "Location": "aiohttp:3.9.1",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. aiohttp usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-3651",
+    "Location": "idna:3.6",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. idna is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47273",
+    "Location": "setuptools:69.0.3",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. setuptools is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-61920",
+    "Location": "authlib:1.3.0",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. authlib is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-26130",
+    "Location": "cryptography:41.0.7",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. cryptography is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-23751",
+    "Location": "llama-index:0.5.4",
+    "Original_exploitability": 50.0,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in llama_datastore.py. However, the exploitability depends on specific index types and configurations not fully exposed to untrusted user input in this plugin's default setup.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-43859",
+    "Location": "h11:0.14.0",
+    "Original_exploitability": 55.0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in active user code. h11 is a transitive dependency used internally by libraries. No direct path from user input to vulnerable function found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-23829",
+    "Location": "aiohttp:3.9.1",
+    "Original_exploitability": 5.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. aiohttp usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-3829",
+    "Location": "qdrant-client:1.7.0",
+    "Original_exploitability": 25.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed. Vulnerable usage not found in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-30251",
+    "Location": "aiohttp:3.9.1",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. aiohttp usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52304",
+    "Location": "aiohttp:3.9.1",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. aiohttp usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28219",
+    "Location": "pillow:10.1.0",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. pillow is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-22190",
+    "Location": "gitpython:3.1.40",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. gitpython is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-12910",
+    "Location": "llama-index:0.5.4",
+    "Original_exploitability": 2.0,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in llama_datastore.py. However, the exploitability depends on specific index types and configurations not fully exposed to untrusted user input in this plugin's default setup.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-0727",
+    "Location": "cryptography:41.0.7",
+    "Original_exploitability": 50.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. cryptography is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-37891",
+    "Location": "urllib3:1.26.18",
+    "Original_exploitability": 2.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. urllib3 usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-35255",
+    "Location": "azure-identity:1.15.0",
+    "Original_exploitability": 50.0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in active user code. azure-identity is a transitive dependency used internally by libraries. No direct path from user input to vulnerable function found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-12911",
+    "Location": "llama-index:0.5.4",
+    "Original_exploitability": 50.0,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in llama_datastore.py. However, the exploitability depends on specific index types and configurations not fully exposed to untrusted user input in this plugin's default setup.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47874",
+    "Location": "starlette:0.25.0",
+    "Original_exploitability": 80.0,
+    "Exploitability": 75.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. The application uses FastAPI's `UploadFile` (inheriting from Starlette's `UploadFile`) in the `/upsert-file` endpoint. This is a primary vector for DoS (large file rollover) and path traversal in older versions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-37568",
+    "Location": "authlib:1.3.0",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. authlib is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-62706",
+    "Location": "authlib:1.3.0",
+    "Original_exploitability": 50.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. authlib is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-53981",
+    "Location": "python-multipart:0.0.6",
+    "Original_exploitability": 80.0,
+    "Exploitability": 80.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. `python-multipart` is used by FastAPI for parsing multi-part form data in the `/upsert-file` endpoint. This version is vulnerable to path traversal and DoS via large field names/values.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-3095",
+    "Location": "langchain-community:0.0.6",
+    "Original_exploitability": 50.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed. LangChain components like langchain-community are in the dependency tree but no explicit usage of the vulnerable functions (like XML/Prompt templates) was found in core logic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-5998",
+    "Location": "langchain-community:0.0.6",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed. LangChain components like langchain-community are in the dependency tree but no explicit usage of the vulnerable functions (like XML/Prompt templates) was found in core logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27962",
+    "Location": "authlib:1.3.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. authlib is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-1455",
+    "Location": "langchain-core:0.1.3",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed. LangChain components like langchain-core are in the dependency tree but no explicit usage of the vulnerable functions (like XML/Prompt templates) was found in core logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-65106",
+    "Location": "langchain-core:0.1.3",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed. LangChain components like langchain-core are in the dependency tree but no explicit usage of the vulnerable functions (like XML/Prompt templates) was found in core logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54121",
+    "Location": "starlette:0.25.0",
+    "Original_exploitability": 70.0,
+    "Exploitability": 75.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. The application uses FastAPI's `UploadFile` (inheriting from Starlette's `UploadFile`) in the `/upsert-file` endpoint. This is a primary vector for DoS (large file rollover) and path traversal in older versions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-57804",
+    "Location": "h2:4.1.0",
+    "Original_exploitability": 8.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. h2 usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-5629",
+    "Location": "pymongo:4.6.1",
+    "Original_exploitability": 93.0,
+    "Exploitability": 2.0,
+    "Exploitability_explanation": "\u2705 API call confirmed (motor.AsyncIOMotorClient), but the specific vulnerable BSON parsing paths (like JavaScript scope) are not triggered by standard Retrieval Plugin operations.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-2828",
+    "Location": "langchain-community:0.0.6",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed. LangChain components like langchain-community are in the dependency tree but no explicit usage of the vulnerable functions (like XML/Prompt templates) was found in core logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6211",
+    "Location": "llama-index:0.5.4",
+    "Original_exploitability": 15.0,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in llama_datastore.py. However, the exploitability depends on specific index types and configurations not fully exposed to untrusted user input in this plugin's default setup.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69227",
+    "Location": "aiohttp:3.9.1",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. aiohttp usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69228",
+    "Location": "aiohttp:3.9.1",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. aiohttp usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68664",
+    "Location": "langchain-core:0.1.3",
+    "Original_exploitability": 40.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed. LangChain components like langchain-core are in the dependency tree but no explicit usage of the vulnerable functions (like XML/Prompt templates) was found in core logic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47081",
+    "Location": "requests:2.31.0",
+    "Original_exploitability": 50.0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in active user code. requests is a transitive dependency used internally by libraries. No direct path from user input to vulnerable function found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-0243",
+    "Location": "langchain:0.0.352",
+    "Original_exploitability": 50.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed. LangChain components like langchain are in the dependency tree but no explicit usage of the vulnerable functions (like XML/Prompt templates) was found in core logic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-69229",
+    "Location": "aiohttp:3.9.1",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. aiohttp usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68480",
+    "Location": "marshmallow:3.20.1",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. marshmallow is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-59420",
+    "Location": "authlib:1.3.0",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. authlib is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-34062",
+    "Location": "tqdm:4.66.1",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. tqdm is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-35195",
+    "Location": "requests:2.31.0",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. requests usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66471",
+    "Location": "urllib3:1.26.18",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. urllib3 usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24486",
+    "Location": "python-multipart:0.0.6",
+    "Original_exploitability": 80.0,
+    "Exploitability": 80.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. `python-multipart` is used by FastAPI for parsing multi-part form data in the `/upsert-file` endpoint. This version is vulnerable to path traversal and DoS via large field names/values.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21441",
+    "Location": "urllib3:1.26.18",
+    "Original_exploitability": 50.0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in active user code. urllib3 is a transitive dependency used internally by libraries. No direct path from user input to vulnerable function found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-0994",
+    "Location": "protobuf:4.25.1",
+    "Original_exploitability": 5.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. protobuf is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-36464",
+    "Location": "pypdf2:3.0.1",
+    "Original_exploitability": 85.0,
+    "Exploitability": 85.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. The `services/file.py` module uses `PyPDF2.PdfReader` to process PDF files uploaded via the `/upsert-file` endpoint, matching the vulnerable path for infinite loop DoS.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69226",
+    "Location": "aiohttp:3.9.1",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. aiohttp usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-1793",
+    "Location": "llama-index:0.5.4",
+    "Original_exploitability": 50.0,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in llama_datastore.py. However, the exploitability depends on specific index types and configurations not fully exposed to untrusted user input in this plugin's default setup.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-2965",
+    "Location": "langchain:0.0.352",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed. LangChain components like langchain are in the dependency tree but no explicit usage of the vulnerable functions (like XML/Prompt templates) was found in core logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-2965",
+    "Location": "langchain-community:0.0.6",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed. LangChain components like langchain-community are in the dependency tree but no explicit usage of the vulnerable functions (like XML/Prompt templates) was found in core logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7707",
+    "Location": "llama-index:0.5.4",
+    "Original_exploitability": 1.0,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in llama_datastore.py. However, the exploitability depends on specific index types and configurations not fully exposed to untrusted user input in this plugin's default setup.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32597",
+    "Location": "pyjwt:2.8.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. pyjwt is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-50181",
+    "Location": "urllib3:1.26.18",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. urllib3 usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68158",
+    "Location": "authlib:1.3.0",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. authlib is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69225",
+    "Location": "aiohttp:3.9.1",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. aiohttp usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69224",
+    "Location": "aiohttp:3.9.1",
+    "Original_exploitability": 5.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. aiohttp usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-53643",
+    "Location": "aiohttp:3.9.1",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. aiohttp usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-28490",
+    "Location": "authlib:1.3.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. authlib is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-28498",
+    "Location": "authlib:1.3.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. authlib is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-5569",
+    "Location": "zipp:3.17.0",
+    "Original_exploitability": 50.0,
+    "Exploitability": 60.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in `scripts/process_zip/process_zip.py`. A crafted ZIP file can trigger an infinite loop DoS during local extraction.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22701",
+    "Location": "filelock:3.13.1",
+    "Original_exploitability": 50.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. filelock is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24049",
+    "Location": "wheel:0.42.0",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. wheel is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26007",
+    "Location": "cryptography:41.0.7",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. cryptography is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69230",
+    "Location": "aiohttp:3.9.1",
+    "Original_exploitability": 50.0,
+    "Exploitability": 5.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in active user code. aiohttp is a transitive dependency used internally by libraries. No direct path from user input to vulnerable function found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-4565",
+    "Location": "protobuf:4.25.1",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. protobuf is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68146",
+    "Location": "filelock:3.13.1",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. filelock is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32874",
+    "Location": "ujson:5.9.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. ujson is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32875",
+    "Location": "ujson:5.9.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. ujson is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-h4gh-qq45-vh27",
+    "Location": "cryptography:41.0.7",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. cryptography is either a build tool, a transitive dependency, or its vulnerable functions are not called by the application's logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69223",
+    "Location": "aiohttp:3.9.1",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. aiohttp usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66418",
+    "Location": "urllib3:1.26.18",
+    "Original_exploitability": 5.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed in user code. urllib3 usage is internal to dependencies and doesn't process untrusted payloads in a vulnerable manner here.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26013",
+    "Location": "langchain-core:0.1.3",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c API call NOT confirmed. LangChain components like langchain-core are in the dependency tree but no explicit usage of the vulnerable functions (like XML/Prompt templates) was found in core logic.",
+    "Assessment": "Correct"
+  }
+]

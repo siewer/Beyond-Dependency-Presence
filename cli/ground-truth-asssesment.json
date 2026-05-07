@@ -1,0 +1,42 @@
+[
+  {
+    "Vulnerability": "CVE-2024-52308",
+    "Location": "pkg/cmd/codespace/ssh.go",
+    "Original_exploitability": 96,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. The remote user name retrieved from the RPC server is used to construct the SSH command in codespace/ssh.go. A malicious server can inject SSH client options (e.g., -oProxyCommand) via a crafted username. While current code has regex validation, assuming vulnerability makes it highly exploitable as it's a core path for `gh code ssh`.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-54132",
+    "Location": "pkg/cmd/run/download/download.go",
+    "Original_exploitability": 50,
+    "Exploitability": 60,
+    "Exploitability_explanation": "✅ API call confirmed. The `runDownload` function in download.go handles artifact downloads and extractions. Malicious artifact names (e.g., '..') could lead to path traversal. The usage is confirmed in active code, and while `safepaths` now provides protection, the logic remains central to the command's operation, aligning with the original medium-high score.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25204",
+    "Location": "pkg/cmd/attestation/verify/verify.go",
+    "Original_exploitability": 15,
+    "Exploitability": 25,
+    "Exploitability_explanation": "✅ API call confirmed. The `gh attestation verify` command's logic for handling missing attestations is confirmed in verify.go. A flaw in error handling can cause the command to exit with code 0 (success) even when no attestations match the policy. This is reachable and easily triggered, but the impact is localized to CI/CD gate bypasses.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-53858",
+    "Location": "pkg/cmd/auth/gitcredential/helper.go",
+    "Original_exploitability": 93,
+    "Exploitability": 90,
+    "Exploitability_explanation": "✅ API call confirmed. `gh` acts as a git credential helper, and the logic in helper.go retrieves tokens for hosts using the `ActiveToken` API. A flaw in the `IsEnterprise` check (in the auth library) allows tokens to be leaked to malicious non-GitHub domains when submodules are cloned. This is highly exploitable and automated.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "internal/codespaces/rpc/invoker.go",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "✅ API call confirmed. gRPC is used for internal RPC communication in codespaces/rpc/invoker.go. This vulnerability pertains to an authorization bypass in the gRPC-Go server. While `gh` is primarily a client, it uses the vulnerable library version (assumed). The risk is low (10%) as there is no prominent gRPC server implementation in the CLI that would be exposed to this bypass, justifying the original score of 0.",
+    "Assessment": "Correct"
+  }
+]
