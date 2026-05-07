@@ -1,0 +1,50 @@
+[
+  {
+    "Vulnerability": "CVE-2024-27302",
+    "Location": "github.com/zeromicro/go-zero:rest/internal/cors/handlers.go",
+    "Original_exploitability": 90,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. The framework implements CORS origin validation in rest/internal/cors/handlers.go using strings.HasSuffix. Although the current code includes a dot prefix ('.'+allow) as a mitigation, assuming a vulnerable version as per instructions, the core logic for suffix-based origin matching is present and reachable via Middleware and NotAllowedHandler. High probability because it's a core framework feature.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58181",
+    "Location": "golang.org/x/crypto:v0.41.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call not confirmed. No usage of golang.org/x/crypto/ssh server with GSSAPI authentication was found in the go-zero codebase. The library is an indirect dependency but the vulnerable API is not called.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26958",
+    "Location": "filippo.io/edwards25519:v1.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call not confirmed. The vulnerable MultiScalarMult function in filippo.io/edwards25519 is not called anywhere in the user code. This is an advanced/rarely used API not utilized by go-zero.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47914",
+    "Location": "golang.org/x/crypto:v0.41.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call not confirmed. No usage of the SSH agent server (ssh/agent package) was found in the codebase. The vulnerability requires running an SSH agent server, which go-zero does not implement.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24051",
+    "Location": "go.opentelemetry.io/otel/sdk:v1.24.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call not confirmed. While go.opentelemetry.io/otel/sdk is used, go-zero uses resource.NewSchemaless which does not automatically trigger the vulnerable host ID detection logic that executes 'ioreg' on macOS. No explicit calls to the vulnerable resource detection path were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.65.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call not confirmed. Although gRPC is used extensively, no path-based authorization interceptors (using info.FullMethod for security decisions) were found. The existing auth interceptor uses metadata-based tokens and does not rely on the pseudo-header path validation vulnerable in gRPC-Go.",
+    "Assessment": "Correct"
+  }
+]

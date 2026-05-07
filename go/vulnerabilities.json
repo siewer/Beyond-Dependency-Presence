@@ -1,0 +1,74 @@
+[
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2024-4068",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-02-18T12:51:51.069Z",
+    "Source": "SCA",
+    "Location": "braces:3.0.2"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2023-44270",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-02-18T12:51:51.069Z",
+    "Source": "SCA",
+    "Location": "postcss:8.4.23"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-4067",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-02-18T12:51:51.069Z",
+    "Source": "SCA",
+    "Location": "micromatch:4.0.5"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-55565",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-02-18T12:51:51.069Z",
+    "Source": "SCA",
+    "Location": "nanoid:3.3.6"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2024-21538",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-02-18T12:51:51.069Z",
+    "Source": "SCA",
+    "Location": "cross-spawn:6.0.5"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2024-21538",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-02-18T12:51:51.070Z",
+    "Source": "SCA",
+    "Location": "cross-spawn:7.0.3"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-64718",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-02-18T12:51:51.070Z",
+    "Source": "SCA",
+    "Location": "js-yaml:4.1.0"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "CVE-2025-5889",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-02-18T12:51:51.070Z",
+    "Source": "SCA",
+    "Location": "brace-expansion:1.1.11"
+  }
+]

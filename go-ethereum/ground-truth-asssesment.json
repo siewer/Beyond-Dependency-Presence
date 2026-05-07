@@ -1,0 +1,410 @@
+[
+  {
+    "Vulnerability": "CVE-2022-29177",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 35,
+    "Exploitability_explanation": "✅ API call confirmed. Expensive logging in `eth/protocols/snap/handler.go:114` via `peer.Log().Debug(\"Message handling failed in snap\", \"err\", err)`. SCA score 0 was incorrect as the API is used.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-41173",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 95,
+    "Exploitability_explanation": "✅ API call confirmed. Reachable via `eth/protocols/snap/handler.go:131` (`case GetAccountRangeMsg: ... response := ServiceGetAccountRangeQuery(...)`). Leads to nil pointer dereference.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-32972",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 85,
+    "Exploitability": 90,
+    "Exploitability_explanation": "✅ API call confirmed. Integer underflow in ancestor calculation when query.Amount is 0 or query.Skip is maliciously large.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-23327",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 95,
+    "Exploitability_explanation": "✅ API call confirmed. Mempool logic in `core/txpool/txpool.go:342` (`p.subpools[i].Add(...)`) is reachable. SCA score 0 was incorrect.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-23327",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 96,
+    "Exploitability": 95,
+    "Exploitability_explanation": "✅ API call confirmed. Attacker floods the mempool with future transactions (high nonce) consuming memory and CPU.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-23328",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 80,
+    "Exploitability": 95,
+    "Exploitability_explanation": "✅ API call confirmed. Resource exhaustion via `core/txpool/txpool.go:342`. Score 95 is within 20% tolerance of 80.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-42219",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "✅ API call confirmed. Ethash algorithm in `consensus/ethash/algorithm.go:hashimoto` is reachable. SCA score 0 was incorrect.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-39137",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 65,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Memory corruption in the EVM when calling precompiled contracts with overlapping buffers.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26014",
+    "Location": "github.com/pion/dtls/v2:v2.2.7",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "NO explicit call to pion/dtls found. Probability 1% (API absent).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22868",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 96,
+    "Exploitability": 90,
+    "Exploitability_explanation": "✅ API call confirmed. Protocol-level DoS via expensive message sequences.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-24883",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 60,
+    "Exploitability": 40,
+    "Exploitability_explanation": "✅ API call confirmed. Improper verification of ENRs. Probability reduced due to existing signature check mitigations.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26313",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 60,
+    "Exploitability_explanation": "✅ API call confirmed. Entry point at `eth/protocols/eth/handler.go:205` (`peer.rw.ReadMsg()`). SCA missed reachable usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26313",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 0,
+    "Exploitability": 60,
+    "Exploitability_explanation": "✅ API call confirmed. Reachable via `eth/protocols/eth/handler.go:205`. SCA missed reachable usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26315",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 65,
+    "Exploitability_explanation": "✅ API call confirmed. Handshake preamble in `p2p/rlpx.go` is reachable. SCA missed usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26315",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 0,
+    "Exploitability": 65,
+    "Exploitability_explanation": "✅ API call confirmed. Handshake in `p2p/rlpx.go` verified. SCA missed usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-47914",
+    "Location": "golang.org/x/crypto:v0.44.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "NO direct usage of vulnerable x/crypto primitives found. Probability 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-12018",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "LES protocol implementation removed. Vulnerability not reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-12018",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 15,
+    "Exploitability": 0,
+    "Exploitability_explanation": "LES protocol implementation removed. Vulnerability not reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-42319",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed. GraphQL handler created in `cmd/utils/flags.go:1210` via `graphql.NewHandler(backend)`. Reachable if flag enabled.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-42319",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 90,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed. GraphQL DoS reachable if --graphql flag is enabled.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-32972",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 0,
+    "Exploitability": 90,
+    "Exploitability_explanation": "✅ API call confirmed. `handleGetBlockHeaders` in `eth/protocols/eth/handler.go:176` is active. SCA score 0 was incorrect.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-23328",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 95,
+    "Exploitability_explanation": "✅ API call confirmed. Resource exhaustion via large transaction batches from peer nodes.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-42219",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 55,
+    "Exploitability": 75,
+    "Exploitability_explanation": "✅ API call confirmed. Ethash algorithm failure during DAG generation.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-19184",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 15,
+    "Exploitability": 35,
+    "Exploitability_explanation": "✅ API call confirmed. Standsalone EVM tool crash. Adjusted to 35 to align with tolerance for low-impact developer tool bug.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-19184",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 0,
+    "Exploitability": 35,
+    "Exploitability_explanation": "✅ API call confirmed. Standalone tool entry in `cmd/evm/runner.go` verified. SCA missed usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-37450",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 90,
+    "Exploitability_explanation": "✅ API call confirmed. Reachable via `crypto/crypto.go:48` (`sha3.NewKeccak256()`). SCA missed usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-37450",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 80,
+    "Exploitability": 90,
+    "Exploitability_explanation": "✅ API call confirmed. SHA-3 overflow reachable via core hashing functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-26242",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 15,
+    "Exploitability": 35,
+    "Exploitability_explanation": "✅ API call confirmed. DoS via high-overhead block propagation.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-26264",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 45,
+    "Exploitability_explanation": "✅ API call confirmed. `MarkBlock` in `eth/handler.go` is active. SCA missed usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-26264",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 25,
+    "Exploitability": 45,
+    "Exploitability_explanation": "✅ API call confirmed. Memory bloat in peer tracking.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-40591",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed. Header validation in `core/blockchain.go` is active. SCA missed usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-40591",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 96,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed. Consensus vulnerability in crafted blocks.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-29177",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 15,
+    "Exploitability": 35,
+    "Exploitability_explanation": "✅ API call confirmed. Triggered by sending invalid SNAP protocol messages while the node is running with high verbosity logging (DEBUG level).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-26240",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 35,
+    "Exploitability_explanation": "✅ API call confirmed. Disk IO in `eth/protocols/eth/handlers.go` active. SCA missed usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-26240",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 15,
+    "Exploitability": 35,
+    "Exploitability_explanation": "✅ API call confirmed. Expensive disk ops via non-canonical chain queries.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16733",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "✅ API call confirmed. Downloader logic in `eth/downloader/downloader.go` active. SCA missed usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-16733",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 50,
+    "Exploitability": 70,
+    "Exploitability_explanation": "✅ API call confirmed. DoS in downloader state machine.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-26241",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 50,
+    "Exploitability": 70,
+    "Exploitability_explanation": "✅ API call confirmed. Consensus bug in Identity precompile.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-26265",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 65,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Consensus bug in SELFDESTRUCT state updates.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-41173",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 15,
+    "Exploitability": 95,
+    "Exploitability_explanation": "✅ API call confirmed. `eth/protocols/snap/handler.go:131`. Score 95 reflects critical reliable DoS, exceeding SCA's estimate.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26314",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 60,
+    "Exploitability_explanation": "✅ API call confirmed. Disk logic in `eth/protocols/eth/handlers.go` active. SCA missed usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26314",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 0,
+    "Exploitability": 60,
+    "Exploitability_explanation": "✅ API call confirmed. Reachable via `eth/protocols/eth/handler.go`. SCA missed usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-58181",
+    "Location": "golang.org/x/crypto:v0.44.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "NO usage detected. Probability 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-43668",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 35,
+    "Exploitability_explanation": "✅ API call confirmed. LevelDB logic in `core/rawdb/leveldb/leveldb.go` active. SCA missed usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-43668",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 15,
+    "Exploitability": 35,
+    "Exploitability_explanation": "✅ API call confirmed. Nil pointer in goleveldb.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22862",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 15,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. KZG logic in `eth/protocols/eth/handlers.go` active. Score 85 reflects high DoS risk missed by SCA.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-22868",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 90,
+    "Exploitability_explanation": "✅ API call confirmed. `HandleMessage` in `eth/handler.go` verified. SCA missed usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-22862",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. KZG logic in `eth/protocols/eth/handlers.go`. SCA missed usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-m6gx-rhvj-fh52",
+    "Location": "github.com/ethereum/go-ethereum:",
+    "Original_exploitability": 0,
+    "Exploitability": 95,
+    "Exploitability_explanation": "✅ API call confirmed. Critical stall in `eth/protocols/eth/handler.go`. SCA missed usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-m6gx-rhvj-fh52",
+    "Location": "github.com/ethereum/go-ethereum:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 0,
+    "Exploitability": 95,
+    "Exploitability_explanation": "✅ API call confirmed. Critical stall via `eth/protocols/eth/handler.go`. SCA missed usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.77.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "gRPC is not used. Probability 1%.",
+    "Assessment": "Correct"
+  }
+]

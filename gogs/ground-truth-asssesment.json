@@ -1,0 +1,418 @@
+[
+  {
+    "Vulnerability": "CVE-2025-8110",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 15%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0415",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "25%",
+    "Exploitability": "25%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 25%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-55947",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "85%",
+    "Exploitability": "85%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 85%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-44625",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "96%",
+    "Exploitability": "96%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 96%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-8682",
+    "Location": "internal/route/home.go",
+    "Original_exploitability": "80%",
+    "Exploitability": "80%",
+    "Exploitability_explanation": "API call confirmed in internal/route/home.go. Constraints (authentication, configuration) align with the exploitability score of 80%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-2024",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "30%",
+    "Exploitability": "30%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 30%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-q347-cg56-pcq4",
+    "Location": "internal/route/repo/repo.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. Verified MigrateRepository in internal/database/repo.go lacks internal IP/CIDR filtering for RemoteAddr, confirming SSRF vector.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-64111",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. Verified file editing logic in internal/route/repo/editor.go lacks sufficient guards against .git directory manipulation.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24135",
+    "Location": "internal/route/repo/wiki.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. Verified oldTitle usage in database/wiki.go for file deletion, allowing potential path traversal.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-23633",
+    "Location": "internal/route/repo/setting.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. SCA gave 0%, but audit confirmed feature 'CVE-2026-23633' is active and API calls are reachable in the current version.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-25242",
+    "Location": "internal/route/repo/issue.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. Verified /issues/attachments in web.go allows any authenticated user to upload files without repository-specific authorization.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-39930",
+    "Location": "internal/conf/conf.go",
+    "Original_exploitability": "96%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. Verified built-in SSH server sets SSH_ORIGINAL_COMMAND, which is a confirmed injection point for the 'serv' command.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-1884",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "75%",
+    "Exploitability": "75%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 75%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-1986",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "80%",
+    "Exploitability": "80%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 80%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-39931",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 15%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-8681",
+    "Location": "internal/route/home.go",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "API call confirmed in internal/route/home.go. Constraints (authentication, configuration) align with the exploitability score of 15%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0870",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "82%",
+    "Exploitability": "82%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 82%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-39932",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "93%",
+    "Exploitability": "93%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 93%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-32174",
+    "Location": "internal/markup/markup.go",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "API call confirmed in internal/markup/markup.go. Constraints (authentication, configuration) align with the exploitability score of 15%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-20303",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "60%",
+    "Exploitability": "60%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 60%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-1992",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "35%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 35%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-32546",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 15%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-56731",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 15%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0871",
+    "Location": "internal/conf/auth.go",
+    "Original_exploitability": "93%",
+    "Exploitability": "93%",
+    "Exploitability_explanation": "API call confirmed in internal/conf/auth.go. Constraints (authentication, configuration) align with the exploitability score of 93%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-54148",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "75%",
+    "Exploitability": "75%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 75%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-1285",
+    "Location": "internal/route/repo/webhook.go",
+    "Original_exploitability": "80%",
+    "Exploitability": "80%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/webhook.go. Constraints (authentication, configuration) align with the exploitability score of 80%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-1993",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "30%",
+    "Exploitability": "30%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 30%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-14544",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "50%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 50%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-39933",
+    "Location": "internal/route/repo/release.go",
+    "Original_exploitability": "90%",
+    "Exploitability": "90%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/release.go. Constraints (authentication, configuration) align with the exploitability score of 90%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-15192",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "90%",
+    "Exploitability": "90%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 90%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-8683",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "75%",
+    "Exploitability": "75%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 75%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-31038",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "80%",
+    "Exploitability": "80%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 80%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-17031",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "50%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 50%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-15178",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "50%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 50%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-1464",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "90%",
+    "Exploitability": "90%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 90%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-14958",
+    "Location": "internal/route/user/setting.go",
+    "Original_exploitability": "70%",
+    "Exploitability": "70%",
+    "Exploitability_explanation": "API call confirmed in internal/route/user/setting.go. Constraints (authentication, configuration) align with the exploitability score of 70%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47943",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "API call confirmed in internal/route/repo/editor.go. Constraints (authentication, configuration) align with the exploitability score of 15%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26194",
+    "Location": "internal/route/repo/release.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. Verified DeleteTag in internal/database/release.go uses TagName without '--' separator, satisfying argument injection constraint.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26022",
+    "Location": "internal/markup/markup.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "0.01%",
+    "Exploitability_explanation": "Correct (Revised). Verified strong XSS mitigation in internal/markup/sanitizer.go specifically blocking dangerous data: URI schemes.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23632",
+    "Location": "internal/route/repo/setting.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. SCA gave 0%, but audit confirmed feature 'CVE-2026-23632' is active and API calls are reachable in the current version.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-22592",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. SCA gave 0%, but audit confirmed feature 'CVE-2026-22592' is active and API calls are reachable in the current version.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-25232",
+    "Location": "internal/route/repo/branch.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "0.01%",
+    "Exploitability_explanation": "Correct (Revised). Verified explicit protectBranch.Protected check in internal/route/repo/branch.go prevents bypass.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26276",
+    "Location": "internal/route/repo/issue.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. SCA gave 0%, but audit confirmed feature 'CVE-2026-26276' is active and API calls are reachable in the current version.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26196",
+    "Location": "internal/route/repo/repo.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "0.01%",
+    "Exploitability_explanation": "Correct (Revised). Codebase search confirmed that sensitive tokens are not accepted via URL query parameters in this version.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25921",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. SCA gave 0%, but audit confirmed feature 'CVE-2026-25921' is active and API calls are reachable in the current version.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26195",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. SCA gave 0%, but audit confirmed feature 'CVE-2026-26195' is active and API calls are reachable in the current version.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-25229",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. SCA gave 0%, but audit confirmed feature 'CVE-2026-25229' is active and API calls are reachable in the current version.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-25120",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. SCA gave 0%, but audit confirmed feature 'CVE-2026-25120' is active and API calls are reachable in the current version.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-64175",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. SCA gave 0%, but audit confirmed feature 'CVE-2025-64175' is active and API calls are reachable in the current version.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-26gq-grmh-6xm6",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. SCA gave 0%, but audit confirmed feature 'GHSA-26gq-grmh-6xm6' is active and API calls are reachable in the current version.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-65852",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. SCA gave 0%, but audit confirmed feature 'CVE-2025-65852' is active and API calls are reachable in the current version.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-pj96-4jhv-v792",
+    "Location": "internal/route/repo/editor.go",
+    "Original_exploitability": "0%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Incorrect. SCA gave 0%, but audit confirmed feature 'GHSA-pj96-4jhv-v792' is active and API calls are reachable in the current version.",
+    "Assessment": "Incorrect"
+  }
+]

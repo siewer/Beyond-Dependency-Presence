@@ -1,0 +1,26 @@
+[
+  {
+    "Vulnerability": "CVE-2026-26958",
+    "Location": "filippo.io/edwards25519:v1.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable `MultiScalarMult` API from `filippo.io/edwards25519` is not explicitly called anywhere in the active GORM codebase. According to the methodology, the absence of an explicit API call results in an exploitability probability of 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58181",
+    "Location": "golang.org/x/crypto:v0.43.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable `golang.org/x/crypto/ssh` package related to GSSAPI authentication is not explicitly called or used anywhere in the GORM codebase. Therefore, the absence of an explicit API call results in an exploitability probability of 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47914",
+    "Location": "golang.org/x/crypto:v0.43.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable `golang.org/x/crypto/ssh/agent` package and its associated APIs are not explicitly called or used anywhere in the GORM codebase. Therefore, the absence of an explicit API call results in an exploitability probability of 1%.",
+    "Assessment": "Correct"
+  }
+]

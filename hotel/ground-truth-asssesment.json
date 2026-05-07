@@ -1,0 +1,1962 @@
+[
+  {
+    "Vulnerability": "CVE-2021-32804",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": "25%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to tar API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:0.5.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to json5 API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37601",
+    "Location": "loader-utils:1.1.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to loader-utils API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-13797",
+    "Location": "macaddress:0.2.8",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to macaddress API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-6341",
+    "Location": "react-dom:16.2.0",
+    "Original_exploitability": "8%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to react-dom API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7693",
+    "Location": "sockjs:0.3.19",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to sockjs API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37601",
+    "Location": "loader-utils:0.2.17",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to loader-utils API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36604",
+    "Location": "hoek:2.16.3",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to hoek API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to braces API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-8j8c-7jfh-h6hx",
+    "Location": "js-yaml:3.10.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to js-yaml API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:2.3.2",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to tough-cookie API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-27088",
+    "Location": "es5-ext:0.10.39",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to es5-ext API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-37713",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to tar API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-33987",
+    "Location": "got:6.7.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to got API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.4.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to semver API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-46234",
+    "Location": "browserify-sign:4.0.4",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to browserify-sign API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28863",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to tar API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:6.1.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ajv API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-42282",
+    "Location": "ip:1.1.5",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ip API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66031",
+    "Location": "node-forge:0.7.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "node-forge is used via selfsigned.generate() for internal certificate generation with hardcoded, safe parameters.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37599",
+    "Location": "loader-utils:1.1.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to loader-utils API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-28849",
+    "Location": "follow-redirects:1.4.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to follow-redirects API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7753",
+    "Location": "trim:0.0.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to trim API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30359",
+    "Location": "webpack-dev-server:2.11.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to webpack-dev-server API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33623",
+    "Location": "trim-newlines:2.0.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to trim-newlines API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:4.17.5",
+    "Original_exploitability": "50%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "lodash functions (specifically uniqueid) are used for UI state management in the browser, posing no significant security risk from SCA-level lodash vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-37603",
+    "Location": "loader-utils:1.1.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to loader-utils API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to minimatch API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45590",
+    "Location": "body-parser:1.18.2",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to body-parser API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42461",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to elliptic API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29180",
+    "Location": "webpack-dev-middleware:1.12.2",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to webpack-dev-middleware API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:6.5.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to qs API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43800",
+    "Location": "serve-static:1.13.1",
+    "Original_exploitability": "65%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "serve-static is used via express.static() in the daemon. Vulnerabilities in static file serving are applicable but limited by the static path configuration.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-21536",
+    "Location": "http-proxy-middleware:0.17.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to http-proxy-middleware API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3807",
+    "Location": "ansi-regex:3.0.0",
+    "Original_exploitability": "5%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ansi-regex API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42460",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": "8%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to elliptic API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0122",
+    "Location": "node-forge:0.7.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "node-forge is used via selfsigned.generate() for internal certificate generation with hardcoded, safe parameters.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-48949",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to elliptic API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29041",
+    "Location": "express:4.16.2",
+    "Original_exploitability": "15%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Express is used for the daemon web UI and API. Open redirect vulnerabilities are present in this version, but reachable paths are limited to established routes.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43799",
+    "Location": "send:0.16.1",
+    "Original_exploitability": "5%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Internal dependency of Express/serve-static. Probability is capped for internal library usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-48948",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to elliptic API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-15010",
+    "Location": "tough-cookie:2.3.2",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to tough-cookie API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-21353",
+    "Location": "pug-code-gen:2.0.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Internal dependency of Pug. Probability is capped as it is not directly called by user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3728",
+    "Location": "hoek:2.16.3",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to hoek API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16492",
+    "Location": "extend:3.0.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to extend API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3918",
+    "Location": "json-schema:0.2.3",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to json-schema API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:1.2.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to minimist API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-43138",
+    "Location": "async:2.6.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to async API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7774",
+    "Location": "y18n:3.2.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to y18n API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-45311",
+    "Location": "fsevents:1.1.3",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to fsevents API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16487",
+    "Location": "lodash:4.17.5",
+    "Original_exploitability": "1%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "lodash functions (specifically uniqueid) are used for UI state management in the browser, posing no significant security risk from SCA-level lodash vulnerabilities.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16138",
+    "Location": "mime:1.3.4",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to mime API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23362",
+    "Location": "hosted-git-info:2.5.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to hosted-git-info API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23343",
+    "Location": "path-parse:1.0.5",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to path-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7788",
+    "Location": "ini:1.3.4",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ini API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-21222",
+    "Location": "css-what:2.1.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to css-what API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-20149",
+    "Location": "kind-of:6.0.2",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to kind-of API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3721",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": "15%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "lodash functions (specifically uniqueid) are used for UI state management in the browser, posing no significant security risk from SCA-level lodash vulnerabilities.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-25949",
+    "Location": "set-getter:0.1.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to set-getter API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-29059",
+    "Location": "is-svg:2.1.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to is-svg API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7660",
+    "Location": "serialize-javascript:1.4.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to serialize-javascript API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-1650",
+    "Location": "eventsource:0.1.6",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to eventsource API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:2.6.8",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to debug API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3774",
+    "Location": "url-parse:1.2.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to url-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7733",
+    "Location": "ua-parser-js:0.7.17",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ua-parser-js API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3745",
+    "Location": "atob:2.0.3",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to atob API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0155",
+    "Location": "follow-redirects:1.4.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to follow-redirects API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-20834",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to tar API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-28092",
+    "Location": "is-svg:2.1.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to is-svg API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-10747",
+    "Location": "set-value:2.0.0",
+    "Original_exploitability": "2%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to set-value API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3737",
+    "Location": "sshpk:1.13.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to sshpk API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-16489",
+    "Location": "just-extend:1.1.27",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to just-extend API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-13173",
+    "Location": "fstream:1.0.11",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to fstream API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8116",
+    "Location": "dot-prop:4.2.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to dot-prop API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-28498",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to elliptic API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-3750",
+    "Location": "deep-extend:0.4.2",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to deep-extend API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-9239",
+    "Location": "ansi2html:0.0.1",
+    "Original_exploitability": "96%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "ansi2html is used with explicit escapeHTML mitigation before rendering, nullifying the XSS risk.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-16129",
+    "Location": "superagent:3.5.2",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to superagent API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-16769",
+    "Location": "serialize-javascript:1.4.0",
+    "Original_exploitability": "2%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to serialize-javascript API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-29060",
+    "Location": "color-string:0.3.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to color-string API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-14732",
+    "Location": "webpack-dev-server:2.11.1",
+    "Original_exploitability": "35%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to webpack-dev-server API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-16028",
+    "Location": "randomatic:1.1.7",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to randomatic API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-27515",
+    "Location": "url-parse:1.2.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to url-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-25079",
+    "Location": "is-url:1.2.2",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to is-url API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-0512",
+    "Location": "url-parse:1.2.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to url-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-27290",
+    "Location": "ssri:5.2.4",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ssri API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0235",
+    "Location": "node-fetch:1.7.3",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to node-fetch API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38900",
+    "Location": "decode-uri-component:0.2.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to decode-uri-component API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23425",
+    "Location": "trim-off-newlines:1.0.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to trim-off-newlines API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:2.6.7",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to debug API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7793",
+    "Location": "ua-parser-js:0.7.17",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ua-parser-js API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7720",
+    "Location": "node-forge:0.7.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "node-forge is used via selfsigned.generate() for internal certificate generation with hardcoded, safe parameters.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23386",
+    "Location": "dns-packet:1.3.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to dns-packet API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10746",
+    "Location": "mixin-deep:1.3.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to mixin-deep API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37620",
+    "Location": "html-minifier:3.5.8",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to html-minifier API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7662",
+    "Location": "websocket-extensions:0.1.3",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to websocket-extensions API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-27292",
+    "Location": "ua-parser-js:0.7.17",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ua-parser-js API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10795",
+    "Location": "undefsafe:2.0.2",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to undefsafe API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-21270",
+    "Location": "stringstream:0.0.5",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to stringstream API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-13822",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to elliptic API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-1010266",
+    "Location": "lodash:4.17.5",
+    "Original_exploitability": "1%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "lodash functions (specifically uniqueid) are used for UI state management in the browser, posing no significant security risk from SCA-level lodash vulnerabilities.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-1109",
+    "Location": "braces:2.3.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to braces API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23440",
+    "Location": "set-value:2.0.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to set-value API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23382",
+    "Location": "postcss:6.0.19",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to postcss API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-18869",
+    "Location": "chownr:1.0.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to chownr API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to tar API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to minimatch API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:5.1.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to cross-spawn API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to tar API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:4.11.8",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ajv API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:4.11.8",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to bn.js API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.8",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to brace-expansion API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-52798",
+    "Location": "path-to-regexp:0.1.7",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to path-to-regexp API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-29415",
+    "Location": "ip:1.1.5",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ip API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6547",
+    "Location": "pbkdf2:3.0.14",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to pbkdf2 API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to minimatch API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-36361",
+    "Location": "pug-code-gen:2.0.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "Internal dependency of Pug. Probability is capped as it is not directly called by user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33894",
+    "Location": "node-forge:0.7.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "node-forge is used via selfsigned.generate() for internal certificate generation with hardcoded, safe parameters.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to tar API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-4867",
+    "Location": "path-to-regexp:0.1.7",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to path-to-regexp API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": "5%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to elliptic API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47764",
+    "Location": "cookie:0.3.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to cookie API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to tar API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.81.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to request API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "path-to-regexp:1.7.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to path-to-regexp API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-hxcm-v35h-mg2x",
+    "Location": "querystringify:1.0.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to querystringify API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-2pr6-76vf-7546",
+    "Location": "js-yaml:3.10.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to js-yaml API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-2pr6-76vf-7546",
+    "Location": "js-yaml:3.7.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to js-yaml API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-2pr6-76vf-7546",
+    "Location": "js-yaml:3.9.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to js-yaml API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10744",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "lodash functions (specifically uniqueid) are used for UI state management in the browser, posing no significant security risk from SCA-level lodash vulnerabilities.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10744",
+    "Location": "lodash:4.17.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "lodash functions (specifically uniqueid) are used for UI state management in the browser, posing no significant security risk from SCA-level lodash vulnerabilities.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "lodash functions (specifically uniqueid) are used for UI state management in the browser, posing no significant security risk from SCA-level lodash vulnerabilities.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash:4.17.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "lodash functions (specifically uniqueid) are used for UI state management in the browser, posing no significant security risk from SCA-level lodash vulnerabilities.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:2.6.7",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to debug API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33623",
+    "Location": "trim-newlines:1.0.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to trim-newlines API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3774",
+    "Location": "url-parse:1.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to url-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:6.4.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to qs API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to minimist API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:1.1.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to minimist API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21353",
+    "Location": "pug:2.0.0-rc.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "Pug is used as the view engine via Express. While enabled, it renders local templates using internal configuration, minimizing RCE risks from remote input.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10747",
+    "Location": "set-value:0.4.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to set-value API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.3.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to semver API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7774",
+    "Location": "y18n:4.0.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to y18n API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "lodash functions (specifically uniqueid) are used for UI state management in the browser, posing no significant security risk from SCA-level lodash vulnerabilities.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16487",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "lodash functions (specifically uniqueid) are used for UI state management in the browser, posing no significant security risk from SCA-level lodash vulnerabilities.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:4.11.8",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ajv API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:5.2.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ajv API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:5.3.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ajv API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:5.5.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ajv API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:1.8.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to braces API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-36361",
+    "Location": "pug:2.0.0-rc.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "Pug is used as the view engine via Express. While enabled, it renders local templates using internal configuration, minimizing RCE risks from remote input.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7598",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to minimist API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7598",
+    "Location": "minimist:1.1.3",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to minimist API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7598",
+    "Location": "minimist:1.2.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to minimist API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-28500",
+    "Location": "lodash:4.17.5",
+    "Original_exploitability": "1%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "lodash functions (specifically uniqueid) are used for UI state management in the browser, posing no significant security risk from SCA-level lodash vulnerabilities.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3664",
+    "Location": "url-parse:1.2.0",
+    "Original_exploitability": "5%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to url-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6545",
+    "Location": "pbkdf2:3.0.14",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to pbkdf2 API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3664",
+    "Location": "url-parse:1.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to url-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-28500",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "lodash functions (specifically uniqueid) are used for UI state management in the browser, posing no significant security risk from SCA-level lodash vulnerabilities.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-1010266",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "lodash functions (specifically uniqueid) are used for UI state management in the browser, posing no significant security risk from SCA-level lodash vulnerabilities.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23424",
+    "Location": "ansi-html:0.0.7",
+    "Original_exploitability": "10%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ansi-html API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24772",
+    "Location": "node-forge:0.7.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "node-forge is used via selfsigned.generate() for internal certificate generation with hardcoded, safe parameters.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24771",
+    "Location": "node-forge:0.7.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "node-forge is used via selfsigned.generate() for internal certificate generation with hardcoded, safe parameters.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-29167",
+    "Location": "hawk:3.1.3",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to hawk API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:5.2.17",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to postcss API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-9287",
+    "Location": "cipher-base:1.0.4",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to cipher-base API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3803",
+    "Location": "nth-check:1.0.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to nth-check API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:6.0.19",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to postcss API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:6.0.14",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to postcss API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "babel-traverse:6.25.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to babel-traverse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "babel-traverse:6.26.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to babel-traverse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-0686",
+    "Location": "url-parse:1.2.0",
+    "Original_exploitability": "5%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to url-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0686",
+    "Location": "url-parse:1.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to url-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-27515",
+    "Location": "url-parse:1.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to url-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:2.1.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to form-data API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24773",
+    "Location": "node-forge:0.7.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "node-forge is used via selfsigned.generate() for internal certificate generation with hardcoded, safe parameters.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-0691",
+    "Location": "url-parse:1.0.5",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to url-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7608",
+    "Location": "yargs-parser:9.0.2",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to yargs-parser API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:2.2.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to form-data API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-0691",
+    "Location": "url-parse:1.2.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to url-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7608",
+    "Location": "yargs-parser:4.2.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to yargs-parser API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7608",
+    "Location": "yargs-parser:7.0.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to yargs-parser API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7608",
+    "Location": "yargs-parser:8.1.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to yargs-parser API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:2.3.11",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to micromatch API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.5",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to micromatch API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-12816",
+    "Location": "node-forge:0.7.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "node-forge is used via selfsigned.generate() for internal certificate generation with hardcoded, safe parameters.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26159",
+    "Location": "follow-redirects:1.4.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to follow-redirects API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-9288",
+    "Location": "sha.js:2.4.10",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to sha.js API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42459",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to elliptic API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43796",
+    "Location": "express:4.16.2",
+    "Original_exploitability": "50%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Express is used for the daemon web UI and API. Open redirect vulnerabilities are present in this version, but reachable paths are limited to established routes.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0536",
+    "Location": "follow-redirects:1.4.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to follow-redirects API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23440",
+    "Location": "set-value:0.4.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to set-value API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "path-to-regexp:0.1.7",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to path-to-regexp API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23382",
+    "Location": "postcss:5.2.17",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to postcss API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30360",
+    "Location": "webpack-dev-server:2.11.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to webpack-dev-server API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23382",
+    "Location": "postcss:6.0.14",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to postcss API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25901",
+    "Location": "cookiejar:2.1.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to cookiejar API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-8124",
+    "Location": "url-parse:1.2.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to url-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:2.6.8",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to debug API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.4.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to qs API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.5.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to qs API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8124",
+    "Location": "url-parse:1.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to url-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.0.33",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to tmp API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66030",
+    "Location": "node-forge:0.7.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "node-forge is used via selfsigned.generate() for internal certificate generation with hardcoded, safe parameters.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-0639",
+    "Location": "url-parse:1.2.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to url-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.5",
+    "Original_exploitability": "1%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "lodash functions (specifically uniqueid) are used for UI state management in the browser, posing no significant security risk from SCA-level lodash vulnerabilities.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "lodash functions (specifically uniqueid) are used for UI state management in the browser, posing no significant security risk from SCA-level lodash vulnerabilities.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0639",
+    "Location": "url-parse:1.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to url-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0512",
+    "Location": "url-parse:1.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to url-parse API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.9.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to js-yaml API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": "96%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to minimatch API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.10.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to js-yaml API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.7.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to js-yaml API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:5.2.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ajv API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:5.3.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ajv API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:5.5.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ajv API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.1.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to ajv API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.7",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to brace-expansion API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to tar API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:3.4.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to diff API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to tar API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7339",
+    "Location": "on-headers:1.0.1",
+    "Original_exploitability": "5%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to on-headers API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-4vmm-mhcq-4x9j",
+    "Location": "constantinople:3.1.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to constantinople API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-vjh7-7g9h-fjfh",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to elliptic API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-xv2f-5jw4-v95m",
+    "Location": "fsevents:1.1.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to fsevents API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-h6ch-v84p-w6p9",
+    "Location": "diff:3.4.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to diff API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-6x33-pw7p-hmpq",
+    "Location": "http-proxy:1.17.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "http-proxy is used for HTTPS and WS proxying. While used directly, it is configured for local domain management with limited external exposure.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-8j8c-7jfh-h6hx",
+    "Location": "js-yaml:3.7.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to js-yaml API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-8j8c-7jfh-h6hx",
+    "Location": "js-yaml:3.9.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to js-yaml API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33895",
+    "Location": "node-forge:0.7.1",
+    "Original_exploitability": "5%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "node-forge is used via selfsigned.generate() for internal certificate generation with hardcoded, safe parameters.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33891",
+    "Location": "node-forge:0.7.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "node-forge is used via selfsigned.generate() for internal certificate generation with hardcoded, safe parameters.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33896",
+    "Location": "node-forge:0.7.1",
+    "Original_exploitability": "55%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "node-forge is used via selfsigned.generate() for internal certificate generation with hardcoded, safe parameters.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-2m96-9w4j-wgv7",
+    "Location": "lodash.merge:4.6.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to lodash.merge API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-h726-x36v-rx45",
+    "Location": "lodash.merge:4.6.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to lodash.merge API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-hxcm-v35h-mg2x",
+    "Location": "querystringify:0.0.4",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to querystringify API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:1.1.8",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to brace-expansion API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34043",
+    "Location": "serialize-javascript:1.4.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to serialize-javascript API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:1.4.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to serialize-javascript API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:1.1.7",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to brace-expansion API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-4xcv-9jjx-gfj3",
+    "Location": "mem:1.1.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to mem API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-wxhq-pm8v-cw75",
+    "Location": "clean-css:3.4.28",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to clean-css API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-wxhq-pm8v-cw75",
+    "Location": "clean-css:4.1.9",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "No explicit call to clean-css API found in the codebase. This is likely a transitive or build-time dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5rrq-pxf6-6jx5",
+    "Location": "node-forge:0.7.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "node-forge is used via selfsigned.generate() for internal certificate generation with hardcoded, safe parameters.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-gf8q-jrpm-jvxq",
+    "Location": "node-forge:0.7.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "node-forge is used via selfsigned.generate() for internal certificate generation with hardcoded, safe parameters.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-wxgw-qj99-44c2",
+    "Location": "node-forge:0.7.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "node-forge is used via selfsigned.generate() for internal certificate generation with hardcoded, safe parameters.",
+    "Assessment": "Correct"
+  }
+]

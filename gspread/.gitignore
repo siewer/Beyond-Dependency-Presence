@@ -1,0 +1,19 @@
+# vscode
+.vscode/
+
+# python
+**/__pycache__/
+
+# secrets
+tests/creds.json
+
+# virtualenv
+env/
+
+# tox
+.tox/
+
+# build
+gspread.egg-info/
+dist/
+docs/build/

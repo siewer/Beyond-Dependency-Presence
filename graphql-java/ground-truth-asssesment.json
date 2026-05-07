@@ -1,0 +1,114 @@
+[
+  {
+    "Vulnerability": "CVE-2022-1471",
+    "Location": "snakeyaml:1.23",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "SnakeYAML's unsafe Yaml.load() API is not used in the codebase. Probability 0.01 according to criteria for unused APIs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-18640",
+    "Location": "snakeyaml:1.23",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "SnakeYAML is not used in the codebase. Original score of 50% is highly incorrect for an unused library.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25857",
+    "Location": "snakeyaml:1.23",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "SnakeYAML is not used in the codebase. Probability 0.01 for unused APIs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38749",
+    "Location": "snakeyaml:1.23",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "SnakeYAML is not used in the codebase. Probability 0.01 for unused APIs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38751",
+    "Location": "snakeyaml:1.23",
+    "Original_exploitability": 8,
+    "Exploitability": 1,
+    "Exploitability_explanation": "SnakeYAML is not used in the codebase. Probability 0.01 for unused APIs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38752",
+    "Location": "snakeyaml:1.23",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "SnakeYAML is not used in the codebase. Probability 0.01 for unused APIs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-41854",
+    "Location": "snakeyaml:1.23",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "SnakeYAML is not used in the codebase. Probability 0.01 for unused APIs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-11143",
+    "Location": "jetty-http:11.0.26",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Jetty is used only in test/example code (src/test/groovy/example/http/HttpMain.java), not reachable in production. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-40094",
+    "Location": "graphql-java:0.0.0-master-SNAPSHOT",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Introspection ENF DoS protection is implemented in GoodFaithIntrospection.java with default limits. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37734",
+    "Location": "graphql-java:0.0.0-master-SNAPSHOT",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Parser token limits are enforced via SafeTokenSource and ParserOptions (MAX_QUERY_TOKENS=15000). Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28867",
+    "Location": "graphql-java:0.0.0-master-SNAPSHOT",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Parser rule depth limit is enforced via ParserOptions (MAX_RULE_DEPTH=500). Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38750",
+    "Location": "snakeyaml:1.23",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "SnakeYAML is not used in the codebase. Probability 0.01 for unused APIs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-6763",
+    "Location": "jetty-http:11.0.26",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Jetty usage is confined to test/example code. Probability 0.05 for non-user code usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48924",
+    "Location": "commons-lang3:3.5",
+    "Original_exploitability": 3,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ClassUtils.getClass() is not called in the codebase. Probability 0.01.",
+    "Assessment": "Correct"
+  }
+]

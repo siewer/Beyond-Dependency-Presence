@@ -1,0 +1,66 @@
+[
+  {
+    "Vulnerability": "CVE-2023-43804",
+    "Location": "urllib3:1.26.15",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerability requires a manual 'Cookie' header to be set, which is then not stripped on cross-origin redirects. A thorough search of the gspread codebase shows no manual 'Cookie' header usage. All authentication is handled via OAuth2 'Authorization' headers (processed by google-auth). Since the vulnerable API usage is absent, probability is set to 2%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-37891",
+    "Location": "urllib3:1.26.15",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Vulnerability requires manual 'Proxy-Authorization' header setting and cross-origin redirects. gspread does not manually set 'Proxy-Authorization' headers; proxy support is inherited from requests/urllib3 defaults or not used at all in user code. API usage is absent. Original score of 50% is significantly outside the 20% tolerance for a non-used API.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-45803",
+    "Location": "urllib3:1.26.15",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerability occurs when a POST request with a body is redirected to a GET request, and the body is incorrectly preserved. gspread uses POST requests with sensitive spreadsheet data in the body. While Google APIs rarely redirect POST to GET, it remains a structural possibility in complex network environments or if the origin is compromised. 15% (uncertain) is a reasonable assessment.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66418",
+    "Location": "urllib3:1.26.15",
+    "Original_exploitability": 5,
+    "Exploitability": 10,
+    "Exploitability_explanation": "DoS vulnerability via unbounded decompression chains. gspread receives HTTP responses and automatically decompresses them via requests/urllib3. While reachable, it requires a malicious server (Google API compromise) or interceptor. Probability is low (10%), which is within 20% tolerance of the original 5%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66471",
+    "Location": "urllib3:1.26.15",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Exploitation requires usage of the streaming API (stream=True) to trigger certain decompression bomb conditions. gspread does not use 'stream=True' in its HTTP requests (e.g., in export() it reads the full content into memory). As the specific vector is absent, probability is reduced to 2%. Difference is within 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21441",
+    "Location": "urllib3:1.26.15",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Requires streaming API and redirect handling to trigger decompression. gspread does not use streaming (stream=True) and does not manually configure redirect behavior that would trigger this specific flaw. API usage is absent. Original score of 25% is more than 20% away from the actual risk of 2%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-50181",
+    "Location": "urllib3:1.26.15",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Relates to a failure to disable redirects at the PortManager level even when configured. gspread does not attempt to disable redirects; it relies on default requests/urllib3 behavior. Thus, the 'failure to disable' is not an active risk in this codebase. Original score of 50% is significantly inflated.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-32274",
+    "Location": "black:24.8.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Black is a development dependency used for linting and code formatting. It is not part of the runtime application and cannot be exploited by an attacker interacting with gspread. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  }
+]

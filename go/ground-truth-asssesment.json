@@ -1,0 +1,66 @@
+[
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:3.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability exists in 'braces' (DoS). However, it is a sub-dependency of development tools (eslint/prettier) and no explicit calls were found in the project's source code. Probability is set to 0.01 (1%) as per guidelines for unconfirmed API usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:8.4.23",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability exists in 'postcss' (CSS injection). It is a sub-dependency of 'stylelint'. No CSS files were found in the scope of this linting tool, and no explicit calls exist in the project code. Probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:4.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability exists in 'micromatch' (ReDoS). It is a sub-dependency of 'stylelint'. No explicit calls or active code paths were found in the repository. Probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-55565",
+    "Location": "nanoid:3.3.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability exists in 'nanoid' (DoS). It is a sub-dependency and no explicit calls were found in any active code path. Probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:6.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability exists in 'cross-spawn' (ReDoS). It is a sub-dependency of 'npm-run-all'. No direct calls or user-controllable input to this library were identified. Probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability exists in 'cross-spawn' (ReDoS). It is a sub-dependency of 'eslint'. No direct calls or user-controllable input were found in the project's source code. Probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability exists in 'js-yaml' (Prototype Pollution). It is a sub-dependency of 'eslint'. No explicit calls to load/safeLoad were found in the repository. Probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability exists in 'brace-expansion' (ReDoS). It is a sub-dependency and no explicit calls were found in the codebase. Probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  }
+]

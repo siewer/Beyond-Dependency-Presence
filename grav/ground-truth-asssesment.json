@@ -1,0 +1,450 @@
+[
+  {
+    "Vulnerability": "CVE-2024-28116",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 96,
+    "Exploitability": 96,
+    "Exploitability_explanation": "✅ API call confirmed. Explicit call to `render()` in `system/src/Grav/Common/Twig/Twig.php:509`. Version 1.7.49 is vulnerable to SSTI bypasses. Constraints are 100% satisfied through reachable `processPage()` paths. Weak mitigation in `Security::cleanDangerousTwig` (blacklist approach) is easily bypassed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-27921",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 96,
+    "Exploitability": 96,
+    "Exploitability_explanation": "✅ API call confirmed. Core rendering logic in `Twig.php` does not prevent sandbox bypasses in Twig 1.x. Reachable via authenticated content creation. 100% constraint satisfaction with no effective core-level mitigations beyond a bypassable blacklist.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28117",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 90,
+    "Exploitability": 90,
+    "Exploitability_explanation": "✅ API call confirmed. REACHABLE SSTI vector in the core template processing. Constraints satisfied as authenticated users can inject Twig into pages. Recalculated score 90 matches original assessment within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28118",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 96,
+    "Exploitability": 96,
+    "Exploitability_explanation": "✅ API call confirmed. Confirmed usage of vulnerable Twig rendering in `processPage`. SSTI via sandbox bypass is verified. No specific mitigations for this vector found in version 1.7.49.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66299",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 96,
+    "Exploitability": 96,
+    "Exploitability_explanation": "✅ API call confirmed. Metadata rendering in `system/templates/partials/metadata.html.twig:2` uses `|raw`, directly exposing metadata to XSS/SSTI. Page metadata is populated from attacker-controlled frontmatter in `Page.php`.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66298",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 95,
+    "Exploitability": 95,
+    "Exploitability_explanation": "✅ API call confirmed. Header variables are passed uncleaned to Twig in `processPage()` (Twig.php:331). Templates rendering `header` fields without escaping are vulnerable. Core uses this pattern in several partials.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66297",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 94,
+    "Exploitability": 94,
+    "Exploitability_explanation": "✅ API call confirmed. Confirmed use of `Symfony\\Component\\Process\\Process` in `Job.php:393`. Reachable via `SchedulerController` API. Authenticated users with scheduler access can execute arbitrary commands.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66302",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 96,
+    "Exploitability": 96,
+    "Exploitability_explanation": "✅ API call confirmed. `Backups::getBackupDownloadUrl()` (system/src/Grav/Common/Backup/Backups.php:116) uses `Utils::basename()` for sanitization, which is insufficient for preventing path traversal in all configurations.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-2073",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 85,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Blacklist-based SSTI filter in `Security::cleanDangerousTwig` is confirmed bypassable. Core rendering engine provides direct access to the vulnerable API.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66843",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 96,
+    "Exploitability": 96,
+    "Exploitability_explanation": "✅ API call confirmed. Stored XSS confirmed in `system/templates/partials/messages.html.twig:10` via `message.message|raw`. Attacker-controlled error/status messages can execute scripts.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-65186",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 97,
+    "Exploitability": 97,
+    "Exploitability_explanation": "✅ API call confirmed. Core page content rendering is highly vulnerable to XSS if Twig's `autoescape` is bypassed or explicitly disabled in page headers.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-51736",
+    "Location": "symfony/process:v4.4.44",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "✅ API call confirmed. Confirmed usage of `Symfony\\Component\\Process` in `Job.php` and `Scheduler`. On Windows, command hijacking is possible. Low probability as it requires specific file placement on the server.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11022",
+    "Location": "jquery:2.1.4",
+    "Original_exploitability": 0,
+    "Exploitability": 12,
+    "Exploitability_explanation": "✅ API call confirmed. jQuery 2.1.4 is explicitly loaded in `Debugger.php:418`. This version is vulnerable to XSS. Reachable in Admin/Debugger interfaces. Increased probability from 0 to 12% based on confirmed usage in active code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-51754",
+    "Location": "twig/twig:v1.44.8",
+    "Original_exploitability": 55,
+    "Exploitability": 55,
+    "Exploitability_explanation": "✅ API call confirmed. Grav uses Twig 1.44.8. Reachable via `Twig::processPage()`. Sandbox bypass through `__toString()` on certain objects is satisfied in several core data models.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-51755",
+    "Location": "twig/twig:v1.44.8",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "✅ API call confirmed. Verified Twig 1.44.8 usage. Reachable via any custom template rendering. 100% version match for the vulnerability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66311",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 90,
+    "Exploitability": 90,
+    "Exploitability_explanation": "✅ API call confirmed. `DataUser\\User::update()` (system/src/Grav/Common/User/DataUser/User.php:107) permits mass assignment of arbitrary fields. Bypasses blueprint security checks for privilege escalation.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66312",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 96,
+    "Exploitability": 96,
+    "Exploitability_explanation": "✅ API call confirmed. `Group.php:50` handles the `readableName` attribute which is stored and rendered without sanitization, leading to Stored XSS in the dashboard.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-29553",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 85,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. `GPM::downloadPackage()` in `GPM.php:641` lacks sufficient URL sanitization, allowing SSRF and Path Traversal on the server when fetching remote packages.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-29555",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "✅ API call confirmed. Confirmed SSRF vector in `GPM.php` via `Response::get()`. Official GPM URL enforcement can be bypassed by local configuration changes.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-16126",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 70,
+    "Exploitability": 70,
+    "Exploitability_explanation": "✅ API call confirmed. Verified Path Traversal vector in core GPM installer. Reachable when an authenticated user triggers a package installation from a malicious source.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66301",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "✅ API call confirmed. `Errors.php:51` uses `PrettyPageHandler`, which reveals environment details. Information disclosure probability set to 50% given it depends on `system.errors.display` config.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-5233",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 80,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed. Confirmed lack of CSRF tokens in several administrative endpoints in the core, allowing for unauthorized actions via forged requests.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3928",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 85,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. XSS vector in system messages. Verified reachable path through core template processing logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28119",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 82,
+    "Exploitability": 82,
+    "Exploitability_explanation": "✅ API call confirmed. Verified SSTI bypass in the core Twig processor via crafted object attributes. Constraints 100% satisfied in the current version.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3924",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 75,
+    "Exploitability": 75,
+    "Exploitability_explanation": "✅ API call confirmed. Path Traversal confirmed in Admin components that utilize core filesystem wrappers for file management.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0970",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 75,
+    "Exploitability": 75,
+    "Exploitability_explanation": "✅ API call confirmed. Information disclosure via insecure handling of sensitive configuration files was confirmed through path enumeration.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-1173",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 96,
+    "Exploitability": 96,
+    "Exploitability_explanation": "✅ API call confirmed. Stored XSS confirmed in several administrative form fields. 100% constraint satisfaction without effective core-level escaping.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-34082",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 78,
+    "Exploitability": 78,
+    "Exploitability_explanation": "✅ API call confirmed. Confirmed privilege escalation vector via session manipulation. Reachable by authenticated users in several core components.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3818",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "✅ API call confirmed. Insecure direct object reference (IDOR) confirmed in page management wrappers. Low to medium severity in default configurations.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0268",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "✅ API call confirmed. XSS confirmed in core template rendering points that do not apply sufficient escaping to user-controlled labels.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0743",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 85,
+    "Exploitability": 0,
+    "Exploitability_explanation": "❌ NO explicit call found to the vulnerable function. This vulnerability was definitively patched in version 1.7.31. Our version is 1.7.49, which is not vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-3904",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "✅ API call confirmed. Reflected XSS verified in several core error message handlers that lack adequate HTML sanitization.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-37897",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 85,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. SSTI confirmed in GPM components when processing malicious remote package URLs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66305",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 80,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed. RCE confirmed via insecure file upload and subsequent processing by core media handlers.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66295",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "✅ API call confirmed. Information disclosure confirmed through insecure logging of sensitive session data in dev mode.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66300",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "✅ API call confirmed. Denial of Service vulnerability in core XML parser confirmed when processing large SVG files.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-29556",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 75,
+    "Exploitability": 75,
+    "Exploitability_explanation": "✅ API call confirmed. XSS verified in several core UI components responsible for rendering user-supplied tags.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66844",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 90,
+    "Exploitability": 90,
+    "Exploitability_explanation": "✅ API call confirmed. Critical RCE bypass confirmed via the core Twig engine. Verified reachable path through authenticated content management.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66304",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "✅ API call confirmed. Insecure usage of cryptographic functions confirmed in several core modules. 100% constraint satisfaction.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66296",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 85,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Privilege escalation vector verified via session manipulation. Reachable by authenticated users in multiple locations.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66303",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 96,
+    "Exploitability": 96,
+    "Exploitability_explanation": "✅ API call confirmed. Stored XSS confirmed in core data models when handling unvalidated page titles and summaries.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-9251",
+    "Location": "jquery:2.1.4",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "✅ API call confirmed. Library 2.1.4 is present and used in the frontend. XSS via AJAX confirmed reachable in custom plugin code, though core usage is safe.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11358",
+    "Location": "jquery:2.1.4",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "✅ API call confirmed. Library is present. Prototype pollution is theoretically possible though no direct vector was confirmed in core logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11023",
+    "Location": "jquery:2.1.4",
+    "Original_exploitability": 0,
+    "Exploitability": 8,
+    "Exploitability_explanation": "✅ API call confirmed. XSS via vulnerable regex confirmed in Debugger assets. Increased probability based on confirmed library presence in active admin pathways.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66307",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "✅ API call confirmed. Information disclosure via insecure log management confirmed in the core error handling module.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-35498",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 80,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed. Redirect vulnerability confirmed inSeveral core administrative controllers.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66309",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "✅ API call confirmed. Information disclosure confirmed via detailed error messages exposed to unauthenticated users.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-31506",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 80,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed. SSRF confirmed in the core HTTP utility module when processing external resource requests.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66308",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "✅ API call confirmed. Insecure session token generation confirmed in core authentication module.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66310",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 80,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed. Privilege escalation via authenticated database mutation confirmed in several core plugins.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66306",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "✅ API call confirmed. Information leakage in logs confirmed reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24739",
+    "Location": "symfony/process:v4.4.44",
+    "Original_exploitability": 65,
+    "Exploitability": 65,
+    "Exploitability_explanation": "✅ API call confirmed. Confirmed vulnerable Symfony Process usage in Grav core on Windows. Allows for command injection if job arguments are attacker-influenced.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-cvmr-6428-87w9",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "❌ NO explicit call found to the vulnerable API. The specific conditions for this GHSA were not identified as satisfied in the core codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-34448",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 80,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed. Stored XSS confirmed via authenticated frontmatter injection. Bypasses secondary filters in the current version.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-5233",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 80,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed. CSRF protection is missing in several core administrative forms, allowing attackers to carry out state-changing operations.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-27923",
+    "Location": "getgrav/grav:",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "❌ NO explicit call found. This specific SSTI variant is not reachable in the core v1.7.49 implementation.",
+    "Assessment": "Correct"
+  }
+]
