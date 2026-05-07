@@ -1,0 +1,530 @@
+[
+  {
+    "Vulnerability": "CVE-2023-4863",
+    "Location": "pillow:9.5.0",
+    "Original_exploitability": 15,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Confirmed usage of Image.open() in modules/images.py (L853) and modules/ui.py (L128). The application processes user-uploaded images, providing a direct vector for malicious WebP files trigger heap buffer overflow in libwebp.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-1728",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 3,
+    "Exploitability": 80,
+    "Exploitability_explanation": "Gradio 3.41.2 is used to serve the entire UI. This version lacks proper authorization checks for file access. The UI is active and often exposed to the network, making this highly exploitable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-1561",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 50,
+    "Exploitability": 90,
+    "Exploitability_explanation": "Gradio 3.41.2 has a known full local file read vulnerability via the /file endpoint. Stable Diffusion WebUI launches Gradio in webui.py (L79) and exposes it, satisfying all constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-1183",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "Confirmed usage of Gradio 3.41.2. This version is susceptible to SSRF via several components that can fetch remote content. The WebUI commonly uses such components for loading models or images from URLs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-51449",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 70,
+    "Exploitability_explanation": "Path traversal in the 'File' component of Gradio 3.41.2. The WebUI uses many Gradio components for file handling, confirming the vulnerable API usage in an active path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-11393",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 50,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Unsafe deserialization in transformers 4.30.2. While modules/safe.py (L195) hijacks torch.load, transformers may use other serialization methods or internal calls that are not fully covered. Version is vulnerable and library is heavily used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4325",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Confirmed usage of Gradio 3.41.2 which has known XSS vulnerabilities. The WebUI displays user-controlled metadata and image info through Gradio, providing multiple injection points.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-11394",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 20,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Similar to CVE-2024-11393, this involves unsafe deserialization in transformers. The version is vulnerable and transformers is core to model loading in WebUI.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-11392",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 50,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Unsafe deserialization in transformers. Constrains satisfied by version and heavy usage in text encoder (CLIP) processing.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-3568",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 50,
+    "Exploitability": 55,
+    "Exploitability_explanation": "RCE via torch.load in transformers. Mitigated by modules/safe.py (L175-195) which enforces restricted unpickling. However, the probability is still above 50% as the version is vulnerable and bypasses are possible.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-2099",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 1,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Unsafe deserialization in transformers. Version is vulnerable and library is used for essentially all model-related text processing. The original 1% score is extremely low given the core dependency.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-1729",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 90,
+    "Exploitability": 90,
+    "Exploitability_explanation": "Memory exhaustion via large JSON in Gradio 3.41.2. The WebUI is built entirely on Gradio and processes many JSON-based requests (options, generation parameters), making it highly susceptible to DoS.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-1194",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 50,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Another unsafe deserialization issue in transformers. Confirmed usage and vulnerable version satisfy exploitation constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3933",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 50,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Vulnerability in transformers deserialization. Same context as previous transformers CVEs; version is vulnerable and API is used in active paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5197",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 15,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Confirmed usage of transformers 4.30.2. This vulnerability allows for potential code execution or data leakage through specifically crafted model files.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-44271",
+    "Location": "pillow:9.5.0",
+    "Original_exploitability": 0,
+    "Exploitability": 40,
+    "Exploitability_explanation": "DoS via malicious font files in Pillow.ImageFont. Confirmed usage in modules/images.py (L31). Since user can set a custom font in global options, this is a valid vector.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-0994",
+    "Location": "protobuf:3.20.0",
+    "Original_exploitability": 50,
+    "Exploitability": 70,
+    "Exploitability_explanation": "Unsafe deserialization in Protobuf 3.20.0. Libraries used by WebUI (like onnx or torch models) frequently use Protobuf for metadata, satisfying constraints for exploitation via malicious models.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69872",
+    "Location": "diskcache:5.6.3",
+    "Original_exploitability": 95,
+    "Exploitability": 90,
+    "Exploitability_explanation": "Confirmed usage of diskcache for all application caching in modules/cache.py. Vulnerability represents a high risk to application integrity and availability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-26jh-r8g2-6fpr",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "Security issue in Gradio 3.41.2. As the core UI framework, any vulnerability in this version is reachable. The original 0% score is unjustified given the active usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47867",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "SSRF in Gradio 3.41.2. Verified that Gradio is used for the entire Web UI, and many components allow fetching data from URLs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-4940",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "Confirmed usage of Gradio 3.41.2. This version is susceptible to SSRF via several components that can fetch remote content. The WebUI commonly uses such components for loading models or images from URLs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-6572",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 97,
+    "Exploitability": 95,
+    "Exploitability_explanation": "Critical RCE vulnerability in Gradio 3.41.2. The Web UI is the primary interface for the application, and this vulnerability is directly reachable by any user with access to the UI.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-8021",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Local file read in Gradio 3.41.2. The WebUI exposes the Gradio interface, making this vulnerability reachable and highly exploitable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-8019",
+    "Location": "pytorch_lightning:1.9.4",
+    "Original_exploitability": 15,
+    "Exploitability": 50,
+    "Exploitability_explanation": "Unsafe deserialization in Pytorch Lightning 1.9.4. While modules/safe.py whitelists some PL callbacks, other loading paths in the library might still be vulnerable. The version is known to be affected.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-28414",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 82,
+    "Exploitability": 80,
+    "Exploitability_explanation": "Security issue in Gradio 3.41.2. As the core UI framework, any vulnerability in this version is reachable in an active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48889",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "Gradio 3.41.2 vulnerability. Confirmed usage of Gradio for the application's UI, satisfying requirements for exploitability.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-50447",
+    "Location": "pillow:9.5.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "This CVE requires the usage of ImageMath.eval(). A thorough search of the codebase did not find any calls to the vulnerable API. Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-4941",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "SSRF in Gradio 3.41.2. Verified that Gradio is used for the entire Web UI, and many components allow fetching data from URLs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-40590",
+    "Location": "GitPython:3.1.32",
+    "Original_exploitability": 80,
+    "Exploitability": 70,
+    "Exploitability_explanation": "Command injection in GitPython 3.1.32. The WebUI uses GitPython in modules/ui_extensions.py to clone and manage extensions, which can be triggered by malicious repository URLs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-22190",
+    "Location": "GitPython:3.1.32",
+    "Original_exploitability": 85,
+    "Exploitability": 75,
+    "Exploitability_explanation": "Another command injection vulnerability in GitPython 3.1.32. Usage in extension management confirms the potential for exploitation via untrusted inputs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28219",
+    "Location": "pillow:9.5.0",
+    "Original_exploitability": 25,
+    "Exploitability": 50,
+    "Exploitability_explanation": "Stack-based buffer overflow in ImageColor.getrgb. Confirmed usage of ImageColor.getcolor (which calls getrgb) in modules/images.py (L58) with user-configurable colors from options. This exposes the vulnerable API to user input.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-41040",
+    "Location": "GitPython:3.1.32",
+    "Original_exploitability": 70,
+    "Exploitability": 70,
+    "Exploitability_explanation": "Command injection in GitPython 3.1.32. The WebUI uses GitPython for extension management, providing a reachable path for this vulnerability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-8966",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 98,
+    "Exploitability": 95,
+    "Exploitability_explanation": "SSRF in Gradio 3.41.2. This version is highly vulnerable and the WebUI uses numerous components that fetch external data, making this easily exploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-7018",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 30,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Unsafe deserialization in transformers. As previously documented, transformers is used extensively, and 4.30.2 is vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47167",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 96,
+    "Exploitability": 95,
+    "Exploitability_explanation": "Critical SSRF in Gradio. Reached via the application UI which is based on Gradio 3.41.2.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47870",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "SSRF in Gradio 3.41.2. The WebUI uses multiple Gradio components that can be manipulated to trigger SSRF requests.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-6730",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 15,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Unsafe deserialization in transformers 4.30.2. Confirmed usage in model loading paths.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-12720",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 15,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Vulnerability in transformers. The library is used for essentially all model weights loading and processing.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47166",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "SSRF in Gradio. Version confirmed as vulnerable and UI is exposed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47872",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 97,
+    "Exploitability": 95,
+    "Exploitability_explanation": "Critical SSRF in Gradio 3.41.2. Reachable via the standard UI interface of the Stable Diffusion WebUI.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47164",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "SSRF in Gradio. Reached via the application UI which is based on Gradio 3.41.2.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-1941",
+    "Location": "protobuf:3.20.0",
+    "Original_exploitability": 1,
+    "Exploitability": 40,
+    "Exploitability_explanation": "DoS in Protobuf 3.20.0 via long recurring fields. Many deep learning model formats (ONNX, etc.) use Protobuf. If a user loads a malicious model, it could cause a Denial of Service.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47084",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "SSRF in Gradio 3.41.2. Multiple components in the WebUI UI are vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-8020",
+    "Location": "pytorch_lightning:1.9.4",
+    "Original_exploitability": 5,
+    "Exploitability": 50,
+    "Exploitability_explanation": "Local File Read in Pytorch Lightning 1.9.4. This can be triggered during training operations (like Hypernetwork training) if malicious configurations are provided.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47868",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "SSRF in Gradio. Version confirmed as vulnerable and UI is exposed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-0964",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 97,
+    "Exploitability": 95,
+    "Exploitability_explanation": "Another RCE in Gradio 3.41.2. This critical vulnerability is directly reachable through the Web UI.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-2206",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 85,
+    "Exploitability_explanation": "XSS in Gradio 3.41.2. The WebUI displays user-controlled metadata and image info through Gradio, providing multiple injection points.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-23042",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 96,
+    "Exploitability": 95,
+    "Exploitability_explanation": "Gradio 3.41.2 security issue. As the core UI framework, any vulnerability in this version is reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47165",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 94,
+    "Exploitability": 95,
+    "Exploitability_explanation": "Critical SSRF in Gradio. Reached via the application UI.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47869",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "SSRF in Gradio. Version confirmed as vulnerable and UI is exposed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-48052",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "SSRF in Gradio 3.41.2. Multiple components in the WebUI UI are vulnerable and allow for requests to internal infrastructure.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-34510",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 85,
+    "Exploitability": 90,
+    "Exploitability_explanation": "SSRF in Gradio 3.41.2. The WebUI is built on this vulnerable version and exposes the interface to potentially malicious inputs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-12217",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 93,
+    "Exploitability": 95,
+    "Exploitability_explanation": "Critical SSRF in Gradio 3.41.2. Directly reachable through the application UI.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47871",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "SSRF in Gradio. Reached via the application UI.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-1727",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "SSRF in Gradio 3.41.2. The WebUI uses many components susceptible to this vulnerability.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47168",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "SSRF in Gradio 3.41.2. Version confirmed as vulnerable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6051",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 50,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Unsafe deserialization in transformers. As previously documented, transformers is used extensively, and 4.30.2 is vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3263",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 50,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Vulnerability in transformers deserialization. Same context as previous transformers CVEs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3264",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 15,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Unsafe deserialization in transformers 4.30.2. Library is core to model loading.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6638",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 15,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Vulnerability in transformers. Library is core to the application's processing of models.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6921",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 1,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Unsafe deserialization in transformers 4.30.2. Confirmed usage in core model processing paths.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-28416",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 2,
+    "Exploitability": 75,
+    "Exploitability_explanation": "Gradio 3.41.2 vulnerability. Confirmed usage of Gradio for the application's UI, satisfying requirements for exploitability.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-3777",
+    "Location": "transformers:4.30.2",
+    "Original_exploitability": 15,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Unsafe deserialization in transformers 4.30.2. Version is vulnerable and library is used for text encoder processing.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-28415",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 15,
+    "Exploitability": 75,
+    "Exploitability_explanation": "Gradio 3.41.2 security issue. Reachable via the application's standard web interface.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-4565",
+    "Location": "protobuf:3.20.0",
+    "Original_exploitability": 50,
+    "Exploitability": 70,
+    "Exploitability_explanation": "Unsafe deserialization in Protobuf 3.20.0. Libraries used by WebUI frequently use Protobuf for metadata, satisfying constraints for exploitation via malicious models.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-34511",
+    "Location": "gradio:3.41.2",
+    "Original_exploitability": 80,
+    "Exploitability": 75,
+    "Exploitability_explanation": "SSRF in Gradio 3.41.2. The WebUI uses GitPython for extension management, providing a reachable path for this vulnerability.",
+    "Assessment": "Correct"
+  }
+]

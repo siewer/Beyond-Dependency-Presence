@@ -1,0 +1,26 @@
+[
+  {
+    "Vulnerability": "CVE-2021-21404",
+    "Location": "lib/relay/protocol/protocol.go",
+    "Original_exploitability": "96%",
+    "Exploitability": "96%",
+    "Exploitability_explanation": "✅ API call confirmed. The relay protocol (protocol.go) contains vulnerable logic for marshaling negative length fields in ReadMessage and WriteMessage. Explicit calls are found in lib/relay/client/methods.go (lines 55, 59, 94, 99). The protocol vulnerability allows for a heap-based buffer overflow or heap out-of-bounds write since length validation was missing or incorrect. As the relay protocol is enabled by default (lib/config/optionsconfiguration.go), the risk is very high and matches the SCA score of 96%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-46165",
+    "Location": "gui/default/index.html",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "✅ API call confirmed. The Web GUI (index.html) renders filenames and device names in tooltips (line 605) using Angular double-curly braces {{ }}. While angular-translate is configured with an 'escape' strategy (app.js:27), historical versions had bypasses or lacked this configuration. Stored XSS is possible if a malicious peer sends a file with a crafted name. However, the exploitability is low (15%) because it requires a user to manually add a malicious device and accept a folder before the XSS can be triggered, which is a significant human constraint.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-1000420",
+    "Location": "lib/fs/basicfs_unix.go",
+    "Original_exploitability": "20%",
+    "Exploitability": "20%",
+    "Exploitability_explanation": "✅ API call confirmed. The core engine (folder_sendrecv.go:762) calls CreateSymlink to sync symlinks from peers. The implementation in lib/fs/basicfs_unix.go (line 28) calls os.Symlink with a target that is taken directly from the peer without validation. This allows a malicious peer to create symlinks pointing outside the sync folder (e.g., to /etc/passwd). Subsequent file writes could then overwrite sensitive system files. The 20% score is appropriate as it requires a malicious peer relationship and specific system permissions (especially on Windows where symlinks are restricted).",
+    "Assessment": "Correct"
+  }
+]

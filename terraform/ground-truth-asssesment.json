@@ -1,0 +1,34 @@
+[
+  {
+    "Vulnerability": "CVE-2019-19316",
+    "Location": "github.com/hashicorp/terraform:",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "The API is supported, but the code enforces HTTPS in base URL construction by default. Since no active usage was found in this location, the probability remains very low.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-19316",
+    "Location": "github.com/hashicorp/terraform:v0.0.0-00010101000000-000000000000",
+    "Original_exploitability": 75,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Azure SAS token usage is confirmed in `api_client.go`. However, `naiveStorageAccountBlobBaseURL` enforces HTTPS, and the old `newSASClient` function mentioned in the CVE fix is no longer present. The score is significantly lower due to these mitigations.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-4782",
+    "Location": "github.com/hashicorp/terraform:",
+    "Original_exploitability": 70,
+    "Exploitability": 10,
+    "Exploitability_explanation": "The vulnerable path traversal sink exists in `packageInstallPath`, but the input `req.Name` is strictly validated by `hclsyntax.ValidIdentifier` in `moduleInstallWalker`. This prevents the use of traversal characters like `../`, effectively mitigating the vulnerability.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.69.4",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "The gRPC server is active in `internal/rpcapi/server.go`, but it does not use any path-based authorization interceptors. Therefore, the mandatory condition for the `:path` bypass vulnerability is not met.",
+    "Assessment": "Correct"
+  }
+]

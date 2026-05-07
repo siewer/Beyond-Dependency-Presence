@@ -1,0 +1,138 @@
+[
+  {
+    "Vulnerability": "CVE-2025-24970",
+    "Location": "netty-handler:4.1.93.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8908",
+    "Location": "guava:24.1-jre",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-10237",
+    "Location": "guava:24.1-jre",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-34462",
+    "Location": "netty-handler:4.1.93.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47535",
+    "Location": "netty-common:4.1.93.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-29425",
+    "Location": "commons-io:2.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47554",
+    "Location": "commons-io:2.13.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47554",
+    "Location": "commons-io:2.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29025",
+    "Location": "netty-codec-http:4.1.93.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25193",
+    "Location": "netty-common:4.1.93.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-7254",
+    "Location": "protobuf-java:3.22.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58057",
+    "Location": "netty-codec:4.1.93.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-2976",
+    "Location": "guava:24.1-jre",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55163",
+    "Location": "netty-codec-http2:4.1.93.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-67735",
+    "Location": "netty-codec-http:4.1.93.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58056",
+    "Location": "netty-codec-http:4.1.93.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-xpw8-rcwv-8f8p",
+    "Location": "netty-codec-http2:4.1.93.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call confirmed: No. A thorough search for vulnerable functions and library imports (io.netty, com.google.common, org.apache.commons.io, com.google.protobuf) returned no results in the provided codebase. The vulnerable API is not called in any active code path.",
+    "Assessment": "Correct"
+  }
+]

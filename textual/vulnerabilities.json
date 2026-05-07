@@ -1,0 +1,146 @@
+[
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-32274",
+    "Status": "NEW",
+    "Exploitability": "0",
+    "Last Seen": "2026-03-14T06:09:28.549Z",
+    "Source": "SCA",
+    "Location": "black:24.4.2"
+  },
+  {
+    "Severity": "CRITICAL",
+    "Name": "CVE-2025-43859",
+    "Status": "EXISTING",
+    "Exploitability": "0",
+    "Last Seen": "2026-03-14T06:09:28.529Z",
+    "Source": "SCA",
+    "Location": "h11:0.14.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2025-69223",
+    "Status": "EXISTING",
+    "Exploitability": "0",
+    "Last Seen": "2026-03-14T06:09:28.529Z",
+    "Source": "SCA",
+    "Location": "aiohttp:3.13.1"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-69227",
+    "Status": "EXISTING",
+    "Exploitability": "0",
+    "Last Seen": "2026-03-14T06:09:28.529Z",
+    "Source": "SCA",
+    "Location": "aiohttp:3.13.1"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-69228",
+    "Status": "EXISTING",
+    "Exploitability": "0",
+    "Last Seen": "2026-03-14T06:09:28.530Z",
+    "Source": "SCA",
+    "Location": "aiohttp:3.13.1"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-69229",
+    "Status": "EXISTING",
+    "Exploitability": "0",
+    "Last Seen": "2026-03-14T06:09:28.530Z",
+    "Source": "SCA",
+    "Location": "aiohttp:3.13.1"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2025-66418",
+    "Status": "EXISTING",
+    "Exploitability": "0",
+    "Last Seen": "2026-03-14T06:09:28.530Z",
+    "Source": "SCA",
+    "Location": "urllib3:2.5.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2025-66471",
+    "Status": "EXISTING",
+    "Exploitability": "0",
+    "Last Seen": "2026-03-14T06:09:28.530Z",
+    "Source": "SCA",
+    "Location": "urllib3:2.5.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-21441",
+    "Status": "EXISTING",
+    "Exploitability": "0",
+    "Last Seen": "2026-03-14T06:09:28.530Z",
+    "Source": "SCA",
+    "Location": "urllib3:2.5.0"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "CVE-2025-69226",
+    "Status": "EXISTING",
+    "Exploitability": "0",
+    "Last Seen": "2026-03-14T06:09:28.530Z",
+    "Source": "SCA",
+    "Location": "aiohttp:3.13.1"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "CVE-2025-69225",
+    "Status": "EXISTING",
+    "Exploitability": "0",
+    "Last Seen": "2026-03-14T06:09:28.550Z",
+    "Source": "SCA",
+    "Location": "aiohttp:3.13.1"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "CVE-2025-69224",
+    "Status": "EXISTING",
+    "Exploitability": "0",
+    "Last Seen": "2026-03-14T06:09:28.551Z",
+    "Source": "SCA",
+    "Location": "aiohttp:3.13.1"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2026-22701",
+    "Status": "EXISTING",
+    "Exploitability": "0",
+    "Last Seen": "2026-03-14T06:09:28.551Z",
+    "Source": "SCA",
+    "Location": "filelock:3.19.1"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "CVE-2025-69230",
+    "Status": "EXISTING",
+    "Exploitability": "0",
+    "Last Seen": "2026-03-14T06:09:28.552Z",
+    "Source": "SCA",
+    "Location": "aiohttp:3.13.1"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2026-22702",
+    "Status": "EXISTING",
+    "Exploitability": "0",
+    "Last Seen": "2026-03-14T06:09:28.551Z",
+    "Source": "SCA",
+    "Location": "virtualenv:20.35.3"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-68146",
+    "Status": "EXISTING",
+    "Exploitability": "0",
+    "Last Seen": "2026-03-14T06:09:28.552Z",
+    "Source": "SCA",
+    "Location": "filelock:3.19.1"
+  }
+]

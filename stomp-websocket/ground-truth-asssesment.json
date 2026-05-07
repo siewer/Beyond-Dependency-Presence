@@ -1,0 +1,58 @@
+[
+  {
+    "Vulnerability": "CVE-2021-23358",
+    "Location": "underscore:1.9.2",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable function `_.template()` is not used in the codebase. The `underscore` library is not a direct or indirect dependency used by the STOMP client code. No calls to the library were found after a thorough search of `src`, `lib`, `test`, and `example` directories.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:0.0.10",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The `minimist` library is not used in the STOMP client or its examples. No calls to `minimist()` or `parseArgs()` were found. The dependency is likely a transitive devDependency of build tools, making it unreachable in the active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7598",
+    "Location": "minimist:0.0.10",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The `minimist` library is not used in the STOMP client or its examples. No calls to the library were found. The original exploitability of 50% is highly overestimated given the total absence of the API in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The `minimatch` library is not called in the codebase. ReDoS vulnerability is impossible to exploit as no `minimatch()` calls exist. Assessment remains at baseline (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The `minimatch` library is not called in the codebase. Algorithmic complexity (ReDoS) vulnerability is impossible to exploit. Assessment remains at baseline (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The `minimatch` library is not called in the codebase. ReDoS via nested extglobs is impossible to exploit. Assessment remains at baseline (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27601",
+    "Location": "underscore:1.9.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The `underscore` library is not used. Vulnerable recursive functions `_.flatten` and `_.isEqual` are not called. Assessment remains at baseline (1%).",
+    "Assessment": "Correct"
+  }
+]

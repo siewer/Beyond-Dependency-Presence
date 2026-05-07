@@ -1,0 +1,1570 @@
+[
+  {
+    "Vulnerability": "CVE-2019-19919",
+    "Location": "handlebars:1.0.12",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23383",
+    "Location": "handlebars:1.0.12",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10744",
+    "Location": "lodash:2.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10744",
+    "Location": "lodash:2.4.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10744",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10744",
+    "Location": "lodash:3.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23369",
+    "Location": "handlebars:1.0.12",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:0.7.4",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library usage confirmed, but no explicit call to the vulnerable %o formatter with untrusted input was found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:0.8.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library usage confirmed, but no explicit call to the vulnerable %o formatter with untrusted input was found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:2.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library usage confirmed, but no explicit call to the vulnerable %o formatter with untrusted input was found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:0.6.5",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:0.6.6",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:1.2.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-16026",
+    "Location": "request:2.11.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-7191",
+    "Location": "qs:0.6.5",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.3.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-10064",
+    "Location": "qs:0.6.5",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-1000048",
+    "Location": "qs:0.6.5",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-1000048",
+    "Location": "qs:0.6.6",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-1000048",
+    "Location": "qs:1.2.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2015-8861",
+    "Location": "handlebars:1.0.12",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:2.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:2.4.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:0.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:0.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:0.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:1.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:2.0.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-10540",
+    "Location": "minimatch:0.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-20920",
+    "Location": "handlebars:1.0.12",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16487",
+    "Location": "lodash:2.4.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16487",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-10539",
+    "Location": "negotiator:0.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:1.8.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20162",
+    "Location": "ms:0.6.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3721",
+    "Location": "lodash:2.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3721",
+    "Location": "lodash:2.4.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3721",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:0.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 55,
+    "Exploitability_explanation": "Explicit instantiation of FormData confirmed in src/node/index.js. Triggers vulnerable boundary generation logic. Reachable via .attach() calls.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:2.3.11",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:0.6.5",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:0.6.6",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:1.2.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:2.4.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:0.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:0.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:0.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:1.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25901",
+    "Location": "cookiejar:1.3.0",
+    "Original_exploitability": 50,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to CookieJar.setCookies confirmed in src/node/agent.js. Processes untrusted 'set-cookie' headers from servers, which internally calls vulnerable Cookie.parse, satisfying ReDoS constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:0.8.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library usage confirmed, but no explicit call to the vulnerable %o formatter with untrusted input was found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:2.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library usage confirmed, but no explicit call to the vulnerable %o formatter with untrusted input was found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.13.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:4.12.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:3.5.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-2cf5-4w76-r9qv",
+    "Location": "handlebars:1.0.12",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43799",
+    "Location": "send:0.1.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16026",
+    "Location": "request:2.46.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:2.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library usage confirmed, but no explicit call to the vulnerable %o formatter with untrusted input was found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash-es:4.17.22",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:5.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47764",
+    "Location": "cookie:0.1.0",
+    "Original_exploitability": 55,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-7339",
+    "Location": "on-headers:1.0.2",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-19919",
+    "Location": "handlebars:1.3.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2016-2515",
+    "Location": "hawk:1.1.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23383",
+    "Location": "handlebars:1.3.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25858",
+    "Location": "terser:3.17.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23369",
+    "Location": "handlebars:1.3.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-6394",
+    "Location": "send:0.1.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3728",
+    "Location": "hoek:0.9.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-45590",
+    "Location": "body-parser:1.12.4",
+    "Original_exploitability": 40,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in devDependencies (test server utilities), not reachable in production client code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:2.4.2",
+    "Original_exploitability": 5,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-36604",
+    "Location": "hoek:0.9.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2015-8858",
+    "Location": "uglify-js:2.3.6",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-8315",
+    "Location": "ms:0.6.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8244",
+    "Location": "bl:0.9.5",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2014-7191",
+    "Location": "qs:0.6.6",
+    "Original_exploitability": 50,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.3.8",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-10064",
+    "Location": "qs:0.6.6",
+    "Original_exploitability": 1,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33937",
+    "Location": "handlebars:4.7.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-1000048",
+    "Location": "qs:2.4.2",
+    "Original_exploitability": 50,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2016-10541",
+    "Location": "shell-quote:1.4.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-8861",
+    "Location": "handlebars:1.3.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:3.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-10540",
+    "Location": "minimatch:0.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-10540",
+    "Location": "minimatch:0.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-10540",
+    "Location": "minimatch:1.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-10540",
+    "Location": "minimatch:2.0.10",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-26237",
+    "Location": "highlight.js:7.5.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16138",
+    "Location": "mime:1.2.11",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16138",
+    "Location": "mime:1.2.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16138",
+    "Location": "mime:1.2.7",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2015-8859",
+    "Location": "send:0.1.4",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.11.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.46.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-20920",
+    "Location": "handlebars:1.3.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16487",
+    "Location": "lodash:2.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16487",
+    "Location": "lodash:3.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2015-8857",
+    "Location": "uglify-js:2.3.6",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16119",
+    "Location": "fresh:0.2.0",
+    "Original_exploitability": 70,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2016-10539",
+    "Location": "negotiator:0.5.3",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2016-1000236",
+    "Location": "cookie-signature:1.0.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-16129",
+    "Location": "superagent:0.15.7",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48997",
+    "Location": "multer:1.4.5-lts.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3717",
+    "Location": "connect:2.12.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:3.0.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-6393",
+    "Location": "express:3.4.8",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20162",
+    "Location": "ms:0.7.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-10491",
+    "Location": "express:3.4.8",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3721",
+    "Location": "lodash:3.2.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-32822",
+    "Location": "hbs:2.4.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47935",
+    "Location": "multer:1.4.5-lts.1",
+    "Original_exploitability": 96,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-0842",
+    "Location": "xml2js:0.4.23",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-29167",
+    "Location": "hawk:1.1.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33672",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:0.1.4",
+    "Original_exploitability": 15,
+    "Exploitability": 55,
+    "Exploitability_explanation": "Explicit instantiation of FormData confirmed in src/node/index.js. Triggers vulnerable boundary generation logic. Reachable via .attach() calls.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33938",
+    "Location": "handlebars:4.7.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:4.0.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29041",
+    "Location": "express:3.4.8",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-4800",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-4800",
+    "Location": "lodash-es:4.17.22",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3520",
+    "Location": "multer:1.4.5-lts.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33940",
+    "Location": "handlebars:4.7.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33671",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-9266",
+    "Location": "express:3.4.8",
+    "Original_exploitability": 2,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43796",
+    "Location": "express:3.4.8",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-4867",
+    "Location": "path-to-regexp:0.1.12",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33939",
+    "Location": "handlebars:4.7.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:1.1.12",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:2.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:0.7.4",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library usage confirmed, but no explicit call to the vulnerable %o formatter with untrusted input was found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:2.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library usage confirmed, but no explicit call to the vulnerable %o formatter with untrusted input was found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:3.2.6",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library usage confirmed, but no explicit call to the vulnerable %o formatter with untrusted input was found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47944",
+    "Location": "multer:1.4.5-lts.1",
+    "Original_exploitability": 97,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33228",
+    "Location": "flatted:3.3.3",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-2950",
+    "Location": "lodash:2.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2950",
+    "Location": "lodash:2.4.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2950",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2950",
+    "Location": "lodash:3.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2950",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2950",
+    "Location": "lodash-es:4.17.22",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33532",
+    "Location": "yaml:1.10.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33532",
+    "Location": "yaml:2.8.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-34043",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33916",
+    "Location": "handlebars:4.7.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.14.1",
+    "Original_exploitability": 96,
+    "Exploitability": 85,
+    "Exploitability_explanation": "API call to qs.parse confirmed in src/node/parsers/urlencoded.js. Reaches untrusted server response data, satisfying all exploitation constraints for Prototype Pollution/DoS vulnerabilities.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:0.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:0.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:0.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:1.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:2.0.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33941",
+    "Location": "handlebars:4.7.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2359",
+    "Location": "multer:1.4.5-lts.1",
+    "Original_exploitability": 96,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-3304",
+    "Location": "multer:1.4.5-lts.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:2.0.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:0.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:0.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:0.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:1.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:2.0.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:5.2.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.3.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.17.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-7338",
+    "Location": "multer:1.4.5-lts.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.6.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-g9r4-xpmj-mj65",
+    "Location": "handlebars:1.0.12",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-q2c6-c6pm-g3gh",
+    "Location": "handlebars:1.0.12",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-q42p-pg8m-cqh6",
+    "Location": "handlebars:1.0.12",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-2cf5-4w76-r9qv",
+    "Location": "handlebars:1.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-g9r4-xpmj-mj65",
+    "Location": "handlebars:1.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-q2c6-c6pm-g3gh",
+    "Location": "handlebars:1.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-q42p-pg8m-cqh6",
+    "Location": "handlebars:1.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-6x33-pw7p-hmpq",
+    "Location": "http-proxy:1.11.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-7rx3-28cr-v5wh",
+    "Location": "handlebars:4.7.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-xc7v-wxcw-j472",
+    "Location": "tunnel-agent:0.4.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-v2p6-4mp7-3r9v",
+    "Location": "underscore.string:2.3.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-442j-39wm-28r2",
+    "Location": "handlebars:4.7.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or dependency not present in production codebase.",
+    "Assessment": "Correct"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "Vulnerability": "GHSA-v98m-m7mc-g24r",
+    "Location": "svelte-monorepo:0.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path. Thorough search of the codebase found no evidence of usage for this specific GHSA ID or related vulnerable patterns.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-62522",
+    "Location": "vite:5.4.20",
+    "Original_exploitability": 50,
+    "Exploitability": 75,
+    "Exploitability_explanation": "Vite dev server is explicitly exposed to the network via the --host flag in playgrounds/sandbox/package.json. The application is running on Windows as per environment metadata, satisfying the primary constraint for the directory traversal bypass. Base probability matches 'Config ENABLED + Path/Param verified' in the scoring rules.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:4.0.0",
+    "Original_exploitability": 40,
+    "Exploitability": 1,
+    "Exploitability_explanation": "form-data is a transitive dependency used by build systems or dev tools. No explicit calls to the vulnerable API were found in the codebase. Per methodology, probability is reduced to minimum (0.01) when no API call is confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch is a transitive dependency used by internal tools. No direct usage of the vulnerable API was found in the application source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:10.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch is a transitive dependency used by internal tools. No direct usage of the vulnerable API was found in the application source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch is a transitive dependency used by internal tools. No direct usage of the vulnerable API was found in the application source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ajv is a transitive dependency. No direct calls to the vulnerable API or configuration enabling $data references were found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.2.9",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "flatted is a transitive dependency. No usage of flatted.parse() on untrusted JSON was found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "serialize-javascript is a transitive dependency. No direct calls to serialize() with user-controlled input were found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-67mh-4wv8-2f99",
+    "Location": "esbuild:0.21.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "esbuild is used only for production builds in tests (esbuild.build). The vulnerable dev server (.serve()) is not utilized in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:10.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch is a transitive dependency. No direct usage of the vulnerable API was found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch is a transitive dependency. No direct usage of the vulnerable API was found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:10.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "minimatch is a transitive dependency. No direct usage of the vulnerable API was found in the codebase.",
+    "Assessment": "Correct"
+  }
+]

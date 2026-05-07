@@ -1,0 +1,42 @@
+[
+  {
+    "Vulnerability": "CVE-2015-9251",
+    "Location": "jquery:Migrate",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE. Found '/*! jQuery Migrate v3.4.0' in 'include/javascript/jquery/jquery-migrate.min.js' and '/*! jQuery v3.6.0' in 'include/javascript/jquery/jquery-min.js'. Both versions are safely above the vulnerable range (< 3.0.0). Version SAFE (not in vulnerable range). status: 'not_confirmed', probability: 0.05, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2011-4969",
+    "Location": "jquery:Migrate",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE. Found '/*! jQuery Migrate v3.4.0' in 'include/javascript/jquery/jquery-migrate.min.js' and '/*! jQuery v3.6.0' in 'include/javascript/jquery/jquery-min.js'. Both versions are safely above the vulnerable range (< 1.6.3). Version SAFE (not in vulnerable range). status: 'not_confirmed', probability: 0.05, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2012-6708",
+    "Location": "jquery:Migrate",
+    "Original_exploitability": 40,
+    "Exploitability": 5,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE. Found '/*! jQuery Migrate v3.4.0' in 'include/javascript/jquery/jquery-migrate.min.js' and '/*! jQuery v3.6.0' in 'include/javascript/jquery/jquery-min.js'. Both versions are safely above the vulnerable range (< 1.9.0). Version SAFE (not in vulnerable range). status: 'not_confirmed', probability: 0.05, exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-32313",
+    "Location": "robrichards/xmlseclibs:3.1.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE. Found '\"source\": \"https://github.com/robrichards/xmlseclibs/tree/3.1.4\"' in 'composer.lock'. Thorough search for explicit calls to vulnerable functions yielded no results. The vulnerable API is not called in any active code path. status: 'not_confirmed', probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-45769",
+    "Location": "firebase/php-jwt:v6.11.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE. Found '\"source\": \"https://github.com/firebase/php-jwt/tree/v6.11.1\"' in 'composer.lock'. Thorough search for explicit calls to vulnerable functions yielded no results (only tests/comments containing JWT). The vulnerable API is not called in any active code path. status: 'not_confirmed', probability: 0.01, exploitable: false.",
+    "Assessment": "Correct"
+  }
+]
