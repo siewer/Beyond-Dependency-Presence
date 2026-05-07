@@ -1,0 +1,386 @@
+[
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'tar' is not explicitly used in the user codebase (src, bin, scripts). The vulnerability is likely internal to a transitive dependency. API is not called in active code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.7.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "The 'semver' package is used in 'src/ClientSDK.js', but the input is strictly sanitized via 'fromString' regex, mitigating ReDoS risks. Original score of 0% is correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:6.3.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage of 'semver.satisfies' found in 'src/ClientSDK.js' with potential user-controlled input. However, mitigation is in place via regex-based input validation. New score is within 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-37890",
+    "Location": "ws:7.5.9",
+    "Original_exploitability": 97,
+    "Exploitability": 90,
+    "Exploitability_explanation": "Explicit call to 'ws.Server' found in 'src/Adapters/WebSocketServer/WSAdapter.js'. The server is used for LiveQuery and handles upgrade requests, which is the primary attack vector. All constraints satisfied.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25285",
+    "Location": "@octokit/endpoint:9.0.5",
+    "Original_exploitability": 1,
+    "Exploitability": 5,
+    "Exploitability_explanation": "@octokit packages are not imported or used in the user codebase. Likely internal usage. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25288",
+    "Location": "@octokit/plugin-paginate-rest:9.2.1",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "No explicit or reachable usage of @octokit/plugin-paginate-rest found in the project. The original exploitability score of 50% is incorrect as the API is absent from the user code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-25289",
+    "Location": "@octokit/request-error:5.1.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "@octokit packages are absent from active code paths. Internal library usage only. Original score within 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25290",
+    "Location": "@octokit/request:8.4.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API absent from user code paths. Score within 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2229",
+    "Location": "undici:6.23.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Used indirectly via native fetch in Node.js 20+. The vulnerability relates to specific undici configurations not enabled here. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2229",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Used indirectly via native fetch. No configuration satisfied. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-55565",
+    "Location": "nanoid:3.3.7",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'nanoid' is not used in the user codebase. API call not confirmed. Original score is within 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 1,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'cross-spawn' is in devDependencies and not used in the production 'src' code. Low risk.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1526",
+    "Location": "undici:6.23.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "No relevant usage patterns found. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1526",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "No relevant usage patterns found. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1528",
+    "Location": "undici:6.23.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "No relevant usage patterns found. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1528",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "No relevant usage patterns found. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'minimatch' not explicitly used in user code. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'minimatch' not explicitly used. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'minimatch' not explicitly used. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'minimatch' not explicitly used. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'minimatch' not explicitly used. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'minimatch' not explicitly used. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'minimatch' not explicitly used. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'minimatch' not explicitly used. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'minimatch' not explicitly used. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2581",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Native fetch usage does not trigger the specific constraints. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'flatted' not used in the user codebase. API absent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27601",
+    "Location": "underscore:1.13.6",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'underscore' not used in the user codebase. API absent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "glob:10.4.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'glob' not explicitly used in active code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "glob:10.4.5",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'glob' not explicitly used. Score within 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'ajv' not explicitly used. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1525",
+    "Location": "undici:6.23.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Native fetch usage does not trigger constraints. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1525",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Native fetch usage does not trigger constraints. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'tar' is absent from active user code. The original score of 25% is just within the 20% absolute tolerance compared to the confirmed 5% probability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30827",
+    "Location": "express-rate-limit:8.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Package used correctly in 'src/middlewares.js'. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1527",
+    "Location": "undici:6.23.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "No relevant usage patterns found. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1527",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "No relevant usage patterns found. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2327",
+    "Location": "markdown-it:14.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'markdown-it' not used in code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:4.12.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'bn.js' not used in code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'tar' not used in code paths. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:2.0.1",
+    "Original_exploitability": 1,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package not explicitly used in src. API absent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'tar' not used. Score within 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 1,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'tar' not used. Score within 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'tar' not used. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:5.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package 'diff' is not imported or called in any active code path. The original score of 50% is incorrect given the complete absence of the API from the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:2.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package not used in code paths. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33228",
+    "Location": "flatted:3.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package not used in code paths. Original score correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33349",
+    "Location": "fast-xml-parser:5.5.6",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Package not used in code paths. Original score correct.",
+    "Assessment": "Correct"
+  }
+]

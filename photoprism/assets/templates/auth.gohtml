@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-color-mode="dark" data-light-theme="light" data-dark-theme="dark" class="loading">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0{{if not .config.Settings.UI.Zoom }}, maximum-scale=1.0, user-scalable=no{{end}}">
+  <title>{{if and .config.SiteCaption .config.Sponsor }}{{ .config.SiteCaption }}{{else}}{{ .config.Name }}{{end}}</title>
+    {{template "favicons.gohtml" .}}
+  <link rel="stylesheet" href="{{ .config.CssUri }}">
+  <link rel="manifest" href="{{ .config.ManifestUri }}" crossorigin="use-credentials">
+</head>
+<body class="{{ .config.Flags }} nojs">
+
+{{template "app.gohtml" .}}
+
+<script>
+  (function () {
+    const localStorage = window.localStorage;
+    const sessionStorage = window.sessionStorage;
+    const rawNamespace = {{ .config.StorageNamespace }};
+    const namespaceKey = rawNamespace && rawNamespace !== "null" && rawNamespace !== "undefined" ? String(rawNamespace) : "root";
+    const prefix = `pp:${namespaceKey}:`;
+    const namespacedKey = (key) => `${prefix}${key}`;
+    const sessionDataKeys = [
+      "session.token",
+      "session.id",
+      "session.data",
+      "session.user",
+      "session.provider",
+      "session.scope",
+      "session.error",
+    ];
+    const storages = [localStorage, sessionStorage].filter(Boolean);
+    const preferredStorage =
+      localStorage &&
+      (localStorage.getItem(namespacedKey("session")) === "true" || localStorage.getItem("session") === "true")
+        ? sessionStorage || localStorage
+        : localStorage;
+    const clearSessionData = () => {
+      storages.forEach((storage) => {
+        // Preserve the storage-mode preference so the login page keeps using
+        // sessionStorage when "Stay signed in on this device" is disabled.
+        sessionDataKeys.forEach((key) => storage.removeItem(key));
+        sessionDataKeys.forEach((key) => storage.removeItem(namespacedKey(key)));
+      });
+    };
+    const setItem = (key, value) => {
+      preferredStorage.setItem(namespacedKey(key), value);
+    };
+    const removeItem = (key) => {
+      storages.forEach((storage) => storage.removeItem(namespacedKey(key)));
+    };
+
+    {{ if eq .status "success" }}
+    clearSessionData();
+    setItem("session.id", {{ .session_id }});
+    setItem("session.token", {{ .access_token }});
+    setItem("session.provider", {{ .provider }});
+    setItem("session.user", JSON.stringify({{ .user }}));
+    removeItem("session.error");
+    {{ else if eq .status "failed" }}
+    clearSessionData();
+    setItem("session.error", {{ .error }});
+    {{ else }}
+    clearSessionData();
+    removeItem("session.id");
+    removeItem("session.token");
+    removeItem("session.provider");
+    removeItem("session.user");
+    removeItem("session.error");
+    {{ end }}
+  })();
+  window.location.href = {{ .config.LoginUri }};
+</script>
+</body>
+</html>

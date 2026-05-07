@@ -1,0 +1,35 @@
+package server
+
+import (
+	"github.com/gin-gonic/gin"
+
+	"github.com/photoprism/photoprism/internal/config"
+)
+
+// WebDAV mount points served by the application.
+const (
+	WebDAVOriginals = "/originals"
+	WebDAVImport    = "/import"
+)
+
+// registerWebDAVRoutes adds routes for handling webdav client requests.
+func registerWebDAVRoutes(router *gin.Engine, conf *config.Config) {
+	if conf.DisableWebDAV() {
+		log.Info("webdav: disabled")
+	} else {
+		var info string
+		if conf.ReadOnly() {
+			info = " in read-only mode"
+		} else {
+			info = ""
+		}
+
+		WebDAV(conf.OriginalsPath(), router.Group(conf.BaseUri(WebDAVOriginals), WebDAVAuth(conf)), conf)
+		log.Infof("webdav: shared %s/%s", conf.BaseUri(WebDAVOriginals), info)
+
+		if conf.ImportPath() != "" {
+			WebDAV(conf.ImportPath(), router.Group(conf.BaseUri(WebDAVImport), WebDAVAuth(conf)), conf)
+			log.Infof("webdav: shared %s/%s", conf.BaseUri(WebDAVImport), info)
+		}
+	}
+}

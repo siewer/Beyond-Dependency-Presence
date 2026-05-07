@@ -1,0 +1,1482 @@
+[
+  {
+    "Vulnerability": "CVE-2021-32804",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": 2,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:0.5.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-28502",
+    "Location": "xmlhttprequest-ssl:1.5.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10744",
+    "Location": "lodash:1.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10744",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10744",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:2.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:2.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:2.3.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:2.6.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:0.4.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:6.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-1000048",
+    "Location": "qs:0.4.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:1.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash.template:3.6.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3737",
+    "Location": "sshpk:1.13.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16487",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16119",
+    "Location": "fresh:0.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20162",
+    "Location": "ms:0.7.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20162",
+    "Location": "ms:0.7.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20162",
+    "Location": "ms:0.7.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3721",
+    "Location": "lodash:1.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3721",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7598",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7608",
+    "Location": "yargs-parser:4.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:1.1.7",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:2.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:2.6.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.7",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:0.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:2.0.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:2.0.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:0.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:2.0.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-vjh7-7g9h-fjfh",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-xv2f-5jw4-v95m",
+    "Location": "fsevents:1.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-6x33-pw7p-hmpq",
+    "Location": "http-proxy:1.15.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-8j8c-7jfh-h6hx",
+    "Location": "js-yaml:3.9.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5947-m4fg-xhqg",
+    "Location": "lodash.mergewith:4.6.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.9.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-27088",
+    "Location": "es5-ext:0.10.30",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-37713",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:4.3.6",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-46234",
+    "Location": "browserify-sign:4.0.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28863",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:4.11.8",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:1.8.5",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "babel-traverse:6.25.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:2.3.11",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-9288",
+    "Location": "sha.js:2.4.8",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:6.0.11",
+    "Original_exploitability": 8,
+    "Exploitability": 5,
+    "Exploitability_explanation": "status: not_confirmed. API call confirmed in gulpfile.js (dev tool). Internal usage only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33623",
+    "Location": "trim-newlines:1.0.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42461",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:6.4.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42460",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-48949",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29041",
+    "Location": "express:2.5.11",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42459",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43799",
+    "Location": "send:0.15.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-48948",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43796",
+    "Location": "express:2.5.11",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-15010",
+    "Location": "tough-cookie:2.3.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3728",
+    "Location": "hoek:2.16.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23358",
+    "Location": "underscore:1.7.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-16492",
+    "Location": "extend:3.0.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-3918",
+    "Location": "json-schema:0.2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:1.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-36604",
+    "Location": "hoek:2.16.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-1000048",
+    "Location": "qs:6.2.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45311",
+    "Location": "fsevents:1.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16487",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16138",
+    "Location": "mime:1.2.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23343",
+    "Location": "path-parse:1.0.5",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7788",
+    "Location": "ini:1.3.4",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-8244",
+    "Location": "bl:0.9.5",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7598",
+    "Location": "minimist:1.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-28500",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-29167",
+    "Location": "hawk:3.1.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3721",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23807",
+    "Location": "jsonpointer:4.0.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:2.6.8",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7733",
+    "Location": "ua-parser-js:0.7.12",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-3745",
+    "Location": "atob:1.1.3",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-20834",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3737",
+    "Location": "sshpk:1.13.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-13173",
+    "Location": "fstream:1.0.11",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-28498",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25758",
+    "Location": "scss-tokenizer:0.2.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3750",
+    "Location": "deep-extend:0.4.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16028",
+    "Location": "randomatic:1.1.7",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7608",
+    "Location": "yargs-parser:5.0.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:2.3.3",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-43800",
+    "Location": "serve-static:1.12.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23362",
+    "Location": "hosted-git-info:2.5.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7793",
+    "Location": "ua-parser-js:0.7.12",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-21270",
+    "Location": "stringstream:0.0.5",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-13822",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-1010266",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23382",
+    "Location": "postcss:6.0.11",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "status: not_confirmed. API call confirmed in gulpfile.js (dev tool). Internal usage only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-10540",
+    "Location": "minimatch:2.0.10",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-41940",
+    "Location": "engine.io:1.8.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-2421",
+    "Location": "socket.io-parser:2.3.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36048",
+    "Location": "engine.io:1.8.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20162",
+    "Location": "ms:1.0.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16119",
+    "Location": "fresh:0.5.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16113",
+    "Location": "parsejson:0.0.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7789",
+    "Location": "node-notifier:5.1.2",
+    "Original_exploitability": 20,
+    "Exploitability": 10,
+    "Exploitability_explanation": "status: not_confirmed. API call confirmed in gulpfile.js (dev tool). Internal usage only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32695",
+    "Location": "socket.io-parser:2.3.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-7191",
+    "Location": "qs:0.4.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-28481",
+    "Location": "socket.io:1.6.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:2.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-10064",
+    "Location": "qs:0.4.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:2.6.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2950",
+    "Location": "lodash:1.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:0.4.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.4.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-6393",
+    "Location": "express:2.5.11",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-3717",
+    "Location": "connect:1.9.2",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-10491",
+    "Location": "express:2.5.11",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23518",
+    "Location": "cached-path-relative:1.0.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-1107",
+    "Location": "is-my-json-valid:2.16.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-16472",
+    "Location": "cached-path-relative:1.0.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-31597",
+    "Location": "xmlhttprequest-ssl:1.5.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2950",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2013-7370",
+    "Location": "connect:1.9.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2013-7371",
+    "Location": "connect:1.9.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-24025",
+    "Location": "node-sass:4.5.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15256",
+    "Location": "object-path:0.9.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3805",
+    "Location": "object-path:0.9.2",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23434",
+    "Location": "object-path:0.9.2",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33151",
+    "Location": "socket.io-parser:2.3.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:1.1.8",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:2.1.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:3.0.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27601",
+    "Location": "underscore:1.7.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:4.11.8",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.8",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6547",
+    "Location": "pbkdf2:3.0.12",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:0.2.14",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2950",
+    "Location": "lodash:3.10.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6545",
+    "Location": "pbkdf2:3.0.12",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-36751",
+    "Location": "parseuri:0.0.5",
+    "Original_exploitability": 2,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29063",
+    "Location": "immutable:3.8.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38355",
+    "Location": "socket.io:1.6.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.4.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47764",
+    "Location": "cookie:0.3.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:2.2.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-57075",
+    "Location": "eazy-logger:3.0.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.81.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:4.11.7",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-4800",
+    "Location": "lodash:4.17.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-779f-wgxg-qr8f",
+    "Location": "lodash.mergewith:4.6.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5v72-xg48-5rpm",
+    "Location": "ws:1.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-2pr6-76vf-7546",
+    "Location": "js-yaml:3.9.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-9v62-24cr-58cx",
+    "Location": "node-sass:4.5.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-xc7v-wxcw-j472",
+    "Location": "tunnel-agent:0.4.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.78.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7774",
+    "Location": "y18n:3.2.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:0.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:2.0.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-10540",
+    "Location": "minimatch:0.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16138",
+    "Location": "mime:1.3.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-16487",
+    "Location": "lodash:1.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-9287",
+    "Location": "cipher-base:1.0.3",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:2.3.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36049",
+    "Location": "socket.io-parser:2.3.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "status: not_confirmed. API call not found in repository code (checked src/parallax.js and gulpfile.js).",
+    "Assessment": "Correct"
+  }
+]

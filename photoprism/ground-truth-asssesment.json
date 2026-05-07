@@ -1,0 +1,50 @@
+[
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Status: not_confirmed. Probability: 0.01. Exploitable: false. Summary: The minimatch package is present as a transitive dependency. However, a thorough search of the codebase found no explicit calls to the vulnerable minimatch API in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Status: not_confirmed. Probability: 0.01. Exploitable: false. Summary: The minimatch package is present as a transitive dependency. However, a thorough search of the codebase found no explicit calls to the vulnerable minimatch API in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-36308",
+    "Location": "github.com/disintegration/imaging:v1.6.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Status: not_confirmed. Probability: 0.01. Exploitable: false. Summary: The imaging package is imported, but a thorough search of the codebase found no explicit calls to the vulnerable imaging.Grayscale function in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Status: not_confirmed. Probability: 0.01. Exploitable: false. Summary: The serialize-javascript package is a transitive dependency. A thorough search of the codebase found no explicit calls to its serialize() function in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Status: not_confirmed. Probability: 0.01. Exploitable: false. Summary: The minimatch package is present as a transitive dependency. However, a thorough search of the codebase found no explicit calls to the vulnerable minimatch API in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28180",
+    "Location": "gopkg.in/square/go-jose.v2:v2.6.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Status: not_confirmed. Probability: 0.01. Exploitable: false. Summary: The go-jose package is present in a dummy test app. A thorough search found no explicit calls to the vulnerable Decrypt or DecryptMulti APIs in any active code path.",
+    "Assessment": "Correct"
+  }
+]

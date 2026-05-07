@@ -1,0 +1,90 @@
+[
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable API 'minimatch()' is not explicitly called in the provided codebase. It is used internally by dependencies (chokidar, mocha), but no direct reachable path from user code was found. Probability reduced to 0.01 (1%) as per Step 1 (API ABSENT).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5891",
+    "Location": "pm2:6.0.14",
+    "Original_exploitability": 20,
+    "Exploitability": 85,
+    "Exploitability_explanation:": "Vulnerable library is the project itself. Explicit call to vulnerable function '_valid' found in 'lib/tools/Config.js' (line 150), called by 'validateJSON'. The function handles user-supplied configuration strings using a regular expression prone to catastrophic backtracking. Version is vulnerable and all constraints are satisfied. Probability 0.85 (85%).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable functions '_.unset' and '_.omit' are not called in the provided codebase. The library is used by dependencies, but no explicit call exists in PM2 source. Probability reduced to 0.01 (1%) as per Step 1 (API ABSENT).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27699",
+    "Location": "basic-ftp:5.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable function 'downloadToDir()' is not used in the codebase. Library is a sub-dependency of get-uri which is not directly imported. Probability 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68154",
+    "Location": "systeminformation:5.27.11",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable function 'fsSize()' is not called in the codebase. Library is used by pm2-sysmonit, which is an optional dependency and is explicitly disabled on Windows systems in lib/API/Extra.js. Probability 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable function 'matchOne()' is not called in the provided codebase. Internal usage only by dependencies. Probability 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable API 'minimatch()' for nested extglobs is not called in the provided codebase. Probability 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:7.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable function 'parsePatch()' is not used in the codebase. Library is only present as a dependency of mocha (dev). Probability 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable function 'serialize()' is not used in the codebase. Library is only present as a dependency of mocha (dev). Probability 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26280",
+    "Location": "systeminformation:5.27.11",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable function 'wifiNetworks()' is not called in the codebase. Probability 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26318",
+    "Location": "systeminformation:5.27.11",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Vulnerable function 'versions()' is not called in the codebase. Probability 0.01 (1%).",
+    "Assessment": "Correct"
+  }
+]

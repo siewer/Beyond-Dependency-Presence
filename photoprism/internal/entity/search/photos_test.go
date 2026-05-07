@@ -1,0 +1,2462 @@
+package search
+
+import (
+	"strconv"
+	"testing"
+	"time"
+
+	"github.com/photoprism/photoprism/internal/entity/sortby"
+
+	"github.com/stretchr/testify/assert"
+
+	"github.com/photoprism/photoprism/internal/entity"
+	"github.com/photoprism/photoprism/internal/form"
+)
+
+func TestPhotos(t *testing.T) {
+	t.Run("SortByTile", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Order = sortby.Title
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.IsType(t, PhotoResults{}, photos)
+	})
+	t.Run("OrderDuration", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = ""
+		frm.Count = 10
+		frm.Offset = 0
+		frm.Order = sortby.Duration
+
+		photos, _, err := Photos(frm)
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 2, len(photos))
+	})
+	t.Run("OrderRandom", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = ""
+		frm.Count = 10
+		frm.Offset = 0
+		frm.Order = sortby.Random
+
+		photos, _, err := Photos(frm)
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 2, len(photos))
+	})
+	t.Run("OrderInvalid", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = ""
+		frm.Count = 10
+		frm.Offset = 0
+		frm.Order = sortby.Invalid
+
+		_, _, err := Photos(frm)
+		assert.Error(t, err)
+	})
+	t.Run("Chinese", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "张"
+		frm.Count = 10
+		frm.Offset = 0
+
+		_, _, err := Photos(frm)
+
+		assert.NoError(t, err)
+	})
+	t.Run("UnknownFaces", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = ""
+		frm.Face = "None"
+		frm.Count = 10
+		frm.Offset = 0
+
+		results, _, err := Photos(frm)
+
+		assert.NoError(t, err)
+		assert.LessOrEqual(t, 1, len(results))
+	})
+	t.Run("SearchAll", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = ""
+		frm.Count = 10
+		frm.Offset = 0
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 3, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("SearchForIdAndMerged", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = ""
+		frm.Count = 5000
+		frm.Offset = 0
+		frm.UID = "ps6sg6be2lvl0yh7"
+		frm.Merged = true
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForIdWithMergedFalse", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = ""
+		frm.Count = 5000
+		frm.Offset = 0
+		frm.UID = "ps6sg6be2lvl0yh7"
+		frm.Merged = false
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("LabelQueryDog", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "label:dog"
+		frm.Count = 10
+		frm.Offset = 0
+
+		photos, count, err := Photos(frm)
+
+		assert.NoError(t, err)
+		assert.Equal(t, PhotoResults{}, photos)
+		assert.Equal(t, 0, count)
+	})
+	t.Run("LabelQueryLandscape", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "label:landscape"
+		frm.Count = 10
+		frm.Offset = 0
+		frm.Order = "relevance"
+
+		photos, _, err := Photos(frm)
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 2, len(photos))
+	})
+	t.Run("InvalidLabelQuery", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "label:xxx"
+		frm.Count = 10
+		frm.Offset = 0
+
+		photos, count, err := Photos(frm)
+
+		assert.NoError(t, err)
+		assert.Equal(t, PhotoResults{}, photos)
+		assert.Equal(t, 0, count)
+	})
+	t.Run("FormLocationTrue", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = ""
+		frm.Count = 10
+		frm.Offset = 0
+		frm.Geo = "yes"
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 2, len(photos))
+	})
+	t.Run("FormLocationTrueAndKeyword", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "bridge"
+		frm.Count = 10
+		frm.Offset = 0
+		frm.Geo = "yes"
+		frm.Error = false
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForKeyword", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "bridge"
+		frm.Count = 5000
+		frm.Offset = 0
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 2, len(photos))
+	})
+	t.Run("SearchForLabelInQuery", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "flower"
+		frm.Count = 5000
+		frm.Offset = 0
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForArchived", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = ""
+		f.Count = 5000
+		f.Offset = 0
+		f.Archived = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForPrivate", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = ""
+		f.Count = 5000
+		f.Offset = 0
+		f.Private = true
+		f.Error = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForPublic", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = ""
+		f.Count = 5000
+		f.Offset = 0
+		f.Public = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 3, len(photos))
+	})
+	t.Run("SearchForReview", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = ""
+		f.Count = 5000
+		f.Offset = 0
+		f.Review = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForQuality", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = ""
+		f.Count = 5000
+		f.Offset = 0
+		f.Quality = 3
+		f.Private = false
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForFileError", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = ""
+		f.Count = 5000
+		f.Offset = 0
+		f.Error = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("FormCameraName", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = ""
+		f.Count = 10
+		f.Offset = 0
+		f.Camera = "Canon EOS 6D"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 3, len(photos))
+	})
+	t.Run("CameraCanonEosSixD", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = "camera:\"Canon EOS 6D\""
+		f.Count = 10
+		f.Offset = 0
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 3, len(photos))
+	})
+	t.Run("FormCameraId", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = ""
+		f.Count = 10
+		f.Offset = 0
+		f.Camera = "1000003"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 3, len(photos))
+	})
+	t.Run("FormColor", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = ""
+		f.Count = 3
+		f.Offset = 0
+		f.Color = "blue"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("FormFavorites", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "favorite:true"
+		f.Count = 10
+		f.Offset = 0
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("FormCountry", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "country:zz"
+		f.Count = 10
+		f.Offset = 0
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+	})
+	t.Run("FormCity", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "city:Mandeni"
+		f.Count = 10
+		f.Offset = 0
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+	})
+	t.Run("FormTitle", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "title:Neckarbrücke"
+		f.Count = 10
+		f.Offset = 0
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		//t.Logf("results: %+v", photos)
+		assert.GreaterOrEqual(t, len(photos), 1)
+
+	})
+	t.Run("FormKeywords", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "keywords:bridge"
+		f.Count = 10
+		f.Offset = 0
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		//t.Logf("results: %+v", photos)
+		assert.GreaterOrEqual(t, len(photos), 4)
+	})
+	t.Run("FormFace", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "face:PN6QO5INYTUSAATOFL43LL2ABAV5ACZK"
+		f.Count = 10
+		f.Offset = 0
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		//t.Logf("results: %+v", photos)
+		assert.Len(t, photos, 1)
+	})
+	t.Run("FormSubject", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "subject:js6sg6b1qekk9jx8"
+		f.Count = 10
+		f.Offset = 0
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		//t.Logf("results: %+v", photos)
+		assert.Len(t, photos, 1)
+	})
+	t.Run("FormSubjects", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "subjects:John"
+		f.Count = 10
+		f.Offset = 0
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		//t.Logf("results: %+v", photos)
+		assert.Len(t, photos, 1)
+	})
+	t.Run("FormPeople", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "people:John"
+		f.Count = 10
+		f.Offset = 0
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		//t.Logf("results: %+v", photos)
+		assert.Len(t, photos, 1)
+	})
+	t.Run("FormHash", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "hash:2cad9168fa6acc5c5c2965ddf6ec465ca42fd818"
+		f.Count = 3
+		f.Offset = 0
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		//t.Logf("results: %+v", photos)
+		assert.Len(t, photos, 1)
+	})
+	t.Run("FormPortrait", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "portrait:true"
+		f.Count = 10
+		f.Offset = 0
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+	})
+	t.Run("FormMono", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "mono:true"
+		f.Count = 10
+		f.Offset = 0
+		f.Archived = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("FormChromaNum25", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "chroma:25"
+		f.Count = 3
+		f.Offset = 0
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 2, len(photos))
+
+	})
+	t.Run("FormChromaLessThanNine", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "chroma:4"
+		f.Count = 3
+		f.Offset = 0
+		f.Error = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+	})
+	t.Run("FormF", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "F:5-100"
+		f.Count = 10
+		f.Offset = 0
+		f.Order = "oldest"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("FormF", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "F:0-2"
+		f.Count = 10
+		f.Offset = 0
+		f.Order = "newest"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 2, len(photos))
+
+	})
+	t.Run("FormLatAndFormLng", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "Lat:33.45343166666667 Lng:25.764711666666667 Dist:4000"
+		f.Count = 10
+		f.Offset = 0
+		f.Order = "imported"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 2, len(photos))
+
+	})
+	t.Run("FormLatAndFormLngAndDistNum6000", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "Lat:33.45343166666667 Lng:25.764711666666667 Dist:6000"
+		f.Count = 10
+		f.Offset = 0
+		f.Order = "imported"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 2, len(photos))
+
+	})
+	t.Run("LatlngNum33Num453431Num180ZeroNum49Num519234Num180Zero", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "latlng:33.453431,-180.0,49.519234,180.0"
+		f.Count = 10
+		f.Offset = 0
+		f.Order = "imported"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		for _, p := range photos {
+			assert.GreaterOrEqual(t, 49.519234, p.PhotoLat)
+			assert.LessOrEqual(t, 33.45343166666667, p.PhotoLat)
+		}
+
+		assert.LessOrEqual(t, 2, len(photos))
+
+	})
+	t.Run("LatlngZeroNum00Num30Num123Num49Num519234NineNum1001234", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "latlng:0.00,-30.123,49.519234,9.1001234"
+		f.Count = 10
+		f.Offset = 0
+		f.Order = "imported"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		for _, p := range photos {
+			assert.LessOrEqual(t, 0.00, p.PhotoLat)
+			assert.LessOrEqual(t, -30.123, p.PhotoLng)
+			assert.GreaterOrEqual(t, 49.519234, p.PhotoLat)
+			assert.GreaterOrEqual(t, 9.1001234, p.PhotoLng)
+		}
+
+		assert.LessOrEqual(t, 10, len(photos))
+
+	})
+	t.Run("FormBeforeAndFormAfterOrderRelevance", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "Before:2016-01-01 After:2013-01-01"
+		f.Count = 5000
+		f.Offset = 0
+		f.Merged = true
+		f.Order = "relevance"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 2, len(photos))
+	})
+	t.Run("FindContentCreatedBefore", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "Before:1990-04-18"
+		f.Count = 5000
+		f.Offset = 0
+		f.Merged = true
+		f.Order = "newest"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+		assert.Equal(t, time.Date(1990, 3, 2, 0, 0, 0, 0, time.UTC), photos[0].TakenAt)
+	})
+	t.Run("FindContentCreatedBefore", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "Before:1990-04-19"
+		f.Count = 5000
+		f.Offset = 0
+		f.Merged = true
+		f.Order = "newest"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 2, len(photos))
+		assert.Equal(t, time.Date(1990, 4, 18, 1, 0, 0, 0, time.UTC), photos[0].TakenAt)
+	})
+	t.Run("FindContentCreatedOnORAfter", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "After:1990-04-18"
+		f.Count = 5000
+		f.Offset = 0
+		f.Merged = true
+		f.Order = "oldest"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 45, len(photos))
+		assert.Equal(t, time.Date(1990, 4, 18, 1, 0, 0, 0, time.UTC), photos[0].TakenAt)
+
+	})
+	t.Run("SearchForDiff", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "Diff:800"
+		f.Count = 5000
+		f.Offset = 0
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForCameraName", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = ""
+		f.Count = 1
+		f.Offset = 0
+		f.Camera = "canon"
+		f.Lens = ""
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForLensName", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = ""
+		f.Count = 1
+		f.Offset = 0
+		f.Camera = ""
+		f.Lens = "apple"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForFullLensName", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = ""
+		f.Count = 1
+		f.Offset = 0
+		f.Camera = ""
+		f.Lens = "Apple F380"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForFullLensNameUsingQuery", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "lens:\"Apple F380\""
+		f.Count = 1
+		f.Offset = 0
+		f.Camera = ""
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForLensMonthYearAlbum", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = ""
+		f.Count = 5000
+		f.Offset = 0
+		f.Lens = "1000000"
+		f.Month = strconv.Itoa(7)
+		f.Year = strconv.Itoa(2790)
+		f.Album = "as6sg6bxpogaaba8"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("Albums", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = ""
+		f.Albums = "Berlin"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("FAlbum", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = ""
+		f.Album = "Berlin"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForState", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.State = "KwaZulu-Natal"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForCity", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.City = "Mandeni"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForCategory", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Category = "botanical garden"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForLabels", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Label = "botanical-garden|nature|landscape|park"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForPrimaryFiles", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Primary = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchForLandscape", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "landscape"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("SearchWithMultipleParameters", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Hidden = true
+		f.Scan = "true"
+		f.Year = "2010"
+		f.Day = "1"
+		f.Photo = true
+		f.Name = "xxx"
+		f.Original = "xxyy"
+		f.Path = "/xxx/xxx/"
+		f.Order = sortby.Name
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.IsType(t, PhotoResults{}, photos)
+	})
+	t.Run("SearchWithMultipleParameters", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Hidden = true
+		f.Scan = "true"
+		f.Year = strconv.Itoa(2010)
+		f.Day = strconv.Itoa(1)
+		f.Video = true
+		f.Name = "xxx"
+		f.Original = "xxyy"
+		f.Path = "/xxx|xxx"
+		f.Type = "mp4"
+		f.Stackable = true
+		f.Unsorted = true
+		f.Filter = ""
+		f.Order = sortby.Added
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.IsType(t, PhotoResults{}, photos)
+	})
+	t.Run("RecentlyEdited", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = ""
+		frm.Count = 10
+		frm.Offset = 0
+		frm.Order = sortby.Edited
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("RecentlyDeleted", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = ""
+		frm.Count = 10
+		frm.Offset = 0
+		frm.Order = sortby.Archived
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("SearchUnstackedPanoramas", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = ""
+		frm.Count = 10
+		frm.Offset = 0
+		frm.Panorama = true
+		frm.Stackable = false
+		frm.Unstacked = true
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("OrSearch", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = ""
+		frm.Count = 10
+		frm.Offset = 0
+		frm.Name = "xxx|PhotoWithEditedAt"
+		frm.Filename = "xxx|2007/12/PhotoWithEditedAt.jpg"
+		frm.Title = "xxx|photowitheditedatdate"
+		frm.Hash = "xxx|pcad9a68fa6acc5c5ba965adf6ec465ca42fd887"
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("Faces", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "faces:true"
+		f.Count = 10
+		f.Offset = 0
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 3)
+	})
+	t.Run("FacesYes", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Faces = "Yes"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 3)
+	})
+	t.Run("FacesNo", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Faces = "No"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 9)
+	})
+	t.Run("FFaceYes", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Face = "yes"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 9)
+	})
+	t.Run("FacesTwo", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Faces = "2"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+	})
+	t.Run("Subject", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Subject = "js6sg6b1qekk9jx8"
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("NewFaces", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Face = "new"
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+	})
+	t.Run("QueryVideos", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "videos"
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+
+			if r.PhotoType != "video" {
+				t.Error("type should be video only")
+			}
+
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("QueryVideo", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "video"
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+
+			if r.PhotoType != "video" {
+				t.Error("type should be video only")
+			}
+
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("QueryLive", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "live"
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.Equal(t, "live", r.PhotoType)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("FLive", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Live = true
+		frm.Query = ""
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.Equal(t, "live", r.PhotoType)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("QueryRaws", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "raws"
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.Equal(t, "raw", r.PhotoType)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("FRaw", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Raw = true
+		frm.Query = ""
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.Equal(t, "raw", r.PhotoType)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("QueryFaces", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "faces"
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.LessOrEqual(t, 1, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.LessOrEqual(t, 1, r.PhotoFaces)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("QueryFaces", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "faces:new"
+		frm.Face = ""
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.LessOrEqual(t, 1, r.PhotoFaces)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("QueryPeople", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "people"
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.LessOrEqual(t, 1, r.PhotoFaces)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("QueryFavorites", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "favorites"
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.True(t, r.PhotoFavorite)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("QueryStacks", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "stacks"
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("QueryPanoramas", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "panoramas"
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.Equal(t, true, r.PhotoPanorama)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("QueryScans", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "scans"
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.Equal(t, true, r.PhotoScan)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("QueryMonochrome", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "monochrome"
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("QueryMono", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "mono"
+		frm.Count = 10
+		frm.Offset = 0
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.LessOrEqual(t, 1, len(photos))
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("Filename", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Filename = "1990/04/Quality1FavoriteTrue.jpg"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+	})
+	t.Run("OriginalNameOrOriginalName", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Original = "my-videos/IMG_88888" + "|" + "Vacation/exampleFileNameOriginal"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 2)
+	})
+	t.Run("Stack", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Stack = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 2)
+	})
+	t.Run("KeywordsKuhBridgeGreaterThanKeywordsBridgeKuh", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "keywords:kuh|bridge"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		f.Query = "keywords:bridge&kuh"
+
+		photos2, _, err2 := Photos(f)
+
+		if err2 != nil {
+			t.Fatal(err2)
+		}
+
+		assert.Greater(t, len(photos), len(photos2))
+	})
+	t.Run("AlbumsOrSearch", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "albums:Holiday|Berlin"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.Greater(t, len(photos), 5)
+	})
+	t.Run("AlbumsAndSearch", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = "albums:\"Berlin&Holiday\""
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.Greater(t, len(photos), 0)
+	})
+	t.Run("SubjectsAndOrSearch", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Subjects = "Actor A|Actress A"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		f.Subjects = "Actor A&Actress A"
+
+		photos2, _, err2 := Photos(f)
+
+		if err2 != nil {
+			t.Fatal(err2)
+		}
+
+		assert.Greater(t, len(photos), len(photos2))
+	})
+	t.Run("PeopleEqualSubjectsPersonEqualSubject", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.People = "Actor"
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		var f2 form.SearchPhotos
+
+		f2.Subjects = "Actor"
+
+		// Parse query string and filter.
+		if err := f2.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos2, _, err2 := Photos(f2)
+
+		if err2 != nil {
+			t.Fatal(err2)
+		}
+
+		assert.Len(t, photos, len(photos2))
+
+		var f3 form.SearchPhotos
+
+		f3.Person = "Actor A"
+
+		// Parse query string and filter.
+		if err := f3.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos3, _, err3 := Photos(f3)
+
+		if err3 != nil {
+			t.Fatal(err3)
+		}
+
+		var f4 form.SearchPhotos
+		f4.Subject = "Actor A"
+
+		// Parse query string and filter.
+		if err := f4.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos4, _, err4 := Photos(f4)
+
+		if err4 != nil {
+			t.Fatal(err4)
+		}
+
+		assert.Len(t, photos3, len(photos4))
+		assert.Len(t, photos, len(photos4))
+	})
+	t.Run("SearchInTitle", func(t *testing.T) {
+		var f form.SearchPhotos
+		f.Query = "N"
+		f.Title = ""
+		f.Count = 10
+		f.Offset = 0
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		t.Logf("results: %+v", photos)
+		assert.Len(t, photos, 1)
+		assert.Equal(t, photos[0].PhotoTitle, "Neckarbrücke")
+	})
+	t.Run("SortByFileSize", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = ""
+		frm.Count = 50
+		frm.Offset = 0
+		frm.Order = sortby.Size
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+		assert.GreaterOrEqual(t, photos[0].FileSize, photos[3].FileSize)
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.False(t, r.FileSidecar)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("SortBySimilarity", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = ""
+		frm.Count = 50
+		frm.Offset = 0
+		frm.Order = sortby.Similar
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("SearchNearPhotos", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = ""
+		frm.Count = 50
+		frm.Offset = 0
+		frm.Order = sortby.Newest
+		frm.Near = "ps6sg6be2lvl0yh0"
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+		assert.Equal(t, photos[0].PlaceCountry, photos[3].PlaceCountry)
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+			assert.NotEmpty(t, r.PlaceID)
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("SearchNearPhotosInvalidUID", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = ""
+		frm.Count = 50
+		frm.Offset = 0
+		frm.Order = sortby.Newest
+		frm.Near = "pxxx"
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err == nil {
+			t.Fatal("error expected")
+		}
+
+		assert.Len(t, photos, 0)
+	})
+	t.Run("SearchGif", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "gif"
+		frm.Count = 50
+		frm.Offset = 0
+		frm.Order = sortby.Newest
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+			assert.Equal(t, r.PhotoType, "animated")
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("SearchGifs", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "gifs"
+		frm.Count = 50
+		frm.Offset = 0
+		frm.Order = sortby.Newest
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+			assert.Equal(t, r.PhotoType, "animated")
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("SearchAnimated", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "animated"
+		frm.Count = 50
+		frm.Offset = 0
+		frm.Order = sortby.Newest
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+			assert.Equal(t, r.PhotoType, "animated")
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("SearchRaw", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "raw"
+		frm.Count = 50
+		frm.Offset = 0
+		frm.Order = sortby.Newest
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+			assert.Equal(t, r.PhotoType, "raw")
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("SearchCodec", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Codec = "avc1"
+		frm.Count = 50
+		frm.Offset = 0
+		frm.Order = sortby.Newest
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+			assert.NotEqual(t, r.PhotoType, "photo")
+			assert.NotEqual(t, r.PhotoType, "raw")
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("SearchImage", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Image = true
+		frm.Count = 50
+		frm.Offset = 0
+		frm.Order = sortby.Newest
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+			assert.Equal(t, r.PhotoType, "image")
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("SearchDocument", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Document = true
+		frm.Count = 50
+		frm.Offset = 0
+		frm.Order = sortby.Newest
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+			assert.Equal(t, r.PhotoType, "document")
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("QueryDocument", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "document"
+		frm.Count = 50
+		frm.Offset = 0
+		frm.Order = sortby.Newest
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+			assert.Equal(t, r.PhotoType, "document")
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("QueryDocuments", func(t *testing.T) {
+		var frm form.SearchPhotos
+
+		frm.Query = "documents"
+		frm.Count = 50
+		frm.Offset = 0
+		frm.Order = sortby.Newest
+
+		// Parse query string and filter.
+		if err := frm.ParseQueryString(); err != nil {
+			t.Fatal(err)
+		}
+
+		photos, _, err := Photos(frm)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 1)
+
+		for _, r := range photos {
+			assert.IsType(t, Photo{}, r)
+			assert.NotEmpty(t, r.ID)
+			assert.NotEmpty(t, r.CameraID)
+			assert.NotEmpty(t, r.LensID)
+			assert.Equal(t, r.PhotoType, "document")
+
+			if fix, ok := entity.PhotoFixtures[r.PhotoName]; ok {
+				assert.Equal(t, fix.PhotoName, r.PhotoName)
+			}
+		}
+	})
+	t.Run("CaptionTrue", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Caption = "true"
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.GreaterOrEqual(t, len(photos), 2)
+
+		for _, p := range photos {
+			assert.NotEmpty(t, p.PhotoCaption)
+		}
+	})
+	t.Run("CaptionLorem", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Caption = "Lorem*"
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.Len(t, photos, 1)
+
+		for _, p := range photos {
+			assert.NotEmpty(t, p.PhotoCaption)
+		}
+	})
+	t.Run("CaptionFalse", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Caption = "false"
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.GreaterOrEqual(t, len(photos), 2)
+
+		for _, p := range photos {
+			assert.Empty(t, p.PhotoCaption)
+		}
+	})
+	t.Run("DescriptionFalse", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Description = "false"
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.GreaterOrEqual(t, len(photos), 2)
+
+		for _, p := range photos {
+			assert.Empty(t, p.PhotoCaption)
+			assert.Empty(t, p.PhotoTitle)
+		}
+	})
+	t.Run("NamePhotoNum41", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Name = "photo\\|41"
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.Len(t, photos, 1)
+
+		for _, p := range photos {
+			assert.NotEmpty(t, p.PhotoName)
+		}
+	})
+	t.Run("NamePhotoNum41", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = "name:photo\\|41"
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.Len(t, photos, 1)
+
+		for _, p := range photos {
+			assert.NotEmpty(t, p.PhotoName)
+		}
+	})
+	t.Run("QueryMatchesHomophoneLabel", func(t *testing.T) {
+		_, first, photoA, photoB := createHomophoneSearchFixtures(t)
+
+		var f form.SearchPhotos
+
+		f.Query = first.LabelName
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		foundRight := false
+
+		for _, photo := range photos {
+			assert.NotEqual(t, photoA.PhotoUID, photo.PhotoUID)
+
+			if photo.PhotoUID == photoB.PhotoUID {
+				foundRight = true
+			}
+		}
+
+		assert.True(t, foundRight)
+	})
+}

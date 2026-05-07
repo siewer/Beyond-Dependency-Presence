@@ -1,0 +1,11 @@
+coverage/
+node_modules/
+tests/screenshots/
+tests/acceptance/screenshots/
+tests/upload-files/
+.tmp
+.gocache
+.var
+*.html
+*.md
+.*

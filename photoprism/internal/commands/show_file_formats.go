@@ -1,0 +1,36 @@
+package commands
+
+import (
+	"fmt"
+
+	"github.com/urfave/cli/v2"
+
+	"github.com/photoprism/photoprism/pkg/fs"
+	"github.com/photoprism/photoprism/pkg/media"
+	"github.com/photoprism/photoprism/pkg/txt/report"
+)
+
+// ShowFileFormatsCommand configures the command name, flags, and action.
+var ShowFileFormatsCommand = &cli.Command{
+	Name:    "file-formats",
+	Aliases: []string{"formats"},
+	Usage:   "Displays supported media and sidecar file formats",
+	Flags: append(report.CliFlags, &cli.BoolFlag{
+		Name:    "short",
+		Aliases: []string{"s"},
+		Usage:   "hide format descriptions",
+	}),
+	Action: showFileFormatsAction,
+}
+
+// showFileFormatsAction displays supported media and sidecar file formats.
+func showFileFormatsAction(ctx *cli.Context) error {
+	rows, cols := media.Report(fs.Extensions.Types(true), !ctx.Bool("short"), true, true)
+	format, formatErr := report.CliFormatStrict(ctx)
+	if formatErr != nil {
+		return formatErr
+	}
+	result, err := report.RenderFormat(rows, cols, format)
+	fmt.Println(result)
+	return err
+}

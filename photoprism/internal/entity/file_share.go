@@ -1,0 +1,79 @@
+package entity
+
+import (
+	"time"
+)
+
+const (
+	FileShareNew     = "new"
+	FileShareError   = "error"
+	FileShareShared  = "shared"
+	FileShareRemoved = "removed"
+)
+
+// FileShare represents remote-sharing state for a file and a single connected service account.
+type FileShare struct {
+	FileID     uint      `gorm:"primary_key;auto_increment:false" json:"FileID" yaml:"FileID,omitempty"`
+	ServiceID  uint      `gorm:"primary_key;auto_increment:false" json:"ServiceID" yaml:"ServiceID,omitempty"`
+	RemoteName string    `gorm:"primary_key;auto_increment:false;type:VARBINARY(255)" json:"RemoteName" yaml:"RemoteName,omitempty"`
+	Status     string    `gorm:"type:VARBINARY(16);" json:"Status" yaml:"Status,omitempty"`
+	Error      string    `gorm:"type:VARBINARY(512);" json:"Error,omitempty" yaml:"Error,omitempty"`
+	Errors     int       `json:"Errors,omitempty" yaml:"Errors,omitempty"`
+	File       *File     `json:"File,omitempty" yaml:"-"`
+	Account    *Service  `json:"Account,omitempty" yaml:"-"`
+	CreatedAt  time.Time `json:"CreatedAt" yaml:"CreatedAt"`
+	UpdatedAt  time.Time `json:"UpdatedAt" yaml:"UpdatedAt"`
+}
+
+// TableName returns the entity table name.
+func (FileShare) TableName() string {
+	return "files_share"
+}
+
+// NewFileShare creates a new remote-share record with status set to "new".
+func NewFileShare(fileID, accountID uint, remoteName string) *FileShare {
+	result := &FileShare{
+		FileID:     fileID,
+		ServiceID:  accountID,
+		RemoteName: remoteName,
+		Status:     "new",
+		Error:      "",
+		Errors:     0,
+	}
+
+	return result
+}
+
+// Updates mutates multiple columns on the existing row.
+func (m *FileShare) Updates(values any) error {
+	return UnscopedDb().Model(m).UpdateColumns(values).Error
+}
+
+// Update mutates a single column on the existing row.
+func (m *FileShare) Update(attr string, value any) error {
+	return UnscopedDb().Model(m).UpdateColumn(attr, value).Error
+}
+
+// Save updates the record in the database or inserts a new record if it does not already exist.
+func (m *FileShare) Save() error {
+	return Db().Save(m).Error
+}
+
+// Create inserts a new row to the database.
+func (m *FileShare) Create() error {
+	return Db().Create(m).Error
+}
+
+// FirstOrCreateFileShare returns the existing row, inserts a new row or nil in case of errors.
+func FirstOrCreateFileShare(m *FileShare) *FileShare {
+	result := FileShare{}
+
+	if err := Db().Where("file_id = ? AND service_id = ? AND remote_name = ?", m.FileID, m.ServiceID, m.RemoteName).First(&result).Error; err == nil {
+		return &result
+	} else if err := m.Create(); err != nil {
+		log.Errorf("file-share: %s", err)
+		return nil
+	}
+
+	return m
+}

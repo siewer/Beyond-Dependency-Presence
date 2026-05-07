@@ -1,0 +1,57 @@
+package s2
+
+import (
+	gs2 "github.com/golang/geo/s2"
+
+	"github.com/photoprism/photoprism/pkg/geo"
+	"github.com/photoprism/photoprism/pkg/geo/latlng"
+)
+
+// IsZero returns true if the coordinates are both empty.
+func IsZero(lat, lng float64) bool {
+	return lat == 0.0 && lng == 0.0
+}
+
+// Token returns the S2 cell token for coordinates using the default level.
+func Token(lat, lng float64) string {
+	return TokenLevel(lat, lng, DefaultLevel)
+}
+
+// TokenLevel returns the S2 cell token for coordinates.
+func TokenLevel(lat, lng float64, level int) string {
+	if lat == 0.0 && lng == 0.0 {
+		return ""
+	}
+
+	lat, lng, _ = geo.NormalizeCoordinateBounds(lat, lng)
+
+	if lat < geo.LatitudeMin || lat > geo.LatitudeMax {
+		return ""
+	}
+
+	if lng < geo.LongitudeMin || lng > geo.LongitudeMax {
+		return ""
+	}
+
+	l := gs2.LatLngFromDegrees(lat, lng)
+	return gs2.CellIDFromLatLng(l).Parent(level).ToToken()
+}
+
+// LatLng returns the rounded coordinates for a S2 cell token.
+func LatLng(token string) (lat, lng float64) {
+	token = NormalizeToken(token)
+
+	if len(token) < 3 {
+		return 0.0, 0.0
+	}
+
+	cell := gs2.CellIDFromToken(token)
+
+	if !cell.IsValid() {
+		return 0.0, 0.0
+	}
+
+	l := cell.LatLng()
+
+	return latlng.Round(l.Lat.Degrees()), latlng.Round(l.Lng.Degrees())
+}

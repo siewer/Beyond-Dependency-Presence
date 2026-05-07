@@ -1,0 +1,216 @@
+package rnd
+
+import (
+	"strings"
+	"testing"
+	"unicode"
+
+	"github.com/stretchr/testify/assert"
+)
+
+func TestAuthToken(t *testing.T) {
+	result := AuthToken()
+	assert.Equal(t, AuthTokenLength, len(result))
+	assert.True(t, IsAuthToken(result))
+	assert.True(t, IsHex(result))
+
+	for n := range 10 {
+		s := AuthToken()
+		t.Logf("AuthToken %d: %s", n, s)
+		assert.NotEmpty(t, s)
+	}
+}
+
+func BenchmarkAuthToken(b *testing.B) {
+	for b.Loop() {
+		AuthToken()
+	}
+}
+
+func TestIsAuthToken(t *testing.T) {
+	assert.False(t, IsAuthToken("MPkOqm-RtKGOi-ctIvXm-Qv3XhN"))
+	assert.True(t, IsAuthToken("69be27ac5ca305b394046a83f6fda18167ca3d3f2dbe7ac2"))
+	assert.True(t, IsAuthToken(AuthToken()))
+	assert.True(t, IsAuthToken(AuthToken()))
+	assert.False(t, IsAuthToken(SessionID(AuthToken())))
+	assert.False(t, IsAuthToken(SessionID(AuthToken())))
+	assert.False(t, IsAuthToken("55785BAC-9H4B-4747-B090-EE123FFEE437"))
+	assert.False(t, IsAuthToken("4B1FEF2D1CF4A5BE38B263E0637EDEAD"))
+	assert.False(t, IsAuthToken(""))
+}
+
+func BenchmarkIsAuthToken(b *testing.B) {
+	for b.Loop() {
+		IsAuthToken("69be27ac5ca305b394046a83f6fda18167ca3d3f2dbe7ac2")
+	}
+}
+
+func TestAuthTokenID(t *testing.T) {
+	result := AuthTokenID("jwt")
+	assert.Equal(t, 14, len(result))
+	assert.True(t, strings.HasPrefix(result, "jwt"))
+	assert.True(t, IsAlnum(result))
+	for _, r := range result[3:] {
+		assert.True(t, unicode.IsDigit(r) || (r >= 'a' && r <= 'z'))
+	}
+
+	for n := range 10 {
+		s := AuthTokenID("jwt")
+		t.Logf("AuthTokenID %d: %s", n, s)
+		assert.NotEmpty(t, s)
+		assert.True(t, strings.HasPrefix(s, "jwt"))
+		assert.Equal(t, 14, len(s))
+		assert.True(t, IsAlnum(s))
+	}
+}
+
+func TestAppPassword(t *testing.T) {
+	for n := range 10 {
+		s := AppPassword()
+		t.Logf("AppPassword %d: %s", n, s)
+		assert.Equal(t, AppPasswordLength, len(s))
+	}
+}
+
+func BenchmarkAppPassword(b *testing.B) {
+	for b.Loop() {
+		AppPassword()
+	}
+}
+
+func TestIsAppPasswordt(t *testing.T) {
+	t.Run("VerifyChecksum", func(t *testing.T) {
+		assert.True(t, IsAppPassword("MPkOqm-RtKGOi-ctIvXm-Qv3XhN", true))
+		assert.True(t, IsAppPassword("9q2JHc-P0LzNE-xzvY9j-vMoefj", true))
+		assert.False(t, IsAppPassword("MPkOqm-RtKGOi-ctIvXm-Qv3Xha", true))
+		assert.False(t, IsAppPassword("9q2JHc-P0LzNE-xzvY9j-vMoef2", true))
+		assert.True(t, IsAppPassword(AppPassword(), true))
+		assert.True(t, IsAppPassword(AppPassword(), true))
+		assert.False(t, IsAppPassword(AuthToken(), true))
+		assert.False(t, IsAppPassword(AuthToken(), true))
+		assert.False(t, IsAppPassword(SessionID(AuthToken()), true))
+		assert.False(t, IsAppPassword(SessionID(AuthToken()), true))
+		assert.False(t, IsAppPassword("55785BAC-9H4B-4747-B090-EE123FFEE437", true))
+		assert.False(t, IsAppPassword("4B1FEF2D1CF4A5BE38B263E0637EDEAD", true))
+		assert.False(t, IsAppPassword("69be27ac5ca305b394046a83f6fda18167ca3d3f2dbe7ac2", true))
+		assert.False(t, IsAppPassword("", true))
+	})
+	t.Run("IgnoreChecksum", func(t *testing.T) {
+		assert.True(t, IsAppPassword("MPkOqm-RtKGOi-ctIvXm-Qv3XhN", false))
+		assert.True(t, IsAppPassword("9q2JHc-P0LzNE-xzvY9j-vMoefj", false))
+		assert.True(t, IsAppPassword("MPkOqm-RtKGOi-ctIvXm-Qv3Xha", false))
+		assert.True(t, IsAppPassword("9q2JHc-P0LzNE-xzvY9j-vMoef2", false))
+		assert.True(t, IsAppPassword(AppPassword(), false))
+		assert.True(t, IsAppPassword(AppPassword(), false))
+		assert.False(t, IsAppPassword(AuthToken(), false))
+		assert.False(t, IsAppPassword(AuthToken(), false))
+		assert.False(t, IsAppPassword(SessionID(AuthToken()), false))
+		assert.False(t, IsAppPassword(SessionID(AuthToken()), false))
+		assert.False(t, IsAppPassword("55785BAC-9H4B-4747-B090-EE123FFEE437", false))
+		assert.False(t, IsAppPassword("4B1FEF2D1CF4A5BE38B263E0637EDEAD", false))
+		assert.False(t, IsAppPassword("69be27ac5ca305b394046a83f6fda18167ca3d3f2dbe7ac2", false))
+		assert.False(t, IsAppPassword("", false))
+	})
+}
+
+func BenchmarkAppPasswordtVerifyChecksum(b *testing.B) {
+	for b.Loop() {
+		IsAppPassword("MPkOqm-RtKGOi-ctIvXm-Qv3XhN", true)
+	}
+}
+
+func BenchmarkAppPasswordIgnoreChecksum(b *testing.B) {
+	for b.Loop() {
+		IsAppPassword("MPkOqm-RtKGOi-ctIvXm-Qv3XhN", false)
+	}
+}
+
+func TestJoinToken(t *testing.T) {
+	for n := range 10 {
+		s := JoinToken()
+		t.Logf("JoinToken %d: %s", n, s)
+		assert.Equal(t, JoinTokenLength, len(s))
+		assert.True(t, IsJoinToken(s, true))
+	}
+}
+
+func TestIsJoinToken(t *testing.T) {
+	t.Run("VerifyChecksum", func(t *testing.T) {
+		assert.True(t, IsJoinToken("pGVplw8-eISgkdQN-Mep62nQ", true))
+		assert.True(t, IsJoinToken("k9sEFe6-A7gt6zqm-gY9gFh0", true))
+		assert.False(t, IsJoinToken("M2hMhlx-f4bD1zCQ-VklHch1", true))
+		assert.False(t, IsJoinToken("oWIEZ6e-FnKWzaGz-vkTBf84", true))
+		assert.True(t, IsJoinToken(JoinToken(), true))
+		assert.True(t, IsJoinToken(JoinToken(), true))
+		assert.False(t, IsJoinToken(AppPassword(), true))
+		assert.False(t, IsJoinToken(AppPassword(), true))
+		assert.False(t, IsJoinToken(AuthToken(), true))
+		assert.False(t, IsJoinToken(AuthToken(), true))
+		assert.False(t, IsJoinToken(SessionID(AuthToken()), true))
+		assert.False(t, IsJoinToken(SessionID(AuthToken()), true))
+		assert.False(t, IsJoinToken("pGVplw8e-ISgkdQN-Mep62nQ", true))
+		assert.False(t, IsJoinToken("55785BAC-9H4B-4747-B090-EE123FFEE437", true))
+		assert.False(t, IsJoinToken("4B1FEF2D1CF4A5BE38B263E0637EDEAD", true))
+		assert.False(t, IsJoinToken("69be27ac5ca305b394046a83f6fda18167ca3d3f2dbe7ac2", true))
+		assert.False(t, IsJoinToken("", true))
+	})
+	t.Run("MinLengthOnly", func(t *testing.T) {
+		assert.True(t, IsJoinToken("pGVplw8-eISgkdQN-Mep62nQ", false))
+		assert.True(t, IsJoinToken("M2hMhlx-f4bD1zCQ-VklHchp", false))
+		assert.True(t, IsJoinToken(AppPassword(), false))
+		assert.True(t, IsJoinToken("55785BAC-9H4B-4747-B090-EE123FFEE437", false))
+		assert.True(t, IsJoinToken("69be27ac5ca305b394046a83f6fda18167ca3d3f2dbe7ac2", false))
+		assert.False(t, IsJoinToken("abcdefghijklmnopqrstuvw", false))
+		assert.False(t, IsJoinToken("", false))
+	})
+}
+
+func BenchmarkJoinToken(b *testing.B) {
+	for b.Loop() {
+		JoinToken()
+	}
+}
+
+func TestIsAuthAny(t *testing.T) {
+	assert.True(t, IsAuthAny("MPkOqm-RtKGOi-ctIvXm-Qv3XhN"))
+	assert.True(t, IsAuthAny("9q2JHc-P0LzNE-xzvY9j-vMoefj"))
+	assert.True(t, IsAuthAny(AppPassword()))
+	assert.True(t, IsAuthAny(AppPassword()))
+	assert.True(t, IsAuthAny(AuthToken()))
+	assert.True(t, IsAuthAny(AuthToken()))
+	assert.False(t, IsAuthAny(SessionID(AuthToken())))
+	assert.False(t, IsAuthAny(SessionID(AuthToken())))
+	assert.False(t, IsAuthAny("55785BAC-9H4B-4747-B090-EE123FFEE437"))
+	assert.False(t, IsAuthAny("4B1FEF2D1CF4A5BE38B263E0637EDEAD"))
+	assert.True(t, IsAuthAny("69be27ac5ca305b394046a83f6fda18167ca3d3f2dbe7ac2"))
+	assert.False(t, IsAuthAny(""))
+}
+
+func BenchmarkIsAuthAny(b *testing.B) {
+	for b.Loop() {
+		IsAuthAny("MPkOqm-RtKGOi-ctIvXm-Qv3XhN")
+	}
+}
+
+func TestSessionID(t *testing.T) {
+	result := SessionID("69be27ac5ca305b394046a83f6fda18167ca3d3f2dbe7ac2")
+	assert.Equal(t, SessionIdLength, len(result))
+	assert.Equal(t, "f22383a703805a031a9835c8c6b6dafb793a21e8f33d0b4887b4ec9bd7ac8cd5", result)
+
+	for n := range 10 {
+		s := SessionID(AuthToken())
+		t.Logf("SessionID %d: %s", n, s)
+		assert.NotEmpty(t, s)
+	}
+}
+
+func TestIsSessionID(t *testing.T) {
+	assert.False(t, IsSessionID("69be27ac5ca305b394046a83f6fda18167ca3d3f2dbe7ac2"))
+	assert.False(t, IsSessionID(AuthToken()))
+	assert.False(t, IsSessionID(AuthToken()))
+	assert.True(t, IsSessionID(SessionID(AuthToken())))
+	assert.True(t, IsSessionID(SessionID(AuthToken())))
+	assert.False(t, IsSessionID("55785BAC-9H4B-4747-B090-EE123FFEE437"))
+	assert.False(t, IsSessionID("4B1FEF2D1CF4A5BE38B263E0637EDEAD"))
+	assert.False(t, IsSessionID(""))
+}

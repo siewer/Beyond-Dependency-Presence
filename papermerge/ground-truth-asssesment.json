@@ -1,0 +1,570 @@
+[
+  {
+    "Vulnerability": "CVE-2022-34265",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-4863",
+    "Location": "pillow:8.4.0",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-0286",
+    "Location": "cryptography:36.0.1",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-41810",
+    "Location": "twisted:21.7.0",
+    "Original_exploitability": 50.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-24580",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21520",
+    "Location": "djangorestframework:3.12.4",
+    "Original_exploitability": 50.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-33733",
+    "Location": "reportlab:3.6.3",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4340",
+    "Location": "sqlparse:0.4.2",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5cpq-8wj7-hf2v",
+    "Location": "cryptography:36.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-jm77-qphf-c4w8",
+    "Location": "cryptography:36.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-36053",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-41323",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-23969",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 50.0,
+    "Exploitability": 15.0,
+    "Exploitability_explanation": "LocaleMiddleware is present in settings but disabled by default (LANGUAGE_FROM_AGENT=False).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-43818",
+    "Location": "lxml:4.6.2",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-23833",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 60.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-46695",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 50.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-22817",
+    "Location": "pillow:8.4.0",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-43665",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 55.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-28346",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24303",
+    "Location": "pillow:8.4.0",
+    "Original_exploitability": 8.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-24680",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24801",
+    "Location": "twisted:21.7.0",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-27351",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 25.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-28347",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-50782",
+    "Location": "cryptography:36.0.1",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23727",
+    "Location": "celery:5.2.1",
+    "Original_exploitability": 25.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-21716",
+    "Location": "twisted:21.7.0",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-30608",
+    "Location": "sqlparse:0.4.2",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-49083",
+    "Location": "cryptography:36.0.1",
+    "Original_exploitability": 8.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-50447",
+    "Location": "pillow:8.4.0",
+    "Original_exploitability": 8.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-36359",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-39348",
+    "Location": "twisted:21.7.0",
+    "Original_exploitability": 2.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-34064",
+    "Location": "jinja2:3.0.3",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-2309",
+    "Location": "lxml:4.6.2",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-23931",
+    "Location": "cryptography:36.0.1",
+    "Original_exploitability": 5.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-2255",
+    "Location": "mod_wsgi:",
+    "Original_exploitability": 25.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-28957",
+    "Location": "lxml:4.6.2",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-45115",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-46137",
+    "Location": "twisted:21.7.0",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22818",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 55.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-45116",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 50.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-45198",
+    "Location": "pillow:8.4.0",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-41164",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28219",
+    "Location": "pillow:8.4.0",
+    "Original_exploitability": 35.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-56326",
+    "Location": "jinja2:3.0.3",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-21712",
+    "Location": "twisted:21.7.0",
+    "Original_exploitability": 3.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64459",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 60.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-0727",
+    "Location": "cryptography:36.0.1",
+    "Original_exploitability": 5.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45231",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 50.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-17495",
+    "Location": "django-celery-results:2.2.0",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27516",
+    "Location": "jinja2:3.0.3",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44271",
+    "Location": "pillow:8.4.0",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22816",
+    "Location": "pillow:8.4.0",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-22195",
+    "Location": "jinja2:3.0.3",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64512",
+    "Location": "pdfminer.six:20211012",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48432",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-41671",
+    "Location": "twisted:21.7.0",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22815",
+    "Location": "pillow:8.4.0",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-34062",
+    "Location": "tqdm:4.62.3",
+    "Original_exploitability": 5.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-57833",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 1.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-5569",
+    "Location": "zipp:3.6.0",
+    "Original_exploitability": 5.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-v8gr-m533-ghj9",
+    "Location": "cryptography:36.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-4fx9-vc88-q2xc",
+    "Location": "pillow:8.4.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-70559",
+    "Location": "pdfminer.six:20211012",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-27jp-wm6q-gp25",
+    "Location": "sqlparse:0.4.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-3651",
+    "Location": "idna:3.3",
+    "Original_exploitability": 50.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-56201",
+    "Location": "jinja2:3.0.3",
+    "Original_exploitability": 15.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-45452",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 35.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-31047",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 75.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-64458",
+    "Location": "django:3.2.10",
+    "Original_exploitability": 50.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26007",
+    "Location": "cryptography:36.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "Vulnerable API not called in any active code path.",
+    "Assessment": "Correct"
+  }
+]

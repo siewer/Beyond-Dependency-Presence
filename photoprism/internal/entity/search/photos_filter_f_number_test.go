@@ -1,0 +1,208 @@
+package search
+
+import (
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+
+	"github.com/photoprism/photoprism/internal/form"
+)
+
+func TestPhotosFilterFNumber(t *testing.T) {
+	t.Run("ThreeTwo", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.F = "3.2"
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		for _, r := range photos {
+			assert.GreaterOrEqual(t, float32(3.2), r.PhotoFNumber)
+			assert.LessOrEqual(t, float32(3.2), r.PhotoFNumber)
+		}
+		assert.Len(t, photos, 1)
+	})
+	t.Run("ThreeFiveFive", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.F = "3.5-5"
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		for _, r := range photos {
+			assert.GreaterOrEqual(t, float32(5), r.PhotoFNumber)
+			assert.LessOrEqual(t, float32(3.5), r.PhotoFNumber)
+		}
+
+		assert.Len(t, photos, 6)
+	})
+	t.Run("ThreeTen", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.F = "3-10"
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		for _, r := range photos {
+			assert.GreaterOrEqual(t, float32(10), r.PhotoFNumber)
+			assert.LessOrEqual(t, float32(3), r.PhotoFNumber)
+		}
+
+		assert.Len(t, photos, 8)
+	})
+	t.Run("Eight", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.F = "8"
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.Len(t, photos, 0)
+	})
+	t.Run("Num100", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.F = "-100"
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		assert.GreaterOrEqual(t, len(photos), 40)
+	})
+	t.Run("Invalid", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.F = "%gold"
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.GreaterOrEqual(t, len(photos), 40)
+	})
+}
+
+func TestPhotosQueryFNumber(t *testing.T) {
+	t.Run("ThreeTwo", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = "f:\"3.2\""
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		for _, r := range photos {
+			assert.GreaterOrEqual(t, float32(3.2), r.PhotoFNumber)
+			assert.LessOrEqual(t, float32(3.2), r.PhotoFNumber)
+		}
+
+		assert.Len(t, photos, 1)
+	})
+	t.Run("ThreeFiveFive", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = "f:\"3.5-5\""
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		for _, r := range photos {
+			assert.GreaterOrEqual(t, float32(5), r.PhotoFNumber)
+			assert.LessOrEqual(t, float32(3.5), r.PhotoFNumber)
+		}
+		assert.Len(t, photos, 6)
+	})
+	t.Run("ThreeTen", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = "f:\"3-10\""
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		for _, r := range photos {
+			assert.GreaterOrEqual(t, float32(10), r.PhotoFNumber)
+			assert.LessOrEqual(t, float32(3), r.PhotoFNumber)
+		}
+
+		assert.Len(t, photos, 8)
+	})
+	t.Run("Eight", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = "f:\"8\""
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.Len(t, photos, 0)
+	})
+	t.Run("Num100", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = "f:\"-100\""
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.GreaterOrEqual(t, len(photos), 40)
+	})
+	t.Run("Invalid", func(t *testing.T) {
+		var f form.SearchPhotos
+
+		f.Query = "f:\"%gold\""
+		f.Merged = true
+
+		photos, _, err := Photos(f)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+		assert.GreaterOrEqual(t, len(photos), 40)
+
+	})
+}

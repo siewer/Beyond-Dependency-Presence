@@ -1,0 +1,120 @@
+package config
+
+import (
+	"path"
+	"path/filepath"
+	"strings"
+
+	"github.com/photoprism/photoprism/internal/config/pwa"
+	"github.com/photoprism/photoprism/pkg/clean"
+	"github.com/photoprism/photoprism/pkg/fs"
+	"github.com/photoprism/photoprism/pkg/txt"
+)
+
+// DefaultAppColor specifies the default app background and splash screen color.
+var DefaultAppColor = "#19191a"
+
+// AppName returns the app name when installed on a device.
+func (c *Config) AppName() string {
+	name := strings.TrimSpace(c.options.AppName)
+
+	if name == "" {
+		name = c.SiteTitle()
+	}
+
+	name = strings.Map(func(r rune) rune {
+		switch r {
+		case '\'', '"':
+			return -1
+		}
+
+		return r
+	}, name)
+
+	return txt.Clip(name, 32)
+}
+
+// AppMode returns the app mode when installed on a device.
+func (c *Config) AppMode() string {
+	switch c.options.AppMode {
+	case "fullscreen", "standalone", "minimal-ui", "browser":
+		return c.options.AppMode
+	default:
+		return "standalone"
+	}
+}
+
+// AppIcon returns the app icon when installed on a device.
+func (c *Config) AppIcon() string {
+	defaultIcon := "logo"
+
+	if c.options.AppIcon != "" && c.options.AppIcon != defaultIcon {
+		if themeIcon := filepath.Join(c.ThemePath(), c.options.AppIcon); fs.FileExistsNotEmpty(themeIcon) {
+			return path.Join(ThemeUri, c.options.AppIcon)
+		} else if strings.Contains(c.options.AppIcon, "/") {
+			return c.options.AppIcon
+		} else if fs.FileExistsNotEmpty(c.AppIconsPath(c.options.AppIcon, "16.png")) {
+			return c.options.AppIcon
+		}
+	}
+
+	return defaultIcon
+}
+
+// AppColor returns the app background and splash screen color.
+func (c *Config) AppColor() string {
+	if appColor := clean.Color(c.options.AppColor); appColor == "" {
+		return DefaultAppColor
+	} else {
+		return appColor
+	}
+}
+
+// AppIconsPath returns the path to the app icons.
+func (c *Config) AppIconsPath(name ...string) string {
+	if len(name) > 0 {
+		filePath := []string{c.StaticPath(), fs.IconsDir}
+		filePath = append(filePath, name...)
+		return filepath.Join(filePath...)
+	}
+
+	return filepath.Join(c.StaticPath(), fs.IconsDir)
+}
+
+// AppConfig returns the progressive web app config.
+func (c *Config) AppConfig() pwa.Config {
+	return pwa.Config{
+		Icon:          c.AppIcon(),
+		Color:         c.AppColor(),
+		Name:          c.AppName(),
+		Description:   c.SiteDescription(),
+		DefaultLocale: c.DefaultLocale(),
+		Mode:          c.AppMode(),
+		BaseUri:       c.BaseUri("/"),
+		FrontendUri:   c.FrontendUri(""),
+		StaticUri:     c.StaticUri(),
+		SiteUrl:       c.SiteUrl(),
+		CdnUrl:        c.CdnUrl("/"),
+		ThemeUri:      ThemeUri,
+		ThemePath:     c.ThemePath(),
+	}
+}
+
+// AppManifest returns the progressive web app manifest.
+func (c *Config) AppManifest() *pwa.Manifest {
+	if cacheData, ok := Cache.Get(CacheKeyAppManifest); ok {
+		log.Tracef("config: cache hit for %s", CacheKeyAppManifest)
+
+		return cacheData.(*pwa.Manifest)
+	}
+
+	result := pwa.NewManifest(c.AppConfig())
+
+	if result != nil {
+		Cache.SetDefault(CacheKeyAppManifest, result)
+	} else {
+		log.Warnf("config: no web app manifest returned - you may have found a bug")
+	}
+
+	return result
+}

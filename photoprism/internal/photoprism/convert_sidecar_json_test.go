@@ -1,0 +1,117 @@
+package photoprism
+
+import (
+	"os"
+	"path/filepath"
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+
+	"github.com/photoprism/photoprism/internal/config"
+	"github.com/photoprism/photoprism/pkg/fs"
+)
+
+func TestConvert_ToJson(t *testing.T) {
+	c := config.TestConfig()
+	convert := NewConvert(c)
+
+	t.Run("GopherVideoMp4", func(t *testing.T) {
+		fileName := filepath.Join(c.SamplesPath(), "gopher-video.mp4")
+
+		assert.Truef(t, fs.FileExists(fileName), "input file does not exist: %s", fileName)
+
+		mf, err := NewMediaFile(fileName)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		jsonName, err := convert.ToJson(mf, false)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		if jsonName == "" {
+			t.Fatal("json file name should not be empty")
+		}
+
+		assert.FileExists(t, jsonName)
+
+		_ = os.Remove(jsonName)
+	})
+	t.Run("ImgNum4120Jpg", func(t *testing.T) {
+		fileName := filepath.Join(c.SamplesPath(), "IMG_4120.JPG")
+		assert.Truef(t, fs.FileExists(fileName), "input file does not exist: %s", fileName)
+
+		mf, err := NewMediaFile(fileName)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		jsonName, err := convert.ToJson(mf, false)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		if jsonName == "" {
+			t.Fatal("json file name should not be empty")
+		}
+
+		assert.FileExists(t, jsonName)
+
+		_ = os.Remove(jsonName)
+	})
+	t.Run("IphoneSevenHeic", func(t *testing.T) {
+		fileName := c.SamplesPath() + "/iphone_7.heic"
+
+		assert.True(t, fs.FileExists(fileName))
+
+		mf, err := NewMediaFile(fileName)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		jsonName, err := convert.ToJson(mf, false)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		if jsonName == "" {
+			t.Fatal("json file name should not be empty")
+		}
+
+		assert.FileExists(t, jsonName)
+
+		_ = os.Remove(jsonName)
+	})
+	t.Run("IphoneFifteenProHeic", func(t *testing.T) {
+		fileName := c.SamplesPath() + "/iphone_15_pro.heic"
+
+		assert.True(t, fs.FileExists(fileName))
+
+		mf, err := NewMediaFile(fileName)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		jsonName, err := convert.ToJson(mf, false)
+
+		if err != nil {
+			t.Fatal(err)
+		}
+
+		if jsonName == "" {
+			t.Fatal("json file name should not be empty")
+		}
+
+		assert.FileExists(t, jsonName)
+
+		_ = os.Remove(jsonName)
+	})
+}

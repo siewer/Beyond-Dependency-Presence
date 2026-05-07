@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+# Installs MariaDB packages on Linux.
+# bash <(curl -s https://raw.githubusercontent.com/photoprism/photoprism/develop/scripts/dist/install-mariadb.sh)
+
+PATH="/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/scripts:$PATH"
+
+if [[ $# -eq 0 ]]; then
+  PACKAGES=("mariadb-client")
+else
+  PACKAGES=("$@")
+fi
+
+set -e
+
+# shellcheck source=/dev/null
+. /etc/os-release
+
+# Determine target architecture.
+if [[ $PHOTOPRISM_ARCH ]]; then
+  SYSTEM_ARCH=$PHOTOPRISM_ARCH
+else
+  SYSTEM_ARCH=$(uname -m)
+fi
+
+DESTARCH=${BUILD_ARCH:-$SYSTEM_ARCH}
+
+echo "Installing \"${PACKAGES[*]}\" distribution packages for ${DESTARCH^^}..."
+
+sudo apt-get update
+sudo apt-get -qq install "${PACKAGES[@]}"
+
+echo "Done."

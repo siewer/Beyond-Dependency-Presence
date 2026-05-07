@@ -1,0 +1,134 @@
+package api
+
+import (
+	"fmt"
+	"os"
+	"path"
+
+	"github.com/gin-gonic/gin"
+
+	"github.com/photoprism/photoprism/internal/config/ttl"
+	"github.com/photoprism/photoprism/internal/entity"
+	"github.com/photoprism/photoprism/internal/entity/query"
+	"github.com/photoprism/photoprism/internal/photoprism/get"
+	"github.com/photoprism/photoprism/internal/thumb"
+	"github.com/photoprism/photoprism/pkg/fs"
+	"github.com/photoprism/photoprism/pkg/http/header"
+	"github.com/photoprism/photoprism/pkg/rnd"
+)
+
+// ThumbCache describes files persisted on disk for cached thumbnails and share images.
+type ThumbCache struct {
+	FileName  string
+	ShareName string
+}
+
+// ByteCache wraps in-memory cached byte slices for fast responses.
+type ByteCache struct {
+	Data []byte
+}
+
+// CacheKey returns a cache key string based on namespace, uid and name.
+func CacheKey(ns, uid, name string) string {
+	return fmt.Sprintf("%s:%s:%s", ns, uid, name)
+}
+
+// RemoveFromFolderCache removes an item from the folder cache e.g. after indexing.
+func RemoveFromFolderCache(rootName string) {
+	cache := get.FolderCache()
+
+	cacheKey := fmt.Sprintf("folder:%s:%t:%t", rootName, true, false)
+
+	cache.Delete(cacheKey)
+
+	if err := query.UpdateAlbumFolderCovers(); err != nil {
+		log.Error(err)
+	}
+
+	log.Debugf("removed %s from cache", cacheKey)
+}
+
+// RemoveFromAlbumCoverCache removes covers by album UID e.g. after adding or removing photos.
+func RemoveFromAlbumCoverCache(uid string) {
+	if !rnd.IsAlnum(uid) {
+		return
+	}
+
+	cache := get.CoverCache()
+
+	// Flush album cover cache.
+	for thumbName := range thumb.Sizes {
+		cacheKey := CacheKey(albumCover, uid, string(thumbName))
+
+		cache.Delete(cacheKey)
+
+		log.Debugf("removed %s from cache", cacheKey)
+	}
+
+	// Delete share preview, if exists.
+	if sharePreview := path.Join(get.Config().ThumbCachePath(), "share", uid+fs.ExtJpeg); fs.FileExists(sharePreview) {
+		_ = os.Remove(sharePreview)
+	}
+
+	album, err := query.AlbumByUID(uid)
+
+	if err != nil {
+		log.Error(err)
+		return
+	}
+
+	// Manual covers stay untouched; we only regenerate auto-managed entries.
+	if album.ThumbSrc != entity.SrcAuto {
+		return
+	}
+
+	if err = query.UpdateAlbumCovers(album); err != nil {
+		log.Error(err)
+	}
+}
+
+// RemoveFromLabelCoverCache removes covers by label UID e.g. after updates.
+func RemoveFromLabelCoverCache(uid string) {
+	if !rnd.IsAlnum(uid) {
+		return
+	}
+
+	cache := get.CoverCache()
+
+	for thumbName := range thumb.Sizes {
+		cacheKey := CacheKey(labelCover, uid, string(thumbName))
+		cache.Delete(cacheKey)
+		log.Debugf("removed %s from cache", cacheKey)
+	}
+}
+
+// FlushCoverCache clears the complete cover cache.
+func FlushCoverCache() {
+	get.CoverCache().Flush()
+
+	if err := query.UpdateCovers(); err != nil {
+		log.Error(err)
+	}
+
+	log.Debugf("albums: flushed cover cache")
+}
+
+// AddCacheHeader adds a cache control header to the response.
+func AddCacheHeader(c *gin.Context, duration ttl.Duration, public bool) {
+	header.SetCacheControl(c, duration.Int(), public)
+}
+
+// AddCoverCacheHeader adds cover image cache control headers to the response.
+func AddCoverCacheHeader(c *gin.Context) {
+	AddCacheHeader(c, ttl.CacheCover, thumb.CachePublic)
+}
+
+// AddImmutableCacheHeader adds cache control headers to the response for immutable content like thumbnails.
+func AddImmutableCacheHeader(c *gin.Context) {
+	header.SetCacheControlImmutable(c, ttl.CacheDefault.Int(), thumb.CachePublic)
+}
+
+// AddVideoCacheHeader adds video cache control headers to the response.
+func AddVideoCacheHeader(c *gin.Context, cdn bool) {
+	header.SetCacheControlImmutable(c, ttl.CacheVideo.Int(), cdn || thumb.CachePublic)
+}

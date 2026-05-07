@@ -1,0 +1,256 @@
+package config
+
+import (
+	"crypto/sha256"
+	_ "embed"
+	"fmt"
+	"net/url"
+	"os"
+	"path"
+	"path/filepath"
+	"strings"
+
+	"github.com/photoprism/photoprism/pkg/clean"
+	"github.com/photoprism/photoprism/pkg/fs"
+)
+
+//go:embed robots.txt
+var robotsTxt []byte
+
+const localhost = "localhost"
+
+// BaseUri returns the site base URI for a given resource.
+func (c *Config) BaseUri(res string) string {
+	if c.SiteUrl() == "" {
+		return res
+	}
+
+	return c.BasePath() + res
+}
+
+// BasePath returns the site's base path name.
+func (c *Config) BasePath() string {
+	if c.SiteUrl() == "" {
+		return ""
+	}
+
+	u, err := url.Parse(c.SiteUrl())
+
+	if err != nil {
+		return ""
+	}
+
+	return strings.TrimRight(u.EscapedPath(), "/")
+}
+
+// StorageNamespace returns a hashed namespace key for client-side storage.
+func (c *Config) StorageNamespace() string {
+	sum := sha256.Sum256([]byte(c.SiteUrl()))
+	return fmt.Sprintf("%x", sum)
+}
+
+// ApiUri returns the api URI.
+func (c *Config) ApiUri() string {
+	return c.BaseUri(ApiUri)
+}
+
+// FrontendPath returns the normalized frontend base path without a trailing slash.
+func (c *Config) FrontendPath() string {
+	frontendPath := normalizeFrontendPath(c.options.FrontendUri)
+
+	if frontendPath != "" {
+		return frontendPath
+	}
+
+	frontendPath = normalizeFrontendPath(FrontendUri)
+
+	if frontendPath != "" {
+		return frontendPath
+	}
+
+	return DefaultFrontendUri
+}
+
+// normalizeFrontendPath sanitizes and normalizes a configured frontend base path.
+func normalizeFrontendPath(value string) string {
+	if value = clean.UserPath(value); value == "" {
+		return ""
+	}
+
+	return "/" + value
+}
+
+// FrontendUri returns the user interface URI for the given resource.
+func (c *Config) FrontendUri(res string) string {
+	return c.BaseUri(c.FrontendPath() + res)
+}
+
+// ContentUri returns the content delivery URI based on the CdnUrl and the ApiUri.
+func (c *Config) ContentUri() string {
+	return c.CdnUrl(c.ApiUri())
+}
+
+// DownloadUrl returns the download URL based on the SiteUrl and the DownloadUri.
+func (c *Config) DownloadUrl() string {
+	return strings.TrimRight(c.options.SiteUrl, "/") + DownloadUri
+}
+
+// VideoUri returns the video streaming URI.
+func (c *Config) VideoUri() string {
+	if c.CdnVideo() {
+		return c.ContentUri()
+	}
+
+	return c.ApiUri()
+}
+
+// StaticUri returns the static content URI.
+func (c *Config) StaticUri() string {
+	return c.CdnUrl(c.BaseUri(StaticUri))
+}
+
+// StaticAssetUri returns the resource URI of the static file asset.
+func (c *Config) StaticAssetUri(res string) string {
+	return c.StaticUri() + "/" + res
+}
+
+// SiteUrl returns the public server URL (default is "http://localhost:2342/").
+func (c *Config) SiteUrl() string {
+	if c.options.SiteUrl == "" {
+		return "http://localhost:2342/"
+	}
+
+	return strings.TrimRight(c.options.SiteUrl, "/") + "/"
+}
+
+// SiteHttps checks if the site URL uses HTTPS.
+func (c *Config) SiteHttps() bool {
+	if c.options.SiteUrl == "" {
+		return false
+	}
+
+	return strings.HasPrefix(c.options.SiteUrl, "https://")
+}
+
+// SiteDomain returns the public hostname without protocol or post.
+func (c *Config) SiteDomain() string {
+	if u, err := url.Parse(c.SiteUrl()); err != nil {
+		return localhost
+	} else {
+		return u.Hostname()
+	}
+}
+
+// SiteHost returns the public hostname and port number in the format "domain:port".
+func (c *Config) SiteHost() string {
+	if u, err := url.Parse(c.SiteUrl()); err != nil {
+		return localhost
+	} else if hostname := u.Hostname(); hostname == "" {
+		return localhost
+	} else if port := u.Port(); port != "" {
+		return fmt.Sprintf("%s:%s", hostname, port)
+	} else {
+		return hostname
+	}
+}
+
+// SiteAuthor returns the site author / copyright.
+func (c *Config) SiteAuthor() string {
+	return c.options.SiteAuthor
+}
+
+// SiteTitle returns the main site title (default is application name).
+func (c *Config) SiteTitle() string {
+	if c.options.SiteTitle == "" {
+		return c.Name()
+	}
+
+	return c.options.SiteTitle
+}
+
+// SiteCaption returns a short site caption.
+func (c *Config) SiteCaption() string {
+	return c.options.SiteCaption
+}
+
+// SiteDescription returns a long site description.
+func (c *Config) SiteDescription() string {
+	return c.options.SiteDescription
+}
+
+// SiteFavicon returns the site favicon image name.
+func (c *Config) SiteFavicon() string {
+	if c.options.SiteFavicon != "" {
+		if fs.FileExistsNotEmpty(c.options.SiteFavicon) {
+			return c.options.SiteFavicon
+		} else if fileName := filepath.Join(c.ThemePath(), strings.TrimPrefix(c.options.SiteFavicon, ThemeUri)); fs.FileExistsNotEmpty(fileName) {
+			return fileName
+		} else if fileName = c.StaticImgFile(c.options.SiteFavicon); fs.FileExistsNotEmpty(fileName) {
+			return fileName
+		}
+	}
+
+	return c.StaticImgFile("favicon.ico")
+}
+
+// SitePreview returns the site preview image URL for sharing.
+func (c *Config) SitePreview() string {
+	if c.options.SitePreview != "" {
+		if strings.HasPrefix(c.options.SitePreview, "http") {
+			return c.options.SitePreview
+
+		} else if fileName := filepath.Join(c.ThemePath(), c.options.SitePreview); fs.FileExistsNotEmpty(fileName) {
+			return strings.TrimRight(c.options.SiteUrl, "/") + path.Join(ThemeUri, c.options.SitePreview)
+		}
+
+		return c.SiteUrl() + strings.TrimPrefix(c.options.SitePreview, "/")
+	}
+
+	return fmt.Sprintf("https://i.photoprism.app/prism?cover=64&style=centered%%20dark&caption=none&title=%s", url.QueryEscape(c.AppName()))
+}
+
+// LegalInfo returns the legal info text for the page footer.
+func (c *Config) LegalInfo() string {
+	if s := c.CliContextString("imprint"); s != "" {
+		log.Warnf("config: option 'imprint' is deprecated, please use 'legal-info'")
+		return s
+	}
+
+	return c.options.LegalInfo
+}
+
+// LegalUrl returns the legal info url.
+func (c *Config) LegalUrl() string {
+	if s := c.CliContextString("imprint-url"); s != "" {
+		log.Warnf("config: option 'imprint-url' is deprecated, please use 'legal-url'")
+		return s
+	}
+
+	return c.options.LegalUrl
+}
+
+// RobotsTxt returns the content of the robots.txt file to be used for this site:
+// https://developers.google.com/search/docs/crawling-indexing/robots/create-robots-txt
+func (c *Config) RobotsTxt() ([]byte, error) {
+	if c.Demo() && c.Public() {
+		// Allow public demo instances to be indexed.
+		return fmt.Appendf(nil,
+			"User-agent: *\nDisallow: /\nAllow: %s/\nAllow: %s/\nAllow: .js\nAllow: .css",
+			c.BaseUri(c.FrontendPath()),
+			c.BaseUri(StaticUri),
+		), nil
+	} else if c.Public() {
+		// Do not allow other instances to be indexed when public mode is enabled.
+		return robotsTxt, nil
+	} else if fileName := filepath.Join(c.ConfigPath(), "robots.txt"); !fs.FileExists(fileName) {
+		// Do not allow indexing if config/robots.txt does not exist.
+		return robotsTxt, nil
+	} else if robots, robotsErr := os.ReadFile(fileName); robotsErr != nil { //nolint:gosec // robots file path derived from config directory
+		// Log error and do not allow indexing if config/robots.txt cannot be read.
+		log.Debugf("config: failed to read robots.txt file (%s)", clean.Error(robotsErr))
+		return robotsTxt, robotsErr
+	} else {
+		// Return content of the config/robots.txt file.
+		return robots, nil
+	}
+}

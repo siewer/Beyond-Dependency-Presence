@@ -1,0 +1,106 @@
+[
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:2.2.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API 'debug' is not explicitly called in the 'passport' codebase. It is a transitive dependency of devDependencies (e.g. mocha). According to the evidence mandate, probability is set to 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API 'minimist' is not explicitly called in the 'passport' codebase. It is a transitive dependency of devDependencies. According to the evidence mandate, probability is set to 0.01 (1%).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:0.3.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API 'minimatch' is not explicitly called in the 'passport' codebase. It is a transitive dependency of devDependencies. According to the evidence mandate, probability is set to 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16042",
+    "Location": "growl:1.9.2",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API 'growl' is not explicitly called in the 'passport' codebase. It is a transitive dependency of mocha. According to the evidence mandate, probability is set to 0.01 (1%).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2016-10540",
+    "Location": "minimatch:0.3.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API 'minimatch' is not explicitly called in the 'passport' codebase. It is a transitive dependency of devDependencies. According to the evidence mandate, probability is set to 0.01 (1%).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-20162",
+    "Location": "ms:0.7.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API 'ms' is not explicitly called in the 'passport' codebase. It is a transitive dependency of debug/mocha. According to the evidence mandate, probability is set to 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7598",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API 'minimist' is not explicitly called in the 'passport' codebase. It is a transitive dependency of devDependencies. According to the evidence mandate, probability is set to 0.01 (1%).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:0.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API 'minimatch' is not explicitly called in the 'passport' codebase. According to the evidence mandate, probability is set to 0.01 (1%). Difference of 1% is within 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:0.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API 'minimatch' is not explicitly called in the 'passport' codebase. According to the evidence mandate, probability is set to 0.01 (1%). Difference of 1% is within 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:2.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API 'debug' is not explicitly called in the 'passport' codebase. It is a transitive dependency of devDependencies. According to the evidence mandate, probability is set to 0.01 (1%).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:1.4.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API 'diff' is not explicitly called in the 'passport' codebase. It is a transitive dependency of mocha. According to the evidence mandate, probability is set to 0.01 (1%).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-h6ch-v84p-w6p9",
+    "Location": "diff:1.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API 'diff' is not explicitly called in the 'passport' codebase. According to the evidence mandate, probability is set to 0.01 (1%). Difference of 1% is within 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:0.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API 'minimatch' is not explicitly called in the 'passport' codebase. According to the evidence mandate, probability is set to 0.01 (1%). Difference of 1% is within 20% tolerance.",
+    "Assessment": "Correct"
+  }
+]

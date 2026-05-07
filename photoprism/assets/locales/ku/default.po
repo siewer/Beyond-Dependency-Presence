@@ -1,0 +1,425 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-17 17:32+0000\n"
+"PO-Revision-Date: 2025-10-22 08:25+0000\n"
+"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
+"translate@weblate.org>\n"
+"Language-Team: Kurdish <https://translate.photoprism.app/projects/photoprism/"
+"backend/ku/>\n"
+"Language: ku\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
+
+#: messages.go:104
+msgid "Something went wrong, try again"
+msgstr "Tiştek xelet derket, dîsa biceribîne"
+
+#: messages.go:105
+msgid "Unable to do that"
+msgstr "Nikarin vê yekê bikin"
+
+#: messages.go:106
+msgid "Changes could not be saved"
+msgstr "گۆڕانکاریەکان پاشەکەوت نەکراوە"
+
+#: messages.go:107
+msgid "Could not be deleted"
+msgstr "نەتوانرا بسڕێتەوە"
+
+#: messages.go:108
+#, c-format
+msgid "%s already exists"
+msgstr "%s پێشتر هەیە"
+
+#: messages.go:109
+msgid "Not found"
+msgstr "نەدۆزرایەوە"
+
+#: messages.go:110
+msgid "File not found"
+msgstr "دۆسیەکە نەدۆزرایەوە"
+
+#: messages.go:111
+msgid "File too large"
+msgstr "Pelê pir mezin e"
+
+#: messages.go:112
+msgid "Unsupported"
+msgstr "Piştgirî nekirin"
+
+#: messages.go:113
+msgid "Unsupported type"
+msgstr "Cureyê ne piştgirî"
+
+#: messages.go:114
+msgid "Unsupported format"
+msgstr "Format nayê destek kirin"
+
+#: messages.go:115
+msgid "Originals folder is empty"
+msgstr "Peldanka orjînal vala ye"
+
+#: messages.go:116
+msgid "Selection not found"
+msgstr "هەڵبژاردەکان نەدۆزرایەوە"
+
+#: messages.go:117
+msgid "Entity not found"
+msgstr "هیچ ئەلبومێکی نەدۆزیوەتەوە"
+
+#: messages.go:118
+msgid "Account not found"
+msgstr "هەژمارەکە نەدۆزرایەوە"
+
+#: messages.go:119
+msgid "User not found"
+msgstr "بەکارهێنەرەکە نەدۆزرایەوە"
+
+#: messages.go:120
+msgid "Label not found"
+msgstr "پێناسەکە نەدۆزرایەوە"
+
+#: messages.go:121
+msgid "Album not found"
+msgstr "ئەلبومەکە نەدۆزرایەوە"
+
+#: messages.go:122
+msgid "Subject not found"
+msgstr "ناونیشان"
+
+#: messages.go:123
+msgid "Person not found"
+msgstr "هیچ ئەلبومێکی نەدۆزیوەتەوە"
+
+#: messages.go:124
+msgid "Face not found"
+msgstr "نەدۆزرایەوە"
+
+#: messages.go:125
+msgid "Not available in public mode"
+msgstr "بەردەست نیە بۆ دۆخی گشتی"
+
+#: messages.go:126
+msgid "Not available in read-only mode"
+msgstr "بەردەست نییە لە دۆخی تەنها-خوێندنەوە"
+
+#: messages.go:127
+msgid "Please log in to your account"
+msgstr "تکایە تێپەڕبە پاشان هەوڵبدەرەوە"
+
+#: messages.go:128
+msgid "Permission denied"
+msgstr "ئەلبومەکان سڕانەوە"
+
+#: messages.go:129
+msgid "Payment required"
+msgstr "Pêdivî bi dravdanê heye"
+
+#: messages.go:130
+msgid "Upload might be offensive"
+msgstr "بارکردن لەوانەیە سووکایەتی بێت"
+
+#: messages.go:131
+msgid "Upload failed"
+msgstr "بارکردنەکە سەرکەوتوو نەبوو"
+
+#: messages.go:132
+msgid "No items selected"
+msgstr "هیچ ئایتمێک دەستنیشان نەکراوە"
+
+#: messages.go:133
+msgid "Failed creating file, please check permissions"
+msgstr "شکست لە دروستکردنی پەڕگە، تکایە مۆڵەتەکان بپشکنە"
+
+#: messages.go:134
+msgid "Failed creating folder, please check permissions"
+msgstr "شکست لە دروستکردنی بوخچە، تکایە مۆڵەتەکان بپشکنە"
+
+#: messages.go:135
+msgid "Could not connect, please try again"
+msgstr "نەیتوانی پەیوەندی بگرێت، تکایە دووبارە هەوڵ بدەوە"
+
+#: messages.go:136
+msgid "Enter verification code"
+msgstr "Koda verastkirinê binivîse"
+
+#: messages.go:137
+msgid "Invalid verification code, please try again"
+msgstr "Koda verastkirinê nederbasdar e, ji kerema xwe dîsa biceribîne"
+
+#: messages.go:138
+msgid "Invalid password, please try again"
+msgstr "تێپەرەوشە هەڵەیە، تکایە جارێکی تر هەوڵبدەوە"
+
+#: messages.go:139
+msgid "Feature disabled"
+msgstr "تایبەتمەندی ناچالاک کراوە"
+
+#: messages.go:140
+msgid "No labels selected"
+msgstr "هیج لە پێناسەکان هەڵنەبژێردراوە"
+
+#: messages.go:141
+msgid "No albums selected"
+msgstr "هیج لە ئەلبومەکان هەڵنەبژێردراوە"
+
+#: messages.go:142
+msgid "No files available for download"
+msgstr "هیچ پەڕگەیەک ئامادە نیە بۆ داگرتن"
+
+#: messages.go:143
+msgid "Failed to create zip file"
+msgstr "دروستکردنی فایلی زیپ سەرکەوتوو نەبوو"
+
+#: messages.go:144
+msgid "Invalid credentials"
+msgstr "زانیارییەکان نادروستە"
+
+#: messages.go:145
+msgid "Invalid link"
+msgstr "بەستەرەکە نادروستە"
+
+#: messages.go:146
+msgid "Invalid name"
+msgstr "بەروارێکی نادروست"
+
+#: messages.go:147
+msgid "Busy, please try again later"
+msgstr "تێپەرەوشە هەڵەیە، تکایە جارێکی تر هەوڵبدەوە"
+
+#: messages.go:148
+#, c-format
+msgid "The wakeup interval is %s, but must be 1h or less"
+msgstr "Navbera hişyarbûnê %s ye, lê divê 1h an kêmtir be"
+
+#: messages.go:149
+msgid "Your account could not be connected"
+msgstr "Hesabê te nehat girêdan"
+
+#: messages.go:150
+msgid "Too many requests"
+msgstr "Pir daxwazî"
+
+#: messages.go:151
+msgid "Insufficient storage"
+msgstr "Depo ne bes e"
+
+#: messages.go:152
+msgid "Quota exceeded"
+msgstr "Kota derbas kir"
+
+#: messages.go:155
+msgid "Changes successfully saved"
+msgstr "گۆڕانکاریەکان سەرکەوتوانە پاشەکەوتکرا"
+
+#: messages.go:156
+msgid "Album created"
+msgstr "ئەلبومەکە دروستکرا"
+
+#: messages.go:157
+msgid "Album saved"
+msgstr "ئەلبومەکە پاشەکەوتکرا"
+
+#: messages.go:158
+#, c-format
+msgid "Album %s deleted"
+msgstr "ئەلبومی %s سڕایەوە"
+
+#: messages.go:159
+msgid "Album contents cloned"
+msgstr "ناوەڕۆکەکانی ئەلبومەکە هاووێنە کرا"
+
+#: messages.go:160
+msgid "File removed from stack"
+msgstr "دۆسیەکە کۆژاوەتەوە لە کەڵەکەکە"
+
+#: messages.go:161
+msgid "File deleted"
+msgstr "پەڕگە سڕایەوە"
+
+#: messages.go:162
+#, c-format
+msgid "Selection added to %s"
+msgstr "دەستنیشان کراو زیادکرایە %s"
+
+#: messages.go:163
+#, c-format
+msgid "One entry added to %s"
+msgstr "یەک تێکراو زیاد کرایە %s"
+
+#: messages.go:164
+#, c-format
+msgid "%d entries added to %s"
+msgstr "%d تێکراو زیاد کرایە  %s"
+
+#: messages.go:165
+#, c-format
+msgid "One entry removed from %s"
+msgstr "یەک تێکراو لابرا لە %s"
+
+#: messages.go:166
+#, c-format
+msgid "%d entries removed from %s"
+msgstr "%d تێکراو لابرا لە %s"
+
+#: messages.go:167
+msgid "Account created"
+msgstr "هەژمارەکە دروستکرا"
+
+#: messages.go:168
+msgid "Account saved"
+msgstr "هەژمارەکە پاشەکەوتکرا"
+
+#: messages.go:169
+msgid "Account deleted"
+msgstr "هەژمارەکە سڕایەوە"
+
+#: messages.go:170
+msgid "Settings saved"
+msgstr "ڕێکخستنەکان پاشەکەوتکرا"
+
+#: messages.go:171
+msgid "Password changed"
+msgstr "تێپەڕەوشە گۆڕدرا"
+
+#: messages.go:172
+#, c-format
+msgid "Import completed in %d s"
+msgstr "هاوردن تەواو بوو بە %d  چرکە"
+
+#: messages.go:173
+msgid "Import canceled"
+msgstr "هاوردن هەڵوەشێنرایەوە"
+
+#: messages.go:174
+#, c-format
+msgid "Indexing completed in %d s"
+msgstr "نیشانە کردن تەواو بوو بە %d چرکە"
+
+#: messages.go:175
+msgid "Indexing originals..."
+msgstr "نیشانەکردنی ڕەسەنەکان..."
+
+#: messages.go:176
+#, c-format
+msgid "Indexing files in %s"
+msgstr "نیشانەکردنی پەڕگەکان لە %s"
+
+#: messages.go:177
+msgid "Indexing canceled"
+msgstr "نیشانەکردن هەڵوەشێنرایەوە"
+
+#: messages.go:178
+#, c-format
+msgid "Removed %d files and %d photos"
+msgstr "لابردنی %d پەڕگە و  %d وێنە"
+
+#: messages.go:179
+#, c-format
+msgid "Moving files from %s"
+msgstr "گواستنەوەی پەڕگە لە %s"
+
+#: messages.go:180
+#, c-format
+msgid "Copying files from %s"
+msgstr "کۆپی کردنی پەڕگە لە%s"
+
+#: messages.go:181
+msgid "Labels deleted"
+msgstr "پێناسەکان سڕانەوە"
+
+#: messages.go:182
+msgid "Label saved"
+msgstr "پێناسەکە پاشەکەوتکرا"
+
+#: messages.go:183
+msgid "Subject saved"
+msgstr "ناونیشان"
+
+#: messages.go:184
+msgid "Subject deleted"
+msgstr "ناونیشان"
+
+#: messages.go:185
+msgid "Person saved"
+msgstr "ڕێکخستنەکان پاشەکەوتکراو"
+
+#: messages.go:186
+msgid "Person deleted"
+msgstr "ئەلبومەکان سڕانەوە"
+
+#: messages.go:187
+msgid "File uploaded"
+msgstr "پەڕگە سڕایەوە"
+
+#: messages.go:188
+#, c-format
+msgid "%d files uploaded in %d s"
+msgstr "%d پەڕگە بارکرە بە %d چرکە"
+
+#: messages.go:189
+msgid "Processing upload..."
+msgstr "Pêvajoya barkirinê..."
+
+#: messages.go:190
+msgid "Upload has been processed"
+msgstr "بارکردن لەوانەیە سووکایەتی بێت"
+
+#: messages.go:191
+msgid "Selection approved"
+msgstr "دەستنیشان کراو پەسەند کرا"
+
+#: messages.go:192
+msgid "Selection archived"
+msgstr "هەڵبژاردەکە ئەرشیفکرا"
+
+#: messages.go:193
+msgid "Selection restored"
+msgstr "هەڵبژاردەکە دووبارەکۆگاکرایەوە"
+
+#: messages.go:194
+msgid "Selection marked as private"
+msgstr "دەستنیشانکراوەکان کران بە تایبەتی"
+
+#: messages.go:195
+msgid "Albums deleted"
+msgstr "ئەلبومەکان سڕایەوە"
+
+#: messages.go:196
+#, c-format
+msgid "Zip created in %d s"
+msgstr "زیپ بە %d چرکە دروستکرا"
+
+#: messages.go:197
+msgid "Permanently deleted"
+msgstr "بە هەمیشەیی سڕاوەتەوە"
+
+#: messages.go:198
+#, c-format
+msgid "%s has been restored"
+msgstr "هەڵبژاردەکە دووبارەکۆگاکرایەوە"
+
+#: messages.go:199
+msgid "Successfully verified"
+msgstr "Bi serketî verast kirin"
+
+#: messages.go:200
+msgid "Successfully activated"
+msgstr "Bi serketî hate aktîfkirin"
+
+#~ msgid "Storage is full"
+#~ msgstr "Storage tije ye"
+
+#~ msgid "Invalid request"
+#~ msgstr "داواکاری نادروست"
+
+#~ msgid "Unexpected error, please try again"
+#~ msgstr "هەڵەیەکی چاوەڕوان نەکراو، تکایە دووبارە هەوڵ بدەوە"
+
+#~ msgid "Not found on server, deleted?"
+#~ msgstr "نەدۆزرایەوە لە سەر ڕاژە، سڕایەوە؟"

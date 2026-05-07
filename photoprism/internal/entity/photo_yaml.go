@@ -1,0 +1,137 @@
+package entity
+
+import (
+	"fmt"
+	"os"
+	"path/filepath"
+	"sync"
+	"time"
+
+	"gopkg.in/yaml.v2"
+
+	"github.com/photoprism/photoprism/pkg/clean"
+	"github.com/photoprism/photoprism/pkg/fs"
+)
+
+var photoYamlMutex = sync.Mutex{}
+
+// Yaml returns photo data as YAML string.
+func (m *Photo) Yaml() ([]byte, error) {
+	// Load details if not done yet.
+	m.GetDetails()
+	m.NormalizeValues()
+
+	m.CreatedAt = m.CreatedAt.UTC().Truncate(time.Second)
+	m.UpdatedAt = m.UpdatedAt.UTC().Truncate(time.Second)
+
+	out, err := yaml.Marshal(m)
+
+	if err != nil {
+		return []byte{}, err
+	}
+
+	return out, err
+}
+
+// SaveAsYaml writes the photo metadata to a YAML sidecar file with the specified filename.
+func (m *Photo) SaveAsYaml(fileName string) error {
+	if m == nil {
+		return fmt.Errorf("photo entity is nil - you may have found a bug")
+	} else if fileName == "" {
+		return fmt.Errorf("yaml filename is empty")
+	} else if m.PhotoUID == "" {
+		return fmt.Errorf("photo uid is empty")
+	}
+
+	data, err := m.Yaml()
+
+	if err != nil {
+		return err
+	}
+
+	// Make sure directory exists.
+	if err = fs.MkdirAll(filepath.Dir(fileName)); err != nil {
+		return err
+	}
+
+	photoYamlMutex.Lock()
+	defer photoYamlMutex.Unlock()
+
+	// Write YAML data to file.
+	return fs.WriteFile(fileName, data, fs.ModeFile)
+}
+
+// YamlFileName returns both the absolute file path and the relative name for the YAML sidecar file, e.g. for logging.
+func (m *Photo) YamlFileName(originalsPath, sidecarPath string) (absolute, relative string, err error) {
+	absolute, err = fs.FileName(filepath.Join(originalsPath, m.PhotoPath, m.PhotoName), sidecarPath, originalsPath, fs.ExtYml)
+	relative = filepath.Join(m.PhotoPath, m.PhotoName) + fs.ExtYml
+
+	return absolute, relative, err
+}
+
+// SaveSidecarYaml writes the photo metadata to a YAML sidecar file based on the specified storage paths.
+func (m *Photo) SaveSidecarYaml(originalsPath, sidecarPath string) error {
+	if m == nil {
+		return fmt.Errorf("photo entity is nil - you may have found a bug")
+	} else if m.PhotoName == "" {
+		return fmt.Errorf("photo name is empty")
+	} else if m.PhotoUID == "" {
+		return fmt.Errorf("photo uid is empty")
+	}
+
+	// Get photo YAML sidecar filename.
+	fileName, relName, err := m.YamlFileName(originalsPath, sidecarPath)
+
+	if err != nil {
+		log.Warnf("photo: %s (save %s)", err, clean.Log(relName))
+		return err
+	}
+
+	var action string
+
+	if fs.FileExists(fileName) {
+		action = "update"
+	} else {
+		action = "create"
+	}
+
+	// Write photo metadata to YAML sidecar file.
+	if err = m.SaveAsYaml(fileName); err != nil {
+		log.Warnf("photo: %s (%s %s)", err, action, clean.Log(relName))
+		return err
+	}
+
+	log.Debugf("photo: %sd sidecar file %s", action, clean.Log(relName))
+
+	return nil
+}
+
+// LoadFromYaml restores the photo metadata from a YAML sidecar file.
+func (m *Photo) LoadFromYaml(fileName string) error {
+	if m == nil {
+		return fmt.Errorf("photo entity is nil - you may have found a bug")
+	} else if fileName == "" {
+		return fmt.Errorf("yaml filename is empty")
+	}
+
+	filePath := filepath.Clean(fileName)
+
+	if _, err := fs.StatFile(filePath); err != nil {
+		return err
+	}
+
+	//nolint:gosec // G304: Path is normalized and validated above with fs.StatFile.
+	data, err := os.ReadFile(filePath)
+
+	if err != nil {
+		return err
+	}
+
+	if err = yaml.Unmarshal(data, m); err != nil {
+		return err
+	}
+
+	m.NormalizeValues()
+
+	return nil
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:2.2.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable parse() method exists in the dependency, but NO explicit calls were found in the active codebase. Transitive devDependency usage only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:1.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable parse() method exists in the dependency, but NO explicit calls were found in the active codebase. 1% indicated for presence in dependency tree.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-12905",
+    "Location": "tar-fs:2.1.1",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Used via prebuild-install in lib/producer.ts. Internal library usage for binary extraction. Max probability for internal usage without direct user control is 10%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:1.2.5",
+    "Original_exploitability": 70,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed in lib/index.ts:222. Direct user control over CLI arguments (argv2) allows for prototype pollution.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 15,
+    "Exploitability": 12,
+    "Exploitability_explanation": "Used via globby in lib/walker.ts. User-provided patterns may reach vulnerable braceExpand. ReDoS risk confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48387",
+    "Location": "tar-fs:2.1.1",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Used via prebuild-install. Path traversal during extraction. High-risk internal usage, but not directly user-triggered.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:3.0.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerability exists in deep dependency. No direct calls found in lib/. ReDoS risk is minimal in this context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "@babel/traverse:7.18.2",
+    "Original_exploitability": 2,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Custom traverse implementation in lib/detector.ts:466 is used instead of the official library function. Very low risk.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/helpers:7.18.2",
+    "Original_exploitability": 35,
+    "Exploitability": 30,
+    "Exploitability_explanation": "Babel helpers injected into analyzed code. pkg processes user code which might trigger ReDoS in _wrapRegExp helper.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-24828",
+    "Location": "pkg:5.8.1",
+    "Original_exploitability": 50,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Design flaw: predictable /tmp/pkg/* directory with incorrect permissions for native packages. Local Privilege Escalation risk.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:4.0.4",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ReDoS risk in glob compilation. Deep dependency with no direct user-controlled path found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No direct usage of cross-spawn found in lib/. ReDoS risk via transitive dependency only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ReDoS risk in pattern compilation. Vulnerable version present but direct usage as pattern compiler is not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ReDoS risk in pattern compilation. Vulnerable version present but direct usage as pattern compiler is not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ReDoS risk in pattern compilation. Vulnerable version present but direct usage as pattern compiler is not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ReDoS risk in pattern compilation. Vulnerable version present but direct usage as pattern compiler is not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ReDoS risk in pattern compilation. Vulnerable version present but direct usage as pattern compiler is not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ReDoS risk in pattern compilation. Vulnerable version present but direct usage as pattern compiler is not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.2.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "No direct usage found in lib/. Not reachable in main execution paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.6.3",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "No direct usage found in lib/. Not reachable in main execution paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-59343",
+    "Location": "tar-fs:2.1.1",
+    "Original_exploitability": 25,
+    "Exploitability": 12,
+    "Exploitability_explanation": "Internal usage for extraction. High impact but low exploitability due to trusted source of tarballs. 12% is within tolerance of 25%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Mentioned in comments only. No direct usage found in lib/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Reachability not confirmed. Internal usage only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33228",
+    "Location": "flatted:3.2.2",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "No direct usage found. Not reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "No direct usage found. Not reachable.",
+    "Assessment": "Correct"
+  }
+]

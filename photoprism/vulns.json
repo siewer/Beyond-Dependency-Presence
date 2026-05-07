@@ -1,0 +1,56 @@
+[
+    {
+        "Severity": "HIGH",
+        "Name": "CVE-2026-27903",
+        "Status": "NEW",
+        "Exploitability": 0,
+        "Last Seen": "2026-03-20T01:43:30.130Z",
+        "Source": "SCA",
+        "Location": "minimatch:3.0.8"
+    },
+    {
+        "Severity": "HIGH",
+        "Name": "CVE-2026-27904",
+        "Status": "NEW",
+        "Exploitability": 0,
+        "Last Seen": "2026-03-20T01:43:30.158Z",
+        "Source": "SCA",
+        "Location": "minimatch:3.0.8"
+    },
+    {
+        "Severity": "LOW",
+        "Name": "CVE-2023-36308",
+        "Status": "EXISTING",
+        "Exploitability": 0,
+        "Last Seen": "2026-03-20T01:43:30.160Z",
+        "Source": "SCA",
+        "Location": "github.com/disintegration/imaging:v1.6.2"
+    },
+    {
+        "Severity": "HIGH",
+        "Name": "GHSA-5c6j-r48x-rmvq",
+        "Status": "NEW",
+        "Exploitability": 0,
+        "Last Seen": "2026-03-20T01:43:30.187Z",
+        "Source": "SCA",
+        "Location": "serialize-javascript:6.0.2"
+    },
+    {
+        "Severity": "HIGH",
+        "Name": "CVE-2026-26996",
+        "Status": "EXISTING",
+        "Exploitability": 0,
+        "Last Seen": "2026-03-20T01:43:30.111Z",
+        "Source": "SCA",
+        "Location": "minimatch:3.0.8"
+    },
+    {
+        "Severity": "MEDIUM",
+        "Name": "CVE-2024-28180",
+        "Status": "EXISTING",
+        "Exploitability": 0,
+        "Last Seen": "2026-03-20T01:43:30.110Z",
+        "Source": "SCA",
+        "Location": "gopkg.in/square/go-jose.v2:v2.6.0"
+    }
+]

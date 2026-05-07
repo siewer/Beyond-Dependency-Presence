@@ -1,0 +1,25 @@
+package form
+
+import "github.com/ulule/deepcopier"
+
+// Feedback represents support requests / customer feedback.
+type Feedback struct {
+	Category    string `json:"Category"`
+	Message     string `json:"Message"`
+	UserName    string `json:"UserName"`
+	UserEmail   string `json:"UserEmail"`
+	UserAgent   string `json:"UserAgent"`
+	UserLocales string `json:"UserLocales"`
+}
+
+// Empty reports whether the feedback form lacks required content.
+func (f Feedback) Empty() bool {
+	return len(f.Category) < 1 || len(f.Message) < 3 || len(f.UserEmail) < 5
+}
+
+// NewFeedback copies values from an arbitrary model into a Feedback form.
+func NewFeedback(m any) (f Feedback, err error) {
+	err = deepcopier.Copy(m).To(&f)
+
+	return f, err
+}

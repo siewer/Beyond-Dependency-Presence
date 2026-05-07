@@ -1,0 +1,66 @@
+[
+  {
+    "Vulnerability": "CVE-2026-33036",
+    "Location": "fast-xml-parser:5.4.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable version 5.4.1 found in server/package-lock.json. However, no explicit call to replaceEntitiesValue() or XMLParser was found in the application source code. The library is a transitive dependency of @aws-sdk/client-s3 and used internally for XML building/parsing within the SDK. No user-reachable path triggers the vulnerable entity expansion bypass.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33228",
+    "Location": "flatted:3.4.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The codebase actually uses flatted version 3.4.2 (as verified in package-lock.json), which includes the fix for this vulnerability. Additionally, no explicit usage of flatted.parse() was found in the application source code. It is a transitive dependency of dev tools.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27601",
+    "Location": "underscore:1.13.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Underscore 1.13.1 is a transitive dependency of @sailshq/nedb (via sails-disk). No explicit call to _.flatten() or _.isEqual() was found in user code; the application primarily uses Lodash. The vulnerable library is isolated within sails-disk which is not used in the primary production PostgreSQL path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:7.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "The library is used as a transitive dependency of mocha (devDependency) and assertion-error-formatter. No explicit calls to parsePatch or applyPatch exist in the application logic. Attack vector is not reachable in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.6.1",
+    "Original_exploitability": 1,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Elliptic 6.6.1 is present as a transitive dependency in the client-side bundle (via crypto-browserify). No explicit usage of ec.sign() or ECDSA signature generation was found in user code. While the version is vulnerable, the API is not called for signing operations in the active codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive dependency of mocha (dev tool). No explicit calls to serialize() found in server-side production code. Internal usage only.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33349",
+    "Location": "fast-xml-parser:5.4.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Same as CVE-2026-33036. Transitive dependency via AWS SDK for S3. No direct calls to DocTypeReader or security limit configuration (maxEntityCount: 0) found in application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2327",
+    "Location": "markdown-it:13.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. The library is used via @diplodoc/transform in client/src/components/common/Markdown.jsx with 'linkify: true' explicitly enabled. This activates the vulnerable linkify feature in version 13.0.2, which is susceptible to ReDoS when processing untrusted markdown input from task descriptions or comments. No input length sanitization for asterisk sequences was found.",
+    "Assessment": "Incorrect"
+  }
+]

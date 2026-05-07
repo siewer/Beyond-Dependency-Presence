@@ -1,0 +1,141 @@
+package entity
+
+import (
+	"fmt"
+
+	"github.com/dustin/go-humanize/english"
+
+	"github.com/photoprism/photoprism/internal/event"
+	"github.com/photoprism/photoprism/pkg/authn"
+	"github.com/photoprism/photoprism/pkg/log/status"
+	"github.com/photoprism/photoprism/pkg/rnd"
+	"github.com/photoprism/photoprism/pkg/time/unix"
+)
+
+// DeleteSession permanently deletes the session and any sessions that were derived from it.
+func DeleteSession(s *Session) error {
+	if s == nil {
+		return nil
+	} else if !rnd.IsSessionID(s.ID) {
+		return fmt.Errorf("invalid session id")
+	}
+
+	// Delete any other sessions that were authenticated with the specified session.
+	if n := DeleteChildSessions(s); n > 0 {
+		event.AuditInfo([]string{s.IP(), "session %s", "deleted %s"}, s.RefID, english.Plural(n, "child session", "child sessions"))
+	}
+
+	// Delete session from cache.
+	DeleteFromSessionCache(s.ID)
+
+	if s.PreviewToken != "" {
+		PreviewToken.Set(s.PreviewToken, s.ID)
+	}
+
+	if s.DownloadToken != "" {
+		DownloadToken.Set(s.DownloadToken, s.ID)
+	}
+
+	return UnscopedDb().Delete(s).Error
+}
+
+// DeleteChildSessions deletes sessions that authenticated via the provided parent session ID.
+func DeleteChildSessions(s *Session) (deleted int) {
+	if s == nil {
+		return 0
+	} else if !rnd.IsSessionID(s.ID) || s.GetMethod().Is(authn.MethodSession) {
+		return 0
+	}
+
+	found := Sessions{}
+
+	if err := Db().Where("auth_id = ? AND auth_method = ?", s.ID, authn.MethodSession.String()).Find(&found).Error; err != nil {
+		event.AuditErr([]string{"failed to find child sessions", status.Error(err)})
+		return deleted
+	}
+
+	for _, sess := range found {
+		if err := sess.Delete(); err != nil {
+			event.AuditErr([]string{sess.IP(), "session %s", "failed to delete child session %s", status.Error(err)}, s.RefID, sess.RefID)
+		} else {
+			deleted++
+		}
+	}
+
+	return deleted
+}
+
+// DeleteClientSessions deletes sessions for the client beyond the configured retention limit.
+func DeleteClientSessions(client *Client, authMethod authn.MethodType, limit int64) (deleted int) {
+	if limit < 0 {
+		return 0
+	} else if client == nil {
+		return 0
+	}
+
+	q := Db()
+
+	if client.HasUID() {
+		q = q.Where("client_uid = ?", client.GetUID())
+	} else if client.HasName() {
+		q = q.Where("client_name = ?", client.Name())
+	} else {
+		return 0
+	}
+
+	if client.HasUser() {
+		q = q.Where("user_uid = ?", client.UserUID)
+	}
+
+	if !authMethod.IsUndefined() {
+		q = q.Where("auth_method = ?", authMethod.String())
+	}
+
+	q = q.Order("created_at DESC").Limit(1000000000).Offset(limit)
+
+	found := Sessions{}
+
+	if err := q.Find(&found).Error; err != nil {
+		event.AuditErr([]string{"failed to fetch client sessions", status.Error(err)})
+		return deleted
+	}
+
+	for _, sess := range found {
+		if err := sess.Delete(); err != nil {
+			event.AuditErr([]string{sess.IP(), "session %s", "failed to delete", status.Error(err)}, sess.RefID)
+		} else {
+			deleted++
+		}
+	}
+
+	return deleted
+}
+
+// DeleteExpiredSessions removes sessions whose expiration timestamp has passed.
+func DeleteExpiredSessions() (deleted int) {
+	found := Sessions{}
+
+	if err := Db().Where("sess_expires > 0 AND sess_expires < ?", unix.Now()).Find(&found).Error; err != nil {
+		event.AuditErr([]string{"failed to fetch expired sessions", status.Error(err)})
+		return deleted
+	}
+
+	for _, sess := range found {
+		if err := sess.Delete(); err != nil {
+			event.AuditErr([]string{sess.IP(), "session %s", "failed to delete", status.Error(err)}, sess.RefID)
+		} else {
+			deleted++
+		}
+	}
+
+	return deleted
+}
+
+// DeleteFromSessionCache deletes a session from the cache.
+func DeleteFromSessionCache(id string) {
+	if id == "" {
+		return
+	}
+
+	sessionCache.Delete(id)
+}

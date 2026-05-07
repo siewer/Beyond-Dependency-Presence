@@ -1,0 +1,57 @@
+package clean
+
+import (
+	"path"
+	"strings"
+	"unicode"
+)
+
+// Path removes invalid character from a path string.
+func Path(s string) string {
+	if s == "" || reject(s, 512) || strings.Contains(s, "..") || strings.Contains(s, "//") {
+		return ""
+	}
+
+	// Trim whitespace.
+	s = strings.TrimSpace(s)
+
+	// Remove non-printable and other potentially problematic characters.
+	// The following characters must never be used in a filepath: \ > < | : &
+	s = strings.Map(func(r rune) rune {
+		if !unicode.IsPrint(r) {
+			return -1
+		}
+
+		switch r {
+		case '\\', '|', '"', '?', '*', '%', '<', '>', '{', '}':
+			return -1
+		default:
+			return r
+		}
+	}, s)
+
+	return s
+}
+
+// UserPath sanitizes and normalizes user-provided paths for use as input.
+func UserPath(dir string) string {
+	if dir == "" {
+		return dir
+	}
+
+	// The following characters must never be used in a filepath: \ > < | : &
+	dir = strings.Trim(path.Clean(Path(strings.ReplaceAll(dir, "\\", "/"))), " ~./\\|?*%<>")
+
+	if strings.Contains(dir, "/.") || strings.Contains(dir, "..") || strings.Contains(dir, "//") {
+		return ""
+	}
+
+	return dir
+}
+
+// SlashPath normalizes a slash-based relative path by converting backslashes
+// to slashes, trimming whitespace, and removing leading and trailing slashes.
+func SlashPath(dir string) string {
+	dir = strings.TrimSpace(strings.ReplaceAll(dir, "\\", "/"))
+	return strings.Trim(dir, "/")
+}

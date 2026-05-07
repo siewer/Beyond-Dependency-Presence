@@ -1,0 +1,164 @@
+package server
+
+import (
+	"encoding/json"
+	"net/http"
+	"regexp"
+
+	"github.com/gin-gonic/gin"
+
+	"github.com/photoprism/photoprism/internal/api"
+	"github.com/photoprism/photoprism/internal/config"
+	"github.com/photoprism/photoprism/pkg/fs"
+	"github.com/photoprism/photoprism/pkg/http/header"
+	"github.com/photoprism/photoprism/pkg/i18n"
+)
+
+// MethodsGetHead enumerates the safe GET/HEAD methods used by web app routes.
+var MethodsGetHead = []string{header.MethodGet, header.MethodHead}
+
+// registerWebAppRoutes adds routes for the web user interface.
+func registerWebAppRoutes(router *gin.Engine, conf *config.Config) {
+	// Return if the web user interface is disabled.
+	if conf.DisableFrontend() {
+		return
+	}
+
+	// Serve user interface bootstrap template on all routes under the configured frontend base path.
+	ui := func(c *gin.Context) {
+		// Prevent CDNs from caching this endpoint.
+		if header.IsCdn(c.Request) {
+			api.AbortNotFound(c)
+			return
+		}
+
+		// Get client configuration.
+		clientConfig := conf.ClientPublic()
+
+		// Set bootstrap template values.
+		values := gin.H{
+			"signUp":    config.SignUp,
+			"config":    clientConfig,
+			"splashCss": clientConfig.ClientAssets.SplashCssFileContents(),
+		}
+
+		// Render bootstrap template.
+		c.HTML(http.StatusOK, conf.TemplateName(), values)
+	}
+
+	// HTML bootstrap for the SPA (served from FrontendUri/**).
+	router.Any(conf.FrontendUri("/*path"), ui)
+
+	// Serve the user interface manifest file.
+	manifest := func(c *gin.Context) {
+		c.Header(header.CacheControl, header.CacheControlNoStore)
+		if body, err := json.MarshalIndent(conf.AppManifest(), "", "    "); err != nil {
+			api.Abort(c, http.StatusInternalServerError, i18n.ErrUnexpected)
+		} else {
+			c.Data(http.StatusOK, header.ContentTypeManifest, body)
+		}
+	}
+
+	// Web App Manifest (served at /manifest.json under the base URI).
+	router.Any(conf.BaseUri("/"+fs.ManifestJsonFile), manifest)
+
+	// Serve user interface service worker file.
+	swWorker := func(c *gin.Context) {
+		c.Header(header.CacheControl, header.CacheControlNoStore)
+
+		// Return if only headers are requested.
+		if c.Request.Method == header.MethodHead {
+			c.Header(header.ContentType, header.ContentTypeJavaScript)
+			return
+		}
+
+		// Serve the Workbox-generated service worker when the frontend build has
+		// produced one (default for production builds).
+		if swFile := conf.StaticBuildFile(fs.SwJsFile); fs.FileExistsNotEmpty(swFile) {
+			c.File(swFile)
+			return
+		}
+
+		// Fall back to the embedded no-op service worker so tests and dev builds
+		// still receive a valid response.
+		if len(fallbackServiceWorker) > 0 {
+			c.Data(http.StatusOK, header.ContentTypeJavaScript, fallbackServiceWorker)
+			return
+		}
+
+		api.Abort(c, http.StatusNotFound, i18n.ErrNotFound)
+	}
+
+	// Primary service worker endpoint (/sw.js relative to the site root).
+	router.Match(MethodsGetHead, "/"+fs.SwJsFile, swWorker)
+
+	// Serve the service worker scope cleanup helper imported by sw.js.
+	swScopeCleanup := func(c *gin.Context) {
+		c.Header(header.CacheControl, header.CacheControlNoStore)
+
+		// Return if only headers are requested.
+		if c.Request.Method == header.MethodHead {
+			c.Header(header.ContentType, header.ContentTypeJavaScript)
+			return
+		}
+
+		if helperFile := conf.StaticBuildFile(fs.SwScopeCleanupJsFile); fs.FileExistsNotEmpty(helperFile) {
+			c.File(helperFile)
+			return
+		}
+
+		if len(fallbackScopeCleanupScript) > 0 {
+			c.Data(http.StatusOK, header.ContentTypeJavaScript, fallbackScopeCleanupScript)
+			return
+		}
+
+		api.Abort(c, http.StatusNotFound, i18n.ErrNotFound)
+	}
+
+	// Scope cleanup helper endpoint (/sw-scope-cleanup.js relative to the site root).
+	router.Match(MethodsGetHead, "/"+fs.SwScopeCleanupJsFile, swScopeCleanup)
+
+	// Expose hashed Workbox runtime helpers alongside sw.js so service worker imports succeed
+	// regardless of whether the app is hosted at the root or under a base URI.
+	workboxHandler := newWorkboxHandler(conf)
+
+	// Handler for shared domain (service worker registered from /sw.js).
+	router.Match(MethodsGetHead, "/workbox-:hash", workboxHandler)
+
+	// Handle service worker requests on a shared domain.
+	if conf.BaseUri("") != "" {
+		router.Match(MethodsGetHead, conf.BaseUri("/"+fs.SwJsFile), swWorker)
+		router.Match(MethodsGetHead, conf.BaseUri("/"+fs.SwScopeCleanupJsFile), swScopeCleanup)
+		router.Match(MethodsGetHead, conf.BaseUri("/workbox-:hash"), workboxHandler)
+	}
+}
+
+// newWorkboxHandler serves hashed workbox helpers (workbox-<hash>.js). The regex
+// matches the raw filename (without the "workbox-" prefix) as seen by Gin, so
+// the pattern must be `^[A-Za-z0-9_-]+\.js$`. Note the single backslash – the
+// string is a raw literal, meaning the regex engine receives an escaped dot.
+func newWorkboxHandler(conf *config.Config) gin.HandlerFunc {
+	workboxPattern := regexp.MustCompile(`^[A-Za-z0-9_-]+\.js$`)
+
+	return func(c *gin.Context) {
+		raw := c.Param("hash")
+		if !workboxPattern.MatchString(raw) {
+			c.Status(http.StatusNotFound)
+			return
+		}
+
+		filePath := conf.StaticBuildFile("workbox-" + raw)
+		if !fs.FileExists(filePath) {
+			c.Status(http.StatusNotFound)
+			return
+		}
+
+		// Return if only headers are requested.
+		if c.Request.Method == header.MethodHead {
+			c.Header(header.ContentType, header.ContentTypeJavaScript)
+			return
+		}
+
+		c.File(filePath)
+	}
+}

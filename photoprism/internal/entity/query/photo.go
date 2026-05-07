@@ -1,0 +1,259 @@
+package query
+
+import (
+	"fmt"
+	"time"
+
+	"github.com/dustin/go-humanize/english"
+	"github.com/jinzhu/gorm"
+
+	"github.com/photoprism/photoprism/internal/entity"
+	"github.com/photoprism/photoprism/internal/mutex"
+)
+
+// PhotoByID returns a Photo based on the ID.
+func PhotoByID(photoID uint64) (photo entity.Photo, err error) {
+	if err = UnscopedDb().Where("id = ?", photoID).
+		Preload("Labels", func(db *gorm.DB) *gorm.DB {
+			return db.Order("photos_labels.uncertainty ASC, photos_labels.label_id DESC")
+		}).
+		Preload("Labels.Label").
+		Preload("Camera").
+		Preload("Lens").
+		Preload("Details").
+		Preload("Place").
+		Preload("Cell").
+		Preload("Cell.Place").
+		First(&photo).Error; err != nil {
+		return photo, err
+	}
+
+	return photo, nil
+}
+
+// PhotoByUID returns a Photo based on the UID.
+func PhotoByUID(photoUID string) (photo entity.Photo, err error) {
+	if err = UnscopedDb().Where("photo_uid = ?", photoUID).
+		Preload("Labels", func(db *gorm.DB) *gorm.DB {
+			return db.Order("photos_labels.uncertainty ASC, photos_labels.label_id DESC")
+		}).
+		Preload("Labels.Label").
+		Preload("Camera").
+		Preload("Lens").
+		Preload("Details").
+		Preload("Place").
+		Preload("Cell").
+		Preload("Cell.Place").
+		First(&photo).Error; err != nil {
+		return photo, err
+	}
+
+	return photo, nil
+}
+
+// PhotoPreloadByUID returns a Photo based on the UID with all dependencies preloaded.
+func PhotoPreloadByUID(photoUID string) (photo entity.Photo, err error) {
+	if err = preloadPhotoAssociations(UnscopedDb().Where("photo_uid = ?", photoUID)).
+		First(&photo).Error; err != nil {
+		return photo, err
+	}
+
+	photo.PreloadMany()
+
+	return photo, nil
+}
+
+// PhotoPreloadByUIDs returns photos for the provided UIDs with supporting associations preloaded.
+// The call de-duplicates the UID list so callers can forward selection arrays directly without
+// incurring redundant queries.
+func PhotoPreloadByUIDs(photoUIDs []string) (entity.Photos, error) {
+	uids := uniqueUIDs(photoUIDs)
+	photos := entity.Photos{}
+
+	if len(uids) == 0 {
+		return photos, nil
+	}
+
+	if err := preloadPhotoAssociations(UnscopedDb().Where("photo_uid IN (?)", uids)).
+		Find(&photos).Error; err != nil {
+		return photos, err
+	}
+
+	for _, photo := range photos {
+		if photo == nil {
+			continue
+		}
+		photo.PreloadMany()
+	}
+
+	return photos, nil
+}
+
+// preloadPhotoAssociations applies the eager-load scope that keeps PhotoPreload helpers consistent.
+func preloadPhotoAssociations(db *gorm.DB) *gorm.DB {
+	return db.
+		Preload("Labels", func(db *gorm.DB) *gorm.DB {
+			return db.Order("photos_labels.uncertainty ASC, photos_labels.label_id DESC")
+		}).
+		Preload("Labels.Label").
+		Preload("Camera").
+		Preload("Lens").
+		Preload("Details").
+		Preload("Place").
+		Preload("Cell").
+		Preload("Cell.Place")
+}
+
+// uniqueUIDs normalizes and de-duplicates selection lists so callers can reuse them as-is.
+func uniqueUIDs(uids []string) []string {
+	if len(uids) == 0 {
+		return nil
+	}
+
+	result := make([]string, 0, len(uids))
+	seen := make(map[string]struct{}, len(uids))
+
+	for _, uid := range uids {
+		if uid == "" {
+			continue
+		}
+		if _, ok := seen[uid]; ok {
+			continue
+		}
+		seen[uid] = struct{}{}
+		result = append(result, uid)
+	}
+
+	return result
+}
+
+// MissingPhotos returns photo entities without existing files.
+func MissingPhotos(limit int, offset int) (entities entity.Photos, err error) {
+	err = Db().
+		Select("photos.*").
+		Where("id NOT IN (SELECT photo_id FROM files WHERE file_missing = 0 AND file_root = '/' AND deleted_at IS NULL)").
+		Order("photos.id").
+		Limit(limit).Offset(offset).Find(&entities).Error
+
+	return entities, err
+}
+
+// ArchivedPhotos finds and returns archived photos.
+func ArchivedPhotos(limit int, offset int) (entities entity.Photos, err error) {
+	err = UnscopedDb().
+		Select("photos.*").
+		Where("photos.photo_quality > -1").
+		Where("photos.deleted_at IS NOT NULL").
+		Order("photos.id").
+		Limit(limit).Offset(offset).Find(&entities).Error
+
+	return entities, err
+}
+
+// PhotosMetadataUpdate returns photos selected for metadata maintenance.
+func PhotosMetadataUpdate(limit, offset int, delay, interval time.Duration) (photos entity.Photos, err error) {
+	err = Db().
+		Preload("Labels", func(db *gorm.DB) *gorm.DB {
+			return db.Order("photos_labels.uncertainty ASC, photos_labels.label_id DESC")
+		}).
+		Preload("Labels.Label").
+		Preload("Camera").
+		Preload("Lens").
+		Preload("Details").
+		Preload("Place").
+		Preload("Cell").
+		Preload("Cell.Place").
+		Where("checked_at IS NULL OR checked_at < ?", time.Now().Add(-1*interval)).
+		Where("updated_at < ?", time.Now().Add(-1*delay)).
+		Order("photos.ID ASC").Limit(limit).Offset(offset).Find(&photos).Error
+
+	return photos, err
+}
+
+// OrphanPhotos finds orphan index entries that may be removed.
+func OrphanPhotos() (photos entity.Photos, err error) {
+	err = UnscopedDb().
+		Raw(`SELECT * FROM photos WHERE 
+			deleted_at IS NOT NULL 
+			AND photo_quality = -1 
+			AND id NOT IN (SELECT photo_id FROM files WHERE files.deleted_at IS NULL)`).
+		Find(&photos).Error
+
+	return photos, err
+}
+
+// FixPrimaries tries to set a primary file for photos that have none.
+func FixPrimaries() error {
+	mutex.Index.Lock()
+	defer mutex.Index.Unlock()
+
+	start := time.Now()
+
+	var photos entity.Photos
+
+	// Remove primary file flag from broken or missing files.
+	if err := UnscopedDb().Table(entity.File{}.TableName()).
+		Where("(file_error <> '' OR file_missing = 1) AND file_primary <> 0").
+		UpdateColumn("file_primary", 0).Error; err != nil {
+		return err
+	}
+
+	// Find photos without primary file.
+	if err := UnscopedDb().
+		Raw(`SELECT * FROM photos 
+			WHERE deleted_at IS NULL 
+			AND id NOT IN (SELECT photo_id FROM files WHERE file_primary = 1)`).
+		Find(&photos).Error; err != nil {
+		return err
+	}
+
+	if len(photos) == 0 {
+		log.Debugf("index: found no photos without primary file [%s]", time.Since(start))
+		return nil
+	}
+
+	// Try to find matching primary files.
+	for _, p := range photos {
+		log.Debugf("index: searching primary file for %s", p.PhotoUID)
+
+		if err := p.SetPrimary(""); err != nil {
+			log.Infof("index: %s", err)
+		}
+	}
+
+	log.Debugf("index: updated primary files [%s]", time.Since(start))
+
+	return nil
+}
+
+// FlagHiddenPhotos sets the quality score of photos without valid primary file to -1.
+func FlagHiddenPhotos() (err error) {
+	mutex.Index.Lock()
+	defer mutex.Index.Unlock()
+
+	// Start time for logs.
+	start := time.Now()
+
+	// Number of updated records.
+	affected := 0
+
+	ids := Db().Select("id").
+		Where("id NOT IN (SELECT photo_id FROM files WHERE file_primary = 1 AND file_missing = 0 AND file_error = '' AND deleted_at IS NULL) AND photo_quality > -1").
+		Table(entity.Photo{}.TableName()).SubQuery()
+	if result := UnscopedDb().Table(entity.Photo{}.TableName()).
+		Where("id IN (?) AND photo_quality > -1", ids).
+		UpdateColumn("photo_quality", -1); result.Error != nil {
+		// Failed to flag all hidden photos.
+		log.Warnf("index: failed to flag photos as hidden")
+		return fmt.Errorf("%s while flagging hidden photos", result.Error)
+	} else {
+		affected = int(result.RowsAffected)
+	}
+
+	// Log number of affected rows, if any.
+	if affected > 0 {
+		log.Infof("index: flagged %s as hidden [%s]", english.Plural(affected, "photo", "photos"), time.Since(start))
+	}
+
+	return nil
+}

@@ -1,0 +1,2250 @@
+[
+  {
+    "Vulnerability": "CVE-2020-1938",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. AJP connector is not used. The application uses default HTTP connectors.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10173",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22978",
+    "Location": "spring-security-core:5.0.6.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22978",
+    "Location": "spring-security-web:5.0.6.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-39144",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-9547",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-9548",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22965",
+    "Location": "spring-beans:5.0.7.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: Root pom.xml specifies Java 1.8. Spring4Shell requires JDK 9+. The application is not vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22965",
+    "Location": "spring-boot-starter-web:2.0.3.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: Root pom.xml specifies Java 1.8. Spring4Shell requires JDK 9+. The application is not vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22965",
+    "Location": "spring-boot-starter-webflux:2.0.3.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: Root pom.xml specifies Java 1.8. Spring4Shell requires JDK 9+. The application is not vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22965",
+    "Location": "spring-webflux:5.0.7.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: Root pom.xml specifies Java 1.8. Spring4Shell requires JDK 9+. The application is not vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22965",
+    "Location": "spring-webmvc:5.0.7.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: Root pom.xml specifies Java 1.8. Spring4Shell requires JDK 9+. The application is not vulnerable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-24813",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. HTTP/2 or other specific sub-systems affected by these CVEs are not enabled in this configuration.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-5398",
+    "Location": "spring-webflux:5.0.7.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-5398",
+    "Location": "spring-webmvc:5.0.7.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44487",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. HTTP/2 or other specific sub-systems affected by these CVEs are not enabled in this configuration.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38819",
+    "Location": "spring-webflux:5.0.7.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22980",
+    "Location": "spring-data-mongodb:2.0.8.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Potential SpEL injection path checked in @Query annotations; no vulnerable patterns discovered.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-1471",
+    "Location": "snakeyaml:1.19",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library snakeyaml is used for internal data processing and utility functions.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-0232",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-26217",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-50379",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-29505",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-22053",
+    "Location": "spring-cloud-netflix-hystrix-dashboard:2.0.0.RELEASE",
+    "Original_exploitability": 50,
+    "Exploitability": 75,
+    "Exploitability_explanation": "\u2705 API call confirmed. Hystrix Dashboard is explicitly enabled via @EnableHystrixDashboard in the monitoring service.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-39141",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 10,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11023",
+    "Location": "jquery:1.8.2",
+    "Original_exploitability": 60,
+    "Exploitability": 60,
+    "Exploitability_explanation": "\u2705 API call confirmed. jQuery v1.8.2 is used in the gateway service and is vulnerable to XSS.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-1000027",
+    "Location": "spring-web:5.0.7.RELEASE",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-38819",
+    "Location": "spring-webmvc:5.0.7.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10072",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. HTTP/2 or other specific sub-systems affected by these CVEs are not enabled in this configuration.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-26258",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 5,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-26259",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-3799",
+    "Location": "spring-cloud-config-server:2.0.0.RELEASE",
+    "Original_exploitability": 50,
+    "Exploitability": 75,
+    "Exploitability_explanation": "\u2705 API call confirmed. Spring Cloud Config Server is explicitly enabled via @EnableConfigServer in the config service.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-11113",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-39152",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 8,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-0199",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. HTTP/2 or other specific sub-systems affected by these CVEs are not enabled in this configuration.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-22243",
+    "Location": "spring-web:5.0.7.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21351",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21345",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 5,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-1260",
+    "Location": "spring-security-oauth2:2.2.1.RELEASE",
+    "Original_exploitability": 30,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. OAuth2 Authorization Server is enabled, but clients are hardcoded in-memory.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-36179",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-8014",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-22259",
+    "Location": "spring-web:5.0.7.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-24549",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. HTTP/2 or other specific sub-systems affected by these CVEs are not enabled in this configuration.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-46589",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-11784",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-21733",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-39146",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 35,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-10672",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-35728",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-24122",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-12384",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21341",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-10673",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21344",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-9251",
+    "Location": "jquery:1.8.2",
+    "Original_exploitability": 50,
+    "Exploitability": 60,
+    "Exploitability_explanation": "\u2705 API call confirmed. jQuery v1.8.2 is used in the gateway service and is vulnerable to XSS.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-0221",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-12814",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-8034",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48924",
+    "Location": "commons-lang3:3.7",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library commons-lang3 is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38809",
+    "Location": "spring-web:5.0.7.RELEASE",
+    "Original_exploitability": 65,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-42550",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-6378",
+    "Location": "logback-classic:1.2.3",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25647",
+    "Location": "gson:2.8.5",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-13956",
+    "Location": "httpclient:4.5.5",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library httpclient is used for internal data processing and utility functions.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-36180",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-52999",
+    "Location": "jackson-core:2.9.6",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-51074",
+    "Location": "json-path:2.4.0",
+    "Original_exploitability": 2,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library json-path is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-30171",
+    "Location": "bcprov-jdk15on:1.56",
+    "Original_exploitability": 2,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library bcprov-jdk15on is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-8916",
+    "Location": "bcpkix-jdk15on:1.56",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library bcpkix-jdk15on is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-1436",
+    "Location": "jettison:1.3.7",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library jettison is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-67735",
+    "Location": "netty-codec-http:4.1.25.Final",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Netty powers the reactive components (Gateway/WebFlux) and is susceptible to lower-level protocol issues.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22732",
+    "Location": "spring-security-web:5.0.6.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58056",
+    "Location": "netty-codec-http:4.1.25.Final",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Netty powers the reactive components (Gateway/WebFlux) and is susceptible to lower-level protocol issues.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22970",
+    "Location": "spring-beans:5.0.7.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22968",
+    "Location": "spring-context:5.0.7.RELEASE",
+    "Original_exploitability": 2,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11022",
+    "Location": "jquery:1.8.2",
+    "Original_exploitability": 0,
+    "Exploitability": 60,
+    "Exploitability_explanation": "\u2705 API call confirmed. jQuery v1.8.2 is used in the gateway service and is vulnerable to XSS.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-14721",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-35490",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 8,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-10968",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-20330",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 8,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-15756",
+    "Location": "spring-core:5.0.7.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10202",
+    "Location": "jackson-mapper-asl:1.9.13",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36186",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-10237",
+    "Location": "guava:15.0",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library guava is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-10237",
+    "Location": "guava:16.0",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library guava is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10219",
+    "Location": "hibernate-validator:6.0.10.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Primarily used in test scope or for standard validation logic without direct external exposure.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38820",
+    "Location": "spring-web:5.0.7.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-25329",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-6378",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10172",
+    "Location": "jackson-mapper-asl:1.9.13",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-27568",
+    "Location": "json-smart:2.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library json-smart is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-11087",
+    "Location": "amqp-client:5.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-29425",
+    "Location": "commons-io:2.4",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library commons-io is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-51074",
+    "Location": "json-path:2.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library json-path is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-2976",
+    "Location": "guava:15.0",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library guava is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-2976",
+    "Location": "guava:19.0",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library guava is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8908",
+    "Location": "guava:15.0",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library guava is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8908",
+    "Location": "guava:16.0",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library guava is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48924",
+    "Location": "commons-lang:2.6",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library commons-lang is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-1370",
+    "Location": "json-smart:2.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library json-smart is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-17531",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-25122",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-12798",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-31573",
+    "Location": "xmlunit-core:2.5.1",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Primarily used in test scope or for standard validation logic without direct external exposure.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-36188",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-10202",
+    "Location": "jackson-mapper-asl:1.9.2",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-14060",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-14540",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-14061",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 2,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-8037",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45648",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 35,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2013-7285",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-14718",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-34750",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38821",
+    "Location": "spring-security-web:5.0.6.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21350",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-12086",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-3778",
+    "Location": "spring-security-oauth2:2.2.1.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. OAuth2 Authorization Server is enabled, but clients are hardcoded in-memory.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-20444",
+    "Location": "netty-codec-http:4.1.25.Final",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Netty powers the reactive components (Gateway/WebFlux) and is susceptible to lower-level protocol issues.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-22262",
+    "Location": "spring-web:5.0.7.RELEASE",
+    "Original_exploitability": 20,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22739",
+    "Location": "spring-cloud-config-server:2.0.0.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-14439",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-10650",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 8,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8840",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-41080",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-14195",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-36189",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-19360",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-14062",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-31650",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11112",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-36184",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-35491",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-36181",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-19362",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21349",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-14719",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 2,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11612",
+    "Location": "netty-handler:4.1.25.Final",
+    "Original_exploitability": 5,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Netty powers the reactive components (Gateway/WebFlux) and is susceptible to lower-level protocol issues.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-14720",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-17563",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 10,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22950",
+    "Location": "spring-expression:5.0.7.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Spring Expression Language (SpEL) is used for default data-binding and security rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-19361",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-9546",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36182",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36185",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-24616",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21346",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-39150",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-41966",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-21347",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-37137",
+    "Location": "netty-codec:4.1.25.Final",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Netty powers the reactive components (Gateway/WebFlux) and is susceptible to lower-level protocol issues.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-10237",
+    "Location": "guava:19.0",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library guava is used for internal data processing and utility functions.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-16943",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11111",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 5,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36187",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-53506",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11620",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-18640",
+    "Location": "snakeyaml:1.19",
+    "Original_exploitability": 35,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library snakeyaml is used for internal data processing and utility functions.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-36183",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-24750",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11358",
+    "Location": "jquery:1.8.2",
+    "Original_exploitability": 0,
+    "Exploitability": 60,
+    "Exploitability_explanation": "\u2705 API call confirmed. jQuery v1.8.2 is used in the gateway service and is vulnerable to XSS.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-20445",
+    "Location": "netty-handler:4.1.25.Final",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Netty powers the reactive components (Gateway/WebFlux) and is susceptible to lower-level protocol issues.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-42003",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 35,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-43859",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 2,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-14379",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-1000873",
+    "Location": "jackson-datatype-jsr310:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-26939",
+    "Location": "bcprov-jdk15on:1.56",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library bcprov-jdk15on is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-17267",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-22971",
+    "Location": "spring-messaging:5.0.7.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-35516",
+    "Location": "commons-compress:1.10",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library commons-compress is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11619",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-35036",
+    "Location": "hibernate-validator:6.0.10.Final",
+    "Original_exploitability": 35,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Primarily used in test scope or for standard validation logic without direct external exposure.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-37136",
+    "Location": "netty-codec:4.1.25.Final",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Netty powers the reactive components (Gateway/WebFlux) and is susceptible to lower-level protocol issues.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-10969",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 5,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-22112",
+    "Location": "spring-security-web:5.0.6.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-35517",
+    "Location": "commons-compress:1.10",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library commons-compress is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-4759",
+    "Location": "org.eclipse.jgit:4.11.0.201803080745-r",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38820",
+    "Location": "spring-context:5.0.7.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-14893",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-39139",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-1935",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-14892",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 35,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25857",
+    "Location": "snakeyaml:1.19",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library snakeyaml is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-16335",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-23672",
+    "Location": "tomcat-embed-websocket:8.5.31",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7656",
+    "Location": "jquery:1.8.2",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-20863",
+    "Location": "spring-expression:5.0.7.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Spring Expression Language (SpEL) is used for default data-binding and security rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-34462",
+    "Location": "netty-handler:4.1.25.Final",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Netty powers the reactive components (Gateway/WebFlux) and is susceptible to lower-level protocol issues.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-11771",
+    "Location": "commons-compress:1.10",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library commons-compress is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-39149",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-39151",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-39147",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-39148",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 30,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-39153",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-39154",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-20883",
+    "Location": "spring-boot-autoconfigure:2.0.3.RELEASE",
+    "Original_exploitability": 55,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2012-6708",
+    "Location": "jquery:1.8.2",
+    "Original_exploitability": 25,
+    "Exploitability": 60,
+    "Exploitability_explanation": "\u2705 API call confirmed. jQuery v1.8.2 is used in the gateway service and is vulnerable to XSS.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-43797",
+    "Location": "netty-codec-http:4.1.25.Final",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Netty powers the reactive components (Gateway/WebFlux) and is susceptible to lower-level protocol issues.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-46120",
+    "Location": "amqp-client:5.1.2",
+    "Original_exploitability": 35,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-39145",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-40152",
+    "Location": "woodstox-core:5.0.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-1932",
+    "Location": "hibernate-validator:6.0.10.Final",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Primarily used in test scope or for standard validation logic without direct external exposure.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-35515",
+    "Location": "commons-compress:1.10",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library commons-compress is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21342",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-36090",
+    "Location": "commons-compress:1.10",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library commons-compress is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-10172",
+    "Location": "jackson-mapper-asl:1.9.2",
+    "Original_exploitability": 8,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38808",
+    "Location": "spring-expression:5.0.7.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Spring Expression Language (SpEL) is used for default data-binding and security rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-20190",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-16942",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-46392",
+    "Location": "commons-configuration:1.8",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library commons-configuration is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36518",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-20873",
+    "Location": "spring-boot-actuator-autoconfigure:2.0.3.RELEASE",
+    "Original_exploitability": 70,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Actuator is present, but management endpoints are not exposed to the public via gateway configuration.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-42795",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 60,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-27568",
+    "Location": "json-smart:2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library json-smart is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-27772",
+    "Location": "spring-boot:2.0.3.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21343",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-40149",
+    "Location": "jettison:1.3.7",
+    "Original_exploitability": 5,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library jettison is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38749",
+    "Location": "snakeyaml:1.19",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library snakeyaml is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-11087",
+    "Location": "spring-amqp:2.0.4.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-15758",
+    "Location": "spring-security-oauth2:2.2.1.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. OAuth2 Authorization Server is enabled, but clients are hardcoded in-memory.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22235",
+    "Location": "spring-boot:2.0.3.RELEASE",
+    "Original_exploitability": 8,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55752",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15522",
+    "Location": "bcprov-jdk15on:1.56",
+    "Original_exploitability": 8,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library bcprov-jdk15on is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-3795",
+    "Location": "spring-security-core:5.0.6.RELEASE",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-5408",
+    "Location": "spring-security-core:5.0.6.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-12418",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47535",
+    "Location": "netty-common:4.1.25.Final",
+    "Original_exploitability": 40,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Netty powers the reactive components (Gateway/WebFlux) and is susceptible to lower-level protocol issues.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-48988",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24823",
+    "Location": "netty-codec-http:4.1.25.Final",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Netty powers the reactive components (Gateway/WebFlux) and is susceptible to lower-level protocol issues.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-42004",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-22257",
+    "Location": "spring-security-core:5.0.6.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-20861",
+    "Location": "spring-expression:5.0.7.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Spring Expression Language (SpEL) is used for default data-binding and security rules.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47072",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-40151",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 10,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-1000180",
+    "Location": "bcprov-jdk15on:1.56",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library bcprov-jdk15on is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-38827",
+    "Location": "spring-security-core:5.0.6.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-33201",
+    "Location": "bcprov-jdk15on:1.56",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library bcprov-jdk15on is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-34055",
+    "Location": "spring-boot-actuator:2.0.3.RELEASE",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Actuator is present, but management endpoints are not exposed to the public via gateway configuration.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-10693",
+    "Location": "hibernate-validator:6.0.10.Final",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Primarily used in test scope or for standard validation logic without direct external exposure.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47554",
+    "Location": "commons-io:2.4",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library commons-io is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29025",
+    "Location": "netty-codec-http:4.1.25.Final",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Netty powers the reactive components (Gateway/WebFlux) and is susceptible to lower-level protocol issues.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-52520",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21348",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-38751",
+    "Location": "snakeyaml:1.19",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library snakeyaml is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-4949",
+    "Location": "org.eclipse.jgit:4.11.0.201803080745-r",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-42252",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 18,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. HTTP/2 or other specific sub-systems affected by these CVEs are not enabled in this configuration.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-31651",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29857",
+    "Location": "bcprov-jdk15on:1.56",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library bcprov-jdk15on is used for internal data processing and utility functions.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-22113",
+    "Location": "spring-cloud-netflix-zuul:2.0.0.RELEASE",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-45685",
+    "Location": "jettison:1.3.7",
+    "Original_exploitability": 5,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library jettison is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-45693",
+    "Location": "jettison:1.3.7",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library jettison is used for internal data processing and utility functions.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-38752",
+    "Location": "snakeyaml:1.19",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library snakeyaml is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-49125",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-33202",
+    "Location": "bcprov-jdk15on:1.56",
+    "Original_exploitability": 10,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library bcprov-jdk15on is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38750",
+    "Location": "snakeyaml:1.19",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library snakeyaml is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-39140",
+    "Location": "xstream:1.4.10",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. XStream is a transitive dependency (via spring-cloud-netflix-hystrix-stream) and is not directly used in caller code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24733",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. HTTP/2 or other specific sub-systems affected by these CVEs are not enabled in this configuration.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25193",
+    "Location": "netty-common:4.1.25.Final",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Netty powers the reactive components (Gateway/WebFlux) and is susceptible to lower-level protocol issues.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-40150",
+    "Location": "jettison:1.3.7",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library jettison is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-41854",
+    "Location": "snakeyaml:1.19",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library snakeyaml is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22733",
+    "Location": "spring-boot-starter-actuator:2.0.3.RELEASE",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Actuator is present, but management endpoints are not exposed to the public via gateway configuration.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21290",
+    "Location": "netty-codec-http:4.1.25.Final",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Netty powers the reactive components (Gateway/WebFlux) and is susceptible to lower-level protocol issues.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15250",
+    "Location": "junit:4.12",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Primarily used in test scope or for standard validation logic without direct external exposure.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-2976",
+    "Location": "guava:16.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library guava is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-11226",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-58057",
+    "Location": "netty-codec:4.1.25.Final",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Netty powers the reactive components (Gateway/WebFlux) and is susceptible to lower-level protocol issues.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-46701",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33870",
+    "Location": "netty-codec-http:4.1.25.Final",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Netty powers the reactive components (Gateway/WebFlux) and is susceptible to lower-level protocol issues.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66614",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-22233",
+    "Location": "spring-context:5.0.7.RELEASE",
+    "Original_exploitability": 25,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22228",
+    "Location": "spring-security-crypto:5.0.6.RELEASE",
+    "Original_exploitability": 90,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Spring framework component in use within the microservice architecture.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-61795",
+    "Location": "tomcat-embed-core:8.5.31",
+    "Original_exploitability": 30,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Standard Tomcat embedded core is used and exposed to inbound web traffic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8908",
+    "Location": "guava:19.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library guava is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-25649",
+    "Location": "jackson-databind:2.9.6",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Polymorphic deserialization is not globally enabled (default-disabled in 2.9.6), and no custom @JsonTypeInfo gadgets were found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-12801",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-49128",
+    "Location": "jackson-core:2.9.6",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-1370",
+    "Location": "json-smart:2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library json-smart is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-25710",
+    "Location": "commons-compress:1.10",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "\u2705 API call confirmed. Library commons-compress is used for internal data processing and utility functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24400",
+    "Location": "assertj-core:3.9.1",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. Primarily used in test scope or for standard validation logic without direct external exposure.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-1225",
+    "Location": "logback-core:1.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-72hv-8253-57qq",
+    "Location": "jackson-core:2.9.6",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "\u2705 API call not confirmed. No explicit code usage or configuration found that satisfies the vulnerability constraints.",
+    "Assessment": "Correct"
+  }
+]

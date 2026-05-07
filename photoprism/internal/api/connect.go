@@ -1,0 +1,103 @@
+package api
+
+import (
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+
+	"github.com/photoprism/photoprism/internal/auth/acl"
+	"github.com/photoprism/photoprism/internal/form"
+	"github.com/photoprism/photoprism/internal/mutex"
+	"github.com/photoprism/photoprism/internal/photoprism/get"
+	"github.com/photoprism/photoprism/pkg/clean"
+	"github.com/photoprism/photoprism/pkg/i18n"
+)
+
+// Connect confirms external service accounts using a token.
+//
+//	@Summary	confirm external service accounts using a token
+//	@Id			ConnectService
+//	@Tags		Config
+//	@Accept		json
+//	@Produce	json
+//	@Param		name		path		string			true	"service name (e.g., hub)"
+//	@Param		connect		body		form.Connect	true	"connection token"
+//	@Success	200			{object}	gin.H
+//	@Failure	400,401,403	{object}	i18n.Response
+//	@Router		/api/v1/connect/{name} [put]
+func Connect(router *gin.RouterGroup) {
+	router.PUT("/connect/:name", func(c *gin.Context) {
+		name := clean.ID(c.Param("name"))
+
+		if name == "" {
+			log.Errorf("connect: empty service name")
+			AbortBadRequest(c)
+			return
+		}
+
+		var frm form.Connect
+
+		// Assign and validate request form values.
+		LimitRequestBodyBytes(c, MaxAuthRequestBytes)
+
+		if err := c.BindJSON(&frm); err != nil {
+			if IsRequestBodyTooLarge(err) {
+				log.Warnf("connect: request too large (%s)", clean.Log(name))
+				AbortRequestTooLarge(c, i18n.ErrAccountConnect)
+				return
+			}
+
+			log.Warnf("connect: invalid form values (%s)", clean.Log(name))
+			Abort(c, http.StatusBadRequest, i18n.ErrAccountConnect)
+			return
+		}
+
+		if frm.Invalid() {
+			log.Warnf("connect: invalid connect token (%s)", clean.Log(name))
+			Abort(c, http.StatusBadRequest, i18n.ErrAccountConnect)
+			return
+		}
+
+		conf := get.Config()
+
+		if conf.Public() {
+			Abort(c, http.StatusForbidden, i18n.ErrPublic)
+			return
+		}
+
+		s := Auth(c, acl.ResourceConfig, acl.ActionUpdate)
+
+		if !s.IsSuperAdmin() {
+			log.Errorf("connect: %s not authorized", clean.Log(s.GetUser().UserName))
+			AbortForbidden(c)
+			return
+		}
+
+		var err error
+		var restart bool
+
+		switch name {
+		case "hub":
+			old := conf.Hub().Session
+			err = conf.RenewApiKeysWithToken(frm.Token)
+			restart = old != conf.Hub().Session
+		default:
+			log.Errorf("connect: invalid service %s", clean.Log(name))
+			Abort(c, http.StatusBadRequest, i18n.ErrAccountConnect)
+			return
+		}
+
+		// Set restart flag and update client config if necessary.
+		if restart {
+			mutex.Restart.Store(true)
+			conf.Propagate()
+			UpdateClientConfig()
+		}
+
+		if err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		} else {
+			c.JSON(http.StatusOK, gin.H{"code": http.StatusOK})
+		}
+	})
+}
