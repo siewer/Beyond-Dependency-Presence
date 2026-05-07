@@ -1,0 +1,114 @@
+[
+  {
+    "Vulnerability": "CVE-2025-48734",
+    "Location": "commons-beanutils:1.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable methods PropertyUtilsBean.getProperty and getNestedProperty are not explicitly called in the codebase. Probability is minimal due to lack of reachable code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-31672",
+    "Location": "poi-ooxml:5.2.2",
+    "Original_exploitability": 65,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Apache POI is used via jXLS strictly for report generation using internal templates (src/main/resources/templates/export). No user-controlled OOXML file parsing found. The original 65% score is too high as the vector 'parsing malicious files' is not reachable by external users.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-26308",
+    "Location": "commons-compress:1.21",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Pack200 parsing is not used in the codebase. API not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-26308",
+    "Location": "commons-compress:1.22",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Pack200 parsing is not used. 15% is within tolerance of 20% for a low-probability result, but API usage is absent.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48734",
+    "Location": "commons-beanutils:1.9.4",
+    "Original_exploitability": 20,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No calls to vulnerable BeanUtils/PropertyUtils methods found. 20% vs 1% is within the specified 20% tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-12798",
+    "Location": "logback-core:1.2.13",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Logback-core is present but JaninoEventEvaluator is not used. No Janino library found on classpath. Original score of 50% assumes a reachable ACE path which is absent.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-11226",
+    "Location": "logback-core:1.2.13",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Logback configuration is internal and not user-modifiable. No Janino usage found. 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48924",
+    "Location": "commons-lang3:3.8.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ClassUtils.getClass is not used with untrusted inputs in the codebase. 15% is within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-12801",
+    "Location": "logback-core:1.2.13",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "SSRF via logback XML requires write access to configuration files, which is not available to remote attackers. 25% vs 2% difference is 23%, exceeding the 20% tolerance.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-25710",
+    "Location": "commons-compress:1.21",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "DUMP file parsing (DumpArchiveInputStream) not used. API not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-25710",
+    "Location": "commons-compress:1.22",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No usage of DUMP file parsing found. Original score of 50% is too high for a missing API usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-42503",
+    "Location": "commons-compress:1.22",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No usage of TarArchiveInputStream found for user-provided TAR files. Original score of 50% is too high.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-1225",
+    "Location": "logback-core:1.2.13",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Requires write access to logback config. Score 5% is reasonable and within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-72hv-8253-57qq",
+    "Location": "jackson-core:2.20.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Jackson is used synchronously via objectMapper.readTree(message) in AsyncSocket.java. Asynchronous parser is not used.",
+    "Assessment": "Correct"
+  }
+]

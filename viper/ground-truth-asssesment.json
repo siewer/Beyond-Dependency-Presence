@@ -1,0 +1,26 @@
+[
+  {
+    "Vulnerability": "CVE-2025-58181",
+    "Location": "golang.org/x/crypto:v0.41.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (SSH server with GSSAPI mechanism validation) is not declared or called in any active code path. Viper acts only as a client for remote configuration services.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47914",
+    "Location": "golang.org/x/crypto:v0.41.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API (ForwardToAgent or ServeAgent in ssh/agent) is not found in the codebase. Viper does not have any SSH agent interaction.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.75.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Viper uses gRPC only as a client for etcd/consul and does not run a gRPC server with the path-based authorization required for this exploit.",
+    "Assessment": "Correct"
+  }
+]

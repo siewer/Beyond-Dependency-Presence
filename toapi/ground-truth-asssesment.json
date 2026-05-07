@@ -1,0 +1,386 @@
+[
+  {
+    "Vulnerability": "CVE-2024-34069",
+    "Location": "werkzeug:2.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 80.0,
+    "Exploitability_explanation": "\u2705 API call confirmed (examples/click/app.py:14). debug=True enables the vulnerable debugger. Version 2.0.1 is vulnerable. POETRY.LOCK: werkzeug v2.0.1 (Line 1528).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-39689",
+    "Location": "certifi:2021.5.30",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to certifi functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-49766",
+    "Location": "werkzeug:2.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to werkzeug functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32681",
+    "Location": "requests:2.25.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 45.0,
+    "Exploitability_explanation": "\u2705 API call confirmed (toapi/api.py:104). requests is used for fetching URLs. Proxy-Authorization header leakage on redirects possible in v2.25.1. POETRY.LOCK line 820.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-43818",
+    "Location": "lxml:4.6.3",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to lxml functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32309",
+    "Location": "pymdown-extensions:8.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to pymdown-extensions functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-49769",
+    "Location": "waitress:2.0.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to waitress functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-49767",
+    "Location": "werkzeug:2.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to werkzeug functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-43804",
+    "Location": "urllib3:1.26.6",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to urllib3 functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-34064",
+    "Location": "jinja2:3.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to jinja2 functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-2309",
+    "Location": "lxml:4.6.3",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to lxml functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-3651",
+    "Location": "idna:2.10",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to idna functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-49768",
+    "Location": "waitress:2.0.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to waitress functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-46136",
+    "Location": "werkzeug:2.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to werkzeug functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-56201",
+    "Location": "jinja2:3.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to jinja2 functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-25577",
+    "Location": "werkzeug:2.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to werkzeug functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24761",
+    "Location": "waitress:2.0.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to waitress functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-56326",
+    "Location": "jinja2:3.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to jinja2 functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-45958",
+    "Location": "ujson:4.0.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to ujson functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-30861",
+    "Location": "flask:2.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u2705 API call confirmed (toapi/api.py:18). Flask app initialized. However, the application doesn't use permanent sessions or complex caching headers that satisfy the specific requirements for this vulnerability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42353",
+    "Location": "webob:1.8.7",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to webob functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-37891",
+    "Location": "urllib3:1.26.6",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to urllib3 functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27516",
+    "Location": "jinja2:3.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to jinja2 functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-53899",
+    "Location": "virtualenv:20.4.7",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to virtualenv functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-31117",
+    "Location": "ujson:4.0.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to ujson functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-37920",
+    "Location": "certifi:2021.5.30",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to certifi functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-22195",
+    "Location": "jinja2:3.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to jinja2 functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69534",
+    "Location": "markdown:3.3.4",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to markdown functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27199",
+    "Location": "werkzeug:2.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to werkzeug functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-40896",
+    "Location": "pygments:2.9.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to pygments functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45803",
+    "Location": "urllib3:1.26.6",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to urllib3 functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66418",
+    "Location": "urllib3:1.26.6",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to urllib3 functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-35195",
+    "Location": "requests:2.25.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u2705 API call confirmed (toapi/api.py:104). `requests.get()` is used. However, the first request is not made with `verify=False` to the same host, which is the primary constraint for this vulnerability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66471",
+    "Location": "urllib3:1.26.6",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to urllib3 functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68142",
+    "Location": "pymdown-extensions:8.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to pymdown-extensions functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21441",
+    "Location": "urllib3:1.26.6",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to urllib3 functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66221",
+    "Location": "werkzeug:2.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to werkzeug functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-50181",
+    "Location": "urllib3:1.26.6",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to urllib3 functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22701",
+    "Location": "filelock:3.0.12",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to filelock functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-5569",
+    "Location": "zipp:3.4.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to zipp functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27205",
+    "Location": "flask:2.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u2705 API call confirmed (toapi/api.py:18, 53). Flask is used for the API server. However, no specific vulnerable configuration or edge case handling related to this CVE was found in the application logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22702",
+    "Location": "virtualenv:20.4.7",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to virtualenv functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68146",
+    "Location": "filelock:3.0.12",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to filelock functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-23491",
+    "Location": "certifi:2021.5.30",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to certifi functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47081",
+    "Location": "requests:2.25.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 55.00000000000001,
+    "Exploitability_explanation": "\u2705 API call confirmed (toapi/api.py:104). requests.get() is used without trust_env=False, risking .netrc leakage. Version 2.25.1 is vulnerable. POETRY.LOCK: requests v2.25.1 (Line 820).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-23934",
+    "Location": "werkzeug:2.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to werkzeug functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-31116",
+    "Location": "ujson:4.0.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to ujson functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21860",
+    "Location": "werkzeug:2.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 1.0,
+    "Exploitability_explanation": "\u274c No explicit call to the vulnerable API found in any active code path. Searched for direct calls to werkzeug functions and found none in toapi/ or examples/.",
+    "Assessment": "Correct"
+  }
+]

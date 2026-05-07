@@ -1,0 +1,13 @@
+{{!
+  Copyright IBM Corp. 2016, 2025
+  SPDX-License-Identifier: BUSL-1.1
+}}
+
+<Page::Header @title="Configure {{this.model.method.name}} MFA" />
+
+<Mfa::MethodForm
+  @model={{this.model.method}}
+  @hasActions={{true}}
+  @onSave={{transition-to "vault.cluster.access.mfa.methods.method" this.model.method.id}}
+  @onClose={{transition-to "vault.cluster.access.mfa.methods.method" this.model.method.id}}
+/>

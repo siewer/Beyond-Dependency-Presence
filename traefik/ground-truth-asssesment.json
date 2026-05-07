@@ -1,0 +1,658 @@
+[
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in ajv:6.12.6 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25949",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 25,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.25, exploitable: false. Config found. Standard Go HTTP/2 server. Mitigation by default timeouts.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in tar:6.2.1 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in tar:7.4.3 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-3wqc-mwfx-672p",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 20,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.20, exploitable: false. API usage in core routers. Version assumed vulnerable, but mitigated by path normalization.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-67mh-4wv8-2f99",
+    "Location": "esbuild:0.21.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in esbuild:0.21.5 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-7jmw-8259-q9jx",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. Header sanitization logic protects against bypass.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:4.39.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in rollup:4.39.0 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:4.52.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in rollup:4.52.5 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27148",
+    "Location": "storybook:8.6.12",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in storybook:8.6.12 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25290",
+    "Location": "@octokit/request:6.2.8",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in @octokit/request:6.2.8 is not called in any active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:10.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in minimatch:10.0.3 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in minimatch:3.1.2 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in minimatch:5.1.6 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in minimatch:9.0.5 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25547",
+    "Location": "@isaacs/brace-expansion:5.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in @isaacs/brace-expansion:5.0.0 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in tar:6.2.1 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in js-yaml:3.14.1 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in brace-expansion:1.1.11 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45410",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 96,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. pkg/middlewares/forwardedheaders/forwarded_header.go:144 removes headers. Mitigation reduces risk significantly.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-54386",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.10, exploitable: false. pkg/plugins/manager.go:276 validates paths (Zip Slip protection). Exploitability is very low.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-47633",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. Core Traefik logic for CVE-2023-47633 is reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28869",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. pkg/config/static/static_config.go:186 sets default 60s ReadTimeout. Mitigates DoS.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-62522",
+    "Location": "vite:5.4.19",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in vite:5.4.19 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58751",
+    "Location": "vite:5.4.19",
+    "Original_exploitability": 8,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in vite:5.4.19 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-32431",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 80,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. pkg/server/server_entrypoint_tcp.go:673 applies sanitizePath middleware.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:4.0.2",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in form-data:4.0.2 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-39321",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 93,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.10, exploitable: false. pkg/server/server_entrypoint_tcp_http3.go:69 disables 0-RTT/Early Data.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-47124",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 80,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. pkg/provider/acme/challenge_http.go:68 enforces a 60s challenge timeout.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-25288",
+    "Location": "@octokit/plugin-paginate-rest:6.1.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in @octokit/plugin-paginate-rest:6.1.2 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-25289",
+    "Location": "@octokit/request-error:3.0.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in @octokit/request-error:3.0.3 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52003",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 80,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.10, exploitable: false. pkg/middlewares/forwardedheaders/forwarded_header.go:144 removes X-Forwarded-Prefix.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-47106",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 96,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.10, exploitable: false. pkg/muxer/http/mux.go:132 uses EscapedPath(), which ignores fragments for routing.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:10.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in minimatch:10.0.3 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in minimatch:3.1.2 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in minimatch:5.1.6 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in minimatch:9.0.5 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47952",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 97,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. Core Traefik logic for CVE-2025-47952 is reachable.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:10.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in minimatch:10.0.3 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in minimatch:3.1.2 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:5.1.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in minimatch:5.1.6 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in minimatch:9.0.5 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.3.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in flatted:3.3.3 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.12.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in ajv:8.12.0 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.13.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in ajv:8.13.0 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.17.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in ajv:8.17.1 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "glob:10.4.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in glob:10.4.5 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.0.33",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in tmp:0.0.33 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68470",
+    "Location": "react-router:6.22.1",
+    "Original_exploitability": 96,
+    "Exploitability": 20,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.20, exploitable: false. Used extensively in Web UI SPA.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 50,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.10, exploitable: false. webui/src/components/tables/TableFilter.tsx:20 uses omitBy. safe usage patterns.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in tar:7.4.3 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68429",
+    "Location": "storybook:8.6.12",
+    "Original_exploitability": 2,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in storybook:8.6.12 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26999",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 20,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.20, exploitable: false. Reachable core components for CVE-2026-26999.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26998",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 20,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.20, exploitable: false. Reachable core components for CVE-2026-26998.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in tar:6.2.1 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in tar:7.4.3 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22029",
+    "Location": "@remix-run/router:1.15.1",
+    "Original_exploitability": 15,
+    "Exploitability": 20,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.20, exploitable: false. Used extensively in Web UI SPA.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in js-yaml:4.1.0 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66490",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. Core Traefik logic for CVE-2025-66490 is reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29777",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 20,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.20, exploitable: false. Reachable core components for CVE-2026-29777.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22045",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 30,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. Core Traefik logic for CVE-2026-22045 is reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29054",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 20,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.20, exploitable: false. Reachable core components for CVE-2026-29054.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:2.0.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in brace-expansion:2.0.1 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in tar:6.2.1 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in tar:7.4.3 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in tar:6.2.1 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in tar:7.4.3 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in tar:6.2.1 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:7.4.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in tar:7.4.3 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:5.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in diff:5.2.0 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:8.0.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in diff:8.0.2 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66491",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. Core Traefik logic for CVE-2025-66491 is reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58752",
+    "Location": "vite:5.4.19",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in vite:5.4.19 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:2.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "\u274c NO explicit call found after a thorough search. status: \"not_confirmed\", probability: 0.01, exploitable: false. Vulnerable API in @tootallnate/once:2.0.0 is not called in any active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5423-jcjm-2gpv",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. Core Traefik logic for GHSA-5423-jcjm-2gpv is reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.79.1",
+    "Original_exploitability": 0,
+    "Exploitability": 80,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.80, exploitable: true. Used for OTLP exporting and healthchecks. Reachable via malicious endpoints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-4hjq-9h5c-252j",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. Core Traefik logic for GHSA-4hjq-9h5c-252j is reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-gv8r-9rw9-9697",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. Core Traefik logic for GHSA-gv8r-9rw9-9697 is reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-7f4j-64p6-5h5v",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. Core Traefik logic for GHSA-7f4j-64p6-5h5v is reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-f7cq-5v43-8pwp",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. Core Traefik logic for GHSA-f7cq-5v43-8pwp is reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-hxr6-2p24-hf98",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. Core Traefik logic for GHSA-hxr6-2p24-hf98 is reachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-rvj4-q8q5-8grf",
+    "Location": "github.com/traefik/traefik/v3:",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "\u2705 API call confirmed. status: confirmed, probability: 0.15, exploitable: false. Core Traefik logic for GHSA-rvj4-q8q5-8grf is reachable.",
+    "Assessment": "Correct"
+  }
+]

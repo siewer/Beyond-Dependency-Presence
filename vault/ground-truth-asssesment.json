@@ -1,0 +1,594 @@
+[
+  {
+    "Vulnerability": "CVE-2020-16250",
+    "Location": "builtin/credential/aws/path_login.go",
+    "Original_exploitability": 80,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Vulnerable API confirmed in builtin/credential/aws/path_login.go.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-4680",
+    "Location": "builtin/logical/transit/path_encrypt.go",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in builtin/logical/transit/path_encrypt.go.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-6337",
+    "Location": "http/util.go",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-16251",
+    "Location": "vault-plugin-auth-gcp (external)",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable API confirmed in vault-plugin-auth-gcp (external).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-7594",
+    "Location": "builtin/logical/ssh/path_sign.go",
+    "Original_exploitability": 70,
+    "Exploitability": 0.7,
+    "Exploitability_explanation": "SSH Auth Method configuration vulnerability confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-3462",
+    "Location": "builtin/credential/ldap/path_login.go",
+    "Original_exploitability": 92,
+    "Exploitability": 90,
+    "Exploitability_explanation": "Vulnerable API confirmed in builtin/credential/ldap/path_login.go.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:2.79.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-32923",
+    "Location": "vault/vault/expiration.go",
+    "Original_exploitability": 55,
+    "Exploitability": 0.85,
+    "Exploitability_explanation": "Token renewal logic error confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-8185",
+    "Location": "Unknown",
+    "Original_exploitability": 93,
+    "Exploitability": 0.01,
+    "Exploitability_explanation": "Vulnerability not found in codebase or known documentation.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-40186",
+    "Location": "vault/vault/identity_store_aliases.go",
+    "Original_exploitability": 8,
+    "Exploitability": 0.8,
+    "Exploitability_explanation": "Identity alias metadata leak confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-25816",
+    "Location": "vault/vault/expiration.go",
+    "Original_exploitability": 60,
+    "Exploitability": 0.85,
+    "Exploitability_explanation": "Batch token expiry scheduling error confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-5954",
+    "Location": "vault/vault/acl.go",
+    "Original_exploitability": 60,
+    "Exploitability": 0.8,
+    "Exploitability_explanation": "ACL policy check memory DoS confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-10661",
+    "Location": "vault/vault/namespace.go",
+    "Original_exploitability": 60,
+    "Exploitability": 60,
+    "Exploitability_explanation": "Vulnerable API confirmed in vault/vault/namespace.go.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-6468",
+    "Location": "Unknown",
+    "Original_exploitability": 65,
+    "Exploitability": 0.01,
+    "Exploitability_explanation": "Vulnerability not found in codebase or known documentation.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-13223",
+    "Location": "http/util.go",
+    "Original_exploitability": 40,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-43998",
+    "Location": "vault/vault/identity_store.go",
+    "Original_exploitability": 80,
+    "Exploitability": 80,
+    "Exploitability_explanation": "Vulnerable API confirmed in vault/vault/identity_store.go.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3282",
+    "Location": "Vault core/builtins",
+    "Original_exploitability": 95,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Likely internal Vault usage, but specific API call not matched to constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-9180",
+    "Location": "http/util.go",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7220",
+    "Location": "Vault core/builtins",
+    "Original_exploitability": 45,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Likely internal Vault usage, but specific API call not matched to constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-35177",
+    "Location": "Vault core/builtins",
+    "Original_exploitability": 50,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Likely internal Vault usage, but specific API call not matched to constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-2121",
+    "Location": "http/util.go",
+    "Original_exploitability": 90,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-8365",
+    "Location": "Vault core/builtins",
+    "Original_exploitability": 80,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Likely internal Vault usage, but specific API call not matched to constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-30689",
+    "Location": "vault/vault/mfa.go",
+    "Original_exploitability": 60,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Vulnerable API confirmed in vault/vault/mfa.go.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-38554",
+    "Location": "vault/core (unspecified)",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in vault/core (unspecified).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-5077",
+    "Location": "Vault core/builtins",
+    "Original_exploitability": 15,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Likely internal Vault usage, but specific API call not matched to constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-12044",
+    "Location": "Vault core/builtins",
+    "Original_exploitability": 25,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Likely internal Vault usage, but specific API call not matched to constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-2048",
+    "Location": "Vault core/builtins",
+    "Original_exploitability": 75,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Likely internal Vault usage, but specific API call not matched to constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-42135",
+    "Location": "Vault core/builtins",
+    "Original_exploitability": 15,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Likely internal Vault usage, but specific API call not matched to constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-11621",
+    "Location": "Vault core/builtins",
+    "Original_exploitability": 15,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Likely internal Vault usage, but specific API call not matched to constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-3879",
+    "Location": "Vault core/builtins",
+    "Original_exploitability": 35,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Likely internal Vault usage, but specific API call not matched to constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-10660",
+    "Location": "http/util.go",
+    "Original_exploitability": 35,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-0831",
+    "Location": "Vault core/builtins",
+    "Original_exploitability": 50,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Likely internal Vault usage, but specific API call not matched to constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-2660",
+    "Location": "http/util.go",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-41316",
+    "Location": "http/util.go",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-24999",
+    "Location": "http/util.go",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6000",
+    "Location": "http/util.go",
+    "Original_exploitability": 80,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-41802",
+    "Location": "vault/vault/identity_store.go",
+    "Original_exploitability": 8,
+    "Exploitability": 80,
+    "Exploitability_explanation": "Vulnerable API confirmed in vault/vault/identity_store.go.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-4166",
+    "Location": "Vault core/builtins",
+    "Original_exploitability": 15,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Likely internal Vault usage, but specific API call not matched to constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-22872",
+    "Location": "golang.org/x/net:v0.37.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-0665",
+    "Location": "http/util.go",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-0620",
+    "Location": "http/util.go",
+    "Original_exploitability": 60,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-5798",
+    "Location": "builtin/logical/ssh/path_sign.go",
+    "Original_exploitability": 70,
+    "Exploitability": 0.7,
+    "Exploitability_explanation": "Confirmed SSH signing vulnerability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29063",
+    "Location": "immutable:5.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27601",
+    "Location": "underscore:1.13.7",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6203",
+    "Location": "Vault core/builtins",
+    "Original_exploitability": 25,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Likely internal Vault usage, but specific API call not matched to constraints.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-38553",
+    "Location": "vault/core (unspecified)",
+    "Original_exploitability": 40,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in vault/core (unspecified).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6037",
+    "Location": "http/util.go",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.2.3",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5999",
+    "Location": "http/util.go",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15599",
+    "Location": "dompurify:3.2.6",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-0540",
+    "Location": "dompurify:3.2.6",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6013",
+    "Location": "Vault core/builtins",
+    "Original_exploitability": 65,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Likely internal Vault usage, but specific API call not matched to constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6014",
+    "Location": "http/util.go",
+    "Original_exploitability": 90,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-25000",
+    "Location": "http/util.go",
+    "Original_exploitability": 96,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6004",
+    "Location": "http/util.go",
+    "Original_exploitability": 70,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.14.1",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15558",
+    "Location": "github.com/docker/cli:v27.4.1+incompatible",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:2.0.1",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6015",
+    "Location": "http/util.go",
+    "Original_exploitability": 88,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-4656",
+    "Location": "Vault core/builtins",
+    "Original_exploitability": 94,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Likely internal Vault usage, but specific API call not matched to constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:7.0.0",
+    "Original_exploitability": 1,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6011",
+    "Location": "http/util.go",
+    "Original_exploitability": 80,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API confirmed in http/util.go.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-68157",
+    "Location": "webpack:5.94.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25934",
+    "Location": "github.com/go-git/go-git/v5:v5.14.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used in active code paths or only in dead code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7339",
+    "Location": "on-headers:1.0.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-hcfh-22r5-mc4r",
+    "Location": "Vault core/builtins",
+    "Original_exploitability": 0,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Likely internal Vault usage, but specific API call not matched to constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:3.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.0.28",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.0.33",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:5.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68458",
+    "Location": "webpack:5.94.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-wxhq-pm8v-cw75",
+    "Location": "clean-css:3.4.28",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Usage found ONLY in Library/Vendor Code (no User Code).",
+    "Assessment": "Correct"
+  }
+]

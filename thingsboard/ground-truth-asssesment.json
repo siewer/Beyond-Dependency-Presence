@@ -1,0 +1,250 @@
+[
+  {
+    "Vulnerability": "CVE-2024-29881",
+    "Location": "tinymce:6.8.6",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "✅ API call confirmed. The `editor` component is initialized with `tinyMceOptions` in `notification-template-configuration.component.ts` without `convert_unsafe_embeds`. Version is vulnerable, API usage found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-3635",
+    "Location": "okio:2.8.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-57353",
+    "Location": "@messageformat/runtime:3.0.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29063",
+    "Location": "immutable:5.1.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29045",
+    "Location": "hono:4.12.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29085",
+    "Location": "hono:4.12.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-26791",
+    "Location": "dompurify:3.1.7",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29087",
+    "Location": "@hono/node-server:1.19.9",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29086",
+    "Location": "hono:4.12.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15599",
+    "Location": "dompurify:3.1.7",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-0540",
+    "Location": "dompurify:3.1.7",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-23207",
+    "Location": "katex:0.16.11",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:7.5.9",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "✅ API call confirmed. `_.unset` is called in `ui-ngx/src/app/core/utils.ts` and `auth.reducer.ts`.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash-es:4.17.21",
+    "Original_exploitability": 70,
+    "Exploitability": 70,
+    "Exploitability_explanation": "✅ API call confirmed. `_.unset` is called in `ui-ngx/src/app/core/utils.ts` and `auth.reducer.ts`.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.14.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-58103",
+    "Location": "wire-runtime:3.7.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13466",
+    "Location": "body-parser:2.2.0",
+    "Original_exploitability": 35,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-30827",
+    "Location": "express-rate-limit:8.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24400",
+    "Location": "assertj-core:3.26.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54881",
+    "Location": "mermaid:11.2.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:4.0.2",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:7.5.9",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54880",
+    "Location": "mermaid:11.2.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-1225",
+    "Location": "logback-core:1.5.22",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7339",
+    "Location": "on-headers:1.0.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-v8w9-8mx6-g223",
+    "Location": "hono:4.12.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable API was found in the codebase. Version is present but API is not used in any active code path. Status: not_confirmed.",
+    "Assessment": "Correct"
+  }
+]

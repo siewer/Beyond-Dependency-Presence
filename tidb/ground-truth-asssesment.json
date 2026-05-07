@@ -1,0 +1,74 @@
+[
+  {
+    "Vulnerability": "CVE-2022-3023",
+    "Location": "github.com/pingcap/tidb:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable APIs associated with importer CLI DSN injection was found in the codebase after a thorough search. Assuming status: not_confirmed, probability: 0.01 (1%), exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:4.0.4",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable package `micromatch` is only found in `lightning/web/package-lock.json` as a transitive dependency. No explicit call to `micromatch` or `micromatch.braces()` was found in the codebase. Assuming status: not_confirmed, probability: 0.01 (1%), exploitable: false.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-37820",
+    "Location": "github.com/pingcap/tidb:",
+    "Original_exploitability": 97,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Code snippet: `ec := inferCollation(ctx.GetEvalCtx(), args...)` in `pkg/expression/collation.go:356`. The codebase also heavily relies on `ColumnSubstituteImpl`. The version is assumed to be vulnerable. This satisfies all constraints for reaching the nil pointer dereference via user-controlled SQL expressions, with no mitigations found. Scoring based on probability guidelines: Version vulnerable + all constraints satisfied + no mitigations -> 0.85 (85%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-31011",
+    "Location": "github.com/pingcap/tidb:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No specific explicit call or constrained entry point related to the v5.3.0 authentication bypass could be directly isolated as an API call per the evidence mandate rules. Assuming status: not_confirmed, probability: 0.01 (1%), exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable package `cross-spawn` is only found in `lightning/web/package-lock.json` as a transitive dependency. No explicit call to `cross-spawn` was found in the codebase. Assuming status: not_confirmed, probability: 0.01 (1%), exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.17.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable package `ajv` is only found in `lightning/web/package-lock.json` as a transitive dependency. No explicit call or configuration with `$data: true` was found in the active codebase. Assuming status: not_confirmed, probability: 0.01 (1%), exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26958",
+    "Location": "filippo.io/edwards25519:v1.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable `MultiScalarMult` function of `filippo.io/edwards25519` was found in the codebase. Assuming status: not_confirmed, probability: 0.01 (1%), exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24051",
+    "Location": "go.opentelemetry.io/otel/sdk:v1.37.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to the vulnerable `otel/sdk/resource` package or host ID detection features was found in the codebase. Assuming status: not_confirmed, probability: 0.01 (1%), exploitable: false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.75.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "No explicit call to `grpc/authz` or any custom authorization interceptor relying on the `:path` pseudo-header was found in the codebase. Therefore, the restrictive rules for exploitation are not met. Assuming status: not_confirmed, probability: 0.01 (1%), exploitable: false.",
+    "Assessment": "Correct"
+  }
+]

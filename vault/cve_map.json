@@ -1,0 +1,198 @@
+{
+  "CVE-2020-16250": [
+    "* When using the IAM AWS Auth Method, under certain circumstances, values Vault uses to validate identities and roles can be manipulated and bypassed. This vulnerability affects Vault and Vault Enterprise 0.7.1 and newer and is fixed in 1.2.5, 1.3.8, 1.4.4, and 1.5.1 (CVE-2020-16250) (Discovered by Felix Wilhelm of Google Project Zero)",
+    "* When using the IAM AWS Auth Method, under certain circumstances, values Vault uses to validate identities and roles can be manipulated and bypassed. This vulnerability affects Vault and Vault Enterprise 0.7.1 and newer and is fixed in 1.2.5, 1.3.8, 1.4.4, and 1.5.1 (CVE-2020-16250) (Discovered by Felix Wilhelm of Google Project Zero)",
+    "* When using the IAM AWS Auth Method, under certain circumstances, values Vault uses to validate identities and roles can be manipulated and bypassed. This vulnerability affects Vault and Vault Enterprise 0.7.1 and newer and is fixed in 1.2.5, 1.3.8, 1.4.4, and 1.5.1 (CVE-2020-16250) (Discovered by Felix Wilhelm of Google Project Zero)",
+    "* When using the IAM AWS Auth Method, under certain circumstances, values Vault uses to validate identities and roles can be manipulated and bypassed. This vulnerability affects Vault and Vault Enterprise 0.7.1 and newer and is fixed in 1.2.5, 1.3.8, 1.4.4, and 1.5.1 (CVE-2020-16250) (Discovered by Felix Wilhelm of Google Project Zero)"
+  ],
+  "CVE-2023-4680": [
+    "* secrets/transit: fix a regression that was honoring nonces provided in non-convergent modes during encryption. This vulnerability, CVE-2023-4680, is fixed in Vault 1.14.3, 1.13.7, and 1.12.11. [[GH-22852](https://github.com/hashicorp/vault/pull/22852), [HSEC-2023-28](https://discuss.hashicorp.com/t/hcsec-2023-28-vault-s-transit-secrets-engine-allowed-nonce-specified-without-convergent-encryption/58249)]",
+    "* secrets/transit: fix a regression that was honoring nonces provided in non-convergent modes during encryption. This vulnerability, CVE-2023-4680, is fixed in Vault 1.14.3, 1.13.7, and 1.12.11. [[GH-22852](https://github.com/hashicorp/vault/pull/22852), [HSEC-2023-28](https://discuss.hashicorp.com/t/hcsec-2023-28-vault-s-transit-secrets-engine-allowed-nonce-specified-without-convergent-encryption/58249)]",
+    "* secrets/transit: fix a regression that was honoring nonces provided in non-convergent modes during encryption. This vulnerability, CVE-2023-4680, is fixed in Vault 1.14.3, 1.13.7, and 1.12.11. [[GH-22852](https://github.com/hashicorp/vault/pull/22852), [HSEC-2023-28](https://discuss.hashicorp.com/t/hcsec-2023-28-vault-s-transit-secrets-engine-allowed-nonce-specified-without-convergent-encryption/58249)]",
+    "* secrets/transit: fix a regression that was honoring nonces provided in non-convergent modes during encryption (CVE-2023-4680) [[GH-22852](https://github.com/hashicorp/vault/pull/22852), [HSEC-2023-28](https://discuss.hashicorp.com/t/hcsec-2023-28-vault-s-transit-secrets-engine-allowed-nonce-specified-without-convergent-encryption/58249)]"
+  ],
+  "CVE-2023-6337": [
+    "* core: Fixes an issue present in both Vault and Vault Enterprise since Vault 1.12.0, where Vault is vulnerable to a denial of service through memory exhaustion of the host when handling large HTTP requests from a client. (see [CVE-2023-6337](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6337) & [HCSEC-2023-34](https://discuss.hashicorp.com/t/hcsec-2023-34-vault-vulnerable-to-denial-of-service-through-memory-exhaustion-when-handling-large-http-requests/60741))",
+    "* core: Fixes an issue present in both Vault and Vault Enterprise since Vault 1.12.0, where Vault is vulnerable to a denial of service through memory exhaustion of the host when handling large HTTP requests from a client. (see [CVE-2023-6337](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6337) & [HCSEC-2023-34](https://discuss.hashicorp.com/t/hcsec-2023-34-vault-vulnerable-to-denial-of-service-through-memory-exhaustion-when-handling-large-http-requests/60741))",
+    "* core: Fixes an issue present in both Vault and Vault Enterprise since Vault 1.12.0, where Vault is vulnerable to a denial of service through memory exhaustion of the host when handling large HTTP requests from a client. (see [CVE-2023-6337](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6337) & [HCSEC-2023-34](https://discuss.hashicorp.com/t/hcsec-2023-34-vault-vulnerable-to-denial-of-service-through-memory-exhaustion-when-handling-large-http-requests/60741))"
+  ],
+  "CVE-2020-16251": [
+    "* When using the GCP GCE Auth Method, under certain circumstances, values Vault uses to validate GCE VMs can be manipulated and bypassed. This vulnerability affects Vault and Vault Enterprise 0.8.3 and newer and is fixed in 1.2.5, 1.3.8, 1.4.4, and 1.5.1 (CVE-2020-16251) (Discovered by Felix Wilhelm of Google Project Zero)",
+    "* When using the GCP GCE Auth Method, under certain circumstances, values Vault uses to validate GCE VMs can be manipulated and bypassed. This vulnerability affects Vault and Vault Enterprise 0.8.3 and newer and is fixed in 1.2.5, 1.3.8, 1.4.4, and 1.5.1 (CVE-2020-16251) (Discovered by Felix Wilhelm of Google Project Zero)",
+    "* When using the GCP GCE Auth Method, under certain circumstances, values Vault uses to validate GCE VMs can be manipulated and bypassed. This vulnerability affects Vault and Vault Enterprise 0.8.3 and newer and is fixed in 1.2.5, 1.3.8, 1.4.4, and 1.5.1 (CVE-2020-16251) (Discovered by Felix Wilhelm of Google Project Zero)",
+    "* When using the GCP GCE Auth Method, under certain circumstances, values Vault uses to validate GCE VMs can be manipulated and bypassed. This vulnerability affects Vault and Vault Enterprise 0.8.3 and newer and is fixed in 1.2.5, 1.3.8, 1.4.4, and 1.5.1 (CVE-2020-16251) (Discovered by Felix Wilhelm of Google Project Zero)"
+  ],
+  "CVE-2024-7594": [],
+  "CVE-2023-3462": [
+    "* auth/ldap: Normalize HTTP response codes when invalid credentials are provided to prevent user enumeration. This vulnerability, CVE-2023-3462, is fixed in Vault 1.14.1 and 1.13.5. [[GH-21282](https://github.com/hashicorp/vault/pull/21282), [HSEC-2023-24](https://discuss.hashicorp.com/t/hcsec-2023-24-vaults-ldap-auth-method-allows-for-user-enumeration/56714)]",
+    "* auth/ldap: Normalize HTTP response codes when invalid credentials are provided to prevent user enumeration. This vulnerability, CVE-2023-3462, is fixed in Vault 1.14.1 and 1.13.5. [[GH-21282](https://github.com/hashicorp/vault/pull/21282), [HSEC-2023-24](https://discuss.hashicorp.com/t/hcsec-2023-24-vaults-ldap-auth-method-allows-for-user-enumeration/56714)]"
+  ],
+  "CVE-2026-27606": [],
+  "CVE-2021-32923": [],
+  "CVE-2024-8185": [],
+  "CVE-2022-40186": [
+    "* core: When entity aliases mapped to a single entity share the same alias name, but have different mount accessors, Vault can leak metadata between the aliases. This metadata leak may result in unexpected access if templated policies are using alias metadata for path names. This vulnerability, CVE-2022-40186, is fixed in 1.11.3, 1.10.6, and 1.9.9. [[HSEC-2022-18](https://discuss.hashicorp.com/t/hcsec-2022-18-vault-entity-alias-metadata-may-leak-between-aliases-with-the-same-name-assigned-to-the-same-entity/44550)]",
+    "* core: When entity aliases mapped to a single entity share the same alias name, but have different mount accessors, Vault can leak metadata between the aliases. This metadata leak may result in unexpected access if templated policies are using alias metadata for path names. This vulnerability, CVE-2022-40186, is fixed in 1.11.3, 1.10.6, and 1.9.9. [[HSEC-2022-18](https://discuss.hashicorp.com/t/hcsec-2022-18-vault-entity-alias-metadata-may-leak-between-aliases-with-the-same-name-assigned-to-the-same-entity/44550)]",
+    "* core: When entity aliases mapped to a single entity share the same alias name, but have different mount accessors, Vault can leak metadata between the aliases. This metadata leak may result in unexpected access if templated policies are using alias metadata for path names. This vulnerability, CVE-2022-40186, is fixed in 1.11.3, 1.10.6, and 1.9.9. [[HSEC-2022-18](https://discuss.hashicorp.com/t/hcsec-2022-18-vault-entity-alias-metadata-may-leak-between-aliases-with-the-same-name-assigned-to-the-same-entity/44550)]"
+  ],
+  "CVE-2020-25816": [
+    "* Batch Token Expiry: We addressed an issue where batch token leases could outlive their TTL because we were not scheduling the expiration time correctly. This vulnerability affects Vault OSS and Vault Enterprise 1.0 and newer and is fixed in 1.4.7 and 1.5.4 (CVE-2020-25816).",
+    "* Batch Token Expiry: We addressed an issue where batch token leases could outlive their TTL because we were not scheduling the expiration time correctly. This vulnerability affects Vault OSS and Vault Enterprise 1.0 and newer and is fixed in 1.4.7 and 1.5.4 (CVE-2020-25816)."
+  ],
+  "CVE-2023-5954": [
+    "* core: inbound client requests triggering a policy check can lead to an unbounded consumption of memory. A large number of these requests may lead to denial-of-service. This vulnerability, CVE-2023-5954, was introduced in Vault 1.15.0, 1.14.3, and 1.13.7, and is fixed in Vault 1.15.2, 1.14.6, and 1.13.10. [[HSEC-2023-33](https://discuss.hashicorp.com/t/hcsec-2023-33-vault-requests-triggering-policy-checks-may-lead-to-unbounded-memory-consumption/59926)]",
+    "* core: inbound client requests triggering a policy check can lead to an unbounded consumption of memory. A large number of these requests may lead to denial-of-service. This vulnerability, CVE-2023-5954, was introduced in Vault 1.15.0, 1.14.3, and 1.13.7, and is fixed in Vault 1.15.2, 1.14.6, and 1.13.10. [[HSEC-2023-33](https://discuss.hashicorp.com/t/hcsec-2023-33-vault-requests-triggering-policy-checks-may-lead-to-unbounded-memory-consumption/59926)]",
+    "* core: inbound client requests triggering a policy check can lead to an unbounded consumption of memory. A large number of these requests may lead to denial-of-service. This vulnerability, CVE-2023-5954, was introduced in Vault 1.15.0, 1.14.3, and 1.13.7, and is fixed in Vault 1.15.2, 1.14.6, and 1.13.10. [[HSEC-2023-33](https://discuss.hashicorp.com/t/hcsec-2023-33-vault-requests-triggering-policy-checks-may-lead-to-unbounded-memory-consumption/59926)]"
+  ],
+  "CVE-2020-10661": [
+    "* A vulnerability was identified in Vault Enterprise such that, under certain circumstances, existing nested-path policies may give access to Namespaces created after-the-fact. This vulnerability, CVE-2020-10661, affects Vault Enterprise versions 0.11 and newer, and is fixed in 1.3.4."
+  ],
+  "CVE-2024-6468": [],
+  "CVE-2020-13223": [
+    "* core: Proxy environment variables are now redacted before being logged, in case the URLs include a username:password. This vulnerability, CVE-2020-13223, is fixed in 1.3.6 and 1.4.2, but affects 1.4.0 and 1.4.1, as well as older versions of Vault [[GH-9022](https://github.com/hashicorp/vault/pull/9022)]",
+    "* core: proxy environment variables are now redacted before being logged, in case the URLs include a username:password. This vulnerability, CVE-2020-13223, is fixed in 1.3.6 and 1.4.2, but affects 1.4 and 1.4.1, as well as older versions of Vault [[GH-9022](https://github.com/hashicorp/vault/pull/9022)]"
+  ],
+  "CVE-2021-43998": [
+    "* core/identity: Templated ACL policies would always match the first-created entity alias if multiple entity aliases existed for a specified entity and mount combination, potentially resulting in incorrect policy enforcement. This vulnerability, CVE-2021-43998, was fixed in Vault and Vault Enterprise 1.7.6, 1.8.5, and 1.9.0.",
+    "* core/identity: Templated ACL policies would always match the first-created entity alias if multiple entity aliases existed for a specified entity and mount combination, potentially resulting in incorrect policy enforcement. This vulnerability, CVE-2021-43998, was fixed in Vault and Vault Enterprise 1.7.6, 1.8.5, and 1.9.0.",
+    "* core/identity: Templated ACL policies would always match the first-created entity alias if multiple entity aliases existed for a specified entity and mount combination, potentially resulting in incorrect policy enforcement. This vulnerability, CVE-2021-43998, was fixed in Vault and Vault Enterprise 1.7.6, 1.8.5, and 1.9.0."
+  ],
+  "CVE-2021-3282": [],
+  "CVE-2024-9180": [
+    "* secrets/identity: A privileged Vault operator with write permissions to the root namespace's identity endpoint could escalate their privileges to Vault's root policy (CVE-2024-9180) [HCSEC-2024-21](https://discuss.hashicorp.com/t/hcsec-2024-21-vault-operators-in-root-namespace-may-elevate-their-privileges/70565)",
+    "* secrets/identity: A privileged Vault operator with write permissions to the root namespace's identity endpoint could escalate their privileges to Vault's root policy (CVE-2024-9180) [HCSEC-2024-21](https://discuss.hashicorp.com/t/hcsec-2024-21-vault-operators-in-root-namespace-may-elevate-their-privileges/70565)",
+    "* secrets/identity: A privileged Vault operator with write permissions to the root namespace's identity endpoint could escalate their privileges to Vault's root policy (CVE-2024-9180) [HCSEC-2024-21](https://discuss.hashicorp.com/t/hcsec-2024-21-vault-operators-in-root-namespace-may-elevate-their-privileges/70565)",
+    "* secrets/identity: A privileged Vault operator with write permissions to the root namespace's identity endpoint could escalate their privileges to Vault's root policy (CVE-2024-9180) [HCSEC-2024-21](https://discuss.hashicorp.com/t/hcsec-2024-21-vault-operators-in-root-namespace-may-elevate-their-privileges/70565)"
+  ],
+  "CVE-2020-7220": [],
+  "CVE-2020-35177": [],
+  "CVE-2023-2121": [
+    "* ui: key-value v2 (kv-v2) diff viewer allowed HTML injection into the Vault web UI through key values. This vulnerability, CVE-2023-2121, is fixed in Vault 1.14.0, 1.13.3, 1.12.7, and 1.11.11. [[HSEC-2023-17](https://discuss.hashicorp.com/t/hcsec-2023-17-vault-s-kv-diff-viewer-allowed-html-injection/54814)]",
+    "* ui: key-value v2 (kv-v2) diff viewer allowed HTML injection into the Vault web UI through key values. This vulnerability, CVE-2023-2121, is fixed in Vault 1.14.0, 1.13.3, 1.12.7, and 1.11.11. [[HSEC-2023-17](https://discuss.hashicorp.com/t/hcsec-2023-17-vault-s-kv-diff-viewer-allowed-html-injection/54814)]",
+    "* ui: key-value v2 (kv-v2) diff viewer allowed HTML injection into the Vault web UI through key values. This vulnerability, CVE-2023-2121, is fixed in Vault 1.14.0, 1.13.3, 1.12.7, and 1.11.11. [[HSEC-2023-17](https://discuss.hashicorp.com/t/hcsec-2023-17-vault-s-kv-diff-viewer-allowed-html-injection/54814)]"
+  ],
+  "CVE-2024-8365": [],
+  "CVE-2022-30689": [
+    "* auth: A vulnerability was identified in Vault and Vault Enterprise (\u201cVault\u201d) from 1.10.0 to 1.10.2 where MFA may not be enforced on user logins after a server restart. This vulnerability, CVE-2022-30689, was fixed in Vault 1.10.3."
+  ],
+  "CVE-2021-38554": [
+    "* ui: The Vault UI erroneously cached and exposed user-viewed secrets between authenticated sessions in a single shared browser, if the browser window / tab was not refreshed or closed between logout and a subsequent login. This vulnerability, CVE-2021-38554, was fixed in Vault 1.8.0 and will be addressed in pending 1.7.4 / 1.6.6 releases.",
+    "* _UI Secret Caching_: The Vault UI erroneously cached and exposed user-viewed secrets between authenticated sessions in a single shared browser, if the browser window / tab was not refreshed or closed between logout and a subsequent login. This vulnerability, CVE-2021-38554, was fixed in Vault 1.8.0 and will be addressed in pending 1.7.4 / 1.6.6 releases.",
+    "* _UI Secret Caching_: The Vault UI erroneously cached and exposed user-viewed secrets between authenticated sessions in a single shared browser, if the browser window / tab was not refreshed or closed between logout and a subsequent login. This vulnerability, CVE-2021-38554, was fixed in Vault 1.8.0 and will be addressed in pending 1.7.4 / 1.6.6 releases."
+  ],
+  "CVE-2023-5077": [],
+  "CVE-2025-12044": [],
+  "CVE-2024-2048": [],
+  "CVE-2021-42135": [],
+  "CVE-2025-11621": [],
+  "CVE-2025-3879": [],
+  "CVE-2020-10660": [
+    "* A vulnerability was identified in Vault and Vault Enterprise such that, under certain circumstances,  an Entity's Group membership may inadvertently include Groups the Entity no longer has permissions to. This vulnerability, CVE-2020-10660, affects Vault and Vault Enterprise versions 0.9.0 and newer, and is fixed in 1.3.4. [[GH-8606](https://github.com/hashicorp/vault/pull/8606)]"
+  ],
+  "CVE-2024-0831": [],
+  "CVE-2024-2660": [
+    "* auth/cert: validate OCSP response was signed by the expected issuer and serial number matched request (CVE-2024-2660) [[GH-26091](https://github.com/hashicorp/vault/pull/26091), [HSEC-2024-07](https://discuss.hashicorp.com/t/hcsec-2024-07-vault-tls-cert-auth-method-did-not-correctly-validate-ocsp-responses/64573)]",
+    "* auth/cert: validate OCSP response was signed by the expected issuer and serial number matched request (CVE-2024-2660) [[GH-26091](https://github.com/hashicorp/vault/pull/26091), [HSEC-2024-07](https://discuss.hashicorp.com/t/hcsec-2024-07-vault-tls-cert-auth-method-did-not-correctly-validate-ocsp-responses/64573)]",
+    "* auth/cert: validate OCSP response was signed by the expected issuer and serial number matched request (CVE-2024-2660) [[GH-26091](https://github.com/hashicorp/vault/pull/26091), [HSEC-2024-07](https://discuss.hashicorp.com/t/hcsec-2024-07-vault-tls-cert-auth-method-did-not-correctly-validate-ocsp-responses/64573)]"
+  ],
+  "CVE-2022-41316": [
+    "* secrets/pki: Vault\u2019s TLS certificate auth method did not initially load the optionally-configured CRL issued by the role\u2019s CA into memory on startup, resulting in the revocation list not being checked, if the CRL has not yet been retrieved. This vulnerability, CVE-2022-41316, is fixed in Vault 1.12.0, 1.11.4, 1.10.7, and 1.9.10. [[HSEC-2022-24](https://discuss.hashicorp.com/t/hcsec-2022-24-vaults-tls-cert-auth-method-only-loaded-crl-after-first-request/45483)]",
+    "* secrets/pki: Vault\u2019s TLS certificate auth method did not initially load the optionally-configured CRL issued by the role\u2019s CA into memory on startup, resulting in the revocation list not being checked, if the CRL has not yet been retrieved. This vulnerability, CVE-2022-41316, is fixed in Vault 1.12.0, 1.11.4, 1.10.7, and 1.9.10. [[HSEC-2022-24](https://discuss.hashicorp.com/t/hcsec-2022-24-vaults-tls-cert-auth-method-only-loaded-crl-after-first-request/45483)]",
+    "* secrets/pki: Vault\u2019s TLS certificate auth method did not initially load the optionally-configured CRL issued by the role\u2019s CA into memory on startup, resulting in the revocation list not being checked, if the CRL has not yet been retrieved. This vulnerability, CVE-2022-41316, is fixed in Vault 1.12.0, 1.11.4, 1.10.7, and 1.9.10. [[HSEC-2022-24](https://discuss.hashicorp.com/t/hcsec-2022-24-vaults-tls-cert-auth-method-only-loaded-crl-after-first-request/45483)]",
+    "* secrets/pki: Vault\u2019s TLS certificate auth method did not initially load the optionally-configured CRL issued by the role\u2019s CA into memory on startup, resulting in the revocation list not being checked, if the CRL has not yet been retrieved. This vulnerability, CVE-2022-41316, is fixed in Vault 1.12.0, 1.11.4, 1.10.7, and 1.9.10. [[HSEC-2022-24](https://discuss.hashicorp.com/t/hcsec-2022-24-vaults-tls-cert-auth-method-only-loaded-crl-after-first-request/45483)]"
+  ],
+  "CVE-2023-24999": [
+    "* auth/approle: When using the Vault and Vault Enterprise (Vault) approle auth method, any authenticated user with access to the /auth/approle/role/:role_name/secret-id-accessor/destroy endpoint can destroy the secret ID of any other role by providing the secret ID accessor. This vulnerability, CVE-2023-24999 has been fixed in Vault 1.13.0, 1.12.4, 1.11.8, 1.10.11 and above. [[HSEC-2023-07](https://discuss.hashicorp.com/t/hcsec-2023-07-vault-fails-to-verify-if-approle-secretid-belongs-to-role-during-a-destroy-operation/51305)]",
+    "* auth/approle: When using the Vault and Vault Enterprise (Vault) approle auth method, any authenticated user with access to the /auth/approle/role/:role_name/secret-id-accessor/destroy endpoint can destroy the secret ID of any other role by providing the secret ID accessor. This vulnerability, CVE-2023-24999 has been fixed in Vault 1.13.0, 1.12.4, 1.11.8, 1.10.11 and above. [[HSEC-2023-07](https://discuss.hashicorp.com/t/hcsec-2023-07-vault-fails-to-verify-if-approle-secretid-belongs-to-role-during-a-destroy-operation/51305)]",
+    "* auth/approle: When using the Vault and Vault Enterprise (Vault) approle auth method, any authenticated user with access to the /auth/approle/role/:role_name/secret-id-accessor/destroy endpoint can destroy the secret ID of any other role by providing the secret ID accessor. This vulnerability, CVE-2023-24999 has been fixed in Vault 1.13.0, 1.12.4, 1.11.8, 1.10.11 and above. [[HSEC-2023-07](https://discuss.hashicorp.com/t/hcsec-2023-07-vault-fails-to-verify-if-approle-secretid-belongs-to-role-during-a-destroy-operation/51305)]",
+    "* auth/approle: When using the Vault and Vault Enterprise (Vault) approle auth method, any authenticated user with access to the /auth/approle/role/:role_name/secret-id-accessor/destroy endpoint can destroy the secret ID of any other role by providing the secret ID accessor. This vulnerability, CVE-2023-24999 has been fixed in Vault 1.13.0, 1.12.4, 1.11.8, 1.10.11 and above. [[HSEC-2023-07](https://discuss.hashicorp.com/t/hcsec-2023-07-vault-fails-to-verify-if-approle-secretid-belongs-to-role-during-a-destroy-operation/51305)]"
+  ],
+  "CVE-2025-6000": [
+    "* audit: **breaking change** privileged vault operator may execute code on the underlying host (CVE-2025-6000). Vault will not unseal if the only configured file audit device has executable permissions (e.g., 0777, 0755). See recent [breaking change](https://developer.hashicorp.com/vault/docs/updates/important-changes#breaking-changes) docs for more details. [[GH-31211](https://github.com/hashicorp/vault/pull/31211),[HCSEC-2025-14](https://discuss.hashicorp.com/t/hcsec-2025-14-privileged-vault-operator-may-execute-code-on-the-underlying-host/76033)]",
+    "* audit: **breaking change** privileged vault operator may execute code on the underlying host (CVE-2025-6000). Vault will not unseal if the only configured file audit device has executable permissions (e.g., 0777, 0755). See recent [breaking change](https://developer.hashicorp.com/vault/docs/updates/important-changes#breaking-changes) docs for more details. [[GH-31211](https://github.com/hashicorp/vault/pull/31211),[HCSEC-2025-14](https://discuss.hashicorp.com/t/hcsec-2025-14-privileged-vault-operator-may-execute-code-on-the-underlying-host/76033)]",
+    "* audit: **breaking change** privileged vault operator may execute code on the underlying host (CVE-2025-6000). Vault will not unseal if the only configured file audit device has executable permissions (e.g., 0777, 0755). See recent [breaking change](https://developer.hashicorp.com/vault/docs/updates/important-changes#breaking-changes) docs for more details. [[GH-31211](https://github.com/hashicorp/vault/pull/31211),[HCSEC-2025-14](https://discuss.hashicorp.com/t/hcsec-2025-14-privileged-vault-operator-may-execute-code-on-the-underlying-host/76033)]",
+    "* audit: **breaking change** privileged vault operator may execute code on the underlying host (CVE-2025-6000). Vault will not unseal if the only configured file audit device has executable permissions (e.g., 0777, 0755). See recent [breaking change](https://developer.hashicorp.com/vault/docs/updates/important-changes#breaking-changes) docs for more details. [[GH-31211](https://github.com/hashicorp/vault/pull/31211),[HCSEC-2025-14](https://discuss.hashicorp.com/t/hcsec-2025-14-privileged-vault-operator-may-execute-code-on-the-underlying-host/76033)]"
+  ],
+  "CVE-2021-41802": [
+    "* core/identity: A Vault user with write permission to an entity alias ID sharing a mount accessor with another user may acquire this other user\u2019s policies by merging their identities. This vulnerability, CVE-2021-41802, was fixed in Vault and Vault Enterprise 1.7.5, 1.8.4, and 1.9.0.",
+    "* core/identity: A Vault user with write permission to an entity alias ID sharing a mount accessor with another user may acquire this other user\u2019s policies by merging their identities. This vulnerability, CVE-2021-41802, was fixed in Vault and Vault Enterprise 1.7.5 and 1.8.4.",
+    "* core/identity: A Vault user with write permission to an entity alias ID sharing a mount accessor with another user may acquire this other user\u2019s policies by merging their identities. This vulnerability, CVE-2021-41802, was fixed in Vault and Vault Enterprise 1.7.5 and 1.8.4."
+  ],
+  "CVE-2025-4166": [],
+  "CVE-2025-22872": [],
+  "CVE-2023-0665": [
+    "* secrets/pki: Vault\u2019s PKI mount issuer endpoints did not correctly authorize access to remove an issuer or modify issuer metadata, potentially resulting in denial of service of the PKI mount. This bug did not affect public or private key material, trust chains or certificate issuance. This vulnerability, CVE-2023-0665, is fixed in Vault 1.13.1, 1.12.5, and 1.11.9. [[HCSEC-2023-11](https://discuss.hashicorp.com/t/hcsec-2023-11-vault-s-pki-issuer-endpoint-did-not-correctly-authorize-access-to-issuer-metadata/52079)]",
+    "* secrets/pki: Vault\u2019s PKI mount issuer endpoints did not correctly authorize access to remove an issuer or modify issuer metadata, potentially resulting in denial of service of the PKI mount. This bug did not affect public or private key material, trust chains or certificate issuance. This vulnerability, CVE-2023-0665, is fixed in Vault 1.13.1, 1.12.5, and 1.11.9. [[HCSEC-2023-11](https://discuss.hashicorp.com/t/hcsec-2023-11-vault-s-pki-issuer-endpoint-did-not-correctly-authorize-access-to-issuer-metadata/52079)]",
+    "* secrets/pki: Vault\u2019s PKI mount issuer endpoints did not correctly authorize access to remove an issuer or modify issuer metadata, potentially resulting in denial of service of the PKI mount. This bug did not affect public or private key material, trust chains or certificate issuance. This vulnerability, CVE-2023-0665, is fixed in Vault 1.13.1, 1.12.5, and 1.11.9. [[HCSEC-2023-11](https://discuss.hashicorp.com/t/hcsec-2023-11-vault-s-pki-issuer-endpoint-did-not-correctly-authorize-access-to-issuer-metadata/52079)]"
+  ],
+  "CVE-2023-0620": [
+    "* storage/mssql: When using Vault\u2019s community-supported Microsoft SQL (MSSQL) database storage backend, a privileged attacker with the ability to write arbitrary data to Vault\u2019s configuration may be able to perform arbitrary SQL commands on the underlying database server through Vault. This vulnerability, CVE-2023-0620, is fixed in Vault 1.13.1, 1.12.5, and 1.11.9. [[HCSEC-2023-12](https://discuss.hashicorp.com/t/hcsec-2023-12-vault-s-microsoft-sql-database-storage-backend-vulnerable-to-sql-injection-via-configuration-file/52080)]",
+    "* storage/mssql: When using Vault\u2019s community-supported Microsoft SQL (MSSQL) database storage backend, a privileged attacker with the ability to write arbitrary data to Vault\u2019s configuration may be able to perform arbitrary SQL commands on the underlying database server through Vault. This vulnerability, CVE-2023-0620, is fixed in Vault 1.13.1, 1.12.5, and 1.11.9. [[HCSEC-2023-12](https://discuss.hashicorp.com/t/hcsec-2023-12-vault-s-microsoft-sql-database-storage-backend-vulnerable-to-sql-injection-via-configuration-file/52080)]",
+    "* storage/mssql: When using Vault\u2019s community-supported Microsoft SQL (MSSQL) database storage backend, a privileged attacker with the ability to write arbitrary data to Vault\u2019s configuration may be able to perform arbitrary SQL commands on the underlying database server through Vault. This vulnerability, CVE-2023-0620, is fixed in Vault 1.13.1, 1.12.5, and 1.11.9. [[HCSEC-2023-12](https://discuss.hashicorp.com/t/hcsec-2023-12-vault-s-microsoft-sql-database-storage-backend-vulnerable-to-sql-injection-via-configuration-file/52080)]"
+  ],
+  "CVE-2024-5798": [],
+  "CVE-2026-29063": [],
+  "CVE-2026-27601": [],
+  "CVE-2025-6203": [],
+  "CVE-2021-38553": [
+    "* storage/raft: When initializing Vault\u2019s Integrated Storage backend, excessively broad filesystem permissions may be set for the underlying Bolt database used by Vault\u2019s Raft implementation. This vulnerability, CVE-2021-38553, was fixed in Vault 1.8.0."
+  ],
+  "CVE-2025-6037": [
+    "* auth/cert: vault certificate auth method did not validate common name for non-ca certificates (CVE-2025-6037). test non-CA cert equality on login matching instead of individual fields. [[GH-31210](https://github.com/hashicorp/vault/pull/31210),[HCSEC-2025-18](https://discuss.hashicorp.com/t/hcsec-2025-18-vault-certificate-auth-method-did-not-validate-common-name-for-non-ca-certificates/76037)]",
+    "* auth/cert: vault certificate auth method did not validate common name for non-ca certificates (CVE-2025-6037). test non-CA cert equality on login matching instead of individual fields. [[GH-31210](https://github.com/hashicorp/vault/pull/31210),[HCSEC-2025-18](https://discuss.hashicorp.com/t/hcsec-2025-18-vault-certificate-auth-method-did-not-validate-common-name-for-non-ca-certificates/76037)]",
+    "* auth/cert: vault certificate auth method did not validate common name for non-ca certificates (CVE-2025-6037). test non-CA cert equality on login matching instead of individual fields. [[GH-31210](https://github.com/hashicorp/vault/pull/31210),[HCSEC-2025-18](https://discuss.hashicorp.com/t/hcsec-2025-18-vault-certificate-auth-method-did-not-validate-common-name-for-non-ca-certificates/76037)]",
+    "* auth/cert: vault certificate auth method did not validate common name for non-ca certificates (CVE-2025-6037). test non-CA cert equality on login matching instead of individual fields. [[GH-31210](https://github.com/hashicorp/vault/pull/31210),[HCSEC-2025-18](https://discuss.hashicorp.com/t/hcsec-2025-18-vault-certificate-auth-method-did-not-validate-common-name-for-non-ca-certificates/76037)]"
+  ],
+  "CVE-2025-54798": [],
+  "CVE-2025-5999": [
+    "* core/identity: vault root namespace operator may elevate privileges (CVE-2025-5999). Fix string contains check in Identity APIs to be case-insensitive. [[GH-31045](https://github.com/hashicorp/vault/pull/31045),[HCSEC-2025-13](https://discuss.hashicorp.com/t/hcsec-2025-13-vault-root-namespace-operator-may-elevate-token-privileges/76032)]",
+    "* core/identity: vault root namespace operator may elevate privileges (CVE-2025-5999). Fix string contains check in Identity APIs to be case-insensitive. [[GH-31045](https://github.com/hashicorp/vault/pull/31045),[HCSEC-2025-13](https://discuss.hashicorp.com/t/hcsec-2025-13-vault-root-namespace-operator-may-elevate-token-privileges/76032)]",
+    "* core/identity: vault root namespace operator may elevate privileges (CVE-2025-5999). Fix string contains check in Identity APIs to be case-insensitive. [[GH-31045](https://github.com/hashicorp/vault/pull/31045),[HCSEC-2025-13](https://discuss.hashicorp.com/t/hcsec-2025-13-vault-root-namespace-operator-may-elevate-token-privileges/76032)]",
+    "* core/identity: vault root namespace operator may elevate privileges (CVE-2025-5999). Fix string contains check in Identity APIs to be case-insensitive. [[GH-31045](https://github.com/hashicorp/vault/pull/31045),[HCSEC-2025-13](https://discuss.hashicorp.com/t/hcsec-2025-13-vault-root-namespace-operator-may-elevate-token-privileges/76032)]",
+    "* core/identity: vault root namespace operator may elevate privileges (CVE-2025-5999). Fix string contains check in Identity APIs to be case-insensitive. [[GH-31045](https://github.com/hashicorp/vault/pull/31045),[HCSEC-2025-13](https://discuss.hashicorp.com/t/hcsec-2025-13-vault-root-namespace-operator-may-elevate-token-privileges/76032)]"
+  ],
+  "CVE-2025-15599": [],
+  "CVE-2026-0540": [],
+  "CVE-2025-6013": [],
+  "CVE-2025-6014": [
+    "* secrets/totp: vault totp secrets engine code reuse (CVE-2025-6014) [[GH-31246](https://github.com/hashicorp/vault/pull/31246),[HCSEC-2025-17](https://discuss.hashicorp.com/t/hcsec-2025-17-vault-totp-secrets-engine-code-reuse/76036)]",
+    "* secrets/totp: vault totp secrets engine code reuse (CVE-2025-6014) [[GH-31246](https://github.com/hashicorp/vault/pull/31246),[HCSEC-2025-17](https://discuss.hashicorp.com/t/hcsec-2025-17-vault-totp-secrets-engine-code-reuse/76036)]",
+    "* secrets/totp: vault totp secrets engine code reuse (CVE-2025-6014) [[GH-31246](https://github.com/hashicorp/vault/pull/31246),[HCSEC-2025-17](https://discuss.hashicorp.com/t/hcsec-2025-17-vault-totp-secrets-engine-code-reuse/76036)]",
+    "* secrets/totp: vault totp secrets engine code reuse (CVE-2025-6014) [[GH-31246](https://github.com/hashicorp/vault/pull/31246),[HCSEC-2025-17](https://discuss.hashicorp.com/t/hcsec-2025-17-vault-totp-secrets-engine-code-reuse/76036)]"
+  ],
+  "CVE-2023-25000": [
+    "* core: HashiCorp Vault\u2019s implementation of Shamir\u2019s secret sharing used precomputed table lookups, and was vulnerable to cache-timing attacks. An attacker with access to, and the ability to observe a large number of unseal operations on the host through a side channel may reduce the search space of a brute force effort to recover the Shamir shares. This vulnerability, CVE-2023-25000, is fixed in Vault 1.13.1, 1.12.5, and 1.11.9. [[HCSEC-2023-10](https://discuss.hashicorp.com/t/hcsec-2023-10-vault-vulnerable-to-cache-timing-attacks-during-seal-and-unseal-operations/52078)]",
+    "* core: HashiCorp Vault\u2019s implementation of Shamir\u2019s secret sharing used precomputed table lookups, and was vulnerable to cache-timing attacks. An attacker with access to, and the ability to observe a large number of unseal operations on the host through a side channel may reduce the search space of a brute force effort to recover the Shamir shares. This vulnerability, CVE-2023-25000, is fixed in Vault 1.13.1, 1.12.5, and 1.11.9. [[HCSEC-2023-10](https://discuss.hashicorp.com/t/hcsec-2023-10-vault-vulnerable-to-cache-timing-attacks-during-seal-and-unseal-operations/52078)]",
+    "* core: HashiCorp Vault\u2019s implementation of Shamir\u2019s secret sharing used precomputed table lookups, and was vulnerable to cache-timing attacks. An attacker with access to, and the ability to observe a large number of unseal operations on the host through a side channel may reduce the search space of a brute force effort to recover the Shamir shares. This vulnerability, CVE-2023-25000, is fixed in Vault 1.13.1, 1.12.5, and 1.11.9. [[HCSEC-2023-10](https://discuss.hashicorp.com/t/hcsec-2023-10-vault-vulnerable-to-cache-timing-attacks-during-seal-and-unseal-operations/52078)]"
+  ],
+  "CVE-2025-6004": [
+    "* core/login: vault userpass and ldap user lockout bypass (CVE-2025-6004). update alias lookahead to respect username case for LDAP and username/password. [[GH-31352](https://github.com/hashicorp/vault/pull/31352),[HCSEC-2025-16](https://discuss.hashicorp.com/t/hcsec-2025-16-vault-userpass-and-ldap-user-lockout-bypass/76035)]",
+    "* core/login: vault userpass and ldap user lockout bypass (CVE-2025-6004). update alias lookahead to respect username case for LDAP and username/password. [[GH-31352](https://github.com/hashicorp/vault/pull/31352),[HCSEC-2025-16](https://discuss.hashicorp.com/t/hcsec-2025-16-vault-userpass-and-ldap-user-lockout-bypass/76035)]",
+    "* core/login: vault userpass and ldap user lockout bypass (CVE-2025-6004). update alias lookahead to respect username case for LDAP and username/password. [[GH-31352](https://github.com/hashicorp/vault/pull/31352),[HCSEC-2025-16](https://discuss.hashicorp.com/t/hcsec-2025-16-vault-userpass-and-ldap-user-lockout-bypass/76035)]",
+    "* core/login: vault userpass and ldap user lockout bypass (CVE-2025-6004). update alias lookahead to respect username case for LDAP and username/password. [[GH-31352](https://github.com/hashicorp/vault/pull/31352),[HCSEC-2025-16](https://discuss.hashicorp.com/t/hcsec-2025-16-vault-userpass-and-ldap-user-lockout-bypass/76035)]"
+  ],
+  "CVE-2026-2391": [],
+  "CVE-2025-15558": [],
+  "CVE-2025-5889": [],
+  "CVE-2025-6015": [
+    "* core/mfa: vault login mfa bypass of rate limiting and totp token reuse (CVE-2025-6015) [[GH-31217](https://github.com/hashicorp/vault/pull/31297),[HCSEC-2025-19](https://discuss.hashicorp.com/t/hcsec-2025-19-vault-login-mfa-bypass-of-rate-limiting-and-totp-token-reuse/76038)]",
+    "* core/mfa: vault login mfa bypass of rate limiting and totp token reuse (CVE-2025-6015) [[GH-31217](https://github.com/hashicorp/vault/pull/31297),[HCSEC-2025-19](https://discuss.hashicorp.com/t/hcsec-2025-19-vault-login-mfa-bypass-of-rate-limiting-and-totp-token-reuse/76038)]",
+    "* core/mfa: vault login mfa bypass of rate limiting and totp token reuse (CVE-2025-6015) [[GH-31217](https://github.com/hashicorp/vault/pull/31297),[HCSEC-2025-19](https://discuss.hashicorp.com/t/hcsec-2025-19-vault-login-mfa-bypass-of-rate-limiting-and-totp-token-reuse/76038)]",
+    "* core/mfa: vault login mfa bypass of rate limiting and totp token reuse (CVE-2025-6015) [[GH-31217](https://github.com/hashicorp/vault/pull/31297),[HCSEC-2025-19](https://discuss.hashicorp.com/t/hcsec-2025-19-vault-login-mfa-bypass-of-rate-limiting-and-totp-token-reuse/76038)]"
+  ],
+  "CVE-2025-4656": [],
+  "CVE-2026-24001": [],
+  "CVE-2025-6011": [
+    "* auth/userpass: timing side-channel in vault's userpass auth method (CVE-2025-6011)[HCSEC-2025-15](https://discuss.hashicorp.com/t/hcsec-2025-15-timing-side-channel-in-vault-s-userpass-auth-method/76034)",
+    "* auth/userpass: timing side-channel in vault's userpass auth method (CVE-2025-6011)[HCSEC-2025-15](https://discuss.hashicorp.com/t/hcsec-2025-15-timing-side-channel-in-vault-s-userpass-auth-method/76034)",
+    "* auth/userpass: timing side-channel in vault's userpass auth method (CVE-2025-6011)[HCSEC-2025-15](https://discuss.hashicorp.com/t/hcsec-2025-15-timing-side-channel-in-vault-s-userpass-auth-method/76034)",
+    "* auth/userpass: timing side-channel in vault's userpass auth method (CVE-2025-6011)[HCSEC-2025-15](https://discuss.hashicorp.com/t/hcsec-2025-15-timing-side-channel-in-vault-s-userpass-auth-method/76034)"
+  ],
+  "CVE-2025-68157": [],
+  "CVE-2026-25934": [],
+  "CVE-2025-7339": [],
+  "GHSA-hcfh-22r5-mc4r": [],
+  "GHSA-5c6j-r48x-rmvq": [],
+  "CVE-2025-68458": [],
+  "GHSA-wxhq-pm8v-cw75": []
+}

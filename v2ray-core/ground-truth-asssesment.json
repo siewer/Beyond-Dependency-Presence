@@ -1,0 +1,202 @@
+[
+  {
+    "Vulnerability": "CVE-2023-44487",
+    "Location": "golang.org/x/net:v0.0.0-20201006153459-a7d1128ccaa0",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Explicit use of http2.Server found in transport/internet/http/hub.go (line 117). V2Ray h2 transport implements a server vulnerable to HTTP/2 Rapid Reset.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-48795",
+    "Location": "golang.org/x/crypto:v0.0.0-20201002170205-7f63de1d35b0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API not used in active code paths. No imports of golang.org/x/crypto/ssh found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45288",
+    "Location": "golang.org/x/net:v0.0.0-20201006153459-a7d1128ccaa0",
+    "Original_exploitability": 97,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Reachable via http transport hub. Vulnerable to DoS via CONTINUATION frames due to unbounded header parsing in old x/net version.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45337",
+    "Location": "golang.org/x/crypto:v0.0.0-20201002170205-7f63de1d35b0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API not used. The ssh package is not imported, and PublicKeyCallback is not used in user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-29526",
+    "Location": "golang.org/x/sys:v0.0.0-20201006155630-ac719f4daadf",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API not used. No explicit calls to Faccessat found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23409",
+    "Location": "github.com/pires/go-proxyproto:v0.2.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "✅ API call confirmed. Usage of go-proxyproto found in transport/internet/tcp/hub.go. Exploitable if ProxyProtocol is enabled.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23351",
+    "Location": "github.com/pires/go-proxyproto:v0.2.0",
+    "Original_exploitability": 35,
+    "Exploitability": 35,
+    "Exploitability_explanation": "✅ API call confirmed. Underflow vulnerability in Proxy v2 header parsing reachable via TCP/WS hubs.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-41723",
+    "Location": "golang.org/x/net:v0.0.0-20201006153459-a7d1128ccaa0",
+    "Original_exploitability": 97,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. HPACK DoS reachable via HTTP/2 server in transport hub.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-41717",
+    "Location": "golang.org/x/net:v0.0.0-20201006153459-a7d1128ccaa0",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "✅ API call confirmed. Vulnerable to memory limit bypass via excessive cookie headers in http2 server.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22869",
+    "Location": "golang.org/x/crypto:v0.0.0-20201002170205-7f63de1d35b0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API not used. No SSH key exchange logic present in active code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-24786",
+    "Location": "google.golang.org/protobuf:v1.25.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API not used. No usage of protojson found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-39325",
+    "Location": "golang.org/x/net:v0.0.0-20201006153459-a7d1128ccaa0",
+    "Original_exploitability": 15,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Duplicate of CVE-2023-44487; reachable via h2 transport server.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-27664",
+    "Location": "golang.org/x/net:v0.0.0-20201006153459-a7d1128ccaa0",
+    "Original_exploitability": 80,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed. HTTP/2 server DoS via excessive stream buffers reachable in hub.go.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-27191",
+    "Location": "golang.org/x/crypto:v0.0.0-20201002170205-7f63de1d35b0",
+    "Original_exploitability": 2,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API not used. No SSH server logic found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22872",
+    "Location": "golang.org/x/net:v0.0.0-20201006153459-a7d1128ccaa0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used. No HTML parsing performed in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-3978",
+    "Location": "golang.org/x/net:v0.0.0-20201006153459-a7d1128ccaa0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used. No HTML parsing performed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58181",
+    "Location": "golang.org/x/crypto:v0.0.0-20201002170205-7f63de1d35b0",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API not used. No SSH or GSSAPI logic present.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33194",
+    "Location": "golang.org/x/net:v0.0.0-20201006153459-a7d1128ccaa0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used. V2Ray uses its own DNS resolver implementation.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-29652",
+    "Location": "golang.org/x/crypto:v0.0.0-20201002170205-7f63de1d35b0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used. No SSH server logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-22870",
+    "Location": "golang.org/x/net:v0.0.0-20201006153459-a7d1128ccaa0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "API not used in production code. Usage found only in testing scenarios.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-43565",
+    "Location": "golang.org/x/crypto:v0.0.0-20201002170205-7f63de1d35b0",
+    "Original_exploitability": 2,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API not used. No SSH logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47914",
+    "Location": "golang.org/x/crypto:v0.0.0-20201002170205-7f63de1d35b0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used. No SSH Agent implementation.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-31525",
+    "Location": "golang.org/x/net:v0.0.0-20201006153459-a7d1128ccaa0",
+    "Original_exploitability": 90,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. Reachable via HTTP/2 server hub.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.32.0",
+    "Original_exploitability": 0,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed. Explicit use of grpc.NewServer in app/commander/commander.go. Vulnerable to auth bypass via :path pseudo-header if exposed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-m425-mq94-257g",
+    "Location": "google.golang.org/grpc:v1.32.0",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. gRPC server used in commander service is vulnerable to control frame DoS.",
+    "Assessment": "Incorrect"
+  }
+]

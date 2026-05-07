@@ -1,0 +1,178 @@
+[
+  {
+    "Vulnerability": "CVE-2026-29063",
+    "Location": "immutable:3.7.6",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "API call confirmed in client/src/components/Draftail/decorators/Link.js:184 (blockMap.merge). However, usage is restricted to internal block mapping, reducing likelihood of direct prototype pollution from untrusted JSON.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1287",
+    "Location": "Django:6",
+    "Original_exploitability": 35,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "No explicit call found using dictionary expansion (**kwargs) with user-controlled keys for annotate(), aggregate(), etc. Usage is standard positional or static keyword arguments.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-1312",
+    "Location": "Django:6",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "No usage of order_by() with FilteredRelation and dictionary expansion found in active code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25674",
+    "Location": "Django:6",
+    "Original_exploitability": 55,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "No usage of FileBasedCache or FileSystemStorage backends found in the core codebase that would trigger the permission race condition.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-25673",
+    "Location": "Django:6",
+    "Original_exploitability": 25,
+    "Exploitability": 85,
+    "Exploitability_explanation:": "API usage confirmed. URLField is extensively used in redirects and blocks. Reachability is high for remote attackers on Windows-based deployments.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "No Ajv configuration found enabling $data: true with user-controlled patterns, which is mandatory for ReDoS exploitation.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1207",
+    "Location": "Django:6",
+    "Original_exploitability": 5,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "No usage of RasterField or PostGIS-specific raster lookups found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0235",
+    "Location": "node-fetch:1.7.3",
+    "Original_exploitability": 1,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "Library usage confirmed, but primarily within vendor or internal testing contexts. Risk of cross-origin redirect header leak is minimal in standard Wagtail usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-4800",
+    "Location": "lodash:4.17.23",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "No usage of _.template() with untrusted options.imports found in active code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29063",
+    "Location": "immutable:5.1.4",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation:": "API call confirmed (blockMap.merge in Link.js). Probability is capped due to internal data structures not being directly influenced by untrusted JSON keys.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:1.1.12",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "Usage present in internal vendor libraries (handsontable). No direct user-facing path to expand() found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:2.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "Usage present in internal vendor libraries. Risk is limited to internal processing.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:5.0.3",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation:": "Usage present in internal vendor libraries. Risk is limited to internal processing.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33532",
+    "Location": "yaml:1.10.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No active usage of YAML.parse() on untrusted input found in frontend/backend codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33532",
+    "Location": "yaml:2.8.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No active usage of YAML parsing on untrusted input found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2950",
+    "Location": "lodash:4.17.23",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No usage of _.unset() or _.omit() with untrusted path arguments found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1285",
+    "Location": "Django:6",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation:": "No usage of truncatechars_html or truncatewords_html found in core templates processing untrusted bulk data.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-14550",
+    "Location": "Django:6",
+    "Original_exploitability": 50,
+    "Exploitability": 75,
+    "Exploitability_explanation:": "Confirmed. As an ASGI-compatible framework, Wagtail deployments using ASGI are inherently vulnerable to the header-processing DoS in Django 6.x.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-2327",
+    "Location": "markdown-it:14.1.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "Usage not confirmed in active user-facing code paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:8.17.1",
+    "Original_exploitability": 1,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "No Ajv $data:true configuration found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13473",
+    "Location": "Django:6",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation:": "Requires mod_wsgi deployment which is not configured in the standard repository.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:2.0.0",
+    "Original_exploitability": 35,
+    "Exploitability": 1,
+    "Exploitability_explanation:": "No usage of once() with AbortSignal found in active code.",
+    "Assessment": "Incorrect"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Vulnerability": "CVE-2026-24765",
+    "Location": "phpunit/phpunit:9.6.23",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerability involves insecure deserialization in PHPUnit's `cleanupForCoverage` method, which is specifically triggered during the execution of PHPT tests (`.phpt` files). A thorough search of the repository confirmed that no `.phpt` files exist. Since this code path is not reached during the project's testing process, and the API is not called elsewhere, the vulnerability is not exploitable in this codebase. Furthermore, PHPUnit is only a development dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24739",
+    "Location": "symfony/process:v5.4.47",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "This CVE describes an argument injection vulnerability on Windows when using MSYS2/Git Bash. However, `symfony/process` is not used directly by the `ramsey/uuid` source code or its own tests. It is brought in as a transitive development dependency by `captainhook` and `phpbench`. No calls to the vulnerable `Process` class were found in the active code paths of the project. The project's own shell command usage in `SystemNodeProvider` uses `passthru` with hardcoded strings, bypassing the vulnerable component entirely.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69277",
+    "Location": "paragonie/sodium_compat:v1.21.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerability affects the `crypto_core_ed25519_is_valid_point` function in custom cryptographic implementations. Analysis of the `src` directory shows no usage of this function or any direct calls to the Sodium library. `sodium_compat` is only present as a transitive development dependency of `paragonie/random-lib`. Since the vulnerable API is never invoked, the vulnerability is not exploitable.",
+    "Assessment": "Correct"
+  }
+]
