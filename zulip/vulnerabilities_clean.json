@@ -1,0 +1,191 @@
+[
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2026-31988",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.341Z",
+    "Source": "SCA",
+    "Location": "yauzl:2.10.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-2229",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.360Z",
+    "Source": "SCA",
+    "Location": "undici:7.22.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-1528",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.379Z",
+    "Source": "SCA",
+    "Location": "undici:7.22.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-1526",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.397Z",
+    "Source": "SCA",
+    "Location": "undici:7.22.0"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2026-30226",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.416Z",
+    "Source": "SCA",
+    "Location": "devalue:5.6.3"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2026-1525",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.436Z",
+    "Source": "SCA",
+    "Location": "undici:7.22.0"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2026-2581",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.455Z",
+    "Source": "SCA",
+    "Location": "undici:7.22.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-32274",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.474Z",
+    "Source": "SCA",
+    "Location": "black:26.3.0"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-13465",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.477Z",
+    "Source": "SCA",
+    "Location": "lodash:4.17.21"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2026-1527",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.495Z",
+    "Source": "SCA",
+    "Location": "undici:7.22.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-29786",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.514Z",
+    "Source": "SCA",
+    "Location": "tar:6.2.1"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-32597",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.535Z",
+    "Source": "SCA",
+    "Location": "pyjwt:2.11.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-23950",
+    "Status": "EXISTING",
+    "Exploitability": 35,
+    "Last Seen": "2026-03-14T06:09:50.538Z",
+    "Source": "SCA",
+    "Location": "tar:6.2.1"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-23745",
+    "Status": "EXISTING",
+    "Exploitability": 50,
+    "Last Seen": "2026-03-14T06:09:50.539Z",
+    "Source": "SCA",
+    "Location": "tar:6.2.1"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-31802",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.556Z",
+    "Source": "SCA",
+    "Location": "tar:6.2.1"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "CVE-2026-3449",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.574Z",
+    "Source": "SCA",
+    "Location": "@tootallnate/once:2.0.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "GHSA-cwxj-rr6w-m6w7",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.592Z",
+    "Source": "SCA",
+    "Location": "scrapy:2.14.1"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "GHSA-mwv9-gp5h-frr4",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.611Z",
+    "Source": "SCA",
+    "Location": "devalue:5.6.3"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2017-14158",
+    "Status": "EXISTING",
+    "Exploitability": 50,
+    "Last Seen": "2026-03-14T06:09:50.325Z",
+    "Source": "SCA",
+    "Location": "scrapy:2.14.1"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-24842",
+    "Status": "EXISTING",
+    "Exploitability": 1,
+    "Last Seen": "2026-03-14T06:09:50.477Z",
+    "Source": "SCA",
+    "Location": "tar:6.2.1"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2026-26960",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-14T06:09:50.537Z",
+    "Source": "SCA",
+    "Location": "tar:6.2.1"
+  }
+]

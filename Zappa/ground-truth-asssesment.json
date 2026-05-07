@@ -1,0 +1,458 @@
+[
+  {
+    "Vulnerability": "CVE-2021-35042",
+    "Location": "Django:3.0.7",
+    "Original_exploitability": "25%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa provide integration with Django via zappa/ext/django_zappa.py (calling django.setup()). However, after a thorough search, no explicit calls to the vulnerable Django functions (e.g., order_by() for CVE-2021-35042 or FileResponse for CVE-2022-36359) were found in the Zappa codebase. Per the evidence mandate, without a call to the vulnerable API, exploitability is set to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-3281",
+    "Location": "Django:3.0.7",
+    "Original_exploitability": "1%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa provide integration with Django via zappa/ext/django_zappa.py (calling django.setup()). However, after a thorough search, no explicit calls to the vulnerable Django functions (e.g., order_by() for CVE-2021-35042 or FileResponse for CVE-2022-36359) were found in the Zappa codebase. Per the evidence mandate, without a call to the vulnerable API, exploitability is set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4340",
+    "Location": "sqlparse:0.3.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "sqlparse is not called in the Zappa source code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-14343",
+    "Location": "PyYAML:5.3.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa uses yaml.safe_load() which is safe. Vulnerable functions like full_load() or load() with FullLoader are not used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-34069",
+    "Location": "Werkzeug:0.16.1",
+    "Original_exploitability": "70%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa uses Werkzeug for WSGI wrapping (Response objects), but does not call vulnerable functions like url_fix() or parse_options_header() explicitly.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-3651",
+    "Location": "idna:2.9",
+    "Original_exploitability": "1%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in the Zappa codebase. Direct usage of this library is either absent or limited to safe functions.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-37891",
+    "Location": "urllib3:1.25.9",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "While Zappa uses requests/botocore (which use urllib3), there are no explicit calls to the vulnerable urllib3/requests functions in the Zappa codebase itself. Usage is internal to vendor libraries.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66418",
+    "Location": "urllib3:1.25.9",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "While Zappa uses requests/botocore (which use urllib3), there are no explicit calls to the vulnerable urllib3/requests functions in the Zappa codebase itself. Usage is internal to vendor libraries.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66471",
+    "Location": "urllib3:1.25.9",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "While Zappa uses requests/botocore (which use urllib3), there are no explicit calls to the vulnerable urllib3/requests functions in the Zappa codebase itself. Usage is internal to vendor libraries.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-21441",
+    "Location": "urllib3:1.25.9",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "While Zappa uses requests/botocore (which use urllib3), there are no explicit calls to the vulnerable urllib3/requests functions in the Zappa codebase itself. Usage is internal to vendor libraries.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-50181",
+    "Location": "urllib3:1.25.9",
+    "Original_exploitability": "1%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "While Zappa uses requests/botocore (which use urllib3), there are no explicit calls to the vulnerable urllib3/requests functions in the Zappa codebase itself. Usage is internal to vendor libraries.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-43804",
+    "Location": "urllib3:1.25.9",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "While Zappa uses requests/botocore (which use urllib3), there are no explicit calls to the vulnerable urllib3/requests functions in the Zappa codebase itself. Usage is internal to vendor libraries.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-37920",
+    "Location": "certifi:2020.4.5.2",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "While Zappa uses requests/botocore (which use urllib3), there are no explicit calls to the vulnerable urllib3/requests functions in the Zappa codebase itself. Usage is internal to vendor libraries.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45803",
+    "Location": "urllib3:1.25.9",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "While Zappa uses requests/botocore (which use urllib3), there are no explicit calls to the vulnerable urllib3/requests functions in the Zappa codebase itself. Usage is internal to vendor libraries.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-23491",
+    "Location": "certifi:2020.4.5.2",
+    "Original_exploitability": "96%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "While Zappa uses requests/botocore (which use urllib3), there are no explicit calls to the vulnerable urllib3/requests functions in the Zappa codebase itself. Usage is internal to vendor libraries.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-27516",
+    "Location": "Jinja2:2.11.2",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Jinja2 is not called in the Zappa source code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-40899",
+    "Location": "future:0.18.2",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Vulnerable API is not called in any active code path in the Zappa codebase. Direct usage of this library is either absent or limited to safe functions.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-30608",
+    "Location": "sqlparse:0.3.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "sqlparse is not called in the Zappa source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-34064",
+    "Location": "Jinja2:2.11.2",
+    "Original_exploitability": "1%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Jinja2 is not called in the Zappa source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-36359",
+    "Location": "Django:3.0.7",
+    "Original_exploitability": "25%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa provide integration with Django via zappa/ext/django_zappa.py (calling django.setup()). However, after a thorough search, no explicit calls to the vulnerable Django functions (e.g., order_by() for CVE-2021-35042 or FileResponse for CVE-2022-36359) were found in the Zappa codebase. Per the evidence mandate, without a call to the vulnerable API, exploitability is set to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-64459",
+    "Location": "Django:3.0.7",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa provide integration with Django via zappa/ext/django_zappa.py (calling django.setup()). However, after a thorough search, no explicit calls to the vulnerable Django functions (e.g., order_by() for CVE-2021-35042 or FileResponse for CVE-2022-36359) were found in the Zappa codebase. Per the evidence mandate, without a call to the vulnerable API, exploitability is set to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-45231",
+    "Location": "Django:3.0.7",
+    "Original_exploitability": "5%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa provide integration with Django via zappa/ext/django_zappa.py (calling django.setup()). However, after a thorough search, no explicit calls to the vulnerable Django functions (e.g., order_by() for CVE-2021-35042 or FileResponse for CVE-2022-36359) were found in the Zappa codebase. Per the evidence mandate, without a call to the vulnerable API, exploitability is set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-22195",
+    "Location": "Jinja2:2.11.2",
+    "Original_exploitability": "5%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Jinja2 is not called in the Zappa source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-56326",
+    "Location": "Jinja2:2.11.2",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Jinja2 is not called in the Zappa source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48432",
+    "Location": "Django:3.0.7",
+    "Original_exploitability": "5%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa provide integration with Django via zappa/ext/django_zappa.py (calling django.setup()). However, after a thorough search, no explicit calls to the vulnerable Django functions (e.g., order_by() for CVE-2021-35042 or FileResponse for CVE-2022-36359) were found in the Zappa codebase. Per the evidence mandate, without a call to the vulnerable API, exploitability is set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-49767",
+    "Location": "Werkzeug:0.16.1",
+    "Original_exploitability": "45%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa uses Werkzeug for WSGI wrapping (Response objects), but does not call vulnerable functions like url_fix() or parse_options_header() explicitly.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-46136",
+    "Location": "Werkzeug:0.16.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa uses Werkzeug for WSGI wrapping (Response objects), but does not call vulnerable functions like url_fix() or parse_options_header() explicitly.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-25577",
+    "Location": "Werkzeug:0.16.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa uses Werkzeug for WSGI wrapping (Response objects), but does not call vulnerable functions like url_fix() or parse_options_header() explicitly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-23934",
+    "Location": "Werkzeug:0.16.1",
+    "Original_exploitability": "25%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa uses Werkzeug for WSGI wrapping (Response objects), but does not call vulnerable functions like url_fix() or parse_options_header() explicitly.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-30861",
+    "Location": "Flask:1.1.2",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa supports Flask apps, but does not call any vulnerable Flask APIs in its own source code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-28658",
+    "Location": "Django:3.0.7",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa provide integration with Django via zappa/ext/django_zappa.py (calling django.setup()). However, after a thorough search, no explicit calls to the vulnerable Django functions (e.g., order_by() for CVE-2021-35042 or FileResponse for CVE-2022-36359) were found in the Zappa codebase. Per the evidence mandate, without a call to the vulnerable API, exploitability is set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33203",
+    "Location": "Django:3.0.7",
+    "Original_exploitability": "8%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa provide integration with Django via zappa/ext/django_zappa.py (calling django.setup()). However, after a thorough search, no explicit calls to the vulnerable Django functions (e.g., order_by() for CVE-2021-35042 or FileResponse for CVE-2022-36359) were found in the Zappa codebase. Per the evidence mandate, without a call to the vulnerable API, exploitability is set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-24583",
+    "Location": "Django:3.0.7",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa provide integration with Django via zappa/ext/django_zappa.py (calling django.setup()). However, after a thorough search, no explicit calls to the vulnerable Django functions (e.g., order_by() for CVE-2021-35042 or FileResponse for CVE-2022-36359) were found in the Zappa codebase. Per the evidence mandate, without a call to the vulnerable API, exploitability is set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-24584",
+    "Location": "Django:3.0.7",
+    "Original_exploitability": "8%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa provide integration with Django via zappa/ext/django_zappa.py (calling django.setup()). However, after a thorough search, no explicit calls to the vulnerable Django functions (e.g., order_by() for CVE-2021-35042 or FileResponse for CVE-2022-36359) were found in the Zappa codebase. Per the evidence mandate, without a call to the vulnerable API, exploitability is set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44420",
+    "Location": "Django:3.0.7",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa provide integration with Django via zappa/ext/django_zappa.py (calling django.setup()). However, after a thorough search, no explicit calls to the vulnerable Django functions (e.g., order_by() for CVE-2021-35042 or FileResponse for CVE-2022-36359) were found in the Zappa codebase. Per the evidence mandate, without a call to the vulnerable API, exploitability is set to 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-33571",
+    "Location": "Django:3.0.7",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa provide integration with Django via zappa/ext/django_zappa.py (calling django.setup()). However, after a thorough search, no explicit calls to the vulnerable Django functions (e.g., order_by() for CVE-2021-35042 or FileResponse for CVE-2022-36359) were found in the Zappa codebase. Per the evidence mandate, without a call to the vulnerable API, exploitability is set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-1010083",
+    "Location": "Flask:0.12",
+    "Original_exploitability": "25%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa supports Flask apps, but does not call any vulnerable Flask APIs in its own source code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-28493",
+    "Location": "Jinja2:2.11.2",
+    "Original_exploitability": "1%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Jinja2 is not called in the Zappa source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33503",
+    "Location": "urllib3:1.25.9",
+    "Original_exploitability": "25%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "While Zappa uses requests/botocore (which use urllib3), there are no explicit calls to the vulnerable urllib3/requests functions in the Zappa codebase itself. Usage is internal to vendor libraries.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-1000656",
+    "Location": "Flask:0.12",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa supports Flask apps, but does not call any vulnerable Flask APIs in its own source code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-40898",
+    "Location": "wheel:0.34.2",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa uses its own regexes for wheel matching and does not rely on the vulnerable wheel library internals for this task.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27205",
+    "Location": "Flask:1.1.2",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa supports Flask apps, but does not call any vulnerable Flask APIs in its own source code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-25645",
+    "Location": "requests:2.23.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "While Zappa uses requests/botocore (which use urllib3), there are no explicit calls to the vulnerable urllib3/requests functions in the Zappa codebase itself. Usage is internal to vendor libraries.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27199",
+    "Location": "Werkzeug:0.16.1",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa uses Werkzeug for WSGI wrapping (Response objects), but does not call vulnerable functions like url_fix() or parse_options_header() explicitly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-35195",
+    "Location": "requests:2.23.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "While Zappa uses requests/botocore (which use urllib3), there are no explicit calls to the vulnerable urllib3/requests functions in the Zappa codebase itself. Usage is internal to vendor libraries.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-34062",
+    "Location": "tqdm:4.46.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa uses tqdm programmatically, not via the vulnerable CLI interface.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47081",
+    "Location": "requests:2.23.0",
+    "Original_exploitability": "35%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "While Zappa uses requests/botocore (which use urllib3), there are no explicit calls to the vulnerable urllib3/requests functions in the Zappa codebase itself. Usage is internal to vendor libraries.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66221",
+    "Location": "Werkzeug:0.16.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa uses Werkzeug for WSGI wrapping (Response objects), but does not call vulnerable functions like url_fix() or parse_options_header() explicitly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-57833",
+    "Location": "Django:3.0.7",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa provide integration with Django via zappa/ext/django_zappa.py (calling django.setup()). However, after a thorough search, no explicit calls to the vulnerable Django functions (e.g., order_by() for CVE-2021-35042 or FileResponse for CVE-2022-36359) were found in the Zappa codebase. Per the evidence mandate, without a call to the vulnerable API, exploitability is set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64458",
+    "Location": "Django:3.0.7",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa provide integration with Django via zappa/ext/django_zappa.py (calling django.setup()). However, after a thorough search, no explicit calls to the vulnerable Django functions (e.g., order_by() for CVE-2021-35042 or FileResponse for CVE-2022-36359) were found in the Zappa codebase. Per the evidence mandate, without a call to the vulnerable API, exploitability is set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21860",
+    "Location": "Werkzeug:0.16.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa uses Werkzeug for WSGI wrapping (Response objects), but does not call vulnerable functions like url_fix() or parse_options_header() explicitly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27205",
+    "Location": "Flask:0.12",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa supports Flask apps, but does not call any vulnerable Flask APIs in its own source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-27jp-wm6q-gp25",
+    "Location": "sqlparse:0.3.1",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "sqlparse is not called in the Zappa source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32681",
+    "Location": "requests:2.23.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "While Zappa uses requests/botocore (which use urllib3), there are no explicit calls to the vulnerable urllib3/requests functions in the Zappa codebase itself. Usage is internal to vendor libraries.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-31542",
+    "Location": "Django:3.0.7",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa provide integration with Django via zappa/ext/django_zappa.py (calling django.setup()). However, after a thorough search, no explicit calls to the vulnerable Django functions (e.g., order_by() for CVE-2021-35042 or FileResponse for CVE-2022-36359) were found in the Zappa codebase. Per the evidence mandate, without a call to the vulnerable API, exploitability is set to 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-49766",
+    "Location": "Werkzeug:0.16.1",
+    "Original_exploitability": "50%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa uses Werkzeug for WSGI wrapping (Response objects), but does not call vulnerable functions like url_fix() or parse_options_header() explicitly.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-30861",
+    "Location": "Flask:0.12",
+    "Original_exploitability": "0%",
+    "Exploitability": "1.0%",
+    "Exploitability_explanation": "Zappa supports Flask apps, but does not call any vulnerable Flask APIs in its own source code.",
+    "Assessment": "Correct"
+  }
+]

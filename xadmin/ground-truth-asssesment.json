@@ -1,0 +1,266 @@
+[
+  {
+    "Vulnerability": "CVE-2015-9251",
+    "Location": "xadmin/static/xadmin/vendor/jquery/jquery.js",
+    "Original_exploitability": "80%",
+    "Exploitability": "65%",
+    "Exploitability_explanation": "Confirmed multiple usage of $.ajax, $.get, $.post across the codebase (e.g., xadmin.plugin.editable.js, xadmin.plugin.details.js). Version 2.0.0 is vulnerable. API calls confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11023",
+    "Location": "xadmin/static/xadmin/vendor/jquery/jquery.js",
+    "Original_exploitability": "15%",
+    "Exploitability": "40%",
+    "Exploitability_explanation": "Extensive usage of .html(), .append(), .prepend() with dynamic content (e.g., form_html, data.title). Version 2.0.0 is vulnerable. Difference > 20%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-41182",
+    "Location": "xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.core.js",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "xadmin uses bootstrap-datepicker, not jquery-ui datepicker. The jquery-ui datepicker component is not included in xstatic/vendors.py or JS files. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-41182",
+    "Location": "xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.core.js",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "API call not confirmed as xadmin uses bootstrap-datepicker.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-36359",
+    "Location": "xadmin/views/edit.py",
+    "Original_exploitability": "25%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "FileField usage confirmed in views/edit.py. Django 1.9.0 is vulnerable to malformed Content-Disposition headers for filenames with spaces.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64459",
+    "Location": "xadmin/filters.py",
+    "Original_exploitability": "25%",
+    "Exploitability": "75%",
+    "Exploitability_explanation": "Critical SQLi in Django ORM via internal parameters. xadmin/filters.py extensively passes request-derived dictionaries (**params) directly to filter(). Highly exploitable in this version. Difference > 20%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-57833",
+    "Location": "Django:1.9.0",
+    "Original_exploitability": "25%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Vulnerability affects FilteredRelation, which was introduced in Django 2.0. Django 1.9.0 does not have this feature. API call not confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-11078",
+    "Location": "httplib2:0.9.2",
+    "Original_exploitability": "15%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "httplib2 is in requirements.txt but no usage was found in the xadmin codebase. Status: not_confirmed (internal/vendor usage only).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21240",
+    "Location": "httplib2:0.9.2",
+    "Original_exploitability": "25%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "No usage of httplib2 found in the codebase. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-31160",
+    "Location": "xadmin/static/xadmin/vendor/jquery-ui/",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "checkboxradio widget not used in JS files. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-7103",
+    "Location": "xadmin/static/xadmin/vendor/jquery-ui/",
+    "Original_exploitability": "5%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "dialog widget not used in JS files. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33203",
+    "Location": "Django:1.9.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "Potential directory traversal in Admindisplay/FileSystemStorage. General risk for Django 1.9.0. Assessment matches.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-19844",
+    "Location": "xadmin/plugins/passwords.py",
+    "Original_exploitability": "85%",
+    "Exploitability": "85%",
+    "Exploitability_explanation": "Usage of Django auth password reset views confirmed in xadmin/plugins/passwords.py. Highly exploitable in 1.9.0 due to email case sensitivity.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-7401",
+    "Location": "Django:1.9.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "GZipMiddleware usage not found in codebase. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-9013",
+    "Location": "Django:1.9.0",
+    "Original_exploitability": "1%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "User enumeration in django.contrib.auth. API usage confirmed through password reset features. Assessment within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-6186",
+    "Location": "Django:1.9.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "dismissChangeRelatedObjectPopup function not found in use. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-9014",
+    "Location": "Django:1.9.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "DNS rebinding vulnerability in DEBUG mode. Plausible for internal/development environments.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-2512",
+    "Location": "Django:1.9.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "35%",
+    "Exploitability_explanation": "Redirection logic found in plugins/importexport.py. is_safe_url is likely used internally by Django. Diff <= 20%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-7233",
+    "Location": "Django:1.9.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "Open redirect in is_safe_url. Assessment matches.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-2513",
+    "Location": "Django:1.9.0",
+    "Original_exploitability": "80%",
+    "Exploitability": "80%",
+    "Exploitability_explanation": "User enumeration via timing attack in auth. Confirmed usage of auth system.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-7234",
+    "Location": "Django:1.9.0",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "Open redirect via crafted URL. Assessment matches.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2013-2037",
+    "Location": "httplib2:0.9.2",
+    "Original_exploitability": "1%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "No usage of httplib2 found. Assessment within tolerance.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-2048",
+    "Location": "Django:1.9.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "Database password exposure in error pages in DEBUG mode.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-6345",
+    "Location": "setup.py",
+    "Original_exploitability": "50%",
+    "Exploitability": "10%",
+    "Exploitability_explanation": "RCE in setuptools package_index. setup.py exists and uses download_url, but it's a static string, not user-controlled. API exists but vector is incomplete. Difference > 20%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-41184",
+    "Location": "xadmin/static/xadmin/vendor/jquery-ui/",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "selectmenu widget not used. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7471",
+    "Location": "Django:1.9.0",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "StringAgg was introduced in Django 1.10. Django 1.9.0 does not have it. Correct.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47273",
+    "Location": "setuptools:66.1.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "5%",
+    "Exploitability_explanation": "Path traversal in setuptools. API call not confirmed with vulnerable vector.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-40899",
+    "Location": "future:0.15.2",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "ReDoS in future library. confirmed usage in requirements.txt and setup.py.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11358",
+    "Location": "xadmin/static/xadmin/vendor/jquery/jquery.js",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "Prototype pollution in jQuery 2.0.0. API call not confirmed with vulnerable vector.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45231",
+    "Location": "xadmin/plugins/passwords.py",
+    "Original_exploitability": "15%",
+    "Exploitability": "15%",
+    "Exploitability_explanation": "User email enumeration via password reset. Usage confirmed in xadmin/plugins/passwords.py.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64458",
+    "Location": "Django:1.9.0",
+    "Original_exploitability": "96%",
+    "Exploitability": "95%",
+    "Exploitability_explanation": "Windows DoS via Unicode normalization in redirects. confirmed usage of redirects in xadmin running on Windows. API call confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48432",
+    "Location": "Django:1.9.0",
+    "Original_exploitability": "50%",
+    "Exploitability": "50%",
+    "Exploitability_explanation": "Log injection in Django internal response logging. confirmed usage of Django logger.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11022",
+    "Location": "xadmin/static/xadmin/vendor/jquery/jquery.js",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation": "XSS in jQuery 2.0.0. API call not confirmed with vulnerable vector.",
+    "Assessment": "Correct"
+  }
+]

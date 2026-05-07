@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true
+  },
+  "exclude": [
+    "node_modules",
+    "src/**/node_modules",
+    "src/**/**/node_modules",
+    "bin",
+    "assets/wbie"
+  ]
+}

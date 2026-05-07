@@ -1,0 +1,170 @@
+[
+  {
+    "Vulnerability": "CVE-2026-31988",
+    "Location": "yauzl:2.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Search for `getLastModDate` yielded no results in the codebase. As per rules, probability is 0.01 (1%).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2229",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. No explicit WebSocket client usage of undici found in user code paths. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1528",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1526",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-30226",
+    "Location": "devalue:5.6.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Search for `devalue.parse` or `devalue.unflatten` yielded no results. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1525",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2581",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32274",
+    "Location": "black:26.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Black is used as a dev reformatter tool, not as a library in user code paths. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "✅ API call confirmed in `web/src/message_store.ts` etc., but all calls use hardcoded keys. No user-controlled keys satisfy the constraint for prototype pollution. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1527",
+    "Location": "undici:7.22.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Tar library is a transitive Node.js dev dependency. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32597",
+    "Location": "pyjwt:2.11.0",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. `jwt.decode` called in `zerver/views/auth.py:621` on untrusted `token` input from `remote_user_jwt`. Full constraint satisfaction (crit header missing validation) + unverified source. Probability 0.85.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 35,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. No vulnerable usage of the Node.js `tar` library found in active server code paths. Probability 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. No reachable usage of the Node.js `tar` library in production runtime. Probability 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-3449",
+    "Location": "@tootallnate/once:2.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-cwxj-rr6w-m6w7",
+    "Location": "scrapy:2.14.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "✅ API call found in dev tool `documentation_crawler`. Not part of production server runtime. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-mwv9-gp5h-frr4",
+    "Location": "devalue:5.6.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-14158",
+    "Location": "scrapy:2.14.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "✅ API call found in dev tools only. No reachable user-facing entry point in the server runtime. Probability 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:6.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "❌ API call NOT found. Probability 0.01.",
+    "Assessment": "Correct"
+  }
+]

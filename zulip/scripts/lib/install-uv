@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+set -eu
+
+version=0.10.9
+arch="$(uname -m)"
+tarball="uv-$arch-unknown-linux-gnu.tar.gz"
+declare -A sha256=(
+    [aarch64]=cc0c5a8573e7d6d78aecb954e0a62b5c0d18217bb81f1e19363b428c57a9962a
+    [x86_64]=20d79708222611fa540b5c9ed84f352bcd3937740e51aacc0f8b15b271c57594
+)
+
+check_version() {
+    out="$(uv --version)" && [ "$out" = "uv $version" ]
+}
+
+if ! check_version 2>/dev/null; then
+    set -x
+    tmpdir="$(mktemp -d)"
+    trap 'rm -r "$tmpdir"' EXIT
+    cd "$tmpdir"
+    curl -fLO --retry 3 "https://github.com/astral-sh/uv/releases/download/$version/$tarball"
+    sha256sum -c <<<"${sha256[$arch]} $tarball"
+    tar -xzf "$tarball" --no-same-owner --strip-components=1 -C /usr/local/bin "uv-$arch-unknown-linux-gnu"/{uv,uvx}
+    check_version
+fi

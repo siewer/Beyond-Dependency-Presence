@@ -1,0 +1,146 @@
+[
+  {
+    "Vulnerability": "CVE-2025-48889",
+    "Location": "gradio:5.27.0",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "The arbitrary file copy vulnerability in Gradio's flagging feature requires the use of flagging components. The codebase uses gr.Blocks without any flagging callbacks or logging enabled. API not used in active code paths.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-28414",
+    "Location": "gradio:5.27.0",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Severe path traversal vulnerability on Windows using Python 3.13+. The environment is confirmed to be Windows with Python 3.13.12. Gradio 5.27.0 is vulnerable, and the web server is exposed. All constraints are satisfied.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-65106",
+    "Location": "langchain-core:0.3.49",
+    "Original_exploitability": 15,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Template injection in prompt templates. The application uses hardcoded templates in deep_research_agent.py and does not accept untrusted template strings from users, only variable inputs. High probability cap due to hardcoded templates.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-68664",
+    "Location": "langchain-core:0.3.49",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Serialization injection via langchain_core.load.dump. No direct calls to vulnerable serialization APIs found. JSON serialization is used for data objects but not for whole chains or untrusted LangChain objects.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-28416",
+    "Location": "gradio:5.27.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "SSRF via gr.load(). No usage of gr.load() for loading external Gradio Spaces was found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-53366",
+    "Location": "mcp:1.6.0",
+    "Original_exploitability": 15,
+    "Exploitability": 40,
+    "Exploitability_explanation": "DoS via malformed MCP requests. The application implements an MCP client that connects to user-defined external servers. A malicious server could crash the client session. Version is vulnerable and usage is confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66416",
+    "Location": "mcp:1.6.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "DNS rebinding on HTTP-based MCP servers. The application only implements an MCP client, not a server. No usage of server-side HTTP/SSE transport was found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27167",
+    "Location": "gradio:5.27.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Information disclosure of Hugging Face tokens via OAuth. No usage of gr.LoginButton or other Gradio OAuth components found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-28415",
+    "Location": "gradio:5.27.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Open Redirect via OAuth target URL. No usage of Gradio OAuth components or flows found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-28277",
+    "Location": "langgraph:0.3.34",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "RCE via SQLite Checkpoint insecure deserialization. While langgraph is used, no checkpointer (SQLite or otherwise) is configured in the graph compilation. Reaching the vulnerable code path is not possible with current config.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5320",
+    "Location": "gradio:5.27.0",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "CORS Origin Validation Bypass. This affects the default Gradio CORS handler used when launching the web UI. Standard deployment is affected.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26013",
+    "Location": "langchain-core:0.3.49",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "SSRF in get_num_tokens_from_messages(). This specific method is not called in the codebase. Token counting is handled by the underlying LLM provider or not explicitly verified with this method.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27794",
+    "Location": "langgraph-checkpoint:2.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "RCE in node caching layer. No node caching policy or cache backend is configured in the LangGraph setup.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-53365",
+    "Location": "mcp:1.6.0",
+    "Original_exploitability": 15,
+    "Exploitability": 40,
+    "Exploitability_explanation": "DoS via streamable HTTP sessions in MCP. The client connects to external servers using various transports including potentially SSE/HTTP. Malicious servers can trigger client-side crashes.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-6984",
+    "Location": "langchain-community:0.3.20",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "XXE in EverNoteLoader. No usage of EverNoteLoader found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25990",
+    "Location": "pillow:11.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Out-of-bounds write via PSD images. The application does not load or process untrusted PSD files using Pillow. Screenshots are generated internally by Playwright.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6985",
+    "Location": "langchain-text-splitters:0.3.7",
+    "Original_exploitability": 40,
+    "Exploitability": 2,
+    "Exploitability_explanation": "XXE in HTMLSectionSplitter via XSLT. No usage of HTMLSectionSplitter found in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-64439",
+    "Location": "langgraph-checkpoint:2.1.2",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "RCE in JsonPlusSerializer fallback. No checkpointing is currently enabled in the LangGraph graph configuration, so this serializer is not active for persisting state.",
+    "Assessment": "Correct"
+  }
+]

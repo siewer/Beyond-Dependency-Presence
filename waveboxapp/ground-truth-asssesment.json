@@ -1,0 +1,1378 @@
+[
+  {
+    "Vulnerability": "CVE-2022-36067",
+    "Location": "vm2:3.8.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Vulnerable function `prepareStackTrace` is not called in the host codebase. Evidence requirement not met.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-30547",
+    "Location": "vm2:3.8.2",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "No confirmed call site for vulnerable internal function in host code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-29017",
+    "Location": "vm2:3.8.2",
+    "Original_exploitability": 75,
+    "Exploitability": 5,
+    "Exploitability_explanation": "No confirmed call site found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-32804",
+    "Location": "tar:4.4.8",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32314",
+    "Location": "vm2:3.8.2",
+    "Original_exploitability": 80,
+    "Exploitability": 5,
+    "Exploitability_explanation": "No confirmed call site.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-37903",
+    "Location": "vm2:3.8.2",
+    "Original_exploitability": 97,
+    "Exploitability": 5,
+    "Exploitability_explanation": "No confirmed call site.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:0.5.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Build-time tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:1.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Build-time tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:2.1.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Build-time tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4367",
+    "Location": "pdfjs-dist:2.0.943",
+    "Original_exploitability": 65,
+    "Exploitability": 75,
+    "Exploitability_explanation": "Confirmed explicit call to vulnerable PDFJS engine.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-29199",
+    "Location": "vm2:3.8.2",
+    "Original_exploitability": 70,
+    "Exploitability": 5,
+    "Exploitability_explanation": "No confirmed call site.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-5217",
+    "Location": "electron:4.1.4",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Kept to original score as host calls are internal.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37599",
+    "Location": "loader-utils:1.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Build-time utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23362",
+    "Location": "hosted-git-info:2.7.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3807",
+    "Location": "ansi-regex:3.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Dev dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-28500",
+    "Location": "lodash:4.17.14",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No explicit usage of prototype pollution APIs found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "@babel/traverse:7.5.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Dev package.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.14",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No confirmed usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:4.11.8",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Internal math lib.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:4.4.8",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-vjh7-7g9h-fjfh",
+    "Location": "elliptic:6.5.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Internal crypto.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-xv2f-5jw4-v95m",
+    "Location": "fsevents:1.2.9",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "OS-specific internal utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-6chw-6frg-f759",
+    "Location": "acorn:5.7.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Build tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37601",
+    "Location": "loader-utils:0.2.17",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Build tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37601",
+    "Location": "loader-utils:1.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Build tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-37466",
+    "Location": "vm2:3.8.2",
+    "Original_exploitability": 96,
+    "Exploitability": 5,
+    "Exploitability_explanation": "No confirmed call site in host code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:2.4.3",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7753",
+    "Location": "trim:0.0.1",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "String utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25858",
+    "Location": "terser:4.1.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Build utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-28498",
+    "Location": "elliptic:6.5.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Internal crypto.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7660",
+    "Location": "serialize-javascript:2.1.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Internal utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash:4.17.14",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No confirmed usage of vulnerable API.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash:4.17.15",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No confirmed usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash.pick:4.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No confirmed usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23449",
+    "Location": "vm2:3.8.2",
+    "Original_exploitability": 1,
+    "Exploitability": 5,
+    "Exploitability_explanation": "No confirmed call site.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-27290",
+    "Location": "ssri:6.0.1",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Build tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7793",
+    "Location": "ua-parser-js:0.7.20",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Telemetry utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:6.5.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Application uses builtin `querystring`, `qs` package is unused.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-39299",
+    "Location": "xmldom:0.1.27",
+    "Original_exploitability": 15,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Confirmed explicit call to `DOMParser.parseFromString` in Gmail assets.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-39353",
+    "Location": "xmldom:0.1.27",
+    "Original_exploitability": 0,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Confirmed explicit call site found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-8hg5-6f92-56mv",
+    "Location": "xmldom:0.1.27",
+    "Original_exploitability": 0,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Confirmed explicit call site found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-xv9j-vggv-wv2c",
+    "Location": "xmldom:0.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Unused version.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-32757",
+    "Location": "jszip:3.2.1",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "No confirmed usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-3918",
+    "Location": "json-schema:0.2.3",
+    "Original_exploitability": 5,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Dev dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23555",
+    "Location": "vm2:3.8.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "No confirmed call site in host code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-33623",
+    "Location": "trim-newlines:1.0.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Dev dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42461",
+    "Location": "elliptic:6.5.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Internal math lib.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-12905",
+    "Location": "tar-fs:1.16.3",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Internal utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-39353",
+    "Location": "xmldom:0.1.27",
+    "Original_exploitability": 1,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Confirmed explicit call found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7733",
+    "Location": "ua-parser-js:0.7.20",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Telemetry tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-48285",
+    "Location": "jszip:3.2.2",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "No confirmed call site.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:1.2.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36604",
+    "Location": "hoek:6.1.3",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37603",
+    "Location": "loader-utils:1.2.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Build tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-12265",
+    "Location": "decompress:4.2.0",
+    "Original_exploitability": 97,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Confirmed explicit call in `CRExtensionDownloader.js`.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8244",
+    "Location": "bl:1.2.2",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Internal utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:4.17.14",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No confirmed usage of vulnerable API.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:4.17.15",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "No confirmed usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0235",
+    "Location": "node-fetch:1.7.3",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive; app uses builtin IPC fetch.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-27088",
+    "Location": "es5-ext:0.10.50",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Polyfill tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-43138",
+    "Location": "async:2.6.1",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Library tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-26272",
+    "Location": "electron:4.1.4",
+    "Original_exploitability": 65,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Low risk; keeps close to original SCA findings.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25893",
+    "Location": "vm2:3.8.2",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "No confirmed call site in host code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-38900",
+    "Location": "decode-uri-component:0.2.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Internal tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.7.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.7.1",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "Confirmed explicit usage of `semver.satisfies` and comparison APIs in Platform.js and account stores.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:6.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Version utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25851",
+    "Location": "jpeg-js:0.3.5",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Internal media tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45311",
+    "Location": "fsevents:1.2.9",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Internal OS tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-46234",
+    "Location": "browserify-sign:4.0.4",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Internal crypto utility.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7774",
+    "Location": "y18n:4.0.0",
+    "Original_exploitability": 8,
+    "Exploitability": 2,
+    "Exploitability_explanation": "i18n tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0355",
+    "Location": "simple-get:2.8.1",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Transitive network utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library glob tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-4077",
+    "Location": "electron:4.1.4",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Consistent with original.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.88.0",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Transitive networking.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32313",
+    "Location": "vm2:3.8.2",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "No confirmed call site in code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23362",
+    "Location": "hosted-git-info:2.8.4",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-32796",
+    "Location": "xmldom:0.1.27",
+    "Original_exploitability": 15,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Confirmed explicit call site.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-21718",
+    "Location": "electron:4.1.4",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Consistent with original.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21366",
+    "Location": "xmldom:0.1.27",
+    "Original_exploitability": 1,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Confirmed explicit call site.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-29257",
+    "Location": "electron:4.1.4",
+    "Original_exploitability": 65,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Consistent with low risk findings.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-28863",
+    "Location": "tar:4.4.8",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8175",
+    "Location": "jpeg-js:0.3.5",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Internal media tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-37713",
+    "Location": "tar:4.4.8",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-39184",
+    "Location": "electron:4.1.4",
+    "Original_exploitability": 65,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Maintains low risk profile.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7788",
+    "Location": "ini:1.3.5",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Config tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-29247",
+    "Location": "electron:4.1.4",
+    "Original_exploitability": 40,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Consistent with original.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-48387",
+    "Location": "tar-fs:1.16.3",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-27292",
+    "Location": "ua-parser-js:0.7.20",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Telemetry utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:6.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Transitive validator.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:6.10.2",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Transitive validator.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23343",
+    "Location": "path-parse:1.0.6",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Path library tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7760",
+    "Location": "codemirror:5.48.0",
+    "Original_exploitability": 50,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Confirmed explicit usage throughout the project.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-29060",
+    "Location": "color-string:1.5.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Internal color tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23364",
+    "Location": "browserslist:4.6.4",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Dev tool utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.2",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Transitive glob tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:2.3.3",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Network utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3807",
+    "Location": "ansi-regex:4.1.0",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Dev dependency tool.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-4075",
+    "Location": "electron:4.1.4",
+    "Original_exploitability": 35,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Maintains low risk profile.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23368",
+    "Location": "postcss:7.0.17",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Build tool utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-13822",
+    "Location": "elliptic:6.5.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Internal math lib.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-20149",
+    "Location": "kind-of:6.0.2",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Type check tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7598",
+    "Location": "minimist:0.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library utility tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7598",
+    "Location": "minimist:1.2.0",
+    "Original_exploitability": 85,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Explicit usage of vulnerable API not found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-28500",
+    "Location": "lodash:4.17.15",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Unused library version.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-0842",
+    "Location": "xml2js:0.4.19",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Transitive parser tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15096",
+    "Location": "electron:4.1.4",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Consistent with original.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-32803",
+    "Location": "tar:4.4.8",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6545",
+    "Location": "pbkdf2:3.0.17",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Internal crypto utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55164",
+    "Location": "content-security-policy-parser:0.2.0",
+    "Original_exploitability": 96,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Confirmed explicit usage in app/package.json.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7789",
+    "Location": "node-notifier:5.4.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Dev dependency utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-48949",
+    "Location": "elliptic:6.5.0",
+    "Original_exploitability": 1,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Internal crypto tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:7.0.17",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Build tool utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3803",
+    "Location": "nth-check:1.0.2",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "CSS parser tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.5.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Unused npm package.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.7.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Unused npm package.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-9287",
+    "Location": "cipher-base:1.0.4",
+    "Original_exploitability": 5,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Internal crypto.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-37701",
+    "Location": "tar:4.4.8",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "@babel/traverse:7.5.5",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Dev dependency tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42460",
+    "Location": "elliptic:6.5.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Internal crypto utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-29198",
+    "Location": "electron:4.1.4",
+    "Original_exploitability": 8,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Consistent with original.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/helpers:7.5.4",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Dev package utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Polyfill tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.5.4",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Polyfill tool utility.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23413",
+    "Location": "jszip:3.2.2",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "No confirmed usage site.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-37712",
+    "Location": "tar:4.4.8",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7608",
+    "Location": "yargs-parser:13.1.1",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Arg parser utility tool.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.10",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library glob tool.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-44402",
+    "Location": "electron:4.1.4",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Maintains low risk profile.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-4076",
+    "Location": "electron:4.1.4",
+    "Original_exploitability": 35,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Maintains low risk profile.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-31988",
+    "Location": "yauzl:2.10.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Internal zip tool utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31988",
+    "Location": "yauzl:2.4.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Internal zip tool utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-55565",
+    "Location": "nanoid:1.3.4",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "ID generator tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-55565",
+    "Location": "nanoid:2.0.3",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "ID generator tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-48948",
+    "Location": "elliptic:6.5.0",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Internal math/crypto tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:5.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Process spawning tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:6.0.5",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Process spawning tool utility.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "path-to-regexp:1.7.0",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "URL router tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42459",
+    "Location": "elliptic:6.5.0",
+    "Original_exploitability": 1,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Internal crypto tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-36077",
+    "Location": "electron:4.1.4",
+    "Original_exploitability": 80,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Consistent with low risk findings.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-22709",
+    "Location": "vm2:3.8.2",
+    "Original_exploitability": 65,
+    "Exploitability": 5,
+    "Exploitability_explanation": "No confirmed call site in code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library tool utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-9288",
+    "Location": "sha.js:2.4.11",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Internal crypto utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23382",
+    "Location": "postcss:7.0.17",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Build tool utility.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:3.2.6",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Logging tool usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:4.1.1",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "Confirmed explicit usage for component debugging and logging (mailboxes scene).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-57352",
+    "Location": "min-document:2.19.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Dev dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.10.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Validation tool utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.10.2",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Validation tool utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6547",
+    "Location": "pbkdf2:3.0.17",
+    "Original_exploitability": 5,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Internal crypto tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-59343",
+    "Location": "tar-fs:1.16.3",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive tool utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.0.33",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Dev utility tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-39956",
+    "Location": "electron:4.1.4",
+    "Original_exploitability": 80,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Maintains low risk profile.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.15",
+    "Original_exploitability": 1,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Unused library version.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:4.4.8",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive tool utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.7.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Unused npm package.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:4.4.8",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive tool utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.13.1",
+    "Original_exploitability": 50,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Parser tool utility.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-46993",
+    "Location": "electron:4.1.4",
+    "Original_exploitability": 82,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Consistent with low risk Findings.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library glob tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:4.4.8",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive tool utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:4.4.8",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive tool utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:4.4.8",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Transitive tool utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.5.0",
+    "Original_exploitability": 1,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Internal crypto utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55305",
+    "Location": "electron:4.1.4",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Consistent with original.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-6chw-6frg-f759",
+    "Location": "acorn:6.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Build tool utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:2.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Internal utility tool.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-x565-32qp-m3vf",
+    "Location": "phin:2.9.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Transitive package utility.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24785",
+    "Location": "moment:2.24.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerable API `moment.locale()` is not explicitly called by the host codebase. Score reverted to match original assessment based on lack of trigger evidence.",
+    "Assessment": "Correct"
+  }
+]
