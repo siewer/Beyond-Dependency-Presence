@@ -1,0 +1,74 @@
+[
+  {
+    "Vulnerability": "CVE-2024-35242",
+    "Location": "composer/composer:src/Composer/Downloader/GitDownloader.php",
+    "Original_exploitability": 96,
+    "Exploitability": 96,
+    "Exploitability_explanation": "✅ API call confirmed. The `GitDownloader::doInstall` method (line 115) and `doUpdate` call git commands like `clone` and `fetch` which are susceptible to command injection via malicious branch names or URLs in vulnerable versions. All constraints for remote execution are satisfied in the context of package installation.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-29472",
+    "Location": "composer/composer:src/Composer/Repository/Vcs/HgDriver.php",
+    "Original_exploitability": 94,
+    "Exploitability": 94,
+    "Exploitability_explanation": "✅ API call confirmed. `HgDriver::getFileContent` (line 134) and `HgDriver::initialize` (line 76) call `hg clone` and `hg cat`. Malicious Mercurial URLs can lead to command injection. Given the version is assumed vulnerable, the lack of sanitization leads to high exploitability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-43655",
+    "Location": "composer/composer:src/Composer/Compiler.php",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "The vulnerability pertains to the execution of `composer.phar` when exposed on a web server. While `Compiler.php` (line 84) creates the phar and `Phar::mapPhar` is present in the stub, exploitability depends entirely on server configuration (register_argc_argv). No active code vector triggers this within the application logic itself. Score 15% matches 'Configuration Only' with no active vector usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-8371",
+    "Location": "composer/composer:src/Composer/Cache.php",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Cache poisoning via file path manipulation. `Cache::read` (line 121) and `Cache::write` (line 138) handle cache files. Current versions use restrictive regex `[^a-z0-9._]` (line 124), but assuming a vulnerable version without this check, the probability remains low (15%) as it requires specific timing or control over the cache directory environment.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-41116",
+    "Location": "composer/composer:src/Composer/Command/HomeCommand.php",
+    "Original_exploitability": 94,
+    "Exploitability": 94,
+    "Exploitability_explanation": "✅ API call confirmed. `HomeCommand::openBrowser` (line 127) explicitly calls `explorer $url` on Windows. If a malicious package defines a homepage URL with injection parameters, it leads to command execution when the user runs `composer home`. High exploitability due to direct OS command call with external input.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-35241",
+    "Location": "composer/composer:src/Composer/Downloader/GitDownloader.php",
+    "Original_exploitability": 80,
+    "Exploitability": 80,
+    "Exploitability_explanation": "✅ API call confirmed. `GitDownloader::getLocalChanges` (line 221) calls `git status`. Similar to CVE-2024-35242, malicious branch names starting with hyphens can be interpreted as arguments. Strong evidence of usage in common workflows like status checks.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24828",
+    "Location": "composer/composer:src/Composer/Repository/Vcs/GitDriver.php",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Parameter injection in `getFileContent`. Code search confirms the usage of `$identifier` in git commands (line 147), but explicit mitigations `if ($identifier[0] === '-')` are present in `GitDriver` (line 203) and `HgDriver` (line 202). Score 15% reflects 'Complete mitigations'/not reachable path in the presence of these checks.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-24821",
+    "Location": "composer/composer:src/Composer/Autoload/AutoloadGenerator.php",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Local code execution via manipulation of files in `vendor/composer/`. `AutoloadGenerator::generateInstalledVersions` (line 394) defines the inclusion of `InstalledVersions.php`. While the mechanism exists, it requires local filesystem write access to the vendor directory, warranting a lower 15% exploitability score.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-67746",
+    "Location": "composer/composer:src/Composer/IO/ConsoleIO.php",
+    "Original_exploitability": 85,
+    "Exploitability": 85,
+    "Exploitability_explanation": "✅ API call confirmed. `ConsoleIO::write` (line 124) and `writeError` (line 134) output data to the terminal. If unsterilized (assuming vulnerable version without the `sanitize` call at line 364), ANSI control characters from malicious package metadata can be used to execute terminal commands or spoof output. Reachability is high as this occurs during common output operations.",
+    "Assessment": "Correct"
+  }
+]

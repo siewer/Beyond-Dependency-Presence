@@ -1,0 +1,83 @@
+[
+    {
+        "Severity": "HIGH",
+        "Name": "CVE-2024-35242",
+        "Status": "EXISTING",
+        "Exploitability": 96,
+        "Last Seen": "2026-03-17T06:23:56.335Z",
+        "Source": "SCA",
+        "Location": "composer\/composer:"
+    },
+    {
+        "Severity": "HIGH",
+        "Name": "CVE-2021-29472",
+        "Status": "EXISTING",
+        "Exploitability": 94,
+        "Last Seen": "2026-03-17T06:23:56.337Z",
+        "Source": "SCA",
+        "Location": "composer\/composer:"
+    },
+    {
+        "Severity": "HIGH",
+        "Name": "CVE-2023-43655",
+        "Status": "EXISTING",
+        "Exploitability": 15,
+        "Last Seen": "2026-03-17T06:23:56.337Z",
+        "Source": "SCA",
+        "Location": "composer\/composer:"
+    },
+    {
+        "Severity": "HIGH",
+        "Name": "CVE-2015-8371",
+        "Status": "EXISTING",
+        "Exploitability": 15,
+        "Last Seen": "2026-03-17T06:23:56.338Z",
+        "Source": "SCA",
+        "Location": "composer\/composer:"
+    },
+    {
+        "Severity": "HIGH",
+        "Name": "CVE-2021-41116",
+        "Status": "EXISTING",
+        "Exploitability": 94,
+        "Last Seen": "2026-03-17T06:23:56.339Z",
+        "Source": "SCA",
+        "Location": "composer\/composer:"
+    },
+    {
+        "Severity": "HIGH",
+        "Name": "CVE-2024-35241",
+        "Status": "EXISTING",
+        "Exploitability": 80,
+        "Last Seen": "2026-03-17T06:23:56.340Z",
+        "Source": "SCA",
+        "Location": "composer\/composer:"
+    },
+    {
+        "Severity": "HIGH",
+        "Name": "CVE-2022-24828",
+        "Status": "EXISTING",
+        "Exploitability": 15,
+        "Last Seen": "2026-03-17T06:23:56.340Z",
+        "Source": "SCA",
+        "Location": "composer\/composer:"
+    },
+    {
+        "Severity": "HIGH",
+        "Name": "CVE-2024-24821",
+        "Status": "EXISTING",
+        "Exploitability": 15,
+        "Last Seen": "2026-03-17T06:23:56.341Z",
+        "Source": "SCA",
+        "Location": "composer\/composer:"
+    },
+    {
+        "Severity": "LOW",
+        "Name": "CVE-2025-67746",
+        "Status": "EXISTING",
+        "Exploitability": 85,
+        "Last Seen": "2026-03-17T06:23:56.341Z",
+        "Source": "SCA",
+        "Location": "composer\/composer:"
+    }
+]
