@@ -1,0 +1,906 @@
+[
+  {
+    "Vulnerability": "CVE-2025-29927",
+    "Location": "tools/hedgebox-dummy/package.json",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version 14.0.0 is vulnerable, but search for middleware.ts returned no results in this demo app. Main app uses Vite. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-51479",
+    "Location": "tools/hedgebox-dummy/package.json",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version 14.0.0 is vulnerable, but no middleware or i18n usage was found in this demo app. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-46982",
+    "Location": "tools/hedgebox-dummy/package.json",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version 14.0.0 is affected, but this app uses the App Router, and the vulnerability specifically affects the Pages Router with non-dynamic SSR routes.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-34351",
+    "Location": "tools/hedgebox-dummy/package.json",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Version 14.0.0 is vulnerable. No Server Actions with redirect() found in the demo app's src/app. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-j965-2qgj-vjmq",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "aws-sdk v2 is end-of-support. No direct usage found in the codebase. Likely a transitive dependency of a build tool. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-rhfx-m35p-ff5j",
+    "Location": "rust/Cargo.lock",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "lru@0.12.5 is vulnerable. However, no usage of IterMut (the vulnerable API) was found in the PostHog Rust codebase. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29415",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ip@2.0.0 is vulnerable. No usage of isPublic, isPrivate, or isLoopback found in the codebase. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47068",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "rollup@2.79.1 is vulnerable. PostHog primarily uses esbuild. Rollup is a transitive build-time dependency and not part of the production runtime XSS vector.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29180",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "webpack-dev-middleware@6.1.1 is vulnerable. It is used in dev/testing environments (transitive) and not exposed in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45590",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "body-parser@1.20.1 is vulnerable. No direct usage of bodyParser found. Used transitively by express in internal services. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43788",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "webpack@5.88.2 is a transitive dev dependency (Storybook). Not part of the production runtime path. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-12905",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "tar-fs@2.1.1 is present in the lock file but no direct usage was found in the codebase. Likely a transitive build tool dependency. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-33883",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ejs@3.1.9 is present but no explicit calls to ejs.render or ejs.compile were found. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64439",
+    "Location": "uv.lock",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "langgraph-checkpoint@2.0.26 is vulnerable. Explicit usage of JsonPlusSerializer confirmed in ee/hogai/django_checkpoint/checkpointer.py. API call confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Rollup path traversal is a build-time vulnerability and does not affect the production runtime in this context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "Rollup path traversal is a build-time vulnerability and does not affect the production runtime in this context. Version 4.52.4.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "semver@5.7.1 is used extensively but no evidence of usage on user-provided range strings was found. ReDoS risk is minimal.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-37890",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "ws@8.9.0 is present. No explicit creation of ws servers (ws.Server) found in the JS codebase. Keeping original score as baseline.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27611",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "base-x@3.0.10 is a transitive dependency with no direct usage found in the codebase. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43800",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "serve-static@1.15.0 is used transitively via express in internal scripts. No public exposure of vulnerable redirect functionality found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-48631",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "@adobe/css-tools@4.0.1 is vulnerable to ReDoS. No explicit calls to the parser with user-provided CSS found in the codebase. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-42282",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ip@2.0.0 is vulnerable. isPublic() false positive in SurveyStatsSummary.tsx (local variable name only). No actual usage found. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-48387",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "tar-fs@2.1.1 is present in lock file but no direct usage was found. Likely a transitive dependency of build tools. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27794",
+    "Location": "uv.lock",
+    "Original_exploitability": 0,
+    "Exploitability": 50,
+    "Exploitability_explanation": "langgraph-checkpoint@2.0.26 is vulnerable. Explicit usage of JsonPlusSerializer (pickle fallback) confirmed in ee/hogai/django_checkpoint/checkpointer.py. API call confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-56332",
+    "Location": "tools/hedgebox-dummy/package.json",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "next@14.0.0 is vulnerable. No Next.js Server Actions ('use server') found in the codebase. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "braces@3.0.2 is vulnerable to memory exhaustion. No explicit calls to braces() parser found in application code. Used transitively in build tools. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21535",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "markdown-to-jsx@7.3.2 is vulnerable to XSS. No direct usage found, but keeping original score as baseline for transitive risk.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31812",
+    "Location": "rust/Cargo.lock",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "quinn-proto is a transitive dependency. No direct usage or QUIC server implementation found in the Rust source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26364",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "@adobe/css-tools@4.0.1 is vulnerable. No explicit usage found in source code. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52798",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "path-to-regexp@0.1.7 is vulnerable to ReDoS. No explicit calls to pathToRegexp with user-controlled input patterns found. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "postcss@7.0.39 is vulnerable. Used for build-time transpilation. No evidence of parsing untrusted user-provided CSS in production. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "qs@6.11.0 is vulnerable to DoS. Explicit usage in frontend for query string parsing confirmed. Impact is limited to client-side crash. Keeping score low.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "qs@6.14.0 is vulnerable. Used for URL parameter parsing in the frontend. API call confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "qs@6.9.7 is vulnerable. Used for query string parsing in the frontend. API call confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-55173",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "next@14.0.0 is vulnerable. No next.config.js with images.domains or remotePatterns found in the production app. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "frontend/package.json",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "@babel/runtime@7.24.0 is vulnerable to ReDoS in polyfills. No direct usage on untrusted strings found. Risk is secondary/transitive.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58754",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "axios@1.9.0 is vulnerable to DoS via data: URIs. No explicit calls found in the codebase (search in nodejs and frontend src returned no results).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3730",
+    "Location": "uv.lock",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "torch@2.7.1 is vulnerable. No usage of ctc_loss found in the Python codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "micromatch@4.0.5 is vulnerable. Used transitively in build tools. No explicit calls found in the application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14874",
+    "Location": "nodejs/package.json",
+    "Original_exploitability": 0,
+    "Exploitability": 50,
+    "Exploitability_explanation": "nodemailer@7.0.5 is vulnerable to infinite recursion. Explicit usage for CDP email sending in email.service.ts confirmed. Email addresses can be user-controlled. API call confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-29041",
+    "Location": "nodejs/package.json",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "express@4.18.2 is vulnerable. No explicit res.redirect or res.location with user-controlled input confirmed in the nodejs application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47764",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "cookie@0.4.2 is vulnerable. Transitive dependency via express. No explicit usage on untrusted input confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47764",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 25,
+    "Exploitability": 5,
+    "Exploitability_explanation": "cookie@0.5.0 is vulnerable. Transitive dependency. No explicit usage on untrusted input confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43799",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "send@0.18.0 is vulnerable. Transitive dependency via express. No explicit usage on untrusted paths confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-12735",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "expr-eval@2.0.2 is vulnerable to RCE. No explicit usage of evaluate() found in the frontend source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31988",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "yauzl@2.10.0 is vulnerable to DoS. Only found in lock files. No explicit ZIP parsing logic found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-67221",
+    "Location": "pyproject.toml",
+    "Original_exploitability": 0,
+    "Exploitability": 50,
+    "Exploitability_explanation": "orjson@3.11.4 is vulnerable to recursion limit DoS. Explicit usage for event serialization in posthog/utils.py confirmed. Reachable via untrusted nested properties. Incorrect assessment (original 0).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-30952",
+    "Location": "nodejs/package.json",
+    "Original_exploitability": 0,
+    "Exploitability": 50,
+    "Exploitability_explanation": "liquidjs@10.21.1 is vulnerable to path traversal. Explicit usage for rendering user-provided templates in nodejs/src/cdp/utils/liquid.ts confirmed. Incorrect assessment (original 0).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "cross-spawn@7.0.3 is vulnerable to ReDoS. Only found in lock files. No explicit usage on untrusted large strings confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2229",
+    "Location": "nodejs/package.json",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "undici@7.18.2 is vulnerable. Only found in lock files/package.json. No explicit WebSocket usage confirmed in the nodejs application code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2229",
+    "Location": "nodejs/package.json",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "undici@7.8.0 is vulnerable. Only found in lock files/package.json. No explicit WebSocket usage confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29063",
+    "Location": "frontend/package.json",
+    "Original_exploitability": 0,
+    "Exploitability": 25,
+    "Exploitability_explanation": "immutable@4.1.0 is vulnerable to Prototype Pollution. usage in the frontend for state management or mergers confirmed. Reachable via untrusted API data.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "frontend/package.json",
+    "Original_exploitability": 0,
+    "Exploitability": 25,
+    "Exploitability_explanation": "path-to-regexp@0.1.7 is vulnerable to ReDoS. used in the frontend for routing/path matching.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "frontend/package.json",
+    "Original_exploitability": 15,
+    "Exploitability": 25,
+    "Exploitability_explanation": "path-to-regexp@6.2.1 is vulnerable to ReDoS. used in the frontend for routing.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26278",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "fast-xml-parser@4.4.1 is vulnerable to XML Bomb. found in lock files. No explicit XML parsing logic found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26278",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "fast-xml-parser@5.2.5 is vulnerable. Found in lock files. No explicit usage confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26278",
+    "Location": "pnpm-lock.yaml",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "fast-xml-parser@5.3.4 is vulnerable. Found in lock files. No explicit usage confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25537",
+    "Location": "rust/capture-logs/Cargo.toml",
+    "Original_exploitability": 0,
+    "Exploitability": 50,
+    "Exploitability_explanation": "jsonwebtoken (Rust) @ 8.3 is vulnerable to Auth Bypass via type confusion. Explicit usage in rust/capture-logs/src/auth.rs confirmed. Reachable via Authorization header. API call confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "minimatch@10.1.1 is vulnerable to ReDoS. Only found in lock files as a transitive dependency of dev tools. No explicit usage in production code confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "minimatch@3.1.2 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "minimatch@5.1.1 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "minimatch@9.0.3 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "minimatch@9.0.5 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1528",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "undici@6.21.2 is vulnerable to WebSocket DoS. No explicit WebSocket client usage confirmed in production code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1528",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "undici@7.18.2 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1528",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "undici@7.8.0 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-61783",
+    "Location": "posthog/settings/web.py",
+    "Original_exploitability": 15,
+    "Exploitability": 50,
+    "Exploitability_explanation": "social-auth-app-django@5.4.3 is vulnerable to unsafe account association. Configuration in posthog/settings/web.py explicitly includes 'associate_by_email' in the pipeline. Confirmed usage and reachability via SSO login flows.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "minimatch@10.1.1 is vulnerable to ReDoS via extglobs. Found as a transitive dependency. No explicit usage of extglobs with untrusted patterns confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "minimatch@3.1.2 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "minimatch@5.1.1 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "minimatch@9.0.3 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "minimatch@9.0.5 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25896",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "fast-xml-parser@4.4.1 is vulnerable to Entity Encoding Bypass. Not a direct dependency; no explicit usage with processEntities confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25896",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "fast-xml-parser@5.2.5 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25896",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "fast-xml-parser@5.3.4 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69228",
+    "Location": "transitive dependency",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "aiohttp@3.13.2 is vulnerable to memory exhaustion via multipart forms. No explicit Request.post() usage in aiohttp handlers found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1526",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "undici@6.21.2 is vulnerable to WebSocket DoS via permessage-deflate. No explicit WebSocket client usage confirmed in production code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1526",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "undici@7.18.2 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1526",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "undici@7.8.0 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29087",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "@hono/node-server@1.19.9 is vulnerable to Auth Bypass. Not used as a framework for PostHog's own services (only in onboarding docs).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29085",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "hono@4.11.8 is vulnerable to SSE XSS. No streamSSE usage found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-57752",
+    "Location": "transitive dependency",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "next@14.0.0 is vulnerable to Image Optimization Cache Confusion. No next/image optimization usage found in production code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69229",
+    "Location": "transitive dependency",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "aiohttp@3.13.2 is vulnerable to DoS via chunked transfer encoding. request.read() only found in test files.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "transitive dependency",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "glob@10.4.5 CLI is vulnerable to Command Injection. No explicit CLI usage found in package.json scripts.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "glob@11.0.0 CLI is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "flatted@3.3.3 is vulnerable to DoS via unbounded recursion. Found as a transitive dependency. No flatted.parse usage found in production code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-25639",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "axios@1.9.0 is vulnerable to DoS. Found in lock files but no explicit usage confirmed in frontend source code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-59343",
+    "Location": "transitive dependency",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "tar-fs@2.1.1 is vulnerable to symlink bypass. Found as a transitive dependency. No explicit usage for extraction confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1525",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "undici@6.21.2 is vulnerable to Request Smuggling via duplicate headers. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1525",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "undici@7.18.2 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-1525",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "undici@7.8.0 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66418",
+    "Location": "posthog/api/utils.py",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "urllib3@1.26.20 is vulnerable to DoS via decompression chain. Used for security wrappers but not streaming untrusted content in a vulnerable way.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "transitive dependency",
+    "Original_exploitability": 5,
+    "Exploitability": 5,
+    "Exploitability_explanation": "tmp@0.0.33 is vulnerable to arbitrary write. Found as a transitive dependency. No explicit usage confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-53384",
+    "Location": "frontend/@posthog/lemon-ui/package.json",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "tsup@5.12.9 is a build tool. Vulnerability is DOM Clobbering in build output. Low risk to the frontend application itself.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13204",
+    "Location": "transitive dependency",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "expr-eval@2.0.2 is vulnerable to Prototype Pollution. Not a direct dependency; no explicit usage with untrusted patterns confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-2581",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "undici@7.18.2 is vulnerable to DoS via deduplication interceptor. Found as a transitive dependency. No explicit usage confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21441",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "urllib3@1.26.20 is vulnerable to DoS via decompression bomb in redirects. No explicit usage of streaming with untrusted redirects confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21441",
+    "Location": "transitive dependency",
+    "Original_exploitability": 15,
+    "Exploitability": 5,
+    "Exploitability_explanation": "urllib3@2.6.0 is vulnerable. Transitive dependency.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-62518",
+    "Location": "transitive dependency",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "tokio-tar@0.3.1 is vulnerable to PAX header desynchronization. Found in Cargo.lock but not as a direct dependency in Cargo.toml. No explicit usage for untrusted archive extraction confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-59288",
+    "Location": "dev tool",
+    "Original_exploitability": 70,
+    "Exploitability": 5,
+    "Exploitability_explanation": "playwright@1.45.0 has installer RCE risk on macOS. Low risk to the production application. Not used in production as a service.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-5197",
+    "Location": "posthog/temporal/llm_analytics/sentiment/model.py",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "transformers@4.51.3 is used for sentiment analysis but does not call the vulnerable weight-conversion function. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6051",
+    "Location": "posthog/temporal/llm_analytics/sentiment/model.py",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "transformers@4.51.3 is vulnerable to ReDoS. Vulnerable function not used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69226",
+    "Location": "transitive dependency",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "aiohttp@3.13.2 is vulnerable to info disclosure via web.static(). No web.static calls found in the codebase.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-29086",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "hono@4.11.8 is vulnerable to cookie injection. Not found as a direct dependency; no explicit setCookie usage with untrusted domain/path found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6638",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "transformers@4.51.3 is vulnerable to ReDoS. Vulnerable MarianTokenizer method not used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3933",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "transformers@4.51.3 is vulnerable to ReDoS. Vulnerable DonutProcessor method not used.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15599",
+    "Location": "frontend/src/scenes/surveys/utils.ts",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "dompurify@3.2.6 is vulnerable to XSS bypass when output is placed in rawtext elements. Output in PostHog is rendered in standard div/span contexts.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-0540",
+    "Location": "frontend/src/scenes/surveys/utils.ts",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "dompurify@3.2.6 is vulnerable to XSS. Reachable via survey headers but risk is low as output is not placed in rawtext elements.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-0540",
+    "Location": "frontend/src/scenes/surveys/utils.ts",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "dompurify@3.2.7 is vulnerable. Same as above.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-0540",
+    "Location": "frontend/src/scenes/surveys/utils.ts",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "dompurify@3.3.1 is vulnerable. Same as above.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13033",
+    "Location": "nodejs/src/cdp/services/messaging/email.service.ts",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "nodemailer@7.0.5 is vulnerable to misdirection. In PostHog, nodemailer is only used for local debugging (Maildev); production uses SES SDK directly.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-25547",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "@isaacs/brace-expansion@5.0.0 is vulnerable to DoS. Found as a transitive dependency; no explicit usage with untrusted patterns confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-28277",
+    "Location": "transitive dependency",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "langgraph@0.4.10 is vulnerable to RCE. Vulnerable SqliteSaver not used.",
+    "Assessment": "Correct"
+  }
+]

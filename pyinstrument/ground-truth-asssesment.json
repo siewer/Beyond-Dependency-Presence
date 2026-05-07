@@ -1,0 +1,242 @@
+[
+  {
+    "Vulnerability": "CVE-2025-31125",
+    "Location": "vite:5.3.5",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vite dev server is not exposed to the network and is not used in the active user code path (only used for development build).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-30208",
+    "Location": "vite:5.3.5",
+    "Original_exploitability": 65,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vite dev server is not used in any active code path; the application serves pre-built static HTML.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "GHSA-67mh-4wv8-2f99",
+    "Location": "esbuild:0.21.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Esbuild dev server is not used in the production tool; the library only uses pre-built assets.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47068",
+    "Location": "rollup:4.19.2",
+    "Original_exploitability": 25,
+    "Exploitability": 2,
+    "Exploitability_explanation": "iife format is used, but research confirmed no usage of import.meta in the codebase, satisfying 0% of constraints.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-58751",
+    "Location": "vite:5.3.5",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vite dev server/preview server is not used in the user code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-46565",
+    "Location": "vite:5.3.5",
+    "Original_exploitability": 60,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Path traversal requires a running Vite dev server, which is absent in the user exploitation path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-24964",
+    "Location": "vitest:2.0.5",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vitest is a test runner and its API server is not active during normal tool usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45047",
+    "Location": "svelte:4.2.18",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "mXSS vulnerability specific to SSR; pyinstrument uses client-side rendering only.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27901",
+    "Location": "svelte:4.2.18",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Requires SSR and specific bindings (bind:innerText on contenteditable) which are not present in the code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-31486",
+    "Location": "vite:5.3.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vite dev server not used in unreachable code path for end users.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33671",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Picomatch is a transitive dependency of build tools; not present in the runtime bundle (app.js).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "ReDoS in transitive build-time dependency; not reachable in User Code.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27125",
+    "Location": "svelte:4.2.18",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Prototype pollution specific to SSR; project uses client-side rendering.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-32395",
+    "Location": "vite:5.3.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vite dev server not used in the active application code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal build library usage only; not exposed to user input in the final bundle.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33672",
+    "Location": "picomatch:2.3.1",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal build library usage only; no user-controlled glob patterns pass through picomatch at runtime.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-33750",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal build library usage only; not reachable in User Code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal build library usage only; not reachable via active code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-55565",
+    "Location": "nanoid:3.3.7",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Nanoid is a transitive build dependency; research confirmed no usage in the runtime app.js.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-29063",
+    "Location": "immutable:4.3.7",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Immutable.js is a transitive build dependency; not used in the application source.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-45812",
+    "Location": "vite:5.3.5",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "iife format is used, but no dynamic imports or unsanitized HTML were found, meaning key constraints are missing.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27121",
+    "Location": "svelte:4.2.18",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "XSS via spread attributes in SSR; application utilizes client-side rendering only.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Internal build library usage only; not reachable via user-controlled input.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Transitive build-time dependency; not present in the runtime software bundle.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-62522",
+    "Location": "vite:5.3.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Requires active Vite dev server on Windows; dev server is not used in the user code path.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27122",
+    "Location": "svelte:4.2.18",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "HTML injection in svelte:element during SSR; project does not use server-side rendering.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-45811",
+    "Location": "vite:5.3.5",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Arbitrary file read requires running Vite dev server; not reachable by end users.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-24010",
+    "Location": "vite:5.3.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "CORS/WebSocket vulnerability in Vite dev server; server not used in production.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-27606",
+    "Location": "rollup:4.19.2",
+    "Original_exploitability": 15,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Path traversal in Rollup build tool; exploit requires controlling build input/config, which is fixed in pyinstrument.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-58752",
+    "Location": "vite:5.3.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Dev server/preview server not used in normal tool usage.",
+    "Assessment": "Incorrect"
+  }
+]

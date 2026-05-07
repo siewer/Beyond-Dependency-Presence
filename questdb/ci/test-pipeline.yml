@@ -1,0 +1,297 @@
+trigger: none
+
+pr:
+  branches:
+    include:
+      - master
+  drafts: false
+
+variables:
+  QDB_LOG_W_FILE_LOCATION: "$(Build.BinariesDirectory)/tests.log"
+  ARCHIVED_LOGS: "$(Build.ArtifactStagingDirectory)/questdb-$(Build.SourceBranchName)-$(Build.SourceVersion)-$(System.StageAttempt)-$(Agent.OS)-$(jdk).zip"
+  DIFF_COVER_THRESHOLD_PCT: 50
+  excludeTests: ""
+  includeTests: "%regex[.*[^o].class]"
+  MAVEN_CACHE_FOLDER: $(HOME)/.m2/repository
+  MAVEN_OPTS: "-Dmaven.repo.local=$(MAVEN_CACHE_FOLDER) -Xmx3g -XX:+UseParallelGC"
+  MAVEN_RUN_OPTS: "-Dmaven.repo.local=$(MAVEN_CACHE_FOLDER) -Dmaven.resolver.transport=wagon -Dmaven.wagon.httpconnectionManager.ttlSeconds=30 "
+  MAVEN_VERSION: "version"
+  MAVEN_VERSION_OPTION: "Default"
+
+stages:
+  - stage: CheckChanges
+    displayName: "Check Changes"
+    jobs:
+      - template: templates/check-changes-job.yml
+
+  - stage: TriggerEnterpriseCI
+    displayName: "Trigger Enterprise CI"
+    condition: eq(variables['System.PullRequest.IsFork'], 'false')
+    dependsOn:
+      - CheckChanges
+    jobs:
+      - job: TriggerEnterprise
+        displayName: "Trigger Enterprise Pipeline"
+        pool: hetzner-incus
+        variables:
+          SOURCE_CODE_CHANGED: $[stageDependencies.CheckChanges.CheckChanges.outputs['check_coverage.SOURCE_CODE_CHANGED']]
+        condition: eq(variables['SOURCE_CODE_CHANGED'], 'true')
+        steps:
+          - checkout: none
+          - bash: |
+              set -e
+              # Trigger the enterprise CI pipeline via Azure DevOps REST API
+              AUTH_HEADER="Authorization: Basic $(printf ':%s' "$AZURE_DEVOPS_ENT_PAT" | base64 -w0)"
+
+              # For PR builds, Azure uses an ephemeral merge commit, not the actual PR head.
+              # Fetch the real PR head commit from GitHub API.
+              if [ -n "$OSS_PR_NUMBER" ]; then
+                OSS_COMMIT=$(curl -s -H "Authorization: token $GH_TOKEN" \
+                  "https://api.github.com/repos/questdb/questdb/pulls/$OSS_PR_NUMBER" \
+                  | jq -r '.head.sha')
+                echo "Fetched PR head commit from GitHub API: $OSS_COMMIT"
+              fi
+
+              # Check if matching branch exists in enterprise repo (private, requires auth)
+              BRANCH_CHECK=$(curl -s -o /dev/null -w "%{http_code}" \
+                -H "Authorization: token $GH_TOKEN" \
+                "https://api.github.com/repos/questdb/questdb-enterprise/branches/$OSS_BRANCH")
+
+              if [ "$BRANCH_CHECK" = "200" ]; then
+                ENT_BRANCH="$OSS_BRANCH"
+                echo "Found matching enterprise branch: $ENT_BRANCH"
+              else
+                ENT_BRANCH="main"
+                echo "No matching branch '$OSS_BRANCH' in enterprise, using: $ENT_BRANCH"
+              fi
+
+              PAYLOAD=$(cat <<EOF
+              {
+                "resources": {
+                  "repositories": {
+                    "self": {
+                      "refName": "refs/heads/$ENT_BRANCH"
+                    }
+                  }
+                },
+                "templateParameters": {
+                  "ossCommit": "$OSS_COMMIT",
+                  "ossPrNumber": "$OSS_PR_NUMBER"
+                }
+              }
+              EOF
+              )
+
+              echo "Triggering enterprise CI for commit $OSS_COMMIT (PR #$OSS_PR_NUMBER)"
+
+              HTTP_CODE=$(curl -s -o response.json -w "%{http_code}" -X POST \
+                -H "$AUTH_HEADER" \
+                -H "Content-Type: application/json" \
+                "https://dev.azure.com/questdb/questdb-enterprise/_apis/pipelines/23/runs?api-version=7.0" \
+                -d "$PAYLOAD")
+
+              if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
+                RUN_ID=$(jq -r '.id // empty' response.json)
+                echo "Triggered enterprise CI: https://dev.azure.com/questdb/questdb-enterprise/_build/results?buildId=$RUN_ID"
+              else
+                echo "##vso[task.logissue type=warning]Failed to trigger enterprise CI (HTTP $HTTP_CODE); see pipeline logs"
+                rm -f response.json
+                exit 1
+              fi
+              rm -f response.json
+            displayName: "Trigger Enterprise Pipeline"
+            env:
+              AZURE_DEVOPS_ENT_PAT: $(AZURE_DEVOPS_ENT_PAT)
+              GH_TOKEN: $(GH_TOKEN)
+              OSS_PR_NUMBER: $(System.PullRequest.PullRequestNumber)
+              OSS_BRANCH: $(System.PullRequest.SourceBranch)
+
+  - stage: SelfHostedRunGriffin
+    displayName: "SelfHosted Griffin tests"
+    condition: eq(variables['System.PullRequest.IsFork'], 'false')
+    dependsOn:
+      - CheckChanges
+    jobs:
+      - template: templates/self-hosted-jobs.yml
+    variables:
+      includeTests: "**/griffin/**"
+
+  - stage: SelfHostedRunCairoA
+    displayName: "SelfHosted Cairo tests (A)"
+    condition: eq(variables['System.PullRequest.IsFork'], 'false')
+    dependsOn:
+      - CheckChanges
+    jobs:
+      - template: templates/self-hosted-jobs.yml
+    variables:
+      includeTests: "**/cairo/*,**/cairo/fuzz/**"
+
+  - stage: SelfHostedRunCairoB
+    displayName: "SelfHosted Cairo tests (B)"
+    condition: eq(variables['System.PullRequest.IsFork'], 'false')
+    dependsOn:
+      - CheckChanges
+    jobs:
+      - template: templates/self-hosted-jobs.yml
+    variables:
+      includeTests: "**/cairo/o3/**,**/cairo/wal/**,**/cairo/mv/**,**/cairo/map/**,**/cairo/pool/**,**/cairo/view/**,**/cairo/vm/**,**/cairo/file/**,**/cairo/sql/**"
+
+  - stage: SelfHostedRunOtherA
+    displayName: "SelfHosted Other tests (A)"
+    condition: eq(variables['System.PullRequest.IsFork'], 'false')
+    dependsOn:
+      - CheckChanges
+    jobs:
+      - template: templates/self-hosted-jobs.yml
+    variables:
+      includeTests: "**/cutlass/pgwire/**,**/cutlass/http/**,**/std/*,**/std/str/**,**/std/datetime/microtime/**,**/std/fastdouble/**,**/std/bytes/**,**/log/**,**/sqllogictest/*,**/network/**"
+
+  - stage: SelfHostedRunOtherB
+    displayName: "SelfHosted Other tests (B)"
+    condition: eq(variables['System.PullRequest.IsFork'], 'false')
+    dependsOn:
+      - CheckChanges
+    jobs:
+      - template: templates/self-hosted-jobs.yml
+    variables:
+      excludeTests: "**/griffin/**,**/cairo/**,**/cutlass/pgwire/**,**/cutlass/http/**,**/std/*,**/std/str/**,**/std/datetime/microtime/**,**/std/fastdouble/**,**/std/bytes/**,**/log/**,**/sqllogictest/*,**/network/**"
+
+  - stage: HostedRunTestsBranches
+    displayName: "Hosted Running tests"
+    dependsOn:
+      - CheckChanges
+    jobs:
+      - template: templates/hosted-jobs.yml
+
+  - stage: SelfHostedRunTestsCoverageBranches
+    displayName: "SelfHosted Running tests with cover"
+    dependsOn:
+      - CheckChanges
+    jobs:
+      - template: templates/self-hosted-cover-jobs.yml
+
+  - stage: JavaAndRustLint
+    displayName: "Rust Test and Lint"
+    dependsOn:
+      - CheckChanges
+    jobs:
+      - template: templates/aux-job.yml
+
+  - stage: CoverageReports
+    displayName: "Coverage Report"
+    dependsOn:
+      - CheckChanges
+      - SelfHostedRunTestsCoverageBranches
+    jobs:
+      - job: CoverageReport
+        displayName: "Coverage Report"
+        pool: hetzner-incus
+        variables:
+          RUST_SOURCE_CODE_CHANGED: $[stageDependencies.CheckChanges.CheckChanges.outputs['check_coverage.RUST_SOURCE_CODE_CHANGED']]
+          CODE_COVERAGE_TOOL_OPTION: $[stageDependencies.CheckChanges.CheckChanges.outputs['check_coverage.CODE_COVERAGE_TOOL_OPTION']]
+          COVERAGE_DIFF: $[stageDependencies.CheckChanges.CheckChanges.outputs['check_coverage.COVERAGE_DIFF']]
+          SHOULD_RUN: $[ and( or( eq(variables['RUST_SOURCE_CODE_CHANGED'], 'true'), eq(variables['CODE_COVERAGE_TOOL_OPTION'], 'JaCoCo') ), eq(variables['System.PullRequest.IsFork'], 'false') )]
+          jdk: "1.17"
+          JAVA_HOME_17_X64: "/opt/graalvm"
+          JAVA_HOME: "/opt/graalvm"
+
+        # Coverage Job is required to run by a validation rule, but there's no point in running the steps
+        # if there were no code changes. Therefore we define SHOULD_RUN and use it as a condition in all steps.
+        steps:
+          - checkout: self
+            fetchDepth: 1
+            lfs: false
+            submodules: false
+            persistCredentials: true
+          - download: current
+            artifact: jacoco-coverage
+            condition: and(eq(variables['SHOULD_RUN'], 'true'), eq(variables['CODE_COVERAGE_TOOL_OPTION'], 'JaCoCo'))
+          - download: current
+            artifact: rust-llvm-coverage
+            condition: and(eq(variables['SHOULD_RUN'], 'true'), eq(variables['RUST_SOURCE_CODE_CHANGED'], 'true'))
+          - task: Cache@2
+            continueOnError: true
+            condition: and(eq(variables['SHOULD_RUN'], 'true'), eq(variables['CODE_COVERAGE_TOOL_OPTION'], 'JaCoCo'))
+            inputs:
+              key: '"questdb_main" | "maven"'
+              path: $(MAVEN_CACHE_FOLDER)
+
+          - task: Maven@3
+            displayName: "Compile with Maven"
+            condition: and(eq(variables['SHOULD_RUN'], 'true'), eq(variables['CODE_COVERAGE_TOOL_OPTION'], 'JaCoCo'))
+            inputs:
+              mavenPomFile: "core/pom.xml"
+              mavenOptions: "$(MAVEN_OPTS)"
+              goals: "compile"
+              options: "--batch-mode -DskipTests -Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)"
+              jdkVersionOption: $(jdk)
+
+          - task: Maven@3
+            displayName: "Merge partial JaCoCo reports"
+            condition: and(eq(variables['SHOULD_RUN'], 'true'), eq(variables['CODE_COVERAGE_TOOL_OPTION'], 'JaCoCo'))
+            inputs:
+              mavenPomFile: "ci/jacoco-merge.xml"
+              goals: "verify"
+              options:
+                "--batch-mode -Dhttp.keepAlive=false -DincludeRoot=$(Pipeline.Workspace)
+                -DoutputDirectory=$(Pipeline.Workspace)/jacoco-aggregate
+                -DcoverDiff=$(COVERAGE_DIFF)
+                -Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)"
+              jdkVersionOption: $(jdk)
+
+          - bash: |
+              set -eux
+              COVERAGE_DIR=$(Pipeline.Workspace)/rust-llvm-coverage
+              ls -al $COVERAGE_DIR
+
+              # Concatenate all partial LCOV files into a single file
+              LCOV_FILES=$(find "$COVERAGE_DIR" -name '*.lcov' -type f)
+              if [ -z "$LCOV_FILES" ]; then
+                echo "No LCOV files found in $COVERAGE_DIR"
+                exit 1
+              fi
+              cat $LCOV_FILES > questdbr-combined.lcov.dat
+
+              # Merge LCOV coverage results, normalizing paths from different build agents
+              python3 ./ci/merge_lcov_paths.py questdbr-combined.lcov.dat questdbr-patched.lcov.dat
+
+              # Convert LCOV coverage results to Cobertura XML format
+              python3 ./ci/lcov_cobertura.py questdbr-patched.lcov.dat --output cobertura.xml --base-dir core/rust
+            displayName: "Merge partial Rust reports"
+            condition: and(eq(variables['SHOULD_RUN'], 'true'), eq(variables['RUST_SOURCE_CODE_CHANGED'], 'true'))
+
+          - task: PublishBuildArtifacts@1
+            displayName: "Upload Rust coverage report"
+            condition: and(eq(variables['SHOULD_RUN'], 'true'), eq(variables['RUST_SOURCE_CODE_CHANGED'], 'true'))
+            inputs:
+              pathToPublish: "$(Build.SourcesDirectory)/cobertura.xml"
+              artifactName: "rust-coverage"
+
+          - task: PublishBuildArtifacts@1
+            displayName: "Upload merged JaCoCo report"
+            condition: and(eq(variables['SHOULD_RUN'], 'true'), eq(variables['CODE_COVERAGE_TOOL_OPTION'], 'JaCoCo'))
+            inputs:
+              pathToPublish: "$(Pipeline.Workspace)/jacoco-aggregate/jacoco.xml"
+              artifactName: "jacoco-merged-coverage-report"
+
+          - bash: |
+              set -eux
+              COVER_ARGS=""
+              for f in "$(Pipeline.Workspace)/jacoco-aggregate/jacoco.xml"; do
+                [ -f "$f" ] && COVER_ARGS="-type jacoco --cover $f"
+              done
+              [ -f cobertura.xml ] && COVER_ARGS="$COVER_ARGS -type cobertura --cover cobertura.xml"
+
+              # cover-checker is able to automatically retrieve the diff from the Github Rest API.
+              # Unfortunately, it happpens that the Rest API responses are missing the patch field for some files
+              # which excludes these files from being covered.
+              git fetch origin $(System.PullRequest.targetBranchName)
+              git diff origin/$(System.PullRequest.targetBranchName)..HEAD > pr.diff
+
+              $JAVA_HOME_17_X64/bin/java -jar \
+                $(Build.SourcesDirectory)/ci/cover-checker-1.5.0-all.jar \
+                -dt file -d pr.diff \
+                $COVER_ARGS --repo "questdb/questdb" --pr $(System.PullRequest.PullRequestNumber) \
+                -t $(DIFF_COVER_THRESHOLD_PCT) --github-token $(GH_TOKEN)
+            displayName: "Post combined report to GitHub"
+            condition: eq(variables['SHOULD_RUN'], 'true')

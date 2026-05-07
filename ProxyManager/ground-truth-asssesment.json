@@ -1,0 +1,26 @@
+[
+  {
+    "Vulnerability": "CVE-2024-51736",
+    "Location": "symfony/process:v5.3.2",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API `Process` is not called in any active code path. Following the methodology: status is 'not_confirmed', probability is 0.01 (1%), exploitable is false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24765",
+    "Location": "phpunit/phpunit:9.5.6",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API `cleanupForCoverage()` is not called in any active code path. Following the methodology: status is 'not_confirmed', probability is 0.01 (1%), exploitable is false.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24739",
+    "Location": "symfony/process:v5.3.2",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API `Process` is not called in any active code path. Following the methodology: status is 'not_confirmed', probability is 0.01 (1%), exploitable is false.",
+    "Assessment": "Correct"
+  }
+]

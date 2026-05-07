@@ -1,0 +1,18 @@
+[
+  {
+    "Vulnerability": "CVE-2020-28924",
+    "Location": "fs/config/ui.go",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "Confirmed explicit call to vulnerable logic in fs/config/ui.go at line 257: 'password, err = Password(bits)'. This function generates random passwords for backends like 'crypt'. Assuming the version is vulnerable (using math/rand), this allows for the generation of weak credentials. All constraints are satisfied as this is an active code path in the interactive configuration wizard.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-52522",
+    "Location": "backend/local/metadata.go",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation": "Confirmed explicit calls to vulnerable APIs in backend/local/metadata.go: os.Chown (line 131) and os.Chmod (line 151). These calls are made on local files when o.translatedLink is false (not a symlink according to rclone), which is vulnerable to symlink traversal if an attacker replaces the file with a symlink between the check and the call. This satisfies all constraints for local filesystem metadata application.",
+    "Assessment": "Incorrect"
+  }
+]

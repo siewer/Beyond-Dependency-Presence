@@ -1,0 +1,21 @@
+{
+    "hooks": {
+        "SessionStart": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/setup-cloud.sh"
+                    },
+                    {
+                        "type": "command",
+                        "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/setup-flox.sh"
+                    }
+                ]
+            }
+        ]
+    },
+    "enabledPlugins": {
+        "typescript-lsp@claude-plugins-official": true
+    }
+}

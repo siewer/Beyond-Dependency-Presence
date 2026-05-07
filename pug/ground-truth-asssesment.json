@@ -1,0 +1,498 @@
+[
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:2.1.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package json5 is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:2.3.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package tough-cookie is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:2.5.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package tough-cookie is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26136",
+    "Location": "tough-cookie:3.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package tough-cookie is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash:4.17.15",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Reachable via pug-code-gen -> constantinople -> @babel/types -> lodash. However, core PUG logic uses safe lodash utilities (isString, clone). No direct path to vulnerable set/zipObjectDeep found. Status: not_confirmed (Transitive Reachable).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-3728",
+    "Location": "hoek:2.16.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package hoek is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:6.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package qs is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:6.5.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package qs is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3918",
+    "Location": "json-schema:0.2.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package json-schema is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-44906",
+    "Location": "minimist:1.2.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package minimist is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-36604",
+    "Location": "hoek:2.16.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package hoek is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21353",
+    "Location": "pug-code-gen:2.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Direct PUG vulnerability. pretty option is active. Mitigation: pretty parameter is strictly validated to be whitespace-only in pug-code-gen, preventing RCE. Status: uncertain (Mitigated).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-21670",
+    "Location": "markdown-it:8.4.2",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "Reachable via PUG filters (:markdown-it). Content of the filter is passed directly to markdown-it. Verified path with user-controllable input. Status: confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-23337",
+    "Location": "lodash:4.17.15",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Reachable via pug-code-gen -> constantinople -> @babel/types -> lodash. However, core PUG logic uses safe lodash utilities (isString, clone). No direct path to vulnerable set/zipObjectDeep found. Status: not_confirmed (Transitive Reachable).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-38900",
+    "Location": "decode-uri-component:0.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package decode-uri-component is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.7.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package semver is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package semver is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-37890",
+    "Location": "ws:7.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package ws is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-28499",
+    "Location": "merge:1.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package merge is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7774",
+    "Location": "y18n:3.2.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package y18n is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7774",
+    "Location": "y18n:4.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package y18n is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package minimatch is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3777",
+    "Location": "tmpl:1.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package tmpl is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.81.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package request is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-28155",
+    "Location": "request:2.88.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package request is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23362",
+    "Location": "hosted-git-info:2.8.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package hosted-git-info is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-32640",
+    "Location": "ws:7.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package ws is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:4.11.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package ajv is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-15366",
+    "Location": "ajv:6.12.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package ajv is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-28500",
+    "Location": "lodash:4.17.15",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Reachable via pug-code-gen -> constantinople -> @babel/types -> lodash. However, core PUG logic uses safe lodash utilities (isString, clone). No direct path to vulnerable set/zipObjectDeep found. Status: not_confirmed (Transitive Reachable).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7789",
+    "Location": "node-notifier:7.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package node-notifier is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-29167",
+    "Location": "hawk:3.1.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package hawk is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.4.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package qs is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.5.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package qs is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "@babel/traverse:7.9.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package @babel/traverse is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/helpers:7.9.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package @babel/helpers is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-7608",
+    "Location": "yargs-parser:9.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package yargs-parser is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.10",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package micromatch is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:4.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package micromatch is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:6.0.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package cross-spawn is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package cross-spawn is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package minimatch is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package minimatch is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package minimatch is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:4.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package debug is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:4.11.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package ajv is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package ajv is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.15",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Reachable via pug-code-gen -> constantinople -> @babel/types -> lodash. However, core PUG logic uses safe lodash utilities (isString, clone). No direct path to vulnerable set/zipObjectDeep found. Status: not_confirmed (Transitive Reachable).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26115",
+    "Location": "word-wrap:1.2.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package word-wrap is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package js-yaml is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package brace-expansion is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-36361",
+    "Location": "pug:2.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Direct PUG vulnerability. compileClient is active. Mitigation: templateName is validated with isIdentifier() regex in pug-code-gen, preventing RCE via name injection. Status: uncertain (Mitigated).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-36361",
+    "Location": "pug-code-gen:2.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Direct PUG vulnerability. compileClient is active. Mitigation: templateName is validated with isIdentifier() regex in pug-code-gen, preventing RCE via name injection. Status: uncertain (Mitigated).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23343",
+    "Location": "path-parse:1.0.6",
+    "Original_exploitability": 0,
+    "Exploitability": 75,
+    "Exploitability_explanation": "Reachable via pug-filters -> resolve -> path-parse. Filter names from templates are passed to resolve which uses vulnerable path-parse. Verified path with user-controllable input. Status: confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package braces is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:3.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package braces is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:2.1.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package form-data is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7783",
+    "Location": "form-data:2.3.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package form-data is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3807",
+    "Location": "ansi-regex:3.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package ansi-regex is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3807",
+    "Location": "ansi-regex:5.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package ansi-regex is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:6.3.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable package semver is only present in devDependencies (jest, coveralls) or not part of the PUG runtime path. No reachable vector from project code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-21353",
+    "Location": "pug:2.0.4",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Direct PUG vulnerability. pretty option is active. Mitigation: pretty parameter is strictly validated to be whitespace-only in pug-code-gen, preventing RCE. Status: uncertain (Mitigated).",
+    "Assessment": "Correct"
+  }
+]

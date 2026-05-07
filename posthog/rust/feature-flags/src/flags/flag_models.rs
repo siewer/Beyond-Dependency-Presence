@@ -1,0 +1,226 @@
+use serde::de::{self, Deserializer};
+use serde::ser::{SerializeMap, Serializer};
+use serde::{Deserialize, Serialize};
+use std::collections::{HashMap, HashSet};
+
+use crate::properties::property_models::PropertyFilter;
+
+/// Deserializes a JSON object with string keys into `HashMap<i32, HashSet<i32>>`.
+/// JSON only supports string keys, so Python serializes `{1: [2, 3]}` as `{"1": [2, 3]}`.
+fn deserialize_string_keyed_i32_map<'de, D>(
+    deserializer: D,
+) -> Result<HashMap<i32, HashSet<i32>>, D::Error>
+where
+    D: Deserializer<'de>,
+{
+    let raw: HashMap<String, Vec<i32>> = HashMap::deserialize(deserializer)?;
+    raw.into_iter()
+        .map(|(k, v)| {
+            let id = k.parse::<i32>().map_err(de::Error::custom)?;
+            Ok((id, v.into_iter().collect()))
+        })
+        .collect()
+}
+
+/// Serializes `HashMap<i32, HashSet<i32>>` back to JSON with string keys.
+fn serialize_string_keyed_i32_map<S>(
+    map: &HashMap<i32, HashSet<i32>>,
+    serializer: S,
+) -> Result<S::Ok, S::Error>
+where
+    S: Serializer,
+{
+    let mut ser_map = serializer.serialize_map(Some(map.len()))?;
+    let mut keys: Vec<&i32> = map.keys().collect();
+    keys.sort_unstable();
+    for k in keys {
+        let v = &map[k];
+        let sorted: Vec<i32> = {
+            let mut s: Vec<i32> = v.iter().copied().collect();
+            s.sort_unstable();
+            s
+        };
+        ser_map.serialize_entry(&k.to_string(), &sorted)?;
+    }
+    ser_map.end()
+}
+
+/// Pre-computed dependency metadata, built by Django at cache-write time.
+/// Shipped as a top-level field alongside the flags array in the hypercache.
+#[derive(Debug, Clone, Deserialize, Serialize)]
+pub struct EvaluationMetadata {
+    /// Flag IDs grouped by evaluation stage. Stage 0 (no deps) first.
+    pub dependency_stages: Vec<Vec<i32>>,
+    /// Flag IDs with missing, cyclic, or transitively broken dependencies.
+    pub flags_with_missing_deps: Vec<i32>,
+    /// Flag ID → transitive dependency flag IDs.
+    #[serde(
+        deserialize_with = "deserialize_string_keyed_i32_map",
+        serialize_with = "serialize_string_keyed_i32_map"
+    )]
+    pub transitive_deps: HashMap<i32, HashSet<i32>>,
+}
+
+/// Wrapper struct for deserializing hypercache format: {"flags": [...]}
+#[derive(Debug, Clone, Deserialize, Serialize)]
+pub struct HypercacheFlagsWrapper {
+    pub flags: Vec<FeatureFlag>,
+    #[serde(default)]
+    pub evaluation_metadata: Option<EvaluationMetadata>,
+}
+
+/// New holdout format: `{"id": 42, "exclusion_percentage": 10}`.
+/// Replaces the legacy `holdout_groups` array which reused `FlagPropertyGroup` with
+/// confusing semantics (rollout_percentage meant exclusion, variant was just "holdout-{id}").
+/// See holdout-migration-plan.md for the full migration plan.
+#[derive(Debug, Clone, Deserialize, Serialize)]
+pub struct Holdout {
+    pub id: i64,
+    pub exclusion_percentage: f64,
+}
+
+#[derive(Debug, Clone, Deserialize, Serialize, Default)]
+pub struct FlagPropertyGroup {
+    #[serde(default)]
+    pub properties: Option<Vec<PropertyFilter>>,
+    #[serde(default)]
+    pub rollout_percentage: Option<f64>,
+    #[serde(default)]
+    pub variant: Option<String>,
+    /// Per-condition-set aggregation group type index. When present, this condition
+    /// set uses the specified group type for hashing and property evaluation. When
+    /// absent/null, the condition set uses person-level aggregation (distinct_id).
+    #[serde(default)]
+    pub aggregation_group_type_index: Option<i32>,
+}
+
+#[derive(Debug, Clone, Deserialize, Serialize)]
+pub struct MultivariateFlagVariant {
+    pub key: String,
+    pub name: Option<String>,
+    pub rollout_percentage: f64,
+}
+
+#[derive(Debug, Clone, Deserialize, Serialize)]
+pub struct MultivariateFlagOptions {
+    pub variants: Vec<MultivariateFlagVariant>,
+}
+
+#[derive(Debug, Clone, Deserialize, Serialize, Default)]
+pub struct FlagFilters {
+    #[serde(default)]
+    pub groups: Vec<FlagPropertyGroup>,
+    #[serde(default)]
+    pub multivariate: Option<MultivariateFlagOptions>,
+    /// The group type index is used to determine which group type to use for the flag.
+    ///
+    /// Typical group type mappings are:
+    /// - 0 → "project"
+    /// - 1 → "organization"
+    /// - 2 → "instance"
+    /// - 3 → "customer"
+    /// - 4 → "team"
+    #[serde(default)]
+    pub aggregation_group_type_index: Option<i32>,
+    #[serde(default)]
+    pub payloads: Option<serde_json::Value>,
+    /// Super groups are a special group of feature flag conditions that act as a gate that must be
+    /// satisfied before any other conditions are evaluated. Currently, we only ever evaluate the first
+    /// super group. This is used for early access features which is a key and a boolean like so:
+    /// {
+    ///   "key": "$feature_enrollment/feature-flags-flag-dependency",
+    ///   "type": "person",
+    ///   "value": [
+    ///     "true"
+    ///   ],
+    ///   "operator": "exact"
+    /// }
+    /// If they match, the flag is enabled and no other conditions are evaluated. If they don't match,
+    /// fallback to regular conditions.
+    #[serde(default)]
+    pub super_groups: Option<Vec<FlagPropertyGroup>>,
+    /// Holdout format: `{"id": 42, "exclusion_percentage": 10}`.
+    /// Defines a set of users intentionally excluded from a test or experiment.
+    #[serde(default)]
+    pub holdout: Option<Holdout>,
+}
+
+pub type FeatureFlagId = i32;
+
+/// Defines which identifier is used for bucketing users into rollout and variants
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub enum BucketingIdentifier {
+    DistinctId,
+    DeviceId,
+}
+
+// TODO: see if you can combine these two structs, like we do with cohort models
+// this will require not deserializing on read and instead doing it lazily, on-demand
+// (which, tbh, is probably a better idea)
+#[derive(Debug, Clone, Deserialize, Serialize)]
+pub struct FeatureFlag {
+    pub id: FeatureFlagId,
+    pub team_id: i32,
+    pub name: Option<String>,
+    pub key: String,
+    pub filters: FlagFilters,
+    #[serde(default)]
+    pub deleted: bool,
+    #[serde(default)]
+    pub active: bool,
+    #[serde(default)]
+    pub ensure_experience_continuity: Option<bool>,
+    #[serde(default)]
+    pub version: Option<i32>,
+    #[serde(default)]
+    pub evaluation_runtime: Option<String>,
+    #[serde(default)]
+    pub evaluation_tags: Option<Vec<String>>,
+    #[serde(default)]
+    pub bucketing_identifier: Option<String>,
+}
+
+impl FeatureFlag {
+    /// Returns the bucketing identifier for this flag.
+    /// Defaults to DistinctId if not specified or if an invalid value is provided.
+    pub fn get_bucketing_identifier(&self) -> BucketingIdentifier {
+        match self.bucketing_identifier.as_deref() {
+            Some("device_id") => BucketingIdentifier::DeviceId,
+            _ => BucketingIdentifier::DistinctId,
+        }
+    }
+}
+
+#[derive(Debug, Serialize, sqlx::FromRow)]
+pub struct FeatureFlagRow {
+    pub id: i32,
+    pub team_id: i32,
+    pub name: Option<String>,
+    pub key: String,
+    pub filters: serde_json::Value,
+    pub deleted: bool,
+    pub active: bool,
+    pub ensure_experience_continuity: Option<bool>,
+    pub version: Option<i32>,
+    #[serde(default)]
+    pub evaluation_runtime: Option<String>,
+    #[serde(default)]
+    pub evaluation_tags: Option<Vec<String>>,
+    #[serde(default)]
+    pub bucketing_identifier: Option<String>,
+}
+
+#[derive(Clone, Debug, Default, Deserialize, Serialize)]
+pub struct FeatureFlagList {
+    pub flags: Vec<FeatureFlag>,
+    /// Runtime-only set of flag IDs that should be skipped during evaluation.
+    /// Includes inactive, deleted, survey-excluded, runtime-mismatched, and tag-filtered flags.
+    /// Not serialized — this is a request-scoped concern, not a cache concern.
+    #[serde(skip)]
+    pub filtered_out_flag_ids: HashSet<i32>,
+    /// Pre-computed dependency metadata from Django's hypercache.
+    /// Present when the cache was written by new Django code; absent for PG fallback
+    /// or old cache entries.
+    #[serde(skip)]
+    pub evaluation_metadata: Option<EvaluationMetadata>,
+}

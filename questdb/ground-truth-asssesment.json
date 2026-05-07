@@ -1,0 +1,90 @@
+[
+  {
+    "Vulnerability": "CVE-2024-6345",
+    "Location": "setuptools:66.1.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No dependency files found in codebase mapping to setuptools. No explicit call to the vulnerable `package_index.PackageIndex` download functions found in any active code path. The API is entirely absent. Based on criteria 'Version unknown (no dependency info) + API absent', the probability is capped at 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32681",
+    "Location": "requests:2.28.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No dependency files found in codebase mapping to requests. An explicit call to `requests.get` was found in `compat/src/test/python/runner_parquet.py`, however it does not use proxies or allow untrusted redirect flows. 0% constraints satisfied for proxy credential leak. The probability is capped at 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-41672",
+    "Location": "duckdb:1.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No dependency files found in codebase mapping to duckdb. Duckdb is used in `compat/src/test/python/runner_parquet.py` but there are no explicit calls to `sniff_csv` which is required for the path traversal vulnerability. API is absent in active user paths. The probability is 1%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-47273",
+    "Location": "setuptools:66.1.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No dependency files found in codebase mapping to setuptools. No explicit call to `_download_url` in `package_index` found anywhere in the codebase. API is completely absent. The probability is 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47081",
+    "Location": "requests:2.28.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No dependency files found in codebase mapping to requests. An explicit call to `requests.get` is present in `compat/src/test/python/runner_parquet.py`, but it only requests `http://localhost`, meaning it is a local test code vector and does not process external URLs needing `.netrc` leaks. Probability 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-58181",
+    "Location": "golang.org/x/crypto:v0.35.0",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: found indirect `golang.org/x/crypto v0.35.0` in `compat/src/test/golang/go.mod`. However, the vulnerable `golang.org/x/crypto/ssh` server API is completely absent from the codebase according to searches. The constraint satisfaction is 0%. The exploitability probability is 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-35195",
+    "Location": "requests:2.28.0",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No dependency files found in codebase mapping to requests. There are no usages of `requests.Session` with `verify=False` in the codebase, meaning the constraint for certificate bypass stickiness is unmet. The probability is 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:4.1.0",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: `\"js-yaml\": \"^4.1.0\"` found in `compat/src/test/nodejs-pg/package.json`. ✅ API call confirmed: `yaml.load()` is explicitly called in `compat/src/test/nodejs-pg/runner.js` to parse local YAML parameter files. As this is test code and fully a local-only vector, the max probability drops to 0.05 per the Matrix. Therefore, the exploitability is 5%.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-47914",
+    "Location": "golang.org/x/crypto:v0.35.0",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: found indirect `golang.org/x/crypto v0.35.0` in `compat/src/test/golang/go.mod`. However, the vulnerable SSH agent functions from `golang.org/x/crypto/ssh/agent` are not called anywhere in the codebase. 0% constraints are met. Exploitability is 1%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-g98v-hv3f-hcfr",
+    "Location": "atty:0.2.14",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: No dependency files found in codebase listing atty. The library `atty` and its `atty::is` APIs are entirely unused across the Rust codebase. API is completely absent and unreachable, putting probability at 0%.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-rr8g-9fpq-6wmg",
+    "Location": "tokio:1.40.0",
+    "Original_exploitability": 0,
+    "Exploitability": 0,
+    "Exploitability_explanation": "VERSION_SEARCH_COMPLETE: `\"tokio\": \"1.38.0\"` found in `core/rust/qdb-sqllogictest/Cargo.toml`. While the tokio namespace is used widely, there are zero calls to the specific vulnerable `tokio::sync::broadcast` module anywhere in the Rust codebase. The probability is 0.",
+    "Assessment": "Correct"
+  }
+]

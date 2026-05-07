@@ -1,0 +1,12 @@
+prune **
+
+graft pyinstrument
+graft test
+graft bin
+graft html_renderer
+prune html_renderer/node_modules
+prune html_renderer/dist
+
+include LICENSE README.md pyproject.toml setup.py setup.cfg noxfile.py requirements-dev.txt
+
+global-exclude __pycache__ *.py[cod] .* dist

@@ -1,0 +1,82 @@
+[
+  {
+    "Vulnerability": "CVE-2025-64714",
+    "Location": "privatebin/privatebin:",
+    "Original_exploitability": 30,
+    "Exploitability": 30,
+    "Exploitability_explanation": "Version is vulnerable. The vector TemplateSwitcher::getTemplate() and cookie handling are present in lib/Controller.php. The constraint `templateselection` is disabled by default in cfg/conf.sample.php. This limits the exploitability to instances where the admin explicitly enabled it, fitting the Configuration Only / disabled vector profile.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-5223",
+    "Location": "privatebin/privatebin:",
+    "Original_exploitability": 2,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Version is vulnerable. The XSS vector via attachment filename is present in JS ($.PrivateBin.AttachmentViewer). However, `fileupload` is disabled by default in cfg/conf.sample.php, and the default CSP is strong, serving as a complete mitigation that prevents inline script execution. This reduces the probability significantly.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-39899",
+    "Location": "privatebin/privatebin:",
+    "Original_exploitability": 96,
+    "Exploitability": 96,
+    "Exploitability_explanation": "Version is vulnerable. The YOURLS proxy API (YourlsProxy.php) and code path (`case 'yourlsproxy':`) are confirmed present in user code. When configured, the SSRF constraint is fully satisfied with no active mitigations found against the proxy bypass.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The ajv dependency is only present in package-lock.json as an indirect development tool dependency. Extensive search revealed no explicit calls to `ajv` or `$data: true` in the application's user code paths. API is absent in active user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.3.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The flatted dependency is only found in package-lock.json as an indirect development tool dependency. No explicit calls to `flatted.parse()` or its API were found in the application's user code. API is absent in active user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-62796",
+    "Location": "privatebin/privatebin:",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Version is vulnerable. The HTML injection vulnerability via attachment_name is present in the JS codebase. However, `fileupload` is disabled by default and the strict default CSP provides strong mitigation against XSS, significantly reducing exploitability.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64711",
+    "Location": "privatebin/privatebin:",
+    "Original_exploitability": 90,
+    "Exploitability": 90,
+    "Exploitability_explanation": "Version is vulnerable. The self-XSS vulnerability in the drag-and-drop handler for files is present in the JS UI codebase. It is triggered by local DOM manipulation before upload checks, and since it relies on browser file interactions, it bypasses basic disabled-feature mitigations. Exploitability is high.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24001",
+    "Location": "diff:7.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The diff dependency is only found in package-lock.json as an indirect development tool dependency. No explicit calls to the vulnerable API (`parsePatch` or `applyPatch`) were found in the application's user code. API is absent in active user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:6.0.2",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The serialize-javascript dependency is only found in package-lock.json as an indirect development tool dependency. No explicit calls to the vulnerable `serialize()` API were found in the application's user code. API is absent in active user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24833",
+    "Location": "privatebin/privatebin:",
+    "Original_exploitability": 70,
+    "Exploitability": 70,
+    "Exploitability_explanation": "Version is vulnerable. The lack of SVG sanitization in attachment handling is confirmed. If a user opens the malicious SVG attachment directly in a new tab, the CSP may be bypassed depending on browser behavior, satisfying the constraints for this CVE.",
+    "Assessment": "Correct"
+  }
+]

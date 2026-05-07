@@ -1,0 +1,180 @@
+/*+*****************************************************************************
+ *     ___                  _   ____  ____
+ *    / _ \ _   _  ___  ___| |_|  _ \| __ )
+ *   | | | | | | |/ _ \/ __| __| | | |  _ \
+ *   | |_| | |_| |  __/\__ \ |_| |_| | |_) |
+ *    \__\_\\__,_|\___||___/\__|____/|____/
+ *
+ *  Copyright (c) 2014-2019 Appsicle
+ *  Copyright (c) 2019-2026 QuestDB
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ ******************************************************************************/
+
+package io.questdb.griffin.engine.functions.date;
+
+import io.questdb.cairo.CairoConfiguration;
+import io.questdb.cairo.ColumnType;
+import io.questdb.cairo.MicrosTimestampDriver;
+import io.questdb.cairo.sql.Function;
+import io.questdb.cairo.sql.Record;
+import io.questdb.cairo.sql.SymbolTableSource;
+import io.questdb.griffin.FunctionFactory;
+import io.questdb.griffin.PlanSink;
+import io.questdb.griffin.SqlException;
+import io.questdb.griffin.SqlExecutionContext;
+import io.questdb.griffin.engine.functions.TimestampFunction;
+import io.questdb.std.IntList;
+import io.questdb.std.Misc;
+import io.questdb.std.Numbers;
+import io.questdb.std.ObjList;
+
+public class TimestampSequenceFunctionFactory implements FunctionFactory {
+    private static final String NAME = "timestamp_sequence";
+    private static final String SIGNATURE = NAME + "(NL)";
+
+    @Override
+    public String getSignature() {
+        return SIGNATURE;
+    }
+
+    @Override
+    public Function newInstance(
+            int position,
+            ObjList<Function> args,
+            IntList argPositions,
+            CairoConfiguration configuration,
+            SqlExecutionContext sqlExecutionContext
+    ) {
+        int timestampType = ColumnType.TIMESTAMP_MICRO;
+        Function arg = args.getQuick(0);
+        if (arg.isConstant()) {
+            final long start = MicrosTimestampDriver.INSTANCE.from(arg.getTimestamp(null), arg.getType());
+            if (start == Numbers.LONG_NULL) {
+                return MicrosTimestampDriver.INSTANCE.getTimestampConstantNull();
+            }
+            return new TimestampSequenceFunctionFactory.TimestampSequenceFunction(NAME, start, args.getQuick(1), timestampType);
+        } else {
+            return new TimestampSequenceFunctionFactory.TimestampSequenceVariableFunction(NAME, args.getQuick(0), args.getQuick(1), timestampType);
+        }
+    }
+
+    public static class TimestampSequenceFunction extends TimestampFunction {
+        private final Function longIncrement;
+        private final String name;
+        private final long start;
+        private long next;
+
+        public TimestampSequenceFunction(String name, long start, Function longIncrement, int timestampType) {
+            super(timestampType);
+            this.start = start;
+            this.next = start;
+            this.longIncrement = longIncrement;
+            this.name = name;
+        }
+
+        @Override
+        public long getTimestamp(Record rec) {
+            final long result = next;
+            next += longIncrement.getLong(rec);
+            return result;
+        }
+
+        @Override
+        public void init(SymbolTableSource symbolTableSource, SqlExecutionContext executionContext) throws SqlException {
+            longIncrement.init(symbolTableSource, executionContext);
+            next = start;
+        }
+
+        @Override
+        public boolean isNonDeterministic() {
+            return true;
+        }
+
+        @Override
+        public boolean shouldMemoize() {
+            return true;
+        }
+
+        @Override
+        public boolean supportsRandomAccess() {
+            return false;
+        }
+
+        @Override
+        public void toPlan(PlanSink sink) {
+            sink.val(name).val("(").val(start).val(',').val(longIncrement).val(')');
+        }
+
+        @Override
+        public void toTop() {
+            next = start;
+        }
+    }
+
+    public static final class TimestampSequenceVariableFunction extends TimestampFunction {
+        private final Function longIncrement;
+        private final String name;
+        private final Function start;
+        private long next;
+
+        public TimestampSequenceVariableFunction(String name, Function start, Function longIncrement, int timestampType) {
+            super(timestampType);
+            this.start = start;
+            this.next = 0;
+            this.longIncrement = longIncrement;
+            this.name = name;
+        }
+
+        @Override
+        public void close() {
+            Misc.free(start);
+            Misc.free(longIncrement);
+        }
+
+        @Override
+        public long getTimestamp(Record rec) {
+            final long result = next;
+            next += longIncrement.getLong(rec);
+            return result + start.getLong(rec);
+        }
+
+        @Override
+        public void init(SymbolTableSource symbolTableSource, SqlExecutionContext executionContext) throws SqlException {
+            start.init(symbolTableSource, executionContext);
+            longIncrement.init(symbolTableSource, executionContext);
+            next = 0;
+        }
+
+        @Override
+        public boolean isNonDeterministic() {
+            return true;
+        }
+
+        @Override
+        public boolean supportsRandomAccess() {
+            return false;
+        }
+
+        @Override
+        public void toPlan(PlanSink sink) {
+            sink.val(name).val("(").val(start).val(',').val(longIncrement).val(')');
+        }
+
+        @Override
+        public void toTop() {
+            next = 0;
+        }
+    }
+}

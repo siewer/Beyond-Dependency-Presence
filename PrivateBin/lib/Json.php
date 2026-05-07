@@ -1,0 +1,70 @@
+<?php declare(strict_types=1);
+/**
+ * PrivateBin
+ *
+ * a zero-knowledge paste bin
+ *
+ * @link      https://github.com/PrivateBin/PrivateBin
+ * @copyright 2012 Sébastien SAUVAGE (sebsauvage.net)
+ * @license   https://www.opensource.org/licenses/zlib-license.php The zlib/libpng License
+ */
+
+namespace PrivateBin;
+
+use PrivateBin\Exception\JsonException;
+
+/**
+ * Json
+ *
+ * Provides JSON functions in an object oriented way.
+ */
+class Json
+{
+    /**
+     * Returns a string containing the JSON representation of the given input
+     *
+     * @access public
+     * @static
+     * @param  mixed $input
+     * @throws JsonException
+     * @return string
+     */
+    public static function encode(&$input)
+    {
+        $jsonString = json_encode($input);
+        self::_detectError();
+        return $jsonString;
+    }
+
+    /**
+     * Returns an array with the contents as described in the given JSON input
+     *
+     * @access public
+     * @static
+     * @param  string $input
+     * @throws JsonException
+     * @return mixed
+     */
+    public static function decode(&$input)
+    {
+        $output = json_decode($input, true);
+        self::_detectError();
+        return $output;
+    }
+
+    /**
+     * Detects JSON errors and raises an exception if one is found
+     *
+     * @access private
+     * @static
+     * @throws JsonException
+     * @return void
+     */
+    private static function _detectError()
+    {
+        $errorCode = json_last_error();
+        if ($errorCode !== JSON_ERROR_NONE) {
+            throw new JsonException($errorCode);
+        }
+    }
+}
