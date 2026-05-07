@@ -1,0 +1,98 @@
+[
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation:": "Vulnerable API is not called in any active code path. The library is exclusively used as a devDependency (e.g., by 'standard' or 'c8') and is not reachable by the core 'koa' framework. No usage found in lib/ directory.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32141",
+    "Location": "flatted:3.3.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation:": "Vulnerable API is not called in any active code path. The library is exclusively used as a devDependency (e.g., by 'standard' or 'c8') and is not reachable by the core 'koa' framework. No usage found in lib/ directory.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64756",
+    "Location": "glob:10.4.5",
+    "Original_exploitability": "50%",
+    "Exploitability": "1%",
+    "Exploitability_explanation:": "Vulnerable API is not called in any active code path. The library is exclusively used as a devDependency (e.g., by 'standard' or 'c8') and is not reachable by the core 'koa' framework. No usage found in lib/ directory.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation:": "Vulnerable API is not called in any active code path. The library is exclusively used as a devDependency (e.g., by 'standard' or 'c8') and is not reachable by the core 'koa' framework. No usage found in lib/ directory.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation:": "Vulnerable API is not called in any active code path. The library is exclusively used as a devDependency (e.g., by 'standard' or 'c8') and is not reachable by the core 'koa' framework. No usage found in lib/ directory.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33228",
+    "Location": "flatted:3.3.3",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation:": "Vulnerable API is not called in any active code path. The library is exclusively used as a devDependency (e.g., by 'standard' or 'c8') and is not reachable by the core 'koa' framework. No usage found in lib/ directory.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation:": "Vulnerable API is not called in any active code path. The library is exclusively used as a devDependency (e.g., by 'standard' or 'c8') and is not reachable by the core 'koa' framework. No usage found in lib/ directory.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation:": "Vulnerable API is not called in any active code path. The library is exclusively used as a devDependency (e.g., by 'standard' or 'c8') and is not reachable by the core 'koa' framework. No usage found in lib/ directory.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation:": "Vulnerable API is not called in any active code path. The library is exclusively used as a devDependency (e.g., by 'standard' or 'c8') and is not reachable by the core 'koa' framework. No usage found in lib/ directory.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:9.0.5",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation:": "Vulnerable API is not called in any active code path. The library is exclusively used as a devDependency (e.g., by 'standard' or 'c8') and is not reachable by the core 'koa' framework. No usage found in lib/ directory.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:2.0.1",
+    "Original_exploitability": "1%",
+    "Exploitability": "1%",
+    "Exploitability_explanation:": "Vulnerable API is not called in any active code path. The library is exclusively used as a devDependency (e.g., by 'standard' or 'c8') and is not reachable by the core 'koa' framework. No usage found in lib/ directory.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.1.2",
+    "Original_exploitability": "0%",
+    "Exploitability": "1%",
+    "Exploitability_explanation:": "Vulnerable API is not called in any active code path. The library is exclusively used as a devDependency (e.g., by 'standard' or 'c8') and is not reachable by the core 'koa' framework. No usage found in lib/ directory.",
+    "Assessment": "Correct"
+  }
+]

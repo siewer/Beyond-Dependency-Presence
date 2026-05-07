@@ -1,0 +1,122 @@
+[
+  {
+    "Vulnerability": "CVE-2019-11358",
+    "Location": "jquery:1.11.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable version present, but no specific vector for prototype pollution ($.extend) with untrusted input was identified in the user code. Probability capped at 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-7191",
+    "Location": "qs:0.6.6",
+    "Original_exploitability": 50,
+    "Exploitability": 75,
+    "Exploitability_explanation": "DoS vulnerability via large nested objects in qs. In NodeServer.js, body-parser with extended:true is used, meaning all POST requests pass through qs. The vulnerability is highly reachable and version is vulnerable. Probability 0.75.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-16138",
+    "Location": "mime:1.2.11",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Library-internal usage of mime module within Express. Probability capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-8859",
+    "Location": "send:0.1.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Target API (send) for static file serving was not found to be explicitly used in NodeServer.js. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-8859",
+    "Location": "send:0.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Target API (send) for static file serving was not found to be used. Probability 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-43800",
+    "Location": "serve-static:1.0.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Target API (serve-static) was not confirmed in active code path. No usage of express.static() or similar was found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16119",
+    "Location": "fresh:0.2.2",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Transitive dependency of Express used for caching validation. Reachable via Express routes. Probability capped at 0.15 for vendor code usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-6393",
+    "Location": "express:4.0.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "DoS vulnerability in range request handling. Since no static file serving is enabled, this vector is not reachable via user code. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52798",
+    "Location": "path-to-regexp:0.1.2",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "ReDoS vulnerability in route parsing. Since Express uses path-to-regexp for all its routes (including the /api route defined in NodeServer.js), the vulnerability is reachable. Probability matches original score (0.50).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:0.6.6",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerability in arrayLimit bypass in qs. Reached via body-parser. Probability 0.15 (low due to default parameterLimit mitigations).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-1164",
+    "Location": "serve-static:1.0.1",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call (serve-static) not confirmed in active code path. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29041",
+    "Location": "express:4.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "XSS in res.send(). While reachable, the application returns a static message with res.json() and does not reflect untrusted input. Probability 0.05.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47764",
+    "Location": "cookie:0.1.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerability in cookie parsing. Reachable via Express/body-parser but only used in underlying library logic. Probability matches original (0.15).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43799",
+    "Location": "send:0.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Target API (send) not confirmed in active code path. Probability 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "path-to-regexp:0.1.2",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "ReDoS in route matching. Reachable via Express router used in NodeServer.js. Probability set to 0.50.",
+    "Assessment": "Correct"
+  }
+]

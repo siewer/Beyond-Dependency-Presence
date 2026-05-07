@@ -1,0 +1,98 @@
+[
+  {
+    "Vulnerability": "CVE-2026-27199",
+    "Location": "werkzeug:3.1.5",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call to send_from_directory confirmed in web.py:1044. However, it uses a hardcoded filename ('favicon.ico') which prevents the path traversal / DoS vector involving special device names. Status: not_confirmed (safe usage).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27205",
+    "Location": "flask:3.1.2",
+    "Original_exploitability": 0,
+    "Exploitability": 40,
+    "Exploitability_explanation": "Confirmed multiple instances of 'in session' and 'not in session' usage in web.py (lines 123, 232, 658, etc.) which trigger the missing 'Vary: Cookie' header in vulnerable versions. This satisfy the code-level constraints for cache poisoning. Status: confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-12797",
+    "Location": "cryptography:43.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "The library is used via requests, but there is no evidence of RFC7250 Raw Public Keys (RPKs) being enabled or configured. RPK must be explicitly enabled for this vulnerability to be reachable. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-47273",
+    "Location": "setuptools:75.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Setuptools is used as a build dependency (hatchling/Babel). There is no runtime usage of the vulnerable PackageIndex._download_url API to process untrusted indices. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23949",
+    "Location": "jaraco-context:6.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "Library is a sub-dependency (via keyring), but the vulnerable jaraco.context.tarball() function is not called in any active code path of the application. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66418",
+    "Location": "urllib3:2.2.3",
+    "Original_exploitability": 0,
+    "Exploitability": 45,
+    "Exploitability_explanation": "The application uses requests.get() to an external API (exchangerate.host) in currency_convertor.py:28. urllib3 v2.2.3 is susceptible to unbounded decompression chains from untrusted responders. Status: confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66471",
+    "Location": "urllib3:2.2.3",
+    "Original_exploitability": 0,
+    "Exploitability": 45,
+    "Exploitability_explanation": "Vulnerable version of urllib3 is used in currency_convertor.py to fetch external data. Malicious compressed responses could trigger decompression bomb DoS as constraints are met in active code paths. Status: confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2026-21441",
+    "Location": "urllib3:2.2.3",
+    "Original_exploitability": 0,
+    "Exploitability": 45,
+    "Exploitability_explanation": "The application follows redirects by default in requests.get() calls. This triggers the vulnerable urllib3 redirect handling flow where decompression happens before read limits are applied. Status: confirmed.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-50181",
+    "Location": "urllib3:2.2.3",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "The vulnerability affects PoolManager redirect configuration. While the library is vulnerable, the application uses requests higher-level API and does not perform custom redirect disabling that would trigger this specific bypass. Status: not_confirmed (Internal Usage).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-50182",
+    "Location": "urllib3:2.2.3",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "This vulnerability specifically affects urllib3 running in a Pyodide (browser/Node.js) environment. This application runs on a standard WSGI/WSGI Python environment. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24049",
+    "Location": "wheel:0.45.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Library present in lock file, but no programmatic usage of wheel.cli.unpack.unpack was found in the application source code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26007",
+    "Location": "cryptography:43.0.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "ECC small-subgroup attack vector requires usage of EC public key loading functions with binary curves. No such cryptographic primitives are used in the application code. Status: not_confirmed.",
+    "Assessment": "Correct"
+  }
+]

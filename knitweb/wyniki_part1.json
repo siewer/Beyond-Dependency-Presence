@@ -1,0 +1,82 @@
+[
+  {
+    "Vulnerability": "CVE-2020-11023",
+    "Location": "jquery:1.11.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable JQuery version is used in the frontend (layout.html), but no dangerous sinks like .html() or .append() with untrusted input were found in the codebase. Score reflects low risk of exploitation despite API presence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11023",
+    "Location": "jquery:1.9.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "JQuery 1.9.1 was not found in the codebase (only 1.11.3). As per instructions, since the API for this specific version is not confirmed in the current deployment, probability is 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-9251",
+    "Location": "jquery:1.11.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "JQuery 1.11.3 is used, but $.ajax is not used with dataType: 'script' as required for this CVE. No active code path found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-9251",
+    "Location": "jquery:1.9.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "JQuery 1.9.1 was not found in the codebase. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11022",
+    "Location": "jquery:1.11.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Similar to CVE-2020-11023, JQuery 1.11.3 is present but no untrusted DOM manipulation was found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11022",
+    "Location": "jquery:1.9.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "JQuery 1.9.1 was not found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16119",
+    "Location": "fresh:0.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Fresh 0.2.0 is a transitive dependency of Express 4.0.0. While present via vendor code, no explicit call was found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:0.6.6",
+    "Original_exploitability": 15,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Vulnerable version of qs is used via body-parser with extended:true in NodeServer.js. This configuration enables prototype pollution, though no direct user-code vector to pollute sensitive objects was found. Probability capped at 0.35 per config-only rule.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11358",
+    "Location": "jquery:1.9.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "JQuery 1.9.1 not found in codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-10064",
+    "Location": "qs:0.6.6",
+    "Original_exploitability": 45,
+    "Exploitability": 75,
+    "Exploitability_explanation": "This CVE describes a DoS vulnerability in qs. Since NodeServer.js uses body-parser with extended:true, every POST request triggers qs parsing. The vulnerability is reachable and satisfied all constraints. Probability is high (0.75).",
+    "Assessment": "Incorrect"
+  }
+]

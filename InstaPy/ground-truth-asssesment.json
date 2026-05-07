@@ -1,0 +1,1130 @@
+[
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:2.2.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-29078",
+    "Location": "ejs:2.7.4",
+    "Original_exploitability": 15.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-46175",
+    "Location": "json5:1.0.1",
+    "Original_exploitability": 15.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29415",
+    "Location": "ip:1.1.5",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30360",
+    "Location": "webpack-dev-server:3.11.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-0994",
+    "Location": "protobuf:3.20.3",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-0994",
+    "Location": "protobuf:3.6.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37601",
+    "Location": "loader-utils:1.2.3",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37601",
+    "Location": "loader-utils:1.4.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37601",
+    "Location": "loader-utils:2.0.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25967",
+    "Location": "eta:1.12.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-42740",
+    "Location": "shell-quote:1.7.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-6345",
+    "Location": "setuptools:66.1.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 25.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in setup.py. Version vulnerable. Risk during installation process (supply chain).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-18342",
+    "Location": "PyYAML:3.13",
+    "Original_exploitability": 1.0,
+    "Exploitability": 2.0,
+    "Exploitability_explanation": "\u274c API not used in active code paths. No explicit calls found in instapy/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-32681",
+    "Location": "requests:2.20.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 40.0,
+    "Exploitability_explanation": "\u26a0\ufe0f API call present and Proxies with auth are supported and used in requests/clarifai. Potential for Proxy-Authorization leak.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-7753",
+    "Location": "trim:0.0.1",
+    "Original_exploitability": 15.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25858",
+    "Location": "terser:5.7.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37599",
+    "Location": "loader-utils:1.2.3",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37599",
+    "Location": "loader-utils:1.4.0",
+    "Original_exploitability": 5.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37599",
+    "Location": "loader-utils:2.0.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8203",
+    "Location": "lodash.pick:4.4.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29180",
+    "Location": "webpack-dev-middleware:3.7.3",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45590",
+    "Location": "body-parser:1.19.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:6.7.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11324",
+    "Location": "urllib3:1.24.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 20.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. Version vulnerable. Usage present in multiple modules (instapy.py, pods_util.py, story_util.py).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42461",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-24033",
+    "Location": "react-dev-utils:10.2.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37603",
+    "Location": "loader-utils:1.2.3",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37603",
+    "Location": "loader-utils:1.4.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-37603",
+    "Location": "loader-utils:2.0.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-33883",
+    "Location": "ejs:2.7.4",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-43804",
+    "Location": "urllib3:1.24.1",
+    "Original_exploitability": 15.0,
+    "Exploitability": 50.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. Explicit Cookie management found in story_util.py (requests Session). Version vulnerable. High potential for leak on redirect.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.7.1",
+    "Original_exploitability": 1.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:6.3.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:7.0.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-33987",
+    "Location": "got:9.6.0",
+    "Original_exploitability": 1.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-3651",
+    "Location": "idna:2.10",
+    "Original_exploitability": 0.0,
+    "Exploitability": 2.0,
+    "Exploitability_explanation": "\u274c API not used in active code paths. No explicit calls found in instapy/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-3651",
+    "Location": "idna:2.7",
+    "Original_exploitability": 18.0,
+    "Exploitability": 2.0,
+    "Exploitability_explanation": "\u274c API not used in active code paths. No explicit calls found in instapy/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-46234",
+    "Location": "browserify-sign:4.2.1",
+    "Original_exploitability": 50.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-23630",
+    "Location": "eta:1.12.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43800",
+    "Location": "serve-static:1.14.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-40899",
+    "Location": "future:0.17.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 2.0,
+    "Exploitability_explanation": "\u274c API not used in active code paths. No explicit calls found in instapy/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21536",
+    "Location": "http-proxy-middleware:0.19.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28863",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 15.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-42282",
+    "Location": "ip:1.1.5",
+    "Original_exploitability": 1.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23364",
+    "Location": "browserslist:4.10.0",
+    "Original_exploitability": 1.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:3.0.2",
+    "Original_exploitability": 50.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-3807",
+    "Location": "ansi-regex:5.0.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-26137",
+    "Location": "urllib3:1.24.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 20.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. Version vulnerable. Usage present in multiple modules (instapy.py, pods_util.py, story_util.py).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-25881",
+    "Location": "http-cache-semantics:4.1.0",
+    "Original_exploitability": 50.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-47273",
+    "Location": "setuptools:66.1.1",
+    "Original_exploitability": 5.0,
+    "Exploitability": 25.0,
+    "Exploitability_explanation": "\u2705 API call confirmed in setup.py. Version vulnerable. Risk during installation process (supply chain).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2018-25091",
+    "Location": "urllib3:1.24.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 20.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. Version vulnerable. Usage present in multiple modules (instapy.py, pods_util.py, story_util.py).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52798",
+    "Location": "path-to-regexp:0.1.7",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-37891",
+    "Location": "urllib3:1.24.1",
+    "Original_exploitability": 50.0,
+    "Exploitability": 40.0,
+    "Exploitability_explanation": "\u26a0\ufe0f API call present and Proxies with auth (supported in InstaPy) are passed to requests. Potential for Proxy-Authorization leak.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6545",
+    "Location": "pbkdf2:3.1.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 2.0,
+    "Exploitability_explanation": "\u274c API not used in active code paths. No explicit calls found in instapy/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-23424",
+    "Location": "ansi-html:0.0.7",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-44270",
+    "Location": "postcss:7.0.36",
+    "Original_exploitability": 15.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3803",
+    "Location": "nth-check:1.0.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3803",
+    "Location": "nth-check:2.0.0",
+    "Original_exploitability": 2.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:6.7.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-9287",
+    "Location": "cipher-base:1.0.4",
+    "Original_exploitability": 1.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66031",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-0122",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45133",
+    "Location": "@babel/traverse:7.14.7",
+    "Original_exploitability": 15.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42460",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-37920",
+    "Location": "certifi:2018.10.15",
+    "Original_exploitability": 15.0,
+    "Exploitability": 2.0,
+    "Exploitability_explanation": "\u274c API not used in active code paths. No explicit calls found in instapy/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47081",
+    "Location": "requests:2.20.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 20.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. Version vulnerable. Usage present in multiple modules (instapy.py, pods_util.py, story_util.py).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/helpers:7.14.6",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime:7.14.6",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-27789",
+    "Location": "@babel/runtime-corejs3:7.14.7",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-3193",
+    "Location": "algoliasearch-helper:3.6.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24773",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:3.1.10",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:4.0.4",
+    "Original_exploitability": 50.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-29041",
+    "Location": "express:4.17.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43799",
+    "Location": "send:0.17.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-26159",
+    "Location": "follow-redirects:1.14.8",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-48948",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:6.0.5",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-21538",
+    "Location": "cross-spawn:7.0.3",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "path-to-regexp:0.1.7",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "path-to-regexp:1.8.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "path-to-regexp:2.2.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-12816",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 1.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-53382",
+    "Location": "prismjs:1.27.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43796",
+    "Location": "express:4.17.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-9288",
+    "Location": "sha.js:2.4.11",
+    "Original_exploitability": 50.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2022-23491",
+    "Location": "certifi:2018.10.15",
+    "Original_exploitability": 15.0,
+    "Exploitability": 2.0,
+    "Exploitability_explanation": "\u274c API not used in active code paths. No explicit calls found in instapy/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-69873",
+    "Location": "ajv:6.12.6",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-45803",
+    "Location": "urllib3:1.24.1",
+    "Original_exploitability": 15.0,
+    "Exploitability": 20.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. Version vulnerable. Usage present in multiple modules (instapy.py, pods_util.py, story_util.py).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-6547",
+    "Location": "pbkdf2:3.1.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 2.0,
+    "Exploitability_explanation": "\u274c API not used in active code paths. No explicit calls found in instapy/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66418",
+    "Location": "urllib3:1.24.1",
+    "Original_exploitability": 50.0,
+    "Exploitability": 20.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. Version vulnerable. Usage present in multiple modules (instapy.py, pods_util.py, story_util.py).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-66030",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 15.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54798",
+    "Location": "tmp:0.0.33",
+    "Original_exploitability": 1.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-35195",
+    "Location": "requests:2.20.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 20.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. Version vulnerable. Usage present in multiple modules (instapy.py, pods_util.py, story_util.py).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-66471",
+    "Location": "urllib3:1.24.1",
+    "Original_exploitability": 15.0,
+    "Exploitability": 20.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. Version vulnerable. Usage present in multiple modules (instapy.py, pods_util.py, story_util.py).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21441",
+    "Location": "urllib3:1.24.1",
+    "Original_exploitability": 10.0,
+    "Exploitability": 20.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. Version vulnerable. Usage present in multiple modules (instapy.py, pods_util.py, story_util.py).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-24842",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-29786",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2391",
+    "Location": "qs:6.7.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-50181",
+    "Location": "urllib3:1.24.1",
+    "Original_exploitability": 1.0,
+    "Exploitability": 20.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. Version vulnerable. Usage present in multiple modules (instapy.py, pods_util.py, story_util.py).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:4.12.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-2739",
+    "Location": "bn.js:5.2.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.1",
+    "Original_exploitability": 1.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26960",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-54368",
+    "Location": "uv:0.7.12",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23950",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-31802",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-14505",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-4565",
+    "Location": "protobuf:3.20.3",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-4565",
+    "Location": "protobuf:3.6.1",
+    "Original_exploitability": 1.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-7339",
+    "Location": "on-headers:1.0.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-vjh7-7g9h-fjfh",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:4.0.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5c6j-r48x-rmvq",
+    "Location": "serialize-javascript:5.0.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-pqhf-p39g-3x64",
+    "Location": "uv:0.7.12",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-5rrq-pxf6-6jx5",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-gf8q-jrpm-jvxq",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-w476-p2h3-79g9",
+    "Location": "uv:0.7.12",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-33953",
+    "Location": "grpcio:1.16.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 2.0,
+    "Exploitability_explanation": "\u274c API not used in active code paths. No explicit calls found in instapy/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-48949",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-23745",
+    "Location": "tar:6.1.11",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-14343",
+    "Location": "PyYAML:3.13",
+    "Original_exploitability": 1.0,
+    "Exploitability": 2.0,
+    "Exploitability_explanation": "\u274c API not used in active code paths. No explicit calls found in instapy/.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-37890",
+    "Location": "ws:6.2.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-28849",
+    "Location": "follow-redirects:1.14.8",
+    "Original_exploitability": 15.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-3517",
+    "Location": "minimatch:3.0.4",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11236",
+    "Location": "urllib3:1.24.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 20.0,
+    "Exploitability_explanation": "\u2705 API call confirmed. Version vulnerable. Usage present in multiple modules (instapy.py, pods_util.py, story_util.py).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4068",
+    "Location": "braces:2.3.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-3807",
+    "Location": "ansi-regex:4.1.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24772",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-1941",
+    "Location": "protobuf:3.6.1",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24771",
+    "Location": "node-forge:0.10.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-30359",
+    "Location": "webpack-dev-server:3.11.2",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-47764",
+    "Location": "cookie:0.4.0",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-42459",
+    "Location": "elliptic:6.5.4",
+    "Original_exploitability": 0.0,
+    "Exploitability": 10.0,
+    "Exploitability_explanation": "\u26a0\ufe0f Usage found ONLY in Library/Vendor Code (Docusaurus/node_modules). No User Code calls found.",
+    "Assessment": "Correct"
+  }
+]

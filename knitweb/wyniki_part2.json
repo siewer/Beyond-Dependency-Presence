@@ -1,0 +1,82 @@
+[
+  {
+    "Vulnerability": "CVE-2017-1000048",
+    "Location": "qs:0.6.6",
+    "Original_exploitability": 50,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Vulnerable version of qs is used for parsing via body-parser. This configuration implies potential for prototype pollution vulnerability (config enabled), but no active vector usage (e.g. merging objects) was confirmed in user code. Probability capped at 0.35.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-10539",
+    "Location": "negotiator:0.3.0",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Negotiator is used internally by Express for content negotiation (req.accepts, res.format). While reachable, it is exclusively in vendor code and no specific vector was found in the user application. Probability capped at 0.15.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2016-1000236",
+    "Location": "cookie-signature:1.0.3",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Transitive dependency of Express used for cookie signing. Usage is internal and risk is low without explicit cookie signature handling in user code. Probability 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43799",
+    "Location": "send:0.1.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Target API (send) for static file serving was not found to be explicitly used in NodeServer.js. Probability set to 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43796",
+    "Location": "express:4.0.0",
+    "Original_exploitability": 40,
+    "Exploitability": 1,
+    "Exploitability_explanation": "This CVE requires use of res.redirect(), which is not present in the knitweb codebase. Probability set to 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:0.8.1",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Debug module is used internally by dependencies. No explicit usage in user code found. Probability capped at 0.15 for library-internal usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2014-6394",
+    "Location": "send:0.1.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used/confirmed in active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-6394",
+    "Location": "send:0.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used/confirmed in active code path. No usage of static file serving found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-45590",
+    "Location": "body-parser:1.0.2",
+    "Original_exploitability": 97,
+    "Exploitability": 95,
+    "Exploitability_explanation": "High severity DoS in body-parser. Configuration explicitly uses vulnerable parameters (extended: true) in NodeServer.js, making the vulnerability highly reachable on every POST request. Probability set to 0.95.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:0.8.1",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Library-internal usage of debug module. Probability capped at 0.15.",
+    "Assessment": "Correct"
+  }
+]

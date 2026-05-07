@@ -1,0 +1,98 @@
+[
+  {
+    "Vulnerability": "CVE-2023-32187",
+    "Location": "github.com/k3s-io/k3s:pkg/cluster/https.go",
+    "Original_exploitability": 96,
+    "Exploitability": 96,
+    "Exploitability_explanation": "API call confirmed. The DynamicListener in pkg/cluster/https.go is configured to dynamically add SANs based on the Host header of incoming requests. This implementation lacks explicit limits on the number of SANs or the size of the certificate, satisfying the core constraint for a TLS SAN stuffing attack (DoS).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-46599",
+    "Location": "github.com/k3s-io/k3s:pkg/daemons/agent/agent.go",
+    "Original_exploitability": 94,
+    "Exploitability": 94,
+    "Exploitability_explanation": "API confirmed. The default KubeletConfiguration in pkg/daemons/agent/agent.go omits the ReadOnlyPort field when it's set to 0 during serialization. This leads to the kubelet falling back to its internal default of port 10255, providing unauthenticated access to the read-only API as described in the CVE.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27571",
+    "Location": "github.com/nats-io/nats-server/v2:v2.12.2",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Library usage found in go.mod, but it is an indirect dependency. No direct calls to the nats-server WebSocket API were found in the k3s codebase. Max probability 0.10 for indirect/internal library usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26014",
+    "Location": "github.com/pion/dtls/v2:v2.2.12",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Library usage found in go.mod (indirect). No direct calls to the vulnerable DTLS encryption API identified in k3s source code. Usage is limited to internal library paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-32254",
+    "Location": "github.com/cloudnativelabs/kube-router/v2:v2.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 5,
+    "Exploitability_explanation": "Direct usage of kube-router found in pkg/agent/netpol/netpol.go. However, k3s explicitly disables the proxy and router modules (RunRouter=false, RunServiceProxy=false), which are the vectors for this CVE (externalIPs validation). Code path is unreachable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26958",
+    "Location": "filippo.io/edwards25519:v1.1.0",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API absent. Thourough search for MultiScalarMult call yielded no results. The vulnerable function is a rarely used advanced API not triggered by k3s logic.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21434",
+    "Location": "github.com/quic-go/webtransport-go:v0.9.0",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Library listed in go.mod (indirect). No active code paths in k3s use the webtransport-go session closure API. Max probability 0.10 for library-internal usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21435",
+    "Location": "github.com/quic-go/webtransport-go:v0.9.0",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Library listed in go.mod (indirect). No active usage of WebTransport sessions found in k3s source code. Resource consumption constraint not reachable via user code.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-21438",
+    "Location": "github.com/quic-go/webtransport-go:v0.9.0",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Library listed in go.mod (indirect). No evidence of WebTransport stream management in k3s. Memory leak vector is contained within the library and not exposed to user-controllable paths.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.72.2",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "gRPC usage is present in go.mod, but no path-based authorization interceptors or custom auth policies susceptible to the non-canonical path bypass were found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.79.1",
+    "Original_exploitability": 0,
+    "Exploitability": 10,
+    "Exploitability_explanation": "Vulnerable version present, but API usage for path-based authorization is absent in active code paths. Internal library usage cap of 0.10 applied.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-6g7g-w4f8-9c9x",
+    "Location": "github.com/buger/jsonparser:v1.1.1",
+    "Original_exploitability": 0,
+    "Exploitability": 2,
+    "Exploitability_explanation": "API absent. No calls to jsonparser.Delete were found in the repository. The vulnerable function is not part of any active code path.",
+    "Assessment": "Correct"
+  }
+]

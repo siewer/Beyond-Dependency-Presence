@@ -1,0 +1,458 @@
+[
+  {
+    "Vulnerability": "CVE-2020-8559",
+    "Location": "staging/src/k8s.io/apiserver/pkg/util/proxy/proxy.go",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "\u2705 Logic confirmed. Apiserver proxying logic for aggregated APIs allows Upgrade header manipulation. Verified presence of proxying handler.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-11253",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-3676",
+    "Location": "pkg/volume/util/subpath/subpath_windows.go:112",
+    "Original_exploitability": 15,
+    "Exploitability": 90,
+    "Exploitability_explanation": "\u2705 API call confirmed. pkg/volume/util/subpath/subpath_windows.go:112 passes $env:linkpath to powershell without adequate sanitization, allowing node-level command injection.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-8559",
+    "Location": "staging/src/k8s.io/apiserver/pkg/util/proxy/proxy.go",
+    "Original_exploitability": 55,
+    "Exploitability": 70,
+    "Exploitability_explanation": "\u2705 Logic confirmed. Apiserver proxying logic for aggregated APIs allows Upgrade header manipulation. Verified presence of proxying handler.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8559",
+    "Location": "staging/src/k8s.io/apiserver/pkg/util/proxy/proxy.go",
+    "Original_exploitability": 0,
+    "Exploitability": 70,
+    "Exploitability_explanation": "\u2705 Logic confirmed. Apiserver proxying logic for aggregated APIs allows Upgrade header manipulation. Verified presence of proxying handler.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-10220",
+    "Location": "pkg/volume/git_repo/git_repo.go:196",
+    "Original_exploitability": 35,
+    "Exploitability": 85,
+    "Exploitability_explanation": "\u2705 API call confirmed. pkg/volume/git_repo/git_repo.go:196 executes git clone with user-provided repository source. High exploitability as it allows command injection via malicious git URLs.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-1002101",
+    "Location": "staging/src/k8s.io/kubectl/pkg/cmd/cp/cp.go:503",
+    "Original_exploitability": 25,
+    "Exploitability": 75,
+    "Exploitability_explanation": "\u2705 API call confirmed. staging/src/k8s.io/kubectl/pkg/cmd/cp/cp.go:503 implements untarAll. Susceptible to symlink directory traversal during extraction.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-25741",
+    "Location": "pkg/volume/util/subpath/subpath_linux.go:219",
+    "Original_exploitability": 15,
+    "Exploitability": 80,
+    "Exploitability_explanation": "\u2705 API call confirmed. pkg/volume/util/subpath/subpath_linux.go:219 uses /proc/self/fd for bind mounts. While intended as a fix, the pattern of symlink evaluation is directly present.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-8558",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8554",
+    "Location": "pkg/proxy/iptables/proxier.go:378",
+    "Original_exploitability": 15,
+    "Exploitability": 85,
+    "Exploitability_explanation": "\u2705 Logic confirmed. pkg/proxy/iptables/proxier.go:378 establishes KUBE-EXTERNAL-SERVICES allowing traffic interception via ExternalIPs. Design-level vulnerability.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2023-3955",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11250",
+    "Location": "k8s.io/client-go:v0.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11243",
+    "Location": "staging/src/k8s.io/client-go/rest/config.go:633",
+    "Original_exploitability": 60,
+    "Exploitability": 95,
+    "Exploitability_explanation": "\u2705 API call confirmed. staging/src/k8s.io/client-go/rest/config.go defines AnonymousClientConfig. Confirmed presence of core credential handling logic.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-11065",
+    "Location": "github.com/go-viper/mapstructure/v2:v2.3.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-5528",
+    "Location": "pkg/volume/local/local.go:590",
+    "Original_exploitability": 35,
+    "Exploitability": 75,
+    "Exploitability_explanation": "\u2705 API call confirmed. pkg/volume/local/local.go:590 uses bind mounts for local paths. Vulnerable to inadequate validation on Windows.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-25735",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8555",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-1002100",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-2728",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11251",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 2,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-3177",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11250",
+    "Location": "k8s.io/client-go:",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11250",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 55,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-1002101",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8551",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 25,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2018-1002100",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 93,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-1002102",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-1000056",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11247",
+    "Location": "k8s.io/apiextensions-apiserver:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-25740",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-9042",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-25737",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-5305",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-2727",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 93,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-0793",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2021-25743",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 30,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2020-8561",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 40,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-1767",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-7561",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 35,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2019-11244",
+    "Location": "k8s.io/client-go:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-5321",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 80,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2021-25736",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-45339",
+    "Location": "github.com/golang/glog:v1.2.2",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8552",
+    "Location": "k8s.io/apiserver:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8552",
+    "Location": "k8s.io/apiserver:v0.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8565",
+    "Location": "k8s.io/client-go:",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8565",
+    "Location": "k8s.io/client-go:v0.0.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8565",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8564",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-0426",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-8562",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5187",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2025-4563",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13281",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2023-2431",
+    "Location": "k8s.io/kubernetes:",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-33186",
+    "Location": "google.golang.org/grpc:v1.78.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "GHSA-74fp-r6jw-h4mp",
+    "Location": "k8s.io/apimachinery:",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable API is not called in any active code path or within this specific version context.",
+    "Assessment": "Correct"
+  }
+]

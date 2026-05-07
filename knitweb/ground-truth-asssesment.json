@@ -1,0 +1,282 @@
+[
+  {
+    "Vulnerability": "CVE-2020-11023",
+    "Location": "jquery:1.11.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable JQuery version is used in the frontend (layout.html), but no dangerous sinks like .html() or .append() with untrusted input were found in the codebase. Score reflects low risk of exploitation despite API presence.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11023",
+    "Location": "jquery:1.9.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "JQuery 1.9.1 was not found in the codebase (only 1.11.3). As per instructions, since the API for this specific version is not confirmed in the current deployment, probability is 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-9251",
+    "Location": "jquery:1.11.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "JQuery 1.11.3 is used, but $.ajax is not used with dataType: 'script' as required for this CVE. No active code path found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-9251",
+    "Location": "jquery:1.9.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "JQuery 1.9.1 was not found in the codebase. API call not confirmed.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11022",
+    "Location": "jquery:1.11.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Similar to CVE-2020-11023, JQuery 1.11.3 is present but no untrusted DOM manipulation was found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2020-11022",
+    "Location": "jquery:1.9.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "JQuery 1.9.1 was not found in the codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16119",
+    "Location": "fresh:0.2.0",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Fresh 0.2.0 is a transitive dependency of Express 4.0.0. While present via vendor code, no explicit call was found.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2022-24999",
+    "Location": "qs:0.6.6",
+    "Original_exploitability": 15,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Vulnerable version of qs is used via body-parser with extended:true in NodeServer.js. This configuration enables prototype pollution, though no direct user-code vector to pollute sensitive objects was found. Probability capped at 0.35 per config-only rule.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11358",
+    "Location": "jquery:1.9.1",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "JQuery 1.9.1 not found in codebase.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-10064",
+    "Location": "qs:0.6.6",
+    "Original_exploitability": 45,
+    "Exploitability": 75,
+    "Exploitability_explanation": "This CVE describes a DoS vulnerability in qs. Since NodeServer.js uses body-parser with extended:true, every POST request triggers qs parsing. The vulnerability is reachable and satisfied all constraints. Probability is high (0.75).",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-1000048",
+    "Location": "qs:0.6.6",
+    "Original_exploitability": 50,
+    "Exploitability": 35,
+    "Exploitability_explanation": "Vulnerable version of qs is used for parsing via body-parser. This configuration implies potential for prototype pollution vulnerability (config enabled), but no active vector usage (e.g. merging objects) was confirmed in user code. Probability capped at 0.35.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2016-10539",
+    "Location": "negotiator:0.3.0",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Negotiator is used internally by Express for content negotiation (req.accepts, res.format). While reachable, it is exclusively in vendor code and no specific vector was found in the user application. Probability capped at 0.15.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2016-1000236",
+    "Location": "cookie-signature:1.0.3",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Transitive dependency of Express used for cookie signing. Usage is internal and risk is low without explicit cookie signature handling in user code. Probability 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43799",
+    "Location": "send:0.1.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Target API (send) for static file serving was not found to be explicitly used in NodeServer.js. Probability set to 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43796",
+    "Location": "express:4.0.0",
+    "Original_exploitability": 40,
+    "Exploitability": 1,
+    "Exploitability_explanation": "This CVE requires use of res.redirect(), which is not present in the knitweb codebase. Probability set to 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-16137",
+    "Location": "debug:0.8.1",
+    "Original_exploitability": 50,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Debug module is used internally by dependencies. No explicit usage in user code found. Probability capped at 0.15 for library-internal usage.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2014-6394",
+    "Location": "send:0.1.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used/confirmed in active code path.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-6394",
+    "Location": "send:0.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API not used/confirmed in active code path. No usage of static file serving found.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-45590",
+    "Location": "body-parser:1.0.2",
+    "Original_exploitability": 97,
+    "Exploitability": 95,
+    "Exploitability_explanation": "High severity DoS in body-parser. Configuration explicitly uses vulnerable parameters (extended: true) in NodeServer.js, making the vulnerability highly reachable on every POST request. Probability set to 0.95.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-20165",
+    "Location": "debug:0.8.1",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Library-internal usage of debug module. Probability capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2019-11358",
+    "Location": "jquery:1.11.3",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Vulnerable version present, but no specific vector for prototype pollution ($.extend) with untrusted input was identified in the user code. Probability capped at 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-7191",
+    "Location": "qs:0.6.6",
+    "Original_exploitability": 50,
+    "Exploitability": 75,
+    "Exploitability_explanation": "DoS vulnerability via large nested objects in qs. In NodeServer.js, body-parser with extended:true is used, meaning all POST requests pass through qs. The vulnerability is highly reachable and version is vulnerable. Probability 0.75.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2017-16138",
+    "Location": "mime:1.2.11",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Library-internal usage of mime module within Express. Probability capped at 0.15.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-8859",
+    "Location": "send:0.1.4",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Target API (send) for static file serving was not found to be explicitly used in NodeServer.js. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-8859",
+    "Location": "send:0.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Target API (send) for static file serving was not found to be used. Probability 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-43800",
+    "Location": "serve-static:1.0.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Target API (serve-static) was not confirmed in active code path. No usage of express.static() or similar was found. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2017-16119",
+    "Location": "fresh:0.2.2",
+    "Original_exploitability": 1,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Transitive dependency of Express used for caching validation. Reachable via Express routes. Probability capped at 0.15 for vendor code usage.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2014-6393",
+    "Location": "express:4.0.0",
+    "Original_exploitability": 1,
+    "Exploitability": 1,
+    "Exploitability_explanation": "DoS vulnerability in range request handling. Since no static file serving is enabled, this vector is not reachable via user code. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-52798",
+    "Location": "path-to-regexp:0.1.2",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "ReDoS vulnerability in route parsing. Since Express uses path-to-regexp for all its routes (including the /api route defined in NodeServer.js), the vulnerability is reachable. Probability matches original score (0.50).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-15284",
+    "Location": "qs:0.6.6",
+    "Original_exploitability": 0,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerability in arrayLimit bypass in qs. Reached via body-parser. Probability 0.15 (low due to default parameterLimit mitigations).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2015-1164",
+    "Location": "serve-static:1.0.1",
+    "Original_exploitability": 5,
+    "Exploitability": 1,
+    "Exploitability_explanation": "API call (serve-static) not confirmed in active code path. Probability 0.01.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-29041",
+    "Location": "express:4.0.0",
+    "Original_exploitability": 50,
+    "Exploitability": 5,
+    "Exploitability_explanation": "XSS in res.send(). While reachable, the application returns a static message with res.json() and does not reflect untrusted input. Probability 0.05.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-47764",
+    "Location": "cookie:0.1.0",
+    "Original_exploitability": 15,
+    "Exploitability": 15,
+    "Exploitability_explanation": "Vulnerability in cookie parsing. Reachable via Express/body-parser but only used in underlying library logic. Probability matches original (0.15).",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-43799",
+    "Location": "send:0.2.0",
+    "Original_exploitability": 50,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Target API (send) not confirmed in active code path. Probability 0.01.",
+    "Assessment": "Incorrect"
+  },
+  {
+    "Vulnerability": "CVE-2024-45296",
+    "Location": "path-to-regexp:0.1.2",
+    "Original_exploitability": 50,
+    "Exploitability": 50,
+    "Exploitability_explanation": "ReDoS in route matching. Reachable via Express router used in NodeServer.js. Probability set to 0.50.",
+    "Assessment": "Correct"
+  }
+]

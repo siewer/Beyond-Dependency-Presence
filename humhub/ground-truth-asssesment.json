@@ -1,0 +1,66 @@
+[
+  {
+    "Vulnerability": "CVE-2022-25883",
+    "Location": "semver:5.7.1",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The 'semver' package is only present as a transitive dependency of the Grunt build tools (devDependencies). A comprehensive search of the codebase yielded no explicit calls to any vulnerable 'semver' function. Since the vulnerable API is absent from active user code and relegated to build-time scripts, it is not exploitable in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2024-4067",
+    "Location": "micromatch:4.0.5",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The 'micromatch' package is merely a transitive dependency required by Grunt plugins. Thorough code searches revealed no explicit usage of 'micromatch' APIs in the active HumHub PHP or JavaScript source code. As the API is strictly used internally by build tools and absent from user code, the probability of exploitation is effectively zero.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-26996",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The 'minimatch' dependency is introduced transitively via the project's Grunt build scripts. No explicit calls to the vulnerable 'minimatch' API were found in the application's source files. Following the methodology, the absence of API calls in user code strictly limits the exploitability probability to <= 0.02.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27903",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "Like other minimatch vulnerabilities in this repository, the dependency exists solely as part of the build toolchain (devDependencies). Since there are no explicit calls to 'minimatch' APIs in the user-reachable codebase, the vulnerability cannot be actively exploited.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2026-27904",
+    "Location": "minimatch:3.0.8",
+    "Original_exploitability": 0,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The vulnerable 'minimatch' library is not explicitly invoked anywhere in the HumHub application source code, existing only within node_modules for Grunt builds. Therefore, the required API usage constraint is unmet, rendering the vulnerability unexploitable.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-13465",
+    "Location": "lodash:4.17.21",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The 'lodash' library is a transitive dependency of the build environment and is not directly imported or utilized by the HumHub codebase. A specific search for 'lodash' API usage returned no results in active code paths. Without explicit API calls, the exploitability defaults to the minimal baseline.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-64718",
+    "Location": "js-yaml:3.14.1",
+    "Original_exploitability": 8,
+    "Exploitability": 1,
+    "Exploitability_explanation": "'js-yaml' is found exclusively within the build process transitive dependencies. Detailed repository searches confirm the absence of 'js-yaml' usage in active, deployed code. Given the lack of required API invocation, exploitation is not possible in production.",
+    "Assessment": "Correct"
+  },
+  {
+    "Vulnerability": "CVE-2025-5889",
+    "Location": "brace-expansion:1.1.11",
+    "Original_exploitability": 15,
+    "Exploitability": 1,
+    "Exploitability_explanation": "The 'brace-expansion' module operates purely as an internal transitive dependency for build tools (node_modules). There is no explicit user code calling vulnerable functions from this library. Consequently, the API is absent from reachable paths, capping the probability at <= 0.02.",
+    "Assessment": "Correct"
+  }
+]

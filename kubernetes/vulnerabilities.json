@@ -1,0 +1,515 @@
+[
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2020-8559",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-19T09:48:59.242Z",
+    "Source": "SCA",
+    "Location": "k8s.io/apimachinery:v0.0.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2019-11253",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.237Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2023-3676",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.239Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2020-8559",
+    "Status": "EXISTING",
+    "Exploitability": 55,
+    "Last Seen": "2026-03-19T09:48:59.240Z",
+    "Source": "SCA",
+    "Location": "k8s.io/apimachinery:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2020-8559",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-19T09:48:59.243Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2024-10220",
+    "Status": "EXISTING",
+    "Exploitability": 35,
+    "Last Seen": "2026-03-19T09:48:59.243Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2019-1002101",
+    "Status": "EXISTING",
+    "Exploitability": 25,
+    "Last Seen": "2026-03-19T09:48:59.244Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2021-25741",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.245Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2020-8558",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.247Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2020-8554",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.249Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2023-3955",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.260Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2019-11250",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-19T09:48:59.263Z",
+    "Source": "SCA",
+    "Location": "k8s.io/client-go:v0.0.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2019-11243",
+    "Status": "EXISTING",
+    "Exploitability": 60,
+    "Last Seen": "2026-03-19T09:48:59.272Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-11065",
+    "Status": "EXISTING",
+    "Exploitability": 1,
+    "Last Seen": "2026-03-19T09:48:59.296Z",
+    "Source": "SCA",
+    "Location": "github.com/go-viper/mapstructure/v2:v2.3.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2023-5528",
+    "Status": "EXISTING",
+    "Exploitability": 35,
+    "Last Seen": "2026-03-19T09:48:59.248Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-25735",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.250Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2020-8555",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.251Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2019-1002100",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.252Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2023-2728",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.256Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2019-11251",
+    "Status": "EXISTING",
+    "Exploitability": 2,
+    "Last Seen": "2026-03-19T09:48:59.258Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "CVE-2024-3177",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.259Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2019-11250",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-19T09:48:59.261Z",
+    "Source": "SCA",
+    "Location": "k8s.io/client-go:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2019-11250",
+    "Status": "EXISTING",
+    "Exploitability": 55,
+    "Last Seen": "2026-03-19T09:48:59.263Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2018-1002101",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.264Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2020-8551",
+    "Status": "EXISTING",
+    "Exploitability": 25,
+    "Last Seen": "2026-03-19T09:48:59.265Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2018-1002100",
+    "Status": "EXISTING",
+    "Exploitability": 93,
+    "Last Seen": "2026-03-19T09:48:59.267Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2017-1002102",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.268Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "CRITICAL",
+    "Name": "CVE-2017-1000056",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.269Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2019-11247",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.270Z",
+    "Source": "SCA",
+    "Location": "k8s.io/apiextensions-apiserver:"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "CVE-2021-25740",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.270Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-9042",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.273Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-25737",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.274Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2015-5305",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.275Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2023-2727",
+    "Status": "EXISTING",
+    "Exploitability": 93,
+    "Last Seen": "2026-03-19T09:48:59.276Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2024-0793",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.276Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "CVE-2021-25743",
+    "Status": "EXISTING",
+    "Exploitability": 30,
+    "Last Seen": "2026-03-19T09:48:59.277Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2020-8561",
+    "Status": "EXISTING",
+    "Exploitability": 40,
+    "Last Seen": "2026-03-19T09:48:59.278Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-1767",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.279Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "CVE-2015-7561",
+    "Status": "EXISTING",
+    "Exploitability": 35,
+    "Last Seen": "2026-03-19T09:48:59.280Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2019-11244",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.281Z",
+    "Source": "SCA",
+    "Location": "k8s.io/client-go:"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "CVE-2024-5321",
+    "Status": "EXISTING",
+    "Exploitability": 80,
+    "Last Seen": "2026-03-19T09:48:59.282Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2021-25736",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.283Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2024-45339",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.284Z",
+    "Source": "SCA",
+    "Location": "github.com/golang/glog:v1.2.2"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2020-8552",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.285Z",
+    "Source": "SCA",
+    "Location": "k8s.io/apiserver:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2020-8552",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-19T09:48:59.286Z",
+    "Source": "SCA",
+    "Location": "k8s.io/apiserver:v0.0.0"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2020-8565",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-19T09:48:59.286Z",
+    "Source": "SCA",
+    "Location": "k8s.io/client-go:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2020-8565",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-19T09:48:59.288Z",
+    "Source": "SCA",
+    "Location": "k8s.io/client-go:v0.0.0"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2020-8565",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.289Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2020-8564",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.290Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-0426",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.291Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "CVE-2020-8562",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.292Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-5187",
+    "Status": "EXISTING",
+    "Exploitability": 50,
+    "Last Seen": "2026-03-19T09:48:59.293Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "LOW",
+    "Name": "CVE-2025-4563",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.293Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2025-13281",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.294Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "MEDIUM",
+    "Name": "CVE-2023-2431",
+    "Status": "EXISTING",
+    "Exploitability": 15,
+    "Last Seen": "2026-03-19T09:48:59.295Z",
+    "Source": "SCA",
+    "Location": "k8s.io/kubernetes:"
+  },
+  {
+    "Severity": "CRITICAL",
+    "Name": "CVE-2026-33186",
+    "Status": "NEW",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-19T09:48:59.316Z",
+    "Source": "SCA",
+    "Location": "google.golang.org/grpc:v1.78.0"
+  },
+  {
+    "Severity": "HIGH",
+    "Name": "GHSA-74fp-r6jw-h4mp",
+    "Status": "EXISTING",
+    "Exploitability": 0,
+    "Last Seen": "2026-03-19T09:48:59.319Z",
+    "Source": "SCA",
+    "Location": "k8s.io/apimachinery:"
+  }
+]

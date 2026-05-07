@@ -1,0 +1,10 @@
+[
+  {
+    "Vulnerability": "CVE-2026-25990",
+    "Location": "libs/partners/openai/langchain_openai/chat_models/base.py:3696,3712",
+    "Original_exploitability": 0,
+    "Exploitability": 85,
+    "Exploitability_explanation:": "✅ API call confirmed. The function `Image.open()` is called in `_url_to_size` within `libs/partners/openai/langchain_openai/chat_models/base.py` to calculate tokens for vision models. Version 11.3.0 is vulnerable to an out-of-bounds write via malformed PSD files. The code fetches images from user-provided URLs/base64 without restricting formats, satisfying all exploitability constraints. Original score 0% is incorrect given the active and reachable code path.",
+    "Assessment": "Incorrect"
+  }
+]
